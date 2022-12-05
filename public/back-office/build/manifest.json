@@ -1,0 +1,81 @@
+{
+  "resources/back-office/src/images/logo.png": {
+    "file": "assets/logo.03d6d6da.png",
+    "src": "resources/back-office/src/images/logo.png"
+  },
+  "resources/back-office/src/images/logo.svg": {
+    "file": "assets/logo.7d07d12d.svg",
+    "src": "resources/back-office/src/images/logo.svg"
+  },
+  "resources/back-office/src/fonts/iransans/iransans-exteralight.ttf": {
+    "file": "assets/iransans-exteralight.8fbf5256.ttf",
+    "src": "resources/back-office/src/fonts/iransans/iransans-exteralight.ttf"
+  },
+  "resources/back-office/src/fonts/iransans/iransans-light.ttf": {
+    "file": "assets/iransans-light.71e3d822.ttf",
+    "src": "resources/back-office/src/fonts/iransans/iransans-light.ttf"
+  },
+  "resources/back-office/src/fonts/iransans/iransans-regular.ttf": {
+    "file": "assets/iransans-regular.189c7fb3.ttf",
+    "src": "resources/back-office/src/fonts/iransans/iransans-regular.ttf"
+  },
+  "resources/back-office/src/fonts/iransans/iransans-medium.ttf": {
+    "file": "assets/iransans-medium.a7c19dcc.ttf",
+    "src": "resources/back-office/src/fonts/iransans/iransans-medium.ttf"
+  },
+  "resources/back-office/src/fonts/iransans/iransans-bold.ttf": {
+    "file": "assets/iransans-bold.0d5fe0b6.ttf",
+    "src": "resources/back-office/src/fonts/iransans/iransans-bold.ttf"
+  },
+  "resources/back-office/src/fonts/iransans/iransans-black.ttf": {
+    "file": "assets/iransans-black.2a201b0a.ttf",
+    "src": "resources/back-office/src/fonts/iransans/iransans-black.ttf"
+  },
+  "resources/back-office/src/fonts/karla/karla-light.ttf": {
+    "file": "assets/karla-light.c3ae2461.ttf",
+    "src": "resources/back-office/src/fonts/karla/karla-light.ttf"
+  },
+  "resources/back-office/src/fonts/karla/karla-regular.ttf": {
+    "file": "assets/karla-regular.c202ef4c.ttf",
+    "src": "resources/back-office/src/fonts/karla/karla-regular.ttf"
+  },
+  "resources/back-office/src/fonts/karla/karla-extralight.ttf": {
+    "file": "assets/karla-extralight.7afcb4ae.ttf",
+    "src": "resources/back-office/src/fonts/karla/karla-extralight.ttf"
+  },
+  "resources/back-office/src/fonts/karla/karla-medium.ttf": {
+    "file": "assets/karla-medium.3f4f534f.ttf",
+    "src": "resources/back-office/src/fonts/karla/karla-medium.ttf"
+  },
+  "resources/back-office/src/fonts/karla/karla-semibold.ttf": {
+    "file": "assets/karla-semibold.dbfd3056.ttf",
+    "src": "resources/back-office/src/fonts/karla/karla-semibold.ttf"
+  },
+  "resources/back-office/src/fonts/karla/karla-bold.ttf": {
+    "file": "assets/karla-bold.dd9d1d9c.ttf",
+    "src": "resources/back-office/src/fonts/karla/karla-bold.ttf"
+  },
+  "resources/back-office/src/fonts/karla/karla-extrabold.ttf": {
+    "file": "assets/karla-extrabold.aee03bb3.ttf",
+    "src": "resources/back-office/src/fonts/karla/karla-extrabold.ttf"
+  },
+  "resources/back-office/main.ts": {
+    "file": "assets/main.7e252736.js",
+    "src": "resources/back-office/main.ts",
+    "isEntry": true,
+    "assets": [
+      "assets/logo.03d6d6da.png",
+      "assets/logo.7d07d12d.svg"
+    ]
+  },
+  "resources/back-office/src/less/default.less": {
+    "file": "assets/default.0f3b9c53.css",
+    "src": "resources/back-office/src/less/default.less",
+    "isEntry": true
+  },
+  "resources/back-office/src/cache/default-rtl.less": {
+    "file": "assets/default-rtl.35ec430e.css",
+    "src": "resources/back-office/src/cache/default-rtl.less",
+    "isEntry": true
+  }
+}

@@ -1,0 +1,103 @@
+import globImport from 'glob';
+import { basename } from 'path';
+import fs, { PathLike } from 'fs-extra';
+import pLimit from 'p-limit';
+import { rollup, InputOptions, OutputOptions, RollupBuild } from 'rollup';
+import replace from '@rollup/plugin-replace';
+import { optimize, Output } from 'svgo';
+import { promisify } from 'util';
+
+export const glob = promisify(globImport);
+
+const limit = pLimit(Number(process.env.cpus || 2));
+
+export function read(file: PathLike | number): Promise<string> {
+    return fs.readFile(file, 'utf8');
+}
+
+// we merge two file together with replace params
+// we can also use this compiles method with additional params, at this time we just use replaces param
+export async function compile(file: string, dest: string, { replaces }: { replaces: { [str: string]: string | ((id: string) => string) } }): Promise<void> {
+    const inputOptions: InputOptions = {
+        input: file,
+        plugins: [
+            // replace plugin
+            replace({
+                preventAssignment: true,
+                values: {
+                    ...replaces,
+                },
+            })
+        ],
+    };
+
+    // compiled output file options
+    const outputOptions: OutputOptions = {
+        format: 'es',
+        amd: { id: `uikiticons`.toLowerCase() },
+        name: `UIkitCore`,
+    };
+
+    const output: OutputOptions = {
+        ...outputOptions,
+        // file destination
+        file: `${dest}.ts`,
+    };
+
+    // build the file
+    const bundle: RollupBuild = await rollup(inputOptions);
+
+    // write file in destination
+    await limit(() => bundle.write(output));
+    console.log('  > PRkit Icons is Ready...');
+
+    await bundle.close();
+}
+
+// read all svg file in src and compile theme in json
+export async function icons(src: string): Promise<string> {
+    const options: any = {
+        plugins: [
+            {
+                name: 'preset-default',
+                removeDimensions: false,
+                removeScriptElement: false,
+                removeStyleElement: false,
+                params: {
+                    overrides: {
+                        removeViewBox: false,
+                        cleanupNumericValues: {
+                            floatPrecision: 3,
+                        },
+                        convertPathData: false,
+                        convertShapeToPath: false,
+                        mergePaths: false,
+                        removeUnknownsAndDefaults: false,
+                        removeUselessStrokeAndFill: false,
+                    },
+                },
+            },
+        ],
+    };
+
+    const files = await glob(src, { nosort: true });
+    const icons = await Promise.all(
+        files.map((file: string) => limit(async () => {
+                let optimized: Output = optimize(await read(file), options);
+                try {
+                    return optimized.data
+                } catch (error) {
+                    return error;
+                }
+            })
+        ));
+
+    return JSON.stringify(
+        files.reduce((result: any, file: string, i: number) => {
+            result[basename(file, '.svg')] = icons[i];
+            return result;
+        }, {}),
+        null,
+        '    '
+    );
+}
