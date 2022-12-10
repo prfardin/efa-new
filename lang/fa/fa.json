@@ -1,3 +1,4 @@
 {
-    "hello": "سلام, {name}!"
+    "hello": "سلام, {name}!",
+    "Dashboard": "برو به داشبورد"
 }

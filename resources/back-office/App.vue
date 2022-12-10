@@ -12,7 +12,7 @@ import prLink from '@bc/core/link.vue'
                     <img class="uk-margin-auto" alt="Vue logo" src="@b/src/images/logo.png" />
                 </div>
                 <div>
-                    <pr-link to="/" icon="box" default active-class="uk-button-primary">Go to Dash</pr-link> |
+                    <pr-link to="/" icon="screw" default active-class="uk-button-primary">{{ $t('Dashboard') }}</pr-link> |
                     <pr-link to="/about" icon="user" default active-class="uk-button-primary">Go to About</pr-link>
                 </div>
             </div>

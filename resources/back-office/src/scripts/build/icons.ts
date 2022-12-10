@@ -8,5 +8,4 @@ export default async function compileIcons() {
             ICONS: await icons(`${folder}/*.svg`),
         }
     });
-
 }
