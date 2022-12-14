@@ -15,6 +15,50 @@ export interface ButtonProps {
     icon?: string,
 }
 
+export var ButtonProps2: ButtonProps = {
+    tag: {
+        type: String,
+        default: 'a',
+    },
+    to: {
+        type: String,
+        required: true
+    },
+    href: {
+        type: String,
+    },
+    default: {
+        type: Boolean,
+    },
+    primary: {
+        type: Boolean,
+    },
+    secondary: {
+        type: Boolean,
+    },
+    muted: {
+        type: Boolean,
+    },
+    xSmall: {
+        type: Boolean,
+    },
+    rounded: {
+        type: Boolean,
+    },
+    circle: {
+        type: Boolean,
+    },
+    collapse: {
+        type: Boolean,
+    },
+    icon: {
+        type: String,
+    },
+    ratio: {
+        type: Number,
+    },
+}
+
 export const defaultButtonCls = 'uk-button';
 export const defaultPrButtonCls = 'pr-button';
 
