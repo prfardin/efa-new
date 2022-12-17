@@ -13,8 +13,7 @@ import PrLink from '@bc/core/link.vue'
                 </div>
                 <div>
                     <pr-link to="/" icon="dashboard" default active-class="uk-button-primary">{{ $t('Dashboard') }}</pr-link> |
-                    <pr-link to="/about" icon="user" default active-class="uk-button-primary">Go to About</pr-link> |
-                    <pr-link to="/about" icon="user"></pr-link>
+                    <pr-link to="/about" icon="user" default active-class="uk-button-primary">Go to About</pr-link>
                 </div>
             </div>
         </div>

@@ -8,7 +8,7 @@
             <img src="@b/src/images/logo.svg" alt="Vue logo" height="56" uk-svg>
         </div>
         <div class="pr-sidebar-strip-container">
-            <nav class="">
+            <nav>
                 <ul class="uk-nav">
                     <li class="a uk-active">
                         <a href="#" uk-tooltip="title: داشبورد; pos: left; offset: 3;duration: 200"><span>A</span></a>
