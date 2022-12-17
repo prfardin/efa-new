@@ -5,7 +5,7 @@
  * do setIcon and watch [props.icon, props.ratio] or just watchEffect
  * for now watchEffect used cause its clean
  */
-import { defineProps, ref, onMounted, watchEffect } from 'vue'
+import { ref, onMounted, watchEffect } from 'vue'
 import { icon, IconElement } from '@bs/scripts/util/util'
 import { IconPropsType } from "@bs/scripts/util/props";
 

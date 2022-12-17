@@ -6,7 +6,7 @@
  * with no span tag, so in future we must remove addition span tag
  * when there is no default slots defined
  */
-import { computed, defineProps, useSlots } from "vue";
+import { computed, useSlots } from "vue";
 import { buttonClassObject } from "@bs/scripts/util/classes";
 import PrIcon from "@bc/core/icon.vue";
 
