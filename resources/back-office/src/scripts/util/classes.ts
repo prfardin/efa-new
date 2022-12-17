@@ -1,9 +1,18 @@
-// define classes for export
+/**
+ * we use this file for classes of the components
+ * we send the props to xClassObject function, and
+ * it will return us array of class that defined from props
+ * we use this way to make our code clean
+ * and reusable class for other semi-like components
+ * we also define interface for each component classes
+ * we will improve this way with future release of vue (type-based declaration export)
+ */
 
-// Button Classes
-export interface ButtonProps {
-    to?: string,
-    href?: string,
+/**
+ * Button Classes
+ */
+
+export interface ButtonClassType {
     default?: boolean,
     primary?: boolean,
     secondary?: boolean,
@@ -15,54 +24,10 @@ export interface ButtonProps {
     icon?: string,
 }
 
-export var ButtonProps2: ButtonProps = {
-    tag: {
-        type: String,
-        default: 'a',
-    },
-    to: {
-        type: String,
-        required: true
-    },
-    href: {
-        type: String,
-    },
-    default: {
-        type: Boolean,
-    },
-    primary: {
-        type: Boolean,
-    },
-    secondary: {
-        type: Boolean,
-    },
-    muted: {
-        type: Boolean,
-    },
-    xSmall: {
-        type: Boolean,
-    },
-    rounded: {
-        type: Boolean,
-    },
-    circle: {
-        type: Boolean,
-    },
-    collapse: {
-        type: Boolean,
-    },
-    icon: {
-        type: String,
-    },
-    ratio: {
-        type: Number,
-    },
-}
-
 export const defaultButtonCls = 'uk-button';
 export const defaultPrButtonCls = 'pr-button';
 
-export function buttonCls(props: ButtonProps, buttonCls: string = defaultButtonCls, prButtonCls: string = defaultPrButtonCls) {
+export function buttonClassObject(props: ButtonClassType, buttonCls: string = defaultButtonCls, prButtonCls: string = defaultPrButtonCls) {
     return [
         buttonCls,
         {

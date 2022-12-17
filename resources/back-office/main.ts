@@ -1,3 +1,13 @@
+/**
+ * we use type-based declaration for components props
+ * cause type-based declaration is straightforward and can be extended
+ * but type-based declaration has cons and
+ * the generic argument itself passed to defineProps cannot be an imported type
+ * but this limitation will be removed in future release,
+ * so we define all props in util/props.ts, and we ready for
+ * vue release to clean our code
+ */
+
 import './bootstrap';
 
 import { createApp } from 'vue';

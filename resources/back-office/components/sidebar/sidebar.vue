@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Strip from './Strip.vue'
-import Wrapper from './Wrapper.vue'
+import Strip from './strip.vue'
+import Wrapper from './wrapper.vue'
 
 import { ref } from 'vue'
 
