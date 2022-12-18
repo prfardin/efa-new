@@ -5,7 +5,7 @@
 <template>
     <div class="pr-sidebar-strip uk-flex">
         <div class="pr-logo-area uk-flex uk-flex-top uk-flex-center">
-            <img src="@b/src/images/logo.svg" alt="Vue logo" height="56" uk-svg>
+            <span uk-icon="user" style="color: white;border-radius: 100%;background-color: #03a9f4;width: 44px;height: 44px;display: flex;align-items: center;justify-content: center;"></span>
         </div>
         <div class="pr-sidebar-strip-container">
             <nav>
