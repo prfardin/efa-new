@@ -25,7 +25,6 @@ import PrLink from '@bc/core/link.vue'
             </div>
         </div>
     </div>
-<!--    <HelloWorld msg="Hello Vue 3 + TypeScript + Vite: Back-Office" />-->
 </template>
 
 <style lang="less">

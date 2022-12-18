@@ -7,16 +7,18 @@
 // Variables
 // ========================================================================
 
-@sidebar-background-color:                      #6f51ff;
+@sidebar-background-color:                      #ffffff;
 @sidebar-item-color:                            #f5f3ff;
 @sidebar-border-radius:                         0 25px 25px 0;
+@strip-border-radius:                           0 8px 8px 0;
 
 @sidebar-logo-area-padding:                     40px 0 0 0;
 @sidebar-brand-area-height:                     38px;
 @sidebar-brand-area-padding:                    56px 26px 0 26px;
 
-@strip-width:                                   60px;
-@strip-background-color:                        #6045e2;
+@strip-width:                                   80px;
+@strip-background-color:                        #f2f3f7;
+@strip-margin:                                  3px;
 @strip-container-padding-top:                   70px;
 @strip-container-item-height:                   52px;
 @strip-container-item-color:                    @sidebar-item-color;
@@ -60,11 +62,10 @@
 }
 
 /*
- * Sidebar & Strip Radius
+ * Sidebar Radius
  */
 
-.pr-sidebar,
-.pr-sidebar-strip {
+.pr-sidebar {
     border-radius: @sidebar-border-radius;
 }
 
@@ -98,7 +99,6 @@
  */
 
 /* 1 */
-.pr-sidebar-strip,
 .pr-sidebar-wrapper {
     height: 100%;
 }
@@ -125,9 +125,19 @@
 /* Sidebar Strip
  ========================================================================== */
 
+/* Wrapper
+ * 1. Position
+ * 2. Styles
+ */
+
 .pr-sidebar-strip {
-    left: 0;
+    /* 1 */
+    top: @strip-margin;
+    bottom: @strip-margin;
+    left: @strip-margin;
+    /* 2 */
     background-color: @strip-background-color;
+    border-radius: @strip-border-radius;
 }
 
 .pr-sidebar-strip-container {
