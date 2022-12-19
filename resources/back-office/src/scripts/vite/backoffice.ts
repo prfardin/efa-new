@@ -7,6 +7,8 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import vueI18n from '@intlify/vite-plugin-vue-i18n'
 import compileIcons from '../build/icons';
 
+export const compiledIcons = Promise.resolve(compileIcons('./resources/back-office/src/images/core/unicons/monochrome/*'))
+
 // all files in publicDir path will be copied to build path as the same they are
 export const publicDir: string = 'resources/back-office/public';
 
@@ -50,13 +52,13 @@ export function laravelVite( additionalInput: string | string[] = 'resources/bac
     });
 }
 
-export function pluginsFunc(laravel: any = laravelVite(), plugins?: Plugin | PluginOption[]): PluginOption[] {
+export function pluginsFunc(laravel: any = laravelVite(), icons: any = compiledIcons, plugins?: Plugin | PluginOption[]): PluginOption[] {
     return [
         laravel,
         vueVite,
         vueI18nVite,
         viteVueJsx,
-        compileIcons,
+        icons,
         plugins
     ];
 }

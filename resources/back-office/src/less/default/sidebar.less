@@ -8,25 +8,24 @@
 // ========================================================================
 
 @sidebar-background-color:                      #ffffff;
-@sidebar-item-color:                            #f5f3ff;
+@sidebar-item-color:                            #5e6b86;
 @sidebar-border-radius:                         0 25px 25px 0;
 @strip-border-radius:                           0 8px 8px 0;
 
-@sidebar-logo-area-padding:                     40px 0 0 0;
+@sidebar-logo-area-padding:                     16px 0 0 0;
 @sidebar-brand-area-height:                     38px;
 @sidebar-brand-area-padding:                    56px 26px 0 26px;
 
 @strip-width:                                   80px;
 @strip-background-color:                        #f2f3f7;
 @strip-margin:                                  3px;
-@strip-container-padding-top:                   70px;
 @strip-container-item-height:                   52px;
 @strip-container-item-color:                    @sidebar-item-color;
 @strip-container-item-font-size:                1.28rem;
 @strip-container-transition-duration:           0.2s;
 
-@container-margin-top:                          120px;
-@container-margin-bottom:                       10px;
+@container-margin-top:                          20px;
+@container-margin-bottom:                       20px;
 @container-width:                               210px;
 @sidebar-wrapper-margin-left:                   @strip-width;
 @container-padding:                             50px 0 24px 24px;
@@ -140,10 +139,6 @@
     border-radius: @strip-border-radius;
 }
 
-.pr-sidebar-strip-container {
-    padding-top: @strip-container-padding-top;
-}
-
 /* Items
  * 1. Center content vertically, e.g. an icon
  * 2. Dimensions
@@ -164,6 +159,7 @@
     font-size: @strip-container-item-font-size;
     transition: @strip-container-transition-duration;
 }
+
 
 /*
  * Items icon and content
@@ -192,44 +188,6 @@
 /* 4 */
 .pr-sidebar-strip-container .uk-nav > li {
     margin-bottom: 5px;
-}
-
-
-/*
- * Items styles
- */
-
-/* Default Item */
-.pr-sidebar-strip-container .uk-nav > .pr-nav-default > a > span,
-.pr-sidebar-strip-container nav > .uk-nav-item.pr-nav-default > a > span {
-    border: 1px solid rgba(250, 249, 253, 0.2);
-}
-
-/* A */
-.pr-sidebar-strip-container .uk-nav > .a > a > span,
-.pr-sidebar-strip-container nav > .uk-nav-item.a > a > span {
-    background-image: linear-gradient(135deg,#e4de65 10%,#e3c747);
-    box-shadow: 0 12px 15px 0 rgba(228,222,101,0.2);
-}
-
-/* B */
-.pr-sidebar-strip-container .uk-nav > .b > a > span,
-.pr-sidebar-strip-container nav > .uk-nav-item.b > a > span {
-    background-image: linear-gradient(135deg,#d3a9fe 10%,#af79fd);
-    box-shadow: 0 12px 15px 0 rgba(211,169,254,0.2);
-}
-
-/* C */
-.pr-sidebar-strip-container .uk-nav > .c > a > span,
-.pr-sidebar-strip-container nav > .uk-nav-item.c > a > span {
-    background-image: linear-gradient(135deg,#ff9dbc 10%,#f06998);
-    box-shadow: 0 12px 15px 0 rgba(255,157,188,0.2);
-}
-
-/* Must Remove */
-.pr-sidebar-strip-container .uk-nav > .c:hover > a > span {
-    background-image: linear-gradient(135deg,#ff9dbc 10%,#f06998);
-    box-shadow: 0 12px 15px 0 rgba(255,157,188,0.2);
 }
 
 /* Active item style */
@@ -283,39 +241,6 @@
     border-top-left-radius: @container-item-hover-border-left-radius;
 }
 
-/*
- * Nav active svg
- * May remove
- */
-.pr-sidebar-container .nav-activator {
-    top: var(--y);
-    margin-top: -23px;
-    left: 0;
-    transition: top .6s ease;
-    transition-delay: 0.625s;
-}
-
-// may remove
-.pr-sidebar-container .nav-activator > svg {
-    content: '';
-    right: 0;
-    display: block;
-    height: 90px;
-}
-
-// may remove
-.pr-sidebar-container [class*='anim-icon-'] .uk-icon {
-    height: 17px;
-    width: 17px;
-    margin-left: 8px;
-}
-
-// may remove
-.pr-sidebar-container [class*='anim-icon-'] .uk-icon path {
-    stroke: rgb(248, 247, 251);
-    fill: rgb(248, 247, 251);
-}
-
 
 /* Sidebar Logo
  ========================================================================== */
@@ -328,7 +253,6 @@
 .pr-logo-area,
 .pr-brand-area {
     /* 1 */
-    position: absolute;
     box-sizing: border-box;
     /* 2 */
     width: 100%;

@@ -4,7 +4,7 @@ import Wrapper from './wrapper.vue'
 </script>
 
 <template>
-    <div class="pr-sidebar uk-light">
+    <div class="pr-sidebar">
         <strip />
         <wrapper />
     </div>
