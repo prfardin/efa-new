@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import PrButton from '@bc/core/button.vue'
 
 </script>
 
@@ -9,21 +10,25 @@
         </div>
         <div class="pr-sidebar-strip-container">
             <nav>
-                <ul class="uk-nav">
-                    <li class="uk-active">
-                        <a href="#" uk-tooltip="title: داشبورد; pos: left; offset: 3;duration: 200" uk-icon="dashboard"></a>
+                <ul uk-nav>
+                    <li>
+                        <pr-button icon="dashboard" to="/about" />
+<!--                        <a href="#" uk-icon="dashboard"></a>-->
                     </li>
-                    <li class="uk-active">
-                        <a href="#" uk-tooltip="title: داشبورد; pos: left; offset: 3;duration: 200" uk-icon="comments-alt"></a>
+                    <li>
+                        <a href="#" uk-icon="comments-alt"></a>
                     </li>
-                    <li class="uk-active">
-                        <a href="#" uk-tooltip="title: داشبورد; pos: left; offset: 3;duration: 200" uk-icon="dashboard"></a>
+                    <li>
+                        <a href="#" uk-icon="calendar-alt"></a>
                     </li>
-                    <li class="uk-active">
-                        <a href="#" uk-tooltip="title: داشبورد; pos: left; offset: 3;duration: 200" uk-icon="dashboard"></a>
+                    <li>
+                        <a href="#" uk-icon="desktop-cloud-alt"></a>
                     </li>
-                    <li class="uk-active">
-                        <a href="#" uk-tooltip="title: داشبورد; pos: left; offset: 3;duration: 200" uk-icon="dashboard"></a>
+                    <li>
+                        <a href="#" uk-icon="users-alt"></a>
+                    </li>
+                    <li>
+                        <a href="#" uk-tooltip="title: داشبورد; pos: left; offset: 3;duration: 200" uk-icon="chart-pie-alt"></a>
                     </li>
                 </ul>
                 <div class="line" style="top: 5px; transform: translate(-50%, 0px); left: 50%; width: 42px; height: 42px; z-index: -1; border-radius: 8px; background: rgb(255, 255, 255);"></div></nav>

@@ -1,13 +1,6 @@
 <script setup lang="ts">
-/**
- * do setIcon and watch if icon props changed.
- * we need to know which method is better,
- * do setIcon and watch [props.icon, props.ratio] or just watchEffect
- * for now watchEffect used cause its clean
- */
-import { ref, onMounted, watchEffect } from 'vue'
-import { icon, IconElement } from '@bs/scripts/util/util'
-import { IconPropsType } from "@bs/scripts/util/props";
+import { useIcon } from "@bs/scripts/util/util";
+import { ref } from 'vue'
 
 // must remove with future release of vue and must use as
 // import { IconPropsType } from "@bs/scripts/util/props";
@@ -20,15 +13,9 @@ const props = withDefaults(defineProps<IconPropsType>(), {
     tag: 'span'
 })
 
-const el = ref<IconElement>(null)
+const el = ref<HTMLElement>(null)
 
-function setIcon() {
-    icon(el.value, props.icon, props.ratio)
-}
-
-onMounted(() => {
-    watchEffect(setIcon)
-})
+useIcon(el, props.icon, props.ratio)
 </script>
 
 <template>
