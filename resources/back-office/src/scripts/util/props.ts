@@ -4,8 +4,6 @@
  * vue not support export type-based declaration at this time,
  * so we will use this props as export props for components with future release of vue
  */
-
-import { ComponentPropsOptions } from "@vue/runtime-core";
 import { ButtonClassType } from "./classes";
 
 /**

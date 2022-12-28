@@ -6,7 +6,7 @@
  * with no span tag, so we most prevent from creating additional tag
  * when there is no default slots defined in future
  */
-import { computed, useSlots } from "vue";
+import { useSlots, computed } from "vue";
 import { buttonClassObject } from "@bs/scripts/util/classes";
 import PrIcon from "@bc/core/icon.vue";
 
