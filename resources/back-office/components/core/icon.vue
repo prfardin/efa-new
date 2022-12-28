@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useIcon } from "@bs/scripts/util/util";
-import { ref } from 'vue'
+import { defineProps } from 'vue'
 
 // must remove with future release of vue and must use as
 // import { IconPropsType } from "@bs/scripts/util/props";
@@ -13,9 +13,8 @@ const props = withDefaults(defineProps<IconPropsType>(), {
     tag: 'span'
 })
 
-const el = ref<HTMLElement>(null)
-
-useIcon(el, props.icon, props.ratio)
+// get template ref from composable component: useIcon
+const el = useIcon(props.icon, props.ratio)
 </script>
 
 <template>

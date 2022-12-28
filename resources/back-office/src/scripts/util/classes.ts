@@ -27,7 +27,7 @@ export interface ButtonClassType {
 export const defaultButtonCls = 'uk-button';
 export const defaultPrButtonCls = 'pr-button';
 
-export function buttonClassObject(props: ButtonClassType, buttonCls: string = defaultButtonCls, prButtonCls: string = defaultPrButtonCls) {
+export function buttonClassObject(props: ButtonClassType, hasDefaultSlot: boolean = true, buttonCls: string = defaultButtonCls, prButtonCls: string = defaultPrButtonCls) {
     return [
         buttonCls,
         {
@@ -39,7 +39,7 @@ export function buttonClassObject(props: ButtonClassType, buttonCls: string = de
             [`${buttonCls}-rounded`]: props.rounded,
             [`${buttonCls}-circle`]: props.circle,
             [`${buttonCls}-collapse`]: props.collapse,
-            [`${prButtonCls}-has-icon`]: props.icon,
+            [`${prButtonCls}-has-icon`]: props.icon && hasDefaultSlot,
         }
     ]
 }

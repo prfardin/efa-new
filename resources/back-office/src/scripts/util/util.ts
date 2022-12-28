@@ -1,5 +1,5 @@
 import UIkit from "uikit";
-import { Ref, onMounted, watchEffect } from "vue";
+import {Ref, onMounted, watchEffect, ref} from "vue";
 
 /**
  * Component Composable icon: for icon component, button component etc.
@@ -13,9 +13,11 @@ import { Ref, onMounted, watchEffect } from "vue";
 export type IconElement =  object | Ref | HTMLElement | string
 
 // icon component
-export function useIcon(el: any, icon: string | undefined, ratio?: number | undefined) {
+export function useIcon(icon: string | undefined, ratio?: number | undefined) {
+    const iconEl: any = ref(null)
+
     function setIcon() {
-        return UIkit.icon(el.value, {
+        iconEl.value = UIkit.icon(iconEl.value, {
             icon: icon,
             ratio: ratio
         });
@@ -23,6 +25,9 @@ export function useIcon(el: any, icon: string | undefined, ratio?: number | unde
 
     // do setIcon and watch props change
     onMounted(() => {
-        watchEffect(setIcon)
+        // watchEffect(setIcon)
+        setIcon()
     })
+
+    return iconEl
 }

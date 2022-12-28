@@ -13,8 +13,8 @@ import PrIcon from '@bc/core/icon.vue'
                     <img class="uk-margin-auto" alt="Vue logo" src="@b/src/images/logo.png" />
                 </div>
                 <div>
-                    <pr-button to="/" icon="dashboard" active-class="uk-button-primary">{{ $t('Dashboard') }}</pr-button> |
-                    <pr-button to="/about" icon="user" active-class="uk-button-primary">Go to About</pr-button>
+                    <pr-button to="/" icon="dashboard" default active-class="uk-button-primary">{{ $t('Dashboard') }}</pr-button> |
+                    <pr-button to="/about" icon="user" default active-class="uk-button-primary">Go to About</pr-button>
                     <pr-icon icon="dashboard" />
                 </div>
             </div>
