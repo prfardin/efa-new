@@ -11,7 +11,6 @@
 /**
  * Button Classes
  */
-
 export interface ButtonClassType {
     default?: boolean,
     primary?: boolean,
@@ -39,7 +38,35 @@ export function buttonClassObject(props: ButtonClassType, hasDefaultSlot: boolea
             [`${buttonCls}-rounded`]: props.rounded,
             [`${buttonCls}-circle`]: props.circle,
             [`${buttonCls}-collapse`]: props.collapse,
-            [`${prButtonCls}-has-icon`]: props.icon && hasDefaultSlot,
+            [`${prButtonCls}-has-icon`]: props.icon && hasDefaultSlot
         }
     ]
 }
+
+
+/**
+ * Link Classes
+ */
+export interface LinkClassType {
+    muted?: boolean,
+    text?: boolean,
+    heading?: boolean,
+    reset?: boolean,
+    toggle?: boolean,
+    icon?: string,
+}
+
+export const defaultLinkCls = 'uk-link';
+export const defaultPrLinkCls = 'pr-link';
+
+export function linkClassObject(props: LinkClassType, hasDefaultSlot: boolean = true, linkCls: string = defaultLinkCls, prLinkCls: string = defaultPrLinkCls) {
+    return {
+        [`${linkCls}-muted`]: props.muted,
+        [`${linkCls}-text`]: props.text,
+        [`${linkCls}-heading`]: props.heading,
+        [`${linkCls}-reset`]: props.reset,
+        [`${linkCls}-toggle`]: props.toggle,
+        [`${prLinkCls}-has-icon`]: props.icon && hasDefaultSlot
+    }
+}
+

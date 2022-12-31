@@ -4,30 +4,27 @@
  * it will create the span tag and put icon svg into it
  * but when there is no default slots icons must compile directly into self Button
  * with no span tag, so we most prevent from creating additional tag
- * when there is no default slots defined in future
+ * when there is no default slots defined in future (just link button component).
  */
 import { useSlots, computed } from "vue";
-import { buttonClassObject } from "@bs/scripts/util/classes";
+import { linkClassObject } from "@bs/scripts/util/classes";
 import PrIcon from "@bc/core/icon.vue";
 
 // must remove with future release of vue and must use as
-// import { ButtonPropsType } from "@bs/scripts/util/props";
-interface ButtonPropsType {
+// import { LinkPropsType } from "@bs/scripts/util/props";
+interface LinkPropsType {
     tag?: 'router-link' | 'a',
     to?: string,
     href?: string,
-    default?: boolean,
-    primary?: boolean,
-    secondary?: boolean,
     muted?: boolean,
-    xSmall?: boolean,
-    rounded?: boolean,
-    circle?: boolean,
-    collapse?: boolean,
+    text?: boolean,
+    heading?: boolean,
+    reset?: boolean,
+    toggle?: boolean,
     icon?: string,
     ratio?: number,
 }
-const props = withDefaults(defineProps<ButtonPropsType>(), {
+const props = withDefaults(defineProps<LinkPropsType>(), {
     tag: 'router-link'
 })
 
@@ -35,13 +32,15 @@ const props = withDefaults(defineProps<ButtonPropsType>(), {
 const slots = useSlots()
 
 // define button classes from defined props
-const buttonClass = computed(() => buttonClassObject(props, !!slots.default))
+const linkClass = computed(() => linkClassObject(props, !!slots.default))
 </script>
 
 <template>
-    <component :is="tag" :to="to" :href="href" :class="buttonClass">
-        <pr-icon :icon="icon" :ratio="ratio" />
-        <span v-if="slots.default"><slot /></span>
+    <component :is="tag" :to="to" :href="href" :class="linkClass">
+        <template v-if="icon">
+            <pr-icon :icon="icon" :ratio="ratio" />
+            <span v-if="slots.default"><slot /></span>
+        </template>
         <slot v-else />
     </component>
 </template>

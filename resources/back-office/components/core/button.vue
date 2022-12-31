@@ -13,7 +13,7 @@ import PrIcon from "@bc/core/icon.vue";
 // must remove with future release of vue and must use as
 // import { ButtonPropsType } from "@bs/scripts/util/props";
 interface ButtonPropsType {
-    tag?: 'router-link' | 'a',
+    tag?: 'router-link' | 'a' | 'button',
     to?: string,
     href?: string,
     default?: boolean,
@@ -40,8 +40,10 @@ const buttonClass = computed(() => buttonClassObject(props, !!slots.default))
 
 <template>
     <component :is="tag" :to="to" :href="href" :class="buttonClass">
-        <pr-icon :icon="icon" :ratio="ratio" />
-        <span v-if="slots.default"><slot /></span>
+        <template v-if="icon">
+            <pr-icon :icon="icon" :ratio="ratio" />
+            <span v-if="slots.default"><slot /></span>
+        </template>
         <slot v-else />
     </component>
 </template>

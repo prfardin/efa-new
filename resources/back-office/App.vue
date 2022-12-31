@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Sidebar from './components/sidebar/sidebar.vue'
 import PrButton from '@bc/core/button.vue'
-import PrIcon from '@bc/core/icon.vue'
+import PrLink from '@bc/core/link.vue'
 </script>
 
 <template>
@@ -13,9 +13,9 @@ import PrIcon from '@bc/core/icon.vue'
                     <img class="uk-margin-auto" alt="Vue logo" src="@b/src/images/logo.png" />
                 </div>
                 <div>
-                    <pr-button to="/" icon="dashboard" default active-class="uk-button-primary">{{ $t('Dashboard') }}</pr-button> |
-                    <pr-button to="/about" icon="user" default active-class="uk-button-primary">Go to About</pr-button>
-                    <pr-icon icon="dashboard" />
+                    <pr-button to="/" default>{{ $t('Dashboard') }}</pr-button> |
+                    <pr-button to="/about" icon="user" default>Go to About</pr-button> |
+                    <pr-link icon="drill" to="/about">Test</pr-link>
                 </div>
             </div>
         </div>
