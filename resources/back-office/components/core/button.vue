@@ -21,11 +21,14 @@ interface ButtonPropsType {
     secondary?: boolean,
     muted?: boolean,
     xSmall?: boolean,
+    square?: boolean,
     rounded?: boolean,
     circle?: boolean,
     collapse?: boolean,
     icon?: string,
+    iconButton?: boolean,
     ratio?: number,
+    width?: string
 }
 const props = withDefaults(defineProps<ButtonPropsType>(), {
     tag: 'router-link'

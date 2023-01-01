@@ -28,9 +28,10 @@
 // New
 //
 
-@button-text-transform:                         uppercase;
+@button-text-transform:                         capitalize;
 
 @button-border-width:                           @global-border-width;
+@button-border-radius:                          @global-border-radius;
 
 @button-default-border:                         @global-border;
 @button-default-hover-border:                   darken(@global-border, 20%);
@@ -61,6 +62,7 @@
 // ========================================================================
 
 .hook-button() {
+    border-radius: @global-border-radius;
     text-transform: @button-text-transform;
     transition: 0.1s ease-in-out;
     transition-property: color, background-color, border-color;
@@ -224,9 +226,10 @@
     }
 
     /* Circle */
-    .uk-button-circle {
-        border-radius: 50%;
-    }
+    .uk-button-circle { border-radius: 50%; }
+
+    /* Square */
+    .uk-button-square { border-radius: 0; }
 
 
     /* Size modifiers
@@ -238,9 +241,7 @@
         font-size: @button-xsmall-font-size;
     }
 
-    .uk-button-xsmall {
-        padding: 0 @button-xsmall-padding-horizontal;
-    }
+    .uk-button-xsmall { padding: 0 @button-xsmall-padding-horizontal; }
 
 
     /* Button Has Icon

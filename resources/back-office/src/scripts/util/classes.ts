@@ -17,10 +17,13 @@ export interface ButtonClassType {
     secondary?: boolean,
     muted?: boolean,
     xSmall?: boolean,
+    square?: boolean,
     rounded?: boolean,
     circle?: boolean,
     collapse?: boolean,
     icon?: string,
+    iconButton?: boolean,
+    width?: string
 }
 
 export const defaultButtonCls = 'uk-button';
@@ -28,17 +31,20 @@ export const defaultPrButtonCls = 'pr-button';
 
 export function buttonClassObject(props: ButtonClassType, hasDefaultSlot: boolean = true, buttonCls: string = defaultButtonCls, prButtonCls: string = defaultPrButtonCls) {
     return [
-        buttonCls,
+        props.width ? `uk-width-${props.width}` : '',
         {
+            [defaultButtonCls]: !props.iconButton,
             [`${buttonCls}-default`]: props.default,
             [`${buttonCls}-primary`]: props.primary,
             [`${buttonCls}-secondary`]: props.secondary,
             [`${buttonCls}-muted`]: props.muted,
             [`${buttonCls}-xsmall`]: props.xSmall,
+            [`${buttonCls}-square`]: props.square,
             [`${buttonCls}-rounded`]: props.rounded,
             [`${buttonCls}-circle`]: props.circle,
             [`${buttonCls}-collapse`]: props.collapse,
-            [`${prButtonCls}-has-icon`]: props.icon && hasDefaultSlot
+            [`${prButtonCls}-has-icon`]: props.icon && hasDefaultSlot,
+            [`uk-icon-button`]: props.iconButton,
         }
     ]
 }

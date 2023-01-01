@@ -12,7 +12,7 @@ import PrNav from '@bc/core/nav.vue'
         <div class="pr-sidebar-strip-container">
             <nav>
                 <pr-nav>
-                    <li><pr-link to="/about" icon="dashboard" /></li>
+                    <li><pr-link to="/about" icon="create-dashboard" /></li>
                     <li><pr-link to="/about" icon="comments-alt" /></li>
                     <li><pr-link to="/about" icon="calendar-alt" /></li>
                     <li><pr-link to="/about" icon="desktop-cloud-alt" /></li>
