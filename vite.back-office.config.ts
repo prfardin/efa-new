@@ -1,7 +1,16 @@
 import { PluginOption, defineConfig } from 'vite';
 import { options } from './resources/back-office/src/scripts/vite/options';
+import { monochromeIcons, lineIcons } from "./resources/back-office/src/scripts/build/icons";
 import * as defaultOptions from './resources/back-office/src/scripts/vite/backoffice';
 import rtlcss from './resources/back-office/src/scripts/build/rtlcss';
+
+// set icons
+// monochromeIcons is or default icons,
+// so we don't need to define icons if only use monochrome icons
+// must change in future
+function setIcon() {
+    return defaultOptions.defaultIcons([ monochromeIcons, lineIcons ])
+}
 
 // handle rtlcss async type error
 // must change in future
@@ -13,7 +22,7 @@ const laravelVite = defaultOptions.laravelVite([
     'resources/back-office/src/cache/default-rtl.less'
 ]);
 
-const pluginOptions = defaultOptions.pluginsFunc(laravelVite, rtlcssResolve);
+const pluginOptions: PluginOption = defaultOptions.pluginsFunc(laravelVite,rtlcssResolve);
 
 const config = {
     publicDir: defaultOptions.publicDir,

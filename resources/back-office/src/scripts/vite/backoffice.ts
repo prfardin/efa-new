@@ -5,17 +5,11 @@ import laravel from "laravel-vite-plugin";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import vueI18n from '@intlify/vite-plugin-vue-i18n'
-import compileIcons from '../build/icons';
+import compileIcons, {monochromeIcons, lineIcons, IconsDir} from '../build/icons';
 
-export const compiledIcons = Promise.resolve(compileIcons([
-    {
-        dir: './resources/back-office/src/images/core/unicons/line/*',
-        prefix: 'line-'
-    },
-    {
-        dir: './resources/back-office/src/images/core/unicons/monochrome/*',
-    },
-]))
+export function defaultIcons(sources: IconsDir[] = [ monochromeIcons, lineIcons ]) {
+    return Promise.resolve(compileIcons(sources))
+}
 
 // all files in publicDir path will be copied to build path as the same they are
 export const publicDir: string = 'resources/back-office/public';
@@ -32,7 +26,7 @@ export const vueVite = vue({
 
             // The Vue plugin will parse absolute URLs and treat them
             // as absolute paths to files on disk. Setting this to
-            // `false` will leave absolute URLs un-touched so they can
+            // `false` will leave absolute URLs un-touched, so they can
             // reference assets in the public directly as expected.
             includeAbsolute: false,
         },
@@ -60,7 +54,7 @@ export function laravelVite( additionalInput: string | string[] = 'resources/bac
     });
 }
 
-export function pluginsFunc(laravel: any = laravelVite(), icons: any = compiledIcons, plugins?: Plugin | PluginOption[]): PluginOption[] {
+export function pluginsFunc(laravel: any = laravelVite(), icons: any = defaultIcons(), plugins?: Plugin | PluginOption[]): PluginOption[] {
     return [
         laravel,
         vueVite,

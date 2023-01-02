@@ -1,10 +1,26 @@
 import { compile, icons } from './util';
 
-export default async function compileIcons(folders: { dir: string, prefix?: string }[]) {
+// Icons dir type
+export interface IconsDir {
+    dir: string,
+    prefix?: string
+}
+
+// we use prefix to prevent similar icon name with different style
+// Monochrome is our default icon
+export const monochromeIcons: IconsDir = {
+    dir: './resources/back-office/src/images/core/unicons/monochrome/*'
+}
+export const lineIcons: IconsDir = {
+    dir: './resources/back-office/src/images/core/unicons/line/*',
+    prefix: 'line-'
+}
+
+export default async function compileIcons(sources: IconsDir[]) {
 
     const files = await Promise.all(
-        folders.map(async (folder: { dir: string, prefix?: string }) => {
-            return await icons(`${folder.dir}/*.svg`, folder.prefix)
+        sources.map(async (src: IconsDir) => {
+            return await icons(`${src.dir}/*.svg`, src.prefix)
         })
     )
 

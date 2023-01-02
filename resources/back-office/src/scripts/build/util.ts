@@ -93,7 +93,7 @@ export async function icons(src: string, prefix: string = ''): Promise<string> {
         ));
 
     return files.reduce((result: any, file: string, i: number) => {
-            result[prefix + basename(file, '.svg')] = icons[i];
-            return result;
-        }, {});
+        result[prefix + basename(file, '.svg')] = icons[i];
+        return result;
+    }, {});
 }
