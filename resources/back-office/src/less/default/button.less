@@ -57,6 +57,14 @@
 @button-xsmall-has-icon-padding-left:           (@global-xsmall-gutter / 2);
 @button-rounded-radius:                         @global-rounded-radius;
 
+@icon-primary-color-light:                      @global-icon-primary-color-light;
+
+@icon-secondary-color-light:                    @global-icon-secondary-color-light;
+
+@icon-tertiary-color-light:                     @global-icon-tertiary-color-light;
+
+@icon-quaternary-color-light:                   @global-icon-quaternary-color-light;
+
 
 // Component
 // ========================================================================
@@ -86,7 +94,25 @@
 // Primary
 //
 
-.hook-button-primary() { border: @button-border-width solid transparent; }
+.hook-button-primary() {
+    border: @button-border-width solid transparent;
+
+    .pr-icon-primary {
+        color: @icon-primary-color-light;
+    }
+
+    .pr-icon-secondary {
+        color: @icon-secondary-color-light;
+    }
+
+    .pr-icon-tertiary {
+        color: @icon-tertiary-color-light;
+    }
+
+    .pr-icon-quaternary {
+        color: @icon-quaternary-color-light;
+    }
+}
 
 .hook-button-primary-hover() {}
 
@@ -348,5 +374,4 @@
         background-color: @inverse-button-muted-active-background;
         color: @inverse-button-muted-active-color;
     }
-
 }

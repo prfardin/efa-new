@@ -55,7 +55,7 @@ export async function compile(file: string, dest: string, { replaces }: { replac
 }
 
 // read all svg file in src and compile theme in json
-export async function icons(src: string): Promise<string> {
+export async function icons(src: string, prefix: string = ''): Promise<string> {
     const options: any = {
         plugins: [
             {
@@ -92,12 +92,8 @@ export async function icons(src: string): Promise<string> {
             })
         ));
 
-    return JSON.stringify(
-        files.reduce((result: any, file: string, i: number) => {
-            result[basename(file, '.svg')] = icons[i];
+    return files.reduce((result: any, file: string, i: number) => {
+            result[prefix + basename(file, '.svg')] = icons[i];
             return result;
-        }, {}),
-        null,
-        '    '
-    );
+        }, {});
 }

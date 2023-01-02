@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import PrButton from '@bc/core/button.vue'
+import PrLink from '@bc/core/link.vue'
+import PrNav from '@bc/core/nav.vue'
 
 </script>
 
@@ -11,14 +13,9 @@ import PrButton from '@bc/core/button.vue'
         </div>
         <div class="pr-sidebar-container">
             <nav>
-                <ul class="uk-nav">
-                    <li>
-                        <a>
-                            <span uk-icon="dashboard"></span>
-                            <span>Dashboard</span>
-                        </a>
-                    </li>
-                </ul>
+                <pr-nav>
+                    <li><pr-link to="/about" icon="line-dashboard">Dashboard</pr-link></li>
+                </pr-nav>
             </nav>
         </div>
     </div>

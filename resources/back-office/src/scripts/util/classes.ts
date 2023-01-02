@@ -66,13 +66,15 @@ export const defaultLinkCls = 'uk-link';
 export const defaultPrLinkCls = 'pr-link';
 
 export function linkClassObject(props: LinkClassType, hasDefaultSlot: boolean = true, linkCls: string = defaultLinkCls, prLinkCls: string = defaultPrLinkCls) {
-    return {
-        [`${linkCls}-muted`]: props.muted,
-        [`${linkCls}-text`]: props.text,
-        [`${linkCls}-heading`]: props.heading,
-        [`${linkCls}-reset`]: props.reset,
-        [`${linkCls}-toggle`]: props.toggle,
-        [`${prLinkCls}-has-icon`]: props.icon && hasDefaultSlot
-    }
+    return [
+        {
+            [`${linkCls}-muted`]: props.muted,
+            [`${linkCls}-text`]: props.text,
+            [`${linkCls}-heading`]: props.heading,
+            [`${linkCls}-reset`]: props.reset,
+            [`${linkCls}-toggle`]: props.toggle,
+            [`${prLinkCls}-has-icon`]: props.icon && hasDefaultSlot
+        }
+    ]
 }
 

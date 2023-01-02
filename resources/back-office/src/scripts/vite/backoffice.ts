@@ -7,7 +7,15 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import vueI18n from '@intlify/vite-plugin-vue-i18n'
 import compileIcons from '../build/icons';
 
-export const compiledIcons = Promise.resolve(compileIcons('./resources/back-office/src/images/core/unicons/monochrome/*'))
+export const compiledIcons = Promise.resolve(compileIcons([
+    {
+        dir: './resources/back-office/src/images/core/unicons/line/*',
+        prefix: 'line-'
+    },
+    {
+        dir: './resources/back-office/src/images/core/unicons/monochrome/*',
+    },
+]))
 
 // all files in publicDir path will be copied to build path as the same they are
 export const publicDir: string = 'resources/back-office/public';
