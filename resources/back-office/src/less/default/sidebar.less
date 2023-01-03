@@ -12,9 +12,11 @@
 @sidebar-border-radius:                         0 25px 25px 0;
 @strip-border-radius:                           0 8px 8px 0;
 
-@sidebar-logo-area-padding:                     16px 0 0 0;
-@sidebar-brand-area-height:                     38px;
-@sidebar-brand-area-padding:                    56px 26px 0 26px;
+@strip-header-padding:                          20px 0 0 0;
+@wrapper-header-height:                         38px;
+@wrapper-header-padding-right:                  26px;
+@wrapper-header-padding-left:                   26px;
+@wrapper-header-padding:                        100px @wrapper-header-padding-right 0 @wrapper-header-padding-left;
 
 @strip-width:                                   80px;
 @strip-background-color:                        #f2f3f7;
@@ -24,11 +26,13 @@
 @strip-container-item-font-size:                0.875rem;
 @strip-container-transition-duration:           0.2s;
 
-@container-margin-top:                          26px;
-@container-margin-bottom:                       26px;
+@strip-margin-top:                              20px;
+@strip-margin-bottom:                           0;
+@container-margin-top:                          0;
+@container-margin-bottom:                       0;
 @container-width:                               210px;
 @sidebar-wrapper-margin-left:                   @strip-width;
-@container-padding:                             50px 0 24px 24px;
+@container-padding:                             10px (@wrapper-header-padding-right + 0px) 10px (@wrapper-header-padding-left + 0px);
 @container-item-height:                         @strip-container-item-height;
 @container-item-font-size:                      @strip-container-item-font-size;
 @container-item-padding:                        13px 18px;
@@ -108,7 +112,10 @@
 }
 
 /* 2 */
-.pr-sidebar-strip-container,
+.pr-sidebar-strip-container {
+    margin-top: @strip-margin-top;
+    margin-bottom: @strip-margin-bottom;
+}
 .pr-sidebar-container {
     margin-top: @container-margin-top;
     margin-bottom: @container-margin-bottom;
@@ -246,12 +253,12 @@
  ========================================================================== */
 
 /* Area
- * 1. Set both of brand and logo at top of sidebar
+ * 1. Set both of strip and wrapper at top of sidebar
  * 2. Set area to fit in strip and sidebar container
  * 3. Position area from top
  */
-.pr-logo-area,
-.pr-brand-area {
+.pr-sidebar-strip-header,
+.pr-sidebar-wrapper-header {
     /* 1 */
     box-sizing: border-box;
     /* 2 */
@@ -259,12 +266,12 @@
 }
 
 /* 3 */
-.pr-logo-area {
-    padding: @sidebar-logo-area-padding;
+.pr-sidebar-strip-header {
+    padding: @strip-header-padding;
 }
 
 /* 3 */
-.pr-brand-area {
-    min-height: @sidebar-brand-area-height;
-    padding: @sidebar-brand-area-padding;
+.pr-sidebar-wrapper-header {
+    min-height: @wrapper-header-height;
+    padding: @wrapper-header-padding;
 }

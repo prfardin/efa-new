@@ -6,7 +6,7 @@ import PrNav from '@bc/core/nav.vue'
 
 <template>
     <div class="pr-sidebar-strip uk-position-z-index">
-        <div class="pr-logo-area uk-flex uk-flex-top uk-flex-center">
+        <div class="pr-sidebar-strip-header uk-flex uk-flex-top uk-flex-center">
             <span uk-icon="user" style="color: white;border-radius: 100%;background: radial-gradient(#9adefe 0%, #03a9f4 50%);width: 44px;height: 44px;display: flex;align-items: center;justify-content: center;"></span>
         </div>
         <div class="pr-sidebar-strip-container">

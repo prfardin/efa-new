@@ -50,7 +50,5 @@ export interface LinkPropsType extends LinkClassType {
  * Nav Props Types
  */
 export interface NavPropsType {
-    tag?: 'span' | string,
-    icon: string,
-    ratio?: number
+    hasNavTag?: boolean,
 }

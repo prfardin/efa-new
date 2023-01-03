@@ -5,10 +5,10 @@ import { ref, onMounted } from 'vue'
 // must remove with future release of vue and must use as
 // import { NavPropsType } from "@bs/scripts/util/props";
 export interface NavPropsType {
-    hasNav?: boolean,
+    hasNavTag?: boolean,
 }
 const props = withDefaults(defineProps<NavPropsType>(), {
-    hasNav: false
+    hasNavTag: false
 })
 
 // define template ref
@@ -28,7 +28,14 @@ onMounted(() => {
 </script>
 
 <template>
-    <ul ref="el">
+    <template v-if="hasNavTag">
+        <nav>
+            <ul ref="el">
+                <slot />
+            </ul>
+        </nav>
+    </template>
+    <ul v-else ref="el">
         <slot />
     </ul>
 </template>
