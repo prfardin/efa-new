@@ -12,11 +12,12 @@
 @sidebar-border-radius:                         0 25px 25px 0;
 @strip-border-radius:                           0 8px 8px 0;
 
+@wrapper-background-color:                      #161719;
 @strip-header-padding:                          52px 0 0 0;
 @wrapper-header-height:                         38px;
-@wrapper-header-padding-right:                  26px;
-@wrapper-header-padding-left:                   26px;
-@wrapper-header-padding:                        100px @wrapper-header-padding-right 0 @wrapper-header-padding-left;
+@wrapper-header-padding-right:                  22px;
+@wrapper-header-padding-left:                   22px;
+@wrapper-header-padding:                        52px @wrapper-header-padding-right 0 @wrapper-header-padding-left;
 
 @strip-width:                                   78px;
 @strip-background-color:                        #ffffff;
@@ -131,7 +132,8 @@
 /* Sidebar Strip
  ========================================================================== */
 
-/* Wrapper
+/*
+ * Strip
  * 1. Position
  * 2. Styles
  */
@@ -213,10 +215,14 @@
 /*
  * Wrapper
  * 1. Make difference between sidebar and strip
+ * 2. Styles
  */
 .pr-sidebar-wrapper {
     /* 1 */
     margin-left: @sidebar-wrapper-margin-left;
+    /* 2 */
+    background-color: @wrapper-background-color;
+    border-radius: @strip-border-radius;
 }
 
 .pr-sidebar-container {
