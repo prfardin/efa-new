@@ -11,9 +11,12 @@ import Avatar from '@bi/avatar.png'
         <div class="pr-sidebar-strip-header uk-flex uk-flex-top uk-flex-center">
             <span style="padding: 6px; border: 1px solid #e5ebf3; border-radius: 20px; position: relative">
                 <span style="position:absolute; top: 50%; left: -1px; transform: translate(0, -50%); width: 2px; height: 14px; background-color: #0e6dcd; border-radius: 10px"></span>
-                <span style="overflow: hidden; border-radius: 15px;background: #f9eee8; width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;">
+                <span style="overflow: hidden;position: relative; border-radius: 15px;background: #f9eee8; width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;">
                     <img :src="Avatar" alt="avatar">
+                    <span style="position: absolute;right: -23px;width: 50px;height: 40px;background-color: rgb(17, 17, 17);border-radius: 165%;bottom: -21px;transform: rotate(-127deg);"></span>
+                    <span style="position: absolute; right: -26px; width: 40px; height: 40px; bottom: -20px; color: rgb(255, 255, 255); font-size: 12px; font-weight: 700;">F</span>
                 </span>
+                <span style="position: absolute; top: 2px; right: 2px; width: 6px; height: 6px; background-color: #6fcf96; border-radius: 100%"></span>
             </span>
         </div>
         <div class="pr-sidebar-strip-container">

@@ -9,13 +9,15 @@ import Avatar from '@bi/avatar.png'
 
 <template>
     <div class="pr-sidebar-wrapper uk-light" style="z-index: 1;">
-        <div class="pr-sidebar-wrapper-header uk-flex uk-flex-middle uk-flex-between">
+        <a style="display: flex; align-items: center; justify-content: center; position: absolute;top: 60px;right: 0;width: 18px;height: 36px;background-color: rgb(50, 51, 53);border-radius: 12px 0 0 12px;"><pr-icon class="test2" icon="angle-left" ratio="0.8"></pr-icon></a>
+        <div class="pr-sidebar-wrapper-header uk-flex uk-flex-middle">
             <span style="padding: 6px; border: 1px solid transparent; border-radius: 20px; position: relative;background-color: #242527">
                 <span style="position:absolute; top: 50%; left: -1px; transform: translate(0, -50%); width: 2px; height: 14px; background-color: #ffde6c; border-radius: 10px"></span>
                 <span style="overflow: hidden; border-radius: 15px;background: #f9eee8; width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;">
                     <img :src="Avatar" alt="avatar">
                 </span>
             </span>
+            <span class="uk-margin-left" style="position: relative; color: #ffffff">Fardin <span style="position: absolute; top: -2px; right: -8px; width: 7px; height: 7px; background-color: #6fcf96; border-radius: 100%"></span></span>
         </div>
         <div class="pr-sidebar-container">
             <nav>
@@ -61,13 +63,14 @@ import Avatar from '@bi/avatar.png'
                         <pr-link style="position: relative; color: #bfbfbf" to="/about">
                             <pr-icon icon="notebooks" ratio="0.8"></pr-icon>
                             <span class="uk-margin-small-left">Savings</span>
+                            <pr-icon icon="plus" ratio="0.6" style="position: absolute; right: 10px; box-sizing: border-box; width: 24px; height: 24px; background-color: #252628; border-radius: 100%; font-size: 10px; color: rgb(255, 255, 255); text-align: center; padding: 5px 4px;"></pr-icon>
                         </pr-link>
                     </li>
                     <li style="margin-bottom: 7px">
                         <pr-link style="position: relative; color: #bfbfbf" to="/about">
                             <pr-icon icon="bag" ratio="0.8"></pr-icon>
                             <span class="uk-margin-small-left">Sales</span>
-                            <span style="position: absolute; right: 10px; box-sizing: border-box; width: 8px; height: 8px; background-color: rgb(254, 117, 75); border-radius: 100%; font-size: 10px; color: rgb(255, 255, 255); text-align: center;"></span>
+                            <span style="position: absolute; right: 17px; box-sizing: border-box; width: 8px; height: 8px; background-color: rgb(254, 117, 75); border-radius: 100%; font-size: 10px; color: rgb(255, 255, 255); text-align: center;"></span>
                         </pr-link>
                     </li>
                     <li class="uk-nav-divider" style="border-color: #252726; margin: 16px 0 !important;"></li>
@@ -106,8 +109,12 @@ import Avatar from '@bi/avatar.png'
                 <div class="line" style="position: absolute; top: 0; left: 0; right: 0; height: 36px; z-index: -1; border-radius: 10px; background: #252628;"></div>
                 <div class="line" style="position: absolute; top: 128px; left: 0; right: 0; height: 36px; z-index: -1; border-radius: 10px; background: #2785ff;"></div>
                 <div class="line" style="position: absolute; top: 406px; left: 0; right: 0; height: 36px; z-index: -1; border-radius: 12px; background: #252628;"></div>
-                <div class="test line" style='position: absolute; top: 462px; left: 0; right: 0; height: 122px; z-index: -1; border-radius: 12px; background-color: #1c1d1f; '>
-                    <pr-button to="/about" icon="plus" icon-button default ratio="0.7" />
+                <div class="test line uk-flex uk-flex-center uk-flex-middle" style='position: absolute; top: 462px; left: 0; right: 0; height: 122px; z-index: -1; border-radius: 12px; background-color: #1c1d1f; '>
+                    <div class="uk-text-center">
+                        <pr-button style="background-color: rgb(39, 133, 255)" class="uk-button-rounded uk-button-primary test2" to="/about" icon="plus" icon-button default ratio="0.7" />
+                        <h6 class="uk-margin-small uk-margin-remove-bottom" style="color: #ffffff">Add nw project</h6>
+                        <h6 class="uk-margin-remove uk-text-small" style="color: #ffffff; font-size: 9px">Or use <span class="uk-link" style="color: #fbda6a">invite link</span></h6>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -117,5 +124,8 @@ import Avatar from '@bi/avatar.png'
 <style>
 .test {
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='12' ry='12' stroke='%23807e81' stroke-width='1' stroke-dasharray='4' stroke-dashoffset='1' stroke-linecap='round'/%3e%3c/svg%3e")
+}
+.test2 .pr-icon-primary {
+    color: #ffffff !important;
 }
 </style>
