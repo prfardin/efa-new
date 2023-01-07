@@ -7,10 +7,10 @@
 // Variables
 // ========================================================================
 
-@sidebar-background-color:                      none;
+@sidebar-background-color:                      transparent;
 @sidebar-item-color:                            #5e6b86;
 @sidebar-border-radius:                         0 25px 25px 0;
-@strip-border-radius:                           0 8px 8px 0;
+@strip-border-radius:                           0 10px 10px 0;
 
 @wrapper-background-color:                      #161719;
 @strip-header-padding:                          52px 0 0 0;
@@ -29,14 +29,14 @@
 
 @strip-margin-top:                              28px;
 @strip-margin-bottom:                           0;
-@container-margin-top:                          0;
-@container-margin-bottom:                       0;
-@container-width:                               210px;
+@container-margin:                              @strip-margin-top 22px;
 @sidebar-wrapper-margin-left:                   @strip-width;
-@container-padding:                             10px (@wrapper-header-padding-right + 0px) 10px (@wrapper-header-padding-left + 0px);
+// may remove | may usable
+//@container-padding:                             10px (@wrapper-header-padding-right + 0px) 10px (@wrapper-header-padding-left + 0px);
+@container-padding:                             0;
 @container-item-height:                         @strip-container-item-height;
 @container-item-font-size:                      @strip-container-item-font-size;
-@container-item-padding:                        13px 18px;
+@container-item-padding:                        10px 10px;
 @container-item-border-radius:                  @sidebar-border-radius;
 @container-item-hover-color:                    rgba(0, 0, 0, 0.1);
 @container-item-hover-border-left-radius:       24px;
@@ -99,7 +99,6 @@
 /* Position
  * 1. Stick to bottom and top
  * 2. Spaces
- * 3. Dimensions
  */
 
 /* 1 */
@@ -118,14 +117,7 @@
     margin-bottom: @strip-margin-bottom;
 }
 .pr-sidebar-container {
-    margin-top: @container-margin-top;
-    margin-bottom: @container-margin-bottom;
-}
-
-/* 3 */
-.pr-sidebar-container .nav-activator > svg,
-.pr-sidebar-container {
-    width: @container-width;
+    margin: @container-margin;
 }
 
 

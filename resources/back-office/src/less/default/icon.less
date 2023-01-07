@@ -33,6 +33,7 @@
 @icon-tertiary-color:                           @global-icon-tertiary-color;
 @icon-quaternary-color:                         @global-icon-quaternary-color;
 @icon-favourite-color:                          @global-icon-favourite-color;
+@icon-favourite-color-tertiary:                 darken(@global-icon-favourite-color, 40%);
 
 
 
@@ -55,8 +56,13 @@
     color: @icon-quaternary-color;
 }
 
+// may change
 .pr-icon-favourite [class*=pr-icon-] {
     color: @icon-favourite-color;
+}
+
+.pr-icon-favourite .pr-icon-tertiary {
+    color: @icon-favourite-color-tertiary;
 }
 
 //
@@ -98,19 +104,19 @@
 
 .hook-inverse() {
     .pr-icon-primary {
-        color: @inverse-global-icon-primary-color;
+        color: @global-icon-primary-color-light;
     }
 
     .pr-icon-secondary {
-        color: @inverse-global-icon-secondary-color;
+        color: @global-icon-secondary-color-light;
     }
 
     .pr-icon-tertiary {
-        color: @inverse-global-icon-tertiary-color;
+        color: @global-icon-tertiary-color-light;
     }
 
     .pr-icon-quaternary {
-        color: @inverse-global-icon-quaternary-color;
+        color: @global-icon-quaternary-color-light;
     }
 }
 
