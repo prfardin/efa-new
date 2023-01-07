@@ -71,9 +71,10 @@ export const plugins: PluginOption[] = pluginsFunc();
 export const alias: AliasOptions = {
     '@':   '/resources',
     '@b':  '/resources/back-office',            // back-office
-    '@bs': '/resources/back-office/src',        // back-office/src
-    '@bc': '/resources/back-office/components', // back-office/components
-    '@bv': '/resources/back-office/views',      // back-office/views
-    '@bf': '/resources/back-office/src/fonts',  // back-office/fonts,
+    '@bs': '/resources/back-office/src',        // back-office-src
+    '@bc': '/resources/back-office/components', // back-office-components
+    '@bv': '/resources/back-office/views',      // back-office-views
+    '@bf': '/resources/back-office/src/fonts',  // back-office-fonts,
+    '@bi': '/resources/back-office/src/images',  // back-office-images,
     "@l/*": 'lang',                             // lang
 }

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Sidebar from './components/sidebar/sidebar.vue'
+import Sidebar from '@bc/sidebar/sidebar.vue'
 import PrButton from '@bc/core/button.vue'
 import PrLink from '@bc/core/link.vue'
 </script>

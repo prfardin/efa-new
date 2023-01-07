@@ -51,6 +51,9 @@
             "@bf/*": [
                 "resources/back-office/src/fonts/*"
             ],
+            "@bi/*": [
+                "resources/back-office/src/images/*"
+            ],
             "@l/*": [
                 "lang/*"
             ]

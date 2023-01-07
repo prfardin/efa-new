@@ -29,12 +29,10 @@
 //
 
 @icon-primary-color:                            @global-icon-primary-color;
-
 @icon-secondary-color:                          @global-icon-secondary-color;
-
 @icon-tertiary-color:                           @global-icon-tertiary-color;
-
 @icon-quaternary-color:                         @global-icon-quaternary-color;
+@icon-favourite-color:                          @global-icon-favourite-color;
 
 
 
@@ -55,6 +53,10 @@
 
 .pr-icon-quaternary {
     color: @icon-quaternary-color;
+}
+
+.pr-icon-favourite [class*=pr-icon-] {
+    color: @icon-favourite-color;
 }
 
 //
@@ -89,6 +91,29 @@
 
 // Inverse
 // ========================================================================
+
+//
+// Style modifiers | may remove
+//
+
+.hook-inverse() {
+    .pr-icon-primary {
+        color: @inverse-global-icon-primary-color;
+    }
+
+    .pr-icon-secondary {
+        color: @inverse-global-icon-secondary-color;
+    }
+
+    .pr-icon-tertiary {
+        color: @inverse-global-icon-tertiary-color;
+    }
+
+    .pr-icon-quaternary {
+        color: @inverse-global-icon-quaternary-color;
+    }
+}
+
 
 .hook-inverse-icon-link() {}
 .hook-inverse-icon-link-hover() {}

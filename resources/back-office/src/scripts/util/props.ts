@@ -45,7 +45,6 @@ export interface LinkPropsType extends LinkClassType {
     ratio?: number,
 }
 
-
 /**
  * Nav Props Types
  */

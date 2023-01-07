@@ -4,6 +4,7 @@ import { ref, onMounted } from 'vue'
 
 // must remove with future release of vue and must use as
 // import { NavPropsType } from "@bs/scripts/util/props";
+// must change
 export interface NavPropsType {
     hasNavTag?: boolean,
 }
@@ -28,14 +29,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <template v-if="hasNavTag">
-        <nav>
-            <ul ref="el">
-                <slot />
-            </ul>
-        </nav>
-    </template>
-    <ul v-else ref="el">
+    <ul class="uk-nav-default" ref="el">
         <slot />
     </ul>
 </template>
