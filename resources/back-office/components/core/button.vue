@@ -20,6 +20,7 @@ interface ButtonPropsType {
     primary?: boolean,
     secondary?: boolean,
     muted?: boolean,
+    small?: boolean,
     xSmall?: boolean,
     square?: boolean,
     rounded?: boolean,

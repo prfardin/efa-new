@@ -13,13 +13,12 @@ import PrIcon from '@bc/core/icon.vue'
                 <input class="uk-input input uk-form-small" type="text" style="border-left: none; height: 36px; width: 210px">
             </div>
             <div class="uk-width-auto">
-                <pr-button to="?step=Verify" primary small square style="line-height: 34px; color: #fefefe;background-color: #0260ff">
+                <pr-button to="step=3" primary small square style="line-height: 34px; color: #fefefe;background-color: #0260ff">
                     <span style="margin-right: 4px">Get Started</span>
                     <pr-icon icon="arrow-right" :ratio="0.8" />
                 </pr-button>
             </div>
         </div>
-        <label style="font-size: 12px"><input checked class="input uk-checkbox" type="checkbox" value=""><span style="margin-left: 5px; ">Privacy and <a href="#">Policy</a></span></label>
     </form>
 </template>
 
