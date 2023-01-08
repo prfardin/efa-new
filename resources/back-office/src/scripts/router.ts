@@ -1,10 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '@b/views/Dashboard.vue'
-import About from '@b/views/About.vue'
+import Dashboard from '@b/views/Dashboard.vue'
 import Register from '@b/views/Auth/Register.vue'
+// must remove
+import About from '@b/views/About.vue'
 
 const routes = [
-    { path: '/', component: Home },
+    { path: '/', component: Dashboard },
     { path: '/about', component: About },
     { path: '/register', component: Register },
 ]
