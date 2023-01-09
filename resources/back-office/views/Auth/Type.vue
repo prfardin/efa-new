@@ -11,43 +11,49 @@ const passwordRef = ref<HTMLElement>(null)
 const loader = ref(false)
 const router = useRouter()
 
-onMounted(() => {
-    passwordRef.value.focus()
-})
-
 </script>
 
 <template>
-    <div class="uk-height-1-1 uk-tile uk-tile-default uk-flex uk-flex-left uk-flex-top" style="background-color: #f5f6f9; padding-bottom: 10px">
-        <div>
+    <div class="uk-height-1-1 uk-tile uk-tile-default uk-flex uk-flex-left uk-flex-top" style="background-color: #f5f6f9; padding-top: 88px; padding-bottom: 10px">
+        <div class="anim-in">
             <div>
-                <h3 class="uk-h5" style="font-weight: 700; color: #464964; font-size: 26px; margin-bottom: 0">Start your business now.</h3>
+                <h3 class="uk-h5" style="font-weight: 700; color: #464964; font-size: 20px; margin-bottom: 0">Choose the type of the company</h3>
                 <p style="font-size: 13px; color: #909096; margin-top: 10px">Creating your company in US is just few steps away,<br />Enter your email address to continue.</p>
             </div>
-            <div style="margin-top: 44px">
-                <label style="color: #6e6f75; font-size: 12px">
-                    <span>Password</span>
-                </label>
+            <div style="margin-top: 40px">
                 <div class="uk-flex-middle uk-grid-collapse" uk-grid>
                     <div class="uk-width-expand">
                         <div uk-grid class="uk-grid-small uk-flex-bottom" style="margin-top: 4px; margin-bottom: 6px">
                             <div class="uk-width-expand">
-                                <div style="position: relative">
-                                    <input v-model="password" ref="passwordRef" name="password" autofocus class="uk-input input uk-form-small verify" type="password" style="height: 36px; width: 250px;">
+                                <div style="width: 310px;padding: 20px 25px; background-color: #edf4ff; border: 2px solid #576cb5; border-radius: 8px">
+                                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                        <div>
+                                            <div class="type" style="border-radius: 8px; background-color: #045dff; width: 22px; height: 22px; border: 2px solid #045dff; padding: 9px; display: flex; align-items: center; justify-content: center">
+                                                <pr-icon icon="home-alt" ratio="1.1"></pr-icon>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h6 class="uk-margin-remove-bottom" style="margin-left:5px;font-weight: 700;">Warehouse</h6>
+                                            <p class="uk-margin-remove-top" style="margin-left:5px;font-size: 13px;color: #868d9a; font-weight: 600">Owned By Individuals</p>
+                                        </div>
+                                        <div class="uk-width-expand uk-text-right">
+                                            <pr-icon icon="line-arrow-right" style="color: #045cfa"></pr-icon>
+                                        </div>
+                                    </div>
                                 </div>
-                                <label style="color: #6e6f75; font-size: 12px">
-                                    <span>Repeat Password</span>
-                                </label>
-                                <div style="position: relative;">
-                                    <input ref="repeatPasswordRef" v-model="repeatPassword" name="repeat_password" class="uk-input input uk-form-small verify" type="password" style="height: 36px; width: 250px; margin-top: 4px">
+                                <div style="margin-top: 12px;width: 310px;padding: 20px 25px; background-color: #fff; border: 2px solid transparent; border-radius: 8px">
+                                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                        <div>
+                                            <div class="uk-light type" style="border-radius: 8px; background-color: #fff; width: 22px; height: 22px; border: 2px solid #bbc7dd; padding: 9px; display: flex; align-items: center; justify-content: center">
+                                                <pr-icon icon="box" ratio="1.1"></pr-icon>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h6 class="uk-margin-remove-bottom" style="margin-left:5px;font-weight: 700;">Packing</h6>
+                                            <p class="uk-margin-remove-top" style="margin-left:5px;font-size: 13px;color: #868d9a; font-weight: 600">Owned By Stockholders</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="uk-width-auto">
-                                <pr-button :class="{'pr-disabled' : password !== repeatPassword}" to="?step=Type" primary small square style="line-height: 34px; color: #fefefe;background-color: #0260ff; display: flex; align-items: center;justify-content: center; min-width: 128px">
-                                    <div v-if="loader" style="line-height: 34px" uk-spinner="ratio: 0.8"></div>
-                                    <span v-if="!loader" style="margin-right: 4px">Dont Want Password</span>
-                                    <pr-icon v-if="!loader" icon="arrow-right" :ratio="0.8" />
-                                </pr-button>
                             </div>
                         </div>
                     </div>
@@ -56,3 +62,40 @@ onMounted(() => {
         </div>
     </div>
 </template>
+
+<style lang="less">
+.type {
+    .pr-icon-primary {
+        color: #045dff;
+    }
+
+    .pr-icon-secondary {
+        color: #ccdeff;
+    }
+
+    .pr-icon-tertiary {
+        color: #ffffff;
+    }
+
+    .pr-icon-quaternary {
+        color: #b3cdff;
+    }
+}
+.type.uk-light {
+    .pr-icon-primary {
+        color: rgba(4, 93, 255, 0.13);
+    }
+
+    .pr-icon-secondary {
+        color: rgba(4, 93, 255, 0.19);
+    }
+
+    .pr-icon-tertiary {
+        color: rgba(4, 93, 255, 0.24);
+    }
+
+    .pr-icon-quaternary {
+        color: rgba(4, 93, 255, 0.15);
+    }
+}
+</style>
