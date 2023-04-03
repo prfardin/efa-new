@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" class="pr-icon-tertiary"></circle>
+    <ellipse cx="12" cy="14.5" class="pr-icon-primary" rx="2.25" ry="2.5"></ellipse>
+    <circle cx="15" cy="9" r="1" class="pr-icon-primary"></circle>
+    <circle cx="9" cy="9" r="1" class="pr-icon-primary"></circle>
+</svg>

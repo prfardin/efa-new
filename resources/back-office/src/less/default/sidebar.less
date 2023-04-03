@@ -1,0 +1,274 @@
+// Name:            Sidebar
+// Description:     Component to create horizontal sidebar
+//
+//
+// ========================================================================
+
+// Variables
+// ========================================================================
+
+@sidebar-background-color:                      transparent;
+@sidebar-item-color:                            #5e6b86;
+@sidebar-border-radius:                         0 25px 25px 0;
+@strip-border-radius:                           0 10px 10px 0;
+
+@wrapper-background-color:                      #161719;
+@strip-header-padding:                          52px 0 0 0;
+@wrapper-header-height:                         38px;
+@wrapper-header-padding-right:                  22px;
+@wrapper-header-padding-left:                   22px;
+@wrapper-header-padding:                        52px @wrapper-header-padding-right 0 @wrapper-header-padding-left;
+
+@strip-width:                                   78px;
+@strip-background-color:                        #ffffff;
+@strip-margin:                                  0;
+@strip-container-item-height:                   36px;
+@strip-container-item-color:                    @sidebar-item-color;
+@strip-container-item-font-size:                0.875rem;
+@strip-container-transition-duration:           0.2s;
+
+@strip-margin-top:                              28px;
+@strip-margin-bottom:                           0;
+@container-margin:                              @strip-margin-top 22px;
+@sidebar-wrapper-margin-left:                   @strip-width;
+// may remove | may usable
+//@container-padding:                             10px (@wrapper-header-padding-right + 0px) 10px (@wrapper-header-padding-left + 0px);
+@container-padding:                             0;
+@container-item-height:                         @strip-container-item-height;
+@container-item-font-size:                      @strip-container-item-font-size;
+@container-item-padding:                        10px 10px;
+@container-item-border-radius:                  @sidebar-border-radius;
+@container-item-hover-color:                    rgba(0, 0, 0, 0.1);
+@container-item-hover-border-left-radius:       24px;
+
+
+/* ========================================================================
+   Component: Sidebar
+ ========================================================================== */
+
+/*
+ * Main
+ */
+
+.pr-sidebar {
+    background-color: @sidebar-background-color;
+    color: @sidebar-item-color;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: @global-sidebar-width;
+    height: @global-sidebar-height;
+}
+
+.pr-sidebar,
+.pr-sidebar-container .uk-nav > li > a {
+    box-sizing: border-box;
+}
+
+/*
+ * Sidebar Radius
+ */
+
+.pr-sidebar {
+    border-radius: @sidebar-border-radius;
+}
+
+/*
+ * Make deference between wrapper and strip container
+ */
+
+.pr-sidebar-strip,
+.pr-sidebar-strip-container {
+    width: @strip-width;
+}
+
+/*
+ * Create position relative for all sidebar elements
+ * For their sub context
+ */
+
+.pr-sidebar-strip-container,
+.pr-sidebar-wrapper,
+.pr-sidebar-container,
+.pr-sidebar-container .uk-nav > li,
+.pr-sidebar-container .nav-activator > svg,
+.pr-sidebar-strip-container > nav {
+    position: relative;
+}
+
+/* Position
+ * 1. Stick to bottom and top
+ * 2. Spaces
+ */
+
+/* 1 */
+.pr-sidebar-wrapper {
+    height: 100%;
+}
+
+.pr-sidebar-strip,
+.pr-sidebar-container .nav-activator {
+    position: absolute;
+}
+
+/* 2 */
+.pr-sidebar-strip-container {
+    margin-top: @strip-margin-top;
+    margin-bottom: @strip-margin-bottom;
+}
+.pr-sidebar-container {
+    margin: @container-margin;
+}
+
+
+/* Sidebar Strip
+ ========================================================================== */
+
+/*
+ * Strip
+ * 1. Position
+ * 2. Styles
+ */
+
+.pr-sidebar-strip {
+    /* 1 */
+    top: @strip-margin;
+    bottom: @strip-margin;
+    left: @strip-margin;
+    /* 2 */
+    background-color: @strip-background-color;
+    border-radius: @strip-border-radius;
+}
+
+/* Items
+ * 1. Center content vertically, e.g. an icon
+ * 2. Dimensions
+ * 3. Miscellaneous
+ */
+.pr-sidebar-strip-container .uk-nav > li > a,
+.pr-sidebar-strip-container nav > .uk-nav-item > a {
+    position: relative;
+    /* 1 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 2 */
+    box-sizing: border-box;
+    height: @strip-container-item-height;
+    /* 3 */
+    color: @strip-container-item-color;
+    font-size: @strip-container-item-font-size;
+    transition: @strip-container-transition-duration;
+}
+
+/*
+ * Items icon and content
+ * 1. Dimensions
+ * 2. Center content vertically and horizontally
+ * 3. Miscellaneous
+ * 4. li Spec
+ */
+.pr-sidebar-strip-container .uk-nav > li > a > span,
+.pr-sidebar-strip-container nav > .uk-nav-item > a > span {
+    /* 1 */
+    box-sizing: border-box;
+    height: 24px;
+    width: 24px;
+    /* 2 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* 3 */
+    font-size: 10px;
+    font-weight: bolder;
+    border-radius: 6px;
+    transition: all @strip-container-transition-duration ease;
+}
+
+/* 4 */
+.pr-sidebar-strip-container .uk-nav > li {
+    margin-bottom: 7px;
+}
+
+/* Active item style */
+// may remove
+.pr-sidebar-strip-container > nav .line {
+    position: absolute;
+    left: 0;
+    width: 3px;
+    background-color: #faf9fe;
+    border-radius: 0 3px 3px 0;
+}
+
+
+/* Sidebar Container
+ ========================================================================== */
+
+/*
+ * Wrapper
+ * 1. Make difference between sidebar and strip
+ * 2. Styles
+ */
+.pr-sidebar-wrapper {
+    /* 1 */
+    margin-left: @sidebar-wrapper-margin-left;
+    /* 2 */
+    background-color: @wrapper-background-color;
+    border-radius: @strip-border-radius;
+}
+
+.pr-sidebar-container {
+    padding: @container-padding;
+}
+
+/*
+ * Items
+ * 1. Height like: Strip items height
+ * 2. Same border radius from sidebar corners
+ */
+.pr-sidebar-container .uk-nav > li > a {
+    height: @container-item-height; /* 1 */
+    color: @sidebar-item-color;
+    font-size: @container-item-font-size;
+    padding: @container-item-padding;
+    border-radius: @container-item-border-radius; /* 2 */
+    transition: @strip-container-transition-duration;
+}
+
+/* Hover */
+.pr-sidebar-container .uk-nav > li:not(.uk-active):hover > a {
+    background-color: @container-item-hover-color;
+}
+
+/* Active */
+.pr-sidebar-container .uk-nav > li.uk-active + li > a {
+    border-top-left-radius: @container-item-hover-border-left-radius;
+}
+
+
+/* Sidebar Logo
+ ========================================================================== */
+
+/* Area
+ * 1. Set both of strip and wrapper at top of sidebar
+ * 2. Set area to fit in strip and sidebar container
+ * 3. Position area from top
+ */
+.pr-sidebar-strip-header,
+.pr-sidebar-wrapper-header {
+    /* 1 */
+    box-sizing: border-box;
+    /* 2 */
+    width: 100%;
+}
+
+/* 3 */
+.pr-sidebar-strip-header {
+    padding: @strip-header-padding;
+}
+
+/* 3 */
+.pr-sidebar-wrapper-header {
+    min-height: @wrapper-header-height;
+    padding: @wrapper-header-padding;
+}

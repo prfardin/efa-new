@@ -1,0 +1,65 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "strict": true,
+        "jsx": "preserve",
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "lib": [
+            "esnext",
+            "dom"
+        ],
+        "types": [
+            "vite/client",
+            "@intlify/unplugin-vue-i18n/messages"
+        ],
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "resources/*"
+            ],
+            "@f/*": [
+                "resources/front-office/*"
+            ],
+            "@b/*": [
+                "resources/back-office/*"
+            ],
+            "@fs/*": [
+                "resources/front-office/src/*"
+            ],
+            "@bs/*": [
+                "resources/back-office/src/*"
+            ],
+            "@fc/*": [
+                "resources/front-office/components/*"
+            ],
+            "@bc/*": [
+                "resources/back-office/components/*"
+            ],
+            "@fv/*": [
+                "resources/front-office/views/*"
+            ],
+            "@bv/*": [
+                "resources/back-office/views/*"
+            ],
+            "@ff/*": [
+                "resources/front-office/src/fonts/*"
+            ],
+            "@bf/*": [
+                "resources/back-office/src/fonts/*"
+            ],
+            "@bi/*": [
+                "resources/back-office/src/images/*"
+            ],
+            "@l/*": [
+                "lang/*"
+            ]
+        }
+    },
+    "include": [
+//        "resources/**/*"
+    ]
+}
