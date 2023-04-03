@@ -10,14 +10,18 @@
 @sidebar-background-color:                      transparent;
 @sidebar-item-color:                            #5e6b86;
 @sidebar-border-radius:                         0 25px 25px 0;
-@strip-border-radius:                           0 10px 10px 0;
+@strip-border-radius:                           10px;
+@pr-strip-border-radius:                        0 @strip-border-radius @strip-border-radius 0;
+@strip-header-wrapper-border-radius:            20px;
+@sidebar-header-container-border-radius:        @strip-header-wrapper-border-radius - 5px;
 
 @wrapper-background-color:                      #161719;
 @strip-header-padding:                          52px 0 0 0;
 @wrapper-header-height:                         38px;
 @wrapper-header-padding-right:                  22px;
-@wrapper-header-padding-left:                   22px;
+@wrapper-header-padding-left:                   @wrapper-header-padding-right;
 @wrapper-header-padding:                        52px @wrapper-header-padding-right 0 @wrapper-header-padding-left;
+@strip-wrapper-header-padding:                  6px;
 
 @strip-width:                                   78px;
 @strip-background-color:                        #ffffff;
@@ -26,6 +30,13 @@
 @strip-container-item-color:                    @sidebar-item-color;
 @strip-container-item-font-size:                0.875rem;
 @strip-container-transition-duration:           0.2s;
+@sidebar-header-line-width:                     2px;
+@sidebar-header-line-height:                    14px;
+@sidebar-header-container-height:               40px;
+@sidebar-header-container-width:                @sidebar-header-container-height;
+@sidebar-header-placeholder-width:              @sidebar-header-container-width + 10px;
+@sidebar-header-status-width:                   6px;
+@sidebar-header-status-height:                  @sidebar-header-status-width;
 
 @strip-margin-top:                              28px;
 @strip-margin-bottom:                           0;
@@ -40,7 +51,10 @@
 @container-item-border-radius:                  @sidebar-border-radius;
 @container-item-hover-color:                    rgba(0, 0, 0, 0.1);
 @container-item-hover-border-left-radius:       24px;
-
+@sidebar-header-placeholder-right:              -23px;
+@sidebar-header-placeholder-bottom:             -21px;
+@sidebar-header-letter-right:                   @sidebar-header-placeholder-right - 3px;
+@sidebar-header-letter-bottom:                  @sidebar-header-placeholder-bottom + 1px;
 
 /* ========================================================================
    Component: Sidebar
@@ -137,7 +151,7 @@
     left: @strip-margin;
     /* 2 */
     background-color: @strip-background-color;
-    border-radius: @strip-border-radius;
+    border-radius: @pr-strip-border-radius;
 }
 
 /* Items
@@ -168,8 +182,8 @@
  * 3. Miscellaneous
  * 4. li Spec
  */
-.pr-sidebar-strip-container .uk-nav > li > a > span,
-.pr-sidebar-strip-container nav > .uk-nav-item > a > span {
+.pr-sidebar-strip-container .uk-nav > li > a > .uk-icon,
+.pr-sidebar-strip-container nav > .uk-nav-item > a > .uk-icon {
     /* 1 */
     box-sizing: border-box;
     height: 24px;
@@ -214,7 +228,7 @@
     margin-left: @sidebar-wrapper-margin-left;
     /* 2 */
     background-color: @wrapper-background-color;
-    border-radius: @strip-border-radius;
+    border-radius: @pr-strip-border-radius;
 }
 
 .pr-sidebar-container {
@@ -246,7 +260,7 @@
 }
 
 
-/* Sidebar Logo
+/* Sidebar Strip Header
  ========================================================================== */
 
 /* Area
@@ -254,8 +268,7 @@
  * 2. Set area to fit in strip and sidebar container
  * 3. Position area from top
  */
-.pr-sidebar-strip-header,
-.pr-sidebar-wrapper-header {
+.pr-sidebar-strip-header {
     /* 1 */
     box-sizing: border-box;
     /* 2 */
@@ -271,4 +284,102 @@
 .pr-sidebar-wrapper-header {
     min-height: @wrapper-header-height;
     padding: @wrapper-header-padding;
+}
+
+// we will set comment later
+.pr-sidebar-strip-header-wrapper {
+    position: relative;
+    padding: @strip-wrapper-header-padding;
+    border: @global-border-width solid @global-border-strip-color;
+    border-radius: @strip-header-wrapper-border-radius
+}
+
+.pr-sidebar-header-line {
+    position: absolute;
+    top: @global-middle-transform-top;
+    left: -1px;
+    transform: @global-middle-transform;
+    width: @sidebar-header-line-width;
+    height: @sidebar-header-line-height;
+    border-radius: @strip-border-radius
+}
+
+.pr-sidebar-strip-header-wrapper .pr-sidebar-header-line {
+    background-color: darken(@global-primary-background, 10%)
+}
+
+.pr-sidebar-header-container {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: @sidebar-header-container-border-radius;
+    width: @sidebar-header-container-height;
+    height: @sidebar-header-container-width
+}
+
+.pr-sidebar-strip-header-wrapper .pr-sidebar-header-container {
+    background: #f9eee8;
+}
+
+.pr-sidebar-header-placeholder,
+.pr-sidebar-header-letter,
+.pr-sidebar-header-status {
+    position: absolute;
+}
+
+.pr-sidebar-header-placeholder {
+    right: @sidebar-header-placeholder-right;
+    bottom: @sidebar-header-placeholder-bottom;
+    width: @sidebar-header-placeholder-width;
+    height: @sidebar-header-container-height;
+    border-radius: 165%;
+    transform: rotate(-127deg)
+}
+
+.pr-sidebar-strip-header-wrapper .pr-sidebar-header-placeholder {
+    background-color: lighten(@wrapper-background-color, 2%);
+}
+
+.pr-sidebar-header-letter {
+    right: @sidebar-header-letter-right;
+    bottom: @sidebar-header-letter-bottom;
+    width: @sidebar-header-container-width;
+    height: @sidebar-header-container-height;
+    text-align: left;
+    font-size: 0.75rem; // 12px
+    font-weight: 700
+}
+
+.pr-sidebar-strip-header-wrapper .pr-sidebar-header-letter {
+    color: @global-white-color
+}
+
+.pr-sidebar-header-status {
+    top: 2px;
+    right: 2px;
+    width: @sidebar-header-status-width;
+    height: @sidebar-header-status-height;
+    border-radius: 100%
+}
+
+.pr-sidebar-strip-header-wrapper .pr-sidebar-header-status {
+    background-color: #6fcf96;
+}
+
+.pr-item-has-notification {
+    position: relative;
+}
+
+.pr-item-has-notification::before {
+    box-sizing: border-box;
+    position: absolute;
+    top: 8px;
+    right: 42px;
+    width: 8px;
+    height: 8px;
+    background-color: #fe754b;
+    border-radius: 100%;
+    border: 2px solid #fff
 }

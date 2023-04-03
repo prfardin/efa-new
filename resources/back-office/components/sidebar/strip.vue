@@ -9,14 +9,14 @@ import Avatar from '@bi/avatar.png'
 <template>
     <div class="pr-sidebar-strip uk-position-z-index">
         <div class="pr-sidebar-strip-header uk-flex uk-flex-top uk-flex-center">
-            <span style="padding: 6px; border: 1px solid #e5ebf3; border-radius: 20px; position: relative">
-                <span style="position:absolute; top: 50%; right: -1px; transform: translate(0, -50%); width: 2px; height: 14px; background-color: #0e6dcd; border-radius: 10px"></span>
-                <span style="overflow: hidden;position: relative; border-radius: 15px;background: #f9eee8; width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;">
+            <span class="pr-sidebar-strip-header-wrapper">
+                <span class="pr-sidebar-header-line"></span>
+                <span class="pr-sidebar-header-container">
                     <img :src="Avatar" alt="avatar">
-                    <span style="position: absolute; left: -23px;width: 50px;height: 40px;background-color: rgb(17, 17, 17);border-radius: 165%; bottom: -21px; transform: rotate(127deg);"></span>
-                    <span style="position: absolute; left: -26px; width: 40px; height: 40px; bottom: -20px; color: rgb(255, 255, 255); font-size: 12px; font-weight: 700;">F</span>
+                    <span class="pr-sidebar-header-placeholder"></span>
+                    <span class="pr-sidebar-header-letter">F</span>
                 </span>
-                <span style="position: absolute; top: 2px; left: 2px; width: 6px; height: 6px; background-color: #6fcf96; border-radius: 100%"></span>
+                <span class="pr-sidebar-header-status"></span>
             </span>
         </div>
         <div class="pr-sidebar-strip-container">
@@ -26,9 +26,8 @@ import Avatar from '@bi/avatar.png'
                     <li><pr-link to="/about" icon="star" :ratio="0.7" class="pr-icon-favourite" /></li>
                     <li><pr-link to="/about" icon="create-dashboard" :ratio="0.8" /></li>
                     <li><pr-link to="/about" icon="folder-minus" class="uk-light" :ratio="0.8" /></li>
-                    <li style="position: relative">
-                        <pr-link to="/about" icon="compass" :ratio="0.8" />
-                        <span style="position: absolute; top: 8px; right: 42px; box-sizing: border-box; width: 8px; height: 8px; background-color: #fe754b; border-radius: 100%; border: 2px solid #fff"></span>
+                    <li>
+                        <pr-link to="/about" icon="compass" :ratio="0.8" class="pr-item-has-notification" />
                     </li>
                     <li style="position: relative">
                         <pr-link to="/about" icon="bell" :ratio="0.8" />
