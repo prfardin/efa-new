@@ -26,12 +26,11 @@ import Avatar from '@bi/avatar.png'
                     <li><pr-link to="/about" icon="star" :ratio="0.7" class="pr-icon-favourite" /></li>
                     <li><pr-link to="/about" icon="create-dashboard" :ratio="0.8" /></li>
                     <li><pr-link to="/about" icon="folder-minus" class="uk-light" :ratio="0.8" /></li>
-                    <li>
-                        <pr-link to="/about" icon="compass" :ratio="0.8" class="pr-item-has-notification" />
+                    <li class="pr-item-has-notification">
+                        <pr-link to="/about" icon="compass" :ratio="0.8" />
                     </li>
-                    <li style="position: relative">
-                        <pr-link to="/about" icon="bell" :ratio="0.8" />
-                        <span style="position: absolute; top: 3px; right: 38px; box-sizing: border-box; width: 16px; height: 16px; background-color: rgb(254, 117, 75); border-radius: 100%; border: 2px solid rgb(255, 255, 255); font-size: 7px; color: rgb(255, 255, 255); text-align: center; padding: 2px 4px;">2</span>
+                    <li class="pr-item-has-badge">
+                        <pr-link to="/about" icon="bell" :ratio="0.8" slot-class="pr-badge">2</pr-link>
                     </li>
                     <li><pr-link to="/about" icon="notebooks" :ratio="0.8" /></li>
                     <li><pr-link to="/about" icon="bag" :ratio="0.8" uk-tooltip="title: داشبورد; pos: right; offset: 3;duration: 200" /></li>

@@ -24,7 +24,7 @@
 @strip-wrapper-header-padding:                  6px;
 
 @strip-width:                                   78px;
-@strip-background-color:                        #ffffff;
+@strip-background-color:                        @global-white-color;
 @strip-margin:                                  0;
 @strip-container-item-height:                   36px;
 @strip-container-item-color:                    @sidebar-item-color;
@@ -180,23 +180,25 @@
  * 1. Dimensions
  * 2. Center content vertically and horizontally
  * 3. Miscellaneous
- * 4. li Spec
  */
 .pr-sidebar-strip-container .uk-nav > li > a > .uk-icon,
 .pr-sidebar-strip-container nav > .uk-nav-item > a > .uk-icon {
     /* 1 */
     box-sizing: border-box;
-    height: 24px;
-    width: 24px;
+    height: 36px;
+    width: 36px;
     /* 2 */
     display: flex;
     align-items: center;
     justify-content: center;
     /* 3 */
+    padding: 5px;
     font-size: 10px;
     font-weight: bolder;
-    border-radius: 6px;
+    border-radius: 10px;
     transition: all @strip-container-transition-duration ease;
+    background-color: transparent;
+    //background-color: rgb(39, 133, 255);
 }
 
 /* 4 */
@@ -368,18 +370,38 @@
     background-color: #6fcf96;
 }
 
-.pr-item-has-notification {
+.pr-item-has-badge,
+.pr-item-has-notification,
+.pr-item-has-notification .uk-icon {
     position: relative;
 }
 
-.pr-item-has-notification::before {
+.pr-item-has-notification .uk-icon::after {
+    content: '';
+    display: block;
     box-sizing: border-box;
     position: absolute;
     top: 8px;
-    right: 42px;
+    right: 6px;
     width: 8px;
     height: 8px;
     background-color: #fe754b;
     border-radius: 100%;
-    border: 2px solid #fff
+    border: 2px solid @global-white-color
+}
+
+.pr-sidebar-stripbadge {
+    position: absolute;
+    top: 3px;
+    right: 24px;
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    background-color: #fe754b;
+    border-radius: 100%;
+    border: 2px solid @global-white-color;
+    font-size: 7px;
+    color: @global-white-color;
+    text-align: center;
+    padding: 2px 4px;
 }

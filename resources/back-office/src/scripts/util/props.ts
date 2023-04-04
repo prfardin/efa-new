@@ -42,6 +42,7 @@ export interface LinkPropsType extends LinkClassType {
     tag?: 'router-link' | 'a',
     to?: string,
     href?: string,
+    slotClass?: string,
     ratio?: number,
 }
 

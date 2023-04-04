@@ -16,6 +16,7 @@ interface LinkPropsType {
     tag?: 'router-link' | 'a',
     to?: string,
     href?: string,
+    slotClass?: string,
     muted?: boolean,
     text?: boolean,
     heading?: boolean,
@@ -39,7 +40,7 @@ const linkClass = computed(() => linkClassObject(props, !!slots.default))
     <component :is="tag" :to="to" :href="href" :class="linkClass">
         <template v-if="icon">
             <pr-icon :icon="icon" :ratio="ratio" />
-            <span v-if="slots.default"><slot /></span>
+            <span :class="slotClass" v-if="slots.default"><slot /></span>
         </template>
         <slot v-else />
     </component>
