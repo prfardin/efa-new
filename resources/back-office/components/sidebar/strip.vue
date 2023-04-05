@@ -7,7 +7,7 @@ import Avatar from '@bi/avatar.png'
 </script>
 
 <template>
-    <div class="pr-sidebar-strip uk-position-z-index">
+    <div class="pr-sidebar-strip pr-position-z-index-extra">
         <div class="pr-sidebar-strip-header uk-flex uk-flex-top uk-flex-center">
             <span class="pr-sidebar-strip-header-wrapper">
                 <span class="pr-sidebar-header-line"></span>
@@ -30,11 +30,11 @@ import Avatar from '@bi/avatar.png'
                         <pr-link to="/about" icon="compass" :ratio="0.8" />
                     </li>
                     <li class="pr-item-has-badge">
-                        <pr-link to="/about" icon="bell" :ratio="0.8" slot-class="pr-badge">2</pr-link>
+                        <pr-link to="/about" icon="bell" :ratio="0.8" slot-class="pr-sidebar-strip-badge">2</pr-link>
                     </li>
                     <li><pr-link to="/about" icon="notebooks" :ratio="0.8" /></li>
-                    <li><pr-link to="/about" icon="bag" :ratio="0.8" uk-tooltip="title: داشبورد; pos: right; offset: 3;duration: 200" /></li>
-                    <li class="uk-nav-divider" style="margin: 16px 12px !important;"></li>
+                    <li><pr-link to="/about" icon="bag" :ratio="0.8" /></li>
+                    <li class="uk-nav-divider"></li>
                     <li style="margin-top: 28px;">
                         <pr-link to="/about">
                             <pr-icon style="background: rgb(255, 255, 255); box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);width: 28px; height: 28px; border-radius: 8px" icon="file-alt" :ratio="0.65"></pr-icon>

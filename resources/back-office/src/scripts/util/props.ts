@@ -29,6 +29,7 @@ export interface ButtonPropsType extends ButtonClassType {
     tag?: 'router-link' | 'a' | 'button',
     to?: string,
     href?: string,
+    slotClass?: string,
     ratio?: number
 }
 

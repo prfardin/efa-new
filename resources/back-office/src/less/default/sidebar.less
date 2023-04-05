@@ -37,6 +37,8 @@
 @sidebar-header-placeholder-width:              @sidebar-header-container-width + 10px;
 @sidebar-header-status-width:                   6px;
 @sidebar-header-status-height:                  @sidebar-header-status-width;
+@sidebar-strip-header-min-width:                16px;
+@sidebar-strip-header-height:                   @sidebar-strip-header-min-width;
 
 @strip-margin-top:                              28px;
 @strip-margin-bottom:                           0;
@@ -75,7 +77,8 @@
 }
 
 .pr-sidebar,
-.pr-sidebar-container .uk-nav > li > a {
+.pr-sidebar-container .uk-nav > li > a,
+.pr-sidebar-container nav > .uk-nav-item > a {
     box-sizing: border-box;
 }
 
@@ -105,6 +108,7 @@
 .pr-sidebar-wrapper,
 .pr-sidebar-container,
 .pr-sidebar-container .uk-nav > li,
+.pr-sidebar-container nav > .uk-nav-item > a,
 .pr-sidebar-container .nav-activator > svg,
 .pr-sidebar-strip-container > nav {
     position: relative;
@@ -202,7 +206,8 @@
 }
 
 /* 4 */
-.pr-sidebar-strip-container .uk-nav > li {
+.pr-sidebar-strip-container .uk-nav > li,
+.pr-sidebar-container nav > .uk-nav-item > a {
     margin-bottom: 7px;
 }
 
@@ -242,7 +247,8 @@
  * 1. Height like: Strip items height
  * 2. Same border radius from sidebar corners
  */
-.pr-sidebar-container .uk-nav > li > a {
+.pr-sidebar-container .uk-nav > li > a,
+.pr-sidebar-container nav > .uk-nav-item > a {
     height: @container-item-height; /* 1 */
     color: @sidebar-item-color;
     font-size: @container-item-font-size;
@@ -367,7 +373,7 @@
 }
 
 .pr-sidebar-strip-header-wrapper .pr-sidebar-header-status {
-    background-color: #6fcf96;
+    background-color: @global-success-background;
 }
 
 .pr-item-has-badge,
@@ -385,23 +391,35 @@
     right: 6px;
     width: 8px;
     height: 8px;
-    background-color: #fe754b;
+    background-color: @global-warning-background;
     border-radius: 100%;
     border: 2px solid @global-white-color
 }
 
-.pr-sidebar-stripbadge {
+.pr-sidebar-strip-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
     position: absolute;
     top: 3px;
-    right: 24px;
-    box-sizing: border-box;
-    width: 16px;
-    height: 16px;
-    background-color: #fe754b;
-    border-radius: 100%;
+    left: 38px;
+    min-width: @sidebar-strip-header-min-width;
+    height: @sidebar-strip-header-height;
+    background-color: @global-warning-background;
+    border-radius: @strip-border-radius;
     border: 2px solid @global-white-color;
-    font-size: 7px;
+    font-size: 0.58rem; // 8px
     color: @global-white-color;
-    text-align: center;
-    padding: 2px 4px;
+    padding: 0 4px;
+}
+
+.pr-sidebar .uk-nav .uk-nav-divider {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.pr-sidebar-strip-container .uk-nav .uk-nav-divider {
+    margin-right: 12px;
+    margin-left: 12px;
 }
