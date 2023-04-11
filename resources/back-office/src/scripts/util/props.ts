@@ -30,6 +30,7 @@ export interface ButtonPropsType extends ButtonClassType {
     to?: string,
     href?: string,
     slotClass?: string,
+    iconClass?: string,
     ratio?: number
 }
 
@@ -44,6 +45,7 @@ export interface LinkPropsType extends LinkClassType {
     to?: string,
     href?: string,
     slotClass?: string,
+    iconClass?: string,
     ratio?: number,
 }
 

@@ -42,12 +42,12 @@
 @button-text-border-width:                      @global-border-width;
 @button-text-border:                            @button-text-hover-color;
 
-@button-muted-background:                       fade(@global-muted-background, 30%);
-@button-muted-color:                            @global-inverse-color;
-@button-muted-hover-background:                 fade(@global-muted-background, 40%);
-@button-muted-hover-color:                      @global-inverse-color;
-@button-muted-active-background:                fade(@global-muted-background, 50%);
-@button-muted-active-color:                     @global-inverse-color;
+@button-muted-background:                       @global-muted-background;
+@button-muted-color:                            @global-color;
+@button-muted-hover-background:                 darken(@global-muted-background, 2%);
+@button-muted-hover-color:                      @global-color;
+@button-muted-active-background:                darken(@global-muted-background, 5%);
+@button-muted-active-color:                     @global-color;
 
 @button-padding-horizontal:                     @global-gutter;
 @button-has-icon-padding-right:                 (@global-gutter / 2);
@@ -227,7 +227,6 @@
 
     .uk-button-muted {
         background-color: @button-muted-background;
-        color: @button-muted-color;
     }
 
     /* Hover */

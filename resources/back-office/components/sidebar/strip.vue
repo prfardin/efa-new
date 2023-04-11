@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import PrLink from '@bc/core/link.vue'
-import PrIcon from '@bc/core/icon.vue'
 import PrNav from '@bc/core/nav.vue'
 import Avatar from '@bi/avatar.png'
 
@@ -22,27 +21,21 @@ import Avatar from '@bi/avatar.png'
         <div class="pr-sidebar-strip-container">
             <nav>
                 <pr-nav>
-                    <li><pr-link to="/about" icon="line-search" :ratio="0.7" /></li>
-                    <li><pr-link to="/about" icon="star" :ratio="0.7" class="pr-icon-favourite" /></li>
+                    <li><pr-link class="pr-strip-item-muted" to="/about" icon="line-search" :ratio="0.7" /></li>
+                    <li><pr-link class="pr-icon-favourite" to="/about" icon="star" :ratio="0.7" /></li>
                     <li><pr-link to="/about" icon="create-dashboard" :ratio="0.8" /></li>
-                    <li><pr-link to="/about" icon="folder-minus" class="uk-light" :ratio="0.8" /></li>
+                    <li><pr-link class="uk-active" to="/about" icon="folder-minus" :ratio="0.8" /></li>
                     <li class="pr-item-has-notification"><pr-link to="/about" icon="compass" :ratio="0.8" /></li>
-                    <li class="pr-item-has-badge"><pr-link to="/about" icon="bell" :ratio="0.8" slot-class="pr-sidebar-strip-badge">2</pr-link></li>
+                    <li class="pr-item-has-badge"><pr-link slot-class="pr-sidebar-strip-badge" to="/about" icon="bell" :ratio="0.8">2</pr-link></li>
                     <li><pr-link to="/about" icon="notebooks" :ratio="0.8" /></li>
                     <li><pr-link to="/about" icon="bag" :ratio="0.8" /></li>
                     <li class="uk-nav-divider"></li>
                     <li class="pr-sidebar-strip-accordion">
                         <pr-link to="/about" icon="file-alt" :ratio="0.65"></pr-link>
-                        <pr-link style="margin-top: -10px" to="/about" icon="angle-down" :ratio="0.8" />
+                        <pr-link class="pr-accordion-collapse" to="/about" icon="angle-down" :ratio="0.8" />
                     </li>
-                    <li style="margin-top: 18px;">
-                        <pr-link to="/about" icon="plus" :ratio="0.7" class="uk-light" />
-                    </li>
+                    <li><pr-link class="pr-strip-item-primary" icon-class="pr-border-circle" to="/about" icon="line-plus" :ratio="0.7" /></li>
                 </pr-nav>
-                <div class="line" style="top: 0; transform: translate(50%, 0px); right: 50%; width: 36px; height: 36px; z-index: -1; border-radius: 10px; background: #f0f4f7;"></div>
-                <div class="line" style="top: 128px; transform: translate(50%, 0px); right: 50%; width: 36px; height: 36px; z-index: -1; border-radius: 10px; background: #2785ff;"></div>
-<!--                <div class="line" style="top: 382px; transform: translate(50%, 0px); right: 50%; width: 40px; height: 60px; z-index: -1; border-radius: 10px; background: rgb(255, 255, 255); box-shadow: 0 13px 20px rgba(0, 0, 0, 0.1);"></div>-->
-                <div class="line" style="top: 462px; transform: translate(50%, 0px); right: 50%; width: 36px; height: 36px; z-index: -1; border-radius: 100%; background: #2785ff;"></div>
             </nav>
         </div>
     </div>

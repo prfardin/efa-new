@@ -92,7 +92,35 @@
 // Miscellaneous
 // ========================================================================
 
-.hook-icon-misc() {}
+.hook-icon-misc() {
+
+    // Fill Icon Instead Button
+    // ========================================================================
+
+    [class*=pr-fill-instead] {
+        background-color: transparent;
+    }
+
+    //
+    // Styles
+    //
+
+    .pr-fill-instead-primary > * {
+        background-color: @button-primary-background;
+        color: @button-primary-color;
+    }
+
+    .pr-fill-instead-primary:hover > * {
+        background-color: @button-primary-hover-background;
+        color: @button-primary-hover-color;
+    }
+
+    .pr-fill-instead-primary:active > * {
+        background-color: @button-primary-active-background;
+        color: @button-primary-active-color;
+    }
+
+}
 
 
 // Inverse

@@ -23,6 +23,7 @@ interface LinkPropsType {
     reset?: boolean,
     toggle?: boolean,
     icon?: string,
+    iconClass?: string,
     ratio?: number,
 }
 const props = withDefaults(defineProps<LinkPropsType>(), {
@@ -39,7 +40,7 @@ const linkClass = computed(() => linkClassObject(props, !!slots.default))
 <template>
     <component :is="tag" :to="to" :href="href" :class="linkClass">
         <template v-if="icon">
-            <pr-icon :icon="icon" :ratio="ratio" />
+            <pr-icon :class="iconClass" :icon="icon" :ratio="ratio" />
             <span :class="slotClass" v-if="slots.default"><slot /></span>
         </template>
         <slot v-else />

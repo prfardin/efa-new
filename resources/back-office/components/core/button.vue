@@ -30,6 +30,7 @@ interface ButtonPropsType {
     icon?: string,
     iconButton?: boolean,
     ratio?: number,
+    iconClass?: string,
     width?: string
 }
 const props = withDefaults(defineProps<ButtonPropsType>(), {
@@ -46,7 +47,7 @@ const buttonClass = computed(() => buttonClassObject(props, !!slots.default))
 <template>
     <component :is="tag" :to="to" :href="href" :class="buttonClass">
         <template v-if="icon">
-            <pr-icon :icon="icon" :ratio="ratio" />
+            <pr-icon :class="iconClass" :icon="icon" :ratio="ratio" />
             <span :class="slotClass" v-if="slots.default"><slot /></span>
         </template>
         <slot v-else />

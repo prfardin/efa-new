@@ -12,6 +12,7 @@
 @sidebar-border-radius:                         0 25px 25px 0;
 @strip-border-radius:                           10px;
 @pr-strip-border-radius:                        0 @strip-border-radius @strip-border-radius 0;
+@strip-item-border-radius:                      10px;
 @strip-header-wrapper-border-radius:            20px;
 @sidebar-header-container-border-radius:        @strip-header-wrapper-border-radius - 5px;
 
@@ -25,11 +26,13 @@
 
 @strip-width:                                   78px;
 @strip-background-color:                        @global-white-color;
+@sidebar-item-primary-background:               @global-primary-background;
 @strip-margin:                                  0;
 @strip-container-item-height:                   36px;
+@strip-container-item-width:                    36px;
 @strip-container-item-color:                    @sidebar-item-color;
 @strip-container-item-font-size:                0.875rem;
-@strip-container-transition-duration:           0.2s;
+@strip-container-transition:                    all 0.2s ease-in-out;
 @sidebar-header-line-width:                     2px;
 @sidebar-header-line-height:                    14px;
 @sidebar-header-container-height:               40px;
@@ -39,6 +42,8 @@
 @sidebar-header-status-height:                  @sidebar-header-status-width;
 @sidebar-strip-header-min-width:                16px;
 @sidebar-strip-header-height:                   @sidebar-strip-header-min-width;
+@strip-divider-width:                           @strip-width - 66px;
+@strip-container-accordion-width:               @strip-container-item-width + 4px;
 
 @strip-margin-top:                              28px;
 @strip-margin-bottom:                           0;
@@ -49,6 +54,7 @@
 @container-padding:                             0;
 @container-item-height:                         @strip-container-item-height;
 @container-item-font-size:                      @strip-container-item-font-size;
+@container-item-margin-bottom:                  7px;
 @container-item-padding:                        10px 10px;
 @container-item-border-radius:                  @sidebar-border-radius;
 @container-item-hover-color:                    rgba(0, 0, 0, 0.1);
@@ -57,6 +63,8 @@
 @sidebar-header-placeholder-bottom:             -21px;
 @sidebar-header-letter-right:                   @sidebar-header-placeholder-right - 3px;
 @sidebar-header-letter-bottom:                  @sidebar-header-placeholder-bottom + 1px;
+@strip-divider-margin:                          @container-item-margin-bottom * 2 + 2px;
+@strip-accordion-margin:                        @container-item-margin-bottom * 2 + 4px;
 
 /* ========================================================================
    Component: Sidebar
@@ -176,7 +184,7 @@
     /* 3 */
     color: @strip-container-item-color;
     font-size: @strip-container-item-font-size;
-    transition: @strip-container-transition-duration;
+    transition: @strip-container-transition;
 }
 
 /*
@@ -189,8 +197,8 @@
 .pr-sidebar-strip-container nav > .uk-nav-item > a > .uk-icon {
     /* 1 */
     box-sizing: border-box;
-    height: 36px;
-    width: 36px;
+    height: @strip-container-item-width;
+    width: @strip-container-item-width;
     /* 2 */
     display: flex;
     align-items: center;
@@ -199,28 +207,66 @@
     padding: 5px;
     font-size: 10px;
     font-weight: bolder;
-    border-radius: 10px;
-    transition: all @strip-container-transition-duration ease;
+    border-radius: @strip-item-border-radius;
+    transition: @strip-container-transition;
     background-color: transparent;
-    //background-color: rgb(39, 133, 255);
 }
 
-/* 4 */
 .pr-sidebar-strip-container .uk-nav > li,
 .pr-sidebar-container nav > .uk-nav-item > a {
-    margin-bottom: 7px;
+    margin-bottom: @container-item-margin-bottom;
 }
 
-/* Active item style */
-// may remove
-.pr-sidebar-strip-container > nav .line {
-    position: absolute;
-    left: 0;
-    width: 3px;
-    background-color: #faf9fe;
-    border-radius: 0 3px 3px 0;
+/* we will set comment later */
+.pr-sidebar-strip-container .uk-nav > li > a [class*=pr-icon-] {
+    transition: @strip-container-transition;
 }
 
+.pr-sidebar-strip-container .uk-nav > li > a:hover > .uk-icon,
+.pr-sidebar-strip-container nav > .uk-nav-item > a:hover > .uk-icon {
+    background-color: @button-primary-background;
+    color: @button-primary-color;
+
+    .pr-icon-primary {
+        color: @global-icon-primary-color-muted;
+    }
+
+    .pr-icon-secondary {
+        color: @global-icon-secondary-color-muted;
+    }
+
+    .pr-icon-tertiary {
+        color: @global-icon-tertiary-color-muted;
+    }
+
+    .pr-icon-quaternary {
+        color: @global-icon-quaternary-color-muted;
+    }
+}
+
+.pr-sidebar-strip-container .uk-nav > li > a:active > .uk-icon,
+.pr-sidebar-strip-container nav > .uk-nav-item > a:active > .uk-icon,
+.pr-sidebar-strip-container .uk-nav > li > a.uk-active > .uk-icon,
+.pr-sidebar-strip-container nav > .uk-nav-item > a.uk-active > .uk-icon {
+    background-color: @button-primary-background;
+    color: @button-primary-color;
+
+    .pr-icon-primary {
+        color: @global-icon-primary-color-muted;
+    }
+
+    .pr-icon-secondary {
+        color: @global-icon-secondary-color-muted;
+    }
+
+    .pr-icon-tertiary {
+        color: @global-icon-tertiary-color-muted;
+    }
+
+    .pr-icon-quaternary {
+        color: @global-icon-quaternary-color-muted;
+    }
+}
 
 /* Sidebar Container
  ========================================================================== */
@@ -254,7 +300,7 @@
     font-size: @container-item-font-size;
     padding: @container-item-padding;
     border-radius: @container-item-border-radius; /* 2 */
-    transition: @strip-container-transition-duration;
+    transition: @strip-container-transition;
 }
 
 /* Hover */
@@ -309,7 +355,7 @@
     transform: @global-middle-transform;
     width: @sidebar-header-line-width;
     height: @sidebar-header-line-height;
-    border-radius: @strip-border-radius
+    border-radius: @strip-item-border-radius
 }
 
 .pr-sidebar-strip-header-wrapper .pr-sidebar-header-line {
@@ -407,7 +453,7 @@
     min-width: @sidebar-strip-header-min-width;
     height: @sidebar-strip-header-height;
     background-color: @global-warning-background;
-    border-radius: @strip-border-radius;
+    border-radius: @strip-item-border-radius;
     border: 2px solid @global-white-color;
     font-size: 0.45rem; // 8px
     color: @global-white-color;
@@ -415,30 +461,72 @@
 }
 
 .pr-sidebar .uk-nav .uk-nav-divider {
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: @strip-divider-margin;
+    margin-bottom: @strip-divider-margin;
 }
 
 .pr-sidebar-strip-container .uk-nav .uk-nav-divider {
-    margin-right: 12px;
-    margin-left: 12px;
+    margin-right: @strip-divider-width;
+    margin-left: @strip-divider-width;
 }
 
-.pr-sidebar-strip-container .pr-sidebar-strip-accordion {
-    width: 40px;
-    height: 60px;
-    border-radius: 10px;
-    background: rgb(255, 255, 255);
+.pr-sidebar-strip-container .uk-nav > .pr-sidebar-strip-accordion {
+    width: @strip-container-accordion-width;
+    border-radius: @strip-item-border-radius;
+    background: @global-white-color;
     box-shadow: 0 13px 20px rgba(0, 0, 0, 0.1);
-    margin-top: 28px;
+    margin-bottom: @strip-accordion-margin;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.pr-sidebar-strip-container .uk-nav > .pr-sidebar-strip-accordion > a > .uk-icon,
-.pr-sidebar-strip-container nav > .pr-sidebar-strip-accordion > a > .uk-icon {
-    background: rgb(255, 255, 255);
+.pr-sidebar-strip-container .uk-nav > .pr-sidebar-strip-accordion > .pr-accordion-collapse > .uk-icon,
+.pr-sidebar-strip-container nav > .pr-sidebar-strip-accordion > .pr-accordion-collapse > .uk-icon {
+    background-color: transparent;
+}
+
+.pr-sidebar-strip-container .uk-nav > .pr-sidebar-strip-accordion > a:not(.pr-accordion-collapse) > .uk-icon,
+.pr-sidebar-strip-container nav > .pr-sidebar-strip-accordion > a:not(.pr-accordion-collapse) > .uk-icon {
+    background: @global-white-color;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-    width: 28px;
-    height: 28px;
-    border-radius: 8px
+    height: @strip-container-item-height - 8px;
+    width: @strip-container-item-width - 8px;
+    border-radius: @strip-item-border-radius - 2px
+}
+
+.pr-sidebar-strip-container .uk-nav > li > .pr-strip-item-muted > .uk-icon,
+.pr-sidebar-strip-container nav > .uk-nav-item > .pr-strip-item-muted > .uk-icon {
+    background-color: @button-muted-background;
+    color: @button-muted-color;
+}
+
+.pr-sidebar-strip-container .uk-nav > li > .pr-strip-item-muted:hover > .uk-icon,
+.pr-sidebar-strip-container nav > .uk-nav-item > .pr-strip-item-muted:hover > .uk-icon {
+    background-color: @button-muted-hover-background;
+    color: @button-muted-hover-color;
+}
+
+.pr-sidebar-strip-container .uk-nav > li > .pr-strip-item-muted:active > .uk-icon,
+.pr-sidebar-strip-container nav > .uk-nav-item > .pr-strip-item-muted:active > .uk-icon {
+    background-color: @button-muted-active-background;
+    color: @button-muted-active-color;
+}
+
+.pr-sidebar-strip-container .uk-nav > li > .pr-strip-item-primary > .uk-icon,
+.pr-sidebar-strip-container nav > .uk-nav-item > .pr-strip-item-primary > .uk-icon {
+    background-color: @button-primary-background;
+    color: @button-primary-color;
+}
+
+.pr-sidebar-strip-container .uk-nav > li > .pr-strip-item-primary:hover > .uk-icon,
+.pr-sidebar-strip-container nav > .uk-nav-item > .pr-strip-item-primary:hover > .uk-icon {
+    background-color: @button-primary-hover-background;
+    color: @button-primary-hover-color;
+}
+
+.pr-sidebar-strip-container .uk-nav > li > .pr-strip-item-primary:active > .uk-icon,
+.pr-sidebar-strip-container nav > .uk-nav-item > .pr-strip-item-primary:active > .uk-icon {
+    background-color: @button-primary-active-background;
+    color: @button-primary-active-color;
 }
 
