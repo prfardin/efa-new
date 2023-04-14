@@ -8,6 +8,10 @@
         "notifications": "Notifications",
         "reports": "Reports",
         "manage_finance": "Manage Finance",
+        "in_progress": "In Progress",
+        "new_capability": "Add New Capability",
+        "see_in": "See in",
+        "learning_school": "learning school",
         "last": "last"
     }
 }

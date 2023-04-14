@@ -7,8 +7,25 @@
 // Variables
 // ========================================================================
 
+@margin-xsmall-margin:                                  @global-xsmall-margin;
+
 
 // Miscellaneous
 // ========================================================================
 
-.hook-margin-misc() {}
+.hook-margin-misc() {
+    /* ========================================================================
+       Component: Margin
+     ========================================================================== */
+
+    /* xSmall
+     ========================================================================== */
+
+    .pr-margin-xsmall { margin-bottom: @margin-xsmall-margin; }
+    * + .pr-margin-xsmall { margin-top: @margin-xsmall-margin !important; }
+
+    .pr-margin-xsmall-top { margin-top: @margin-xsmall-margin !important; }
+    .pr-margin-xsmall-bottom { margin-bottom: @margin-xsmall-margin !important; }
+    .pr-margin-xsmall-left { margin-left: @margin-xsmall-margin !important; }
+    .pr-margin-xsmall-right { margin-right: @margin-xsmall-margin !important; }
+}

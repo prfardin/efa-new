@@ -16,6 +16,8 @@
 @text-meta-color:                               @global-muted-color;
 
 @text-small-font-size:                          @global-small-font-size;
+@text-xsmall-font-size:                         @global-xsmall-font-size;
+@text-xxsmall-font-size:                        @global-xxsmall-font-size;
 @text-small-line-height:                        1.5;
 
 @text-large-font-size:                          @global-large-font-size;
@@ -73,7 +75,23 @@
 // Miscellaneous
 // ========================================================================
 
-.hook-text-misc() {}
+.hook-text-misc() {
+
+    /* Size modifiers
+     ========================================================================== */
+
+    .pr-text-xsmall {
+        font-size: @text-xsmall-font-size;
+        line-height: @text-small-line-height;
+        .hook-text-small();
+    }
+
+    .pr-text-xxsmall {
+        font-size: @text-xxsmall-font-size;
+        line-height: @text-small-line-height;
+        .hook-text-small();
+    }
+}
 
 
 // Inverse

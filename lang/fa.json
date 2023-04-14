@@ -1,6 +1,17 @@
 {
     "sidebar": {
         "search": "جستجو...",
-        "dashboard": "داشبورد"
+        "dashboard": "داشبورد",
+        "market": "فروشگاه",
+        "manage_products": "مدیریت محصولات",
+        "orders": "سفارشات",
+        "notifications": "اطلاعیه ها",
+        "reports": "گزارشات",
+        "manage_finance": "مدیریت مالی",
+        "in_progress": "در حال انجام",
+        "new_capability": "اضافه کردن قابلیت جدید",
+        "see_in": "مشاهده در",
+        "learning_school": "بخش آموزش ها",
+        "last": "last"
     }
 }

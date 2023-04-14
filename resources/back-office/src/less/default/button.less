@@ -339,6 +339,8 @@
 .hook-inverse-button-default-active() { border-color: @inverse-global-emphasis-color; }
 
 .hook-inverse-button-primary() {
+    background-color: @global-primary-background;
+    color: @button-primary-color;
     border: @button-border-width solid transparent;
 
     .pr-icon-primary {
@@ -358,7 +360,10 @@
     }
 }
 
-.hook-inverse-button-primary-hover() {}
+.hook-inverse-button-primary-hover() {
+    background-color: @button-primary-hover-background;
+    color: @button-primary-hover-color;
+}
 .hook-inverse-button-primary-active() {}
 
 .hook-inverse-button-secondary() {}

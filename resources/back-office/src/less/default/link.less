@@ -41,7 +41,11 @@
 // Miscellaneous
 // ========================================================================
 
-.hook-link-misc() {}
+.hook-link-misc() {
+    .pr-link-golden {
+        color: #fbda6a;
+    }
+}
 
 
 // Inverse
@@ -53,3 +57,17 @@
 .hook-inverse-link-text-hover() {}
 
 .hook-inverse-link-heading-hover() {}
+
+.hook-inverse() {
+    .pr-link-golden {
+        color: @global-icon-favourite-color;
+    }
+
+    .pr-link-golden:hover {
+        color: @global-icon-favourite-color;
+    }
+
+    .pr-link-golden:active {
+        color: @global-icon-favourite-color;
+    }
+}
