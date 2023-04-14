@@ -12,16 +12,19 @@
 @sidebar-border-radius:                         0 25px 25px 0;
 @strip-border-radius:                           10px;
 @pr-strip-border-radius:                        0 @strip-border-radius @strip-border-radius 0;
-@strip-item-border-radius:                      10px;
+@sidebar-item-border-radius:                    10px;
+@strip-item-border-radius:                      @sidebar-item-border-radius;
 @strip-header-wrapper-border-radius:            20px;
 @sidebar-header-container-border-radius:        @strip-header-wrapper-border-radius - 5px;
+@sidebar-accordion-border-radius:               12px;
 
-@wrapper-background-color:                      #161719;
+@wrapper-background-color:                      #f9fafc;
 @strip-header-padding:                          52px 0 0 0;
 @wrapper-header-height:                         38px;
+@wrapper-header-padding-top:                    52px;
 @wrapper-header-padding-right:                  22px;
 @wrapper-header-padding-left:                   @wrapper-header-padding-right;
-@wrapper-header-padding:                        52px @wrapper-header-padding-right 0 @wrapper-header-padding-left;
+@wrapper-header-padding:                        @wrapper-header-padding-top @wrapper-header-padding-right 0 @wrapper-header-padding-left;
 @strip-wrapper-header-padding:                  6px;
 
 @strip-width:                                   78px;
@@ -29,7 +32,7 @@
 @sidebar-item-primary-background:               @global-primary-background;
 @strip-margin:                                  0;
 @strip-container-item-height:                   36px;
-@strip-container-item-width:                    36px;
+@strip-container-item-width:                    @strip-container-item-height;
 @strip-container-item-color:                    @sidebar-item-color;
 @strip-container-item-font-size:                0.875rem;
 @strip-container-transition:                    all 0.2s ease-in-out;
@@ -44,9 +47,13 @@
 @sidebar-strip-header-height:                   @sidebar-strip-header-min-width;
 @strip-divider-width:                           @strip-width - 66px;
 @strip-container-accordion-width:               @strip-container-item-width + 4px;
+@sidebar-marker-height:                         24px;
+@sidebar-marker-width:                          @sidebar-marker-height;
 
 @strip-margin-top:                              28px;
 @strip-margin-bottom:                           0;
+@strip-icon-padding:                            5px;
+@sidebar-badge-padding:                         0 4px;
 @container-margin:                              @strip-margin-top 22px;
 @sidebar-wrapper-margin-left:                   @strip-width;
 // may remove | may usable
@@ -55,7 +62,7 @@
 @container-item-height:                         @strip-container-item-height;
 @container-item-font-size:                      @strip-container-item-font-size;
 @container-item-margin-bottom:                  7px;
-@container-item-padding:                        10px 10px;
+@container-item-padding:                        10px;
 @container-item-border-radius:                  @sidebar-border-radius;
 @container-item-hover-color:                    rgba(0, 0, 0, 0.1);
 @container-item-hover-border-left-radius:       24px;
@@ -204,7 +211,7 @@
     align-items: center;
     justify-content: center;
     /* 3 */
-    padding: 5px;
+    padding: @strip-icon-padding;
     font-size: 10px;
     font-weight: bolder;
     border-radius: @strip-item-border-radius;
@@ -212,8 +219,10 @@
     background-color: transparent;
 }
 
+.pr-sidebar-container .uk-nav > li,
 .pr-sidebar-strip-container .uk-nav > li,
-.pr-sidebar-container nav > .uk-nav-item > a {
+.pr-sidebar-container nav > .uk-nav-item,
+.pr-sidebar-strip-container nav > .uk-nav-item {
     margin-bottom: @container-item-margin-bottom;
 }
 
@@ -224,24 +233,8 @@
 
 .pr-sidebar-strip-container .uk-nav > li > a:hover > .uk-icon,
 .pr-sidebar-strip-container nav > .uk-nav-item > a:hover > .uk-icon {
-    background-color: @button-primary-background;
-    color: @button-primary-color;
-
-    .pr-icon-primary {
-        color: @global-icon-primary-color-muted;
-    }
-
-    .pr-icon-secondary {
-        color: @global-icon-secondary-color-muted;
-    }
-
-    .pr-icon-tertiary {
-        color: @global-icon-tertiary-color-muted;
-    }
-
-    .pr-icon-quaternary {
-        color: @global-icon-quaternary-color-muted;
-    }
+    background-color: @button-muted-background;
+    color: @button-muted-color;
 }
 
 .pr-sidebar-strip-container .uk-nav > li > a:active > .uk-icon,
@@ -298,8 +291,8 @@
     height: @container-item-height; /* 1 */
     color: @sidebar-item-color;
     font-size: @container-item-font-size;
-    padding: @container-item-padding;
-    border-radius: @container-item-border-radius; /* 2 */
+    padding: @container-item-padding @container-item-padding;
+    border-radius: @sidebar-item-border-radius; /* 2 */
     transition: @strip-container-transition;
 }
 
@@ -325,6 +318,9 @@
 .pr-sidebar-strip-header {
     /* 1 */
     box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
     /* 2 */
     width: 100%;
 }
@@ -335,17 +331,25 @@
 }
 
 /* 3 */
-.pr-sidebar-wrapper-header {
+.pr-sidebar-header {
+    display: flex;
+    align-items: center;
     min-height: @wrapper-header-height;
     padding: @wrapper-header-padding;
 }
 
 // we will set comment later
-.pr-sidebar-strip-header-wrapper {
+.pr-sidebar-strip-header-wrapper,
+.pr-sidebar-header-wrapper {
     position: relative;
     padding: @strip-wrapper-header-padding;
     border: @global-border-width solid @global-border-strip-color;
     border-radius: @strip-header-wrapper-border-radius
+}
+
+.pr-sidebar-header-wrapper {
+    border-color: transparent;
+    background-color: #242527
 }
 
 .pr-sidebar-header-line {
@@ -362,6 +366,10 @@
     background-color: darken(@global-primary-background, 10%)
 }
 
+.pr-sidebar-header-wrapper .pr-sidebar-header-line {
+    background-color: @global-icon-favourite-color
+}
+
 .pr-sidebar-header-container {
     overflow: hidden;
     position: relative;
@@ -370,30 +378,29 @@
     justify-content: center;
     border-radius: @sidebar-header-container-border-radius;
     width: @sidebar-header-container-height;
-    height: @sidebar-header-container-width
+    height: @sidebar-header-container-width;
+    background-color: #f9eee8;
 }
 
-.pr-sidebar-strip-header-wrapper .pr-sidebar-header-container {
-    background: #f9eee8;
+.pr-sidebar-header .pr-sidebar-header-placeholder {
+    position: relative;
+    margin-left: @global-margin;
 }
 
-.pr-sidebar-header-placeholder,
+.pr-sidebar-strip-header-wrapper .pr-sidebar-header-placeholder,
 .pr-sidebar-header-letter,
 .pr-sidebar-header-status {
     position: absolute;
 }
 
-.pr-sidebar-header-placeholder {
+.pr-sidebar-strip-header-wrapper .pr-sidebar-header-placeholder {
     right: @sidebar-header-placeholder-right;
     bottom: @sidebar-header-placeholder-bottom;
     width: @sidebar-header-placeholder-width;
     height: @sidebar-header-container-height;
     border-radius: 165%;
-    transform: rotate(-127deg)
-}
-
-.pr-sidebar-strip-header-wrapper .pr-sidebar-header-placeholder {
-    background-color: lighten(@wrapper-background-color, 2%);
+    transform: rotate(-127deg);
+    background-color: @wrapper-inverse-background-color;
 }
 
 .pr-sidebar-header-letter {
@@ -415,11 +422,15 @@
     right: 2px;
     width: @sidebar-header-status-width;
     height: @sidebar-header-status-height;
-    border-radius: 100%
+    border-radius: 100%;
+    background-color: @global-success-background;
 }
 
-.pr-sidebar-strip-header-wrapper .pr-sidebar-header-status {
-    background-color: @global-success-background;
+.pr-sidebar-header .pr-sidebar-header-status {
+    width: @sidebar-header-status-width + 1px;
+    height: @sidebar-header-status-height + 1px;
+    top: -2px;
+    right: -8px;
 }
 
 .pr-item-has-badge,
@@ -433,34 +444,92 @@
     display: block;
     box-sizing: border-box;
     position: absolute;
-    top: 8px;
-    right: 6px;
-    width: 8px;
-    height: 8px;
+    top: 0;
+    right: -2px;
+    width: @sidebar-header-status-width + 2px;
+    height: @sidebar-header-status-height + 2px;
     background-color: @global-warning-background;
     border-radius: 100%;
     border: 2px solid @global-white-color
 }
 
-.pr-sidebar-strip-badge {
+.pr-sidebar-strip .pr-item-has-notification .uk-icon::after {
+    top: 8px;
+    right: @strip-icon-padding + 1px;
+}
+
+.pr-sidebar-strip-badge,
+.pr-sidebar-icon-flip,
+.pr-sidebar-notification,
+.pr-sidebar-icon-flip .pr-sidebar-badge {
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
     position: absolute;
-    top: 3px;
-    left: 38px;
+}
+
+.pr-sidebar-strip-badge {
     min-width: @sidebar-strip-header-min-width;
     height: @sidebar-strip-header-height;
     background-color: @global-warning-background;
     border-radius: @strip-item-border-radius;
-    border: 2px solid @global-white-color;
-    font-size: 0.45rem; // 8px
     color: @global-white-color;
-    padding: 0 4px;
+    padding: @sidebar-badge-padding;
+    top: 3px;
+    left: 38px;
+    font-size: 0.45rem; // 8px
+    border: 2px solid @global-white-color;
 }
 
-.pr-sidebar .uk-nav .uk-nav-divider {
+.pr-sidebar-icon-flip,
+.pr-sidebar-icon-flip .pr-sidebar-badge,
+.pr-sidebar-notification {
+    right: @container-item-padding;
+    min-width: @sidebar-marker-width;
+    height: @sidebar-marker-height;
+    border-radius: 12px;
+    background-color: transparent;
+    font-size: 0.625rem; // 10px
+}
+
+.pr-sidebar-icon-flip .pr-sidebar-badge {
+    position: static;
+}
+
+.pr-sidebar-badge,
+.pr-sidebar-icon-flip .pr-sidebar-badge {
+    padding: @sidebar-badge-padding;
+    background-color: @global-warning-background;
+}
+
+.pr-sidebar-marker {
+    background-color: darken(@global-white-color, 6.5%);
+}
+
+.pr-sidebar-notification::after {
+    content: '';
+    display: block;
+    box-sizing: border-box;
+    width: @sidebar-header-status-width + 2px;
+    height: @sidebar-header-status-height + 2px;
+    border-radius: 100%;
+    background-color: @global-warning-background;
+}
+
+.pr-sidebar-multiple-icon {
+    display: flex;
+    align-items: center;
+    column-gap: @global-small-gutter;
+}
+
+.pr-sidebar-user-notification .uk-icon-image {
+    background-color: #e6e1dd;
+    border-radius: 100%;
+    margin-left: @global-xsmall-margin;
+}
+
+.pr-sidebar .uk-nav > .uk-nav-divider {
     margin-top: @strip-divider-margin;
     margin-bottom: @strip-divider-margin;
 }
@@ -530,3 +599,68 @@
     color: @button-primary-active-color;
 }
 
+.pr-sidebar-accordion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: @wrapper-header-padding-top + 8px;
+    right: 0;
+    width: 18px;
+    height: 36px;
+    background-color: fade(@global-white-color, 12%);
+    border-radius: @sidebar-accordion-border-radius 0 0 @sidebar-accordion-border-radius
+}
+
+.pr-sidebar-container .uk-nav > li > .pr-sidebar-search {
+    font-size: 0.75rem; // 12px
+}
+
+.pr-sidebar-container .uk-nav > li > a > .uk-icon + * {
+    margin-left: @global-small-margin;
+}
+
+.pr-sidebar-container .uk-nav-header {
+    font-size: 0.625rem; // 10px
+    padding: @container-item-padding;
+    margin-top: @container-item-margin-bottom * 2;
+    margin-bottom: 0 !important;
+}
+
+// Inverse
+// ========================================================================
+
+@wrapper-inverse-background-color:                      @global-secondary-background;
+@sidebar-inverse-item-color:                            @global-inverse-color;
+@sidebar-inverse-search-color:                          @inverse-global-inverse-color;
+
+.pr-light.pr-sidebar-wrapper {
+    background-color: @wrapper-inverse-background-color;
+}
+
+.hook-pr-inverse() {
+    .pr-sidebar-wrapper {
+        background-color: @wrapper-inverse-background-color;
+    }
+
+    .pr-sidebar-container .uk-nav > li > a,
+    .pr-sidebar-container nav > .uk-nav-item > a {
+        color: @sidebar-inverse-item-color;
+    }
+
+    .pr-sidebar-container .uk-nav > li > .pr-sidebar-item-muted,
+    .pr-sidebar-container .uk-nav > li > .pr-sidebar-search,
+    .pr-sidebar-container .uk-nav-header {
+        color: @sidebar-inverse-search-color;
+    }
+
+    .pr-sidebar-container .uk-nav > li > .pr-sidebar-item-muted,
+    .pr-sidebar-container .uk-nav > li > .pr-sidebar-search,
+    .pr-sidebar-marker {
+        background: fade(@global-white-color, 6.5%);
+    }
+
+    .pr-item-has-notification .uk-icon::after {
+        border-color: @wrapper-inverse-background-color
+    }
+}

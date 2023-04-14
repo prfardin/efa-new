@@ -1,0 +1,13 @@
+{
+    "sidebar": {
+        "search": "Search ...",
+        "dashboard": "Dashboard",
+        "market": "Market",
+        "manage_products": "Manage Products",
+        "orders": "Orders",
+        "notifications": "Notifications",
+        "reports": "Reports",
+        "manage_finance": "Manage Finance",
+        "last": "last"
+    }
+}

@@ -9,10 +9,10 @@
 
 @inverse-global-color-mode:                     light;
 
-@inverse-global-color:                          fade(@global-inverse-color, 70%);
+@inverse-global-color:                          @global-inverse-color;
 @inverse-global-emphasis-color:                 @global-inverse-color;
 @inverse-global-muted-color:                    fade(@global-inverse-color, 50%);
-@inverse-global-inverse-color:                  @global-color;
+@inverse-global-inverse-color:                  #92959d;
 
 @inverse-global-primary-background:             @global-inverse-color;
 @inverse-global-muted-background:               fade(@global-muted-background, 10%);
@@ -30,11 +30,36 @@
 @global-icon-quaternary-color-light:          #595959;
 
 @global-icon-primary-color-muted:             @global-white-color;
-@global-icon-secondary-color-muted:           darken(@global-white-color, 30%);
-@global-icon-tertiary-color-muted:            darken(@global-white-color, 40%);
-@global-icon-quaternary-color-muted:          darken(@global-white-color, 50%);
+@global-icon-secondary-color-muted:           darken(@global-white-color, 25%);
+@global-icon-tertiary-color-muted:            darken(@global-white-color, 35%);
+@global-icon-quaternary-color-muted:          darken(@global-white-color, 45%);
 
-// Component
+/* ========================================================================
+   Component: Inverse
+ ========================================================================== */
+
+/*
+ * Implemented class depends on the general theme color
+ * `uk-light` is for light colors on dark backgrounds
+ * `uk-dark` is or dark colors on light backgrounds
+ */
+
+.pr-light when (@inverse-global-color-mode = light) {
+
+    .hook-pr-inverse();
+
+}
+
+.pr-dark when (@inverse-global-color-mode = dark) {
+
+    .hook-pr-inverse();
+
+}
+
+
+// Hooks
 // ========================================================================
 
 .hook-inverse() {}
+
+.hook-pr-inverse() {}

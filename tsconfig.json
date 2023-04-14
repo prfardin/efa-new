@@ -45,6 +45,9 @@
             "@bv/*": [
                 "resources/back-office/views/*"
             ],
+            "@bStores/*": [
+                "resources/back-office/src/stores/*"
+            ],
             "@ff/*": [
                 "resources/front-office/src/fonts/*"
             ],

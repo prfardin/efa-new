@@ -43,7 +43,7 @@ export const vueI18nVite = vueI18n({
     // compositionOnly: false,
 
     // you need to set i18n resource including paths !
-    include: 'lang/*/**.json',
+    include: 'lang/**.json',
 });
 
 export function laravelVite( additionalInput: string | string[] = 'resources/back-office/src/less/default.less'): any {
@@ -70,11 +70,12 @@ export const plugins: PluginOption[] = pluginsFunc();
 // we use alias for preventing to write full path in our app
 export const alias: AliasOptions = {
     '@':   '/resources',
-    '@b':  '/resources/back-office',            // back-office
-    '@bs': '/resources/back-office/src',        // back-office-src
-    '@bc': '/resources/back-office/components', // back-office-components
-    '@bv': '/resources/back-office/views',      // back-office-views
-    '@bf': '/resources/back-office/src/fonts',  // back-office-fonts,
-    '@bi': '/resources/back-office/src/images',  // back-office-images,
-    "@l/*": 'lang',                             // lang
+    '@b':  '/resources/back-office',                    // back-office
+    '@bs': '/resources/back-office/src',                // back-office-src
+    '@bc': '/resources/back-office/components',         // back-office-components
+    '@bv': '/resources/back-office/views',              // back-office-views
+    '@bf': '/resources/back-office/src/fonts',          // back-office-fonts,
+    '@bi': '/resources/back-office/src/images',         // back-office-images,
+    '@bStores': '/resources/back-office/src/stores',    // back-office-stores,
+    "@l/*": 'lang',                                     // lang
 }

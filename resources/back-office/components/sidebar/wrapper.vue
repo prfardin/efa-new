@@ -1,79 +1,83 @@
 <script setup lang="ts">
+import { useI18n } from "vue-i18n";
 import PrButton from '@bc/core/button.vue'
 import PrLink from '@bc/core/link.vue'
 import PrIcon from '@bc/core/icon.vue'
 import PrNav from '@bc/core/nav.vue'
 import Avatar from '@bi/avatar.png'
 
+const { t } = useI18n();
 </script>
 
 <template>
-    <div class="pr-sidebar-wrapper uk-light" style="z-index: 1;">
-        <a style="display: flex; align-items: center; justify-content: center; position: absolute;top: 60px;left: 0;width: 18px;height: 36px;background-color: rgb(50, 51, 53);border-radius: 0 12px 12px 0"><pr-icon class="test2" icon="angle-right" :ratio="0.8"></pr-icon></a>
-        <div class="pr-sidebar-wrapper-header uk-flex uk-flex-middle">
-            <span style="padding: 6px; border: 1px solid transparent; border-radius: 20px; position: relative;background-color: #242527">
-                <span style="position:absolute; top: 50%; right: -1px; transform: translate(0, -50%); width: 2px; height: 14px; background-color: #ffde6c; border-radius: 10px"></span>
-                <span style="overflow: hidden; border-radius: 15px;background: #f9eee8; width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;">
+    <div class="pr-sidebar-wrapper uk-light pr-light" style="z-index: 1;">
+        <pr-link class="pr-sidebar-accordion" to="#" icon="angle-right" :ratio="0.8"></pr-link>
+        <div class="pr-sidebar-header">
+            <div class="pr-sidebar-header-wrapper">
+                <span class="pr-sidebar-header-line"></span>
+                <span class="pr-sidebar-header-container">
                     <img :src="Avatar" alt="avatar">
                 </span>
-            </span>
-            <span class="uk-margin-right" style="position: relative; color: #ffffff">فردین <span style="position: absolute; top: -2px; left: -8px; width: 7px; height: 7px; background-color: #6fcf96; border-radius: 100%"></span></span>
+            </div>
+            <div class="pr-sidebar-header-placeholder">
+                <span>Fardin</span>
+                <span class="pr-sidebar-header-status"></span>
+            </div>
         </div>
         <div class="pr-sidebar-container">
             <nav>
                 <pr-nav>
                     <li>
-                        <pr-link style="color: #92959d; font-size: 12px" to="/about">
-                            <pr-icon icon="line-search" :ratio="0.7"></pr-icon>
-                            <span class="uk-margin-small-right">جستجو...</span>
-                            <pr-icon class="pr-icon-favourite" icon="star" :ratio="0.7" style="position: absolute; left: 10px;"></pr-icon>
+                        <pr-link class="pr-sidebar-search pr-sidebar-item-muted" to="/about" icon="line-search" :ratio="0.7">
+                            {{ t('sidebar.search') }}
+                            <template #after><pr-icon class="pr-icon-favourite pr-sidebar-icon-flip" icon="star" :ratio="0.7"></pr-icon></template>
                         </pr-link>
                     </li>
-                    <li class="uk-nav-header" style="font-size: 10px; padding: 10px 10px; color: #858687; margin-top: 14px">فروشگاه</li>
-                    <li style="margin-bottom: 7px">
-                        <pr-link style="color: #bfbfbf;" to="/about">
-                            <pr-icon icon="create-dashboard" :ratio="0.8"></pr-icon>
-                            <span class="uk-margin-small-right">داشبورد</span>
-                            <pr-icon icon="angle-down" :ratio="0.7" style="position: absolute; left: 10px;"></pr-icon>
+                    <li class="uk-nav-header">{{ t('sidebar.market') }}</li>
+                    <li>
+                        <pr-link to="/about" icon="create-dashboard" :ratio="0.8">
+                            {{ t('sidebar.dashboard') }}
+                            <template #after><pr-icon class="pr-sidebar-icon-flip" icon="angle-down" :ratio="0.7"></pr-icon></template>
                         </pr-link>
                     </li>
-                    <li style="margin-bottom: 7px">
-                        <pr-link style="color: #ffffff;" to="/about">
-                            <pr-icon icon="folder-minus" :ratio="0.8"></pr-icon>
-                            <span class="uk-margin-small-right">مدیریت محصولات</span>
+                    <li>
+                        <pr-link to="/about" icon="folder-minus" :ratio="0.8">{{ t('sidebar.manage_products') }}</pr-link>
+                    </li>
+                    <li>
+                        <pr-link class="pr-item-has-notification" to="/about" icon="compass" :ratio="0.8">{{ t('sidebar.orders') }}</pr-link>
+                    </li>
+                    <li>
+                        <pr-link to="/about" icon="bell" :ratio="0.8">
+                            {{ t('sidebar.notifications') }}
+                            <template #after>
+                                <div class="pr-sidebar-icon-flip pr-sidebar-multiple-icon">
+                                    <span class="pr-sidebar-user-notification">
+                                        <pr-icon class="pr-icon-favourite" icon="pen" :ratio="0.5"></pr-icon>
+                                        <span class="uk-icon uk-icon-image" :style="{backgroundImage: `url(${Avatar})`}"></span>
+                                    </span>
+                                    <span class="pr-sidebar-badge">2</span>
+                                </div>
+                            </template>
                         </pr-link>
                     </li>
-                    <li style="margin-bottom: 7px">
-                        <pr-link style="position: relative; color: #bfbfbf" to="/about">
-                            <pr-icon icon="compass" :ratio="0.8"></pr-icon>
-                            <span class="uk-margin-small-right">سفارشات</span>
-                            <span style="position: absolute; top: 8px; right: 22px; box-sizing: border-box; width: 8px; height: 8px; background-color: #fe754b; border-radius: 100%; border: 2px solid #151719"></span>
+                    <li>
+                        <pr-link to="/about" icon="notebooks" :ratio="0.8">
+                            {{ t('sidebar.reports') }}
+                            <template #after>
+                                <pr-icon class="pr-sidebar-icon-flip pr-sidebar-marker" icon="plus" :ratio="0.6"></pr-icon>
+                            </template>
                         </pr-link>
                     </li>
-                    <li style="margin-bottom: 7px">
-                        <pr-link style="position: relative; color: #bfbfbf" to="/about">
-                            <pr-icon icon="bell" :ratio="0.8"></pr-icon>
-                            <span class="uk-margin-small-right">اطلاعیه ها</span>
-                            <span style="position: absolute; left: 10px; box-sizing: border-box; width: 24px; height: 24px; background-color: rgb(254, 117, 75); border-radius: 100%; font-size: 10px; color: rgb(255, 255, 255); text-align: center; padding: 5px 4px;">2</span>
-                            <span class="uk-icon uk-icon-image" style="position: absolute; left: 50px; border-radius: 100%; background-color: #e6e1dd" :style="{backgroundImage: `url(${Avatar})`}"></span>
-                            <pr-icon class="pr-icon-favourite" icon="pen" :ratio="0.5" style="position: absolute; left: 74px;"></pr-icon>
+                    <li>
+                        <pr-link to="/about" icon="bag" :ratio="0.8">
+                            {{ t('sidebar.manage_finance') }}
+                            <template #after>
+                                <span class="pr-sidebar-notification"></span>
+                            </template>
                         </pr-link>
                     </li>
-                    <li style="margin-bottom: 7px">
-                        <pr-link style="position: relative; color: #bfbfbf" to="/about">
-                            <pr-icon icon="notebooks" :ratio="0.8"></pr-icon>
-                            <span class="uk-margin-small-right">گزارشات</span>
-                            <pr-icon icon="plus" :ratio="0.6" style="position: absolute; left: 10px; box-sizing: border-box; width: 24px; height: 24px; background-color: #252628; border-radius: 100%; font-size: 10px; color: rgb(255, 255, 255); text-align: center; padding: 5px 4px;"></pr-icon>
-                        </pr-link>
-                    </li>
-                    <li style="margin-bottom: 7px">
-                        <pr-link style="position: relative; color: #bfbfbf" to="/about">
-                            <pr-icon icon="bag" :ratio="0.8"></pr-icon>
-                            <span class="uk-margin-small-right">مدیریت مالی</span>
-                            <span style="position: absolute; left: 17px; box-sizing: border-box; width: 8px; height: 8px; background-color: rgb(254, 117, 75); border-radius: 100%; font-size: 10px; color: rgb(255, 255, 255); text-align: center;"></span>
-                        </pr-link>
-                    </li>
-                    <li class="uk-nav-divider" style="border-color: #252726; margin: 16px 0 !important;"></li>
+
+                    <li class="uk-nav-divider" style="border-color: #252726"></li>
                     <li class="uk-nav-header" style="font-size: 10px; padding: 10px 10px; color: #858687; margin-top: 14px; margin-bottom: 2px">در حال انجام <span style="color: #fff">12</span></li>
                     <li style="margin-bottom: 7px; display: flex">
                         <pr-link style="position: relative; color: #bfbfbf; padding-right: 8px; padding-left: 4px" to="/about">
@@ -106,7 +110,6 @@ import Avatar from '@bi/avatar.png'
                         </pr-link>
                     </li>
                 </pr-nav>
-                <div class="line" style="position: absolute; top: 0; right: 0; left: 0; height: 36px; z-index: -1; border-radius: 10px; background: #252628;"></div>
                 <div class="line" style="position: absolute; top: 128px; right: 0; left: 0; height: 36px; z-index: -1; border-radius: 10px; background: #2785ff;"></div>
                 <div class="line" style="position: absolute; top: 406px; right: 0; left: 0; height: 36px; z-index: -1; border-radius: 12px; background: #252628;"></div>
                 <div class="test line uk-flex uk-flex-center uk-flex-middle" style='position: absolute; top: 462px; right: 0; left: 0; height: 122px; z-index: -1; border-radius: 12px; background-color: #1c1d1f; '>
@@ -120,12 +123,3 @@ import Avatar from '@bi/avatar.png'
         </div>
     </div>
 </template>
-
-<style>
-.test {
-    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='12' ry='12' stroke='%23807e81' stroke-width='1' stroke-dasharray='4' stroke-dashoffset='1' stroke-linecap='round'/%3e%3c/svg%3e")
-}
-.test2 .pr-icon-primary {
-    color: #ffffff !important;
-}
-</style>

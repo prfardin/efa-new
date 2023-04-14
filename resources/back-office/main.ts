@@ -11,6 +11,7 @@
 import './bootstrap';
 
 import { createApp } from 'vue';
+import { createPinia } from "pinia";
 import router from '@bs/scripts/router';
 import i18n from "@bs/scripts/i18n";
 
@@ -20,9 +21,11 @@ import UIkit from 'uikit';
 import Icons from '@bs/cache/uikit-icons';
 UIkit.icon.add(Icons());
 
+const pinia = createPinia()
 const app = createApp(App);
 
 // uses: vue-router & vue-i18n
+app.use(pinia)
 app.use(router);
 app.use(i18n);
 

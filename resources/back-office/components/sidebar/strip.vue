@@ -6,9 +6,9 @@ import Avatar from '@bi/avatar.png'
 </script>
 
 <template>
-    <div class="pr-sidebar-strip pr-position-z-index-extra">
-        <div class="pr-sidebar-strip-header uk-flex uk-flex-top uk-flex-center">
-            <span class="pr-sidebar-strip-header-wrapper">
+    <div class="pr-sidebar-strip">
+        <div class="pr-sidebar-strip-header">
+            <div class="pr-sidebar-strip-header-wrapper">
                 <span class="pr-sidebar-header-line"></span>
                 <span class="pr-sidebar-header-container">
                     <img :src="Avatar" alt="avatar">
@@ -16,7 +16,7 @@ import Avatar from '@bi/avatar.png'
                     <span class="pr-sidebar-header-letter">F</span>
                 </span>
                 <span class="pr-sidebar-header-status"></span>
-            </span>
+            </div>
         </div>
         <div class="pr-sidebar-strip-container">
             <nav>

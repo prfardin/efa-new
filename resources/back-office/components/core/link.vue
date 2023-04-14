@@ -42,6 +42,7 @@ const linkClass = computed(() => linkClassObject(props, !!slots.default))
         <template v-if="icon">
             <pr-icon :class="iconClass" :icon="icon" :ratio="ratio" />
             <span :class="slotClass" v-if="slots.default"><slot /></span>
+            <slot name="after"></slot>
         </template>
         <slot v-else />
     </component>
