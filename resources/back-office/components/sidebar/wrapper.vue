@@ -101,6 +101,7 @@ const { t } = useI18n();
                         <pr-button to="/about" icon="line-plus" icon-button rounded primary :ratio="0.7" />
                         <h6 class="uk-margin-small uk-margin-remove-bottom">{{ t('sidebar.new_capability') }}</h6>
                         <h6 class="pr-margin-xsmall pr-text-xxsmall">{{ t('sidebar.see_in') }} <span class="uk-link pr-link-golden">{{ t('sidebar.learning_school') }}</span></h6>
+                        <a class="uk-button uk-position-relative uk-button-primary" href="#">Test</a>
                     </div>
                 </div>
             </nav>
