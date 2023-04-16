@@ -1,0 +1,54 @@
+// Name:            Sidebar
+// Description:     Component to create horizontal sidebar
+//
+//
+// ========================================================================
+
+// Variables
+// ========================================================================
+
+
+
+/* ========================================================================
+   Component: Sidebar
+ ========================================================================== */
+
+.pr-ripple-content {
+    --vs-color: inherit;
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    height: 100%;
+    top: 0;
+    right: 0;
+    border-radius: inherit;
+    //z-index: -1;
+}
+
+.pr-ripple-content .pr-ripple {
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.5));
+}
+
+.pr-ripple-content .pr-ripple--solid {
+    background: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+.pr-ripple-content .pr-ripple-invert {
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+}

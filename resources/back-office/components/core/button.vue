@@ -45,11 +45,9 @@ const slots = useSlots()
 // define button classes from defined props
 const buttonClass = computed(() => buttonClassObject(props, !!slots.default))
 
-function update(event) {
-    ripple(event)
-}
-
-onMounted(() => window.addEventListener('mousedown', update))
+onMounted(() => {
+    window.addEventListener('mousedown', ripple)
+})
 
 </script>
 
@@ -62,62 +60,3 @@ onMounted(() => window.addEventListener('mousedown', update))
         <slot v-else />
     </component>
 </template>
-
-<style>
-.vs-ripple-content {
-    --vs-color: inherit;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    width: 100%;
-    pointer-events: none;
-    overflow: hidden;
-    height: 100%;
-    top: 0px;
-    right: 0px;
-    border-radius: inherit;
-    //z-index: -1;
-}
-.vs-ripple-content .vs-ripple {
-    width: 0px;
-    height: 0px;
-    border-radius: 50%;
-    opacity: 0;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    transition: all 0.5s ease;
-    background: radial-gradient(circle, rgba(255,255,255,1), rgba(255,255,255,1));
-}
-.vs-ripple-content .vs-ripple--solid {
-    background: -color(color, 1);
-    opacity: 1;
-}
-.vs-ripple-content .vs-ripple-invert {
-    width: 0px;
-    height: 0px;
-    border-radius: 50%;
-    opacity: 0;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    transition: all 0.5s ease;
-    background-image: radial-gradient(circle, -color(color, 0.5), -color(color, 0));
-}
-.vs-ripple-content .vs-ripple-cut-1 {
-    width: 0px;
-    height: 0px;
-    opacity: 0;
-    position: absolute;
-    transform: translate(-100%, -50%) skew(20deg);
-    transition: all 0.6s ease;
-    background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
-}
-.vs-ripple-content .vs-ripple-cut-2 {
-    width: 0px;
-    height: 0px;
-    opacity: 0;
-    position: absolute;
-    transform: translate(0%, -50%) skew(20deg);
-    transition: all 0.6s ease;
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
-}
-</style>

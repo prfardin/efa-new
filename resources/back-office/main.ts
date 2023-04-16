@@ -11,9 +11,9 @@
 import './bootstrap';
 
 import { createApp } from 'vue';
-import { createPinia } from "pinia";
+import { createPinia } from 'pinia';
 import router from '@bs/scripts/router';
-import i18n from "@bs/scripts/i18n";
+import i18n from '@bs/scripts/i18n';
 
 import App from '@b/App.vue';
 
