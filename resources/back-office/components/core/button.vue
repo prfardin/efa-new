@@ -9,11 +9,9 @@
 import {useSlots, computed, ref, onMounted} from "vue";
 import { buttonClassObject } from "@bs/scripts/util/classes";
 import PrIcon from "@bc/core/icon.vue";
-import ripple from "../../src/scripts/core/ripple";
 
 // must remove with future release of vue and must use as
 import { ButtonPropsType } from "@bs/scripts/util/props";
-import {Element} from "../../src/scripts/util/util";
 interface ButtonPropsType {
     tag?: 'router-link' | 'a' | 'button',
     to?: string,
@@ -42,17 +40,24 @@ const props = withDefaults(defineProps<ButtonPropsType>(), {
 // get slots: we check if there is no default slots defined
 const slots = useSlots()
 
+const el = ref(null)
+
+import ripple from "../../src/scripts/util/ripple";
+
 // define button classes from defined props
 const buttonClass = computed(() => buttonClassObject(props, !!slots.default))
 
-onMounted(() => {
-    window.addEventListener('mousedown', ripple)
-})
+const emit = defineEmits(['mousedown'])
+
+function onMouseDown(event) {
+    ripple(event)
+    emit('mousedown')
+}
 
 </script>
 
 <template>
-    <component :is="tag" :to="to" :href="href" :class="buttonClass">
+    <component :is="tag" :to="to" :href="href" :class="buttonClass" @mousedown="onMouseDown" ref="el">
         <template v-if="icon">
             <pr-icon :class="iconClass" :icon="icon" :ratio="ratio" />
             <span :class="slotClass" v-if="slots.default"><slot /></span>

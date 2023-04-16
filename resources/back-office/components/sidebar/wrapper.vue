@@ -8,11 +8,15 @@ import Avatar from '@bi/avatar.png'
 import ColorCircle from '@bi/color_circle.svg'
 
 const { t } = useI18n();
+
+function test() {
+    console.log('hi')
+}
 </script>
 
 <template>
     <div class="pr-sidebar-wrapper uk-light pr-light">
-        <pr-link class="pr-sidebar-accordion" to="#" icon="angle-right" :ratio="0.8"></pr-link>
+        <pr-link class="pr-sidebar-accordion" to="/" icon="angle-right" :ratio="0.8"></pr-link>
         <div class="pr-sidebar-header">
             <div class="pr-sidebar-header-wrapper">
                 <span class="pr-sidebar-header-line"></span>
@@ -29,26 +33,26 @@ const { t } = useI18n();
             <nav>
                 <pr-nav>
                     <li>
-                        <pr-link class="pr-sidebar-search pr-sidebar-item-muted" to="/about" icon="line-search" :ratio="0.7">
+                        <pr-link class="pr-sidebar-search pr-sidebar-item-muted" to="/1" icon="line-search" :ratio="0.7">
                             {{ t('sidebar.search') }}
                             <template #after><pr-icon class="pr-icon-favourite pr-sidebar-icon-flip" icon="star" :ratio="0.7"></pr-icon></template>
                         </pr-link>
                     </li>
                     <li class="uk-nav-header">{{ t('sidebar.market') }}</li>
                     <li>
-                        <pr-link to="/about" icon="create-dashboard" :ratio="0.8">
+                        <pr-link to="/" icon="create-dashboard" :ratio="0.8">
                             {{ t('sidebar.dashboard') }}
-                            <template #after><pr-icon class="pr-sidebar-icon-flip" icon="angle-down" :ratio="0.7"></pr-icon></template>
+                            <template #after><pr-icon class="pr-sidebar-icon-flip" icon="line-angle-down" :ratio="0.7"></pr-icon></template>
                         </pr-link>
                     </li>
                     <li>
-                        <pr-link class="uk-active" to="/about" icon="folder-minus" :ratio="0.8">{{ t('sidebar.manage_products') }}</pr-link>
+                        <pr-link to="/3" icon="folder-minus" :ratio="0.8">{{ t('sidebar.manage_products') }}</pr-link>
                     </li>
                     <li>
-                        <pr-link class="pr-item-has-notification" to="/about" icon="compass" :ratio="0.8">{{ t('sidebar.orders') }}</pr-link>
+                        <pr-link class="pr-item-has-notification" to="/4" icon="compass" :ratio="0.8">{{ t('sidebar.orders') }}</pr-link>
                     </li>
                     <li>
-                        <pr-link to="/about" icon="bell" :ratio="0.8">
+                        <pr-link to="/5" icon="bell" :ratio="0.8">
                             {{ t('sidebar.notifications') }}
                             <template #after>
                                 <div class="pr-sidebar-icon-flip pr-sidebar-multiple-icon">
@@ -62,15 +66,15 @@ const { t } = useI18n();
                         </pr-link>
                     </li>
                     <li>
-                        <pr-link to="/about" icon="notebooks" :ratio="0.8">
+                        <pr-link to="/6" icon="notebooks" :ratio="0.8">
                             {{ t('sidebar.reports') }}
                             <template #after>
-                                <pr-icon class="pr-sidebar-icon-flip pr-sidebar-marker" icon="plus" :ratio="0.6"></pr-icon>
+                                <pr-icon class="pr-sidebar-icon-flip pr-sidebar-marker" icon="line-plus" :ratio="0.6"></pr-icon>
                             </template>
                         </pr-link>
                     </li>
                     <li>
-                        <pr-link to="/about" icon="bag" :ratio="0.8">
+                        <pr-link to="/7" icon="bag" :ratio="0.8">
                             {{ t('sidebar.manage_finance') }}
                             <template #after>
                                 <span class="pr-sidebar-notification"></span>
@@ -80,16 +84,16 @@ const { t } = useI18n();
                     <li class="uk-nav-divider"></li>
                     <li class="uk-nav-header">{{ t('sidebar.in_progress') }} <span class="uk-text-primary">12</span></li>
                     <li class="pr-sidebar-icon-group pr-sidebar-item-muted">
-                        <pr-link class="uk-active" to="/about" icon="file-alt" :ratio="0.65"></pr-link>
-                        <pr-link to="/about" icon="download-alt" :ratio="0.65"></pr-link>
-                        <pr-link to="/about" icon="user" :ratio="0.65">
+                        <pr-link class="uk-active" to="/8" icon="file-alt" :ratio="0.65"></pr-link>
+                        <pr-link to="/9" icon="download-alt" :ratio="0.65"></pr-link>
+                        <pr-link to="/10" icon="user" :ratio="0.65">
                             <template #after>
                                 <span class="pr-sidebar-item-badge pr-sidebar-badge-primary">5</span>
                             </template>
                         </pr-link>
-                        <pr-link to="/about" icon="chart-pie-alt" :ratio="0.65"></pr-link>
-                        <pr-link to="/about" icon="setting" :ratio="0.65"></pr-link>
-                        <pr-link class="pr-sidebar-icon-flip" to="/about">
+                        <pr-link to="/11" icon="chart-pie-alt" :ratio="0.65"></pr-link>
+                        <pr-link to="/12" icon="setting" :ratio="0.65"></pr-link>
+                        <pr-link class="pr-sidebar-icon-flip" to="/13">
                             <span class="uk-icon uk-preserve">
                                 <img :src="ColorCircle" alt="color">
                             </span>
@@ -98,10 +102,10 @@ const { t } = useI18n();
                 </pr-nav>
                 <div class="pr-sidebar-advertising">
                     <div class="uk-margin-remove-last-child">
-                        <pr-button to="/about" icon="line-plus" icon-button rounded primary :ratio="0.7" />
+                        <pr-button to="/14" icon="line-plus" icon-button rounded primary :ratio="0.7" class="uk-position-relative" />
                         <h6 class="uk-margin-small uk-margin-remove-bottom">{{ t('sidebar.new_capability') }}</h6>
                         <h6 class="pr-margin-xsmall pr-text-xxsmall">{{ t('sidebar.see_in') }} <span class="uk-link pr-link-golden">{{ t('sidebar.learning_school') }}</span></h6>
-                        <a class="uk-button uk-position-relative uk-button-primary" href="#">Test</a>
+                        <pr-button to="/14" primary class="uk-position-relative" @mousedown="test">Test</pr-button>
                     </div>
                 </div>
             </nav>

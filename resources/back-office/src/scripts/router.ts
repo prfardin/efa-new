@@ -6,6 +6,7 @@ import About from '@b/views/About.vue'
 
 const routes = [
     { path: '/', component: Dashboard },
+    { path: '/:id', component: Dashboard },
     { path: '/about', component: About },
     { path: '/register', component: Auth },
 ]

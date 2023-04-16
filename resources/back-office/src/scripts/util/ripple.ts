@@ -1,6 +1,6 @@
-const ripple = (evt: any, color: any = '', solid: boolean = false) => {
+const ripple = (evt?: any): any => {
 
-    const el = evt.target
+    const el = evt.target;
     const offset = el.getBoundingClientRect()
     const x = evt.clientX - offset.left
     const y = evt.clientY - offset.top
@@ -18,10 +18,9 @@ const ripple = (evt: any, color: any = '', solid: boolean = false) => {
     const effect = document.createElement('div')
 
     effect.className = 'pr-ripple'
-    if (solid) {
-        effect.classList.add('pr-ripple--solid')
-        // setColor('color', color || 'primary', effectContent)
-    }
+    /*if (solid) {
+        effect.classList.add('pr-ripple-solid')
+    }*/
     effect.style.transition = `all ${time}s ease`
 
     effect.style.left = `${x}px`
@@ -49,12 +48,12 @@ const ripple = (evt: any, color: any = '', solid: boolean = false) => {
             }, time * 300)
         }, (noTime ? 0 : time * 400))
 
-        evt.target.removeEventListener('mouseup', removeEffect)
-        evt.target.removeEventListener('mouseleave', removeEffect)
+        el.removeEventListener('mouseup', removeEffect)
+        el.removeEventListener('mouseleave', removeEffect)
     }
 
-    evt.target.addEventListener('mouseup', removeEffect)
-    evt.target.addEventListener('mouseleave', removeEffect)
+    el.addEventListener('mouseup', removeEffect)
+    el.addEventListener('mouseleave', removeEffect)
 }
 
 const rippleReverse = (evt: any) => {
