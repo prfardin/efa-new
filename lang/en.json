@@ -13,5 +13,12 @@
         "see_in": "See in",
         "learning_school": "learning school",
         "last": "last"
+    },
+    "auth": {
+        "start_now": "Start Your Business now",
+        "create_company_1": "Creating your company in IRAN in just a few steps away,",
+        "create_company_2": "Enter your email address to continue.",
+        "last2": "A few clicks away from creating your company.",
+        "last": "last"
     }
 }

@@ -8,10 +8,6 @@ import Avatar from '@bi/avatar.png'
 import ColorCircle from '@bi/color_circle.svg'
 
 const { t } = useI18n();
-
-function test() {
-    console.log('hi')
-}
 </script>
 
 <template>

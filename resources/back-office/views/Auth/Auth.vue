@@ -52,8 +52,8 @@ watch( setRipple, () => {
 </script>
 
 <template>
-    <div class="uk-section uk-section-default" style="padding-top: 57px; padding-bottom: 57px; background: linear-gradient(0deg, #d2dbe7, #dfe3ef)">
-        <div class="uk-container" style="max-width: 896px">
+    <div class="uk-section uk-section-default pr-section-auth">
+        <div class="uk-container uk-container-small">
             <div class="uk-width-1-1">
                 <div uk-height-viewport="expand: true" class="uk-grid-collapse uk-grid-item-match" uk-grid>
                     <div class="uk-width-1-3" style="position: relative; width: 310px;overflow: hidden">
