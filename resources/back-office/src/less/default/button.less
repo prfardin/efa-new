@@ -322,6 +322,13 @@
 
 @inverse-button-text-hover-color:               @inverse-global-emphasis-color;
 
+@inverse-button-primary-background:            @global-primary-background;
+@inverse-button-primary-color:                 @button-primary-color;
+@inverse-button-primary-hover-background:      @button-primary-hover-background;
+@inverse-button-primary-hover-color:           @button-primary-hover-color;
+@inverse-button-primary-active-background:     @button-primary-active-background;
+@inverse-button-primary-active-color:          @button-primary-active-color;
+
 @inverse-button-muted-background:               @inverse-global-muted-background;
 @inverse-button-muted-color:                    @global-muted-inverse-color;
 @inverse-button-muted-hover-background:         fade(@inverse-button-muted-background, 20%);
@@ -339,8 +346,6 @@
 .hook-inverse-button-default-active() { border-color: @inverse-global-emphasis-color; }
 
 .hook-inverse-button-primary() {
-    background-color: @global-primary-background;
-    color: @button-primary-color;
     border: @button-border-width solid transparent;
 
     .pr-icon-primary {
@@ -358,15 +363,6 @@
     .pr-icon-quaternary {
         color: @inverse-button-primary-icon-quaternary-color;
     }
-}
-
-.hook-inverse-button-primary-hover() {
-    background-color: @button-primary-hover-background;
-    color: @button-primary-hover-color;
-}
-.hook-inverse-button-primary-active() {
-    background-color: @button-primary-active-background;
-    color: @button-primary-active-color;
 }
 
 .hook-inverse-button-secondary() {}

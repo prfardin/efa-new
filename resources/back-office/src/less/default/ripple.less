@@ -14,16 +14,14 @@
  ========================================================================== */
 
 .pr-ripple-content {
-    --vs-color: inherit;
     position: absolute;
-    width: 100%;
+    height: calc(100% + 2px);
+    width: calc(100% + 2px);;
     pointer-events: none;
     overflow: hidden;
-    height: 100%;
-    top: 0;
-    right: 0;
+    top: -1px;
+    left: -1px;
     border-radius: inherit;
-    //z-index: -1;
 }
 
 .pr-ripple-content .pr-ripple {

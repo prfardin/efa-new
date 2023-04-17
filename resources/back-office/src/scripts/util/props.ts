@@ -30,6 +30,7 @@ export interface ButtonPropsType extends ButtonClassType {
     to?: string,
     href?: string,
     slotClass?: string,
+    ripple?: boolean,
     iconClass?: string,
     ratio?: number
 }

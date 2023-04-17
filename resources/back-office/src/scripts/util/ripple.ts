@@ -1,6 +1,6 @@
-const ripple = (evt?: any): any => {
+export function useRipple(evt?: any): any {
 
-    const el = evt.target;
+    const el = evt.currentTarget;
     const offset = el.getBoundingClientRect()
     const x = evt.clientX - offset.left
     const y = evt.clientY - offset.top
@@ -56,7 +56,7 @@ const ripple = (evt?: any): any => {
     el.addEventListener('mouseleave', removeEffect)
 }
 
-const rippleReverse = (evt: any) => {
+export function rippleReverse(evt: any) {
     const el = evt.target
     const offset = el.getBoundingClientRect()
     const x = evt.clientX - offset.left
@@ -113,9 +113,4 @@ const rippleReverse = (evt: any) => {
 
     evt.target.addEventListener('mouseup', removeEffect)
     evt.target.addEventListener('mouseleave', removeEffect)
-}
-
-export default ripple
-export {
-    rippleReverse,
 }

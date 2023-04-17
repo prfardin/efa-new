@@ -102,10 +102,9 @@ function test() {
                 </pr-nav>
                 <div class="pr-sidebar-advertising">
                     <div class="uk-margin-remove-last-child">
-                        <pr-button to="/14" icon="line-plus" icon-button rounded primary :ratio="0.7" class="uk-position-relative" />
+                        <pr-button to="/14" icon="line-plus" icon-button rounded primary :ratio="0.7" />
                         <h6 class="uk-margin-small uk-margin-remove-bottom">{{ t('sidebar.new_capability') }}</h6>
                         <h6 class="pr-margin-xsmall pr-text-xxsmall">{{ t('sidebar.see_in') }} <span class="uk-link pr-link-golden">{{ t('sidebar.learning_school') }}</span></h6>
-                        <pr-button to="/14" primary class="uk-position-relative" @mousedown="test">Test</pr-button>
                     </div>
                 </div>
             </nav>

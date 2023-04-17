@@ -6,9 +6,12 @@
  * with no span tag, so we most prevent from creating additional tag
  * when there is no default slots defined in future
  */
-import {useSlots, computed, ref, onMounted} from "vue";
+import { useSlots, computed } from "vue";
 import { buttonClassObject } from "@bs/scripts/util/classes";
 import PrIcon from "@bc/core/icon.vue";
+
+// we must redesign ripple util and then use it. it's just for test
+import { useRipple } from "@bs/scripts/util/ripple";
 
 // must remove with future release of vue and must use as
 import { ButtonPropsType } from "@bs/scripts/util/props";
@@ -17,6 +20,7 @@ interface ButtonPropsType {
     to?: string,
     href?: string,
     slotClass?: string,
+    ripple?: boolean,
     default?: boolean,
     primary?: boolean,
     secondary?: boolean,
@@ -40,24 +44,21 @@ const props = withDefaults(defineProps<ButtonPropsType>(), {
 // get slots: we check if there is no default slots defined
 const slots = useSlots()
 
-const el = ref(null)
-
-import ripple from "../../src/scripts/util/ripple";
-
 // define button classes from defined props
 const buttonClass = computed(() => buttonClassObject(props, !!slots.default))
 
 const emit = defineEmits(['mousedown'])
 
 function onMouseDown(event) {
-    ripple(event)
+    // must change in future
+    if (props.ripple) useRipple(event)
     emit('mousedown')
 }
 
 </script>
 
 <template>
-    <component :is="tag" :to="to" :href="href" :class="buttonClass" @mousedown="onMouseDown" ref="el">
+    <component :is="tag" :to="to" :href="href" :class="buttonClass" @mousedown="onMouseDown">
         <template v-if="icon">
             <pr-icon :class="iconClass" :icon="icon" :ratio="ratio" />
             <span :class="slotClass" v-if="slots.default"><slot /></span>
