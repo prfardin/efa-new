@@ -40,10 +40,15 @@ const linkClass = computed(() => linkClassObject(props, !!slots.default))
 <template>
     <component :is="tag" :to="to" :href="href" :class="linkClass">
         <template v-if="icon">
+            <slot name="before"></slot>
             <pr-icon :class="iconClass" :icon="icon" :ratio="ratio" />
             <span :class="slotClass" v-if="slots.default"><slot /></span>
             <slot name="after"></slot>
         </template>
-        <slot v-else />
+        <template v-else>
+            <slot name="before"></slot>
+            <slot />
+            <slot name="after"></slot>
+        </template>
     </component>
 </template>

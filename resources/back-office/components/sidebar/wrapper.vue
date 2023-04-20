@@ -100,7 +100,7 @@ const { t } = useI18n();
                     <div class="uk-margin-remove-last-child">
                         <pr-button to="/14" icon="line-plus" icon-button rounded primary :ratio="0.7" />
                         <h6 class="uk-margin-small uk-margin-remove-bottom">{{ t('sidebar.new_capability') }}</h6>
-                        <h6 class="pr-margin-xsmall pr-text-xxsmall">{{ t('sidebar.see_in') }} <span class="uk-link pr-link-golden">{{ t('sidebar.learning_school') }}</span></h6>
+                        <h6 class="pr-margin-xsmall pr-text-xxsmall">{{ t('sidebar.see_in') }} <pr-link to="#" class="pr-link-golden">{{ t('sidebar.learning_school') }}</pr-link></h6>
                     </div>
                 </div>
             </nav>

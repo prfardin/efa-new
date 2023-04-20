@@ -15,10 +15,23 @@
         "last": "last"
     },
     "auth": {
-        "start_now": "Start Your Business now",
-        "create_company_1": "Creating your company in IRAN in just a few steps away,",
-        "create_company_2": "Enter your email address to continue.",
-        "last2": "A few clicks away from creating your company.",
+        "register": {
+            "header": "Start Your Business now",
+            "comment_1": "Creating your company in IRAN in just a few steps away,",
+            "comment_2": "Enter your phone number to continue."
+        },
+        "side": {
+            "header": "A few clicks away from creating your company.",
+            "comment_1": "Start your company in minutes.",
+            "comment_2": "Save time and money."
+        },
+        "step": {
+            "one": "REGISTER",
+            "two": "Business TYPE",
+            "three": "DETAILS",
+            "four": "ORGANIZATION",
+            "five": "PERSONAL DETAILS"
+        },
         "last": "last"
     }
 }

@@ -69,6 +69,7 @@ export const defaultPrLinkCls = 'pr-link';
 
 export function linkClassObject(props: LinkClassType, hasDefaultSlot: boolean = true, linkCls: string = defaultLinkCls, prLinkCls: string = defaultPrLinkCls) {
     return [
+        linkCls,
         {
             [`${linkCls}-muted`]: props.muted,
             [`${linkCls}-text`]: props.text,

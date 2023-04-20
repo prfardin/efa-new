@@ -7,39 +7,240 @@
 // Variables
 // ========================================================================
 
-@section-auth-padding-vertical:                   @global-medium-margin - 15px;
-@section-auth-padding-vertical-m:                 @global-large-margin - 15px;
+@section-auth-padding-vertical:                 @global-gutter + 5px;
+@section-auth-padding-vertical-m:               (@global-medium-gutter + @global-small-gutter);
 
-@auth-tile-background-color:                    #f5f6f9;
+@auth-tile-padding-horizontal:                  (@global-gutter - @global-xxsmall-gutter);
+@auth-tile-padding-horizontal-m:                (@global-medium-gutter - @global-xxsmall-gutter);
+@auth-tile-padding-vertical:                    (@global-large-margin + @global-small-margin);
+@auth-tile-padding-vertical-m:                  (@global-xlarge-margin + @global-margin);
+@auth-tile-padding-list-vertical:               (@global-large-margin - @global-small-margin);
+@auth-tile-padding-list-vertical-m:             (@global-xlarge-margin - @global-margin);
 
-@wrapper-background-color:                      #f9fafc;
+@auth-tile-xlarge-padding-horizontal:           @global-medium-gutter;
+@auth-tile-xlarge-padding-horizontal-m:         @global-large-gutter;
+@auth-tile-xlarge-padding-vertical:             (@auth-tile-padding-vertical + @global-medium-margin);
+@auth-tile-xlarge-padding-vertical-m:           (@auth-tile-padding-vertical + @global-medium-margin);
 
-@strip-width:                                   78px;
+@auth-tile-default-background-color:            @global-white-color;
 
-@strip-margin-top:                              28px;
+@auth-tile-muted-background-color:              #f5f6f9;
+
+@auth-side-background-color:                    #015eff;
 
 
 /* ========================================================================
    Component: Section
  ========================================================================== */
 
-
-.pr-section-auth {
+/* we will comment later */
+.pr-auth-section {
     padding-top: @section-auth-padding-vertical;
     padding-bottom: @section-auth-padding-vertical;
-    background: linear-gradient(0deg, #d2dbe7, #dfe3ef)
+}
+
+/* Desktop and bigger */
+@media (min-width: @breakpoint-small) {
+
+    .pr-auth-height {
+        min-height: 600px;
+    }
+
+}
+
+.pr-auth-section-muted {
+    background: linear-gradient(0, #d2dbe7, #dfe3ef)
 }
 
 /* Desktop and bigger */
 @media (min-width: @breakpoint-medium) {
 
-    .pr-section-auth {
+    .pr-auth-section {
         padding-top: @section-auth-padding-vertical-m;
         padding-bottom: @section-auth-padding-vertical-m;
     }
 
 }
 
-.pr-tile-auth {
-    background-color: @auth-tile-background-color
+.pr-auth-tile {
+    padding-top: @auth-tile-padding-vertical;
+    padding-right: @auth-tile-padding-horizontal;
+    padding-bottom: @auth-tile-padding-vertical;
+    padding-left: @auth-tile-padding-horizontal;
+}
+
+@media (min-width: @breakpoint-medium) {
+
+    .pr-auth-tile {
+        padding-top: @auth-tile-padding-vertical-m;
+        padding-right: @auth-tile-padding-horizontal-m;
+        padding-bottom: @auth-tile-padding-vertical-m;
+        padding-left: @auth-tile-padding-horizontal-m;
+    }
+
+}
+
+.pr-auth-tile-xlarge {
+    padding-top: @auth-tile-xlarge-padding-vertical;
+    padding-right: @auth-tile-xlarge-padding-horizontal;
+    padding-bottom: @auth-tile-xlarge-padding-vertical;
+    padding-left: @auth-tile-xlarge-padding-horizontal;
+}
+
+@media (min-width: @breakpoint-medium) {
+
+    .pr-auth-tile-xlarge {
+        padding-top: @auth-tile-xlarge-padding-vertical-m;
+        padding-right: @auth-tile-xlarge-padding-horizontal-m;
+        padding-bottom: @auth-tile-xlarge-padding-vertical-m;
+        padding-left: @auth-tile-xlarge-padding-horizontal-m;
+    }
+
+}
+
+.pr-auth-tile-has-list {
+    padding-top: @auth-tile-padding-list-vertical;
+}
+
+@media (min-width: @breakpoint-medium) {
+
+    .pr-auth-tile-has-list {
+        padding-top: @auth-tile-padding-list-vertical-m;
+    }
+
+}
+
+.pr-auth-background-muted,
+.pr-auth-tile-muted {
+    background-color: @auth-tile-muted-background-color
+}
+
+.pr-auth-tile-default {
+    background-color: @auth-tile-default-background-color;
+}
+
+.pr-auth-tile-primary {
+    background-color: @auth-side-background-color;
+}
+
+.pr-auth-back-board {
+    background-repeat: no-repeat;
+    background-position: 111% 92%;
+}
+
+.pr-auth-back-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: 22% 88%;
+    z-index: 1;
+}
+
+.pr-auth-back-icon + * {
+    position: relative;
+    z-index: 1;
+}
+
+.pr-auth-back-default {
+    position: relative;
+}
+
+.pr-auth-back-default::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -110px;
+    left: -80px;
+    background-color: #f5f8ff;
+    width: 440px;
+    height: 170px;
+    transform: rotate(23deg);
+}
+
+.pr-auth-back-default::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -110px;
+    left: -80px;
+    background-color: #eaf0ff;
+    width: 340px;
+    height: 170px;
+    transform: rotate(30deg);
+}
+
+.pr-auth-side {
+    position: relative;
+    overflow: hidden;
+}
+
+@media (min-width: @breakpoint-medium) {
+
+    .pr-auth-side { width: 310px; }
+
+}
+
+.pr-auth-list > :nth-child(n+2) { margin-top: 22px; }
+
+.pr-auth-list > * > * {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 14px;
+    color: #85868f;
+    font-weight: 700
+}
+
+.pr-auth-list > * > * > :nth-child(1) {
+    box-sizing: border-box;
+    border-radius: 100%;
+    border: 1px solid #e0e2e2;
+    color:#85868f;
+    width: 22px;
+    height: 22px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-right: 14px;
+}
+
+.pr-auth-list > * > * > :nth-child(3) {
+    position: absolute;
+    right: 0;
+    font-size: 14px;
+    color: #d4d8e3;
+    font-weight: 700;
+}
+
+.pr-auth-list a:hover,
+.pr-auth-list .uk-link {
+    text-decoration: none;
+}
+
+.pr-auth-list > .uk-active > * {
+    color: #1c56ba;
+    font-weight: 900;
+}
+
+.pr-auth-list > .pr-complete > * {
+    font-size: 14px;
+    color: #d6dcdf
+}
+
+.pr-auth-list > .uk-active > * > :nth-child(1) {
+    border-color: #1c56ba;
+    color: #1c56ba;
+    font-weight: 900;
+}
+
+.pr-auth-list > .pr-complete > * > :nth-child(1) {
+    background-color: #0fc96f;
+    border-color: #0fc96f;
+    color: #fff;
+    font-weight: 900;
 }

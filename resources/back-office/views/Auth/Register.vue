@@ -15,22 +15,22 @@ const router = useRouter()
 watch(mobile, (newMobile) => {
     if (newMobile.length === 10 || newMobile.length === 11) {
         loader.value = true;
-        axios.post('api/register', {
+        /*axios.post('api/register', {
             mobile: `0${mobile.value}`
         }, {
             responseType: 'json'
-        }).then(response => {
+        }).then(response => {*/
             router.push({
                 query: {
                     step: 'Verify',
                     mobile: mobile.value,
                 },
             })
-        }).catch(error => {
+        /*}).catch(error => {
             if (error.response) {
                 console.log(error.response.data.message)
             }
-        })
+        })*/
     }
 })
 
@@ -40,8 +40,8 @@ watch(mobile, (newMobile) => {
     <div class="uk-height-1-1 uk-tile pr-tile-auth uk-flex uk-flex-top">
         <div>
             <div>
-                <h3 class="uk-h5 uk-text-bold" style="color: #464964; font-size: 26px; margin-bottom: 0">{{ t('auth.start_now') }}</h3>
-                <p style="font-size: 13px; color: #909096; margin-top: 10px">{{ t('auth.create_company_1') }}<br />{{ t('auth.create_company_2') }}</p>
+                <h3 class="uk-h5 uk-text-bold" style="color: #464964; font-size: 26px; margin-bottom: 0">{{ t('auth.register.header') }}</h3>
+                <p style="font-size: 13px; color: #909096; margin-top: 10px">{{ t('auth.register.comment_1') }}<br />{{ t('auth.register.comment_2') }}</p>
             </div>
             <div style="margin-top: 44px">
                 <label style="color: #6e6f75; font-size: 12px">شماه تماس <span style="margin-right: 3px; border: 1px solid #9fa0a3; border-radius: 100%; position: relative; top: -4px; background-color: #fff" uk-icon="icon: question; ratio: 0.5"></span></label>

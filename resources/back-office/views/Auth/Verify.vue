@@ -15,23 +15,23 @@ const route = useRoute()
 watch(code, (newCode) => {
     if (newCode.length === 5) {
         loader.value = true;
-        axios.post('api/verify-mobile', {
+        /*axios.post('api/verify-mobile', {
             mobile: `0${route.query.mobile}`,
             code: code.value,
         }, {
             responseType: 'json'
-        }).then(response => {
+        }).then(response => {*/
             router.push({
                 query: {
                     step: 'Password'
                 },
             })
-        }).catch(error => {
+        /*}).catch(error => {
             if (error.response) {
                 loader.value = false;
                 error7.value = true
             }
-        })
+        })*/
     }
 })
 

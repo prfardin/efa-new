@@ -1,0 +1,62 @@
+//
+// Component: Grid
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+
+// Divider
+// ========================================================================
+
+.hook-grid-divider-horizontal() {}
+.hook-grid-divider-vertical() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-grid-misc() {
+
+    .tm-grid-expand > * {
+        flex-grow: 1
+    }
+
+    .tm-grid-expand > .uk-width-expand {
+        flex-grow: 999
+    }
+
+    @media (min-width: 640px) {
+        .tm-grid-expand > .uk-width-expand\@s {
+            flex-grow:999
+        }
+    }
+
+    @media (min-width: 960px) {
+        .tm-grid-expand > .uk-width-expand\@m {
+            flex-grow:999
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .tm-grid-expand > .uk-width-expand\@l {
+            flex-grow:999
+        }
+    }
+
+    @media (min-width: 1600px) {
+        .tm-grid-expand > .uk-width-expand\@xl {
+            flex-grow:999
+        }
+    }
+
+}
+
+
+// Inverse
+// ========================================================================
+
+.hook-inverse-grid-divider-horizontal() {}
+.hook-inverse-grid-divider-vertical() {}
