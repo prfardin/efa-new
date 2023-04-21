@@ -15,10 +15,17 @@
         "last": "last"
     },
     "auth": {
+        "helper_text": "Having Troubles?",
+        "get_help": "Get Help",
+        "terms_and_privacy": "By signing up, I agree to EFA's",
+        "terms": "Terms of Use",
+        "privacy": "Privacy Policy",
         "register": {
             "header": "Start Your Business now",
             "comment_1": "Creating your company in IRAN in just a few steps away,",
-            "comment_2": "Enter your phone number to continue."
+            "comment_2": "Enter your phone number to continue.",
+            "mobile": "Phone Number",
+            "submit": "Send Code"
         },
         "side": {
             "header": "A few clicks away from creating your company.",
@@ -27,7 +34,7 @@
         },
         "step": {
             "one": "REGISTER",
-            "two": "Business TYPE",
+            "two": "BUSINESS TYPE",
             "three": "DETAILS",
             "four": "ORGANIZATION",
             "five": "PERSONAL DETAILS"

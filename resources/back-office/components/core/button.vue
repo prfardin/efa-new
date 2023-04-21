@@ -14,7 +14,7 @@ import PrIcon from "@bc/core/icon.vue";
 import { useRipple } from "@bs/scripts/util/ripple";
 
 // must remove with future release of vue and must use as
-import { ButtonPropsType } from "@bs/scripts/util/props";
+// import { ButtonPropsType } from "@bs/scripts/util/props";
 interface ButtonPropsType {
     tag?: 'router-link' | 'a' | 'button',
     to?: string,
@@ -25,6 +25,7 @@ interface ButtonPropsType {
     primary?: boolean,
     secondary?: boolean,
     muted?: boolean,
+    text?: boolean,
     small?: boolean,
     xSmall?: boolean,
     square?: boolean,

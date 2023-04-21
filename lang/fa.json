@@ -13,5 +13,32 @@
         "see_in": "مشاهده در",
         "learning_school": "بخش آموزش ها",
         "last": "last"
+    },
+    "auth": {
+        "helper_text": "نیاز به کمک داری?",
+        "get_help": "کمک بگیر",
+        "terms_and_privacy": "شرایط استفاده از",
+        "terms": "خدمات",
+        "privacy": "حریم خصوصی",
+        "register": {
+            "header": "همین حالا شروع کن.",
+            "comment_1": "ثبت نام و شروع فعالیت در ایفا فقط در چند مرحله ساده,",
+            "comment_2": "برای شروع شماره تماس رو وارد کن.",
+            "mobile": "شماه تماس",
+            "submit": "ارسال کد"
+        },
+        "side": {
+            "header": "کسب و کارت رو با ایفا تو چند مرحله ساده رونق بده.",
+            "comment_1": "تو هزینه و وقت هم صرفه جویی کن.",
+            "comment_2": "کمتر از یک دقیقه."
+        },
+        "step": {
+            "one": "REGISTER",
+            "two": "BUSINESS TYPE",
+            "three": "DETAILS",
+            "four": "ORGANIZATION",
+            "five": "PERSONAL DETAILS"
+        },
+        "last": "last"
     }
 }
