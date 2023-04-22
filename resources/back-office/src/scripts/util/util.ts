@@ -1,18 +1,31 @@
 import UIkit from "uikit";
 import { Ref } from "vue";
+import {
+    UIkitGridOptions,
+    UIkitIconOptions,
+    UIkitHeightViewportOptions,
+    UIkitNavOptions
+} from './types'
 
 // define type for UIkit or HTML elements
 export type Element =  object | Ref | HTMLElement | string
 
+// set grid
+export function grid(el: Element, options?: UIkitGridOptions) {
+    return UIkit.grid(el, options);
+}
+
 // set icon
-export function icon(el: Element, icon: string | undefined, ratio?: number | undefined) {
-    return UIkit.icon(el, {
-        icon: icon,
-        ratio: ratio
-    });
+export function icon(el: Element, options?: UIkitIconOptions) {
+    return UIkit.icon(el, options);
+}
+
+// set height viewport
+export function heightViewport(el: Element, options?: UIkitHeightViewportOptions) {
+    return UIkit.heightViewport(el, options);
 }
 
 // set nav
-export function nav(el: Element, options?: any) {
+export function nav(el: Element, options?: UIkitNavOptions) {
     return UIkit.nav(el, options);
 }

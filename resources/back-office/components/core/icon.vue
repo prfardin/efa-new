@@ -24,7 +24,7 @@ const el = ref<Element>(null)
  * maybe need change to Composable icon in future
  */
 function setIcon() {
-    return icon(el.value, props.icon, props.ratio)
+    return icon(el.value, { icon: props.icon, ratio: props.ratio })
 }
 onMounted(() => {
     watchEffect(setIcon)

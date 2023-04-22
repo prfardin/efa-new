@@ -1,14 +1,17 @@
 <script setup lang="ts">
+import { onMounted, ref, watch } from "vue";
+import { useRoute } from "vue-router";
+import { useI18n } from "vue-i18n";
+import { Element, heightViewport } from "@bs/scripts/util/util";
+
 import Register from '@bv/Auth/Register.vue'
 import Verify from '@bv/Auth/Verify.vue'
 import Password from '@bv/Auth/Password.vue'
 import Type from '@bv/Auth/Type.vue'
-import { onMounted, ref, watch } from "vue";
-import { useRoute } from "vue-router";
-import { useI18n } from "vue-i18n";
 import PrButton from '@bc/core/button.vue'
 import PrLink from '@bc/core/link.vue'
 import PrIcon from '@bc/core/icon.vue'
+import PrGrid from '@bc/core/grid.vue'
 import Board from '@bi/auth/board.svg'
 import Map from '@bi/auth/map.svg'
 
@@ -57,13 +60,17 @@ watch( setRipple, () => {
     }
 })
 
+const el = ref<Element>(null);
+onMounted(()=> {
+    heightViewport(el.value, { "offset-top": true });
+})
 </script>
 
 <template>
-    <div class="uk-section pr-auth-section pr-auth-section-muted uk-flex uk-flex-middle" uk-height-viewport="offset-top: true">
+    <div class="uk-section pr-auth-section pr-auth-section-muted uk-flex uk-flex-middle" ref="el">
         <div class="uk-width-1-1">
             <div class="uk-container uk-container-small">
-                <div class="pr-auth-background-muted pr-auth-height uk-grid-collapse uk-grid-match" uk-grid>
+                <pr-grid class="pr-auth-background-muted pr-auth-height" collapse match>
                     <div class="pr-auth-side uk-width-1-3@m" :class="!rippleSet ? 'uk-light pr-light' : ''">
                         <div class="pr-auth-logo-container uk-width-auto">
                             <span class="pr-auth-logo-icon">E</span>
@@ -127,23 +134,19 @@ watch( setRipple, () => {
                         </div>
                         <component :is="tabs[currentTab]"></component>
                     </div>
-                </div>
+                </pr-grid>
             </div>
         </div>
     </div>
 </template>
 
 <style lang="less">
-.input {
-    background-color: #ffffff;
+.uk-checkbox {
     border: 1px solid #ededf2;
-}
-.input:focus {
-    background-color: #ffffff;
-    border: 1px solid #e5e8fc;
 }
 .uk-checkbox:checked {
     background-color: rgb(2, 96, 255);
+    border: 1px solid #ededf2;
 }
 .uk-checkbox:focus {
     background-color: #ffffff;

@@ -3,8 +3,8 @@
  * for compile icons we use PrIcon components, and
  * it will create the span tag and put icon svg into it
  * but when there is no default slots icons must compile directly into self Button
- * with no span tag, so we most prevent from creating additional tag
- * when there is no default slots defined in future
+ * with no span tag, in future we most prevent from creating additional tag
+ * when there is no default slots defined
  */
 import { useSlots, computed } from "vue";
 import { buttonClassObject } from "@bs/scripts/util/classes";

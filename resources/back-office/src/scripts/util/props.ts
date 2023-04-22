@@ -5,6 +5,7 @@
  * so we will use this props as export props for components with future release of vue
  */
 import {
+    GridClassType,
     ButtonClassType,
     LinkClassType
 } from "./classes";
@@ -17,6 +18,19 @@ export interface IconPropsType {
     tag?: 'span' | string,
     icon: string,
     ratio?: number
+}
+
+
+/**
+ * Grid Props Types
+ * extended from Grid Class Type
+ * cause all grid classes define as props
+ */
+export interface GridPropsType extends GridClassType {
+    margin?: string,
+    firstColumn?: string,
+    masonry?: boolean,
+    parallax?: number,
 }
 
 

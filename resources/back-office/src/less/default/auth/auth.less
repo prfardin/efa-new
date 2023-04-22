@@ -369,6 +369,10 @@
     font-size: 13px
 }
 
+.pr-auth-width-large {
+    width: @width-large-width - 40px;
+}
+
 .pr-auth-heading {
     color: #464964;
     font-size: 26px;
@@ -378,6 +382,9 @@
 .pr-auth-form-label {
     color: #6e6f75;
     font-size: 12px;
+}
+
+.uk-form-stacked .pr-auth-form-label {
     margin-bottom: 4px;
 }
 
@@ -390,12 +397,37 @@
     background-color: #fff
 }
 
+.pr-auth-input,
+.pr-auth-form-group {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 1px solid #ededf2;
+}
+
+.uk-form-small:not(textarea):not([multiple]):not([size]).pr-auth-input,
+.pr-auth-form-group-small {
+    height: 36px;
+}
+
+.pr-auth-input:focus,
+.pr-auth-form-group.pr-focused {
+    background-color: #ffffff;
+    border: 1px solid #afb6ff;
+}
+
 .pr-auth-form-group {
     position: relative;
     display: flex;
+    align-items: center;
 }
 
-.pr-auth-form-group > *:not(:last-child) {
+.pr-auth-form-group .pr-auth-input,
+.pr-auth-form-group .pr-auth-input:focus {
+    background-color: transparent;
+    border: none;
+}
+
+.pr-auth-form-group > * {
     position: relative;
 }
 
@@ -408,6 +440,10 @@
     border-right: 1px solid #ededf2;
     transform: translate(0, -50%);
     top: 50%
+}
+
+.pr-auth-input-phone-code {
+    width: 40px
 }
 
 

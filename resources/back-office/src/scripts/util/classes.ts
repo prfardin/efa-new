@@ -9,6 +9,49 @@
  */
 
 /**
+ * Grid Classes
+ */
+export interface GridClassType {
+    small?: boolean,
+    medium?: boolean,
+    large?: boolean,
+    collapse?: boolean,
+    columnSmall?: boolean,
+    columnMedium?: boolean,
+    columnLarge?: boolean,
+    columnCollapse?: boolean,
+    rowSmall?: boolean,
+    rowMedium?: boolean,
+    rowLarge?: boolean,
+    rowCollapse?: boolean,
+    divider?: boolean,
+    match?: boolean,
+}
+
+export const defaultGridCls = 'uk-grid';
+
+export function gridClassObject(props: GridClassType, gridCls: string = defaultGridCls) {
+    return [
+        {
+            [`${gridCls}-small`]: props.small,
+            [`${gridCls}-medium`]: props.medium,
+            [`${gridCls}-large`]: props.large,
+            [`${gridCls}-collapse`]: props.collapse,
+            [`${gridCls}-column-small`]: props.columnSmall,
+            [`${gridCls}-column-medium`]: props.columnMedium,
+            [`${gridCls}-column-large`]: props.columnLarge,
+            [`${gridCls}-column-collapse`]: props.columnCollapse,
+            [`${gridCls}-row-small`]: props.rowSmall,
+            [`${gridCls}-row-medium`]: props.rowMedium,
+            [`${gridCls}-row-large`]: props.rowLarge,
+            [`${gridCls}-row-collapse`]: props.rowCollapse,
+            [`${gridCls}-divider`]: props.divider,
+            [`${gridCls}-match`]: props.match,
+        },
+    ]
+}
+
+/**
  * Button Classes
  */
 export interface ButtonClassType {
