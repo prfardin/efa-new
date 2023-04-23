@@ -9,6 +9,172 @@
  */
 
 /**
+ * const still not assigned to their classObject's
+ */
+export const defaultPreserveCls = 'uk-preserve-color';
+
+export const defaultPaddingCls = 'uk-padding';
+
+/**
+ * define background types, we use our main colors in
+ * some components that take background color like button component,
+ * so it's good to define it as global background types and extend from it
+ */
+export interface BackgroundTypes {
+    default?: boolean,
+    muted?: boolean,
+    primary?: boolean,
+    secondary?: boolean,
+}
+
+/**
+ * we use background cls function to return all possible
+ * background colors to every component we need it,
+ * it will prevent us to define it for every component cls
+ */
+function backgroundCls(cls: string, props: { [key: string]: any }) {
+    return [
+        {
+            [`${cls}-default`]: props.default,
+            [`${cls}-muted`]: props.muted,
+            [`${cls}-primary`]: props.primary,
+            [`${cls}-secondary`]: props.secondary,
+        }
+    ]
+}
+
+
+/**
+ * Container Classes
+ */
+export interface ContainerClassType {
+    xsmall?: boolean,
+    small?: boolean,
+    large?: boolean,
+    xlarge?: boolean,
+    expand?: boolean
+}
+
+export const defaultContainerCls = 'uk-container';
+
+export function containerClassObject(props: ContainerClassType, containerCls: string = defaultContainerCls) {
+    return [
+        containerCls,
+        {
+            [`${containerCls}-xsmall`]: props.xsmall,
+            [`${containerCls}-small`]: props.small,
+            [`${containerCls}-large`]: props.large,
+            [`${containerCls}-xlarge`]: props.xlarge,
+            [`${containerCls}-expand`]: props.expand
+        },
+    ]
+}
+
+
+/**
+ * List Classes
+ */
+export interface ListClassType {
+    disc?: boolean,
+    circle?: boolean,
+    square?: boolean,
+    decimal?: boolean,
+    hyphen?: boolean,
+    muted?: boolean,
+    emphasis?: boolean,
+    primary?: boolean,
+    secondary?: boolean,
+    bullet?: boolean,
+    divider?: boolean,
+    striped?: boolean,
+    large?: boolean,
+    collapse?: boolean
+}
+
+export const defaultListCls = 'uk-list';
+
+export function listClassObject(props: ListClassType, listCls: string = defaultListCls) {
+    return [
+        listCls,
+        {
+            [`${listCls}-disc`]: props.disc,
+            [`${listCls}-circle`]: props.circle,
+            [`${listCls}-square`]: props.square,
+            [`${listCls}-decimal `]: props.decimal,
+            [`${listCls}-hyphen`]: props.hyphen,
+            [`${listCls}-muted`]: props.muted,
+            [`${listCls}-emphasis`]: props.emphasis,
+            [`${listCls}-primary `]: props.primary,
+            [`${listCls}-secondary`]: props.secondary,
+            [`${listCls}-bullet`]: props.bullet,
+            [`${listCls}-divider`]: props.divider,
+            [`${listCls}-striped `]: props.striped,
+            [`${listCls}-large`]: props.large,
+            [`${listCls}-collapse`]: props.collapse
+        },
+    ]
+}
+
+
+/**
+ * Section Classes
+ */
+export interface SectionClassType extends BackgroundTypes {
+    preserve?: boolean,
+    xsmall?: boolean,
+    small?: boolean,
+    large?: boolean,
+    xlarge?: boolean,
+    paddingRemove?: boolean,
+}
+
+export const defaultSectionCls = 'uk-section';
+
+export function sectionClassObject(props: SectionClassType, sectionCls: string = defaultSectionCls, preserveCls: string = defaultPreserveCls, paddingCls: string = defaultPaddingCls) {
+    return [
+        sectionCls,
+        ...backgroundCls(sectionCls, props),
+        {
+            preserveCls: props.preserve,
+            [`${sectionCls}-xsmall`]: props.xsmall,
+            [`${sectionCls}-small`]: props.small,
+            [`${sectionCls}-large`]: props.large,
+            [`${sectionCls}-xlarge`]: props.xlarge,
+            [`${paddingCls}-remove-vertical`]: props.paddingRemove
+        },
+    ]
+}
+
+
+/**
+ * Tile Classes
+ */
+export interface TileClassType extends BackgroundTypes {
+    xsmall?: boolean,
+    small?: boolean,
+    large?: boolean,
+    xlarge?: boolean,
+    paddingRemove?: boolean
+}
+
+export const defaultTileCls = 'uk-tile';
+
+export function tileClassObject(props: TileClassType, tileCls: string = defaultTileCls, paddingCls: string = defaultPaddingCls) {
+    return [
+        tileCls,
+        ...backgroundCls(tileCls, props),
+        {
+            [`${tileCls}-xsmall`]: props.xsmall,
+            [`${tileCls}-small`]: props.small,
+            [`${tileCls}-large`]: props.large,
+            [`${tileCls}-xlarge`]: props.xlarge,
+            [`${paddingCls}-remove`]: props.paddingRemove
+        },
+    ]
+}
+
+
+/**
  * Grid Classes
  */
 export interface GridClassType {
@@ -25,7 +191,7 @@ export interface GridClassType {
     rowLarge?: boolean,
     rowCollapse?: boolean,
     divider?: boolean,
-    match?: boolean,
+    match?: boolean
 }
 
 export const defaultGridCls = 'uk-grid';
@@ -46,7 +212,7 @@ export function gridClassObject(props: GridClassType, gridCls: string = defaultG
             [`${gridCls}-row-large`]: props.rowLarge,
             [`${gridCls}-row-collapse`]: props.rowCollapse,
             [`${gridCls}-divider`]: props.divider,
-            [`${gridCls}-match`]: props.match,
+            [`${gridCls}-match`]: props.match
         },
     ]
 }
@@ -54,11 +220,7 @@ export function gridClassObject(props: GridClassType, gridCls: string = defaultG
 /**
  * Button Classes
  */
-export interface ButtonClassType {
-    default?: boolean,
-    primary?: boolean,
-    secondary?: boolean,
-    muted?: boolean,
+export interface ButtonClassType extends BackgroundTypes {
     text?: boolean,
     small?: boolean,
     xSmall?: boolean,
@@ -77,12 +239,9 @@ export const defaultPrButtonCls = 'pr-button';
 export function buttonClassObject(props: ButtonClassType, hasDefaultSlot: boolean = true, buttonCls: string = defaultButtonCls, prButtonCls: string = defaultPrButtonCls) {
     return [
         props.width ? `uk-width-${props.width}` : '',
+        ...backgroundCls(buttonCls, props),
         {
             [defaultButtonCls]: !props.iconButton,
-            [`${buttonCls}-default`]: props.default,
-            [`${buttonCls}-primary`]: props.primary,
-            [`${buttonCls}-secondary`]: props.secondary,
-            [`${buttonCls}-muted`]: props.muted,
             [`${buttonCls}-text`]: props.text,
             [`${buttonCls}-small`]: props.small,
             [`${buttonCls}-xsmall`]: props.xSmall,
@@ -91,7 +250,7 @@ export function buttonClassObject(props: ButtonClassType, hasDefaultSlot: boolea
             [`${buttonCls}-circle`]: props.circle,
             [`${buttonCls}-collapse`]: props.collapse,
             [`${prButtonCls}-has-icon`]: props.icon && hasDefaultSlot,
-            [`uk-icon-button`]: props.iconButton,
+            [`uk-icon-button`]: props.iconButton
         }
     ]
 }
@@ -106,7 +265,7 @@ export interface LinkClassType {
     heading?: boolean,
     reset?: boolean,
     toggle?: boolean,
-    icon?: string,
+    icon?: string
 }
 
 export const defaultLinkCls = 'uk-link';

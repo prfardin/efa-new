@@ -7,6 +7,7 @@
  * when there is no default slots defined
  */
 import { useSlots, computed } from "vue";
+import { RouteLocationRaw } from "vue-router";
 import { buttonClassObject } from "@bs/scripts/util/classes";
 import PrIcon from "@bc/core/icon.vue";
 
@@ -17,7 +18,7 @@ import { useRipple } from "@bs/scripts/util/ripple";
 // import { ButtonPropsType } from "@bs/scripts/util/props";
 interface ButtonPropsType {
     tag?: 'router-link' | 'a' | 'button',
-    to?: string,
+    to?: RouteLocationRaw,
     href?: string,
     slotClass?: string,
     ripple?: boolean,

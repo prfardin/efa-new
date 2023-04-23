@@ -7,6 +7,7 @@
  * when there is no default slots defined in future (just link button component).
  */
 import { useSlots, computed } from "vue";
+import { RouteLocationRaw } from "vue-router";
 import { linkClassObject } from "@bs/scripts/util/classes";
 import PrIcon from "@bc/core/icon.vue";
 
@@ -14,7 +15,7 @@ import PrIcon from "@bc/core/icon.vue";
 // import { LinkPropsType } from "@bs/scripts/util/props";
 interface LinkPropsType {
     tag?: 'router-link' | 'a',
-    to?: string,
+    to?: RouteLocationRaw,
     href?: string,
     slotClass?: string,
     muted?: boolean,

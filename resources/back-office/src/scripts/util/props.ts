@@ -7,17 +7,41 @@
 import {
     GridClassType,
     ButtonClassType,
-    LinkClassType
+    LinkClassType, ListClassType, ContainerClassType, SectionClassType, TileClassType
 } from "./classes";
 
 
 /**
- * Icon Props Types
+ * Section Props Types
  */
-export interface IconPropsType {
-    tag?: 'span' | string,
-    icon: string,
-    ratio?: number
+export interface SectionPropsType extends SectionClassType {
+    //
+}
+
+
+/**
+ * Container Props Types
+ */
+export interface ContainerPropsType extends ContainerClassType {
+    //
+}
+
+
+/**
+ * Tile Props Types
+ */
+export interface TilePropsType extends TileClassType {
+    //
+}
+
+
+/**
+ * List Props Types
+ * extended from List Class Type
+ * cause all list classes define as props
+ */
+export interface ListPropsType extends ListClassType {
+    tag?: 'ul' | 'div' | string,
 }
 
 
@@ -62,6 +86,16 @@ export interface LinkPropsType extends LinkClassType {
     slotClass?: string,
     iconClass?: string,
     ratio?: number,
+}
+
+
+/**
+ * Icon Props Types
+ */
+export interface IconPropsType {
+    tag?: 'span' | string,
+    icon: string,
+    ratio?: number
 }
 
 /**

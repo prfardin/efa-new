@@ -27,8 +27,6 @@ export interface GridPropsType {
 }
 const props = defineProps<GridPropsType>()
 
-console.log(props)
-
 // define template ref
 const el = ref<Element>(null)
 

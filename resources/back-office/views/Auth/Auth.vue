@@ -1,83 +1,41 @@
 <script setup lang="ts">
-import { onMounted, ref, watch } from "vue";
-import { useRoute } from "vue-router";
-import { useI18n } from "vue-i18n";
-import { Element, heightViewport } from "@bs/scripts/util/util";
+import { useI18n } from 'vue-i18n';
+import { ref, onMounted } from 'vue';
+import { Element, heightViewport } from '@bs/scripts/util/util';
 
-import Register from '@bv/Auth/Register.vue'
-import Verify from '@bv/Auth/Verify.vue'
-import Password from '@bv/Auth/Password.vue'
-import Type from '@bv/Auth/Type.vue'
+// components
 import PrButton from '@bc/core/button.vue'
-import PrLink from '@bc/core/link.vue'
-import PrIcon from '@bc/core/icon.vue'
+import PrSection from '@bc/core/section.vue'
+import PrTile from '@bc/core/tile.vue'
 import PrGrid from '@bc/core/grid.vue'
-import Board from '@bi/auth/board.svg'
-import Map from '@bi/auth/map.svg'
+import PrContainer from '@bc/core/container.vue'
 
+// images
+import Board from '@bi/auth/board.svg'
+
+// i18n
 const { t } = useI18n();
 
-const route = useRoute()
-
-const currentTab = ref(route.query.step ?? 'Register')
-
-const tabs = {
-    Register,
-    Verify,
-    Password,
-    Type,
-}
-
-const ripple = ref<HTMLElement>(null);
-const setRipple = ref(false);
-const rippleSet = ref(false);
+const el = ref<Element>(null);
 
 onMounted(() => {
-    rippleSet.value = currentTab.value === 'Type';
+    heightViewport(el.value.$el, { 'offset-top': true })
 })
 
-watch(
-    () => route.query.step,
-    async newStep => {
-        if (newStep === 'Type') {
-            setTimeout(() => {
-                currentTab.value = newStep ?? 'Register'
-            }, 1200)
-        } else {
-            currentTab.value = newStep ?? 'Register'
-        }
-        setRipple.value = route.query.step === 'Type';
-    }
-)
-
-watch( setRipple, () => {
-    setRipple.value ? setTimeout(() => {
-        rippleSet.value = true;
-        ripple.value.classList.remove('ripple')
-    }, 1200) : ''
-    if (!setRipple.value) {
-        rippleSet.value = false;
-    }
-})
-
-const el = ref<Element>(null);
-onMounted(()=> {
-    heightViewport(el.value, { "offset-top": true });
-})
 </script>
 
 <template>
-    <div class="uk-section pr-auth-section pr-auth-section-muted uk-flex uk-flex-middle" ref="el">
+    <pr-section class="pr-auth-section pr-auth-section-muted uk-flex uk-flex-middle" ref="el">
         <div class="uk-width-1-1">
-            <div class="uk-container uk-container-small">
-                <pr-grid class="pr-auth-background-muted pr-auth-height" collapse match>
-                    <div class="pr-auth-side uk-width-1-3@m" :class="!rippleSet ? 'uk-light pr-light' : ''">
+            <pr-container small>
+                <pr-grid collapse match class="pr-auth-background-muted pr-auth-height">
+                    <div class="pr-auth-side uk-width-1-3@m pr-light uk-light">
                         <div class="pr-auth-logo-container uk-width-auto">
                             <span class="pr-auth-logo-icon">E</span>
                             <span>EFA </span>
                             <span class="uk-text-muted">SERVICE</span>
                         </div>
-                        <div v-if="!rippleSet" class="uk-tile pr-auth-tile pr-auth-tile-primary uk-flex uk-flex-top">
+                        <pr-tile class="pr-auth-tile pr-auth-tile-primary uk-flex uk-flex-top">
                             <div>
                                 <h3 class="uk-text-bold">{{ t('auth.side.header') }}</h3>
                                 <p class="pr-margin-medium-top uk-text-muted uk-text-small">{{ t('auth.side.comment_1') }}<br />{{ t('auth.side.comment_2') }}</p>
@@ -86,58 +44,27 @@ onMounted(()=> {
                                 <source type="image/webp" :srcset="Board">
                                 <img class="pr-auth-side-icon-board" :src="Board" alt="" loading="eager">
                             </picture>
-                        </div>
-                        <div v-else class="uk-tile pr-auth-tile pr-auth-tile-default pr-auth-background-default uk-flex uk-flex-top pr-auth-tile-has-list">
-                            <ul class="uk-list pr-auth-list uk-width-1-1 uk-margin-remove">
-                                <li class="pr-complete">
-                                    <pr-link to="#">
-                                        <pr-icon icon="line-check" ratio="0.75"></pr-icon>
-                                        <span>{{ t('auth.step.one') }}</span>
-                                    </pr-link>
-                                </li>
-                                <li class="uk-active">
-                                    <pr-link to="#">
-                                        <span>2</span>
-                                        <span>{{ t('auth.step.two') }}</span>
-                                        <pr-icon icon="line-arrow-right"></pr-icon>
-                                    </pr-link>
-                                </li>
-                                <li>
-                                    <pr-link to="#">
-                                        <span>3</span>
-                                        <span>{{ t('auth.step.three') }}</span>
-                                    </pr-link>
-                                </li>
-                                <li>
-                                    <pr-link to="#">
-                                        <span>4</span>
-                                        <span>{{ t('auth.step.four') }}</span>
-                                    </pr-link>
-                                </li>
-                                <li>
-                                    <pr-link to="#">
-                                        <span>5</span>
-                                        <span>{{ t('auth.step.five') }}</span>
-                                    </pr-link>
-                                </li>
-                            </ul>
-                            <picture>
-                                <source type="image/webp" :srcset="Map">
-                                <img class="pr-auth-side-icon-map" :src="Map" alt="" loading="eager">
-                            </picture>
-                        </div>
+                        </pr-tile>
                     </div>
                     <div class="pr-auth-container uk-width-expand@m">
                         <div class="pr-auth-helper-container uk-width-auto">
                             <span>{{ t('auth.helper_text') }}</span>
-                            <pr-button to="/" text>{{ t('auth.get_help') }}</pr-button>
+                            <pr-button to="/services" text>{{ t('auth.get_help') }}</pr-button>
                         </div>
-                        <component :is="tabs[currentTab]"></component>
+                        <div class="uk-tile pr-auth-tile-muted pr-auth-tile-xlarge uk-flex uk-flex-top">
+                            <div class="uk-width-1-1">
+                                <h2 class="pr-auth-heading uk-margin-remove-bottom">{{ t('auth.register.header') }}</h2>
+                                <p class="uk-margin-small-top">{{ t('auth.register.comment_1') }}<br />{{ t('auth.register.comment_2') }}</p>
+                                <div class="uk-margin-medium-top">
+                                    
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </pr-grid>
-            </div>
+            </pr-container>
         </div>
-    </div>
+    </pr-section>
 </template>
 
 <style lang="less">
