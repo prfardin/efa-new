@@ -49,14 +49,14 @@ onMounted(() => {
                     <div class="pr-auth-container uk-width-expand@m">
                         <div class="pr-auth-helper-container uk-width-auto">
                             <span>{{ t('auth.helper_text') }}</span>
-                            <pr-button to="/services" text>{{ t('auth.get_help') }}</pr-button>
+                            <pr-button to="/register/verify" text>{{ t('auth.get_help') }}</pr-button>
                         </div>
                         <div class="uk-tile pr-auth-tile-muted pr-auth-tile-xlarge uk-flex uk-flex-top">
                             <div class="uk-width-1-1">
                                 <h2 class="pr-auth-heading uk-margin-remove-bottom">{{ t('auth.register.header') }}</h2>
                                 <p class="uk-margin-small-top">{{ t('auth.register.comment_1') }}<br />{{ t('auth.register.comment_2') }}</p>
                                 <div class="uk-margin-medium-top">
-                                    
+                                    <router-view></router-view>
                                 </div>
                             </div>
                         </div>

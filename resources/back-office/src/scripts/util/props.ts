@@ -7,7 +7,7 @@
 import {
     GridClassType,
     ButtonClassType,
-    LinkClassType, ListClassType, ContainerClassType, SectionClassType, TileClassType
+    LinkClassType, ListClassType, ContainerClassType, SectionClassType, TileClassType, InputClassType
 } from "./classes";
 
 
@@ -103,4 +103,12 @@ export interface IconPropsType {
  */
 export interface NavPropsType {
     hasNavTag?: boolean,
+}
+
+
+/**
+ * Input Props Types
+ */
+export interface InputPropsType extends InputClassType {
+    //
 }

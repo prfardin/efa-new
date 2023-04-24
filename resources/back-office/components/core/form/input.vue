@@ -1,17 +1,13 @@
 <script setup lang="ts">
 import { Element, icon } from "@bs/scripts/util/util";
-import { ref, onMounted, watchEffect } from 'vue'
+import { ref } from 'vue'
 
 // must remove with future release of vue and must use as
-// import { IconPropsType } from "@bs/scripts/util/props";
-export interface IconPropsType {
-    tag?: 'span' | string,
-    icon: string,
-    ratio?: number
+// import { InputPropsType } from "@bs/scripts/util/props";
+export interface InputPropsType {
+    //
 }
-const props = withDefaults(defineProps<IconPropsType>(), {
-    tag: 'span'
-})
+const props = defineProps<InputPropsType>()
 
 // define template ref
 const el = ref<Element>(null)
@@ -23,14 +19,8 @@ const el = ref<Element>(null)
  * for now watchEffect used cause its clean
  * maybe need change to Composable icon in future
  */
-function setIcon() {
-    return icon(el.value, props.icon, props.ratio)
-}
-onMounted(() => {
-    watchEffect(setIcon)
-})
 </script>
 
 <template>
-    <component :is="tag" ref="el"></component>
+    <input id="" name="" value="" />
 </template>

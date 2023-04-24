@@ -285,3 +285,30 @@ export function linkClassObject(props: LinkClassType, hasDefaultSlot: boolean = 
     ]
 }
 
+
+/**
+ * Input Classes
+ */
+export interface InputClassType {
+    muted?: boolean,
+    text?: boolean,
+    heading?: boolean,
+    reset?: boolean,
+    toggle?: boolean,
+    icon?: string
+}
+
+export const defaultInputCls = 'uk-input';
+
+export function inputClassObject(props: InputClassType, inputCls: string = defaultInputCls) {
+    return [
+        inputCls,
+        {
+            [`${inputCls}-muted`]: props.muted,
+            [`${inputCls}-text`]: props.text,
+            [`${inputCls}-heading`]: props.heading,
+            [`${inputCls}-reset`]: props.reset,
+            [`${inputCls}-toggle`]: props.toggle,
+        }
+    ]
+}
