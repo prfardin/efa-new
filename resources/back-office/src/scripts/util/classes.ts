@@ -15,6 +15,9 @@ export const defaultPreserveCls = 'uk-preserve-color';
 
 export const defaultPaddingCls = 'uk-padding';
 
+export const defaultClsRtl = 'pr-direction-rtl';
+export const defaultClsLtr = 'pr-direction-ltr';
+
 /**
  * define background types, we use our main colors in
  * some components that take background color like button component,
@@ -287,28 +290,42 @@ export function linkClassObject(props: LinkClassType, hasDefaultSlot: boolean = 
 
 
 /**
+ * Form Classes
+ */
+export const defaultFormCls = 'uk-form';
+
+
+/**
  * Input Classes
  */
 export interface InputClassType {
-    muted?: boolean,
-    text?: boolean,
-    heading?: boolean,
-    reset?: boolean,
-    toggle?: boolean,
-    icon?: string
+    danger?: boolean,
+    success?: boolean,
+    warning?: boolean,
+    disabled?: boolean,
+    large?: boolean,
+    small?: boolean,
+    width?: string,
+    blank?: boolean
 }
 
-export const defaultInputCls = 'uk-input';
 
-export function inputClassObject(props: InputClassType, inputCls: string = defaultInputCls) {
+export const defaultInputCls = 'uk-input';
+export const defaultPrInputCls = 'pr-link';
+
+export function inputClassObject(props: InputClassType, inputCls: string = defaultInputCls, prInputCls: string = defaultPrInputCls, formCls: string = defaultFormCls) {
     return [
         inputCls,
+        props.width ? `${formCls}-width-${props.width}` : '',
         {
-            [`${inputCls}-muted`]: props.muted,
-            [`${inputCls}-text`]: props.text,
-            [`${inputCls}-heading`]: props.heading,
-            [`${inputCls}-reset`]: props.reset,
-            [`${inputCls}-toggle`]: props.toggle,
+            [`${formCls}-danger`]: props.danger,
+            [`${formCls}-success`]: props.success,
+            [`${formCls}-warning`]: props.warning,
+            [`${formCls}-disabled`]: props.disabled,
+            [`${formCls}-large`]: props.large,
+            [`${formCls}-small`]: props.small,
+            [`${formCls}-width`]: props.width,
+            [`${formCls}-blank`]: props.blank
         }
     ]
 }

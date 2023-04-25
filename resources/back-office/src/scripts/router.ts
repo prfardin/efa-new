@@ -1,7 +1,7 @@
 import {createRouter, createWebHistory, Router, RouteRecordRaw} from 'vue-router'
 import Dashboard from '@b/views/Dashboard.vue'
 import Auth from '@b/views/Auth/Auth.vue'
-import Register from '@b/views/Auth/Register.vue'
+import Mobile from '@b/views/Auth/Mobile.vue'
 import Verify from '@b/views/Auth/Verify.vue'
 import Services from '@b/views/services/Services.vue'
 
@@ -18,8 +18,8 @@ const routes: RouteRecordRaw[] = [
         children: [
             {
                 path: '',
-                name: 'register',
-                component: Register
+                name: 'mobile',
+                component: Mobile
             },
             {
                 path: 'verify',
