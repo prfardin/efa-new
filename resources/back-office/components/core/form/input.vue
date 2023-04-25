@@ -4,7 +4,7 @@ import { computed, ref } from 'vue'
 import { inputClassObject } from "@bs/scripts/util/classes";
 
 // must remove with future release of vue and must use as
-// import { InputPropsType } from "@bs/scripts/util/props";
+import { InputPropsType } from "@bs/scripts/util/props";
 export interface InputPropsType {
     type?: 'text' | string,
     value?: any,
@@ -24,8 +24,11 @@ const props = withDefaults(defineProps<InputPropsType>(), {
 // define input classes from defined props
 const inputClass = computed(() => inputClassObject(props))
 
+defineProps(['modelValue'])
+defineEmits(['update:modelValue'])
+
 </script>
 
 <template>
-    <input id="" name="" :type="type" :value="value" :class="inputClass" />
+    <input id="" name="" :type="type" :value="value" :class="inputClass" @input="$emit('update:modelValue', $event.target.value)" />
 </template>
