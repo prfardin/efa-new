@@ -30,7 +30,7 @@ const loader = ref(false)
             <div class="uk-width-auto">
                 <pr-button
                     class="pr-auth-button-primary"
-                    to="/register"
+                    to="/register/verify"
                     primary
                     small
                     square

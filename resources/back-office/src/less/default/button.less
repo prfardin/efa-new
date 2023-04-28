@@ -52,10 +52,13 @@
 @button-padding-horizontal:                     @global-gutter;
 @button-has-icon-padding-right:                 (@global-gutter / 2);
 @button-has-icon-padding-left:                  (@global-gutter / 2);
+@button-small-padding-horizontal:               @global-small-gutter;
+@button-small-has-icon-padding-right:           (@global-small-gutter / 2) + 1.5;
+@button-small-has-icon-padding-left:            (@global-small-gutter / 2);
 @button-xsmall-padding-horizontal:              @global-xsmall-gutter;
-@button-xsmall-has-icon-padding-right:          (@global-xsmall-gutter / 2);
+@button-xsmall-has-icon-padding-right:          (@global-xsmall-gutter / 2) + 2;
 @button-xsmall-has-icon-padding-left:           (@global-xsmall-gutter / 2);
-@button-rounded-radius:                         @global-rounded-radius;
+@button-rounded-radius:                          @global-rounded-radius;
 
 @button-primary-icon-primary-color:             @inverse-global-icon-primary-color;
 @button-primary-icon-secondary-color:           @inverse-global-icon-secondary-color;
@@ -277,6 +280,8 @@
 
     /* default */
     .uk-button.pr-button-has-icon {
+        padding: 0 @button-padding-horizontal;
+        padding-right: @button-xsmall-has-icon-padding-right;
         min-height: 26px;
         min-width: 26px;
     }
@@ -290,9 +295,18 @@
         order: 999;
     }
 
+    /* small */
+    .uk-button-small.pr-button-has-icon {
+        padding: 0 @button-small-padding-horizontal;
+        padding-right: @button-small-has-icon-padding-right;
+        min-height: 26px;
+        min-width: 26px;
+    }
+
     /* xsmall */
     .uk-button-xsmall.pr-button-has-icon {
         padding: 0 @button-xsmall-padding-horizontal;
+        padding-right: @button-xsmall-has-icon-padding-right;
         min-height: 26px;
         min-width: 26px;
     }

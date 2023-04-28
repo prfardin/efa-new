@@ -32,12 +32,12 @@ onMounted(() => {
                     <div class="pr-auth-side uk-width-1-3@m pr-light uk-light">
                         <div class="pr-auth-logo-container uk-width-auto">
                             <span class="pr-auth-logo-icon">E</span>
-                            <span>EFA </span>
-                            <span class="uk-text-muted">SERVICE</span>
+                            <span>{{ t('company.name') }}</span>
+                            <span class="uk-text-muted">{{ t('auth.logo_text') }}</span>
                         </div>
                         <pr-tile class="pr-auth-tile pr-auth-tile-primary uk-flex uk-flex-top">
                             <div>
-                                <h3 class="uk-text-bold">{{ t('auth.side.header') }}</h3>
+                                <h3 class="uk-text-bold">{{ t('auth.side.header_1') }}<br />{{ t('auth.side.header_2') }}<br />{{ t('auth.side.header_3') }}</h3>
                                 <p class="pr-margin-medium-top uk-text-muted uk-text-small">{{ t('auth.side.comment_1') }}<br />{{ t('auth.side.comment_2') }}</p>
                             </div>
                             <picture>

@@ -42,7 +42,7 @@
 
 @auth-container-font-size:                      0.813rem;
 @auth-container-heading-font-size:              1.625rem;
-@auth-container-heading-font-weight:            700rem;
+@auth-container-heading-font-weight:            700;
 @auth-logo-font-size:                           @global-small-font-size;
 @auth-logo-icon-font-size:                      1.125rem;
 @auth-logo-font-weight:                         900;
@@ -63,6 +63,7 @@
 @auth-form-group-divider-height:                (@auth-input-small-height - 20px);
 @auth-form-group-divider-height-calc:           calc(100% - @auth-form-group-divider-height);
 @auth-input-phone-code-width:                   40px;
+@auth-button-width:                             125px;
 
 @section-auth-padding-vertical:                 (@global-medium-margin - @global-xsmall-margin);
 @section-auth-padding-vertical-m:               (@global-medium-margin - @global-xsmall-margin);
@@ -305,6 +306,7 @@
 .pr-auth-side-icon-board {
     bottom: @auth-side-icon-board-margin-vertical; // must change
     right: @auth-side-icon-board-margin-horizontal; // must change
+    /*rtl:raw: transform: rotateY(180deg) */
 }
 
 .pr-auth-side-icon-map {
@@ -482,10 +484,12 @@ h6, .uk-h6 {
 
 [class*=pr-auth-button] {
     line-height: 40px;
+    min-width: @auth-button-width;
 }
 
 .uk-button-small[class*=pr-auth-button] {
     line-height: 34px;
+    min-width: @auth-button-width;
 }
 
 .pr-auth-button-primary {

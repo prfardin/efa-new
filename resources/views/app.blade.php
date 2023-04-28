@@ -12,7 +12,7 @@
 
         <!-- Scripts and CSS import -->
         <!-- rtl source: /src/cache/default-rtl.less -->
-        @vite(['resources/back-office/src/less/default.less', 'resources/back-office/main.ts'], 'back-office/build')
+        @vite(['resources/back-office/src/less/default-rtl.less', 'resources/back-office/main.ts'], 'back-office/build')
     </head>
     <body>
         <div id="app"></div>
