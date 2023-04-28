@@ -10,6 +10,7 @@ import { useSlots, computed } from "vue"
 import { RouteLocationRaw } from "vue-router"
 import { buttonClassObject } from "@bs/scripts/util/classes"
 import PrIcon from "@bc/core/icon.vue"
+import PrSpinner from "@bc/core/spinner.vue"
 
 // we must redesign ripple util and then use it. it's just for test
 import { useRipple } from "@bs/scripts/util/ripple"
@@ -22,6 +23,8 @@ interface ButtonPropsType {
     href?: string
     slotClass?: string
     ripple?: boolean
+    spinner?: boolean
+    spinnerMod?: 'line' | 'circle'
     default?: boolean
     primary?: boolean
     secondary?: boolean
@@ -33,14 +36,17 @@ interface ButtonPropsType {
     rounded?: boolean
     circle?: boolean
     collapse?: boolean
+    width?: string
+    spinnerClass?: string
     icon?: string
-    iconButton?: boolean
     ratio?: number
     iconClass?: string
-    width?: string
+    iconButton?: boolean
+    iconFlip?: boolean
 }
 const props = withDefaults(defineProps<ButtonPropsType>(), {
-    tag: 'router-link'
+    tag: 'router-link',
+    spinnerMod: 'line'
 })
 
 // get slots: we check if there is no default slots defined
@@ -71,5 +77,6 @@ function onMouseDown(event) {
             <span :class="slotClass" v-if="slots.default"><slot /></span>
         </template>
         <slot v-else />
+        <pr-spinner v-if="spinner" :class="spinnerClass" :mode="spinnerMod" />
     </component>
 </template>

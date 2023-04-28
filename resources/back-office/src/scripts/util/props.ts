@@ -7,7 +7,14 @@
 import {
     GridClassType,
     ButtonClassType,
-    LinkClassType, ListClassType, ContainerClassType, SectionClassType, TileClassType, InputClassType, LabelClassType
+    LinkClassType,
+    ListClassType,
+    ContainerClassType,
+    SectionClassType,
+    TileClassType,
+    InputClassType,
+    LabelClassType,
+    SpinnerClassType
 } from "./classes";
 
 
@@ -69,8 +76,12 @@ export interface ButtonPropsType extends ButtonClassType {
     href?: string
     slotClass?: string
     ripple?: boolean
-    iconClass?: string
+    spinner?: boolean
+    spinnerMod?: 'line' | 'circle'
+    icon?: string
     ratio?: number
+    iconClass?: string
+    spinnerClass?: string
 }
 
 
@@ -132,4 +143,12 @@ export interface LabelPropsType extends LabelClassType {
     icon?: string
     ratio?: number
     iconClass?: string
+}
+
+
+/**
+ * Spinner Props Types
+ */
+export interface SpinnerPropsType extends SpinnerClassType {
+    tag?: 'span' | string
 }

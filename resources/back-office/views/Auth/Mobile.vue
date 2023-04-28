@@ -3,7 +3,6 @@ import { ref } from "vue"
 import { useI18n } from "vue-i18n"
 
 import PrButton from '@bc/core/button.vue'
-import PrIcon from '@bc/core/icon.vue'
 import PrGrid from '@bc/core/grid.vue'
 import PrInput from '@bc/core/form/input.vue'
 import PrLabel from '@bc/core/form/label.vue'
@@ -13,6 +12,8 @@ const code = ref('+98')
 const mobile = ref(null)
 
 const { t } = useI18n()
+
+const loader = ref(false)
 
 </script>
 
@@ -27,17 +28,25 @@ const { t } = useI18n()
                 </div>
             </div>
             <div class="uk-width-auto">
-                <pr-button to="/" primary small square style="line-height: 34px; color: #fefefe; background-color: #0260ff; display: flex; align-items: center; justify-content: center; min-width: 128px">
-                    <div v-if="false" style="line-height: 34px" uk-spinner="ratio: 0.8"></div>
-                    <span style="margin-right: 4px">{{ t('auth.register.submit') }}</span>
-                    <pr-icon icon="arrow-right" :ratio="0.8" />
-                </pr-button>
+                <pr-button
+                    class="pr-auth-button-primary"
+                    to="/register"
+                    primary
+                    small
+                    square
+                    icon="arrow-right"
+                    ratio="0.8"
+                    icon-flip
+                    :spinner="loader"
+                    @click="loader = true"
+                    spinner-mod="circle"
+                >{{ t('auth.register.submit') }}</pr-button>
             </div>
         </pr-grid>
-        <input id="test" checked class="pr-auth-form-input uk-checkbox" type="checkbox" value="">
-        <label for="test" style="font-size: 12px; margin-top: 6px; display: inline-block">
-            <span class="pr-margin-xsmall-left"> {{ t('auth.terms_and_privacy') }} <a href="#">{{ t('auth.terms') }}</a> and <a href="#">{{ t('auth.privacy') }}</a></span>
-        </label>
+        <div class="pr-margin-xsmall-top">
+            <pr-label for="test" class="pr-auth-form-label">
+                <input id="test" checked class="pr-auth-form-input uk-checkbox pr-margin-xsmall-right" type="checkbox" value=""> {{ t('auth.terms_and_privacy') }} <a href="#">{{ t('auth.terms') }}</a> and <a href="#">{{ t('auth.privacy') }}</a></pr-label>
+        </div>
     </form>
 </template>
 

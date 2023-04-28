@@ -15,6 +15,8 @@ export const defaultPreserveCls = 'uk-preserve-color'
 
 export const defaultPaddingCls = 'uk-padding'
 
+export const defaultIconCls = 'uk-icon'
+
 export const defaultClsRtl = 'pr-direction-rtl'
 export const defaultClsLtr = 'pr-direction-ltr'
 
@@ -224,16 +226,18 @@ export function gridClassObject(props: GridClassType, gridCls: string = defaultG
  * Button Classes
  */
 export interface ButtonClassType extends BackgroundTypes {
-    text?: boolean,
-    small?: boolean,
-    xSmall?: boolean,
-    square?: boolean,
-    rounded?: boolean,
-    circle?: boolean,
-    collapse?: boolean,
-    icon?: string,
-    iconButton?: boolean,
+    spinner?: boolean
+    text?: boolean
+    small?: boolean
+    xSmall?: boolean
+    square?: boolean
+    rounded?: boolean
+    circle?: boolean
+    collapse?: boolean
     width?: string
+    icon?: string
+    iconButton?: boolean
+    iconFlip?: boolean
 }
 
 export const defaultButtonCls = 'uk-button'
@@ -241,7 +245,6 @@ export const defaultPrButtonCls = 'pr-button'
 
 export function buttonClassObject(props: ButtonClassType, hasDefaultSlot: boolean = true, buttonCls: string = defaultButtonCls, prButtonCls: string = defaultPrButtonCls) {
     return [
-        props.width ? `uk-width-${props.width}` : '',
         ...backgroundCls(buttonCls, props),
         {
             [defaultButtonCls]: !props.iconButton,
@@ -253,7 +256,10 @@ export function buttonClassObject(props: ButtonClassType, hasDefaultSlot: boolea
             [`${buttonCls}-circle`]: props.circle,
             [`${buttonCls}-collapse`]: props.collapse,
             [`${prButtonCls}-has-icon`]: props.icon && hasDefaultSlot,
-            [`uk-icon-button`]: props.iconButton
+            [`${prButtonCls}-icon-flip`]: props.iconFlip,
+            [`${defaultIconCls}-button`]: props.iconButton,
+            [`${prButtonCls}-has-spinner`]: props.spinner,
+            [`uk-width-${props.width}`]: props.width
         }
     ]
 }
@@ -318,7 +324,6 @@ export function inputClassObject(props: InputClassType, inputCls: string = defau
     return [
         props.cls,
         inputCls,
-        props.width ? `${formCls}-width-${props.width}` : '',
         {
             [`${formCls}-danger`]: props.danger,
             [`${formCls}-success`]: props.success,
@@ -326,7 +331,8 @@ export function inputClassObject(props: InputClassType, inputCls: string = defau
             [`${formCls}-disabled`]: props.disabled,
             [`${formCls}-large`]: props.large,
             [`${formCls}-small`]: props.small,
-            [`${formCls}-blank`]: props.blank
+            [`${formCls}-blank`]: props.blank,
+            [`${formCls}-width-${props.width}`]: props.width
         }
     ]
 }
@@ -338,7 +344,7 @@ export const defaultFormIconCls = 'uk-form-icon'
 
 
 /**
- * Input Classes
+ * Input Icon Classes
  */
 export interface InputIconClassType {
     iconClass?: string
@@ -359,18 +365,37 @@ export function inputIconClassObject(props: InputIconClassType, formIconCls: str
 /**
  * Label Classes
  */
-export const defaultLabelCls = 'uk-form-label'
-
-
-/**
- * Label Classes
- */
 export interface LabelClassType {
     //
 }
 
+export const defaultLabelCls = 'uk-form-label'
+
 export function labelClassObject(props: LabelClassType, labelCls: string = defaultLabelCls) {
     return [
         labelCls
+    ]
+}
+
+
+/**
+ * Spinner Classes
+ */
+export const defaultSpinnerCls = 'uk-spinner'
+export const defaultPrSpinnerCls = 'pr-spinner'
+
+/**
+ * Spinner Classes
+ */
+export interface SpinnerClassType {
+    mode?: 'line' | 'circle'
+}
+
+export function spinnerClassObject(props: SpinnerClassType, spinnerCls: string = defaultPrSpinnerCls) {
+    return [
+        spinnerCls,
+        {
+            [`${spinnerCls}-${props.mode}`]: props.mode
+        }
     ]
 }

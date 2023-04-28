@@ -277,24 +277,24 @@
 
     /* default */
     .uk-button.pr-button-has-icon {
-        padding: 0 @button-padding-horizontal 0 @button-has-icon-padding-left;
         min-height: 26px;
         min-width: 26px;
     }
 
-    .uk-button.pr-button-has-icon > .uk-icon {
-        padding-right: 4px;
+    .uk-button.pr-button-has-icon:not(.pr-button-icon-flip) > .uk-icon {
+        margin-right: 4px;
+    }
+
+    .uk-button.pr-button-icon-flip > .uk-icon {
+        margin-left: 4px;
+        order: 999;
     }
 
     /* xsmall */
     .uk-button-xsmall.pr-button-has-icon {
-        padding: 0 @button-xsmall-padding-horizontal 0 @button-xsmall-has-icon-padding-left;
+        padding: 0 @button-xsmall-padding-horizontal;
         min-height: 26px;
         min-width: 26px;
-    }
-
-    .uk-button-xsmall.pr-button-has-icon > .uk-icon {
-        padding-right: 4px;
     }
 
     /* Collapsed */
@@ -304,9 +304,28 @@
     }
 
     .uk-button-collapse.pr-button-has-icon > .uk-icon {
-        padding-right: 0;
+        margin-right: 0;
     }
 
+    .uk-button-collapse.pr-button-icon-flip > .uk-icon {
+        margin-left: 0;
+    }
+
+
+    // PrKit Spinner modifiers
+    // ========================================================================
+
+    .pr-button-has-spinner {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+    }
+
+    .pr-button-has-spinner > *:not(.pr-spinner) {
+        opacity: 0.1;
+    }
 }
 
 

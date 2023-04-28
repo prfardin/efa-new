@@ -8,11 +8,12 @@
 // ========================================================================
 
 @auth-color:                                    #464964;
+@auth-container-color:                          lighten(@auth-color, 35.25%);
 @auth-primary-color:                            #015eff;
 @auth-default-color:                            @global-white-color;
 @auth-muted-color:                              lighten(@auth-color, 63.45%);
 
-@auth-logo-color:                               lighten(@auth-color, 1.55%);
+@auth-logo-color:                               @auth-container-color;
 @auth-logo-icon-color:                          @auth-default-color;
 @auth-logo-icon-background-color:               @auth-primary-color;
 @auth-helper-color:                             lighten(@auth-color, 35.25%);
@@ -29,20 +30,39 @@
 @auth-tile-muted-background-color:              @auth-muted-color;
 @auth-side-background-color:                    @auth-primary-color;
 
+@auth-button-primary-color:                     @auth-primary-color;
+
+@auth-label-color:                              lighten(@auth-color, 18.25%);
+@auth-label-helper-background-color:            @global-white-color;
+@auth-label-helper-border-color:                lighten(@auth-label-color, 20%);
+
+@auth-input-background-color:                   @global-white-color;
+@auth-input-border-color:                       lighten(@auth-color, 60.5%);
+@auth-form-group-divider-color:                 @auth-input-border-color;
+
+@auth-container-font-size:                      0.813rem;
+@auth-container-heading-font-size:              1.625rem;
+@auth-container-heading-font-weight:            700rem;
 @auth-logo-font-size:                           @global-small-font-size;
 @auth-logo-icon-font-size:                      1.125rem;
 @auth-logo-font-weight:                         900;
-@auth-helper-font-size:                         0.813rem;
+@auth-helper-font-size:                         @auth-container-font-size;
 @auth-helper-font-weight:                       500;
 @auth-helper-link-font-weight:                  800;
 @auth-list-font-size:                           @global-small-font-size;
 @auth-list-font-weight:                         700;
 @auth-list-active-font-weight:                  900;
+@auth-label-font-size:                          0.75rem;
 
 @auth-height:                                   600px;
 @auth-logo-icon-height:                         26px;
 @auth-logo-icon-width:                          @auth-logo-icon-height;
 @auth-logo-icon-border-radius:                  100%;
+
+@auth-input-small-height:                       36px;
+@auth-form-group-divider-height:                (@auth-input-small-height - 20px);
+@auth-form-group-divider-height-calc:           calc(100% - @auth-form-group-divider-height);
+@auth-input-phone-code-width:                   40px;
 
 @section-auth-padding-vertical:                 (@global-medium-margin - @global-xsmall-margin);
 @section-auth-padding-vertical-m:               (@global-medium-margin - @global-xsmall-margin);
@@ -59,10 +79,11 @@
 @auth-tile-xlarge-padding-vertical:             (@auth-tile-padding-vertical + @global-small-margin) - 10px;
 @auth-tile-xlarge-padding-vertical-m:           (@auth-tile-padding-vertical-m + @global-medium-margin) - 10px;
 
-@pr-auth-logo-margin-horizontal:                @auth-tile-padding-horizontal;
-@pr-auth-logo-margin-horizontal-m:              @auth-tile-padding-horizontal-m;
-@pr-auth-logo-margin-vertical:                  (@global-medium-margin - @global-xsmall-margin);
-@pr-auth-logo-margin-vertical-m:                (@global-medium-margin - @global-xsmall-margin);
+@auth-logo-margin-horizontal:                   @auth-tile-padding-horizontal;
+@auth-logo-margin-horizontal-m:                 @auth-tile-padding-horizontal-m;
+@auth-logo-margin-vertical:                     (@global-medium-margin - @global-xsmall-margin);
+@auth-logo-margin-vertical-m:                   (@global-medium-margin - @global-xsmall-margin);
+@auth-label-margin:                             @global-xxsmall-gutter - 1px;
 
 @auth-side-icon-board-margin-vertical:          38px;
 @auth-side-icon-board-margin-horizontal:        -24px;
@@ -85,8 +106,8 @@
 /* we will comment later */
 .pr-auth-logo-container {
     position: absolute;
-    top: @pr-auth-logo-margin-vertical;
-    left: @pr-auth-logo-margin-horizontal;
+    top: @auth-logo-margin-vertical;
+    left: @auth-logo-margin-horizontal;
     color: @auth-logo-color;
     font-size: @auth-logo-font-size;
     font-weight: @auth-logo-font-weight;
@@ -113,16 +134,16 @@
 @media (min-width: @breakpoint-small) {
 
     .pr-auth-logo-container {
-        top: @pr-auth-logo-margin-vertical-m;
-        left: @pr-auth-logo-margin-horizontal-m;
+        top: @auth-logo-margin-vertical-m;
+        left: @auth-logo-margin-horizontal-m;
     }
 
 }
 
 .pr-auth-helper-container {
     position: absolute;
-    top: @pr-auth-logo-margin-vertical;
-    right: @pr-auth-logo-margin-horizontal;
+    top: @auth-logo-margin-vertical;
+    right: @auth-logo-margin-horizontal;
     display: flex;
     align-items: center;
     color: @auth-helper-color;
@@ -141,8 +162,8 @@
 @media (min-width: @breakpoint-small) {
 
     .pr-auth-helper-container {
-        top: @pr-auth-logo-margin-vertical-m;
-        right: @pr-auth-logo-margin-horizontal-m;
+        top: @auth-logo-margin-vertical-m;
+        right: @auth-logo-margin-horizontal-m;
     }
 
 }
@@ -365,54 +386,63 @@
 }
 
 .pr-auth-container {
-    color: #909096;
-    font-size: 13px
+    color: @auth-container-color;
+    font-size: @auth-container-font-size
 }
 
 .pr-auth-width-large {
     width: @width-large-width - 40px;
 }
 
+h1, .uk-h1,
+h2, .uk-h2,
+h3, .uk-h3,
+h4, .uk-h4,
+h5, .uk-h5,
+h6, .uk-h6 {
+    color: @auth-color;
+}
+
 .pr-auth-heading {
-    color: #464964;
-    font-size: 26px;
-    font-weight: 700
+    font-size: @auth-container-heading-font-size;
+    font-weight: @auth-container-heading-font-weight
 }
 
 .pr-auth-form-label {
-    color: #6e6f75;
-    font-size: 12px;
+    color: @auth-label-color;
+    font-size: @auth-label-font-size;
 }
 
-.uk-form-stacked .pr-auth-form-label {
-    margin-bottom: 4px;
+.uk-form-stacked .pr-auth-form-label:not(:last-child) {
+    margin-bottom: @auth-label-margin;
 }
 
 .pr-auth-form-helper {
-    margin-left: 3px;
-    border: 1px solid #9fa0a3;
-    border-radius: 100%;
     position: relative;
     top: -4px;
-    background-color: #fff
+    background-color: @auth-label-helper-background-color;
+    margin-left: @auth-label-margin;
+    border: 1px solid @auth-label-helper-border-color;
+    border-radius: 100%;
+    color: @auth-label-color;
 }
 
 .pr-auth-input,
 .pr-auth-form-group {
     box-sizing: border-box;
-    background-color: #ffffff;
-    border: 1px solid #ededf2;
+    background: @auth-input-background-color;
+    border: 1px solid @auth-input-border-color;
 }
 
 .uk-form-small:not(textarea):not([multiple]):not([size]).pr-auth-input,
 .pr-auth-form-group-small {
-    height: 36px;
+    height: @auth-input-small-height;
 }
 
 .pr-auth-input:focus,
 .pr-auth-form-group.pr-focused {
-    background-color: #ffffff;
-    border: 1px solid #afb6ff;
+    background: @auth-input-background-color;
+    border-color: @auth-input-border-color;
 }
 
 .pr-auth-form-group {
@@ -440,14 +470,27 @@
     display: block;
     position: absolute;
     right: 0;
-    height: 20px;
-    border-right: 1px solid #ededf2;
+    height: @auth-form-group-divider-height-calc;
+    border-right: 1px solid @auth-form-group-divider-color;
     transform: translate(0, -50%);
     top: 50%
 }
 
 .pr-auth-input-phone-code {
-    width: 40px
+    width: @auth-input-phone-code-width
+}
+
+[class*=pr-auth-button] {
+    line-height: 40px;
+}
+
+.uk-button-small[class*=pr-auth-button] {
+    line-height: 34px;
+}
+
+.pr-auth-button-primary {
+    color: @global-white-color;
+    background-color: @auth-button-primary-color;
 }
 
 
