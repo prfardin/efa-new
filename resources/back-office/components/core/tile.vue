@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { tileClassObject } from "@bs/scripts/util/classes";
+import { tileClassObject } from "@bs/scripts/util/classes"
 
 // must remove with future release of vue and must use as
-// import { TilePropsType } from "@bs/scripts/util/props";
+// import { TilePropsType } from "@bs/scripts/util/props"
 export interface TilePropsType {
-    xsmall?: boolean,
-    small?: boolean,
-    large?: boolean,
-    xlarge?: boolean,
+    xsmall?: boolean
+    small?: boolean
+    large?: boolean
+    xlarge?: boolean
     paddingRemove?: boolean
 }
 const props = defineProps<TilePropsType>()

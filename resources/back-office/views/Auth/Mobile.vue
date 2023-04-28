@@ -1,12 +1,18 @@
 <script setup lang="ts">
-import { useI18n } from "vue-i18n";
+import { ref } from "vue"
+import { useI18n } from "vue-i18n"
 
 import PrButton from '@bc/core/button.vue'
 import PrIcon from '@bc/core/icon.vue'
 import PrGrid from '@bc/core/grid.vue'
 import PrInput from '@bc/core/form/input.vue'
+import PrLabel from '@bc/core/form/label.vue'
 
-const { t } = useI18n();
+// define input models
+const code = ref('+98')
+const mobile = ref(null)
+
+const { t } = useI18n()
 
 </script>
 
@@ -14,18 +20,10 @@ const { t } = useI18n();
     <form class="uk-form-stacked pr-auth-width-large">
         <pr-grid small class="uk-flex-bottom">
             <div class="uk-width-expand">
-                <div>
-                    <pr-input type="text" small ltr class="pr-auth-input uk-text-center" />
-                </div>
-                <label class="uk-form-label pr-auth-form-label" for="mobile">{{ t('auth.register.mobile') }} <pr-icon class="pr-auth-form-helper" icon="question" :ratio="0.5"></pr-icon></label>
+                <pr-label for="mobile" class="pr-auth-form-label" icon="question" :ratio="0.5" icon-class="pr-auth-form-helper">{{ t('auth.register.mobile') }}</pr-label>
                 <div class="pr-auth-form-group pr-auth-form-group-small uk-text-left">
-                    <div>
-                        <pr-input type="text" value="+98" small ltr class="pr-auth-input pr-auth-input-phone-code pr-direction-ltr uk-text-center" />
-<!--                        <input class="pr-auth-input pr-auth-input-phone-code pr-direction-ltr" type="text" value="+98">-->
-                    </div>
-                    <div class="uk-width-1-1">
-                        <input class="pr-auth-input pr-direction-ltr uk-input uk-form-small" autofocus id="mobile" name="mobile" type="text">
-                    </div>
+                    <pr-input v-model="code" name="code" small cls="pr-auth-input pr-auth-input-phone-code pr-direction-ltr uk-text-center" />
+                    <pr-input v-model="mobile" id="mobile" name="mobile" small cls="pr-auth-input pr-direction-ltr uk-input uk-form-small" class="uk-width-1-1" />
                 </div>
             </div>
             <div class="uk-width-auto">

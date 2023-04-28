@@ -1,29 +1,29 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
-import { Element, grid } from "@bs/scripts/util/util";
-import { gridClassObject } from "@bs/scripts/util/classes";
+import { Element, grid } from "@bs/scripts/util/util"
+import { gridClassObject } from "@bs/scripts/util/classes"
 
 // must remove with future release of vue and must use as
-// import { GridPropsType } from "@bs/scripts/util/props";
+// import { GridPropsType } from "@bs/scripts/util/props"
 export interface GridPropsType {
-    small?: boolean,
-    medium?: boolean,
-    large?: boolean,
-    collapse?: boolean,
-    columnSmall?: boolean,
-    columnMedium?: boolean,
-    columnLarge?: boolean,
-    columnCollapse?: boolean,
-    rowSmall?: boolean,
-    rowMedium?: boolean,
-    rowLarge?: boolean,
-    rowCollapse?: boolean,
-    divider?: boolean,
-    match?: boolean,
-    margin?: string,
-    firstColumn?: string,
-    masonry?: boolean,
-    parallax?: number,
+    small?: boolean
+    medium?: boolean
+    large?: boolean
+    collapse?: boolean
+    columnSmall?: boolean
+    columnMedium?: boolean
+    columnLarge?: boolean
+    columnCollapse?: boolean
+    rowSmall?: boolean
+    rowMedium?: boolean
+    rowLarge?: boolean
+    rowCollapse?: boolean
+    divider?: boolean
+    match?: boolean
+    margin?: string
+    firstColumn?: string
+    masonry?: boolean
+    parallax?: number
 }
 const props = defineProps<GridPropsType>()
 

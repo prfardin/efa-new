@@ -6,37 +6,37 @@
  * with no span tag, in future we most prevent from creating additional tag
  * when there is no default slots defined
  */
-import { useSlots, computed } from "vue";
-import { RouteLocationRaw } from "vue-router";
-import { buttonClassObject } from "@bs/scripts/util/classes";
-import PrIcon from "@bc/core/icon.vue";
+import { useSlots, computed } from "vue"
+import { RouteLocationRaw } from "vue-router"
+import { buttonClassObject } from "@bs/scripts/util/classes"
+import PrIcon from "@bc/core/icon.vue"
 
 // we must redesign ripple util and then use it. it's just for test
-import { useRipple } from "@bs/scripts/util/ripple";
+import { useRipple } from "@bs/scripts/util/ripple"
 
 // must remove with future release of vue and must use as
-// import { ButtonPropsType } from "@bs/scripts/util/props";
+// import { ButtonPropsType } from "@bs/scripts/util/props"
 interface ButtonPropsType {
-    tag?: 'router-link' | 'a' | 'button',
-    to?: RouteLocationRaw,
-    href?: string,
-    slotClass?: string,
-    ripple?: boolean,
-    default?: boolean,
-    primary?: boolean,
-    secondary?: boolean,
-    muted?: boolean,
-    text?: boolean,
-    small?: boolean,
-    xSmall?: boolean,
-    square?: boolean,
-    rounded?: boolean,
-    circle?: boolean,
-    collapse?: boolean,
-    icon?: string,
-    iconButton?: boolean,
-    ratio?: number,
-    iconClass?: string,
+    tag?: 'router-link' | 'a' | 'button'
+    to?: RouteLocationRaw
+    href?: string
+    slotClass?: string
+    ripple?: boolean
+    default?: boolean
+    primary?: boolean
+    secondary?: boolean
+    muted?: boolean
+    text?: boolean
+    small?: boolean
+    xSmall?: boolean
+    square?: boolean
+    rounded?: boolean
+    circle?: boolean
+    collapse?: boolean
+    icon?: string
+    iconButton?: boolean
+    ratio?: number
+    iconClass?: string
     width?: string
 }
 const props = withDefaults(defineProps<ButtonPropsType>(), {
@@ -52,7 +52,12 @@ const buttonClass = computed(() => buttonClassObject(props, !!slots.default))
 const emit = defineEmits(['mousedown'])
 
 function onMouseDown(event) {
-    // must change in future
+    /**
+     * must change in future & we need to discover
+     * if there is a way to use some function or attribute without condition
+     * with boolean props defined, ex : if (props.x) use x()
+     * change it to something like directives
+     */
     if (props.ripple) useRipple(event)
     emit('mousedown')
 }

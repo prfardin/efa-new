@@ -11,12 +11,12 @@
 /**
  * const still not assigned to their classObject's
  */
-export const defaultPreserveCls = 'uk-preserve-color';
+export const defaultPreserveCls = 'uk-preserve-color'
 
-export const defaultPaddingCls = 'uk-padding';
+export const defaultPaddingCls = 'uk-padding'
 
-export const defaultClsRtl = 'pr-direction-rtl';
-export const defaultClsLtr = 'pr-direction-ltr';
+export const defaultClsRtl = 'pr-direction-rtl'
+export const defaultClsLtr = 'pr-direction-ltr'
 
 /**
  * define background types, we use our main colors in
@@ -24,10 +24,10 @@ export const defaultClsLtr = 'pr-direction-ltr';
  * so it's good to define it as global background types and extend from it
  */
 export interface BackgroundTypes {
-    default?: boolean,
-    muted?: boolean,
-    primary?: boolean,
-    secondary?: boolean,
+    default?: boolean
+    muted?: boolean
+    primary?: boolean
+    secondary?: boolean
 }
 
 /**
@@ -51,14 +51,14 @@ function backgroundCls(cls: string, props: { [key: string]: any }) {
  * Container Classes
  */
 export interface ContainerClassType {
-    xsmall?: boolean,
-    small?: boolean,
-    large?: boolean,
-    xlarge?: boolean,
+    xsmall?: boolean
+    small?: boolean
+    large?: boolean
+    xlarge?: boolean
     expand?: boolean
 }
 
-export const defaultContainerCls = 'uk-container';
+export const defaultContainerCls = 'uk-container'
 
 export function containerClassObject(props: ContainerClassType, containerCls: string = defaultContainerCls) {
     return [
@@ -78,23 +78,23 @@ export function containerClassObject(props: ContainerClassType, containerCls: st
  * List Classes
  */
 export interface ListClassType {
-    disc?: boolean,
-    circle?: boolean,
-    square?: boolean,
-    decimal?: boolean,
-    hyphen?: boolean,
-    muted?: boolean,
-    emphasis?: boolean,
-    primary?: boolean,
-    secondary?: boolean,
-    bullet?: boolean,
-    divider?: boolean,
-    striped?: boolean,
-    large?: boolean,
+    disc?: boolean
+    circle?: boolean
+    square?: boolean
+    decimal?: boolean
+    hyphen?: boolean
+    muted?: boolean
+    emphasis?: boolean
+    primary?: boolean
+    secondary?: boolean
+    bullet?: boolean
+    divider?: boolean
+    striped?: boolean
+    large?: boolean
     collapse?: boolean
 }
 
-export const defaultListCls = 'uk-list';
+export const defaultListCls = 'uk-list'
 
 export function listClassObject(props: ListClassType, listCls: string = defaultListCls) {
     return [
@@ -123,15 +123,15 @@ export function listClassObject(props: ListClassType, listCls: string = defaultL
  * Section Classes
  */
 export interface SectionClassType extends BackgroundTypes {
-    preserve?: boolean,
-    xsmall?: boolean,
-    small?: boolean,
-    large?: boolean,
-    xlarge?: boolean,
-    paddingRemove?: boolean,
+    preserve?: boolean
+    xsmall?: boolean
+    small?: boolean
+    large?: boolean
+    xlarge?: boolean
+    paddingRemove?: boolean
 }
 
-export const defaultSectionCls = 'uk-section';
+export const defaultSectionCls = 'uk-section'
 
 export function sectionClassObject(props: SectionClassType, sectionCls: string = defaultSectionCls, preserveCls: string = defaultPreserveCls, paddingCls: string = defaultPaddingCls) {
     return [
@@ -153,14 +153,14 @@ export function sectionClassObject(props: SectionClassType, sectionCls: string =
  * Tile Classes
  */
 export interface TileClassType extends BackgroundTypes {
-    xsmall?: boolean,
-    small?: boolean,
-    large?: boolean,
-    xlarge?: boolean,
+    xsmall?: boolean
+    small?: boolean
+    large?: boolean
+    xlarge?: boolean
     paddingRemove?: boolean
 }
 
-export const defaultTileCls = 'uk-tile';
+export const defaultTileCls = 'uk-tile'
 
 export function tileClassObject(props: TileClassType, tileCls: string = defaultTileCls, paddingCls: string = defaultPaddingCls) {
     return [
@@ -181,23 +181,23 @@ export function tileClassObject(props: TileClassType, tileCls: string = defaultT
  * Grid Classes
  */
 export interface GridClassType {
-    small?: boolean,
-    medium?: boolean,
-    large?: boolean,
-    collapse?: boolean,
-    columnSmall?: boolean,
-    columnMedium?: boolean,
-    columnLarge?: boolean,
-    columnCollapse?: boolean,
-    rowSmall?: boolean,
-    rowMedium?: boolean,
-    rowLarge?: boolean,
-    rowCollapse?: boolean,
-    divider?: boolean,
+    small?: boolean
+    medium?: boolean
+    large?: boolean
+    collapse?: boolean
+    columnSmall?: boolean
+    columnMedium?: boolean
+    columnLarge?: boolean
+    columnCollapse?: boolean
+    rowSmall?: boolean
+    rowMedium?: boolean
+    rowLarge?: boolean
+    rowCollapse?: boolean
+    divider?: boolean
     match?: boolean
 }
 
-export const defaultGridCls = 'uk-grid';
+export const defaultGridCls = 'uk-grid'
 
 export function gridClassObject(props: GridClassType, gridCls: string = defaultGridCls) {
     return [
@@ -236,8 +236,8 @@ export interface ButtonClassType extends BackgroundTypes {
     width?: string
 }
 
-export const defaultButtonCls = 'uk-button';
-export const defaultPrButtonCls = 'pr-button';
+export const defaultButtonCls = 'uk-button'
+export const defaultPrButtonCls = 'pr-button'
 
 export function buttonClassObject(props: ButtonClassType, hasDefaultSlot: boolean = true, buttonCls: string = defaultButtonCls, prButtonCls: string = defaultPrButtonCls) {
     return [
@@ -263,16 +263,16 @@ export function buttonClassObject(props: ButtonClassType, hasDefaultSlot: boolea
  * Link Classes
  */
 export interface LinkClassType {
-    muted?: boolean,
-    text?: boolean,
-    heading?: boolean,
-    reset?: boolean,
-    toggle?: boolean,
+    muted?: boolean
+    text?: boolean
+    heading?: boolean
+    reset?: boolean
+    toggle?: boolean
     icon?: string
 }
 
-export const defaultLinkCls = 'uk-link';
-export const defaultPrLinkCls = 'pr-link';
+export const defaultLinkCls = 'uk-link'
+export const defaultPrLinkCls = 'pr-link'
 
 export function linkClassObject(props: LinkClassType, hasDefaultSlot: boolean = true, linkCls: string = defaultLinkCls, prLinkCls: string = defaultPrLinkCls) {
     return [
@@ -292,29 +292,31 @@ export function linkClassObject(props: LinkClassType, hasDefaultSlot: boolean = 
 /**
  * Form Classes
  */
-export const defaultFormCls = 'uk-form';
+export const defaultFormCls = 'uk-form'
 
 
 /**
  * Input Classes
  */
 export interface InputClassType {
-    danger?: boolean,
-    success?: boolean,
-    warning?: boolean,
-    disabled?: boolean,
-    large?: boolean,
-    small?: boolean,
-    width?: string,
+    danger?: boolean
+    success?: boolean
+    warning?: boolean
+    disabled?: boolean
+    large?: boolean
+    small?: boolean
+    width?: string
     blank?: boolean
+    cls?: string
 }
 
 
-export const defaultInputCls = 'uk-input';
-export const defaultPrInputCls = 'pr-link';
+export const defaultInputCls = 'uk-input'
+export const defaultPrInputCls = 'pr-link'
 
 export function inputClassObject(props: InputClassType, inputCls: string = defaultInputCls, prInputCls: string = defaultPrInputCls, formCls: string = defaultFormCls) {
     return [
+        props.cls,
         inputCls,
         props.width ? `${formCls}-width-${props.width}` : '',
         {
@@ -324,8 +326,51 @@ export function inputClassObject(props: InputClassType, inputCls: string = defau
             [`${formCls}-disabled`]: props.disabled,
             [`${formCls}-large`]: props.large,
             [`${formCls}-small`]: props.small,
-            [`${formCls}-width`]: props.width,
             [`${formCls}-blank`]: props.blank
         }
+    ]
+}
+
+/**
+ * Form Icon Classes
+ */
+export const defaultFormIconCls = 'uk-form-icon'
+
+
+/**
+ * Input Classes
+ */
+export interface InputIconClassType {
+    iconClass?: string
+    iconFlip?: boolean
+}
+
+export function inputIconClassObject(props: InputIconClassType, formIconCls: string = defaultFormIconCls) {
+    return [
+        formIconCls,
+        props.iconClass,
+        {
+            [`${formIconCls}-flip`]: props.iconFlip,
+        }
+    ]
+}
+
+
+/**
+ * Label Classes
+ */
+export const defaultLabelCls = 'uk-form-label'
+
+
+/**
+ * Label Classes
+ */
+export interface LabelClassType {
+    //
+}
+
+export function labelClassObject(props: LabelClassType, labelCls: string = defaultLabelCls) {
+    return [
+        labelCls
     ]
 }

@@ -7,7 +7,7 @@
 import {
     GridClassType,
     ButtonClassType,
-    LinkClassType, ListClassType, ContainerClassType, SectionClassType, TileClassType, InputClassType
+    LinkClassType, ListClassType, ContainerClassType, SectionClassType, TileClassType, InputClassType, LabelClassType
 } from "./classes";
 
 
@@ -41,7 +41,7 @@ export interface TilePropsType extends TileClassType {
  * cause all list classes define as props
  */
 export interface ListPropsType extends ListClassType {
-    tag?: 'ul' | 'div' | string,
+    tag?: 'ul' | 'div' | string
 }
 
 
@@ -51,10 +51,10 @@ export interface ListPropsType extends ListClassType {
  * cause all grid classes define as props
  */
 export interface GridPropsType extends GridClassType {
-    margin?: string,
-    firstColumn?: string,
-    masonry?: boolean,
-    parallax?: number,
+    margin?: string
+    firstColumn?: string
+    masonry?: boolean
+    parallax?: number
 }
 
 
@@ -64,12 +64,12 @@ export interface GridPropsType extends GridClassType {
  * cause all button classes define as props
  */
 export interface ButtonPropsType extends ButtonClassType {
-    tag?: 'router-link' | 'a' | 'button',
-    to?: string,
-    href?: string,
-    slotClass?: string,
-    ripple?: boolean,
-    iconClass?: string,
+    tag?: 'router-link' | 'a' | 'button'
+    to?: string
+    href?: string
+    slotClass?: string
+    ripple?: boolean
+    iconClass?: string
     ratio?: number
 }
 
@@ -80,12 +80,12 @@ export interface ButtonPropsType extends ButtonClassType {
  * cause all link classes define as props
  */
 export interface LinkPropsType extends LinkClassType {
-    tag?: 'router-link' | 'a',
-    to?: string,
-    href?: string,
-    slotClass?: string,
-    iconClass?: string,
-    ratio?: number,
+    tag?: 'router-link' | 'a'
+    to?: string
+    href?: string
+    slotClass?: string
+    iconClass?: string
+    ratio?: number
 }
 
 
@@ -93,8 +93,8 @@ export interface LinkPropsType extends LinkClassType {
  * Icon Props Types
  */
 export interface IconPropsType {
-    tag?: 'span' | string,
-    icon: string,
+    tag?: 'span' | string
+    icon: string
     ratio?: number
 }
 
@@ -102,7 +102,7 @@ export interface IconPropsType {
  * Nav Props Types
  */
 export interface NavPropsType {
-    hasNavTag?: boolean,
+    hasNavTag?: boolean
 }
 
 
@@ -110,5 +110,26 @@ export interface NavPropsType {
  * Input Props Types
  */
 export interface InputPropsType extends InputClassType {
-    //
+    modelValue?: any
+    type?: 'text' | string
+    name: string
+    id?: string
+    label?: string
+    ariaLabel?: string
+    autofocus?: boolean
+    icon?: string
+    ratio?: number
+    iconClass?: string
+    iconFlip?: boolean
+}
+
+
+/**
+ * Label Props Types
+ */
+export interface LabelPropsType extends LabelClassType {
+    for: string
+    icon?: string
+    ratio?: number
+    iconClass?: string
 }

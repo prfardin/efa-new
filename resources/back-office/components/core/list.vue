@@ -1,25 +1,25 @@
 <script setup lang="ts">
 import {computed, onMounted, ref} from 'vue'
-import { listClassObject } from "@bs/scripts/util/classes";
-import {Element} from "../../src/scripts/util/util";
+import { listClassObject } from "@bs/scripts/util/classes"
+import {Element} from "../../src/scripts/util/util"
 
 // must remove with future release of vue and must use as
-// import { ListPropsType } from "@bs/scripts/util/props";
+// import { ListPropsType } from "@bs/scripts/util/props"
 export interface ListPropsType {
-    tag?: 'ul' | 'div' | string,
-    disc?: boolean,
-    circle?: boolean,
-    square?: boolean,
-    decimal?: boolean,
-    hyphen?: boolean,
-    muted?: boolean,
-    emphasis?: boolean,
-    primary?: boolean,
-    secondary?: boolean,
-    bullet?: boolean,
-    divider?: boolean,
-    striped?: boolean,
-    large?: boolean,
+    tag?: 'ul' | 'div' | string
+    disc?: boolean
+    circle?: boolean
+    square?: boolean
+    decimal?: boolean
+    hyphen?: boolean
+    muted?: boolean
+    emphasis?: boolean
+    primary?: boolean
+    secondary?: boolean
+    bullet?: boolean
+    divider?: boolean
+    striped?: boolean
+    large?: boolean
     collapse?: boolean
 }
 const props = withDefaults(defineProps<ListPropsType>(), {

@@ -1,20 +1,20 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { sectionClassObject } from "@bs/scripts/util/classes";
+import { sectionClassObject } from "@bs/scripts/util/classes"
 
 // must remove with future release of vue and must use as
-// import { SectionClassType } from "@bs/scripts/util/props";
+// import { SectionClassType } from "@bs/scripts/util/props"
 export interface SectionPropsType {
-    default?: boolean,
-    muted?: boolean,
-    primary?: boolean,
-    secondary?: boolean,
-    preserve?: boolean,
-    xsmall?: boolean,
-    small?: boolean,
-    large?: boolean,
-    xlarge?: boolean,
-    paddingRemove?: boolean,
+    default?: boolean
+    muted?: boolean
+    primary?: boolean
+    secondary?: boolean
+    preserve?: boolean
+    xsmall?: boolean
+    small?: boolean
+    large?: boolean
+    xlarge?: boolean
+    paddingRemove?: boolean
 }
 const props = defineProps<SectionPropsType>()
 

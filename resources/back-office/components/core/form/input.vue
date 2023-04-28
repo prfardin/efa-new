@@ -1,21 +1,31 @@
 <script setup lang="ts">
-import { Element } from "@bs/scripts/util/util";
-import { computed, ref } from 'vue'
-import { inputClassObject } from "@bs/scripts/util/classes";
+import { computed, ref, onMounted } from 'vue'
+import { inputClassObject, inputIconClassObject } from "@bs/scripts/util/classes"
+import PrIcon from "@bc/core/icon.vue"
 
 // must remove with future release of vue and must use as
-import { InputPropsType } from "@bs/scripts/util/props";
+import { InputPropsType } from "@bs/scripts/util/props"
 export interface InputPropsType {
-    type?: 'text' | string,
-    value?: any,
-    danger?: boolean,
-    success?: boolean,
-    warning?: boolean,
-    disabled?: boolean,
-    large?: boolean,
-    small?: boolean,
-    width?: string,
-    blank ?: boolean
+    modelValue?: any
+    type?: 'text' | string
+    name: string
+    id?: string
+    label?: string
+    ariaLabel?: string
+    autofocus?: boolean
+    danger?: boolean
+    success?: boolean
+    warning?: boolean
+    disabled?: boolean
+    large?: boolean
+    small?: boolean
+    width?: string
+    blank?: boolean
+    cls?: string
+    icon?: string
+    ratio?: number
+    iconClass?: string
+    iconFlip?: boolean
 }
 const props = withDefaults(defineProps<InputPropsType>(), {
     type: 'text'
@@ -23,12 +33,53 @@ const props = withDefaults(defineProps<InputPropsType>(), {
 
 // define input classes from defined props
 const inputClass = computed(() => inputClassObject(props))
+const iconClass = computed(() => inputIconClassObject(props))
 
-defineProps(['modelValue'])
-defineEmits(['update:modelValue'])
+// define template ref
+const input = ref<HTMLInputElement>(null)
+
+// input emits
+const emit = defineEmits(['update:modelValue'])
+
+// set input value and update on input change, set it to model
+const value = computed({
+    get() {
+        return props.modelValue
+    },
+    set(value) {
+        emit('update:modelValue', value)
+    }
+})
+
+/**
+ * we have different mod for input, so we need
+ * to bind props on an object and set all props to every input
+ * on every mod we define, we also want to prevent to define another component,
+ * so we use this way, may need change it in future because we believe there
+ * is better practice.
+ */
+const bindProps = {
+    ref: input,
+    id: props.label || props.id,
+    name: props.name,
+    type: props.type,
+    autofocus: props.autofocus,
+    class: inputClass.value,
+    ariaLabel: props.ariaLabel
+}
 
 </script>
 
 <template>
-    <input id="" name="" :type="type" :value="value" :class="inputClass" @input="$emit('update:modelValue', $event.target.value)" />
+    <div>
+        <div v-if="icon" class="uk-inline">
+            <label v-if="label" :for="label"></label>
+            <pr-icon :class="iconClass" :icon="icon" :ratio="ratio" />
+            <input v-model="value" v-bind="bindProps" />
+        </div>
+        <template v-else>
+            <label v-if="label" :for="label"></label>
+            <input v-model="value" v-bind="bindProps"/>
+        </template>
+    </div>
 </template>

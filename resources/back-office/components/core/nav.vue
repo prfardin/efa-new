@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { Element, nav } from "@bs/scripts/util/util";
+import { Element, nav } from "@bs/scripts/util/util"
 import { ref, onMounted } from 'vue'
 
 // must remove with future release of vue and must use as
-// import { NavPropsType } from "@bs/scripts/util/props";
+// import { NavPropsType } from "@bs/scripts/util/props"
 // must change
 export interface NavPropsType {
-    hasNavTag?: boolean,
+    hasNavTag?: boolean
 }
 const props = withDefaults(defineProps<NavPropsType>(), {
     hasNavTag: false

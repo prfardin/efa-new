@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { Element, icon } from "@bs/scripts/util/util";
+import { Element, icon } from "@bs/scripts/util/util"
 import { ref, onMounted, watchEffect } from 'vue'
 
 // must remove with future release of vue and must use as
-// import { IconPropsType } from "@bs/scripts/util/props";
+// import { IconPropsType } from "@bs/scripts/util/props"
 export interface IconPropsType {
-    tag?: 'span' | string,
-    icon: string,
+    tag?: 'span' | string
+    icon: string
     ratio?: number
 }
 const props = withDefaults(defineProps<IconPropsType>(), {

@@ -10,6 +10,9 @@ import {
 // define type for UIkit or HTML elements
 export type Element =  object | Ref | HTMLElement | string
 
+// define type for HTML input elements
+export type InputElement =  object | Ref | HTMLInputElement | string
+
 // set grid
 export function grid(el: Element, options?: UIkitGridOptions) {
     return UIkit.grid(el, options);

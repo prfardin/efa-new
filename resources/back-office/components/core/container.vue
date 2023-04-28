@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { containerClassObject } from "@bs/scripts/util/classes";
+import { containerClassObject } from "@bs/scripts/util/classes"
 
 // must remove with future release of vue and must use as
-// import { ContainerPropsType } from "@bs/scripts/util/props";
+// import { ContainerPropsType } from "@bs/scripts/util/props"
 export interface ContainerPropsType {
-    xsmall?: boolean,
-    small?: boolean,
-    large?: boolean,
-    xlarge?: boolean,
+    xsmall?: boolean
+    small?: boolean
+    large?: boolean
+    xlarge?: boolean
     expand?: boolean
 }
 const props = defineProps<ContainerPropsType>()
