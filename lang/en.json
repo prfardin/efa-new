@@ -1,0 +1,50 @@
+{
+    "company": {
+        "name": "EFA"
+    },
+    "sidebar": {
+        "search": "Search ...",
+        "dashboard": "Dashboard",
+        "market": "Market",
+        "manage_products": "Manage Products",
+        "orders": "Orders",
+        "notifications": "Notifications",
+        "reports": "Reports",
+        "manage_finance": "Manage Finance",
+        "in_progress": "In Progress",
+        "new_capability": "Add New Capability",
+        "see_in": "See in",
+        "learning_school": "learning school",
+        "last": "last"
+    },
+    "auth": {
+        "logo_text": " SERVICE",
+        "helper_text": "Having Troubles?",
+        "get_help": "Get Help",
+        "terms_and_privacy": "By signing up, I agree to EFA's",
+        "terms": "Terms of Use",
+        "privacy": "Privacy Policy",
+        "register": {
+            "header": "Start Your Business now",
+            "comment_1": "Creating your company in IRAN in just a few steps away,",
+            "comment_2": "Enter your phone number to continue.",
+            "mobile": "Phone Number",
+            "submit": "Send Code"
+        },
+        "side": {
+            "header_1": "A few clicks away ",
+            "header_2": "from creating your ",
+            "header_3": "company.",
+            "comment_1": "Start your company in minutes.",
+            "comment_2": "Save time and money."
+        },
+        "step": {
+            "one": "REGISTER",
+            "two": "BUSINESS TYPE",
+            "three": "DETAILS",
+            "four": "ORGANIZATION",
+            "five": "PERSONAL DETAILS"
+        },
+        "last": "last"
+    }
+}

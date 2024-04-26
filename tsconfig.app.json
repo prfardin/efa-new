@@ -1,0 +1,32 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "src/.temp/**/*"],
+  "exclude": ["src/**/__tests__/*"],
+  "compilerOptions": {
+    "verbatimModuleSyntax": false,
+    "module": "ESNext",
+    "target": "ESNext",
+    "strict": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "composite": true,
+    "noEmit": true,
+    "lib": ["ESNext", "DOM"],
+    "types": ["node", "jsdom", "vite/client", "@intlify/unplugin-vue-i18n/messages"],
+    "tsBuildInfoFile": "src/.temp/tsconfig.app.tsbuildinfo",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@t/*": ["./src/.temp/*"],
+      "@c/*": ["./src/components/*"],
+      "@v/*": ["./src/views/*"],
+      "@f/*": ["./src/fonts/*"],
+      "@i/*": ["./src/images/*"],
+      "@s/*": ["./src/stores/*"],
+      "@sc/*": ["./src/scripts/*"],
+      "@u/*": ["./src/scripts/util/*"],
+      "@l/*": ["./lang/*"],
+    }
+  }
+}
