@@ -20,14 +20,14 @@ const loader = ref(false)
 <template>
     <form class="uk-form-stacked pr-auth-width-large">
         <pr-grid small class="uk-flex-bottom">
-            <div class="uk-width-expand">
+            <div class="uk-width-large@s uk-width-expand@m">
                 <pr-label for="mobile" class="pr-auth-form-label" icon="question" :ratio="0.5" icon-class="pr-auth-form-helper">{{ t('auth.register.mobile') }}</pr-label>
                 <div class="pr-auth-form-group pr-auth-form-group-small uk-text-left">
                     <pr-input v-model="code" name="code" small cls="pr-auth-input pr-auth-input-phone-code pr-direction-ltr uk-text-center" />
                     <pr-input v-model="mobile" id="mobile" name="mobile" small cls="pr-auth-input pr-direction-ltr uk-input uk-form-small" class="uk-width-1-1" />
                 </div>
             </div>
-            <div class="uk-width-auto">
+            <div class="uk-width-auto@s">
                 <pr-button
                     class="pr-auth-button-primary"
                     to="/register/verify"

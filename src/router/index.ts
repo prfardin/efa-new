@@ -28,7 +28,17 @@ const routes: RouteRecordRaw[] = [
       }
     ]
   },
-  { path: '/services', component: () => import('@v/services/Services.vue') },
+  {
+    path: '/services',
+    component: () => import('@v/services/Services.vue'),
+    children: [
+      {
+        path: 'type',
+        name: 'type',
+        component: () => import('@v/services/Type.vue')
+      }
+    ]
+  },
 ]
 
 const router: Router = createRouter({
