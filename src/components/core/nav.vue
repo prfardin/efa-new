@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import { Element, nav } from "@u/util"
+import { Element, nav } from '@u/util'
 import { ref, onMounted } from 'vue'
 
 // must remove with future release of vue and must use as
 // import { NavPropsType } from "@bs/scripts/util/props"
 // must change
 export interface NavPropsType {
-    hasNavTag?: boolean
+  hasNavTag?: boolean
 }
 const props = withDefaults(defineProps<NavPropsType>(), {
-    hasNavTag: false
+  hasNavTag: false
 })
 
 // define template ref
@@ -21,15 +21,15 @@ const el = ref<Element>(null)
  * when defining component
  */
 function setNav() {
-    return nav(el.value)
+  return nav(el.value)
 }
 onMounted(() => {
-    setNav()
+  setNav()
 })
 </script>
 
 <template>
-    <ul class="uk-nav-default" ref="el">
-        <slot />
-    </ul>
+  <ul class="uk-nav-default" ref="el">
+    <slot />
+  </ul>
 </template>

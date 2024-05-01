@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { computed, ref, onMounted } from 'vue'
-import { inputClassObject, inputIconClassObject } from "@u/classes"
-import PrIcon from "@c/core/icon.vue"
+import { inputClassObject, inputIconClassObject } from '@u/classes'
+import PrIcon from '@c/core/icon.vue'
 
 // must remove with future release of vue and must use as
-import { InputPropsType } from "@u/props"
+import { InputPropsType } from '@u/props'
 
 const props = withDefaults(defineProps<InputPropsType>(), {
-    type: 'text'
+  type: 'text'
 })
 
 // define input classes from defined props
@@ -17,18 +17,8 @@ const iconClass = computed(() => inputIconClassObject(props))
 // define template ref
 const input = ref<HTMLInputElement>(null)
 
-// input emits
-const emit = defineEmits(['update:modelValue'])
-
 // set input value and update on input change, set it to model
-const value = computed({
-    get() {
-        return props.modelValue
-    },
-    set(value) {
-        emit('update:modelValue', value)
-    }
-})
+const model = defineModel()
 
 /**
  * we have different mod for input, so we need
@@ -38,27 +28,35 @@ const value = computed({
  * is better practice.
  */
 const bindProps = {
-    ref: input,
-    id: props.label || props.id,
-    name: props.name,
-    type: props.type,
-    autofocus: props.autofocus,
-    class: inputClass.value,
-    ariaLabel: props.ariaLabel
+  ref: input,
+  id: props.label || props.id,
+  name: props.name,
+  type: props.type,
+  autofocus: props.autofocus,
+  class: inputClass.value,
+  ariaLabel: props.ariaLabel,
+  disabled: props.disabled
 }
+
+// for autofocus
+onMounted(() => {
+  if (props.autofocus) {
+    input.value?.focus()
+  }
+})
 
 </script>
 
 <template>
-    <div>
-        <div v-if="icon" class="uk-inline">
-            <label v-if="label" :for="label"></label>
-            <pr-icon :class="iconClass" :icon="icon" :ratio="ratio" />
-            <input v-model="value" v-bind="bindProps" />
-        </div>
-        <template v-else>
-            <label v-if="label" :for="label"></label>
-            <input v-model="value" v-bind="bindProps"/>
-        </template>
+  <div>
+    <div v-if="icon" class="uk-inline">
+      <label v-if="label" :for="label"></label>
+      <pr-icon :class="iconClass" :icon="icon" :ratio="ratio" />
+      <input v-model="model" v-bind="bindProps" :disabled="disabled" />
     </div>
+    <template v-else>
+      <label v-if="label" :for="label"></label>
+      <input v-model="model" v-bind="bindProps" :disabled="disabled" />
+    </template>
+  </div>
 </template>

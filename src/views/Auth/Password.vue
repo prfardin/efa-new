@@ -1,63 +1,103 @@
 <script setup lang="ts">
+import { ref } from 'vue'
+import { useRouter } from 'vue-router'
+import { formData } from '@sc/fetch'
+import { useI18n } from 'vue-i18n'
+import PrGrid from '@c/core/grid.vue'
+import PrInput from '@c/core/form/input.vue'
+import PrLabel from '@c/core/form/label.vue'
 import PrButton from '@c/core/button.vue'
-import PrIcon from '@c/core/icon.vue'
-import {computed, onMounted, ref, watch} from "vue";
-import {useRouter} from "vue-router";
 
-const password = ref('')
-const repeatPassword = ref('')
-const repeatPasswordRef = ref('')
-const passwordRef = ref<HTMLElement>(null)
+
 const loader = ref(false)
 const router = useRouter()
-
-onMounted(() => {
-    passwordRef.value.focus()
-})
+const { t } = useI18n()
 
 // a computed ref
 function publishedPasswordMessage() {
-    return password.value ? 'ذخیره رمز عبور' : 'نیاز به رمز عبور ندارم'
+  return form.data.password ? 'ذخیره رمز عبور' : 'نیاز به رمز عبور ندارم'
 }
+
+
+interface Form {
+  data: {
+    password: string
+    repeat_password: string
+  }
+  busy: boolean
+}
+
+// data
+const form = formData({}) as unknown as Form
+
 
 </script>
 
 <template>
-    <div class="uk-height-1-1 uk-tile uk-tile-default uk-flex uk-flex-left uk-flex-top" style="background-color: #f5f6f9; padding-bottom: 10px">
-        <div class="anim-out">
-            <div>
-                <h3 class="uk-h5" style="font-weight: 700; color: #464964; font-size: 26px; margin-bottom: 0">همین حالا شروع کن.</h3>
-                <p style="font-size: 13px; color: #909096; margin-top: 10px">ثبت نام و شروع فعالیت در ایفا فقط در چند مرحله ساده,<br />برای شروع شماره تماس رو وارد کن.</p>
-            </div>
-            <div style="margin-top: 44px">
-                <label style="color: #6e6f75; font-size: 12px">
-                    <span>رمز عبور</span>
-                </label>
-                <div class="uk-flex-middle uk-grid-collapse" uk-grid>
-                    <div class="uk-width-expand">
-                        <div uk-grid class="uk-grid-small uk-flex-bottom" style="margin-top: 4px; margin-bottom: 6px">
-                            <div class="uk-width-expand">
-                                <div style="position: relative">
-                                    <input v-model="password" ref="passwordRef" name="password" autofocus class="uk-input input uk-form-small verify" type="password" style="height: 36px; width: 250px;">
-                                </div>
-                                <label style="color: #6e6f75; font-size: 12px">
-                                    <span>تکرار رمز عبور</span>
-                                </label>
-                                <div style="position: relative;">
-                                    <input ref="repeatPasswordRef" @keyup.enter="router.push({query: { step: 'Type'}})" v-model="repeatPassword" name="repeat_password" class="uk-input input uk-form-small verify" type="password" style="height: 36px; width: 250px; margin-top: 4px">
-                                </div>
-                            </div>
-                            <div class="uk-width-auto">
-                                <pr-button :class="{'pr-disabled' : password !== repeatPassword}" to="?step=Type" primary small square style="line-height: 34px; color: #fefefe;background-color: #0260ff; display: flex; align-items: center;justify-content: center; min-width: 128px">
-                                    <div v-if="loader" style="line-height: 34px" uk-spinner="ratio: 0.8"></div>
-                                    <span v-if="!loader" style="margin-left: 4px">{{ publishedPasswordMessage() }}</span>
-                                    <pr-icon v-if="!loader" icon="arrow-right" :ratio="0.8" />
-                                </pr-button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <form class="uk-form-stacked pr-auth-width-large">
+    <pr-grid medium>
+      <div class="uk-width-large@s uk-width-expand@m">
+        <pr-grid small class="uk-child-width-1-1">
+          <div>
+            <pr-label
+              for="password"
+              class="pr-auth-form-label"
+              icon="question"
+              :ratio="0.5"
+              icon-class="pr-auth-form-helper"
+            >{{ t('auth.password.password') }}</pr-label
+            >
+            <pr-input
+              id="password"
+              name="password"
+              small
+              type="password"
+              autofocus
+              cls="pr-auth-input pr-direction-ltr uk-input uk-form-small"
+              class="uk-width-1-1 verify"
+              v-model="form.data.password"
+            />
+          </div>
+          <div>
+            <pr-label
+              for="repeat_password"
+              class="pr-auth-form-label"
+              icon="question"
+              :ratio="0.5"
+              icon-class="pr-auth-form-helper"
+            >{{ t('auth.password.repeatPassword') }}</pr-label
+            >
+            <pr-input
+              id="repeat_password"
+              name="repeat_password"
+              small
+              cls="pr-auth-input pr-direction-ltr uk-input uk-form-small"
+              class="uk-width-1-1 verify"
+              v-model="form.data.repeat_password"
+              type="password"
+              @keyup.enter="router.push({query: { step: 'Type'}})"
+            />
+          </div>
+        </pr-grid>
+      </div>
+      <div class="uk-width-1-1">
+        <div class="uk-width-small@s">
+          <pr-button
+            class="pr-auth-button-primary"
+            to="/register/verify"
+            primary
+            small
+            square
+            icon="arrow-right"
+            :ratio="0.8"
+            icon-flip
+            :spinner="loader"
+            @click="loader = true"
+            spinner-mod="circle"
+          >{{ t('auth.password.signUp') }}</pr-button
+          >
         </div>
-    </div>
+      </div>
+    </pr-grid>
+  </form>
 </template>

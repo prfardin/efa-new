@@ -1,5 +1,5 @@
 export default function () {
-    const ICONS = { '': '' }
+  const ICONS = { '': '' }
 
-    return ICONS;
+  return ICONS
 }

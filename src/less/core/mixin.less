@@ -8,54 +8,44 @@
 // ========================================================================
 
 .font-define(@font-family, @filepath) {
-    font-family: @font-family;
-    src: url('@{filepath}.ttf')  format('truetype');
+  font-family: @font-family;
+  src: url('@{filepath}.ttf') format('truetype');
 }
 
 .font-face(@font-family, @filepath) {
-
-    @font-face {
-        .font-define(@font-family, @filepath)
-    }
-
+  @font-face {
+    .font-define(@font-family, @filepath);
+  }
 }
 
 .font-face(@font-family, @filepath, @font-weight) {
-
-    @font-face {
-        .font-define(@font-family, @filepath);
-        font-weight: @font-weight
-    }
-
+  @font-face {
+    .font-define(@font-family, @filepath);
+    font-weight: @font-weight;
+  }
 }
 
 .font-face(@font-family, @filepath, @font-weight, @unicode-range) {
-
-    @font-face {
-        .font-define(@font-family, @filepath);
-        font-weight: @font-weight;
-        unicode-range: @unicode-range
-    }
-
+  @font-face {
+    .font-define(@font-family, @filepath);
+    font-weight: @font-weight;
+    unicode-range: @unicode-range;
+  }
 }
 
 .font-face(@font-family, @filepath, @font-weight, @unicode-range) {
-
-    @font-face {
-        .font-define(@font-family, @filepath);
-        font-weight: @font-weight;
-        unicode-range: @unicode-range
-    }
-
+  @font-face {
+    .font-define(@font-family, @filepath);
+    font-weight: @font-weight;
+    unicode-range: @unicode-range;
+  }
 }
 
 .font-face(@font-family, @filepath, @font-weight, @unicode-range, @font-style) {
-
-    @font-face {
-        .font-define(@font-family, @filepath);
-        font-weight: @font-weight;
-        unicode-range: @unicode-range;
-        font-style: escape(@font-style)
-    }
-
+  @font-face {
+    .font-define(@font-family, @filepath);
+    font-weight: @font-weight;
+    unicode-range: @unicode-range;
+    font-style: escape(@font-style);
+  }
 }

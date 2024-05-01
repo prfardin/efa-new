@@ -3,125 +3,123 @@
 //
 // ========================================================================
 
-
 // Variables
 // ========================================================================
 
-@icon-image-size:                               20px;
+@icon-image-size: 20px;
 
-@icon-link-color:                               @global-muted-color;
-@icon-link-hover-color:                         @global-color;
-@icon-link-active-color:                        darken(@global-color, 5%);
+@icon-link-color: @global-muted-color;
+@icon-link-hover-color: @global-color;
+@icon-link-active-color: darken(@global-color, 5%);
 
-@icon-button-size:                              36px;
-@icon-button-border-radius:                     @global-border-radius;
-@icon-button-background:                        transparent;
-@icon-button-color:                             @global-muted-color;
+@icon-button-size: 36px;
+@icon-button-border-radius: @global-border-radius;
+@icon-button-background: transparent;
+@icon-button-color: @global-muted-color;
 
-@icon-button-hover-background:                  darken(@icon-button-background, 5%);
-@icon-button-hover-color:                       @global-color;
+@icon-button-hover-background: darken(@icon-button-background, 5%);
+@icon-button-hover-color: @global-color;
 
-@icon-button-active-background:                 darken(@icon-button-background, 10%);
-@icon-button-active-color:                      @global-color;
+@icon-button-active-background: darken(@icon-button-background, 10%);
+@icon-button-active-color: @global-color;
 
 //
 // New
 //
 
-@icon-primary-color:                            @global-icon-primary-color;
-@icon-secondary-color:                          @global-icon-secondary-color;
-@icon-tertiary-color:                           @global-icon-tertiary-color;
-@icon-quaternary-color:                         @global-icon-quaternary-color;
-@icon-favourite-color:                          @global-icon-favourite-color;
-@icon-favourite-color-tertiary:                 darken(@global-icon-favourite-color, 40%);
-
-
+@icon-primary-color: @global-icon-primary-color;
+@icon-secondary-color: @global-icon-secondary-color;
+@icon-tertiary-color: @global-icon-tertiary-color;
+@icon-quaternary-color: @global-icon-quaternary-color;
+@icon-favourite-color: @global-icon-favourite-color;
+@icon-favourite-color-tertiary: darken(@global-icon-favourite-color, 40%);
 
 // Style modifiers
 // ========================================================================
 
 .pr-icon-primary {
-    color: @icon-primary-color;
+  color: @icon-primary-color;
 }
 
 .pr-icon-secondary {
-    color: @icon-secondary-color;
+  color: @icon-secondary-color;
 }
 
 .pr-icon-tertiary {
-    color: @icon-tertiary-color;
+  color: @icon-tertiary-color;
 }
 
 .pr-icon-quaternary {
-    color: @icon-quaternary-color;
+  color: @icon-quaternary-color;
 }
 
 // may change
-.pr-icon-favourite [class*=pr-icon-] {
-    color: @icon-favourite-color;
+.pr-icon-favourite [class*='pr-icon-'] {
+  color: @icon-favourite-color;
 }
 
 .pr-icon-favourite .pr-icon-tertiary {
-    color: @icon-favourite-color-tertiary;
+  color: @icon-favourite-color-tertiary;
 }
 
 //
 // Link
 //
 
-.hook-icon-link() {}
+.hook-icon-link() {
+}
 
-.hook-icon-link-hover() {}
+.hook-icon-link-hover() {
+}
 
-.hook-icon-link-active() {}
+.hook-icon-link-active() {
+}
 
 //
 // Button
 //
 
 .hook-icon-button() {
-    transition: 0.1s ease-in-out;
-    transition-property: color, background-color;
+  transition: 0.1s ease-in-out;
+  transition-property: color, background-color;
 }
 
-.hook-icon-button-hover() {}
+.hook-icon-button-hover() {
+}
 
-.hook-icon-button-active() {}
-
+.hook-icon-button-active() {
+}
 
 // Miscellaneous
 // ========================================================================
 
 .hook-icon-misc() {
+  // Fill Icon Instead Button
+  // ========================================================================
 
-    // Fill Icon Instead Button
-    // ========================================================================
+  [class*='pr-fill-instead'] {
+    background-color: transparent;
+  }
 
-    [class*=pr-fill-instead] {
-        background-color: transparent;
-    }
+  //
+  // Styles
+  //
 
-    //
-    // Styles
-    //
+  .pr-fill-instead-primary > * {
+    background-color: @button-primary-background;
+    color: @button-primary-color;
+  }
 
-    .pr-fill-instead-primary > * {
-        background-color: @button-primary-background;
-        color: @button-primary-color;
-    }
+  .pr-fill-instead-primary:hover > * {
+    background-color: @button-primary-hover-background;
+    color: @button-primary-hover-color;
+  }
 
-    .pr-fill-instead-primary:hover > * {
-        background-color: @button-primary-hover-background;
-        color: @button-primary-hover-color;
-    }
-
-    .pr-fill-instead-primary:active > * {
-        background-color: @button-primary-active-background;
-        color: @button-primary-active-color;
-    }
-
+  .pr-fill-instead-primary:active > * {
+    background-color: @button-primary-active-background;
+    color: @button-primary-active-color;
+  }
 }
-
 
 // Inverse
 // ========================================================================
@@ -131,28 +129,33 @@
 //
 
 .hook-inverse() {
-    .pr-icon-primary {
-        color: @global-icon-primary-color-light;
-    }
+  .pr-icon-primary {
+    color: @global-icon-primary-color-light;
+  }
 
-    .pr-icon-secondary {
-        color: @global-icon-secondary-color-light;
-    }
+  .pr-icon-secondary {
+    color: @global-icon-secondary-color-light;
+  }
 
-    .pr-icon-tertiary {
-        color: @global-icon-tertiary-color-light;
-    }
+  .pr-icon-tertiary {
+    color: @global-icon-tertiary-color-light;
+  }
 
-    .pr-icon-quaternary {
-        color: @global-icon-quaternary-color-light;
-    }
+  .pr-icon-quaternary {
+    color: @global-icon-quaternary-color-light;
+  }
 }
 
+.hook-inverse-icon-link() {
+}
+.hook-inverse-icon-link-hover() {
+}
+.hook-inverse-icon-link-active() {
+}
 
-.hook-inverse-icon-link() {}
-.hook-inverse-icon-link-hover() {}
-.hook-inverse-icon-link-active() {}
-
-.hook-inverse-icon-button() {}
-.hook-inverse-icon-button-hover() {}
-.hook-inverse-icon-button-active() {}
+.hook-inverse-icon-button() {
+}
+.hook-inverse-icon-button-hover() {
+}
+.hook-inverse-icon-button-active() {
+}

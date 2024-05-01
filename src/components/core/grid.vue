@@ -1,29 +1,29 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
-import { Element, grid } from "@u/util"
-import { gridClassObject } from "@u/classes"
+import { Element, grid } from '@u/util'
+import { gridClassObject } from '@u/classes'
 
 // must remove with future release of vue and must use as
 // import { GridPropsType } from "@bs/scripts/util/props"
 export interface GridPropsType {
-    small?: boolean
-    medium?: boolean
-    large?: boolean
-    collapse?: boolean
-    columnSmall?: boolean
-    columnMedium?: boolean
-    columnLarge?: boolean
-    columnCollapse?: boolean
-    rowSmall?: boolean
-    rowMedium?: boolean
-    rowLarge?: boolean
-    rowCollapse?: boolean
-    divider?: boolean
-    match?: boolean
-    margin?: string
-    firstColumn?: string
-    masonry?: boolean
-    parallax?: number
+  small?: boolean
+  medium?: boolean
+  large?: boolean
+  collapse?: boolean
+  columnSmall?: boolean
+  columnMedium?: boolean
+  columnLarge?: boolean
+  columnCollapse?: boolean
+  rowSmall?: boolean
+  rowMedium?: boolean
+  rowLarge?: boolean
+  rowCollapse?: boolean
+  divider?: boolean
+  match?: boolean
+  margin?: string
+  firstColumn?: string
+  masonry?: boolean
+  parallax?: number
 }
 const props = defineProps<GridPropsType>()
 
@@ -41,17 +41,17 @@ const gridClass = computed(() => gridClassObject(props))
  * it must be prevented and reworked
  */
 onMounted(() => {
-    grid(el.value, {
-        margin: props.margin,
-        'first-column': props.firstColumn,
-        masonry: props.masonry,
-        parallax: props.parallax
-    });
+  grid(el.value, {
+    margin: props.margin,
+    'first-column': props.firstColumn,
+    masonry: props.masonry,
+    parallax: props.parallax
+  })
 })
 </script>
 
 <template>
-    <div :class="gridClass" ref="el">
-        <slot />
-    </div>
+  <div :class="gridClass" ref="el">
+    <slot />
+  </div>
 </template>

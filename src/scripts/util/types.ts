@@ -4,16 +4,16 @@
  * may in the future we update UIkit typescript library
  * and make types exportable, and prevent from doing this
  */
-import UIkit from "uikit"
+import UIkit from 'uikit'
 
 import UIkitGridOptions = UIkit.UIkitGridOptions
 import UIkitIconOptions = UIkit.UIkitIconOptions
 import UIkitHeightViewportOptions = UIkit.UIkitHeightViewportOptions
 import UIkitNavOptions = UIkit.UIkitNavOptions
 
-export {
-    UIkitGridOptions,
-    UIkitIconOptions,
-    UIkitHeightViewportOptions,
-    UIkitNavOptions
+interface FormData {
+  busy: boolean
+  data: any
 }
+
+export { UIkitGridOptions, UIkitIconOptions, UIkitHeightViewportOptions, UIkitNavOptions, FormData }

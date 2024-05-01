@@ -31,6 +31,11 @@
             "mobile": "شماه تماس",
             "submit": "ارسال کد"
         },
+        "password": {
+            "password": "رمز عبور",
+            "repeatPassword": "تکرار رمز عبور",
+            "signUp": "ثبت نام"
+        },
         "side": {
             "header_1": "کسب و کارت رو با",
             "header_2": "ایفا تو چند مرحله ساده",

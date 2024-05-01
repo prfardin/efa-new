@@ -38,13 +38,13 @@ const routes: RouteRecordRaw[] = [
         component: () => import('@v/services/Type.vue')
       }
     ]
-  },
+  }
 ]
 
 const router: Router = createRouter({
   history: createWebHistory(),
-  linkActiveClass: "uk-active",
-  linkExactActiveClass: "uk-active",
+  linkActiveClass: 'uk-active',
+  linkExactActiveClass: 'uk-active',
   routes
 })
 

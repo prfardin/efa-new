@@ -31,6 +31,11 @@
             "mobile": "Phone Number",
             "submit": "Send Code"
         },
+        "password": {
+            "password": "password",
+            "repeatPassword": "repeat password",
+            "signUp": "sign up"
+        },
         "side": {
             "header_1": "A few clicks away ",
             "header_2": "from creating your ",

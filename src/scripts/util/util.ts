@@ -1,10 +1,10 @@
-import UIkit from "uikit";
-import { Ref } from "vue";
+import UIkit from 'uikit'
+import { Ref } from 'vue'
 import {
-    UIkitGridOptions,
-    UIkitIconOptions,
-    UIkitHeightViewportOptions,
-    UIkitNavOptions
+  UIkitGridOptions,
+  UIkitIconOptions,
+  UIkitHeightViewportOptions,
+  UIkitNavOptions
 } from './types'
 
 // define type for UIkit or HTML elements
@@ -17,20 +17,20 @@ export type InputElement = object | Ref | HTMLInputElement | string
 
 // set grid
 export function grid(el: Element, options?: UIkitGridOptions) {
-    return UIkit.grid(el, options);
+  return UIkit.grid(el, options)
 }
 
 // set icon
 export function icon(el: Element, options?: UIkitIconOptions) {
-    return UIkit.icon(el, options);
+  return UIkit.icon(el, options)
 }
 
 // set height viewport
 export function heightViewport(el: Element, options?: UIkitHeightViewportOptions) {
-    return UIkit.heightViewport(el, options);
+  return UIkit.heightViewport(el, options)
 }
 
 // set nav
 export function nav(el: Element, options?: UIkitNavOptions) {
-    return UIkit.nav(el, options);
+  return UIkit.nav(el, options)
 }

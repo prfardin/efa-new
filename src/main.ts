@@ -24,6 +24,6 @@ const app = createApp(App)
 // uses: vue-router & vue-i18n
 app.use(createPinia())
 app.use(router)
-app.use(i18n);
+app.use(i18n)
 
 app.mount('#app')
