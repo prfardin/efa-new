@@ -33,9 +33,24 @@ const routes: RouteRecordRaw[] = [
     component: () => import('@v/services/Services.vue'),
     children: [
       {
-        path: 'type',
-        name: 'type',
-        component: () => import('@v/services/Type.vue')
+        path: 'business-type',
+        name: 'businessType',
+        component: () => import('@v/services/BusinessType.vue')
+      },
+      {
+        path: 'business-details',
+        name: 'businessDetails',
+        component: () => import('@v/services/BusinessDetails.vue')
+      },
+      {
+        path: 'business-organization',
+        name: 'businessOrganization',
+        component: () => import('@v/services/BusinessOrganization.vue')
+      },
+      {
+        path: 'personal-details',
+        name: 'personalDetails',
+        component: () => import('@v/services/PersonalDetails.vue')
       }
     ]
   }

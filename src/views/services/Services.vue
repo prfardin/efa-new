@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import { ref, onMounted } from 'vue'
-import { Element, heightViewport } from '@u/util'
+import { useRoute } from 'vue-router'
+import { heightViewport, RefElement } from '@u/util'
+
 
 // components
 import PrButton from '@c/core/button.vue'
@@ -19,11 +21,28 @@ import Map from '@i/auth/map.svg'
 // i18n
 const { t } = useI18n()
 
-const el = ref<Element>(null)
+const el = ref<RefElement>(null)
 
 onMounted(() => {
-  heightViewport(el.value.$el, { 'offset-top': true })
+  heightViewport(el.value.$el, { 'offsetTop': true })
 })
+
+interface Routers {
+  link: string
+  title: string
+  cls?: string
+}
+
+const route = useRoute()
+
+const routers = ref<Routers[]>([
+  { link: "", title: "auth.step.one", cls: "pr-complete" },
+  { link: "businessType", title: "auth.step.two" },
+  { link: "businessDetails", title: "auth.step.three" },
+  { link: "businessOrganization", title: "auth.step.four" },
+  { link: "personalDetails", title: "auth.step.five" },
+])
+
 </script>
 
 <template>
@@ -41,35 +60,12 @@ onMounted(() => {
               class="pr-auth-tile pr-auth-tile-default pr-auth-background-default uk-flex uk-flex-top pr-auth-tile-has-list"
             >
               <pr-list class="pr-auth-list uk-width-1-1 uk-margin-remove">
-                <li class="pr-complete">
-                  <pr-link to="#">
-                    <pr-icon icon="line-check" :ratio="0.75"></pr-icon>
-                    <span>{{ t('auth.step.one') }}</span>
-                  </pr-link>
-                </li>
-                <li class="uk-active">
-                  <pr-link to="#">
-                    <span>2</span>
-                    <span>{{ t('auth.step.two') }}</span>
-                    <pr-icon icon="line-arrow-right"></pr-icon>
-                  </pr-link>
-                </li>
-                <li>
-                  <pr-link to="#">
-                    <span>3</span>
-                    <span>{{ t('auth.step.three') }}</span>
-                  </pr-link>
-                </li>
-                <li>
-                  <pr-link to="#">
-                    <span>4</span>
-                    <span>{{ t('auth.step.four') }}</span>
-                  </pr-link>
-                </li>
-                <li>
-                  <pr-link to="#">
-                    <span>5</span>
-                    <span>{{ t('auth.step.five') }}</span>
+                <li v-for="(item, index) in routers" :key="index" :class="item.cls">
+                  <pr-link :to="{ name: item.link }">
+                    <pr-icon v-if="item.cls" icon="line-check" ratio="0.75"></pr-icon>
+                    <pr-icon v-else-if="item.link === route.name" icon="line-arrow-right"></pr-icon>
+                    <span v-else>{{ index + 1 }}</span>
+                    <span>{{ t(item.title) }}</span>
                   </pr-link>
                 </li>
               </pr-list>
