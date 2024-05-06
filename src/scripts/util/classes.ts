@@ -356,6 +356,46 @@ export function inputClassObject(
 }
 
 /**
+ * Input Classes
+ */
+export interface TextareaClassType {
+  danger?: boolean
+  success?: boolean
+  warning?: boolean
+  disabled?: boolean
+  large?: boolean
+  small?: boolean
+  width?: string
+  blank?: boolean
+  cls?: string
+}
+
+export const defaultTextareaCls = 'uk-textarea'
+export const defaultPrTextareaCls = 'pr-link'
+
+export function textareaClassObject(
+  props: TextareaClassType,
+  textareaCls: string = defaultTextareaCls,
+  prTextareaCls: string = defaultPrTextareaCls,
+  formCls: string = defaultFormCls
+) {
+  return [
+    props.cls,
+    textareaCls,
+    {
+      [`${formCls}-danger`]: props.danger,
+      [`${formCls}-success`]: props.success,
+      [`${formCls}-warning`]: props.warning,
+      [`${formCls}-disabled`]: props.disabled,
+      [`${formCls}-large`]: props.large,
+      [`${formCls}-small`]: props.small,
+      [`${formCls}-blank`]: props.blank,
+      [`${formCls}-width-${props.width}`]: props.width
+    }
+  ]
+}
+
+/**
  * Form Icon Classes
  */
 export const defaultFormIconCls = 'uk-form-icon'

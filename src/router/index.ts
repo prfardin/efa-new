@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory, Router, RouteRecordRaw } from 'vue-router'
 import Dashboard from '@v/Dashboard.vue'
+import { title } from 'process'
 
 // we use dynamic import
 // which lazy-loaded when the route is visited.
@@ -35,22 +36,42 @@ const routes: RouteRecordRaw[] = [
       {
         path: 'business-type',
         name: 'businessType',
-        component: () => import('@v/services/BusinessType.vue')
+        component: () => import('@v/services/BusinessType.vue'),
+        meta: {
+          header: "auth.step.two.description.header",
+          comment_1: "auth.step.two.description.comment_1",
+          comment_2: "auth.step.two.description.comment_2",
+        }
       },
       {
         path: 'business-details',
         name: 'businessDetails',
-        component: () => import('@v/services/BusinessDetails.vue')
+        component: () => import('@v/services/BusinessDetails.vue'),
+        meta: {
+          header: "auth.step.three.description.header",
+          comment_1: "auth.step.three.description.comment_1",
+          comment_2: "auth.step.three.description.comment_2",
+        }
       },
       {
         path: 'business-organization',
         name: 'businessOrganization',
-        component: () => import('@v/services/BusinessOrganization.vue')
+        component: () => import('@v/services/BusinessOrganization.vue'),
+        meta: {
+          header: "auth.step.four.description.header",
+          comment_1: "auth.step.four.description.comment_1",
+          comment_2: "auth.step.four.description.comment_2",
+        }
       },
       {
         path: 'personal-details',
         name: 'personalDetails',
-        component: () => import('@v/services/PersonalDetails.vue')
+        component: () => import('@v/services/PersonalDetails.vue'),
+        meta: {
+          header: "auth.step.five.description.header",
+          comment_1: "auth.step.five.description.comment_1",
+          comment_2: "auth.step.five.description.comment_2",
+        }
       }
     ]
   }

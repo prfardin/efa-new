@@ -1,12 +1,12 @@
 <script setup lang="ts">
 
-// Components
-import PrGrid from '@c/core/grid.vue'
-
 </script>
 
 <template>
-  <pr-grid></pr-grid>
+  <select class="uk-select">
+    <option></option>
+    <option></option>
+  </select>
 </template>
 
 <style scoped lang="less">

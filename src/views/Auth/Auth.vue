@@ -77,47 +77,5 @@ onMounted(() => {
 </template>
 
 <style lang="less">
-.uk-checkbox {
-  border: 1px solid #ededf2;
-}
-.uk-checkbox:checked {
-  background-color: rgb(2, 96, 255);
-  border: 1px solid #ededf2;
-}
-.uk-checkbox:focus {
-  background-color: #ffffff;
-  border: 1px solid #ededf2;
-}
-.uk-checkbox:checked {
-  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNOS44Mzk4NCwxNy4wODAwOGEuOTk2NzYuOTk2NzYsMCwwLDEtLjcwNy0uMjkzTDUuMjkzLDEyLjk0NzI3QS45OTk4OS45OTk4OSwwLDEsMSw2LjcwNywxMS41MzMyTDkuODM5ODQsMTQuNjY2LDE3LjI5Myw3LjIxMjg5QS45OTk4OS45OTk4OSwwLDAsMSwxOC43MDcsOC42MjdsLTguMTYwMTUsOC4xNjAxNkEuOTk2OC45OTY4LDAsMCwxLDkuODM5ODQsMTcuMDgwMDhaIiBmaWxsPSIjZmZmIj48L3BhdGg+PC9zdmc+');
-  color: #fff;
-}
 
-@media (max-width: 640px) {
-  .uk-container {
-    padding: 0;
-  }
-
-  .pr-auth-section {
-    padding: 0;
-  }
-}
-
-@media (max-width: 960px) {
-  .pr-auth-width-large {
-    width: 100%;
-  }
-
-  .uk-button-small {
-    width: 100%;
-  }
-
-  .pr-auth-tile {
-    padding: 80px 40px;
-  }
-
-  .pr-auth-logo-container {
-    left: 40px;
-  }
-}
 </style>

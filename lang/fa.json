@@ -45,10 +45,48 @@
         },
         "step": {
             "one": "REGISTER",
-            "two": "BUSINESS TYPE",
-            "three": "DETAILS",
-            "four": "ORGANIZATION",
-            "five": "PERSONAL DETAILS"
+            "two": {
+                "title": "BUSINESS TYPE",
+                "description": {
+                    "header": "همین حالا شروع کن.",
+                    "comment_1": "ثبت نام و شروع فعالیت در ایفا فقط در چند مرحله ساده,",
+                    "comment_2": "برای شروع شماره تماس رو وارد کن."
+                },
+                "options": {
+                    "one" : {
+                        "title": "انبار داری",
+                        "description": "متعلق به E-Commerce"
+                    },
+                    "two" : {
+                        "title": "بسته بندی",
+                        "description": "برای کسب و کار های کوچک"
+                    }
+                }
+            },
+            "three": {
+                "title": "تست 1",
+                "description": {
+                    "header": "DETAILS",
+                    "comment_1": "Creating your company in IRAN in just a few steps away,",
+                    "comment_2": "Enter your phone number to continue."
+                }
+            },
+            "four": {
+                "title": "تست 2",
+                "description": {
+                    "header": "ORGANIZATION",
+                    "comment_1": "Creating your company in IRAN in just a few steps away,",
+                    "comment_2": "Enter your phone number to continue."
+                }
+            },
+            "five": {
+                "title": "تست 3",
+                "description": {
+                    "header": "PERSONAL DETAILS",
+                    "comment_1": "Creating your company in IRAN in just a few steps away,",
+                    "comment_2": "Enter your phone number to continue."
+                }
+            }
         },
         "last": "last"
     }

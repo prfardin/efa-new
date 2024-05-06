@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { heightViewport, RefElement } from '@u/util'
 
@@ -36,12 +36,18 @@ interface Routers {
 const route = useRoute()
 
 const routers = ref<Routers[]>([
-  { link: "", title: "auth.step.one", cls: "pr-complete" },
-  { link: "businessType", title: "auth.step.two" },
-  { link: "businessDetails", title: "auth.step.three" },
-  { link: "businessOrganization", title: "auth.step.four" },
-  { link: "personalDetails", title: "auth.step.five" },
+  { link: "", title: "auth.step.one.title", cls: "pr-complete" },
+  { link: "businessType", title: "auth.step.two.title" },
+  { link: "businessDetails", title: "auth.step.three.title" },
+  { link: "businessOrganization", title: "auth.step.four.title" },
+  { link: "personalDetails", title: "auth.step.five.title" },
 ])
+function metaInfo(i: string) {
+  return computed<any>(() => route.meta[i] )
+}
+const header = metaInfo('header');
+const comment_1 = metaInfo('comment_1');
+const comment_2 = metaInfo('comment_2');
 
 </script>
 
@@ -83,10 +89,10 @@ const routers = ref<Routers[]>([
             <div class="uk-tile pr-auth-tile-muted pr-auth-tile-xlarge uk-flex uk-flex-top">
               <div class="uk-width-1-1">
                 <h2 class="pr-auth-heading uk-margin-remove-bottom">
-                  {{ t('auth.register.header') }}
+                  {{ $t(header) }}
                 </h2>
                 <p class="uk-margin-small-top">
-                  {{ t('auth.register.comment_1') }}<br />{{ t('auth.register.comment_2') }}
+                  {{ $t(comment_1) }}<br />{{ $t(comment_2) }}
                 </p>
                 <div class="uk-margin-medium-top">
                   <router-view></router-view>

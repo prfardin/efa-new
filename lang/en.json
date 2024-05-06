@@ -44,12 +44,58 @@
             "comment_2": "Save time and money."
         },
         "step": {
-            "one": "REGISTER",
-            "two": "BUSINESS TYPE",
-            "three": "DETAILS",
-            "four": "ORGANIZATION",
-            "five": "PERSONAL DETAILS"
+            "one": {
+                "title": "REGISTER",
+                "description": {
+                    "header": "REGISTER",
+                    "comment_1": "Creating your company in IRAN in just a few steps away,",
+                    "comment_2": "Enter your phone number to continue."
+                }
+            },
+            "two": {
+                "title": "BUSINESS TYPE",
+                "description": {
+                    "header": "Start Your Business now",
+                    "comment_1": "Creating your company in IRAN in just a few steps away,",
+                    "comment_2": "Enter your phone number to continue."
+                },
+                "options": {
+                    "one" : {
+                        "title": "Warehousing",
+                        "description": "Belongs to E-Commerce"
+                    },
+                    "two" : {
+                        "title": "Packing",
+                        "description": "For small businesses"
+                    }
+                }
+            },
+            "three": {
+                "title": "DETAILS",
+                "description": {
+                    "header": "DETAILS",
+                    "comment_1": "Creating your company in IRAN in just a few steps away,",
+                    "comment_2": "Enter your phone number to continue."
+                }
+            },
+            "four": {
+                "title": "ORGANIZATION",
+                "description": {
+                    "header": "ORGANIZATION",
+                    "comment_1": "Creating your company in IRAN in just a few steps away,",
+                    "comment_2": "Enter your phone number to continue."
+                }
+            },
+            "five": {
+                "title": "PERSONAL DETAILS",
+                "description": {
+                    "header": "PERSONAL DETAILS",
+                    "comment_1": "Creating your company in IRAN in just a few steps away,",
+                    "comment_2": "Enter your phone number to continue."
+                }
+            }
         },
         "last": "last"
     }
 }
+

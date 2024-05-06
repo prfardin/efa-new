@@ -17,41 +17,46 @@ interface Options {
   icon: string
   title: string
   description: string
-  arrow?: string
+  isSelected?: boolean
 }
 
 const options = ref<Options[]>([
-  {icon: "home-alt", title: "انبار داری", description: "متعلق به E-Commerce", arrow: "line-arrow-right" },
-  {icon: "string", title: "", description: "", arrow: "" }
-
+  { icon: "home-alt", title: "auth.step.two.options.one.title", description: "auth.step.two.options.one.description", isSelected: false },
+  { icon: "box", title: "auth.step.two.options.two.title", description: "auth.step.two.options.two.description", isSelected: false }
 ])
 
-const isSelected = ref<boolean>(true)
 
+function select(index: number) {
+  options.value.forEach((item, i) => {
+    if (i !== index) {
+      item.isSelected = false
+    }
+  })
+  options.value[index].isSelected = !options.value[index].isSelected
+}
 
 </script>
 
 <template>
-  <div
-    class="uk-height-1-1 uk-tile uk-tile-default uk-flex uk-flex-left uk-flex-top"
-    style="background-color: #f5f6f9; padding: 0"
-  >
-    <div>
-      <pr-grid small class="uk-child-width-1-1">
+  <pr-grid small class="uk-child-width-1-1">
         <div v-for="(item, index) in options" :key="index">
           <div
-            class="pr-select-card"
-            :class="{ selected: isSelected }"
+            class="pr-select-card uk-width-1-1 uk-width-large@s"
+            :class="{ 'selected': item.isSelected }"
+            @click="select(index)"
           >
             <pr-grid small class="uk-flex-middle">
-              <div>
+              <div class="uk-width-1-2 uk-width-auto@s">
                 <div
                   class="type pr-select-card-icon"
                 >
                   <pr-icon :icon="item.icon" ratio="1.3"></pr-icon>
                 </div>
               </div>
-              <div>
+              <div v-if="item.isSelected" class="uk-width-1-2 uk-width-expand@s uk-text-left  uk-flex-last@s">
+                <pr-icon icon="line-arrow-right" style="color: #045cfa"></pr-icon>
+              </div>
+              <div class="uk-width-1-1 uk-width-auto@s uk-flex-1@s">
                 <h6
                   class="uk-margin-remove-bottom uk-text-bold pr-margin-xsmall-left"
                 >
@@ -60,53 +65,13 @@ const isSelected = ref<boolean>(true)
                 <p
                   class="uk-margin-remove-top pr-select-card-description"
                 >
-                  {{ item.description }}
-                </p>
-              </div>
-              <div class="uk-width-expand uk-text-left">
-                <pr-icon v-if="item.arrow" :icon="item.arrow" style="color: #045cfa"></pr-icon>
-              </div>
-            </pr-grid>
-          </div>
-        </div>
-        <div>
-          <div
-            class="pr-select-card"
-          >
-            <pr-grid small class="uk-flex-middle">
-              <div>
-                <div
-                  class="type pr-select-card-icon"
-                >
-                  <pr-icon icon="box" ratio="1.3"></pr-icon>
-                </div>
-              </div>
-              <div>
-                <h6
-                  class="uk-margin-remove-bottom"
-                  style="margin-left: 5px; font-weight: 700"
-                >
-                  بسته بندی
-                </h6>
-                <p
-                  class="uk-margin-remove-top"
-                  style="
-              margin-left: 5px;
-              font-size: 13px;
-              color: #868d9a;
-              font-weight: 600;
-              margin-top: 3px !important;
-            "
-                >
-                  برای کسب و کار های کوچک
+                  {{ t(item.description) }}
                 </p>
               </div>
             </pr-grid>
           </div>
         </div>
       </pr-grid>
-    </div>
-  </div>
 </template>
 
 <style lang="less">

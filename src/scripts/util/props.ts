@@ -13,6 +13,7 @@ import {
   SectionClassType,
   TileClassType,
   InputClassType,
+  TextareaClassType,
   LabelClassType,
   SpinnerClassType
 } from './classes'
@@ -97,8 +98,8 @@ export interface LinkPropsType extends LinkClassType {
  */
 export interface IconPropsType {
   tag?: 'span' | string
-  icon: string
-  ratio?: number | string
+  icon: string | undefined
+  ratio?: any
 }
 
 /**
@@ -122,6 +123,24 @@ export interface InputPropsType extends InputClassType {
   ratio?: number
   iconClass?: string
   iconFlip?: boolean
+}
+
+/**
+ * Textarea Props Types
+ */
+
+export interface TextareaPropsType extends TextareaClassType {
+  type?: 'text' | string
+  name: string
+  id?: string
+  label?: string
+  ariaLabel?: string
+  autofocus?: boolean
+  icon?: string
+  ratio?: number
+  iconClass?: string
+  iconFlip?: boolean
+  rows?: number
 }
 
 /**
