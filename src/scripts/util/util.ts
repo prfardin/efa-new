@@ -34,3 +34,8 @@ export function heightViewport(el: Element, options?: UIkitHeightViewportOptions
 export function nav(el: Element, options?: UIkitNavOptions) {
   return UIkit.nav(el, options)
 }
+
+// set nav
+export function drop(el: Element, options?: UIkitNavOptions) {
+  return UIkit.drop(el, options)
+}

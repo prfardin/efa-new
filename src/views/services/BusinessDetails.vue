@@ -7,27 +7,55 @@ import PrLabel from '@c/core/form/label.vue'
 import PrIcon from '@c/core/icon.vue'
 import PrTextarea from '@c/core/form/PrTextarea.vue'
 import PrSelect from '@c/core/form/PrSelect.vue'
+import { formData } from '@sc/fetch'
+import { ref } from 'vue'
+import PrSelectBox from '@c/core/form/PrSelectBox.vue'
 
+
+interface Form {
+  data: {
+    company_name: string
+    select: string
+  }
+  busy: boolean
+}
+
+const list = ref<any>([
+  {t: "ss"},
+  {t: "sss"},
+  {t: "ssss"},
+  {t: "sssss"},
+  {t: "ssssss"}
+])
+
+// data
+const form = formData({}) as unknown as Form
 </script>
 
 <template>
-  <form class="uk-form-stacked pr-auth-width-large">
+  <form class="uk-form-stacked">
     <pr-grid class="uk-child-width-1-1">
       <div>
-        <pr-label  for="" class="pr-auth-form-label" >Company name</pr-label>
+        <pr-label
+          for="company_name"
+          class="pr-auth-form-label"
+          icon="question"
+          :ratio="0.5"
+          icon-class="pr-auth-form-helper"
+        >Company name</pr-label>
         <pr-grid small>
-          <div class="uk-width-expand@m">
+          <div class="uk-width-expand@s">
             <pr-input
-              id="mobile"
-              name="mobile"
+              id="company_name"
+              name="company_name"
               cls="pr-auth-input pr-direction-ltr uk-input uk-form-small"
               class="uk-width-1-1"
               autofocus
+              v-model="form.data.company_name"
             />
           </div>
-          <div class="uk-width-small@m">
-            <pr-select
-            />
+          <div class="uk-width-small@s">
+            <pr-select-box name="" :lists="list" v-model="form.data.select" />
           </div>
         </pr-grid>
         <div class="uk-margin-top uk-width-1-1">

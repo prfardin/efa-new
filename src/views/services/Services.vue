@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import { ref, onMounted, computed } from 'vue'
+import { ref, onMounted, computed, reactive } from 'vue'
 import { useRoute } from 'vue-router'
 import { heightViewport, RefElement } from '@u/util'
 
@@ -29,6 +29,7 @@ onMounted(() => {
 
 interface Routers {
   link: string
+  previousLink?: string
   title: string
   cls?: string
 }
@@ -38,24 +39,33 @@ const route = useRoute()
 const routers = ref<Routers[]>([
   { link: "", title: "auth.step.one.title", cls: "pr-complete" },
   { link: "businessType", title: "auth.step.two.title" },
-  { link: "businessDetails", title: "auth.step.three.title" },
-  { link: "businessOrganization", title: "auth.step.four.title" },
-  { link: "personalDetails", title: "auth.step.five.title" },
+  { link: "businessDetails", title: "auth.step.three.title", previousLink: "businessType" },
+  { link: "businessOrganization", title: "auth.step.four.title", previousLink: "businessDetails" },
+  { link: "personalDetails", title: "auth.step.five.title", previousLink: "businessOrganization" },
 ])
+
+// Different tips for each page
+// We are using Route Meta, we don't know if this is a good way or not
+// We need to review this and use a better way
 function metaInfo(i: string) {
   return computed<any>(() => route.meta[i] )
 }
+
 const header = metaInfo('header');
 const comment_1 = metaInfo('comment_1');
 const comment_2 = metaInfo('comment_2');
 
+
+
+const test =ref(176)
+const testt =ref(40)
 </script>
 
 <template>
   <pr-section class="pr-auth-section pr-auth-section-muted uk-flex uk-flex-middle" ref="el">
     <div class="uk-width-1-1">
       <pr-container small>
-        <pr-grid collapse match class="pr-auth-background-muted pr-auth-height">
+        <pr-grid collapse match class="pr-auth-background-muted pr-auth-height" style="height: 700px">
           <div class="pr-auth-side uk-width-1-3@m">
             <div class="pr-auth-logo-container uk-width-auto">
               <span class="pr-auth-logo-icon">E</span>
@@ -86,8 +96,8 @@ const comment_2 = metaInfo('comment_2');
               <span>{{ t('auth.helper_text') }}</span>
               <pr-button to="/" text>{{ t('auth.get_help') }}</pr-button>
             </div>
-            <div class="uk-tile pr-auth-tile-muted pr-auth-tile-xlarge uk-flex uk-flex-top">
-              <div class="uk-width-1-1">
+            <div class="uk-tile pr-auth-tile-muted pr-auth-tile-xlarge uk-flex uk-flex-column uk-flex-between" :style="route.name === 'businessType' ? {paddingBottom: test + 'px'} : {paddingBottom: testt + 'px'}">
+              <div>
                 <h2 class="pr-auth-heading uk-margin-remove-bottom">
                   {{ $t(header) }}
                 </h2>
@@ -97,6 +107,18 @@ const comment_2 = metaInfo('comment_2');
                 <div class="uk-margin-medium-top">
                   <router-view></router-view>
                 </div>
+              </div>
+              <div class="uk-margin-medium-top">
+                <pr-grid v-if="route.name !== 'businessType'" class="uk-child-width-1-1 uk-child-width-auto@s uk-flex-middle uk-flex-between@s">
+                  <div>
+                    <template v-for="(i, index) in routers" :key="index">
+                      <pr-button v-if="i.link === route.name && i.previousLink" :to="{ name: i.previousLink }" class="pr-auth-button" muted square small>previous</pr-button>
+                    </template>
+                  </div>
+                  <div>
+                    <pr-button class="pr-auth-button-primary" primary small square>test</pr-button>
+                  </div>
+                </pr-grid>
               </div>
             </div>
           </div>

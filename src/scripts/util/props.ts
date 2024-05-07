@@ -126,6 +126,26 @@ export interface InputPropsType extends InputClassType {
 }
 
 /**
+ * Input Props Types
+ */
+export interface SelectBoxPropsType {
+  type?: 'text' | string
+  name: string
+  id?: string
+  label?: string
+  ariaLabel?: string
+  icon?: string
+  ratio?: number
+  iconClass?: string
+  iconFlip?: boolean
+  mode?: string
+  lists?: string[] | undefined
+  node?: boolean
+  d?: string | null | string[]
+  searchable?: boolean
+}
+
+/**
  * Textarea Props Types
  */
 
