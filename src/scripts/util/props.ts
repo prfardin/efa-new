@@ -140,9 +140,10 @@ export interface SelectBoxPropsType {
   iconFlip?: boolean
   mode?: string
   lists?: string[] | undefined
-  node?: boolean
+  node?: any
   d?: string | null | string[]
   searchable?: boolean
+  divider?: boolean
 }
 
 /**

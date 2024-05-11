@@ -12,24 +12,27 @@ import { ref } from 'vue'
 import PrSelectBox from '@c/core/form/PrSelectBox.vue'
 
 
+const id = ref(1)
+
 interface Form {
   data: {
     company_name: string
-    select: string
+    id: number
   }
   busy: boolean
 }
 
 const list = ref<any>([
-  {t: "ss"},
-  {t: "sss"},
-  {t: "ssss"},
-  {t: "sssss"},
-  {t: "ssssss"}
+  {name: "Inc.", id: 1},
+  {name: "Ltd.", id: 2},
+  {name: "LLC ", id: 3},
+  {name: "PLC ", id: 4},
 ])
 
 // data
 const form = formData({}) as unknown as Form
+
+const test = ref("ali")
 </script>
 
 <template>
@@ -55,7 +58,7 @@ const form = formData({}) as unknown as Form
             />
           </div>
           <div class="uk-width-small@s">
-            <pr-select-box name="" :lists="list" v-model="form.data.select" />
+            <pr-select-box name="" v-model="form.data.id" :d="test"  divider :lists="list" />
           </div>
         </pr-grid>
         <div class="uk-margin-top uk-width-1-1">
