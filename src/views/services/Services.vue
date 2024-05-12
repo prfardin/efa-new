@@ -29,7 +29,6 @@ onMounted(() => {
 
 interface Routers {
   link: string
-  previousLink?: string
   title: string
   cls?: string
 }
@@ -39,9 +38,9 @@ const route = useRoute()
 const routers = ref<Routers[]>([
   { link: "", title: "auth.step.one.title", cls: "pr-complete" },
   { link: "businessType", title: "auth.step.two.title" },
-  { link: "businessDetails", title: "auth.step.three.title", previousLink: "businessType" },
-  { link: "businessOrganization", title: "auth.step.four.title", previousLink: "businessDetails" },
-  { link: "personalDetails", title: "auth.step.five.title", previousLink: "businessOrganization" },
+  { link: "businessDetails", title: "auth.step.three.title" },
+  { link: "businessOrganization", title: "auth.step.four.title" },
+  { link: "personalDetails", title: "auth.step.five.title" },
 ])
 
 // Different tips for each page
@@ -59,13 +58,14 @@ const comment_2 = metaInfo('comment_2');
 
 const test =ref(176)
 const testt =ref(40)
+
 </script>
 
 <template>
   <pr-section class="pr-auth-section pr-auth-section-muted uk-flex uk-flex-middle" ref="el">
     <div class="uk-width-1-1">
       <pr-container small>
-        <pr-grid collapse match class="pr-auth-background-muted pr-auth-height" style="height: 700px">
+        <pr-grid collapse match class="pr-auth-background-muted pr-auth-height">
           <div class="pr-auth-side uk-width-1-3@m">
             <div class="pr-auth-logo-container uk-width-auto">
               <span class="pr-auth-logo-icon">E</span>
@@ -96,29 +96,15 @@ const testt =ref(40)
               <span>{{ t('auth.helper_text') }}</span>
               <pr-button to="/" text>{{ t('auth.get_help') }}</pr-button>
             </div>
-            <div class="uk-tile pr-auth-tile-muted pr-auth-tile-xlarge uk-flex uk-flex-column uk-flex-between" :style="route.name === 'businessType' ? {paddingBottom: test + 'px'} : {paddingBottom: testt + 'px'}">
-              <div>
-                <h2 class="pr-auth-heading uk-margin-remove-bottom">
-                  {{ $t(header) }}
-                </h2>
-                <p class="uk-margin-small-top">
-                  {{ $t(comment_1) }}<br />{{ $t(comment_2) }}
-                </p>
-                <div class="uk-margin-medium-top">
-                  <router-view></router-view>
-                </div>
-              </div>
+            <div class="uk-tile pr-auth-tile-muted pr-auth-tile-xlarge" :style="route.name === 'businessType' ? {paddingBottom: test + 'px'} : {paddingBottom: testt + 'px'}">
+              <h2 class="pr-auth-heading uk-margin-remove-bottom">
+                {{ $t(header) }}
+              </h2>
+              <p class="uk-margin-small-top">
+                {{ $t(comment_1) }}<br />{{ $t(comment_2) }}
+              </p>
               <div class="uk-margin-medium-top">
-                <pr-grid v-if="route.name !== 'businessType'" class="uk-child-width-1-1 uk-child-width-auto@s uk-flex-middle uk-flex-between@s">
-                  <div>
-                    <template v-for="(i, index) in routers" :key="index">
-                      <pr-button v-if="i.link === route.name && i.previousLink" :to="{ name: i.previousLink }" class="pr-auth-button" muted square small>previous</pr-button>
-                    </template>
-                  </div>
-                  <div>
-                    <pr-button class="pr-auth-button-primary" primary small square>test</pr-button>
-                  </div>
-                </pr-grid>
+                <router-view></router-view>
               </div>
             </div>
           </div>

@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import { formData } from '@sc/fetch'
+import { ref } from 'vue'
+import { useRouter } from 'vue-router'
+
 
 // Components
 import PrGrid from '@c/core/grid.vue'
@@ -6,13 +10,12 @@ import PrInput from '@c/core/form/input.vue'
 import PrLabel from '@c/core/form/label.vue'
 import PrIcon from '@c/core/icon.vue'
 import PrTextarea from '@c/core/form/PrTextarea.vue'
-import PrSelect from '@c/core/form/PrSelect.vue'
-import { formData } from '@sc/fetch'
-import { ref } from 'vue'
 import PrSelectBox from '@c/core/form/PrSelectBox.vue'
+import PrButton from '@c/core/button.vue'
+import PrLink from '@c/core/link.vue'
 
 
-const id = ref(1)
+const router = useRouter()
 
 interface Form {
   data: {
@@ -30,9 +33,14 @@ const list = ref<any>([
 ])
 
 // data
+const data = ref({ name: "Inc.", id: 1 })
 const form = formData({}) as unknown as Form
 
-const test = ref("ali")
+
+function submitForm(){
+  router.push({ name: 'businessOrganization' })
+}
+
 </script>
 
 <template>
@@ -41,7 +49,6 @@ const test = ref("ali")
       <div>
         <pr-label
           for="company_name"
-          class="pr-auth-form-label"
           icon="question"
           :ratio="0.5"
           icon-class="pr-auth-form-helper"
@@ -58,11 +65,11 @@ const test = ref("ali")
             />
           </div>
           <div class="uk-width-small@s">
-            <pr-select-box name="" v-model="form.data.id" :d="test"  divider :lists="list" />
+            <pr-select-box name="company_name" v-model="form.data.id" :d="data.name" divider :lists="list" />
           </div>
         </pr-grid>
         <div class="uk-margin-top uk-width-1-1">
-          <div class="pr-auth-info">
+          <div class="pr-auth-info type">
             <pr-icon icon="file-info-alt"></pr-icon>
             <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
           </div>
@@ -70,21 +77,52 @@ const test = ref("ali")
       </div>
       <div>
         <pr-label for="">Business description</pr-label>
-        <pr-textarea :rows="5"  name=""/>
+        <pr-textarea :rows="5"  name="" />
       </div>
     </pr-grid>
+    <div class="uk-margin-medium-top">
+      <pr-grid class="uk-child-width-1-1 uk-child-width-auto@s uk-flex-middle uk-flex-between@s">
+        <div>
+          <pr-link class="pr-auth-button" muted square small :to="{name: 'businessType'}">previous</pr-link>
+        </div>
+        <div>
+          <pr-button class="pr-auth-button-primary" primary small square icon="line-arrow-right" icon-class="uk-flex-last" tag="a" @click="submitForm">test</pr-button>
+        </div>
+      </pr-grid>
+    </div>
   </form>
 </template>
 
-<style scoped lang="less">
+<style>
 .pr-auth-info {
-  background-color: rgba(94, 107, 134, 0.2);
+  background-color: rgba(1, 94, 255, 0.1);
   display: flex;
   align-items: center;
   padding: 5px 10px;
-  border: 1px solid #334e68;
+  border: 1px solid  #669eff;
   border-radius: 4px;
   gap: 8px;
   color: #0a0b0b;
 }
+.type .uk-icon .pr-icon-primary {
+  color: #4d8bff;
+  transition: color .2s;
+}
+
+.type .uk-icon .pr-icon-secondary {
+  color: rgba(4, 93, 255, 0.19);
+  transition: color .2s;
+}
+
+.type .uk-icon .pr-icon-tertiary {
+  color: #ffffff;
+  transition: color .2s;
+}
+
+.type .uk-icon .pr-icon-quaternary {
+  color: rgba(4, 93, 255, 0.15);
+  transition: color .2s;
+}
+
+
 </style>

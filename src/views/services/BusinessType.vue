@@ -53,10 +53,10 @@ function select(index: number) {
                   <pr-icon :icon="item.icon" ratio="1.3"></pr-icon>
                 </div>
               </div>
-              <div v-if="item.isSelected" class="uk-width-1-2 uk-width-expand@s uk-text-left  uk-flex-last@s">
+              <div v-if="item.isSelected" class="uk-width-1-2 uk-width-auto@s uk-text-left  uk-flex-last@s">
                 <pr-icon icon="line-arrow-right" style="color: #045cfa"></pr-icon>
               </div>
-              <div class="uk-width-1-1 uk-width-auto@s uk-flex-1@s">
+              <div class="uk-width-1-1 uk-flex-1@s">
                 <h6
                   class="uk-margin-remove-bottom uk-text-bold pr-margin-xsmall-left"
                 >

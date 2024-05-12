@@ -1,24 +1,32 @@
 <script lang="ts" setup>
 // import { SelectBoxClassObject, SelectBoxIconClassObject } from '@u/classes'
-import { ref, onMounted, watch } from "vue";
+import { ref, onMounted } from 'vue'
 import { drop, RefElement } from '@u/util'
 import { SelectBoxPropsType } from '@u/props'
 import UIkit from 'uikit'
 
-// need to edit the type because it doesn't work
+// set props with defaults
 const props = withDefaults(defineProps<SelectBoxPropsType>(), {
   mode: 'click',
   node: 'name',
-  d: null,
-  id: 'id'
+  id: 'id',
+  type: 'text'
 })
 
-const model = defineModel()
+let dGet = true
 
-
+// data
+const model = defineModel({
+  get(v) {
+    if (dGet && props.d) {
+      dGet = false
+      return props.d
+    }
+    return v;
+  },
+})
 const el = ref<RefElement>(null)
 const isOpen = ref<boolean>(false)
-
 
 onMounted(() => {
   drop(el.value, {
@@ -31,6 +39,10 @@ onMounted(() => {
     stretch: 'x',
     flip: false
   })
+
+  // we write this for handle show and hide drop
+  // need fix types and fix in util in util.ts
+  // when we insert more features for this component we use this more and we insert more options
   // @ts-ignore
   UIkit.util.on(el.value, 'beforeshow', (e) =>  {
     isOpen.value = true
@@ -39,24 +51,13 @@ onMounted(() => {
   UIkit.util.on(el.value, 'beforehide', (e) =>  {
     isOpen.value = false
   })
+
+  // for set default value with props
+  // I am writing this but I think there is a problem and I need to find and fix it in the future
 })
 
-
-watch(
-  () => props.d,
-  newV => {
-    const v = props.lists?.find((list: any) => list[props.id] === newV)
-    if (props.searchable) {
-      model.value = v ? v[props.node as any] : newV
-    } else {
-      props.d && (model.value = v ? v[props.node as any] : newV)
-      console.log(newV)
-    }
-  },
-  { immediate: true }
-)
-
-//need change
+// we use this for select options in our select box
+// need change and set types
 function clicked(list: any) {
   model.value = list[props.node as any]
   drop(el.value).hide(false)
@@ -70,12 +71,11 @@ function clicked(list: any) {
       <div class="uk-position-relative" :class="{ 'open': isOpen }">
         <input class="uk-select"
          readonly
-         type="text"
+         :type="type"
          :name="name"
          :id="name"
          v-model="model"
         />
-        <div>{{ model }}</div>
         <span class="pr-select-angle" :class="{divider: props.divider}"></span>
       </div>
       <div class="pr-option-box" ref="el">
@@ -176,7 +176,7 @@ function clicked(list: any) {
 }
 
 .pr-option:hover {
-  background: rgba(1, 94, 255, 0.2)
+  background: rgba(1, 94, 255, 0.1)
 }
 
 </style>
