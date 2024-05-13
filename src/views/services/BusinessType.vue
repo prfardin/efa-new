@@ -8,6 +8,7 @@ import { ref } from 'vue'
 import PrIcon from '@c/core/icon.vue'
 import PrGrid from '@c/core/grid.vue'
 import { useI18n } from 'vue-i18n'
+import router from '@/router'
 
 // i18n
 const { t } = useI18n()
@@ -33,45 +34,52 @@ function select(index: number) {
     }
   })
   options.value[index].isSelected = !options.value[index].isSelected
+  setTimeout(() => {
+    router.push({name: 'businessDetails'})
+  }, 500)
+
 }
 
 </script>
 
 <template>
-  <pr-grid small class="uk-child-width-1-1">
-        <div v-for="(item, index) in options" :key="index">
-          <div
-            class="pr-select-card uk-width-1-1 uk-width-large@s"
-            :class="{ 'selected': item.isSelected }"
-            @click="select(index)"
-          >
-            <pr-grid small class="uk-flex-middle">
-              <div class="uk-width-1-2 uk-width-auto@s">
-                <div
-                  class="type pr-select-card-icon"
-                >
-                  <pr-icon :icon="item.icon" ratio="1.3"></pr-icon>
-                </div>
+  <div class="uk-width-1-1 uk-position-relative">
+    <pr-grid small class="uk-child-width-1-1">
+      <div v-for="(item, index) in options" :key="index">
+        <div
+          tabindex="0"
+          class="pr-select-card uk-width-1-1 uk-width-large@s uk-animation-toggle"
+          :class="{ 'uk-active': item.isSelected }"
+          @click="select(index)"
+        >
+          <pr-grid small class="uk-flex-middle">
+            <div class="uk-width-1-2 uk-width-auto@s">
+              <div
+                class="type pr-select-card-icon"
+              >
+                <pr-icon :icon="item.icon" ratio="1.3"></pr-icon>
               </div>
-              <div v-if="item.isSelected" class="uk-width-1-2 uk-width-auto@s uk-text-left  uk-flex-last@s">
-                <pr-icon icon="line-arrow-right" style="color: #045cfa"></pr-icon>
-              </div>
-              <div class="uk-width-1-1 uk-flex-1@s">
-                <h6
-                  class="uk-margin-remove-bottom uk-text-bold pr-margin-xsmall-left"
-                >
-                  {{ t(item.title) }}
-                </h6>
-                <p
-                  class="uk-margin-remove-top pr-select-card-description"
-                >
-                  {{ t(item.description) }}
-                </p>
-              </div>
-            </pr-grid>
-          </div>
+            </div>
+            <div v-if="item.isSelected" class="uk-width-1-2 uk-width-auto@s uk-text-left  uk-flex-last@s  uk-animation-slide-left-small">
+              <pr-icon icon="line-arrow-right" style="color: #045cfa;"></pr-icon>
+            </div>
+            <div class="uk-width-1-1 uk-flex-1@s">
+              <h6
+                class="uk-margin-remove-bottom uk-text-bold pr-margin-xsmall-left"
+              >
+                {{ t(item.title) }}
+              </h6>
+              <p
+                class="uk-margin-remove-top pr-select-card-description"
+              >
+                {{ t(item.description) }}
+              </p>
+            </div>
+          </pr-grid>
         </div>
-      </pr-grid>
+      </div>
+    </pr-grid>
+  </div>
 </template>
 
 <style lang="less">
@@ -97,7 +105,7 @@ function select(index: number) {
   }
 }
 
-.pr-select-card.selected .type.pr-select-card-icon .uk-icon,
+.pr-select-card.uk-active .type.pr-select-card-icon .uk-icon,
 .pr-select-card:hover .type.pr-select-card-icon {
   .pr-icon-primary {
     color: #4d8bff;
@@ -130,7 +138,7 @@ function select(index: number) {
   cursor: pointer;
 }
 
-.pr-select-card.selected {
+.pr-select-card.uk-active {
   background-color: #edf4ff;
   border: 2px solid #576cb5;
 }
@@ -154,7 +162,7 @@ function select(index: number) {
   background-color: #045dff;
 }
 
-.pr-select-card.selected .pr-select-card-icon {
+.pr-select-card.uk-active .pr-select-card-icon {
   background-color: #045dff;
   border: 2px solid #045dff;
 }

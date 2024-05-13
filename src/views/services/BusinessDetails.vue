@@ -44,7 +44,7 @@ function submitForm(){
 </script>
 
 <template>
-  <form class="uk-form-stacked">
+  <form class="uk-form-stacked uk-flex uk-flex-between uk-flex-column">
     <pr-grid class="uk-child-width-1-1">
       <div>
         <pr-label

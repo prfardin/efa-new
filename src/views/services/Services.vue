@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import { ref, onMounted, computed, reactive } from 'vue'
+import { ref, onMounted, computed, reactive, watch, watchEffect } from 'vue'
 import { useRoute } from 'vue-router'
 import { heightViewport, RefElement } from '@u/util'
 
@@ -30,13 +30,13 @@ onMounted(() => {
 interface Routers {
   link: string
   title: string
-  cls?: string
+  isComplete?: string
 }
 
 const route = useRoute()
 
 const routers = ref<Routers[]>([
-  { link: "", title: "auth.step.one.title", cls: "pr-complete" },
+  { link: "", title: "auth.step.one.title", isComplete: "pr-complete" },
   { link: "businessType", title: "auth.step.two.title" },
   { link: "businessDetails", title: "auth.step.three.title" },
   { link: "businessOrganization", title: "auth.step.four.title" },
@@ -55,9 +55,13 @@ const comment_1 = metaInfo('comment_1');
 const comment_2 = metaInfo('comment_2');
 
 
+const checkRoute = ref(route.path)
 
-const test =ref(176)
-const testt =ref(40)
+watchEffect(()=> {
+  checkRoute.value = route.path
+})
+
+
 
 </script>
 
@@ -76,40 +80,86 @@ const testt =ref(40)
               class="pr-auth-tile pr-auth-tile-default pr-auth-background-default uk-flex uk-flex-top pr-auth-tile-has-list"
             >
               <pr-list class="pr-auth-list uk-width-1-1 uk-margin-remove">
-                <li v-for="(item, index) in routers" :key="index" :class="item.cls">
-                  <pr-link :to="{ name: item.link }">
-                    <pr-icon v-if="item.cls" icon="line-check" ratio="0.75"></pr-icon>
-                    <pr-icon v-else-if="item.link === route.name" icon="line-arrow-right"></pr-icon>
-                    <span v-else>{{ index + 1 }}</span>
-                    <span>{{ t(item.title) }}</span>
-                  </pr-link>
+                <li v-for="(item, index) in routers" :key="index" :class="item.isComplete">
+                  <transition name="router" mode="out-in">
+                    <pr-link :key="checkRoute" :to="{ name: item.link }">
+                      <pr-icon v-if="item.isComplete" icon="line-check" ratio="0.75"></pr-icon>
+                      <pr-icon v-else-if="item.link === route.name" icon="line-arrow-right"></pr-icon>
+                      <span v-else>{{ index + 1 }}</span>
+                      <span>{{ t(item.title) }}</span>
+                    </pr-link>
+                  </transition>
                 </li>
               </pr-list>
-              <picture>
-                <source type="image/webp" :srcset="Map" />
-                <img class="pr-auth-side-icon-map" :src="Map" alt="" loading="eager" />
-              </picture>
+              <transition name="fade" mode="out-in">
+                <picture :key="checkRoute">
+                  <source type="image/webp" :srcset="Map" />
+                  <img class="pr-auth-side-icon-map" :src="Map" alt="" loading="eager" />
+                </picture>
+              </transition>
             </pr-tile>
           </div>
-          <div class="pr-auth-container uk-width-expand@m">
-            <div class="pr-auth-helper-container uk-width-auto">
-              <span>{{ t('auth.helper_text') }}</span>
-              <pr-button to="/" text>{{ t('auth.get_help') }}</pr-button>
-            </div>
-            <div class="uk-tile pr-auth-tile-muted pr-auth-tile-xlarge" :style="route.name === 'businessType' ? {paddingBottom: test + 'px'} : {paddingBottom: testt + 'px'}">
-              <h2 class="pr-auth-heading uk-margin-remove-bottom">
-                {{ $t(header) }}
-              </h2>
-              <p class="uk-margin-small-top">
-                {{ $t(comment_1) }}<br />{{ $t(comment_2) }}
-              </p>
-              <div class="uk-margin-medium-top">
-                <router-view></router-view>
+            <div class="pr-auth-container uk-width-expand@m">
+              <div>
+                <transition name="nested" mode="out-in">
+                  <div :key="checkRoute">
+                    <div class="pr-auth-helper-container uk-width-auto">
+                      <span>{{ t('auth.helper_text') }}</span>
+                      <pr-button to="/" text>{{ t('auth.get_help') }}</pr-button>
+                    </div>
+                    <div class="uk-tile pr-auth-tile-muted pr-auth-tile-xlarge" style="padding-bottom: 40px" >
+                      <h2 class="pr-auth-heading uk-margin-remove-bottom">
+                        {{ $t(header) }}
+                      </h2>
+                      <p class="uk-margin-small-top">
+                        {{ $t(comment_1) }}<br/>{{ $t(comment_2) }}
+                      </p>
+                      <div class="uk-margin-medium-top">
+                        <router-view  style="min-height: 45vh" />
+                      </div>
+                    </div>
+                  </div>
+                </transition>
               </div>
             </div>
-          </div>
         </pr-grid>
       </pr-container>
     </div>
   </pr-section>
 </template>
+
+<style scoped>
+.nested-enter-active,
+.nested-leave-active {
+  transition: all 0.3s ease-in-out;
+}
+
+.nested-enter-from{
+  transform: translateY(40px);
+  opacity: 0;
+
+}
+
+.nested-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.router-enter-active,
+.router-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+
+
+
+</style>
