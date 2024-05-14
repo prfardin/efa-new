@@ -1,140 +1,47 @@
 <script setup lang="ts">
 import Sidebar from '@c/sidebar/sidebar.vue'
+import Wrapper from '@c/sidebar/wrapper.vue'
+import Strip from '@c/sidebar/strip.vue'
+import { ref } from 'vue'
+
+
+const wrapperPushed = ref<boolean>(true)
+
+function test() {
+  wrapperPushed.value = !wrapperPushed.value
+}
 </script>
 
 <template>
-  <sidebar />
-  <div style="margin-right: 368px">
-    <div class="uk-section uk-section-default uk-height-1-1">
+  <strip @some-event="test" :test="wrapperPushed" />
+  <wrapper @some-event="test" v-if="wrapperPushed" />
+  <div class="view-wrapper" :class="{'is-pushed': wrapperPushed}">
+    <div class="uk-section uk-section-default uk-height-1-1" style="height: 100vh">
       <div class="uk-container">
-        <div class="uk-flex-center uk-grid-small" uk-grid>
-          <div class="post uk-width-1-4">
-            <div class="avatar"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <div class="post uk-width-1-4">
-            <div class="avatar"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <div class="post uk-width-1-4">
-            <div class="avatar"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <div class="post uk-width-1-4">
-            <div class="avatar"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <div class="post uk-width-1-4">
-            <div class="avatar"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <div class="post uk-width-1-4">
-            <div class="avatar"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <div class="post uk-width-1-4">
-            <div class="avatar"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <div class="post uk-width-1-4">
-            <div class="avatar"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <div class="post uk-width-1-4">
-            <div class="avatar"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <div class="post uk-width-1-4">
-            <div class="avatar"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <div class="post uk-width-1-4">
-            <div class="avatar"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <div class="post uk-width-1-4">
-            <div class="avatar"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <div class="post uk-width-1-4">
-            <div class="avatar"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <div class="post uk-width-1-4">
-            <div class="avatar"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <div class="post uk-width-1-4">
-            <div class="avatar"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <div class="post uk-width-1-4">
-            <div class="avatar"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <div class="post uk-width-1-4">
-            <div class="avatar"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <div class="post uk-width-1-4">
-            <div class="avatar"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <div class="post uk-width-1-4">
-            <div class="avatar"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <div class="post uk-width-1-4">
-            <div class="avatar"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <div class="post uk-width-1-4">
-            <div class="avatar"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <div class="post uk-width-1-4">
-            <div class="avatar"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <div class="post uk-width-1-4">
-            <div class="avatar"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <div class="post uk-width-1-4">
-            <div class="avatar"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-        </div>
+        <div>ssss</div>
+
       </div>
     </div>
   </div>
 </template>
 
 <style lang="less">
+
+.view-wrapper {
+  position: relative;
+  height: 100%;
+  min-height: 100vh;
+  width: calc(100% - 80px);
+  margin-inline-start: 80px;
+  background: var(--background-grey);
+  transition: all .5s;
+}
+
+.is-pushed {
+  margin-left: 368px;
+  width: calc(100% - 368px);
+}
+
 .post {
   height: 80px;
 }

@@ -2,10 +2,14 @@
 import PrLink from '@c/core/link.vue'
 import PrNav from '@c/core/nav.vue'
 import Avatar from '@i/avatar.png'
+
+const props = defineProps(['test'])
+
 </script>
 
 <template>
   <div class="pr-sidebar-strip">
+    <pr-link tag="a" class="pr-sidebar-accordion is-pusher" :class="{ 'hide': props.test}" icon="angle-right" :ratio="0.8" @click="$emit('someEvent')"></pr-link>
     <div class="pr-sidebar-strip-header">
       <div class="pr-sidebar-strip-header-wrapper">
         <span class="pr-sidebar-header-line"></span>
@@ -55,3 +59,21 @@ import Avatar from '@i/avatar.png'
     </div>
   </div>
 </template>
+
+<style scoped>
+.pr-sidebar-strip {
+  position: fixed;
+  z-index: 999;
+}
+
+.pr-sidebar-accordion.is-pusher {
+  border-radius: 0 12px 12px 0;
+  right: -19px;
+  background-color: rgba(22, 23, 25, 0.12);
+}
+
+.pr-sidebar-accordion.is-pusher.hide {
+  display: none;
+}
+
+</style>
