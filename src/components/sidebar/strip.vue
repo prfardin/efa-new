@@ -5,11 +5,15 @@ import Avatar from '@i/avatar.png'
 
 const props = defineProps(['test'])
 
+
+
 </script>
 
 <template>
   <div class="pr-sidebar-strip">
-    <pr-link tag="a" class="pr-sidebar-accordion is-pusher" :class="{ 'hide': props.test}" icon="angle-right" :ratio="0.8" @click="$emit('someEvent')"></pr-link>
+    <transition name="fade">
+      <pr-link tag="a" class="pr-sidebar-accordion is-pusher" v-show="!props.test" icon="angle-right" :ratio="0.8" @click="$emit('someEvent')"></pr-link>
+    </transition>
     <div class="pr-sidebar-strip-header">
       <div class="pr-sidebar-strip-header-wrapper">
         <span class="pr-sidebar-header-line"></span>
@@ -63,7 +67,7 @@ const props = defineProps(['test'])
 <style scoped>
 .pr-sidebar-strip {
   position: fixed;
-  z-index: 999;
+  z-index: 5;
 }
 
 .pr-sidebar-accordion.is-pusher {
@@ -72,8 +76,14 @@ const props = defineProps(['test'])
   background-color: rgba(22, 23, 25, 0.12);
 }
 
-.pr-sidebar-accordion.is-pusher.hide {
-  display: none;
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  transform: translateX(-30px);
 }
 
 </style>

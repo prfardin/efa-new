@@ -2,8 +2,6 @@
 
 // Components
 import PrButton from '@c/core/button.vue'
-import FlexOne from '@c/core/flex-lists/flexOne.vue'
-import { ref } from 'vue'
 
 
 </script>
@@ -15,5 +13,4 @@ import { ref } from 'vue'
 </template>
 
 <style scoped lang="less">
-
 </style>

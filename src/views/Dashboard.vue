@@ -14,18 +14,24 @@ function test() {
 
 <template>
   <strip @some-event="test" :test="wrapperPushed" />
-  <wrapper @some-event="test" v-if="wrapperPushed" />
+  <transition name="slide">
+    <wrapper @some-event="test" v-if="wrapperPushed" />
+  </transition>
   <div class="view-wrapper" :class="{'is-pushed': wrapperPushed}">
     <div class="uk-section uk-section-default uk-height-1-1" style="height: 100vh">
       <div class="uk-container">
         <div>ssss</div>
-
       </div>
     </div>
   </div>
 </template>
 
 <style lang="less">
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: opacity 0.3s ease;
+}
 
 .view-wrapper {
   position: relative;
@@ -34,17 +40,18 @@ function test() {
   width: calc(100% - 80px);
   margin-inline-start: 80px;
   background: var(--background-grey);
-  transition: all .5s;
+  transition: all .3s;
 }
 
 .is-pushed {
-  margin-left: 368px;
-  width: calc(100% - 368px);
+  margin-left: 340px;
+  width: calc(100% - 340px);
 }
 
 .post {
   height: 80px;
 }
+
 .post .avatar {
   float: right;
   width: 52px;

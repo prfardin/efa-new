@@ -4,41 +4,24 @@ import { ref } from 'vue'
 
 
 interface Props {
-  data: [{
-    cell: [{
-      cls: any
-      t: any
-      tag: any
-    }]
-  }]
-
+  data: [{}]
 }
 
-// const props = defineProps<Props>()
-//
-//
-const head = ref<any>([
-  { cls: 'is-grow', title: 's' },
-  { cls: '', title: 'ss' },
-  { cls: '', title: 'ss' },
-  { cls: '', title: 'ss' },
-  { cls: 'cell-end', title: 'sssss' }
-])
+
+const props = defineProps<Props>()
+
+
 
 </script>
 
 <template>
   <div class="flex-list">
     <div class="flex-list-header">
-      <span class="flex-list-header-item" v-for="(item, index) in head" :key="index" :class="item.cls">{{ item.title }}</span>
+      <slot name="head"/>
     </div>
     <div class="flex-list-inner">
-      <div class="flex-list-inner-item">
-        <div class="flex-list-inner-item-cell is-grow">test</div>
-        <div class="flex-list-inner-item-cell">test</div>
-        <div class="flex-list-inner-item-cell">test</div>
-        <div class="flex-list-inner-item-cell">test</div>
-        <div class="flex-list-inner-item-cell cell-end">test</div>
+      <div class="flex-list-inner-item" v-for="(cell, index) in props.data" :key="index">
+        <slot name="cell" v-bind="cell" />
       </div>
     </div>
   </div>
@@ -53,7 +36,7 @@ const head = ref<any>([
   padding: 0 10px;
 }
 
-.flex-list-header-item {
+.flex-list-header > * {
   flex: 1 1 0;
   display: flex;
   align-items: center;
@@ -70,12 +53,11 @@ const head = ref<any>([
   margin-bottom: 10px;
 }
 
-.flex-list-inner-item-cell {
+.flex-list-inner-item > * {
   flex: 1 1 0;
   display: flex;
   align-items: center;
 }
-
 
 .is-grow {
   flex-grow: 2;
