@@ -3,8 +3,8 @@ import { formData } from '@sc/fetch'
 import { useRouter } from 'vue-router'
 
 // Components
-import PrButton from '@c/core/button.vue'
-import PrGrid from '@c/core/grid.vue'
+import PrButton from '@c/core/PrButton.vue'
+import PrGrid from '@c/core/PrGrid.vue'
 import PrLink from '@c/core/link.vue'
 import PrLabel from '@c/core/form/label.vue'
 import PrInput from '@c/core/form/input.vue'

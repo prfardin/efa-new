@@ -6,14 +6,14 @@ import { heightViewport, RefElement } from '@u/util'
 
 
 // components
-import PrButton from '@c/core/button.vue'
+import PrButton from '@c/core/PrButton.vue'
 import PrLink from '@c/core/link.vue'
 import PrIcon from '@c/core/icon.vue'
-import PrSection from '@c/core/section.vue'
+import PrSection from '@c/core/PrSection.vue'
 import PrTile from '@c/core/tile.vue'
-import PrGrid from '@c/core/grid.vue'
+import PrGrid from '@c/core/PrGrid.vue'
 import PrList from '@c/core/list.vue'
-import PrContainer from '@c/core/container.vue'
+import PrContainer from '@c/core/PrContainer.vue'
 
 // images
 import Map from '@i/auth/map.svg'

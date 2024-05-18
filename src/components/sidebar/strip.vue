@@ -3,16 +3,16 @@ import PrLink from '@c/core/link.vue'
 import PrNav from '@c/core/nav.vue'
 import Avatar from '@i/avatar.png'
 
-const props = defineProps(['test'])
+const props = defineProps(['checkWrapper'])
 
 
 
 </script>
 
 <template>
-  <div class="pr-sidebar-strip">
-    <transition name="fade">
-      <pr-link tag="a" class="pr-sidebar-accordion is-pusher" v-show="!props.test" icon="angle-right" :ratio="0.8" @click="$emit('someEvent')"></pr-link>
+  <div class="pr-sidebar-strip" :class="{ 'pr-box-shadow-right': !props.checkWrapper}">
+    <transition>
+      <pr-link tag="a" class="pr-sidebar-accordion is-open" v-show="!props.checkWrapper" icon="angle-right" :ratio="0.8" @click="$emit('openWrapper')"></pr-link>
     </transition>
     <div class="pr-sidebar-strip-header">
       <div class="pr-sidebar-strip-header-wrapper">
@@ -70,20 +70,24 @@ const props = defineProps(['test'])
   z-index: 5;
 }
 
-.pr-sidebar-accordion.is-pusher {
+.pr-sidebar-accordion.is-open {
   border-radius: 0 12px 12px 0;
   right: -19px;
   background-color: rgba(22, 23, 25, 0.12);
 }
 
-.fade-enter-active,
-.fade-leave-active {
-  transition: all 0.5s ease;
+.v-enter-active {
+  transition: opacity 0.6s ease-in-out;
 }
 
-.fade-enter-from,
-.fade-leave-to {
-  transform: translateX(-30px);
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+.pr-box-shadow-right {
+  box-shadow: 1px 0 17px 0 rgba(136, 136, 136, 0.15);
+  transition: opacity 0.6s ease-in-out;
 }
 
 </style>

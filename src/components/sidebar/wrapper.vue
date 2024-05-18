@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import PrButton from '@c/core/button.vue'
+import PrButton from '@c/core/PrButton.vue'
 import PrLink from '@c/core/link.vue'
 import PrIcon from '@c/core/icon.vue'
 import PrNav from '@c/core/nav.vue'
@@ -9,17 +9,11 @@ import ColorCircle from '@i/color_circle.svg'
 
 const { t } = useI18n()
 
-const emit = defineEmits(['someEvent'])
-
-function buttonClick() {
-  emit('someEvent')
-}
-
 </script>
 
 <template>
   <div class="pr-sidebar-wrapper uk-light pr-light">
-    <pr-link tag="a" class="pr-sidebar-accordion" icon="angle-left" :ratio="0.8" @click="buttonClick"></pr-link>
+    <pr-link tag="a" class="pr-sidebar-accordion" icon="angle-left" :ratio="0.8" @click="$emit('closeWrapper')"></pr-link>
     <div class="pr-sidebar-header">
       <div class="pr-sidebar-header-wrapper">
         <span class="pr-sidebar-header-line"></span>

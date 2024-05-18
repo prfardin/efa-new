@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
 // Components
-import PrButton from '@c/core/button.vue'
+import PrButton from '@c/core/PrButton.vue'
 
 
 </script>

@@ -15,7 +15,9 @@ import {
   InputClassType,
   TextareaClassType,
   LabelClassType,
-  SpinnerClassType
+  SpinnerClassType,
+  AvatarClassType,
+  CardClassType
 } from './classes'
 
 /**
@@ -180,3 +182,21 @@ export interface LabelPropsType extends LabelClassType {
 export interface SpinnerPropsType extends SpinnerClassType {
   tag?: 'span' | string
 }
+
+/**
+ * Avatar Props Types
+ */
+
+export interface AvatarPropsType extends AvatarClassType {
+  tag?: string
+  img: string
+}
+
+/**
+ * Card Props Types
+ */
+
+export interface CardPropsType extends CardClassType {
+
+}
+

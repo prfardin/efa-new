@@ -1,46 +1,129 @@
 <script setup lang="ts">
-import Sidebar from '@c/sidebar/sidebar.vue'
+import { navbar } from '@u/util'
+import { onMounted, ref } from 'vue'
+import Avatar from '@i/avatar.png'
+
+// component
+import PrAvatar from '@c/core/PrAvatar.vue'
+import PrSection from '@c/core/PrSection.vue'
+import PrContainer from '@c/core/PrContainer.vue'
 import Wrapper from '@c/sidebar/wrapper.vue'
 import Strip from '@c/sidebar/strip.vue'
-import { ref } from 'vue'
+
+// composable
+import { useToggle } from '@sc/Composable/Toggle'
 
 
-const wrapperPushed = ref<boolean>(true)
 
-function test() {
-  wrapperPushed.value = !wrapperPushed.value
-}
+
+
+
+const { value, toggle } = useToggle();
+
+const elNavbar = ref<any>(null)
+
+onMounted( () => {
+  navbar(elNavbar.value)
+
+})
+
+
 </script>
 
 <template>
-  <strip @some-event="test" :test="wrapperPushed" />
+  <strip @open-wrapper="toggle()" :check-wrapper="!value" />
   <transition name="slide">
-    <wrapper @some-event="test" v-if="wrapperPushed" />
+    <wrapper @close-wrapper="toggle()" v-if="!value" />
   </transition>
-  <div class="view-wrapper" :class="{'is-pushed': wrapperPushed}">
-    <div class="uk-section uk-section-default uk-height-1-1" style="height: 100vh">
-      <div class="uk-container">
-        <div>ssss</div>
+  <div class="view-wrapper" :class="{'is-pushed': !value}">
+    <pr-section class="uk-padding-remove-top uk-height-1-1" style="height: 100vh" default>
+      <div class="uk-margin-bottom">
+        <nav class="uk-navbar-container uk-navbar-transparent">
+          <pr-container class="uk-container">
+            <div ref="elNavbar">
+              <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                  <li>
+                    <h1 class="uk-margin-remove uk-h2">shop name</h1>
+                  </li>
+                </ul>
+              </div>
+              <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                  <li>
+                    <a href="#">
+                    <span class="pr-navbar-item">
+                      <span uk-icon="icon: sun; ratio: 1.1"></span>
+                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                    <span class="pr-navbar-item">
+                      <span uk-icon="icon: bell" ></span>
+                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                    <span class="pr-navbar-item">
+                      <span uk-icon="icon: create-dashboard; ratio: .8" ></span>
+                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <pr-avatar :img="Avatar" small circle />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </pr-container>
+        </nav>
       </div>
-    </div>
+      <pr-container class="uk-container">
+        <router-view></router-view>
+      </pr-container>
+    </pr-section>
   </div>
 </template>
 
 <style lang="less">
 
+.pr-navbar-item {
+  border-radius: 999px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e5e7eb;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.uk-navbar-nav > li > a {
+  padding: 0;
+}
+
+.uk-navbar-nav {
+  gap: .5rem;
+}
+
 .slide-enter-active,
 .slide-leave-active {
-  transition: opacity 0.3s ease;
+  transition: opacity .3s ease-in-out;
 }
 
 .view-wrapper {
   position: relative;
   height: 100%;
   min-height: 100vh;
-  width: calc(100% - 80px);
-  margin-inline-start: 80px;
+  width: calc(100% - 78px);
+  margin-inline-start: 78px;
   background: var(--background-grey);
-  transition: all .3s;
+  transition: all .3s ease-in-out;
 }
 
 .is-pushed {

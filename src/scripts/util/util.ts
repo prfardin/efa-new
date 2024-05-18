@@ -4,9 +4,10 @@ import {
   UIkitGridOptions,
   UIkitIconOptions,
   UIkitHeightViewportOptions,
-  UIkitNavOptions
+  UIkitNavOptions,
+  UIkitNavbarOptions,
+  UIkitDropOptions
 } from './types'
-import { UIkitDropOptions } from 'uikit/dist/js/uikit'
 
 // define type for UIkit or HTML elements
 export type Element = object | Ref | HTMLElement | string
@@ -34,6 +35,11 @@ export function heightViewport(el: Element, options?: UIkitHeightViewportOptions
 // set nav
 export function nav(el: Element, options?: UIkitNavOptions) {
   return UIkit.nav(el, options)
+}
+
+// set nav
+export function navbar(el: Element, options?: UIkitNavbarOptions) {
+  return UIkit.navbar(el, options)
 }
 
 // set drop

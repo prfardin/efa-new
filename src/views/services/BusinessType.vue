@@ -6,7 +6,7 @@ import { ref } from 'vue'
 
 // components
 import PrIcon from '@c/core/icon.vue'
-import PrGrid from '@c/core/grid.vue'
+import PrGrid from '@c/core/PrGrid.vue'
 import { useI18n } from 'vue-i18n'
 import router from '@/router'
 

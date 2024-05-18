@@ -3,10 +3,10 @@ import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { formData } from '@sc/fetch'
 import { useI18n } from 'vue-i18n'
-import PrGrid from '@c/core/grid.vue'
+import PrGrid from '@c/core/PrGrid.vue'
 import PrInput from '@c/core/form/input.vue'
 import PrLabel from '@c/core/form/label.vue'
-import PrButton from '@c/core/button.vue'
+import PrButton from '@c/core/PrButton.vue'
 
 
 const loader = ref(false)

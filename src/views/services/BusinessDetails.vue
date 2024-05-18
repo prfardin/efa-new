@@ -5,13 +5,13 @@ import { useRouter } from 'vue-router'
 
 
 // Components
-import PrGrid from '@c/core/grid.vue'
+import PrGrid from '@c/core/PrGrid.vue'
 import PrInput from '@c/core/form/input.vue'
 import PrLabel from '@c/core/form/label.vue'
 import PrIcon from '@c/core/icon.vue'
 import PrTextarea from '@c/core/form/PrTextarea.vue'
 import PrSelectBox from '@c/core/form/PrSelectBox.vue'
-import PrButton from '@c/core/button.vue'
+import PrButton from '@c/core/PrButton.vue'
 import PrLink from '@c/core/link.vue'
 
 

@@ -458,3 +458,66 @@ export function spinnerClassObject(
     }
   ]
 }
+
+/**
+ * Avatar Classes
+ */
+
+export interface AvatarClassType {
+  xSmall?: boolean
+  small?: boolean
+  large?: boolean
+  rounded?: boolean
+  circle?: boolean
+}
+
+export const defaultAvatarCls = 'pr-avatar'
+
+export function avatarClassObject(
+  props: AvatarClassType,
+  AvatarCls: string = defaultAvatarCls
+) {
+  return [
+    AvatarCls,
+    {
+      [`${AvatarCls}-xsmall`]: props.xSmall,
+      [`${AvatarCls}-small`]: props.small,
+      [`${AvatarCls}-large`]: props.large,
+      [`${AvatarCls}-rounded`]: props.rounded,
+      [`${AvatarCls}-circle`]: props.circle,
+    }
+  ]
+}
+
+/**
+ * Card Classes
+ */
+export interface CardClassType {
+  default?: boolean
+  body?: boolean
+  primary?: boolean
+  secondary?: boolean
+  hover?: boolean
+  small?: boolean
+  large?: boolean
+}
+
+export const defaultCardCls = 'uk-card'
+
+export function cardClassObject(
+  props: CardClassType,
+  CardCls: string = defaultCardCls
+) {
+  return [
+    CardCls,
+    {
+      [`${CardCls}-default`]: props.default,
+      [`${CardCls}-body`]: props.body,
+      [`${CardCls}-primary`]: props.primary,
+      [`${CardCls}-secondary`]: props.secondary,
+      [`${CardCls}-hover`]: props.hover,
+      [`${CardCls}-small`]: props.small,
+      [`${CardCls}-large`]: props.large,
+    }
+  ]
+}

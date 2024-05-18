@@ -5,7 +5,14 @@ import { title } from 'process'
 // we use dynamic import
 // which lazy-loaded when the route is visited.
 const routes: RouteRecordRaw[] = [
-  { path: '/', component: Dashboard },
+  { path: '/',
+    component: Dashboard,
+    children: [
+      { path: '',
+        component: () => import('@v/dashboard/index.vue')
+      }
+    ]
+  },
   { path: '/:id', component: Dashboard },
   { path: '/about', component: () => import('@v/About.vue') }, // must remove
   {

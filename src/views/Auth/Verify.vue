@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import PrButton from '@c/core/button.vue'
+import PrButton from '@c/core/PrButton.vue'
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import PrInput from '../../components/core/form/input.vue'
-import PrGrid from '../../components/core/grid.vue'
+import PrGrid from '@c/core/PrGrid.vue'
 import { formData } from '@sc/fetch'
 
 const router = useRouter()

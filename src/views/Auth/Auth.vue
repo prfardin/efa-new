@@ -4,11 +4,11 @@ import { ref, onMounted } from 'vue'
 import { RefElement, heightViewport } from '@u/util'
 
 // components
-import PrButton from '@c/core/button.vue'
-import PrSection from '@c/core/section.vue'
+import PrButton from '@c/core/PrButton.vue'
+import PrSection from '@c/core/PrSection.vue'
 import PrTile from '@c/core/tile.vue'
-import PrGrid from '@c/core/grid.vue'
-import PrContainer from '@c/core/container.vue'
+import PrGrid from '@c/core/PrGrid.vue'
+import PrContainer from '@c/core/PrContainer.vue'
 
 // images
 import Board from '@i/auth/board.svg'
