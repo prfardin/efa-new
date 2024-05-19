@@ -12,10 +12,22 @@ import UIkitHeightViewportOptions = UIkit.UIkitHeightViewportOptions
 import UIkitNavOptions = UIkit.UIkitNavOptions
 import UIkitNavbarOptions = UIkit.UIkitNavbarOptions
 import UIkitDropOptions = UIkit.UIkitDropOptions
+import UIkitOffcanvasOptions = UIkit.UIkitOffcanvasOptions
+import UIkitToggleOptions = UIkit.UIkitToggleOptions
 
 interface FormData {
   busy: boolean
   data: any
 }
 
-export { UIkitGridOptions, UIkitIconOptions, UIkitHeightViewportOptions, UIkitNavOptions, UIkitNavbarOptions, UIkitDropOptions, FormData }
+export {
+  UIkitGridOptions,
+  UIkitIconOptions,
+  UIkitHeightViewportOptions,
+  UIkitNavOptions,
+  UIkitNavbarOptions,
+  UIkitDropOptions,
+  UIkitOffcanvasOptions,
+  UIkitToggleOptions,
+  FormData
+}

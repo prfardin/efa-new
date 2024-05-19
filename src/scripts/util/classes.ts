@@ -125,6 +125,10 @@ export function listClassObject(props: ListClassType, listCls: string = defaultL
  * Section Classes
  */
 export interface SectionClassType extends BackgroundTypes {
+  default?: boolean
+  muted?: boolean
+  primary?: boolean
+  secondary?: boolean
   preserve?: boolean
   xsmall?: boolean
   small?: boolean
@@ -146,6 +150,10 @@ export function sectionClassObject(
     ...backgroundCls(sectionCls, props),
     {
       preserveCls: props.preserve,
+      [`${sectionCls}-default`]: props.default,
+      [`${sectionCls}-muted`]: props.muted,
+      [`${sectionCls}-primary`]: props.primary,
+      [`${sectionCls}-secondary`]: props.secondary,
       [`${sectionCls}-xsmall`]: props.xsmall,
       [`${sectionCls}-small`]: props.small,
       [`${sectionCls}-large`]: props.large,
@@ -466,7 +474,9 @@ export function spinnerClassObject(
 export interface AvatarClassType {
   xSmall?: boolean
   small?: boolean
+  medium?: boolean
   large?: boolean
+  border?: boolean
   rounded?: boolean
   circle?: boolean
 }
@@ -482,7 +492,9 @@ export function avatarClassObject(
     {
       [`${AvatarCls}-xsmall`]: props.xSmall,
       [`${AvatarCls}-small`]: props.small,
+      [`${AvatarCls}-medium`]: props.medium,
       [`${AvatarCls}-large`]: props.large,
+      [`${AvatarCls}-border`]: props.border,
       [`${AvatarCls}-rounded`]: props.rounded,
       [`${AvatarCls}-circle`]: props.circle,
     }
@@ -497,6 +509,7 @@ export interface CardClassType {
   body?: boolean
   primary?: boolean
   secondary?: boolean
+  border?: boolean
   hover?: boolean
   small?: boolean
   large?: boolean
@@ -515,6 +528,7 @@ export function cardClassObject(
       [`${CardCls}-body`]: props.body,
       [`${CardCls}-primary`]: props.primary,
       [`${CardCls}-secondary`]: props.secondary,
+      [`${CardCls}-border`]: props.border,
       [`${CardCls}-hover`]: props.hover,
       [`${CardCls}-small`]: props.small,
       [`${CardCls}-large`]: props.large,

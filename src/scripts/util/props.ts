@@ -19,6 +19,7 @@ import {
   AvatarClassType,
   CardClassType
 } from './classes'
+import { RouteLocationRaw } from 'vue-router'
 
 /**
  * Section Props Types
@@ -88,7 +89,7 @@ export interface ButtonPropsType extends ButtonClassType {
  */
 export interface LinkPropsType extends LinkClassType {
   tag?: 'router-link' | 'a'
-  to?: string
+  to?: RouteLocationRaw
   href?: string
   slotClass?: string
   iconClass?: string
@@ -181,6 +182,7 @@ export interface LabelPropsType extends LabelClassType {
  */
 export interface SpinnerPropsType extends SpinnerClassType {
   tag?: 'span' | string
+  mode?: 'line' | 'circle'
 }
 
 /**
@@ -189,7 +191,7 @@ export interface SpinnerPropsType extends SpinnerClassType {
 
 export interface AvatarPropsType extends AvatarClassType {
   tag?: string
-  img: string
+  cls?: string
 }
 
 /**
@@ -198,5 +200,19 @@ export interface AvatarPropsType extends AvatarClassType {
 
 export interface CardPropsType extends CardClassType {
 
+}
+
+/**
+ * Offcanvas Props Types
+ */
+
+export interface OffcanvasPropsType {
+  mode?: 'slide' | 'reveal' | 'push' | 'none'
+  flip?: boolean | undefined
+  overlay?: boolean | undefined
+  escClose?: boolean | undefined
+  bgClose?: boolean | undefined
+  container?: string | boolean | undefined
+  id: string
 }
 

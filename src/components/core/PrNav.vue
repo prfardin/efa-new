@@ -1,19 +1,16 @@
 <script setup lang="ts">
-import { Element, nav } from '@u/util'
+import { NavPropsType } from '@u/props'
+import { nav, RefElement } from '@u/util'
 import { ref, onMounted } from 'vue'
 
-// must remove with future release of vue and must use as
-// import { NavPropsType } from "@bs/scripts/util/props"
+
 // must change
-export interface NavPropsType {
-  hasNavTag?: boolean
-}
 const props = withDefaults(defineProps<NavPropsType>(), {
   hasNavTag: false
 })
 
 // define template ref
-const el = ref<Element>(null)
+const el = ref<RefElement>(null)
 
 /**
  * set nav

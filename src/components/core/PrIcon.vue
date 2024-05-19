@@ -1,16 +1,14 @@
 <script setup lang="ts">
-import { Element, icon } from '@u/util'
-import { ref, onMounted, watchEffect } from 'vue'
-
-// must remove with future release of vue and must use as
 import { IconPropsType } from '@u/props'
+import { icon, RefElement } from '@u/util'
+import { ref, onMounted, watchEffect } from 'vue'
 
 const props = withDefaults(defineProps<IconPropsType>(), {
   tag: 'span'
 })
 
 // define template ref
-const el = ref<Element>(null)
+const el = ref<RefElement>(null)
 
 /**
  * do setIcon and watch props change

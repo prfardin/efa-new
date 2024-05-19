@@ -1,9 +1,7 @@
 <script setup lang="ts">
-
-
 import { CardPropsType } from '@u/props'
-import { computed } from 'vue'
 import { cardClassObject } from '@u/classes'
+import { computed } from 'vue'
 
 const props = withDefaults(defineProps<CardPropsType>(), {
 
@@ -19,6 +17,13 @@ const cardClass = computed(() => cardClassObject(props))
   </div>
 </template>
 
-<style scoped lang="less">
+<style scoped>
+.uk-card {
+  border: 1px solid transparent;
+}
+
+.uk-card-border {
+  border-color: #e5e7eb;
+}
 
 </style>

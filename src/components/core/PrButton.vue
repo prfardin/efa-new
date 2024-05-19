@@ -6,16 +6,15 @@
  * with no span tag, in future we most prevent from creating additional tag
  * when there is no default slots defined
  */
-import { useSlots, computed } from 'vue'
+import { ButtonPropsType } from '@u/props'
 import { buttonClassObject } from '@u/classes'
-import PrIcon from '@c/core/icon.vue'
-import PrSpinner from '@c/core/spinner.vue'
+import { useSlots, computed } from 'vue'
+import PrIcon from '@c/core/PrIcon.vue'
+import PrSpinner from '@c/core/PrSpinner.vue'
 
 // we must redesign ripple util and then use it. it's just for test
 import { useRipple } from '@u/ripple'
 
-// must remove with future release of vue and must use as
-import { ButtonPropsType } from '@u/props'
 
 const props = withDefaults(defineProps<ButtonPropsType>(), {
   tag: 'router-link',

@@ -12,11 +12,9 @@ import Strip from '@c/sidebar/strip.vue'
 
 // composable
 import { useToggle } from '@sc/Composable/Toggle'
-
-
-
-
-
+import PrIcon from '@c/core/PrIcon.vue'
+import PrOffCanvas from '@c/core/PrOffcanvas.vue'
+import PrToggle from '@c/core/PrToggle.vue'
 
 const { value, toggle } = useToggle();
 
@@ -24,7 +22,6 @@ const elNavbar = ref<any>(null)
 
 onMounted( () => {
   navbar(elNavbar.value)
-
 })
 
 
@@ -52,28 +49,32 @@ onMounted( () => {
                 <ul class="uk-navbar-nav">
                   <li>
                     <a href="#">
-                    <span class="pr-navbar-item">
-                      <span uk-icon="icon: sun; ratio: 1.1"></span>
-                    </span>
+                      <pr-avatar small circle border>
+                        <pr-icon icon="sun" ratio="1.1" />
+                      </pr-avatar>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
-                    <span class="pr-navbar-item">
-                      <span uk-icon="icon: bell" ></span>
-                    </span>
-                    </a>
+                    <pr-toggle tag="button" target="#test">
+                      <pr-avatar small circle border>
+                        <pr-icon icon="bell" />
+                      </pr-avatar>
+                    </pr-toggle>
+                    <pr-off-canvas id="test" />
+                  </li>
+                  <li>
+                    <pr-toggle tag="button" target="#my-id">
+                      <pr-avatar small circle border>
+                        <pr-icon icon="create-dashboard" ratio=".8" />
+                      </pr-avatar>
+                    </pr-toggle>
+                    <pr-off-canvas flip id="my-id" />
                   </li>
                   <li>
                     <a href="#">
-                    <span class="pr-navbar-item">
-                      <span uk-icon="icon: create-dashboard; ratio: .8" ></span>
-                    </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <pr-avatar :img="Avatar" small circle />
+                      <pr-avatar small circle cls="pr-cream-b-c">
+                        <img :src="Avatar" alt="" class="uk-object-cover">
+                      </pr-avatar>
                     </a>
                   </li>
                 </ul>

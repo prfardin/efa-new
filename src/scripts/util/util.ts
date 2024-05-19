@@ -6,8 +6,12 @@ import {
   UIkitHeightViewportOptions,
   UIkitNavOptions,
   UIkitNavbarOptions,
-  UIkitDropOptions
+  UIkitDropOptions,
+  UIkitOffcanvasOptions,
+  UIkitToggleOptions
 } from './types'
+
+
 
 // define type for UIkit or HTML elements
 export type Element = object | Ref | HTMLElement | string
@@ -37,7 +41,7 @@ export function nav(el: Element, options?: UIkitNavOptions) {
   return UIkit.nav(el, options)
 }
 
-// set nav
+// set navbar
 export function navbar(el: Element, options?: UIkitNavbarOptions) {
   return UIkit.navbar(el, options)
 }
@@ -46,6 +50,17 @@ export function navbar(el: Element, options?: UIkitNavbarOptions) {
 export function drop(el: Element, options?: UIkitDropOptions) {
   return UIkit.drop(el, options)
 }
+
+// set offcanvas
+export function offcanvas(el: Element, options?: UIkitOffcanvasOptions) {
+  return UIkit.offcanvas(el, options)
+}
+
+// set toggle
+export function toggle(el: Element, options?: UIkitToggleOptions) {
+  return UIkit.toggle(el, options)
+}
+
 
 // set util
 // need import

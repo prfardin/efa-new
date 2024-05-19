@@ -6,7 +6,7 @@ import { RefElement, heightViewport } from '@u/util'
 // components
 import PrButton from '@c/core/PrButton.vue'
 import PrSection from '@c/core/PrSection.vue'
-import PrTile from '@c/core/tile.vue'
+import PrTile from '@c/core/PrTile.vue'
 import PrGrid from '@c/core/PrGrid.vue'
 import PrContainer from '@c/core/PrContainer.vue'
 

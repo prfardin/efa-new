@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 // import { SelectBoxClassObject, SelectBoxIconClassObject } from '@u/classes'
-import { ref, onMounted } from 'vue'
-import { drop, RefElement } from '@u/util'
 import { SelectBoxPropsType } from '@u/props'
+import { drop, RefElement } from '@u/util'
+import { ref, onMounted } from 'vue'
 import UIkit from 'uikit'
 
 // set props with defaults
@@ -36,6 +36,7 @@ onMounted(() => {
     pos: 'bottom-center',
     offset: 5,
     boundary: '.pr-select',
+    // @ts-ignore
     stretch: 'x',
     flip: false
   })

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import prIcon from '@bc/core/icon.vue'
+import prIcon from '@bc/core/PrIcon.vue'
 import { buttonCls } from '@bs/scripts/util/classes'
 
 // must be import from util/classes

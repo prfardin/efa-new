@@ -1,13 +1,8 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { SpinnerPropsType } from '@u/props'
 import { spinnerClassObject } from '@u/classes'
+import { computed } from 'vue'
 
-// must remove with future release of vue and must use as
-// import { SpinnerPropsType } from "@bs/scripts/util/props"
-export interface SpinnerPropsType {
-  tag?: 'span' | string
-  mode?: 'line' | 'circle'
-}
 const props = withDefaults(defineProps<SpinnerPropsType>(), {
   tag: 'span',
   mode: 'line'

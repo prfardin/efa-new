@@ -1,10 +1,8 @@
 <script setup lang="ts">
-import { computed, ref, onMounted } from 'vue'
-import { inputClassObject, inputIconClassObject } from '@u/classes'
-import PrIcon from '@c/core/icon.vue'
-
-// must remove with future release of vue and must use as
 import { InputPropsType } from '@u/props'
+import { inputClassObject, inputIconClassObject } from '@u/classes'
+import { computed, ref, onMounted } from 'vue'
+import PrIcon from '@c/core/PrIcon.vue'
 
 const props = withDefaults(defineProps<InputPropsType>(), {
   type: 'text'

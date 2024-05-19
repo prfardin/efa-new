@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import PrButton from '@c/core/PrButton.vue'
-import PrLink from '@c/core/link.vue'
-import PrIcon from '@c/core/icon.vue'
-import PrNav from '@c/core/nav.vue'
+import PrLink from '@c/core/PrLink.vue'
+import PrIcon from '@c/core/PrIcon.vue'
+import PrNav from '@c/core/PrNav.vue'
 import Avatar from '@i/avatar.png'
 import ColorCircle from '@i/color_circle.svg'
 

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { labelClassObject } from '@u/classes'
-import PrIcon from '@c/core/icon.vue'
+import PrIcon from '@c/core/PrIcon.vue'
 
 // must remove with future release of vue and must use as
 import { LabelPropsType } from '@u/props'

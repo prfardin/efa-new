@@ -2,7 +2,7 @@
 import PrButton from '@c/core/PrButton.vue'
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
-import PrInput from '../../components/core/form/input.vue'
+import PrInput from '@c/core/form/PrInput.vue'
 import PrGrid from '@c/core/PrGrid.vue'
 import { formData } from '@sc/fetch'
 

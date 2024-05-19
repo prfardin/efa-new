@@ -1,9 +1,7 @@
 <script setup lang="ts">
-
-
 import { AvatarPropsType } from '@u/props'
-import { computed } from 'vue'
 import { avatarClassObject } from '@u/classes'
+import { computed } from 'vue'
 
 
 
@@ -17,44 +15,59 @@ const avatarClass = computed(() => avatarClassObject(props))
 </script>
 
 <template>
-  <component :is="tag" :class="avatarClass">
-    <img :src="img" alt="avatar" class="uk-object-cover">
+  <component :is="tag" :class="[avatarClass, cls]">
+    <slot />
   </component>
 </template>
 
 <style scoped>
 .pr-avatar {
+  --avatar-size: 40px;
   overflow: hidden;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f9eee8;
-  transition: 0.3s ease-in-out;
-  width: 40px;
-  height: 40px;
+  background-color: #fdfdfd;
+  color: #464964;
+  transition: 0.2s ease-in-out;
+  box-sizing: border-box;
+
+  &.pr-avatar-xsmall {
+    --avatar-size: 32px;
+  }
+
+  &.pr-avatar-small {
+    --avatar-size: 36px;
+  }
+
+  &.pr-avatar-medium {
+    --avatar-size: 48px;
+  }
+
+  &.pr-avatar-large {
+    --avatar-size: 64px;
+  }
+
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+
+  &.pr-avatar-border {
+    border: 1px solid #e5e7eb;
+  }
+
+  &.pr-avatar-rounded {
+    border-radius: 15px;
+  }
+
+  &.pr-avatar-circle {
+    border-radius: 999px;
+  }
 }
 
-.pr-avatar-xsmall {
-
+.pr-cream-b-c {
+  background-color: #f9eee8
 }
 
-.pr-avatar-small {
-  width: 36px;
-  height: 36px;
-}
-
-.pr-avatar-large {
-  width: 64px;
-  height: 64px;
-}
-
-.pr-avatar-rounded {
-  border-radius: 15px;
-}
-
-.pr-avatar-circle {
-  border-radius: 999px;
-}
 
 </style>

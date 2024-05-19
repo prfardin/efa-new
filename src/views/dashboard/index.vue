@@ -5,6 +5,7 @@ import PrAvatar from '@c/core/PrAvatar.vue'
 import PrGrid from '@c/core/PrGrid.vue'
 import PrButton from '@c/core/PrButton.vue'
 import PrCard from '@c/core/form/PrCard.vue'
+import PrIcon from '@c/core/PrIcon.vue'
 </script>
 
 <template>
@@ -12,8 +13,10 @@ import PrCard from '@c/core/form/PrCard.vue'
     <div class="uk-margin-medium-bottom">
       <pr-grid class="uk-flex-between uk-flex-middle uk-child-width-auto@m">
         <div>
-          <div class="uk-flex uk-flex-middle">
-            <pr-avatar :img="Avatar" large circle/>
+          <div class="uk-flex uk-flex-middle" >
+            <pr-avatar large circle cls="pr-cream-b-c">
+              <img :src="Avatar" alt="">
+            </pr-avatar>
             <div class="uk-margin-left">
               <h2 class="uk-h4 uk-margin-remove">Welcome back, Fardin</h2>
               <span>Happy to see you again on your dashboard.</span>
@@ -33,33 +36,87 @@ import PrCard from '@c/core/form/PrCard.vue'
       </pr-grid>
     </div>
     <div>
-      <pr-grid small>
-        <div class="uk-width-1-2">
-          <pr-card body>
+      <pr-grid small match>
+        <div class="uk-width-1-2@m">
+          <pr-card body border class="uk-border-rounded">
+            <h3 class="uk-card-title">Default</h3>
+            <div>
+              <pr-grid small class="uk-child-width-1-2@m">
+                <div>
+                  <pr-card body default small class="uk-border-rounded">
+                    <div class="uk-flex uk-flex-middle">
+                      <pr-avatar circle medium>
+                        <pr-icon icon="cog" />
+                      </pr-avatar>
+                      <div class="uk-margin-small-left">
+                        <div class="uk-h4 uk-margin-remove">131</div>
+                        <span>lorem lorem lorem</span>
+                      </div>
+                    </div>
+                  </pr-card>
+                </div>
+                <div>
+                  <pr-card body default small class="uk-border-rounded">
+                    <div class="uk-flex uk-flex-middle">
+                      <pr-avatar circle medium>
+                        <pr-icon icon="moneybag-alt" />
+                      </pr-avatar>
+                      <div class="uk-margin-small-left">
+                        <div class="uk-h4 uk-margin-remove">131</div>
+                        <span>lorem lorem lorem</span>
+                      </div>
+                    </div>
+                  </pr-card>
+                </div>
+                <div>
+                  <pr-card body default small class="uk-border-rounded">
+                    <div class="uk-flex uk-flex-middle">
+                      <pr-avatar circle medium>
+                        <pr-icon icon="comparison" />
+                      </pr-avatar>
+                      <div class="uk-margin-small-left">
+                        <div class="uk-h4 uk-margin-remove">131</div>
+                        <span>lorem lorem lorem</span>
+                      </div>
+                    </div>
+                  </pr-card>
+                </div>
+                <div>
+                  <pr-card body default small class="uk-border-rounded">
+                    <div class="uk-flex uk-flex-middle">
+                      <pr-avatar circle medium>
+                        <pr-icon icon="award" />
+                      </pr-avatar>
+                      <div class="uk-margin-small-left">
+                        <div class="uk-h4 uk-margin-remove">131</div>
+                        <span>lorem lorem lorem</span>
+                      </div>
+                    </div>
+                  </pr-card>
+                </div>
+              </pr-grid>
+            </div>
+          </pr-card>
+        </div>
+        <div class="uk-width-1-2@m">
+          <pr-card body border>
+            <h3 class="uk-card-title">Default</h3>
+          </pr-card>
+        </div>
+        <div class="uk-width-1-3@m">
+          <pr-card primary body>
             <h3 class="uk-card-title">Default</h3>
             <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </pr-card>
         </div>
-        <div class="uk-width-1-2">
-          <pr-card default body>
+        <div class="uk-width-1-3@m">
+          <pr-card body border>
             <h3 class="uk-card-title">Default</h3>
             <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </pr-card>
         </div>
-        <div class="uk-width-1-3">
-          <pr-card default body>
-            <h3 class="uk-card-title">Default</h3>
-            <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </pr-card>
-        </div>
-        <div class="uk-width-1-3">
-          <pr-card default body>
-            <h3 class="uk-card-title">Default</h3>
-            <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </pr-card>
-        </div>
-        <div class="uk-width-1-3">
-          <pr-card default body>
+        <div class="uk-width-1-3@m">
+          <pr-card body border>
             <h3 class="uk-card-title">Default</h3>
             <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </pr-card>

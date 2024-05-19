@@ -1,16 +1,8 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { ContainerPropsType } from '@u/props'
 import { containerClassObject } from '@u/classes'
+import { computed } from 'vue'
 
-// must remove with future release of vue and must use as
-// import { ContainerPropsType } from "@bs/scripts/util/props"
-export interface ContainerPropsType {
-  xsmall?: boolean
-  small?: boolean
-  large?: boolean
-  xlarge?: boolean
-  expand?: boolean
-}
 const props = defineProps<ContainerPropsType>()
 
 // define section classes from defined props

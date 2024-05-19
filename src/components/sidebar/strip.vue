@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import PrLink from '@c/core/link.vue'
-import PrNav from '@c/core/nav.vue'
+import PrLink from '@c/core/PrLink.vue'
+import PrNav from '@c/core/PrNav.vue'
 import Avatar from '@i/avatar.png'
 
 const props = defineProps(['checkWrapper'])
