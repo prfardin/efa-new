@@ -1,12 +1,32 @@
 <script setup lang="ts">
+import { OffcanvasPropsType } from '@u/props'
+import { modal, RefElement } from '@u/util'
+import { onMounted, ref } from 'vue'
+
+const el = ref<RefElement>(null)
+
+const props = withDefaults(defineProps<OffcanvasPropsType>(), {
+
+})
+
+onMounted(() => {
+  modal(el.value, {
+    "esc-close": props.escClose,
+    "bg-close": props.bgClose,
+    stack: props.stack,
+    container: props.container,
+    "cls-page": props.clsPage,
+    "cls-panel": props.clsPanel,
+    "sel-close": props.selClose,
+  })
+})
+
+
 
 </script>
 
 <template>
-  <button uk-toggle="target: #my-id" type="button"></button>
-
-  <!-- This is the modal -->
-  <div id="my-id" uk-modal>
+  <div :id="id" ref="el">
     <div class="uk-modal-dialog uk-modal-body">
       <h2 class="uk-modal-title"></h2>
       <button class="uk-modal-close" type="button"></button>

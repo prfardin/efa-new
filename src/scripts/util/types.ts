@@ -14,6 +14,7 @@ import UIkitNavbarOptions = UIkit.UIkitNavbarOptions
 import UIkitDropOptions = UIkit.UIkitDropOptions
 import UIkitOffcanvasOptions = UIkit.UIkitOffcanvasOptions
 import UIkitToggleOptions = UIkit.UIkitToggleOptions
+import UIkitModalOptions = UIkit.UIkitModalOptions
 
 interface FormData {
   busy: boolean
@@ -29,5 +30,6 @@ export {
   UIkitDropOptions,
   UIkitOffcanvasOptions,
   UIkitToggleOptions,
+  UIkitModalOptions,
   FormData
 }

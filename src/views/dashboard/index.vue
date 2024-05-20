@@ -6,10 +6,20 @@ import PrGrid from '@c/core/PrGrid.vue'
 import PrButton from '@c/core/PrButton.vue'
 import PrCard from '@c/core/form/PrCard.vue'
 import PrIcon from '@c/core/PrIcon.vue'
+import PrCheckBox from '@c/core/form/PrCheckBox.vue'
+import PrRadio from '@c/core/form/PrRadio.vue'
+import { ref } from 'vue'
+
+const picked = ref("one")
 </script>
 
 <template>
   <div>
+    <pr-radio name="test" value="one" v-model="picked" mode="circle" />
+    <pr-radio name="test" value="two" v-model="picked" />
+    <div>
+      <pr-check-box />
+    </div>
     <div class="uk-margin-medium-bottom">
       <pr-grid class="uk-flex-between uk-flex-middle uk-child-width-auto@m">
         <div>

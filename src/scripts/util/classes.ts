@@ -535,3 +535,24 @@ export function cardClassObject(
     }
   ]
 }
+
+/**
+ * Radio Classes
+ */
+export interface RadioClassType {
+  mode?: "square" | 'rounded' | 'circle'
+}
+
+export const defaultRadioCls = 'pr-radio'
+
+export function radioClassObject(
+  props: RadioClassType,
+  radioCls: string = defaultRadioCls
+) {
+  return [
+    radioCls,
+    {
+      [`${radioCls}-${props.mode}`]: props.mode
+    }
+  ]
+}

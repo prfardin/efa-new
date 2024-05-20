@@ -8,7 +8,8 @@ import {
   UIkitNavbarOptions,
   UIkitDropOptions,
   UIkitOffcanvasOptions,
-  UIkitToggleOptions
+  UIkitToggleOptions,
+  UIkitModalOptions
 } from './types'
 
 
@@ -59,6 +60,11 @@ export function offcanvas(el: Element, options?: UIkitOffcanvasOptions) {
 // set toggle
 export function toggle(el: Element, options?: UIkitToggleOptions) {
   return UIkit.toggle(el, options)
+}
+
+// set toggle
+export function modal(el: Element, options?: UIkitModalOptions) {
+  return UIkit.modal(el, options)
 }
 
 

@@ -7,7 +7,8 @@ import { onMounted, ref } from 'vue'
 
 
 const props = withDefaults(defineProps<OffcanvasPropsType>(), {
-
+  bgClose: true,
+  escClose: true
 })
 
 const el = ref<RefElement>(null)
@@ -23,6 +24,8 @@ onMounted(() => {
     container: props.container
   })
 })
+
+console.log(props.bgClose)
 
 </script>
 

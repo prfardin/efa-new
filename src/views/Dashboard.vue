@@ -55,7 +55,7 @@ onMounted( () => {
                     </a>
                   </li>
                   <li>
-                    <pr-toggle tag="button" target="#test">
+                    <pr-toggle href="#test">
                       <pr-avatar small circle border>
                         <pr-icon icon="bell" />
                       </pr-avatar>
@@ -63,7 +63,7 @@ onMounted( () => {
                     <pr-off-canvas id="test" />
                   </li>
                   <li>
-                    <pr-toggle tag="button" target="#my-id">
+                    <pr-toggle href="#my-id">
                       <pr-avatar small circle border>
                         <pr-icon icon="create-dashboard" ratio=".8" />
                       </pr-avatar>

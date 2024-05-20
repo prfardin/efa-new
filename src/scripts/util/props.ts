@@ -17,7 +17,8 @@ import {
   LabelClassType,
   SpinnerClassType,
   AvatarClassType,
-  CardClassType
+  CardClassType,
+  RadioClassType
 } from './classes'
 import { RouteLocationRaw } from 'vue-router'
 
@@ -216,3 +217,26 @@ export interface OffcanvasPropsType {
   id: string
 }
 
+/**
+ * Modal Props Types
+ */
+
+export interface OffcanvasPropsType {
+  escClose?: boolean | undefined
+  bgClose?: boolean | undefined
+  stack?: boolean | undefined
+  container?: string | boolean | undefined
+  clsPage?: string | undefined
+  clsPanel?: string | undefined
+  selClose?: string | undefined
+}
+
+/**
+ * Modal Props Types
+ */
+
+export interface RadioPropsType extends RadioClassType {
+  value: any
+  name: string
+  id?: string
+}
