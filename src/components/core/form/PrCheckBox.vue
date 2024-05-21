@@ -1,28 +1,33 @@
 <script setup lang="ts">
+import { CheckboxPropsType } from '@u/props'
+import { checkboxClassObject } from '@u/classes'
+import { computed, ref, watch } from 'vue'
 
-interface CheckboxProps {
-  modelValue: any
-  name?: string
-}
 
-const props = defineProps<CheckboxProps>()
+
+const props = withDefaults(defineProps<CheckboxPropsType>(), {
+  mode:'rounded'
+})
+
+const checkboxClass = computed(() => checkboxClassObject(props))
+
+const model = defineModel()
 
 </script>
 
 <template>
-  <div class="pr-checkbox-content pr-checkbox--checked pr-component--primary">
+  <div class="pr-checkbox-content">
     <div class="pr-checkbox-con">
-      <input class="pr-checkbox" type="checkbox" :name="name" :value="modelValue" :id="name" @click="$emit('onClick')">
-      <div class="pr-checkbox-mask">
+      <input class="pr-checkbox" type="checkbox" :value="value" :name="name" v-model="model" :id="name">
+      <div :class="checkboxClass">
         <i class="pr-icon-check">
-                    <span>
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                    </span>
+          <span>
+            <i class="line1"></i>
+            <i class="line2"></i>
+          </span>
         </i>
       </div>
     </div>
-    <label :for="name" class="pr-checkbox-label"> {{ name }} </label>
   </div>
 </template>
 
@@ -41,15 +46,14 @@ const props = defineProps<CheckboxProps>()
 }
 
 .pr-checkbox-con {
-  width: 19px;
-  height: 19px;
+  width: 20px;
+  height: 20px;
   border-radius: 5px;
   position: relative;
   z-index: 1
 }
 
 .pr-checkbox-mask {
-  border-radius: 20%;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -70,6 +74,15 @@ const props = defineProps<CheckboxProps>()
   justify-content: center;
   z-index: -1;
   box-sizing: border-box;
+  &.pr-checkbox-mask-square {
+    border-radius: 0;
+  }
+  &.pr-checkbox-mask-rounded {
+    border-radius: 5px;
+  }
+  &.pr-checkbox-mask-circle {
+    border-radius: 999px;
+  }
 }
 
 .pr-checkbox-mask i:not(.pr-icon-check) {
@@ -190,38 +203,6 @@ const props = defineProps<CheckboxProps>()
   transform: scale(1.2)
 }
 
-.pr-checkbox-label {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  margin-right: 8px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  font-size: 1rem;
-  line-height: normal;
-}
-
-.pr-checkbox-label,.pr-checkbox-label:before {
-  -webkit-transition: all .25s ease;
-  transition: all .25s ease
-}
-
-.pr-checkbox-label:before {
-  position: absolute;
-  width: 0;
-  height: 2px;
-  background: rgba(44,62,80,.6);
-  content: ""
-}
 
 @-webkit-keyframes rotateCheckboxLoading {
   0% {
@@ -245,12 +226,6 @@ const props = defineProps<CheckboxProps>()
     -webkit-transform: rotate(1turn);
     transform: rotate(1turn)
   }
-}
-
-.pr-checkbox--label-before .pr-checkbox-label {
-  -webkit-box-ordinal-group: 0;
-  -ms-flex-order: -1;
-  order: -1
 }
 
 .pr-icon-check {

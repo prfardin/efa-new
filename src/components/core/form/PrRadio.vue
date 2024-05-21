@@ -10,16 +10,9 @@ const props = withDefaults(defineProps<RadioPropsType>(), {
 
 const model = defineModel()
 
-const selected = ref(model.value)
-
 const isSelected = computed(() => {
   return  model.value === props.value
 })
-
-watch(
-  () => model.value,
-  newX => selected.value = newX
-)
 
 const radioClass = computed(() => radioClassObject(props))
 
@@ -58,8 +51,9 @@ const radioClass = computed(() => radioClassObject(props))
   margin: 0;
   padding: 0;
   position: relative;
+  box-sizing: border-box;
   z-index: 10;
-  &.square {
+  &.pr-radio-square {
     border-radius: 0;
   }
   &.pr-radio-rounded {

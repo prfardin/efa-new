@@ -15,6 +15,8 @@ import { useToggle } from '@sc/Composable/Toggle'
 import PrIcon from '@c/core/PrIcon.vue'
 import PrOffCanvas from '@c/core/PrOffcanvas.vue'
 import PrToggle from '@c/core/PrToggle.vue'
+import PrDrop from '@c/core/PrDrop.vue'
+import UIkit from 'uikit'
 
 const { value, toggle } = useToggle();
 
@@ -24,7 +26,30 @@ onMounted( () => {
   navbar(elNavbar.value)
 })
 
+const test = ref<any>(null)
 
+
+const currentToggle = ref('');
+
+const id = ref<any>({
+  profile: "#profile",
+  notification: "#notification",
+})
+
+function tt(key: string) {
+  UIkit.util.on('#drop', 'toggle', function () {
+    currentToggle.value = id.value[key];
+    console.log("ss")
+  });
+  UIkit.drop(test.value).show()
+  console.log(test.value)
+
+
+}
+
+const onToggleUpdate = (newToggle) => {
+  console.log('Toggle updated:', newToggle);
+};
 </script>
 
 <template>
@@ -48,7 +73,7 @@ onMounted( () => {
               <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav">
                   <li>
-                    <a href="#">
+                    <a id="profile" @click="tt('profile')">
                       <pr-avatar small circle border>
                         <pr-icon icon="sun" ratio="1.1" />
                       </pr-avatar>
@@ -71,7 +96,7 @@ onMounted( () => {
                     <pr-off-canvas flip id="my-id" />
                   </li>
                   <li>
-                    <a href="#">
+                    <a id="notification" @click="tt('notification')">
                       <pr-avatar small circle cls="pr-cream-b-c">
                         <img :src="Avatar" alt="" class="uk-object-cover">
                       </pr-avatar>
@@ -88,6 +113,7 @@ onMounted( () => {
       </pr-container>
     </pr-section>
   </div>
+  <pr-drop mode="click" :toggle="currentToggle" pos="bottom-right" @update:toggle="onToggleUpdate"/>
 </template>
 
 <style lang="less">

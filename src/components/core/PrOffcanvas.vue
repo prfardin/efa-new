@@ -4,8 +4,6 @@ import { offcanvas, RefElement } from '@u/util'
 import { onMounted, ref } from 'vue'
 
 
-
-
 const props = withDefaults(defineProps<OffcanvasPropsType>(), {
   bgClose: true,
   escClose: true
@@ -24,8 +22,6 @@ onMounted(() => {
     container: props.container
   })
 })
-
-console.log(props.bgClose)
 
 </script>
 

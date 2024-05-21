@@ -556,3 +556,25 @@ export function radioClassObject(
     }
   ]
 }
+
+
+/**
+ * Checkbox Classes
+ */
+export interface CheckboxClassType {
+  mode?: "square" | 'rounded' | 'circle'
+}
+
+export const defaultCheckboxCls = 'pr-checkbox-mask'
+
+export function checkboxClassObject(
+  props: CheckboxClassType,
+  checkboxCls: string = defaultCheckboxCls
+) {
+  return [
+    checkboxCls,
+    {
+      [`${checkboxCls}-${props.mode}`]: props.mode
+    }
+  ]
+}

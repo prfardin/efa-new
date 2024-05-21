@@ -18,8 +18,10 @@ import {
   SpinnerClassType,
   AvatarClassType,
   CardClassType,
-  RadioClassType
+  RadioClassType,
+  CheckboxClassType
 } from './classes'
+
 import { RouteLocationRaw } from 'vue-router'
 
 /**
@@ -221,7 +223,7 @@ export interface OffcanvasPropsType {
  * Modal Props Types
  */
 
-export interface OffcanvasPropsType {
+export interface ModalPropsType {
   escClose?: boolean | undefined
   bgClose?: boolean | undefined
   stack?: boolean | undefined
@@ -229,14 +231,58 @@ export interface OffcanvasPropsType {
   clsPage?: string | undefined
   clsPanel?: string | undefined
   selClose?: string | undefined
+  id: string
 }
 
 /**
- * Modal Props Types
+ * Drop Props Types
+ */
+
+export interface DropPropsType {
+  toggle?: string | boolean | undefined;
+  pos?: string | undefined;
+  stretch?: "x" | "y" | boolean | string;
+  mode?: "click" | "hover" | string;
+  delayShow?: number | undefined;
+  delayHide?: number | undefined;
+  autoUpdate?: boolean
+  display?: "dynamic" | "static" | undefined;
+  boundary?: string | undefined;
+  boundaryX?: string | undefined
+  boundaryY?: string | undefined
+  boundaryAlign?: boolean | undefined;
+  target?: string | boolean | undefined;
+  targetX?: string | boolean | undefined;
+  targetY?: string | boolean | undefined;
+  inset?: boolean | undefined
+  flip?: boolean | string | undefined;
+  shift?: boolean | undefined;
+  offset?: number | undefined;
+  animation?: string | undefined;
+  animateOut?: boolean | undefined;
+  bgScroll?: boolean | undefined;
+  closeOnScroll?: boolean | undefined;
+  duration?: number | undefined;
+  container?: boolean | undefined;
+}
+
+/**
+ * Radio Props Types
  */
 
 export interface RadioPropsType extends RadioClassType {
   value: any
   name: string
   id?: string
+}
+
+
+/**
+ * checkbox Props Types
+ */
+
+export interface CheckboxPropsType extends CheckboxClassType {
+  name: string
+  id?: string
+  value?: string | number | undefined
 }

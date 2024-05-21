@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { OffcanvasPropsType } from '@u/props'
+import { ModalPropsType } from '@u/props'
 import { modal, RefElement } from '@u/util'
 import { onMounted, ref } from 'vue'
 
 const el = ref<RefElement>(null)
 
-const props = withDefaults(defineProps<OffcanvasPropsType>(), {
+const props = withDefaults(defineProps<ModalPropsType>(), {
 
 })
 
@@ -20,8 +20,6 @@ onMounted(() => {
     "sel-close": props.selClose,
   })
 })
-
-
 
 </script>
 
