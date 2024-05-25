@@ -239,31 +239,31 @@ export interface ModalPropsType {
  */
 
 export interface DropPropsType {
-  toggle?: string | boolean | undefined;
-  pos?: string | undefined;
+  toggle?: string | boolean;
+  pos?: string;
   stretch?: "x" | "y" | boolean | string;
   mode?: "click" | "hover" | string;
-  delayShow?: number | undefined;
-  delayHide?: number | undefined;
+  delayShow?: number;
+  delayHide?: number;
   autoUpdate?: boolean
-  display?: "dynamic" | "static" | undefined;
-  boundary?: string | undefined;
-  boundaryX?: string | undefined
-  boundaryY?: string | undefined
-  boundaryAlign?: boolean | undefined;
-  target?: string | boolean | undefined;
-  targetX?: string | boolean | undefined;
-  targetY?: string | boolean | undefined;
-  inset?: boolean | undefined
-  flip?: boolean | string | undefined;
-  shift?: boolean | undefined;
-  offset?: number | undefined;
-  animation?: string | undefined;
-  animateOut?: boolean | undefined;
-  bgScroll?: boolean | undefined;
-  closeOnScroll?: boolean | undefined;
-  duration?: number | undefined;
-  container?: boolean | undefined;
+  display?: "dynamic" | "static";
+  boundary?: string;
+  boundaryX?: string
+  boundaryY?: string
+  boundaryAlign?: boolean;
+  target?: string | boolean;
+  targetX?: string | boolean;
+  targetY?: string | boolean;
+  inset?: boolean
+  flip?: boolean | string;
+  shift?: boolean;
+  offset?: number;
+  animation?: string;
+  animateOut?: boolean;
+  bgScroll?: boolean;
+  closeOnScroll?: boolean;
+  duration?: number;
+  container?: boolean;
 }
 
 /**

@@ -16,40 +16,33 @@ import PrIcon from '@c/core/PrIcon.vue'
 import PrOffCanvas from '@c/core/PrOffcanvas.vue'
 import PrToggle from '@c/core/PrToggle.vue'
 import PrDrop from '@c/core/PrDrop.vue'
+import { test } from 'mocha'
 import UIkit from 'uikit'
 
 const { value, toggle } = useToggle();
 
 const elNavbar = ref<any>(null)
 
+const test1 = ref<any>(null)
+
+const dropdown = ref<any>(null)
+
+function showDropdown(e: any) {
+  e.target.classList.add('uk-active')
+  setTimeout(() => {
+    dropdown.value.show()
+  }, 100)
+}
+
 onMounted( () => {
+  dropdown.value = UIkit.dropdown(test1.value, {
+    container: false,
+    target: '.test > li > a.uk-active'
+  })
+
   navbar(elNavbar.value)
 })
 
-const test = ref<any>(null)
-
-
-const currentToggle = ref('');
-
-const id = ref<any>({
-  profile: "#profile",
-  notification: "#notification",
-})
-
-function tt(key: string) {
-  UIkit.util.on('#drop', 'toggle', function () {
-    currentToggle.value = id.value[key];
-    console.log("ss")
-  });
-  UIkit.drop(test.value).show()
-  console.log(test.value)
-
-
-}
-
-const onToggleUpdate = (newToggle) => {
-  console.log('Toggle updated:', newToggle);
-};
 </script>
 
 <template>
@@ -73,11 +66,15 @@ const onToggleUpdate = (newToggle) => {
               <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav">
                   <li>
-                    <a id="profile" @click="tt('profile')">
+                    <a>
                       <pr-avatar small circle border>
                         <pr-icon icon="sun" ratio="1.1" />
                       </pr-avatar>
                     </a>
+                    <pr-drop id="drop" pos="bottom-right" mode="click" :offset="-5" :animate-out="true">
+                      <div>profile</div>
+                      <div>notification</div>
+                    </pr-drop>
                   </li>
                   <li>
                     <pr-toggle href="#test">
@@ -96,15 +93,43 @@ const onToggleUpdate = (newToggle) => {
                     <pr-off-canvas flip id="my-id" />
                   </li>
                   <li>
-                    <a id="notification" @click="tt('notification')">
+                    <a>
                       <pr-avatar small circle cls="pr-cream-b-c">
                         <img :src="Avatar" alt="" class="uk-object-cover">
                       </pr-avatar>
                     </a>
+                    <pr-drop id="drop" pos="bottom-right" mode="click" :animate-out="true">
+                      <div>profile</div>
+                      <div>notification</div>
+                    </pr-drop>
                   </li>
                 </ul>
               </div>
             </div>
+            <ul class="test">
+              <li>
+                <a href="#" @click="(e) => showDropdown(e)">Drop 1</a>
+              </li>
+              <li>
+                <a href="#">Drop 2</a>
+              </li>
+              <li>
+                <a href="#">Drop 3</a>
+              </li>
+              <li>
+                <div ref="test1">
+                  <ul class="uk-nav uk-dropdown-nav">
+                    <li class="uk-active"><a href="#">Active</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="uk-nav-header">Header</li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Item</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
           </pr-container>
         </nav>
       </div>
@@ -113,7 +138,7 @@ const onToggleUpdate = (newToggle) => {
       </pr-container>
     </pr-section>
   </div>
-  <pr-drop mode="click" :toggle="currentToggle" pos="bottom-right" @update:toggle="onToggleUpdate"/>
+
 </template>
 
 <style lang="less">
