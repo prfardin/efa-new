@@ -476,6 +476,7 @@ export interface AvatarClassType {
   small?: boolean
   medium?: boolean
   large?: boolean
+  xLarge?: boolean
   border?: boolean
   rounded?: boolean
   circle?: boolean
@@ -494,6 +495,7 @@ export function avatarClassObject(
       [`${AvatarCls}-small`]: props.small,
       [`${AvatarCls}-medium`]: props.medium,
       [`${AvatarCls}-large`]: props.large,
+      [`${AvatarCls}-xlarge`]: props.xLarge,
       [`${AvatarCls}-border`]: props.border,
       [`${AvatarCls}-rounded`]: props.rounded,
       [`${AvatarCls}-circle`]: props.circle,
@@ -506,9 +508,10 @@ export function avatarClassObject(
  */
 export interface CardClassType {
   default?: boolean
-  body?: boolean
+  muted?: boolean
   primary?: boolean
   secondary?: boolean
+  body?: boolean
   border?: boolean
   hover?: boolean
   small?: boolean
@@ -525,9 +528,10 @@ export function cardClassObject(
     CardCls,
     {
       [`${CardCls}-default`]: props.default,
-      [`${CardCls}-body`]: props.body,
+      [`${CardCls}-muted`]: props.muted,
       [`${CardCls}-primary`]: props.primary,
       [`${CardCls}-secondary`]: props.secondary,
+      [`${CardCls}-body`]: props.body,
       [`${CardCls}-border`]: props.border,
       [`${CardCls}-hover`]: props.hover,
       [`${CardCls}-small`]: props.small,

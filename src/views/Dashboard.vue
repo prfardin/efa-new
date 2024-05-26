@@ -11,37 +11,34 @@ import Wrapper from '@c/sidebar/wrapper.vue'
 import Strip from '@c/sidebar/strip.vue'
 
 // composable
-import { useToggle } from '@sc/Composable/Toggle'
+import { useToggle } from '@sc/Composable/useToggle'
 import PrIcon from '@c/core/PrIcon.vue'
 import PrOffCanvas from '@c/core/PrOffcanvas.vue'
 import PrToggle from '@c/core/PrToggle.vue'
 import PrDrop from '@c/core/PrDrop.vue'
-import { test } from 'mocha'
-import UIkit from 'uikit'
+import PrCard from '@c/core/PrCard.vue'
+import PrButton from '@c/core/PrButton.vue'
+import PrLink from '@c/core/PrLink.vue'
 
 const { value, toggle } = useToggle();
 
 const elNavbar = ref<any>(null)
 
-const test1 = ref<any>(null)
-
-const dropdown = ref<any>(null)
-
-function showDropdown(e: any) {
-  e.target.classList.add('uk-active')
-  setTimeout(() => {
-    dropdown.value.show()
-  }, 100)
-}
-
 onMounted( () => {
-  dropdown.value = UIkit.dropdown(test1.value, {
-    container: false,
-    target: '.test > li > a.uk-active'
-  })
-
   navbar(elNavbar.value)
 })
+
+const notifications = ref<any>([
+  { href:"/", img: Avatar, name: "saeed bayat", notif: "let a comment", time: "1 hour ago" },
+  { href:"/", img: Avatar, name: "saeed bayat", notif: "let a comment", time: "1 hour ago" },
+  { href:"/", img: Avatar, name: "saeed bayat", notif: "let a comment", time: "1 hour ago" },
+])
+
+const accounts = ref<any>([
+  { href:"/", img: Avatar, name: "saeed bayat", gmail: "saeedbayat@test.com" },
+  { href:"/", img: Avatar, name: "saeed bayat", gmail: "saeedbayat@test.com" },
+  { href:"/", img: Avatar, name: "saeed bayat", gmail: "saeedbayat@test.com" },
+])
 
 </script>
 
@@ -51,7 +48,7 @@ onMounted( () => {
     <wrapper @close-wrapper="toggle()" v-if="!value" />
   </transition>
   <div class="view-wrapper" :class="{'is-pushed': !value}">
-    <pr-section class="uk-padding-remove-top uk-height-1-1" style="height: 100vh" default>
+    <pr-section class="uk-padding-remove-top uk-height-1-1" muted style="height: 100vh" default>
       <div class="uk-margin-bottom">
         <nav class="uk-navbar-container uk-navbar-transparent">
           <pr-container class="uk-container">
@@ -71,18 +68,37 @@ onMounted( () => {
                         <pr-icon icon="sun" ratio="1.1" />
                       </pr-avatar>
                     </a>
-                    <pr-drop id="drop" pos="bottom-right" mode="click" :offset="-5" :animate-out="true">
-                      <div>profile</div>
-                      <div>notification</div>
-                    </pr-drop>
                   </li>
                   <li>
-                    <pr-toggle href="#test">
+                    <pr-toggle>
                       <pr-avatar small circle border>
                         <pr-icon icon="bell" />
                       </pr-avatar>
                     </pr-toggle>
-                    <pr-off-canvas id="test" />
+                    <pr-drop pos="bottom-right" mode="click" :offset="-5" :animate-out="true">
+                      <pr-card class="uk-border-rounded" border default>
+                        <div class="uk-card-header uk-flex uk-flex-middle uk-flex-between pr-padding-16">
+                          <h4 class="uk-h4 uk-margin-remove">Notification</h4>
+                          <pr-link to="">View All</pr-link>
+                        </div>
+                        <div class="uk-card-body uk-card-small uk-card-small pr-padding-16">
+                          <pr-link reset :to="n.href" v-for="(n, index) in notifications" :key="index">
+                            <div class="pr-flex-items">
+                              <div>
+                                <pr-avatar small circle cls="pr-cream-b-c">
+                                  <img :src="n.img" alt="" class="uk-object-cover">
+                                </pr-avatar>
+                              </div>
+                              <div>
+                                <span class="uk-text-bold uk-text-small">{{ n.name }}</span>
+                                <span class="uk-text-meta" style="margin-left: 8px">{{ n.notif }}</span>
+                                <div class="uk-text-meta">{{ n.time }}</div>
+                              </div>
+                            </div>
+                          </pr-link>
+                        </div>
+                      </pr-card>
+                    </pr-drop>
                   </li>
                   <li>
                     <pr-toggle href="#my-id">
@@ -90,46 +106,62 @@ onMounted( () => {
                         <pr-icon icon="create-dashboard" ratio=".8" />
                       </pr-avatar>
                     </pr-toggle>
-                    <pr-off-canvas flip id="my-id" />
+                    <pr-off-canvas flip overlay id="my-id">
+                      <template #title>
+                        <h3 class="uk-h3 uk-margin-remove">test</h3>
+                      </template>
+                      <template #content>
+                        <div class="uk-margin-medium-top">sss</div>
+                        <div class="uk-margin-medium-top">sss</div>
+                      </template>
+                    </pr-off-canvas>
                   </li>
                   <li>
-                    <a>
+                    <pr-toggle>
                       <pr-avatar small circle cls="pr-cream-b-c">
                         <img :src="Avatar" alt="" class="uk-object-cover">
                       </pr-avatar>
-                    </a>
-                    <pr-drop id="drop" pos="bottom-right" mode="click" :animate-out="true">
-                      <div>profile</div>
-                      <div>notification</div>
+                    </pr-toggle>
+                    <pr-drop class="pr-width-256" pos="bottom-right" mode="click" :offset="-5" :animate-out="true">
+                      <pr-card class="uk-border-rounded" border default>
+                        <div class="uk-card-header uk-flex uk-flex-middle uk-flex-column">
+                          <div class="uk-margin-bottom">
+                            <pr-avatar x-large circle cls="pr-cream-b-c">
+                              <img :src="Avatar" />
+                            </pr-avatar>
+                          </div>
+                          <div class="uk-text-center">
+                            <div class="uk-text-bold uk-text-small">saeed bayat</div>
+                            <div class="uk-text-small">saeedbayat@test.com</div>
+                          </div>
+                          <div class="uk-margin-small-top">
+                            <pr-button class="uk-width-1-1" default>Manage Account</pr-button>
+                          </div>
+                        </div>
+                        <div class="uk-card-body" style="padding: 6px 24px">
+                          <pr-link reset :to="a.href" v-for="(a, index) in accounts" :key="index">
+                            <div class="pr-flex-items">
+                              <div>
+                                <pr-avatar small circle cls="pr-cream-b-c">
+                                  <img :src="a.img" alt="" class="uk-object-cover">
+                                </pr-avatar>
+                              </div>
+                              <div>
+                                <div class="uk-text-bold uk-text-small">{{ a.name }}</div>
+                                <div class="uk-text-meta">{{ a.gmail }}</div>
+                              </div>
+                            </div>
+                          </pr-link>
+                        </div>
+                        <div class="uk-card-footer">
+                          <pr-button class="uk-width-1-1" default>Logout</pr-button>
+                        </div>
+                      </pr-card>
                     </pr-drop>
                   </li>
                 </ul>
               </div>
             </div>
-            <ul class="test">
-              <li>
-                <a href="#" @click="(e) => showDropdown(e)">Drop 1</a>
-              </li>
-              <li>
-                <a href="#">Drop 2</a>
-              </li>
-              <li>
-                <a href="#">Drop 3</a>
-              </li>
-              <li>
-                <div ref="test1">
-                  <ul class="uk-nav uk-dropdown-nav">
-                    <li class="uk-active"><a href="#">Active</a></li>
-                    <li><a href="#">Item</a></li>
-                    <li class="uk-nav-header">Header</li>
-                    <li><a href="#">Item</a></li>
-                    <li><a href="#">Item</a></li>
-                    <li class="uk-nav-divider"></li>
-                    <li><a href="#">Item</a></li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
           </pr-container>
         </nav>
       </div>
@@ -141,7 +173,47 @@ onMounted( () => {
 
 </template>
 
-<style lang="less">
+<style scoped>
+
+a:hover {
+ text-decoration: none;
+}
+
+.pr-padding-8 {
+  padding: 8px;
+}
+
+.pr-padding-16 {
+  padding: 16px;
+}
+
+.uk-card {
+  .uk-card-header {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .uk-card-footer {
+    border-top: 1px solid #e5e5e5;
+  }
+}
+
+.pr-flex-items {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: background-color .3s;
+}
+
+a {
+  .pr-flex-items {
+  padding: 8px;
+}
+.pr-flex-items:hover {
+  background-color: #f0f4f7;
+  }
+}
+
 
 .pr-navbar-item {
   border-radius: 999px;
@@ -198,16 +270,20 @@ onMounted( () => {
   background-size: 600px;
   animation: shine-avatar 1.6s infinite linear;
 }
-.post .line {
-  float: right;
-  width: 140px;
-  height: 16px;
-  margin-top: 12px;
-  border-radius: 7px;
-  background-image: linear-gradient(90deg, #ddd 0px, #e8e8e8 40px, #ddd 80px);
-  background-size: 600px;
-  animation: shine-lines 1.6s infinite linear;
+
+.post{
+  .line {
+    float: right;
+    width: 140px;
+    height: 16px;
+    margin-top: 12px;
+    border-radius: 7px;
+    background-image: linear-gradient(90deg, #ddd 0px, #e8e8e8 40px, #ddd 80px);
+    background-size: 600px;
+    animation: shine-lines 1.6s infinite linear;
+  }
 }
+
 .post .avatar + .line {
   margin-top: 11px;
   width: 100px;
@@ -224,8 +300,8 @@ onMounted( () => {
   100% {
     background-position: 140px;
   }
-}
-@keyframes shine-avatar {
+  }
+  @keyframes shine-avatar {
   0% {
     background-position: -32px;
   }

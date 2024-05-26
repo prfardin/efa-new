@@ -2,12 +2,11 @@
 import { DropPropsType } from '@u/props'
 import { drop, RefElement } from '@u/util'
 import { onMounted, ref } from 'vue'
-import PrCard from '@c/core/PrCard.vue'
+
 
 
 const props = withDefaults(defineProps<DropPropsType>(), {
   toggle: "- *",
-
 })
 
 const el = ref<RefElement>(null)
@@ -43,21 +42,22 @@ function setDrop() {
   })
 }
 
-
-
 onMounted(() => {
   setDrop()
 })
 
-
 </script>
 
 <template>
-    <div class="uk-card uk-card-body uk-card-default" ref="el">
-      <slot />
-    </div >
+  <div ref="el">
+    <slot />
+  </div>
 </template>
 
 <style scoped>
+
+.pr-width-256 {
+  width: 256px;
+}
 
 </style>

@@ -44,12 +44,12 @@ import PrIcon from '@c/core/PrIcon.vue'
     <div>
       <pr-grid small match>
         <div class="uk-width-1-2@m">
-          <pr-card body border class="uk-border-rounded">
+          <pr-card body border default class="uk-border-rounded">
             <h3 class="uk-card-title">Default</h3>
             <div>
               <pr-grid small class="uk-child-width-1-2@m">
                 <div>
-                  <pr-card body default small class="uk-border-rounded">
+                  <pr-card body muted small class="uk-border-rounded">
                     <div class="uk-flex uk-flex-middle">
                       <pr-avatar circle medium>
                         <pr-icon icon="cog" />
@@ -62,7 +62,7 @@ import PrIcon from '@c/core/PrIcon.vue'
                   </pr-card>
                 </div>
                 <div>
-                  <pr-card body default small class="uk-border-rounded">
+                  <pr-card body muted small class="uk-border-rounded">
                     <div class="uk-flex uk-flex-middle">
                       <pr-avatar circle medium>
                         <pr-icon icon="moneybag-alt" />
@@ -75,7 +75,7 @@ import PrIcon from '@c/core/PrIcon.vue'
                   </pr-card>
                 </div>
                 <div>
-                  <pr-card body default small class="uk-border-rounded">
+                  <pr-card body muted small class="uk-border-rounded">
                     <div class="uk-flex uk-flex-middle">
                       <pr-avatar circle medium>
                         <pr-icon icon="comparison" />
@@ -88,7 +88,7 @@ import PrIcon from '@c/core/PrIcon.vue'
                   </pr-card>
                 </div>
                 <div>
-                  <pr-card body default small class="uk-border-rounded">
+                  <pr-card body muted small class="uk-border-rounded">
                     <div class="uk-flex uk-flex-middle">
                       <pr-avatar circle medium>
                         <pr-icon icon="award" />
@@ -105,24 +105,24 @@ import PrIcon from '@c/core/PrIcon.vue'
           </pr-card>
         </div>
         <div class="uk-width-1-2@m">
-          <pr-card body border>
+          <pr-card body border default>
             <h3 class="uk-card-title">Default</h3>
           </pr-card>
         </div>
         <div class="uk-width-1-3@m">
-          <pr-card primary body>
-            <h3 class="uk-card-title">Default</h3>
-            <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </pr-card>
-        </div>
-        <div class="uk-width-1-3@m">
-          <pr-card body border>
+          <pr-card primary body default>
             <h3 class="uk-card-title">Default</h3>
             <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </pr-card>
         </div>
         <div class="uk-width-1-3@m">
-          <pr-card body border>
+          <pr-card body border default>
+            <h3 class="uk-card-title">Default</h3>
+            <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </pr-card>
+        </div>
+        <div class="uk-width-1-3@m">
+          <pr-card body border default>
             <h3 class="uk-card-title">Default</h3>
             <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </pr-card>

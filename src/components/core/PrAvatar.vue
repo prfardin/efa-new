@@ -49,6 +49,10 @@ const avatarClass = computed(() => avatarClassObject(props))
     --avatar-size: 64px;
   }
 
+  &.pr-avatar-xlarge {
+    --avatar-size: 80px;
+  }
+
   width: var(--avatar-size);
   height: var(--avatar-size);
 
