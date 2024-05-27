@@ -478,6 +478,7 @@ export interface AvatarClassType {
   large?: boolean
   xLarge?: boolean
   border?: boolean
+  borderHover?: boolean
   rounded?: boolean
   circle?: boolean
 }
@@ -497,6 +498,7 @@ export function avatarClassObject(
       [`${AvatarCls}-large`]: props.large,
       [`${AvatarCls}-xlarge`]: props.xLarge,
       [`${AvatarCls}-border`]: props.border,
+      [`${AvatarCls}-border-hover`]: props.borderHover,
       [`${AvatarCls}-rounded`]: props.rounded,
       [`${AvatarCls}-circle`]: props.circle,
     }

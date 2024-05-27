@@ -19,6 +19,8 @@ import PrDrop from '@c/core/PrDrop.vue'
 import PrCard from '@c/core/PrCard.vue'
 import PrButton from '@c/core/PrButton.vue'
 import PrLink from '@c/core/PrLink.vue'
+import PrSwitcher from '@c/core/PrSwitcher.vue'
+import PrProgress from '@c/core/PrProgress.vue'
 
 const { value, toggle } = useToggle();
 
@@ -38,6 +40,12 @@ const accounts = ref<any>([
   { href:"/", img: Avatar, name: "saeed bayat", gmail: "saeedbayat@test.com" },
   { href:"/", img: Avatar, name: "saeed bayat", gmail: "saeedbayat@test.com" },
   { href:"/", img: Avatar, name: "saeed bayat", gmail: "saeedbayat@test.com" },
+])
+
+const Activity = ref<any>([
+  { name: "Team" },
+  { name: "Projects" },
+  { name: "Schedule" },
 ])
 
 </script>
@@ -111,8 +119,212 @@ const accounts = ref<any>([
                         <h3 class="uk-h3 uk-margin-remove">test</h3>
                       </template>
                       <template #content>
-                        <div class="uk-margin-medium-top">sss</div>
-                        <div class="uk-margin-medium-top">sss</div>
+                        <div>
+                          <pr-switcher class="uk-margin-medium-top" :list="Activity"/>
+                          <div class="uk-switcher uk-margin-medium-top">
+                            <div>
+                              <pr-card class="uk-border-rounded uk-margin-small-bottom" border body small default>
+                                <div class="uk-flex uk-flex-middle uk-flex-between">
+                                  <div class="pr-flex-items">
+                                    <pr-avatar small circle class="pr-cream-b-c">
+                                      <img :src="Avatar" />
+                                    </pr-avatar>
+                                    <div>
+                                      <div class="uk-text-small uk-text-bold">You</div>
+                                      <div class="uk-text-meta">Product Manager</div>
+                                    </div>
+                                  </div>
+                                  <pr-link to="/">
+                                    <pr-avatar small circle border border-hover>
+                                      <pr-icon icon="line-arrow-right" ratio=".9" />
+                                    </pr-avatar>
+                                  </pr-link>
+                                </div>
+                              </pr-card>
+                              <pr-card class="uk-border-rounded uk-margin-small-bottom" border body small default>
+                                <div class="uk-flex uk-flex-middle uk-flex-between">
+                                  <div class="pr-flex-items">
+                                    <pr-avatar small circle class="pr-cream-b-c">
+                                      <img :src="Avatar" />
+                                    </pr-avatar>
+                                    <div>
+                                      <div class="uk-text-small uk-text-bold">You</div>
+                                      <div class="uk-text-meta">Product Manager</div>
+                                    </div>
+                                  </div>
+                                  <pr-link to="/">
+                                    <pr-avatar small circle border border-hover>
+                                      <pr-icon icon="line-arrow-right" ratio=".9" />
+                                    </pr-avatar>
+                                  </pr-link>
+                                </div>
+                              </pr-card>
+                              <pr-card class="uk-border-rounded uk-margin-small-bottom" border body small default>
+                                <div class="uk-flex uk-flex-middle uk-flex-between">
+                                  <div class="pr-flex-items">
+                                    <pr-avatar small circle class="pr-cream-b-c">
+                                      <img :src="Avatar" />
+                                    </pr-avatar>
+                                    <div>
+                                      <div class="uk-text-small uk-text-bold">You</div>
+                                      <div class="uk-text-meta">Product Manager</div>
+                                    </div>
+                                  </div>
+                                  <pr-link to="/">
+                                    <pr-avatar small circle border border-hover>
+                                      <pr-icon icon="line-arrow-right" ratio=".9" />
+                                    </pr-avatar>
+                                  </pr-link>
+                                </div>
+                              </pr-card>
+                              <pr-card class="uk-border-rounded uk-margin-small-bottom" border body small default>
+                                <div class="uk-flex uk-flex-middle uk-flex-between">
+                                  <div class="pr-flex-items">
+                                    <pr-avatar small circle class="pr-cream-b-c">
+                                      <img :src="Avatar" />
+                                    </pr-avatar>
+                                    <div>
+                                      <div class="uk-text-small uk-text-bold">You</div>
+                                      <div class="uk-text-meta">Product Manager</div>
+                                    </div>
+                                  </div>
+                                  <pr-link to="/">
+                                    <pr-avatar small circle border border-hover>
+                                      <pr-icon icon="line-arrow-right" ratio=".9" />
+                                    </pr-avatar>
+                                  </pr-link>
+                                </div>
+                              </pr-card>
+                            </div>
+                            <div>
+                              <pr-card class="uk-border-rounded uk-margin-small-bottom" border body small default>
+                                <div class="uk-flex uk-flex-middle uk-flex-between uk-margin-bottom">
+                                  <div class="pr-flex-items">
+                                    <pr-avatar small rounded style="background-color: rgb(124 58 237)">
+                                      <pr-icon icon="line-dollar-sign"  style="color: white"/>
+                                    </pr-avatar>
+                                    <div>
+                                      <div class="uk-text-small uk-text-bold">You</div>
+                                      <div class="uk-text-meta">Product Manager</div>
+                                    </div>
+                                  </div>
+                                  <pr-link to="/">
+                                    <pr-avatar small circle border border-hover>
+                                      <pr-icon icon="line-arrow-right" ratio=".9" />
+                                    </pr-avatar>
+                                  </pr-link>
+                                </div>
+                                <div class="uk-margin-bottom">
+                                  <pr-progress value="18" />
+                                </div>
+                                <div class="uk-flex uk-flex-between uk-flex-middle">
+                                  <span class="uk-text-muted">5/24</span>
+                                  <div class="uk-flex">
+                                    <pr-avatar class="uk-flex-inline" x-small circle border style="background-color: #9A2DE0; border-width: 2px; border-color: white;margin-inline-start: -.5rem;">
+                                      <img :src="Avatar" />
+                                    </pr-avatar>
+                                    <pr-avatar class="uk-flex-inline" x-small circle border style="background-color: #EDBD43; border-width: 2px; border-color: white;margin-inline-start: -.5rem;">
+                                      <img :src="Avatar" />
+                                    </pr-avatar>
+                                    <pr-avatar class="uk-flex-inline" x-small circle border style="background-color: #30C689; border-width: 2px; border-color: white;margin-inline-start: -.5rem;">
+                                      <img :src="Avatar" />
+                                    </pr-avatar>
+                                    <pr-avatar class="uk-flex-inline" x-small circle border style="background-color: #E2E8F0; border-width: 2px; border-color: white;margin-inline-start: -.5rem;">
+                                      <span class="uk-text-small">+3</span>
+                                    </pr-avatar>
+                                  </div>
+                                </div>
+                              </pr-card>
+                              <pr-card class="uk-border-rounded uk-margin-small-bottom" border body small default>
+                                <div class="uk-flex uk-flex-middle uk-flex-between uk-margin-bottom">
+                                  <div class="pr-flex-items">
+                                    <pr-avatar small rounded style="background-color: rgb(124 58 237)">
+                                      <pr-icon icon="line-dollar-sign"  style="color: white"/>
+                                    </pr-avatar>
+                                    <div>
+                                      <div class="uk-text-small uk-text-bold">You</div>
+                                      <div class="uk-text-meta">Product Manager</div>
+                                    </div>
+                                  </div>
+                                  <pr-link to="/">
+                                    <pr-avatar small circle border border-hover>
+                                      <pr-icon icon="line-arrow-right" ratio=".9" />
+                                    </pr-avatar>
+                                  </pr-link>
+                                </div>
+                                <div class="uk-margin-bottom">
+                                  <pr-progress value="59" />
+                                </div>
+                                <div class="uk-flex uk-flex-between uk-flex-middle">
+                                  <span class="uk-text-muted">5/24</span>
+                                  <div class="uk-flex">
+                                    <pr-avatar class="uk-flex-inline" x-small circle border style="background-color: #9A2DE0; border-width: 2px; border-color: white;margin-inline-start: -.5rem;">
+                                      <img :src="Avatar" />
+                                    </pr-avatar>
+                                    <pr-avatar class="uk-flex-inline" x-small circle border style="background-color: #EDBD43; border-width: 2px; border-color: white;margin-inline-start: -.5rem;">
+                                      <img :src="Avatar" />
+                                    </pr-avatar>
+                                    <pr-avatar class="uk-flex-inline" x-small circle border style="background-color: #30C689; border-width: 2px; border-color: white;margin-inline-start: -.5rem;">
+                                      <img :src="Avatar" />
+                                    </pr-avatar>
+                                    <pr-avatar class="uk-flex-inline" x-small circle border style="background-color: #E2E8F0; border-width: 2px; border-color: white;margin-inline-start: -.5rem;">
+                                      <span class="uk-text-small">+3</span>
+                                    </pr-avatar>
+                                  </div>
+                                </div>
+                              </pr-card>
+                              <pr-card class="uk-border-rounded uk-margin-small-bottom" border body small default>
+                                <div class="uk-flex uk-flex-middle uk-flex-between uk-margin-bottom">
+                                  <div class="pr-flex-items">
+                                    <pr-avatar small rounded style="background-color: rgb(124 58 237)">
+                                      <pr-icon icon="line-dollar-sign"  style="color: white"/>
+                                    </pr-avatar>
+                                    <div>
+                                      <div class="uk-text-small uk-text-bold">You</div>
+                                      <div class="uk-text-meta">Product Manager</div>
+                                    </div>
+                                  </div>
+                                  <pr-link to="/">
+                                    <pr-avatar small circle border border-hover>
+                                      <pr-icon icon="line-arrow-right" ratio=".9" />
+                                    </pr-avatar>
+                                  </pr-link>
+                                </div>
+                                <div class="uk-margin-bottom">
+                                  <pr-progress value="87" />
+                                </div>
+                                <div class="uk-flex uk-flex-between uk-flex-middle">
+                                  <span class="uk-text-muted">5/24</span>
+                                  <div class="uk-flex">
+                                    <pr-avatar class="uk-flex-inline" x-small circle border style="background-color: #9A2DE0; border-width: 2px; border-color: white;margin-inline-start: -.5rem;">
+                                      <img :src="Avatar" />
+                                    </pr-avatar>
+                                    <pr-avatar class="uk-flex-inline" x-small circle border style="background-color: #EDBD43; border-width: 2px; border-color: white;margin-inline-start: -.5rem;">
+                                      <img :src="Avatar" />
+                                    </pr-avatar>
+                                    <pr-avatar class="uk-flex-inline" x-small circle border style="background-color: #30C689; border-width: 2px; border-color: white;margin-inline-start: -.5rem;">
+                                      <img :src="Avatar" />
+                                    </pr-avatar>
+                                    <pr-avatar class="uk-flex-inline" x-small circle border style="background-color: #E2E8F0; border-width: 2px; border-color: white;margin-inline-start: -.5rem;">
+                                      <span class="uk-text-small">+3</span>
+                                    </pr-avatar>
+                                  </div>
+                                </div>
+                              </pr-card>
+                            </div>
+                            <div>
+                              <div class="pr-schedule">
+                                <pr-avatar tag="div" small circle border>
+                                  <pr-icon icon="line-phone" ratio=".7" />
+                                </pr-avatar>
+                                <div class="uk-margin-medium-left">
+                                  <div class="uk-text-bold">Call Danny at Colby's</div>
+                                  <div class="uk-text-meta">Today - 11:30am</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </template>
                     </pr-off-canvas>
                   </li>
@@ -173,7 +385,17 @@ const accounts = ref<any>([
 
 </template>
 
-<style scoped>
+<style>
+
+.pr-schedule {
+  display: flex;
+  position: relative;
+  padding-bottom: 32px;
+}
+
+.pr-schedule::after {
+  
+}
 
 a:hover {
  text-decoration: none;

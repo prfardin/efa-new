@@ -9,7 +9,9 @@ import {
   UIkitDropOptions,
   UIkitOffcanvasOptions,
   UIkitToggleOptions,
-  UIkitModalOptions
+  UIkitModalOptions,
+  UIkitSwiterOptions,
+  UIkitSwitcherOptions
 } from './types'
 
 
@@ -62,9 +64,15 @@ export function toggle(el: Element, options?: UIkitToggleOptions) {
   return UIkit.toggle(el, options)
 }
 
-// set toggle
+// set modal
 export function modal(el: Element, options?: UIkitModalOptions) {
   return UIkit.modal(el, options)
+}
+
+
+// set toggle
+export function switcher(el: Element, options?: UIkitSwitcherOptions | UIkitSwiterOptions) {
+  return UIkit.switcher(el, options)
 }
 
 

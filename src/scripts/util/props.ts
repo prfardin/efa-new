@@ -23,6 +23,7 @@ import {
 } from './classes'
 
 import { RouteLocationRaw } from 'vue-router'
+import { s } from 'vitest/dist/reporters-xEmem8D4'
 
 /**
  * Section Props Types
@@ -278,11 +279,40 @@ export interface RadioPropsType extends RadioClassType {
 
 
 /**
- * checkbox Props Types
+ * Checkbox Props Types
  */
 
 export interface CheckboxPropsType extends CheckboxClassType {
   name: string
   id?: string
   value?: string | number | undefined
+}
+
+/**
+ * Switcher Props Types
+ */
+
+export interface SwitcherPropsType {
+  connect?: string
+  toggle?: string
+  itemNav?: string
+  active?: number
+  animation?: string
+  duration?: number
+  swiping?: boolean
+  followFocus?: boolean
+  list: [{
+    name: string
+  }]
+}
+
+
+/**
+ * Progress Props Types
+ */
+
+export interface ProgressPropsType {
+  value: number
+  max?: number
+  id?: string
 }

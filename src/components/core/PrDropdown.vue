@@ -11,7 +11,6 @@ const dropdown = ref<any>(null)
 function showDropdown(e: any) {
   e.target.classList.add('uk-active')
   dropdown.value.show()
-
 }
 
 
