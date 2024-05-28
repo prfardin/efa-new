@@ -114,6 +114,14 @@ export interface IconPropsType {
  */
 export interface NavPropsType {
   hasNavTag?: boolean
+  targets?: string
+  toggle?: string
+  content?: string
+  collapsible?: boolean
+  multiple?: boolean
+  transition?: string
+  animation?: string
+  duration?: number
 }
 
 /**
@@ -240,31 +248,31 @@ export interface ModalPropsType {
  */
 
 export interface DropPropsType {
-  toggle?: string | boolean;
-  pos?: string;
-  stretch?: "x" | "y" | boolean | string;
-  mode?: "click" | "hover" | string;
-  delayShow?: number;
-  delayHide?: number;
+  toggle?: string | boolean
+  pos?: string
+  stretch?: "x" | "y" | boolean | string
+  mode?: "click" | "hover" | string
+  delayShow?: number
+  delayHide?: number
   autoUpdate?: boolean
-  display?: "dynamic" | "static";
-  boundary?: string;
+  display?: "dynamic" | "static"
+  boundary?: string
   boundaryX?: string
   boundaryY?: string
-  boundaryAlign?: boolean;
-  target?: string | boolean;
-  targetX?: string | boolean;
-  targetY?: string | boolean;
+  boundaryAlign?: boolean
+  target?: string | boolean
+  targetX?: string | boolean
+  targetY?: string | boolean
   inset?: boolean
-  flip?: boolean | string;
-  shift?: boolean;
-  offset?: number;
-  animation?: string;
-  animateOut?: boolean;
-  bgScroll?: boolean;
-  closeOnScroll?: boolean;
-  duration?: number;
-  container?: boolean;
+  flip?: boolean | string
+  shift?: boolean
+  offset?: number
+  animation?: string
+  animateOut?: boolean
+  bgScroll?: boolean
+  closeOnScroll?: boolean
+  duration?: number
+  container?: boolean
 }
 
 /**
@@ -312,7 +320,7 @@ export interface SwitcherPropsType {
  */
 
 export interface ProgressPropsType {
-  value: number
-  max?: number
+  value: string | number
+  max?: string | number
   id?: string
 }

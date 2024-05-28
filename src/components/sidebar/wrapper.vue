@@ -13,7 +13,6 @@ const { t } = useI18n()
 
 <template>
   <div class="pr-sidebar-wrapper uk-light pr-light">
-    <pr-link tag="a" class="pr-sidebar-accordion" icon="angle-left" :ratio="0.8" @click="$emit('closeWrapper')"></pr-link>
     <div class="pr-sidebar-header">
       <div class="pr-sidebar-header-wrapper">
         <span class="pr-sidebar-header-line"></span>

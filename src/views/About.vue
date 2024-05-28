@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import Sidebar from '@c/sidebar/sidebar.vue'
 </script>
 
 <template>
-  <sidebar />
+  <div />
   <div style="margin-right: 368px">
     <div class="uk-section uk-section-default uk-height-1-1">
       <div class="uk-container">

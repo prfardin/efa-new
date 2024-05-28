@@ -70,9 +70,14 @@ export function modal(el: Element, options?: UIkitModalOptions) {
 }
 
 
-// set toggle
+// set switcher
 export function switcher(el: Element, options?: UIkitSwitcherOptions | UIkitSwiterOptions) {
   return UIkit.switcher(el, options)
+}
+
+// set toggle
+export function tooltip(el: Element, options?: UIkitTooltipOptions) {
+  return UIkit.tooltip(el, options)
 }
 
 

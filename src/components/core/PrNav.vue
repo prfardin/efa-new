@@ -6,7 +6,9 @@ import { ref, onMounted } from 'vue'
 
 // must change
 const props = withDefaults(defineProps<NavPropsType>(), {
-  hasNavTag: false
+  hasNavTag: false,
+  targets: " > .uk-parent",
+  toggle: " > a"
 })
 
 // define template ref
@@ -18,8 +20,19 @@ const el = ref<RefElement>(null)
  * when defining component
  */
 function setNav() {
-  return nav(el.value)
+  return nav(el.value, {
+    targets: props.targets,
+    toggle: props.toggle,
+    content: props.content,
+    collapsible: props.collapsible,
+    multiple: props.multiple,
+    transition: props.transition,
+    animation: props.animation,
+    duration: props.duration
+  })
 }
+
+
 onMounted(() => {
   setNav()
 })

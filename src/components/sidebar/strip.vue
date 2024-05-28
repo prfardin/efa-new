@@ -1,93 +1,158 @@
 <script setup lang="ts">
+import { RefElement, tooltip } from '@u/util'
+import { onMounted, ref } from 'vue'
+
+// components
 import PrLink from '@c/core/PrLink.vue'
-import PrNav from '@c/core/PrNav.vue'
+
+// images
 import Avatar from '@i/avatar.png'
 
-const props = defineProps(['checkWrapper'])
+
+interface StripBody {
+  href: string
+  icon: string
+  title?: string
+}
+
+const stripBodyItem = ref<StripBody>([
+  {href: "/", icon: "create-dashboard", title: "1" },
+  {href: "#", icon: "folder-minus", title: "2" },
+  {href: "#", icon: "compass", title: "3" },
+  {href: "#", icon: "bell", title: "4" }
+])
+
+const stripFooterItem = ref<StripBody>([
+  {href: "#", icon: "create-dashboard" },
+  {href: "#", icon: "folder-minus" },
+  {href: "#", icon: "compass" },
+  {href: "#", icon: "bell" },
+])
+
+
+const el = ref<RefElement>(null)
+
+onMounted(() => {
+  tooltip(el.value, {
+    title: "test",
+    pos: "right",
+    animation: "uk-animation-slide-right-small",
+    duration: 200
+  })
+
+})
+
 
 
 
 </script>
 
 <template>
-  <div class="pr-sidebar-strip" :class="{ 'pr-box-shadow-right': !props.checkWrapper}">
-    <transition>
-      <pr-link tag="a" class="pr-sidebar-accordion is-open" v-show="!props.checkWrapper" icon="angle-right" :ratio="0.8" @click="$emit('openWrapper')"></pr-link>
-    </transition>
+  <div class="pr-sidebar-strip">
     <div class="pr-sidebar-strip-header">
-      <div class="pr-sidebar-strip-header-wrapper">
-        <span class="pr-sidebar-header-line"></span>
-        <span class="pr-sidebar-header-container">
-          <img :src="Avatar" alt="avatar" />
-          <span class="pr-sidebar-header-placeholder"></span>
-          <span class="pr-sidebar-header-letter">F</span>
-        </span>
-        <span class="pr-sidebar-header-status"></span>
-      </div>
+      <pr-link to="/" class="uk-flex uk-flex-center uk-flex-middle">
+        <img :src="Avatar" alt="avatar" width="40" height="40" />
+      </pr-link>
     </div>
-    <div class="pr-sidebar-strip-container">
-      <nav>
-        <pr-nav>
-          <li>
-            <pr-link class="pr-strip-item-muted" to="/about" icon="line-search" :ratio="0.7" />
-          </li>
-          <li><pr-link class="pr-icon-favourite" to="/about" icon="star" :ratio="0.7" /></li>
-          <li><pr-link to="/about" icon="create-dashboard" :ratio="0.8" /></li>
-          <li><pr-link class="uk-active" to="/about" icon="folder-minus" :ratio="0.8" /></li>
-          <li class="pr-item-has-notification">
-            <pr-link to="/about" icon="compass" :ratio="0.8" />
-          </li>
-          <li class="pr-item-has-badge">
-            <pr-link slot-class="pr-sidebar-strip-badge" to="/about" icon="bell" :ratio="0.8"
-              >2</pr-link
-            >
-          </li>
-          <li><pr-link to="/about" icon="notebooks" :ratio="0.8" /></li>
-          <li><pr-link to="/about" icon="bag" :ratio="0.8" /></li>
-          <li class="uk-nav-divider"></li>
-          <li class="pr-sidebar-strip-accordion">
-            <pr-link to="/about" icon="file-alt" :ratio="0.65"></pr-link>
-            <pr-link class="pr-accordion-collapse" to="/about" icon="angle-down" :ratio="0.8" />
-          </li>
-          <li>
-            <pr-link
-              class="pr-strip-item-primary"
-              icon-class="pr-border-circle"
-              to="/about"
-              icon="line-plus"
-              :ratio="0.7"
-            />
-          </li>
-        </pr-nav>
-      </nav>
-    </div>
+    <ul class="pr-sidebar-strip-body">
+      <li class="pr-sidebar-strip-item" v-for="(item, index) in stripBodyItem" :key="index">
+        <a :icon="item.icon" :to="item.href" ratio=".8" ref="el">sss</a>
+      </li>
+    </ul>
+    <ul class="pr-sidebar-strip-footer">
+      <li class="pr-sidebar-strip-item" v-for="(item, index) in stripFooterItem" :key="index">
+        <pr-link :icon="item.icon" :to="item.href" ratio=".8" />
+      </li>
+    </ul>
   </div>
 </template>
 
-<style scoped>
+<style>
+
+.uk-tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  right: 100%;
+  margin-bottom: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #666 transparent  transparent;
+}
+
+.uk-tooltip {
+  display: none;
+  position: absolute;
+  z-index: 1030;
+  --uk-position-offset: 10px;
+  --uk-position-viewport-offset: 10;
+  top: 0;
+  box-sizing: border-box;
+  max-width: 200px;
+  padding: 5px 10px;
+  background: #666;
+  border-radius: 2px;
+  color: #fdfdfd;
+  font-size: 14px;
+}
+
 .pr-sidebar-strip {
-  position: fixed;
-  z-index: 5;
+  border: 0 solid #e5e7eb;
+  border-right-width: 1px;
+  display: flex;
+  position: relative;
+  z-index: 20;
+  pointer-events: auto;
+  background-color: #fdfdfd;
+  flex-direction: column;
+  width: 5rem;
+  height: 100%;
+  transition: all .2s ease-in-out;
+  ul {
+    padding: 0;
+    margin: 0;
+  }
 }
 
-.pr-sidebar-accordion.is-open {
-  border-radius: 0 12px 12px 0;
-  right: -19px;
-  background-color: rgba(22, 23, 25, 0.12);
+.pr-sidebar-strip-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 100%;
 }
 
-.v-enter-active {
-  transition: opacity 0.6s ease-in-out;
+.pr-sidebar-strip-body {
+  box-sizing: border-box;
+  position: relative;
 }
 
-.v-enter-from,
-.v-leave-to {
-  opacity: 0;
+.pr-sidebar-strip-footer {
+  box-sizing: border-box;
+  position: relative;
+  margin-top: auto!important;
 }
 
-.pr-box-shadow-right {
-  box-shadow: 1px 0 17px 0 rgba(136, 136, 136, 0.15);
-  transition: opacity 0.6s ease-in-out;
+.pr-sidebar-strip-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 100%;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    position: relative;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+  a.uk-active {
+   background-color: red;
+  }
 }
+
 
 </style>

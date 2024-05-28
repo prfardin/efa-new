@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory, Router, RouteRecordRaw } from 'vue-router'
 import Dashboard from '@v/Dashboard.vue'
-import { title } from 'process'
 
 // we use dynamic import
 // which lazy-loaded when the route is visited.
