@@ -9,6 +9,7 @@ import PrLink from '@c/core/PrLink.vue'
 import Avatar from '@i/avatar.png'
 import PrIcon from '@c/core/PrIcon.vue'
 
+
 interface StripBody {
   href: string
   icon: string
@@ -30,34 +31,14 @@ const stripFooterItem = ref<StripBody[]>([
   {href: "#", icon: "bell" },
 ])
 
-const el = ref<RefElement>(null)
-const myTooltip = ref<any>(null)
-const key = ref<any>(0)
-const myTitle = computed(() => {
-  return stripBodyItem.value[key.value].title
-})
-
-function setTooltip() {
-  return tooltip(el.value, {
-    title: myTitle.value,
-    pos: "right",
-    animation: "uk-animation-slide-right-small",
-    duration: 200,
-  })
-}
-
 onMounted(() => {
-  myTooltip.value = setTooltip()
+  document.querySelectorAll('.pr-sidebar-strip-item > div').forEach((e, key) => {
+    tooltip(e, {
+      title: stripBodyItem.value[key].title,
+      pos: 'right'
+    })
+  })
 })
-
-function showTooltip(k: any) {
-  key.value = k
-  myTooltip.value.show()
-}
-
-function hideTooltip() {
-  myTooltip.value.hide()
-}
 
 </script>
 
@@ -68,9 +49,9 @@ function hideTooltip() {
         <img :src="Avatar" alt="avatar" width="40" height="40" />
       </pr-link>
     </div>
-    <ul class="pr-sidebar-strip-body">
+    <ul class="pr-sidebar-strip-body" ref="listTooltip">
       <li class="pr-sidebar-strip-item" v-for="(item, index) in stripBodyItem" :key="index">
-        <div @mouseover="showTooltip(index)" @mouseleave="hideTooltip" :id="item.id" ref="el">
+        <div>
           <pr-icon :icon="item.icon" ratio=".9" class="uk-active" />
         </div>
       </li>
