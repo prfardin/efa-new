@@ -8,7 +8,8 @@ import PrIcon from '@c/core/PrIcon.vue'
 
 const props = withDefaults(defineProps<OffcanvasPropsType>(), {
   escClose: true,
-  bgClose: true
+  bgClose: true,
+  closeButton: true,
 })
 
 const el = ref<RefElement>(null)
@@ -32,11 +33,10 @@ onMounted(() => {
     <div class="uk-offcanvas-bar">
       <div class="uk-flex uk-flex-middle uk-flex-between">
         <slot name="title" />
-        <pr-toggle class="pr-offcanvas-close" tag="a" :target="`#${props.id}`">
+        <pr-toggle v-if="closeButton" class="pr-offcanvas-close" tag="a" :target="`#${props.id}`">
           <pr-icon icon="line-angle-right-b" />
         </pr-toggle>
       </div>
-
       <slot name="content" />
     </div>
   </div>

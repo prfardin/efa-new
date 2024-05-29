@@ -23,7 +23,6 @@ import {
 } from './classes'
 
 import { RouteLocationRaw } from 'vue-router'
-import { s } from 'vitest/dist/reporters-xEmem8D4'
 
 /**
  * Section Props Types
@@ -97,7 +96,7 @@ export interface LinkPropsType extends LinkClassType {
   href?: string
   slotClass?: string
   iconClass?: string
-  ratio?: number
+  ratio?: string
 }
 
 /**
@@ -106,7 +105,7 @@ export interface LinkPropsType extends LinkClassType {
 export interface IconPropsType {
   tag?: 'span' | string
   icon: string | undefined
-  ratio?: any
+  ratio?: string
 }
 
 /**
@@ -226,6 +225,7 @@ export interface OffcanvasPropsType {
   bgClose?: boolean | undefined
   container?: string | boolean | undefined
   id: string
+  closeButton?: boolean
 }
 
 /**

@@ -1,49 +1,63 @@
 <script setup lang="ts">
 import { RefElement, tooltip } from '@u/util'
-import { onMounted, ref } from 'vue'
+import { computed, onMounted, ref, watch, watchEffect } from 'vue'
 
 // components
 import PrLink from '@c/core/PrLink.vue'
 
 // images
 import Avatar from '@i/avatar.png'
-
+import PrIcon from '@c/core/PrIcon.vue'
 
 interface StripBody {
   href: string
   icon: string
-  title?: string
+  title?: any
+  id?: string
 }
 
-const stripBodyItem = ref<StripBody>([
-  {href: "/", icon: "create-dashboard", title: "1" },
-  {href: "#", icon: "folder-minus", title: "2" },
-  {href: "#", icon: "compass", title: "3" },
-  {href: "#", icon: "bell", title: "4" }
+const stripBodyItem = ref<StripBody[]>([
+  { href: "/", icon: "create-dashboard", title: "title1", id: "#ttttt" },
+  { href: "/s", icon: "folder-minus", title: "title2" },
+  { href: "/ss", icon: "compass", title: "title3" },
+  { href: "/sss", icon: "bell", title: "title4" }
 ])
 
-const stripFooterItem = ref<StripBody>([
-  {href: "#", icon: "create-dashboard" },
-  {href: "#", icon: "folder-minus" },
-  {href: "#", icon: "compass" },
+const stripFooterItem = ref<StripBody[]>([
+  {href: "#", icon: "paint-tool" },
+  {href: "#", icon: "search" },
+  {href: "#", icon: "setting" },
   {href: "#", icon: "bell" },
 ])
 
-
 const el = ref<RefElement>(null)
-
-onMounted(() => {
-  tooltip(el.value, {
-    title: "test",
-    pos: "right",
-    animation: "uk-animation-slide-right-small",
-    duration: 200
-  })
-
+const myTooltip = ref<any>(null)
+const key = ref<any>(0)
+const myTitle = computed(() => {
+  return stripBodyItem.value[key.value].title
 })
 
+function setTooltip() {
+  return tooltip(el.value, {
+    title: myTitle.value,
+    pos: "right",
+    animation: "uk-animation-slide-right-small",
+    duration: 200,
+  })
+}
 
+onMounted(() => {
+  myTooltip.value = setTooltip()
+})
 
+function showTooltip(k: any) {
+  key.value = k
+  myTooltip.value.show()
+}
+
+function hideTooltip() {
+  myTooltip.value.hide()
+}
 
 </script>
 
@@ -56,15 +70,18 @@ onMounted(() => {
     </div>
     <ul class="pr-sidebar-strip-body">
       <li class="pr-sidebar-strip-item" v-for="(item, index) in stripBodyItem" :key="index">
-        <a :icon="item.icon" :to="item.href" ratio=".8" ref="el">sss</a>
+        <div @mouseover="showTooltip(index)" @mouseleave="hideTooltip" :id="item.id" ref="el">
+          <pr-icon :icon="item.icon" ratio=".9" class="uk-active" />
+        </div>
       </li>
     </ul>
     <ul class="pr-sidebar-strip-footer">
       <li class="pr-sidebar-strip-item" v-for="(item, index) in stripFooterItem" :key="index">
-        <pr-link :icon="item.icon" :to="item.href" ratio=".8" />
+        <pr-link :icon="item.icon" :to="item.href" ratio=".9" />
       </li>
     </ul>
   </div>
+<!--  <div ref="el" />-->
 </template>
 
 <style>
@@ -139,7 +156,7 @@ onMounted(() => {
   justify-content: center;
   height: 4rem;
   width: 100%;
-  a {
+  div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -148,11 +165,16 @@ onMounted(() => {
     position: relative;
     cursor: pointer;
     transition: all .2s ease-in-out;
-  }
-  a.uk-active {
-   background-color: red;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    &:has(span.uk-active) {
+      background-color: rgba(0, 106, 243, 0.1);
+    }
   }
 }
+
+
+
 
 
 </style>

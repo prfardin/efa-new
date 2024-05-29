@@ -65,6 +65,11 @@ const Activity = ref<any>([
                 <div class="uk-navbar-left">
                   <ul class="uk-navbar-nav">
                     <li>
+                      <pr-toggle href="#sidebar">
+                        <pr-icon icon="home"/>
+                      </pr-toggle>
+                    </li>
+                    <li>
                       <h1 class="uk-margin-remove uk-h2">shop name</h1>
                     </li>
                   </ul>

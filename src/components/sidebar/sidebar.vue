@@ -6,7 +6,7 @@ import Wrapper from './wrapper.vue'
 <template>
   <div class="pr-sidebar">
     <strip />
-<!--    <wrapper />-->
+    <wrapper />
   </div>
 </template>
 
