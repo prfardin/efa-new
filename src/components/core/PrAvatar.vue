@@ -78,5 +78,9 @@ const avatarClass = computed(() => avatarClassObject(props))
   background-color: #f9eee8
 }
 
+.tm-muted-b-c {
+  background-color: #f0f4f7;
+}
+
 
 </style>

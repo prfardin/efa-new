@@ -1,38 +1,43 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import PrOffcanvas from '@c/core/PrOffcanvas.vue'
+import PrNav from '@c/core/PrNav.vue'
 
 const { t } = useI18n()
 
 </script>
 
 <template>
-  <pr-offcanvas class="pr-sidebar-wrapper" :close-button="false" id="sidebar" mode="push" :bg-close="false" :esc-close="false">
+  <pr-offcanvas class="pr-sidebar-wrapper" :close-button="false" id="sidebar" :bg-close="false" :esc-close="false">
     <template #content>
-      <ul class="uk-nav uk-nav-default">
+      <ul class="uk-nav-default" uk-nav>
         <li class="uk-active"><a href="#">Active</a></li>
-        <li><a href="#">Item</a></li>
-        <li class="uk-nav-header">Header</li>
-        <li><a href="#">Item</a></li>
-        <li><a href="#">Item</a></li>
-        <li class="uk-nav-divider"></li>
-        <li><a href="#">Item</a></li>
+        <li class="uk-parent">
+          <a href="#">Parent <span uk-nav-parent-icon></span></a>
+          <ul class="uk-nav-sub">
+            <li><a href="#">Sub item</a></li>
+            <li>
+              <a href="#">Sub item</a>
+              <ul>
+                <li><a href="#">Sub item</a></li>
+                <li><a href="#">Sub item</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="uk-parent">
+          <a href="#">Parent <span uk-nav-parent-icon></span></a>
+          <ul class="uk-nav-sub">
+            <li><a href="#">Sub item</a></li>
+            <li><a href="#">Sub item</a></li>
+          </ul>
+        </li>
       </ul>
     </template>
   </pr-offcanvas>
 </template>
 
 <style>
-.pr-sidebar-wrapper {
-  margin-left: 80px;
-  z-index: 3;
-  width: 220px;
-  .uk-offcanvas-bar{
-    width: 220px;
-  }
-}
-
-
 
 
 </style>

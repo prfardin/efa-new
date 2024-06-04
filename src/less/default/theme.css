@@ -1,0 +1,208 @@
+:root {
+    --primary-color: #006af3;
+    --default-text-color: 70, 73, 100;
+    --border-color: 229, 231, 235;
+}
+
+/* =================================================
+ navbar
+================================================= */
+
+.pr-sidebar-button {
+    position: relative;
+    width: 1.25rem;
+    height: 1.25rem;
+    .pr-sidebar-button-line-1 {
+        height: .125rem;
+        display: block;
+        position: absolute;
+        top: .125rem;
+        background-color: var(--primary-color);
+        width: 100%;
+        transition:all .2s cubic-bezier(.4,0,.2,1);
+    }
+    .pr-sidebar-button-line-2 {
+        height: .125rem;
+        display: block;
+        position: absolute;
+        top: 50%;
+        background-color: var(--primary-color);
+        width: 100%;
+        max-width: 50%;
+        transition:all .2s cubic-bezier(.4,0,.2,1);
+    }
+    .pr-sidebar-button-line-3 {
+        height: .125rem;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        background-color: var(--primary-color);
+        width: 100%;
+        transition:all .2s cubic-bezier(.4,0,.2,1);
+    }
+    &.pr-sidebar-button-close {
+        transform: scale(.9);
+        .pr-sidebar-button-line-1 {
+            transform: rotate(-45deg);
+            top: .25rem;
+            max-width: 75%;
+        }
+        .pr-sidebar-button-line-2 {
+            opacity: 0;
+            transform: translateX(1rem);
+        }
+        .pr-sidebar-button-line-3 {
+            transform: rotate(45deg);
+            max-width: 75%;
+            bottom: .25rem;
+        }
+
+    }
+}
+
+/* =================================================
+    sidebar
+ ================================================= */
+
+.pr-sidebar {
+    z-index: 10;
+    height: 100%;
+    display: flex;
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+}
+
+/* sidebar wrapper */
+
+.view-wrapper {
+    position: relative;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    max-width: calc(100% - 80px);
+    margin-inline-start: 80px;
+    transition: all .3s ease-in-out;
+    overflow-x: hidden;
+}
+
+.uk-offcanvas.pr-sidebar-wrapper {
+    margin-left: 80px;
+    z-index: 3;
+    width: 220px;
+    .uk-offcanvas-bar {
+        width: 220px;
+        border-right: 1px solid rgb(var(--border-color));
+    }
+}
+
+.uk-light .uk-nav-default > li.uk-active > a, .uk-section-primary:not(.uk-preserve-color) .uk-nav-default > li.uk-active > a, .uk-section-secondary:not(.uk-preserve-color) .uk-nav-default > li.uk-active > a, .uk-tile-primary:not(.uk-preserve-color) .uk-nav-default > li.uk-active > a, .uk-tile-secondary:not(.uk-preserve-color) .uk-nav-default > li.uk-active > a, .uk-card-primary.uk-card-body .uk-nav-default > li.uk-active > a, .uk-card-primary > :not([class*="uk-card-media"]) .uk-nav-default > li.uk-active > a, .uk-card-secondary.uk-card-body .uk-nav-default > li.uk-active > a, .uk-card-secondary > :not([class*="uk-card-media"]) .uk-nav-default > li.uk-active > a, .uk-overlay-primary .uk-nav-default > li.uk-active > a, .uk-offcanvas-bar .uk-nav-default > li.uk-active > a {
+    /* we should delete !important after fix css */
+    color: rgb(var(--default-text-color))!important;
+}
+
+.uk-light .uk-nav-default > li > a, .uk-section-primary:not(.uk-preserve-color) .uk-nav-default > li > a, .uk-section-secondary:not(.uk-preserve-color) .uk-nav-default > li > a, .uk-tile-primary:not(.uk-preserve-color) .uk-nav-default > li > a, .uk-tile-secondary:not(.uk-preserve-color) .uk-nav-default > li > a, .uk-card-primary.uk-card-body .uk-nav-default > li > a, .uk-card-primary > :not([class*="uk-card-media"]) .uk-nav-default > li > a, .uk-card-secondary.uk-card-body .uk-nav-default > li > a, .uk-card-secondary > :not([class*="uk-card-media"]) .uk-nav-default > li > a, .uk-overlay-primary .uk-nav-default > li > a, .uk-offcanvas-bar .uk-nav-default > li > a {
+    /* we should delete !important after fix css */
+    color: rgb(var(--default-text-color))!important;
+}
+
+/* sidebar strip */
+
+.pr-sidebar-strip {
+    border: 0 solid #e5e7eb;
+    border-right-width: 1px;
+    display: flex;
+    position: relative;
+    z-index: 20;
+    pointer-events: auto;
+    background-color: #fdfdfd;
+    flex-direction: column;
+    width: 5rem;
+    height: 100%;
+    transition: all .2s ease-in-out;
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.pr-sidebar-strip-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 100%;
+}
+
+.pr-sidebar-strip-body {
+    box-sizing: border-box;
+    position: relative;
+}
+
+.pr-sidebar-strip-footer {
+    box-sizing: border-box;
+    position: relative;
+    margin-top: auto!important;
+}
+
+.pr-sidebar-strip-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 100%;
+    a.uk-active div {
+        background-color: rgba(0, 106, 243, 0.1);
+    }
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3rem;
+        width: 3rem;
+        position: relative;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+        border-radius: 1rem;
+        box-sizing: border-box;
+    }
+}
+
+
+/* =================================================
+    main
+ ================================================= */
+
+
+
+
+
+/* =================================================
+    tooltip component
+ ================================================= */
+
+
+
+.uk-tooltip {
+    color: #fdfdfd;
+    /* we should delete !important after fix css */
+    font-size: 14px!important;
+}
+
+.uk-tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    right: 100%;
+    margin-bottom: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #666 transparent  transparent;
+}
+
+
+
+
+
+

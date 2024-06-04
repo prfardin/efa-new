@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { navbar } from '@u/util'
-import { onMounted, ref } from 'vue'
+import { onMounted, reactive, ref } from 'vue'
 import Avatar from '@i/avatar.png'
 
 // component
@@ -51,23 +51,38 @@ const Activity = ref<any>([
   { name: "Schedule" },
 ])
 
+const styleObject = reactive({
+  maxWidth: 'calc(100% - 300px)',
+  marginInlineStart: '300px'
+})
+
+const { value, toggle } = useToggle()
+
 </script>
 
 <template>
   <div class="uk-background-muted">
     <sidebar />
-    <div class="view-wrapper">
-      <pr-section class="uk-padding-remove-top uk-height-1-1" muted style="height: 100vh" default>
+    <main class="view-wrapper"  :style="[value ? styleObject : '']">
+      <pr-section class="uk-padding-remove-top" muted default>
         <div class="uk-margin-bottom">
           <nav class="uk-navbar-container uk-navbar-transparent">
-            <pr-container class="uk-container">
+            <pr-container large>
               <div ref="elNavbar">
                 <div class="uk-navbar-left">
-                  <ul class="uk-navbar-nav">
+                  <ul class="uk-navbar-nav uk-flex-middle">
                     <li>
-                      <pr-toggle href="#sidebar">
-                        <pr-icon icon="home"/>
-                      </pr-toggle>
+                      <div>
+                        <pr-toggle href="#sidebar" @click="toggle">
+                          <pr-avatar tag="div" class="tm-muted-b-c">
+                            <div class="pr-sidebar-button" :class="{ 'pr-sidebar-button-close': value }" >
+                              <span class="pr-sidebar-button-line-1"></span>
+                              <span class="pr-sidebar-button-line-2"></span>
+                              <span class="pr-sidebar-button-line-3"></span>
+                            </div>
+                          </pr-avatar>
+                        </pr-toggle>
+                      </div>
                     </li>
                     <li>
                       <h1 class="uk-margin-remove uk-h2">shop name</h1>
@@ -440,11 +455,11 @@ const Activity = ref<any>([
             </pr-container>
           </nav>
         </div>
-        <pr-container class="uk-container">
+        <pr-container large>
           <router-view></router-view>
         </pr-container>
       </pr-section>
-    </div>
+    </main>
   </div>
 </template>
 
@@ -557,15 +572,6 @@ a {
   transition: opacity .3s ease-in-out;
 }
 
-.view-wrapper {
-  position: relative;
-  height: 100%;
-  min-height: 100vh;
-  width: calc(100% - 78px);
-  margin-inline-start: 78px;
-  background: var(--background-grey);
-  transition: all .3s ease-in-out;
-}
 
 .is-pushed {
   margin-left: 340px;
