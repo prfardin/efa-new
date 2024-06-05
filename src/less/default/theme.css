@@ -69,7 +69,6 @@
     height: 100%;
     display: flex;
     position: fixed;
-    pointer-events: none;
     top: 0;
     left: 0;
 }
@@ -104,6 +103,15 @@
 
 .uk-light .uk-nav-default > li > a, .uk-section-primary:not(.uk-preserve-color) .uk-nav-default > li > a, .uk-section-secondary:not(.uk-preserve-color) .uk-nav-default > li > a, .uk-tile-primary:not(.uk-preserve-color) .uk-nav-default > li > a, .uk-tile-secondary:not(.uk-preserve-color) .uk-nav-default > li > a, .uk-card-primary.uk-card-body .uk-nav-default > li > a, .uk-card-primary > :not([class*="uk-card-media"]) .uk-nav-default > li > a, .uk-card-secondary.uk-card-body .uk-nav-default > li > a, .uk-card-secondary > :not([class*="uk-card-media"]) .uk-nav-default > li > a, .uk-overlay-primary .uk-nav-default > li > a, .uk-offcanvas-bar .uk-nav-default > li > a {
     /* we should delete !important after fix css */
+    color: rgb(var(--default-text-color))!important;
+}
+
+.uk-light .uk-nav-default .uk-nav-sub a, .uk-section-primary:not(.uk-preserve-color) .uk-nav-default .uk-nav-sub a, .uk-section-secondary:not(.uk-preserve-color) .uk-nav-default .uk-nav-sub a, .uk-tile-primary:not(.uk-preserve-color) .uk-nav-default .uk-nav-sub a, .uk-tile-secondary:not(.uk-preserve-color) .uk-nav-default .uk-nav-sub a, .uk-card-primary.uk-card-body .uk-nav-default .uk-nav-sub a, .uk-card-primary > :not([class*="uk-card-media"]) .uk-nav-default .uk-nav-sub a, .uk-card-secondary.uk-card-body .uk-nav-default .uk-nav-sub a, .uk-card-secondary > :not([class*="uk-card-media"]) .uk-nav-default .uk-nav-sub a, .uk-overlay-primary .uk-nav-default .uk-nav-sub a, .uk-offcanvas-bar .uk-nav-default .uk-nav-sub a {
+    /* we should delete !important after fix css */
+    color: rgb(var(--default-text-color))!important;
+}
+
+.uk-light .uk-nav-default .uk-nav-header, .uk-section-primary:not(.uk-preserve-color) .uk-nav-default .uk-nav-header, .uk-section-secondary:not(.uk-preserve-color) .uk-nav-default .uk-nav-header, .uk-tile-primary:not(.uk-preserve-color) .uk-nav-default .uk-nav-header, .uk-tile-secondary:not(.uk-preserve-color) .uk-nav-default .uk-nav-header, .uk-card-primary.uk-card-body .uk-nav-default .uk-nav-header, .uk-card-primary > :not([class*="uk-card-media"]) .uk-nav-default .uk-nav-header, .uk-card-secondary.uk-card-body .uk-nav-default .uk-nav-header, .uk-card-secondary > :not([class*="uk-card-media"]) .uk-nav-default .uk-nav-header, .uk-overlay-primary .uk-nav-default .uk-nav-header, .uk-offcanvas-bar .uk-nav-default .uk-nav-header {
     color: rgb(var(--default-text-color))!important;
 }
 

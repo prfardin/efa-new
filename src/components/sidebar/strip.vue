@@ -53,7 +53,7 @@ onMounted(() => {
     </div>
     <ul class="pr-sidebar-strip-body" ref="listTooltip">
       <li class="pr-sidebar-strip-item" v-for="(item, index) in stripBodyItem" :key="index">
-        <pr-link class="test" :to="item.href">
+        <pr-link :to="item.href">
           <div>
               <pr-icon :icon="item.icon" ratio=".9" />
           </div>

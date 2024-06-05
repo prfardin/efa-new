@@ -226,6 +226,7 @@ export interface OffcanvasPropsType {
   container?: string | boolean | undefined
   id: string
   closeButton?: boolean
+  notNav?: boolean
 }
 
 /**

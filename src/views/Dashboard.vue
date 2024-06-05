@@ -508,7 +508,7 @@ const { value, toggle } = useToggle()
 }
 
 a:hover {
- text-decoration: none;
+  text-decoration: none;
 }
 
 .pr-padding-8 {
@@ -539,10 +539,10 @@ a:hover {
 
 a {
   .pr-flex-items {
-  padding: 8px;
-}
-.pr-flex-items:hover {
-  background-color: #f0f4f7;
+    padding: 8px;
+  }
+  .pr-flex-items:hover {
+    background-color: #f0f4f7;
   }
 }
 
@@ -623,8 +623,8 @@ a {
   100% {
     background-position: 140px;
   }
-  }
-  @keyframes shine-avatar {
+}
+@keyframes shine-avatar {
   0% {
     background-position: -32px;
   }

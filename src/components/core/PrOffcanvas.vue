@@ -1,4 +1,4 @@
-<script setup lang="ts" xmlns="http://www.w3.org/1999/html">
+<script setup lang="ts">
 import { OffcanvasPropsType } from '@u/props'
 import { offcanvas, RefElement } from '@u/util'
 import { onMounted, ref } from 'vue'
@@ -10,6 +10,7 @@ const props = withDefaults(defineProps<OffcanvasPropsType>(), {
   escClose: true,
   bgClose: true,
   closeButton: true,
+  notNav: true
 })
 
 const el = ref<RefElement>(null)
@@ -31,7 +32,7 @@ onMounted(() => {
 <template>
   <div :id="props.id" ref="el">
     <div class="uk-offcanvas-bar">
-      <div class="uk-flex uk-flex-middle uk-flex-between">
+      <div v-if="notNav" class="uk-flex uk-flex-middle uk-flex-between">
         <slot name="title" />
         <pr-toggle v-if="closeButton" class="pr-offcanvas-close" tag="a" :target="`#${props.id}`">
           <pr-icon icon="line-angle-right-b" />
