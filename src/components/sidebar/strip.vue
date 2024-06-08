@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { RefElement, tooltip } from '@u/util'
-import { computed, onMounted, ref, watch, watchEffect } from 'vue'
+import { tooltip } from '@u/util'
+import { onMounted, ref } from 'vue'
 
 // components
 import PrLink from '@c/core/PrLink.vue'
@@ -8,20 +8,21 @@ import PrLink from '@c/core/PrLink.vue'
 // images
 import Avatar from '@i/avatar.png'
 import PrIcon from '@c/core/PrIcon.vue'
+import PrToggle from '@c/core/PrToggle.vue'
 
 
 interface StripBody {
-  href: string
   icon: string
   title?: any
   id?: string
+  href?: string
 }
 
 const stripBodyItem = ref<StripBody[]>([
-  { href: "/", icon: "create-dashboard", title: "title1", id: "#ttttt" },
-  { href: "/s", icon: "folder-minus", title: "title2" },
-  { href: "/ss", icon: "compass", title: "title3" },
-  { href: "/sss", icon: "bell", title: "title4" }
+  { icon: "create-dashboard", title: "title1", id: "#ttttt" },
+  { icon: "folder-minus", title: "title2" },
+  { icon: "compass", title: "title3" },
+  { icon: "bell", title: "title4" }
 ])
 
 const stripFooterItem = ref<StripBody[]>([
@@ -32,7 +33,7 @@ const stripFooterItem = ref<StripBody[]>([
 ])
 
 onMounted(() => {
-  document.querySelectorAll('.pr-sidebar-strip-body > .pr-sidebar-strip-item > a').forEach((e, key) => {
+  document.querySelectorAll('.pr-sidebar-strip-body > .pr-sidebar-strip-item > div').forEach((e, key) => {
     tooltip(e, {
       title: stripBodyItem.value[key].title,
       pos: 'right',
@@ -41,6 +42,16 @@ onMounted(() => {
     })
   })
 })
+
+interface Props {
+  target: string
+}
+
+const props = withDefaults(defineProps<Props>(), {
+
+})
+
+
 
 </script>
 
@@ -53,11 +64,11 @@ onMounted(() => {
     </div>
     <ul class="pr-sidebar-strip-body" ref="listTooltip">
       <li class="pr-sidebar-strip-item" v-for="(item, index) in stripBodyItem" :key="index">
-        <pr-link :to="item.href">
+        <pr-toggle role="button" :target="`#${target}`" cls="uk-active">
           <div>
-              <pr-icon :icon="item.icon" ratio=".9" />
+            <pr-icon :icon="item.icon" ratio=".9" />
           </div>
-        </pr-link>
+        </pr-toggle>
       </li>
     </ul>
     <ul class="pr-sidebar-strip-footer">

@@ -7,8 +7,6 @@ import Avatar from '@i/avatar.png'
 import PrAvatar from '@c/core/PrAvatar.vue'
 import PrSection from '@c/core/PrSection.vue'
 import PrContainer from '@c/core/PrContainer.vue'
-import Wrapper from '@c/sidebar/wrapper.vue'
-import Strip from '@c/sidebar/strip.vue'
 import PrIcon from '@c/core/PrIcon.vue'
 import PrOffCanvas from '@c/core/PrOffcanvas.vue'
 import PrToggle from '@c/core/PrToggle.vue'
@@ -21,7 +19,8 @@ import PrProgress from '@c/core/PrProgress.vue'
 
 // composable
 import { useToggle } from '@sc/Composable/useToggle'
-import Sidebar from '@c/sidebar/sidebar.vue'
+import Wrapper from '@c/sidebar/wrapper.vue'
+import Strip from '@c/sidebar/strip.vue'
 
 
 
@@ -62,7 +61,10 @@ const { value, toggle } = useToggle()
 
 <template>
   <div class="uk-background-muted">
-    <sidebar />
+    <div class="pr-sidebar">
+      <strip target="sidebar"/>
+      <wrapper :divider="4" />
+    </div>
     <main class="view-wrapper"  :style="[value ? styleObject : '']">
       <pr-section class="uk-padding-remove-top" muted default>
         <div class="uk-margin-bottom">
