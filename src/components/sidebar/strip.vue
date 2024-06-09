@@ -43,6 +43,8 @@ onMounted(() => {
   })
 })
 
+const emit =  defineEmits(['openSidebar'])
+
 interface Props {
   target: string
 }
@@ -50,6 +52,15 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), {
 
 })
+
+const changeTarget = ref<string>(props.target)
+
+const isActive = ref<number>(0)
+
+function toggleSidebar(i: number) {
+  isActive.value = i
+  emit('openSidebar')
+}
 
 
 
@@ -64,7 +75,7 @@ const props = withDefaults(defineProps<Props>(), {
     </div>
     <ul class="pr-sidebar-strip-body" ref="listTooltip">
       <li class="pr-sidebar-strip-item" v-for="(item, index) in stripBodyItem" :key="index">
-        <pr-toggle role="button" :target="`#${target}`" cls="uk-active">
+        <pr-toggle role="button" :target="changeTarget + '-' + index" @click="toggleSidebar(index)" :class="{ 'uk-active': index === isActive }">
           <div>
             <pr-icon :icon="item.icon" ratio=".9" />
           </div>

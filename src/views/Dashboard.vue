@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { navbar } from '@u/util'
-import { onMounted, reactive, ref } from 'vue'
+import { computed, onMounted, reactive, ref } from 'vue'
 import Avatar from '@i/avatar.png'
 
 // component
@@ -50,22 +50,70 @@ const Activity = ref<any>([
   { name: "Schedule" },
 ])
 
-const styleObject = reactive({
+const sideBarOpened = reactive({
   maxWidth: 'calc(100% - 300px)',
   marginInlineStart: '300px'
 })
 
-const { value, toggle } = useToggle()
+
+const value = ref<string>("ttt")
+
+const ttt = ref(0)
+function toggle(i: string) {
+  value.value = i
+}
+
+const navItem  = ref<any>([
+  { parentTitle: "Dashboard", subItems:[
+      { title: "products", href: "/wares" },
+      { title: "products", href: "/wares" },
+      { title: "products", href: "/wares" }
+    ]
+  },
+  { parentTitle: "Shop", subItems:[
+      { title: "products", href: "/wares" },
+      { title: "products", href: "/wares" },
+      { title: "products", href: "/wares" }
+    ]
+  },
+  { parentTitle: "Production", subItems:[
+      { title: "products", href: "/wares" },
+      { title: "products", href: "/wares" },
+      { title: "products", href: "/wares" }
+    ]
+  },
+  { parentTitle: "test", subItems:[
+      { title: "products", href: "/wares" },
+      { title: "products", href: "/wares" },
+      { title: "products", href: "/wares" }
+    ]
+  },
+  { parentTitle: "test1", subItems:[
+      { title: "products", href: "/wares" },
+      { title: "products", href: "/wares" },
+      { title: "products", href: "/wares" }
+    ]
+  },
+  { parentTitle: "test3", subItems:[
+      { title: "products", href: "/wares" },
+      { title: "products", href: "/wares" },
+      { title: "products", href: "/wares" }
+    ]
+  },
+])
+
+
+
 
 </script>
 
 <template>
   <div class="uk-background-muted">
     <div class="pr-sidebar">
-      <strip target="sidebar"/>
-      <wrapper :divider="4" />
+      <strip :target="`#` + value" />
+      <wrapper :divider="4" :id="value + '-' + ttt" :nav-item="navItem" :title="`index`" />
     </div>
-    <main class="view-wrapper"  :style="[value ? styleObject : '']">
+    <main class="view-wrapper" :style="[value ? sideBarOpened : '']">
       <pr-section class="uk-padding-remove-top" muted default>
         <div class="uk-margin-bottom">
           <nav class="uk-navbar-container uk-navbar-transparent">
@@ -75,7 +123,7 @@ const { value, toggle } = useToggle()
                   <ul class="uk-navbar-nav uk-flex-middle">
                     <li>
                       <div>
-                        <pr-toggle href="#sidebar" @click="toggle">
+                        <pr-toggle :href="`#` + id" @click="toggle(`#` + id)">
                           <pr-avatar tag="div" class="tm-muted-b-c">
                             <div class="pr-sidebar-button" :class="{ 'pr-sidebar-button-close': value }" >
                               <span class="pr-sidebar-button-line-1"></span>
