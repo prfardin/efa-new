@@ -55,14 +55,6 @@ const sideBarOpened = reactive({
   marginInlineStart: '300px'
 })
 
-
-const value = ref<string>("ttt")
-
-const ttt = ref(0)
-function toggle(i: string) {
-  value.value = i
-}
-
 const navItem  = ref<any>([
   { parentTitle: "Dashboard", subItems:[
       { title: "products", href: "/wares" },
@@ -102,7 +94,22 @@ const navItem  = ref<any>([
   },
 ])
 
+const stripBodyItem = ref<any>([
+  { icon: "create-dashboard", title: "title1" },
+  { icon: "folder-minus", title: "title2" },
+  { icon: "compass", title: "title3" },
+  { icon: "bell", title: "title4" }
+])
 
+
+const { value, toggle: changeWrapperStatus } = useToggle()
+
+
+const ttt = ref(1)
+function toggle(i: number) {
+  changeWrapperStatus()
+  ttt.value = i
+}
 
 
 </script>
@@ -110,8 +117,8 @@ const navItem  = ref<any>([
 <template>
   <div class="uk-background-muted">
     <div class="pr-sidebar">
-      <strip :target="`#` + value" />
-      <wrapper :divider="4" :id="value + '-' + ttt" :nav-item="navItem" :title="`index`" />
+      <strip :strip-body-item="stripBodyItem" :target="'#wrapper-' + ttt" @open-sidebar="(i) => toggle(i)" />
+      <wrapper :divider="4" :id="'wrapper-' + ttt" :nav-item="navItem" :title="`index`" />
     </div>
     <main class="view-wrapper" :style="[value ? sideBarOpened : '']">
       <pr-section class="uk-padding-remove-top" muted default>
@@ -123,7 +130,7 @@ const navItem  = ref<any>([
                   <ul class="uk-navbar-nav uk-flex-middle">
                     <li>
                       <div>
-                        <pr-toggle :href="`#` + id" @click="toggle(`#` + id)">
+                        <pr-toggle :target="'#wrapper-' + ttt" @click="changeWrapperStatus">
                           <pr-avatar tag="div" class="tm-muted-b-c">
                             <div class="pr-sidebar-button" :class="{ 'pr-sidebar-button-close': value }" >
                               <span class="pr-sidebar-button-line-1"></span>

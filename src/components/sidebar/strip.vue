@@ -18,12 +18,19 @@ interface StripBody {
   href?: string
 }
 
-const stripBodyItem = ref<StripBody[]>([
-  { icon: "create-dashboard", title: "title1", id: "#ttttt" },
-  { icon: "folder-minus", title: "title2" },
-  { icon: "compass", title: "title3" },
-  { icon: "bell", title: "title4" }
-])
+interface Props {
+  target: string
+  stripBodyItem: [
+    { icon: string, title: string },
+  ]
+}
+
+const emit =  defineEmits(['openSidebar'])
+
+
+const props = withDefaults(defineProps<Props>(), {
+
+})
 
 const stripFooterItem = ref<StripBody[]>([
   {href: "#", icon: "paint-tool" },
@@ -35,7 +42,7 @@ const stripFooterItem = ref<StripBody[]>([
 onMounted(() => {
   document.querySelectorAll('.pr-sidebar-strip-body > .pr-sidebar-strip-item > div').forEach((e, key) => {
     tooltip(e, {
-      title: stripBodyItem.value[key].title,
+      title: props.stripBodyItem[key].title,
       pos: 'right',
       animation: 'uk-animation-slide-right-small',
       duration: '150'
@@ -43,23 +50,11 @@ onMounted(() => {
   })
 })
 
-const emit =  defineEmits(['openSidebar'])
-
-interface Props {
-  target: string
-}
-
-const props = withDefaults(defineProps<Props>(), {
-
-})
-
-const changeTarget = ref<string>(props.target)
-
 const isActive = ref<number>(0)
 
 function toggleSidebar(i: number) {
   isActive.value = i
-  emit('openSidebar')
+  emit('openSidebar', i)
 }
 
 
@@ -75,7 +70,7 @@ function toggleSidebar(i: number) {
     </div>
     <ul class="pr-sidebar-strip-body" ref="listTooltip">
       <li class="pr-sidebar-strip-item" v-for="(item, index) in stripBodyItem" :key="index">
-        <pr-toggle role="button" :target="changeTarget + '-' + index" @click="toggleSidebar(index)" :class="{ 'uk-active': index === isActive }">
+        <pr-toggle role="button" :target="target" @click="toggleSidebar(index)" :class="{ 'uk-active': index === isActive }">
           <div>
             <pr-icon :icon="item.icon" ratio=".9" />
           </div>
