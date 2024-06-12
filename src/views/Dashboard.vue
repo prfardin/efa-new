@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { navbar } from '@u/util'
-import { computed, onMounted, reactive, ref } from 'vue'
+import { computed, onMounted, reactive, ref, watchEffect } from 'vue'
 import Avatar from '@i/avatar.png'
 
 // component
@@ -21,6 +21,8 @@ import PrProgress from '@c/core/PrProgress.vue'
 import { useToggle } from '@sc/Composable/useToggle'
 import Wrapper from '@c/sidebar/wrapper.vue'
 import Strip from '@c/sidebar/strip.vue'
+import UIkit from 'uikit'
+import PrDropdown from '@c/core/PrDropdown.vue'
 
 
 
@@ -55,8 +57,17 @@ const sideBarOpened = reactive({
   marginInlineStart: '300px'
 })
 
-const navItem  = ref<any>([
-  { parentTitle: "Dashboard", subItems:[
+const navItem1  = ref<any>([
+  { parentTitle: "Dashboard1", subItems:[
+      { title: "products", href: "/wares" },
+      { title: "products", href: "/wares" },
+      { title: "products", href: "/wares" }
+    ]
+  },
+])
+
+const navItem2  = ref<any>([
+  { parentTitle: "Dashboard2", subItems:[
       { title: "products", href: "/wares" },
       { title: "products", href: "/wares" },
       { title: "products", href: "/wares" }
@@ -94,6 +105,26 @@ const navItem  = ref<any>([
   },
 ])
 
+const navItem3  = ref<any>([
+  { parentTitle: "Dashboard3", subItems:[
+      { title: "products", href: "/wares" },
+      { title: "products", href: "/wares" },
+      { title: "products", href: "/wares" }
+    ]
+  }
+])
+
+const navItem4  = ref<any>([
+  { parentTitle: "Dashboard4", subItems:[
+      { title: "products", href: "/wares" },
+      { title: "products", href: "/wares" },
+      { title: "products", href: "/wares" }
+    ]
+  }
+])
+
+const test = ref([navItem1, navItem2, navItem3, navItem4])
+
 const stripBodyItem = ref<any>([
   { icon: "create-dashboard", title: "title1" },
   { icon: "folder-minus", title: "title2" },
@@ -101,15 +132,28 @@ const stripBodyItem = ref<any>([
   { icon: "bell", title: "title4" }
 ])
 
-
 const { value, toggle: changeWrapperStatus } = useToggle()
 
+const isActive = ref<number>(0)
 
-const ttt = ref(1)
 function toggle(i: number) {
-  changeWrapperStatus()
-  ttt.value = i
+  value.value = true
+  isActive.value = i
+  if(value.value) {
+    UIkit.offcanvas("#wrapper-0").show()
+  }
 }
+
+const ttt = computed(() => {
+  return test.value.find((data, index) => index === isActive.value);
+});
+
+watchEffect(() => {
+  ttt.value
+
+})
+
+
 
 
 </script>
@@ -117,8 +161,8 @@ function toggle(i: number) {
 <template>
   <div class="uk-background-muted">
     <div class="pr-sidebar">
-      <strip :strip-body-item="stripBodyItem" :target="'#wrapper-' + ttt" @open-sidebar="(i) => toggle(i)" />
-      <wrapper :divider="4" :id="'wrapper-' + ttt" :nav-item="navItem" :title="`index`" />
+      <strip target="#wrapper-0" :strip-body-item="stripBodyItem" @open-sidebar=" (i) =>  toggle(i)" />
+      <wrapper :divider="4" id="wrapper-0" :nav-item="ttt" :title="`index`" />
     </div>
     <main class="view-wrapper" :style="[value ? sideBarOpened : '']">
       <pr-section class="uk-padding-remove-top" muted default>
@@ -130,7 +174,7 @@ function toggle(i: number) {
                   <ul class="uk-navbar-nav uk-flex-middle">
                     <li>
                       <div>
-                        <pr-toggle :target="'#wrapper-' + ttt" @click="changeWrapperStatus">
+                        <pr-toggle target="#wrapper-0" @click="changeWrapperStatus">
                           <pr-avatar tag="div" class="tm-muted-b-c">
                             <div class="pr-sidebar-button" :class="{ 'pr-sidebar-button-close': value }" >
                               <span class="pr-sidebar-button-line-1"></span>

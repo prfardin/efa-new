@@ -19,7 +19,6 @@ interface StripBody {
 }
 
 interface Props {
-  target: string
   stripBodyItem: [
     { icon: string, title: string },
   ]
@@ -40,12 +39,13 @@ const stripFooterItem = ref<StripBody[]>([
 ])
 
 onMounted(() => {
-  document.querySelectorAll('.pr-sidebar-strip-body > .pr-sidebar-strip-item > div').forEach((e, key) => {
+  document.querySelectorAll('.pr-sidebar-strip-body > .pr-sidebar-strip-item > a').forEach((e, key) => {
     tooltip(e, {
       title: props.stripBodyItem[key].title,
       pos: 'right',
       animation: 'uk-animation-slide-right-small',
-      duration: '150'
+      duration: '150',
+      offset: 6
     })
   })
 })
@@ -70,11 +70,11 @@ function toggleSidebar(i: number) {
     </div>
     <ul class="pr-sidebar-strip-body" ref="listTooltip">
       <li class="pr-sidebar-strip-item" v-for="(item, index) in stripBodyItem" :key="index">
-        <pr-toggle role="button" :target="target" @click="toggleSidebar(index)" :class="{ 'uk-active': index === isActive }">
+        <a role="button" @click="toggleSidebar(index)" :class="{ 'uk-active': index === isActive }">
           <div>
             <pr-icon :icon="item.icon" ratio=".9" />
           </div>
-        </pr-toggle>
+        </a>
       </li>
     </ul>
     <ul class="pr-sidebar-strip-footer">

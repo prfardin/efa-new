@@ -28,7 +28,7 @@ const props = withDefaults(defineProps<Props>(), {
 </script>
 
 <template>
-  <pr-offcanvas class="pr-sidebar-wrapper" :close-button="false" :id="id" :bg-close="false" :esc-close="false">
+  <pr-offcanvas container="" class="pr-sidebar-wrapper" :close-button="false" :id="id" :bg-close="false" :esc-close="false">
     <template #title>
       <h3 class="uk-margin-small-bottom uk-h3">{{ title }}</h3>
     </template>
