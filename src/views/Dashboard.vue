@@ -145,12 +145,11 @@ function toggle(i: number) {
 }
 
 const ttt = computed(() => {
-  return test.value.find((data, index) => index === isActive.value);
+  return test.value.find((data, index) => index === isActive.value) || test.value[0] }
 });
 
 watchEffect(() => {
   ttt.value
-
 })
 
 

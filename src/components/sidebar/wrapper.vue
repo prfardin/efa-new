@@ -3,6 +3,7 @@ import PrOffcanvas from '@c/core/PrOffcanvas.vue'
 import PrNav from '@c/core/PrNav.vue'
 import PrIcon from '@c/core/PrIcon.vue'
 import PrLink from '@c/core/PrLink.vue'
+import { watchEffect } from 'vue'
 
 interface Props {
   title: string
@@ -22,7 +23,6 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), {
 
 })
-
 
 
 </script>
