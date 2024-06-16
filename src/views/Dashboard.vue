@@ -57,74 +57,6 @@ const sideBarOpened = reactive({
   marginInlineStart: '300px'
 })
 
-const navItem1  = ref<any>([
-  { parentTitle: "Dashboard1", subItems:[
-      { title: "products", href: "/wares" },
-      { title: "products", href: "/wares" },
-      { title: "products", href: "/wares" }
-    ]
-  },
-])
-
-const navItem2  = ref<any>([
-  { parentTitle: "Dashboard2", subItems:[
-      { title: "products", href: "/wares" },
-      { title: "products", href: "/wares" },
-      { title: "products", href: "/wares" }
-    ]
-  },
-  { parentTitle: "Shop", subItems:[
-      { title: "products", href: "/wares" },
-      { title: "products", href: "/wares" },
-      { title: "products", href: "/wares" }
-    ]
-  },
-  { parentTitle: "Production", subItems:[
-      { title: "products", href: "/wares" },
-      { title: "products", href: "/wares" },
-      { title: "products", href: "/wares" }
-    ]
-  },
-  { parentTitle: "test", subItems:[
-      { title: "products", href: "/wares" },
-      { title: "products", href: "/wares" },
-      { title: "products", href: "/wares" }
-    ]
-  },
-  { parentTitle: "test1", subItems:[
-      { title: "products", href: "/wares" },
-      { title: "products", href: "/wares" },
-      { title: "products", href: "/wares" }
-    ]
-  },
-  { parentTitle: "test3", subItems:[
-      { title: "products", href: "/wares" },
-      { title: "products", href: "/wares" },
-      { title: "products", href: "/wares" }
-    ]
-  },
-])
-
-const navItem3  = ref<any>([
-  { parentTitle: "Dashboard3", subItems:[
-      { title: "products", href: "/wares" },
-      { title: "products", href: "/wares" },
-      { title: "products", href: "/wares" }
-    ]
-  }
-])
-
-const navItem4  = ref<any>([
-  { parentTitle: "Dashboard4", subItems:[
-      { title: "products", href: "/wares" },
-      { title: "products", href: "/wares" },
-      { title: "products", href: "/wares" }
-    ]
-  }
-])
-
-const test = ref([navItem1, navItem2, navItem3, navItem4])
-
 const stripBodyItem = ref<any>([
   { icon: "create-dashboard", title: "title1" },
   { icon: "folder-minus", title: "title2" },
@@ -144,24 +76,13 @@ function toggle(i: number) {
   }
 }
 
-const ttt = computed(() => {
-  return test.value.find((data, index) => index === isActive.value) || test.value[0] }
-});
-
-watchEffect(() => {
-  ttt.value
-})
-
-
-
-
 </script>
 
 <template>
   <div class="uk-background-muted">
     <div class="pr-sidebar">
       <strip target="#wrapper-0" :strip-body-item="stripBodyItem" @open-sidebar=" (i) =>  toggle(i)" />
-      <wrapper :divider="4" id="wrapper-0" :nav-item="ttt" :title="`index`" />
+      <wrapper :divider="4" id="wrapper-0" />
     </div>
     <main class="view-wrapper" :style="[value ? sideBarOpened : '']">
       <pr-section class="uk-padding-remove-top" muted default>

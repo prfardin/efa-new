@@ -1,40 +1,252 @@
 <script setup lang="ts">
+import { computed, ref } from 'vue'
 import PrOffcanvas from '@c/core/PrOffcanvas.vue'
 import PrNav from '@c/core/PrNav.vue'
 import PrIcon from '@c/core/PrIcon.vue'
 import PrLink from '@c/core/PrLink.vue'
-import { watchEffect } from 'vue'
 
 interface Props {
-  title: string
   divider: number
   id: string
-  navItem:
-    [{
-      parentTitle: string,
-      subItems:
-       [{
-          title: string,
-          href: string
-        }],
-    }]
+  isActive: number00
 }
 
 const props = withDefaults(defineProps<Props>(), {
 
 })
 
+const navItem1 = ref<any>({
+  title: 'index1',
+  body: [
+    {
+      parentTitle: 'Dashboard2',
+      subItems: [
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' }
+      ]
+    },
+    {
+      parentTitle: 'Shop',
+      subItems: [
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' }
+      ]
+    },
+    {
+      parentTitle: 'Production',
+      subItems: [
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' }
+      ]
+    },
+    {
+      parentTitle: 'test',
+      subItems: [
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' }
+      ]
+    },
+    {
+      parentTitle: 'test1',
+      subItems: [
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' }
+      ]
+    },
+    {
+      parentTitle: 'test3',
+      subItems: [
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' }
+      ]
+    },
+  ]
+})
+
+const navItem2 = ref<any>({
+  title: 'index2',
+  body: [
+    {
+      parentTitle: 'Dashboard2',
+      subItems: [
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' }
+      ]
+    },
+    {
+      parentTitle: 'Shop',
+      subItems: [
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' }
+      ]
+    },
+    {
+      parentTitle: 'Production',
+      subItems: [
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' }
+      ]
+    },
+    {
+      parentTitle: 'test',
+      subItems: [
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' }
+      ]
+    },
+    {
+      parentTitle: 'test1',
+      subItems: [
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' }
+      ]
+    },
+    {
+      parentTitle: 'test3',
+      subItems: [
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' }
+      ]
+    },
+  ]
+})
+
+const navItem3 = ref<any>({
+  title: 'index3',
+  body: [
+    {
+      parentTitle: 'Dashboard2',
+      subItems: [
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' }
+      ]
+    },
+    {
+      parentTitle: 'Shop',
+      subItems: [
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' }
+      ]
+    },
+    {
+      parentTitle: 'Production',
+      subItems: [
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' }
+      ]
+    },
+    {
+      parentTitle: 'test',
+      subItems: [
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' }
+      ]
+    },
+    {
+      parentTitle: 'test1',
+      subItems: [
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' }
+      ]
+    },
+    {
+      parentTitle: 'test3',
+      subItems: [
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' }
+      ]
+    },
+  ]
+})
+
+const navItem4 = ref<any>({
+  title: 'index4',
+  body: [
+    {
+      parentTitle: 'Dashboard2',
+      subItems: [
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' }
+      ]
+    },
+    {
+      parentTitle: 'Shop',
+      subItems: [
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' }
+      ]
+    },
+    {
+      parentTitle: 'Production',
+      subItems: [
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' }
+      ]
+    },
+    {
+      parentTitle: 'test',
+      subItems: [
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' }
+      ]
+    },
+    {
+      parentTitle: 'test1',
+      subItems: [
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' }
+      ]
+    },
+    {
+      parentTitle: 'test3',
+      subItems: [
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/wares' }
+      ]
+    },
+  ]
+})
+
+const navItems = ref([navItem1, navItem2, navItem3, navItem4])
+
+const data = computed<any>(() => {
+  return navItems.value.find((data, index) => index === props.isActive)
+})
 
 </script>
 
 <template>
-  <pr-offcanvas container="" class="pr-sidebar-wrapper" :close-button="false" :id="id" :bg-close="false" :esc-close="false">
+  <pr-offcanvas class="pr-sidebar-wrapper" :close-button="false" :id="id" :bg-close="false" :esc-close="false">
     <template #title>
-      <h3 class="uk-margin-small-bottom uk-h3">{{ title }}</h3>
+      <h3 class="uk-margin-small-bottom uk-h3">{{ data.title }}</h3>
     </template>
     <template #content>
       <pr-nav multiple>
-        <template v-for="(item, index) in navItem" :key="index">
+        <template v-for="(item, index) in data.body" :key="index">
           <li class="uk-parent">
             <a href="#">{{ item.parentTitle }}<pr-icon class="pr-nav-parent" icon="line-angle-down" /></a>
             <ul class="uk-nav-sub">
