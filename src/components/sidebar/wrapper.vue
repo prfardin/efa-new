@@ -6,15 +6,17 @@ import PrIcon from '@c/core/PrIcon.vue'
 import PrLink from '@c/core/PrLink.vue'
 
 interface Props {
-  divider: number
   id: string
-  isActive: number00
+  isActive: number
 }
 
 const props = withDefaults(defineProps<Props>(), {
 
 })
 
+// data
+// We preferred to use the data inside the component because it is easier to manage it here
+// But I don't know if the best way to use them is inside the component or not
 const navItem1 = ref<any>({
   title: 'index1',
   body: [
@@ -66,7 +68,8 @@ const navItem1 = ref<any>({
         { title: 'products', href: '/wares' }
       ]
     },
-  ]
+  ],
+  divider: 4
 })
 
 const navItem2 = ref<any>({
@@ -82,30 +85,6 @@ const navItem2 = ref<any>({
     },
     {
       parentTitle: 'Shop',
-      subItems: [
-        { title: 'products', href: '/wares' },
-        { title: 'products', href: '/wares' },
-        { title: 'products', href: '/wares' }
-      ]
-    },
-    {
-      parentTitle: 'Production',
-      subItems: [
-        { title: 'products', href: '/wares' },
-        { title: 'products', href: '/wares' },
-        { title: 'products', href: '/wares' }
-      ]
-    },
-    {
-      parentTitle: 'test',
-      subItems: [
-        { title: 'products', href: '/wares' },
-        { title: 'products', href: '/wares' },
-        { title: 'products', href: '/wares' }
-      ]
-    },
-    {
-      parentTitle: 'test1',
       subItems: [
         { title: 'products', href: '/wares' },
         { title: 'products', href: '/wares' },
@@ -174,7 +153,8 @@ const navItem3 = ref<any>({
         { title: 'products', href: '/wares' }
       ]
     },
-  ]
+  ],
+  divider: 3
 })
 
 const navItem4 = ref<any>({
@@ -228,32 +208,40 @@ const navItem4 = ref<any>({
         { title: 'products', href: '/wares' }
       ]
     },
-  ]
+  ],
+  divider: 5
 })
 
+// صث
 const navItems = ref([navItem1, navItem2, navItem3, navItem4])
 
-const data = computed<any>(() => {
-  return navItems.value.find((data, index) => index === props.isActive)
+const data = computed(() => {
+  const item = navItems.value[props.isActive];
+  return item ? item.value : null;
 })
+
+const findLastIndex = computed(() => {
+  return data.value?.body.length - 1;
+});
+
 
 </script>
 
 <template>
   <pr-offcanvas class="pr-sidebar-wrapper" :close-button="false" :id="id" :bg-close="false" :esc-close="false">
     <template #title>
-      <h3 class="uk-margin-small-bottom uk-h3">{{ data.title }}</h3>
+      <h3 class="uk-margin-small-bottom uk-h3">{{ data?.title }}</h3>
     </template>
     <template #content>
       <pr-nav multiple>
-        <template v-for="(item, index) in data.body" :key="index">
+        <template v-for="(item, index) in data?.body" :key="index">
           <li class="uk-parent">
             <a href="#">{{ item.parentTitle }}<pr-icon class="pr-nav-parent" icon="line-angle-down" /></a>
             <ul class="uk-nav-sub">
               <li v-for="(subItem, subIndex) in item.subItems" :key="subIndex"><pr-link :to="subItem.href">{{ subItem.title }}</pr-link></li>
             </ul>
           </li>
-          <li v-if="(index + 1) % divider === 0" class="uk-nav-divider" role="presentation"></li>
+          <li v-if="(index + 1) % data.divider === 0 && index !== findLastIndex" class="uk-nav-divider" role="presentation"></li>
         </template>
       </pr-nav>
     </template>
@@ -271,11 +259,5 @@ const data = computed<any>(() => {
     transform: rotate(180deg);
   }
 }
-
-
-
-
-
-
 
 </style>

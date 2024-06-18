@@ -68,6 +68,7 @@ const { value, toggle: changeWrapperStatus } = useToggle()
 
 const isActive = ref<number>(0)
 
+
 function toggle(i: number) {
   value.value = true
   isActive.value = i
@@ -82,7 +83,7 @@ function toggle(i: number) {
   <div class="uk-background-muted">
     <div class="pr-sidebar">
       <strip target="#wrapper-0" :strip-body-item="stripBodyItem" @open-sidebar=" (i) =>  toggle(i)" />
-      <wrapper :divider="4" id="wrapper-0" />
+      <wrapper id="wrapper-0" :is-active="isActive"/>
     </div>
     <main class="view-wrapper" :style="[value ? sideBarOpened : '']">
       <pr-section class="uk-padding-remove-top" muted default>
@@ -151,7 +152,7 @@ function toggle(i: number) {
                       </pr-drop>
                     </li>
                     <li>
-                      <pr-toggle href="#my-id">
+                      <pr-toggle target="#my-id">
                         <pr-avatar small circle border>
                           <pr-icon icon="create-dashboard" ratio=".8" />
                         </pr-avatar>
