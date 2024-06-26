@@ -8,8 +8,6 @@ import PrLink from '@c/core/PrLink.vue'
 // images
 import Avatar from '@i/avatar.png'
 import PrIcon from '@c/core/PrIcon.vue'
-import PrToggle from '@c/core/PrToggle.vue'
-
 
 interface StripBody {
   icon: string
@@ -39,6 +37,7 @@ const stripFooterItem = ref<StripBody[]>([
 ])
 
 onMounted(() => {
+  // tooltip
   document.querySelectorAll('.pr-sidebar-strip-body > .pr-sidebar-strip-item > a').forEach((e, key) => {
     tooltip(e, {
       title: props.stripBodyItem[key].title,

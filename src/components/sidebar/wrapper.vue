@@ -15,7 +15,7 @@ const props = withDefaults(defineProps<Props>(), {
 })
 
 // data
-// We preferred to use the data inside the component because it is easier to manage it here
+// We preferred to use the nav items inside the component because it is easier to manage it here
 // But I don't know if the best way to use them is inside the component or not
 const navItem1 = ref<any>({
   title: 'index1',
@@ -212,8 +212,10 @@ const navItem4 = ref<any>({
   divider: 5
 })
 
-// صث
+// We made data to
 const navItems = ref([navItem1, navItem2, navItem3, navItem4])
+
+
 
 const data = computed(() => {
   const item = navItems.value[props.isActive];
@@ -236,7 +238,7 @@ const findLastIndex = computed(() => {
       <pr-nav multiple>
         <template v-for="(item, index) in data?.body" :key="index">
           <li class="uk-parent">
-            <a href="#">{{ item.parentTitle }}<pr-icon class="pr-nav-parent" icon="line-angle-down" /></a>
+            <a>{{ item.parentTitle }}<pr-icon class="pr-nav-parent" icon="line-angle-down" /></a>
             <ul class="uk-nav-sub">
               <li v-for="(subItem, subIndex) in item.subItems" :key="subIndex"><pr-link :to="subItem.href">{{ subItem.title }}</pr-link></li>
             </ul>

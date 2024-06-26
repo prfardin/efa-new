@@ -53,8 +53,8 @@ const Activity = ref<any>([
 ])
 
 const sideBarOpened = reactive({
-  maxWidth: 'calc(100% - 300px)',
-  marginInlineStart: '300px'
+  maxWidth: "calc(100% - 300px)",
+  marginInlineStart: "300px"
 })
 
 const stripBodyItem = ref<any>([
@@ -64,16 +64,17 @@ const stripBodyItem = ref<any>([
   { icon: "bell", title: "title4" }
 ])
 
+// sidebar
+
 const { value, toggle: changeWrapperStatus } = useToggle()
 
 const isActive = ref<number>(0)
 
-
-function toggle(i: number) {
+function toggleWrapper(i: number) {
   value.value = true
   isActive.value = i
   if(value.value) {
-    UIkit.offcanvas("#wrapper-0").show()
+    UIkit.offcanvas("#wrapper").show()
   }
 }
 
@@ -82,8 +83,8 @@ function toggle(i: number) {
 <template>
   <div class="uk-background-muted">
     <div class="pr-sidebar">
-      <strip target="#wrapper-0" :strip-body-item="stripBodyItem" @open-sidebar=" (i) =>  toggle(i)" />
-      <wrapper id="wrapper-0" :is-active="isActive"/>
+      <strip :strip-body-item="stripBodyItem" @open-sidebar="(i) => toggleWrapper(i)" />
+      <wrapper id="wrapper" :is-active="isActive"/>
     </div>
     <main class="view-wrapper" :style="[value ? sideBarOpened : '']">
       <pr-section class="uk-padding-remove-top" muted default>
@@ -95,7 +96,7 @@ function toggle(i: number) {
                   <ul class="uk-navbar-nav uk-flex-middle">
                     <li>
                       <div>
-                        <pr-toggle target="#wrapper-0" @click="changeWrapperStatus">
+                        <pr-toggle target="#wrapper" @click="changeWrapperStatus">
                           <pr-avatar tag="div" class="tm-muted-b-c">
                             <div class="pr-sidebar-button" :class="{ 'pr-sidebar-button-close': value }" >
                               <span class="pr-sidebar-button-line-1"></span>
