@@ -64,6 +64,12 @@ const stripBodyItem = ref<any>([
   { icon: "bell", title: "title4" }
 ])
 
+const stripFooterItem = ref<any>([
+  { icon: "paint-tool", title: "title5" },
+  { icon: "search", title: "title6" },
+  { icon: "setting", title: "title7" },
+])
+
 // sidebar
 
 const { value, toggle: changeWrapperStatus } = useToggle()
@@ -83,7 +89,7 @@ function toggleWrapper(i: number) {
 <template>
   <div class="uk-background-muted">
     <div class="pr-sidebar">
-      <strip :strip-body-item="stripBodyItem" @open-sidebar="(i) => toggleWrapper(i)" />
+      <strip :strip-body-item="stripBodyItem" :strip-footer-item="stripFooterItem" @open-sidebar="(i) => toggleWrapper(i)" />
       <wrapper id="wrapper" :is-active="isActive"/>
     </div>
     <main class="view-wrapper" :style="[value ? sideBarOpened : '']">
@@ -123,7 +129,7 @@ function toggleWrapper(i: number) {
                     </li>
                     <li>
                       <pr-toggle>
-                        <pr-avatar small circle border>
+                        <pr-avatar small circle border hover>
                           <pr-icon icon="bell" />
                         </pr-avatar>
                       </pr-toggle>
@@ -154,7 +160,7 @@ function toggleWrapper(i: number) {
                     </li>
                     <li>
                       <pr-toggle target="#my-id">
-                        <pr-avatar small circle border>
+                        <pr-avatar small circle border hover>
                           <pr-icon icon="create-dashboard" ratio=".8" />
                         </pr-avatar>
                       </pr-toggle>
@@ -431,7 +437,7 @@ function toggleWrapper(i: number) {
                     </li>
                     <li>
                       <pr-toggle>
-                        <pr-avatar small circle cls="pr-cream-b-c">
+                        <pr-avatar small circle class="pr-cream-b-c pr-avatar-hover-primary" hover>
                           <img :src="Avatar" alt="" class="uk-object-cover">
                         </pr-avatar>
                       </pr-toggle>

@@ -212,10 +212,7 @@ const navItem4 = ref<any>({
   divider: 5
 })
 
-// We made data to
 const navItems = ref([navItem1, navItem2, navItem3, navItem4])
-
-
 
 const data = computed(() => {
   const item = navItems.value[props.isActive];

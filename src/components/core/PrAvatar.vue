@@ -60,9 +60,14 @@ const avatarClass = computed(() => avatarClassObject(props))
     border: 1px solid #e5e7eb;
   }
 
-  &.pr-avatar-border-hover:hover {
-    border-color: #006af3;
-    color: #006af3;
+  &.pr-avatar-hover:hover {
+    --pr-shadow: #e5e7eb;
+    box-shadow: 0 0 0 4px #fdfdfd,
+    0 0 0 4px #fdfdfd,
+    0 0 0 0.344rem var(--pr-shadow);
+    &.pr-avatar-hover-primary {
+      --pr-shadow: #006af3;
+    }
   }
 
   &.pr-avatar-rounded {
