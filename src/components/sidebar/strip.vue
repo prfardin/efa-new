@@ -7,6 +7,7 @@ import PrLink from '@c/core/PrLink.vue'
 
 // images
 import Avatar from '@i/avatar.png'
+import Logo from '@i/logo-inverse.png'
 import PrIcon from '@c/core/PrIcon.vue'
 import PrAvatar from '@c/core/PrAvatar.vue'
 import PrToggle from '@c/core/PrToggle.vue'
@@ -74,10 +75,10 @@ function test() {
 </script>
 
 <template>
-  <div class="pr-sidebar-strip">
+  <div class="pr-sidebar-strip tesss">
     <div class="pr-sidebar-strip-header">
       <pr-link to="/" class="uk-flex uk-flex-center uk-flex-middle">
-        <img :src="Avatar" alt="avatar" width="40" height="40" />
+        <img :src="Logo" alt="logo" width="35" height="40" />
       </pr-link>
     </div>
     <ul class="pr-sidebar-strip-body" ref="listTooltip">
@@ -97,23 +98,21 @@ function test() {
           </div>
         </a>
       </li>
-      <li class="pr-sidebar-strip-item">
+      <li >
           <div>
-            <div @click="test">
+            <a class="tesss" @click="test">
               <pr-avatar hover circle class="pr-cream-b-c pr-avatar-hover-primary">
                 <img :src="Avatar" alt="" class="uk-object-cover">
               </pr-avatar>
-            </div>
-          </div>
-      </li>
-      <li>
-        <span>
-          <pr-drop id="ttt" target="body" class="pr-width-256" pos="right" mode="click" :offset="-5" :animate-out="true">
-      <pr-card class="uk-border-rounded" border default style="height: 100px; background-color: red">
+            </a>
+            <pr-drop id="ttt"  mode="click" :offset="-400" :animate-out="true" pos="right-center" inset target=".tesss">
+              <pr-card class="uk-border-rounded" border default >
+                <h1>this is a test</h1>
 
-      </pr-card>
-    </pr-drop>
-        </span>
+              </pr-card>
+            </pr-drop>
+
+          </div>
       </li>
     </ul>
   </div>
