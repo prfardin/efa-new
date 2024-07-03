@@ -72,10 +72,16 @@ function test() {
   UIkit.drop('ttt').show();
 }
 
+const notifications = ref<any>([
+  { href:"/", img: Avatar, name: "saeed bayat", notif: "let a comment", time: "1 hour ago" },
+  { href:"/", img: Avatar, name: "saeed bayat", notif: "let a comment", time: "1 hour ago" },
+  { href:"/", img: Avatar, name: "saeed bayat", notif: "let a comment", time: "1 hour ago" },
+])
+
 </script>
 
 <template>
-  <div class="pr-sidebar-strip tesss">
+  <div class="pr-sidebar-strip">
     <div class="pr-sidebar-strip-header">
       <pr-link to="/" class="uk-flex uk-flex-center uk-flex-middle">
         <img :src="Logo" alt="logo" width="35" height="40" />
@@ -98,24 +104,41 @@ function test() {
           </div>
         </a>
       </li>
-      <li >
-          <div>
-            <a class="tesss" @click="test">
+      <li class="pr-sidebar-strip-item tmtmtm" >
+          <div style="display: inline-block">
+            <a @click="test">
               <pr-avatar hover circle class="pr-cream-b-c pr-avatar-hover-primary">
                 <img :src="Avatar" alt="" class="uk-object-cover">
               </pr-avatar>
             </a>
-            <pr-drop id="ttt"  mode="click" :offset="-400" :animate-out="true" pos="right-center" inset target=".tesss">
-              <pr-card class="uk-border-rounded" border default >
-                <h1>this is a test</h1>
-
-              </pr-card>
-            </pr-drop>
-
           </div>
       </li>
     </ul>
   </div>
+  <pr-drop id="ttt" animation="uk-animation-scale-up" mode="click" :offset="5" :animate-out="true" pos="top-left" target=".pr-sidebar-strip .tmtmtm">
+    <pr-card class="uk-border-rounded" border default>
+      <div class="uk-card-header uk-flex uk-flex-middle uk-flex-between pr-padding-16">
+        <h4 class="uk-h4 uk-margin-remove">Notification</h4>
+        <pr-link to="">View All</pr-link>
+      </div>
+      <div class="uk-card-body uk-card-small uk-card-small pr-padding-16">
+        <pr-link reset :to="n.href" v-for="(n, index) in notifications" :key="index">
+          <div class="pr-flex-items">
+            <div>
+              <pr-avatar small circle cls="pr-cream-b-c">
+                <img :src="n.img" alt="" class="uk-object-cover">
+              </pr-avatar>
+            </div>
+            <div>
+              <span class="uk-text-bold uk-text-small">{{ n.name }}</span>
+              <span class="uk-text-meta" style="margin-left: 8px">{{ n.notif }}</span>
+              <div class="uk-text-meta">{{ n.time }}</div>
+            </div>
+          </div>
+        </pr-link>
+      </div>
+    </pr-card>
+  </pr-drop>
 </template>
 
 <style>
