@@ -166,10 +166,10 @@
     justify-content: center;
     height: 4rem;
     width: 100%;
-    a.uk-active div {
+    & > a.uk-active div {
         background-color: rgba(0, 106, 243, 0.1);
     }
-    div {
+   & > a > div {
         display: flex;
         justify-content: center;
         align-items: center;

@@ -72,10 +72,11 @@ function test() {
   UIkit.drop('ttt').show();
 }
 
-const notifications = ref<any>([
-  { href:"/", img: Avatar, name: "saeed bayat", notif: "let a comment", time: "1 hour ago" },
-  { href:"/", img: Avatar, name: "saeed bayat", notif: "let a comment", time: "1 hour ago" },
-  { href:"/", img: Avatar, name: "saeed bayat", notif: "let a comment", time: "1 hour ago" },
+const userShortcuts = ref<any>([
+  { href:"/", icon: "user", name: "saeed bayat", gmail: "saeedbayat@test.com" },
+  { href:"/", icon: "briefcase", name: "saeed bayat", gmail: "saeedbayat@test.com" },
+  { href:"/", icon: "users-alt", name: "saeed bayat", gmail: "saeedbayat@test.com" },
+  { href:"/", icon: "setting", name: "saeed bayat", gmail: "saeedbayat@test.com" }
 ])
 
 </script>
@@ -104,41 +105,47 @@ const notifications = ref<any>([
           </div>
         </a>
       </li>
-      <li class="pr-sidebar-strip-item tmtmtm" >
-          <div style="display: inline-block">
-            <a @click="test">
+      <li class="pr-sidebar-strip-item" >
+          <div>
+            <a>
               <pr-avatar hover circle class="pr-cream-b-c pr-avatar-hover-primary">
                 <img :src="Avatar" alt="" class="uk-object-cover">
               </pr-avatar>
             </a>
+            <pr-drop class="pr-width-256" pos="tight-top" mode="click" :offset="55" :animate-out="true">
+              <pr-card class="uk-border-rounded" border default>
+                <div class="uk-background-muted" style="padding: 24px">
+                  <div class="pr-flex-items">
+                    <div>
+                      <pr-avatar medium circle cls="pr-cream-b-c" style="--avatar-size: 56px">
+                        <img :src="Avatar" alt="" class="uk-object-cover">
+                      </pr-avatar>
+                    </div>
+                    <div>
+                      <div class="uk-text-bold uk-text-small">saeed bayat</div>
+                      <div class="uk-text-meta">IT Team</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="uk-card-body" style="padding: .5rem">
+                  <pr-link reset :to="uS.href" v-for="(uS, index) in userShortcuts" :key="index">
+                    <div class="pr-flex-items">
+                      <div>
+                          <pr-icon :icon="uS.icon" ratio=".8" />
+                      </div>
+                      <div>
+                        <div class="uk-text-bold uk-text-small">{{ uS.name }}</div>
+                        <div class="uk-text-meta">{{ uS.gmail }}</div>
+                      </div>
+                    </div>
+                  </pr-link>
+                </div>
+              </pr-card>
+            </pr-drop>
           </div>
       </li>
     </ul>
   </div>
-  <pr-drop id="ttt" animation="uk-animation-scale-up" mode="click" :offset="5" :animate-out="true" pos="top-left" target=".pr-sidebar-strip .tmtmtm">
-    <pr-card class="uk-border-rounded" border default>
-      <div class="uk-card-header uk-flex uk-flex-middle uk-flex-between pr-padding-16">
-        <h4 class="uk-h4 uk-margin-remove">Notification</h4>
-        <pr-link to="">View All</pr-link>
-      </div>
-      <div class="uk-card-body uk-card-small uk-card-small pr-padding-16">
-        <pr-link reset :to="n.href" v-for="(n, index) in notifications" :key="index">
-          <div class="pr-flex-items">
-            <div>
-              <pr-avatar small circle cls="pr-cream-b-c">
-                <img :src="n.img" alt="" class="uk-object-cover">
-              </pr-avatar>
-            </div>
-            <div>
-              <span class="uk-text-bold uk-text-small">{{ n.name }}</span>
-              <span class="uk-text-meta" style="margin-left: 8px">{{ n.notif }}</span>
-              <div class="uk-text-meta">{{ n.time }}</div>
-            </div>
-          </div>
-        </pr-link>
-      </div>
-    </pr-card>
-  </pr-drop>
 </template>
 
 <style>

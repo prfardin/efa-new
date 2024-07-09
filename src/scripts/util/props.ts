@@ -257,9 +257,9 @@ export interface DropPropsType {
   delayHide?: number
   autoUpdate?: boolean
   display?: "dynamic" | "static"
-  boundary?: string
-  boundaryX?: string
-  boundaryY?: string
+  boundary?: string | boolean
+  boundaryX?: string | boolean
+  boundaryY?: string | boolean
   boundaryAlign?: boolean
   target?: string | boolean
   targetX?: string | boolean

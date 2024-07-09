@@ -7,6 +7,28 @@ import { onMounted, ref } from 'vue'
 
 const props = withDefaults(defineProps<DropPropsType>(), {
   toggle: "- *",
+  pos: "bottom-left",
+  stretch: false,
+  mode: "click, hover",
+  delayShow: 0,
+  delayHide: 800,
+  autoUpdate: true,
+  boundary: false,
+  boundaryX: false,
+  boundaryY: false,
+  target: false,
+  targetX: false,
+  targetY: false,
+  inset: false,
+  flip: true,
+  shift: true,
+  offset: 0,
+  animation: "uk-animation-fade",
+  animateOut: false,
+  bgScroll: true,
+  closeOnScroll: false,
+  duration: 200,
+  container: false
 })
 
 const el = ref<RefElement>(null)
