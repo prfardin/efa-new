@@ -99,11 +99,11 @@ const userShortcuts = ref<any>([
     </ul>
     <ul class="pr-sidebar-strip-footer">
       <li class="pr-sidebar-strip-item" v-for="(item, index) in stripFooterItem" :key="index">
-        <a>
+        <router-link to="settings">
           <div>
             <pr-icon :icon="item.icon" ratio=".9" />
           </div>
-        </a>
+        </router-link>
       </li>
       <li class="pr-sidebar-strip-item" >
           <div>

@@ -80,6 +80,13 @@ const routes: RouteRecordRaw[] = [
         }
       }
     ]
+  },
+  {
+    path: '/settings',
+    name: 'settings',
+    component: () => import('@v/settings/personalSettings.vue'),
+    children: [
+    ]
   }
 ]
 
