@@ -23,6 +23,7 @@ import {
 } from './classes'
 
 import { RouteLocationRaw } from 'vue-router'
+import { s } from 'vitest/dist/reporters-xEmem8D4'
 
 /**
  * Section Props Types
@@ -121,6 +122,32 @@ export interface NavPropsType {
   transition?: string
   animation?: string
   duration?: number
+}
+
+/**
+ * Nav Props Types
+ */
+export interface NavBar {
+  prContainer?: string
+  align?: string,
+  dropbar?: boolean,
+  dropbarAnchor?: string | boolean,
+  dropbarTransparentMode?: string | boolean,
+  stretch?: string | boolean,
+  mode?: string,
+  delayShow?: number,
+  delayHide?: number,
+  boundary?: string | boolean,
+  target?: string | boolean,
+  targetX?: string | boolean,
+  targetY?: string | boolean,
+  offset?: number,
+  animation?: string,
+  animateOut?: boolean,
+  bgScroll?: boolean,
+  closeOnScroll?: boolean,
+  duration?: number,
+  container?: boolean
 }
 
 /**
@@ -324,4 +351,22 @@ export interface ProgressPropsType {
   value: string | number
   max?: string | number
   id?: string
+}
+
+/**
+ * Progress Props Types
+ */
+
+export interface Tab {
+  connect?: string
+  toggle?: string
+  active?: number
+  animation?: string
+  duration?: number
+  swiping?: boolean
+  media?: number | string
+  tabs: [{
+    title: string
+    href: string
+  }]
 }

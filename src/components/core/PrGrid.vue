@@ -30,7 +30,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div :class="gridClass" ref="el">
+  <div class="uk-grid" :class="gridClass" ref="el">
     <slot />
   </div>
 </template>

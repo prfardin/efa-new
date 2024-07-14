@@ -11,7 +11,9 @@ import {
   UIkitToggleOptions,
   UIkitModalOptions,
   UIkitSwiterOptions,
-  UIkitSwitcherOptions
+  UIkitSwitcherOptions,
+  UIkitTooltipOptions,
+  UIkitTabOptions
 } from './types'
 
 
@@ -78,6 +80,11 @@ export function switcher(el: Element, options?: UIkitSwitcherOptions | UIkitSwit
 // set toggle
 export function tooltip(el: Element, options?: UIkitTooltipOptions) {
   return UIkit.tooltip(el, options)
+}
+
+// set tab
+export function tab(el: Element, options?: UIkitTabOptions) {
+  return UIkit.tab(el, options)
 }
 
 
