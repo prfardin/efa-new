@@ -3,7 +3,8 @@
 </script>
 
 <template>
-  <h1>settings</h1>
+  <h1>security</h1>
+
 </template>
 
 <style scoped>

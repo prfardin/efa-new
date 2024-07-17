@@ -23,7 +23,6 @@ import {
 } from './classes'
 
 import { RouteLocationRaw } from 'vue-router'
-import { s } from 'vitest/dist/reporters-xEmem8D4'
 
 /**
  * Section Props Types

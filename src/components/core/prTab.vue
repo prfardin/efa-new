@@ -33,7 +33,7 @@ onMounted(() => {
 <template>
   <ul class="uk-tab-left uk-tab" ref="el">
       <li v-for="(d, index) in tabs" :key="index">
-        <pr-link :to="d.href">{{ d.title }}</pr-link>
+        <pr-link class="" :to="d.href">{{ d.title }}</pr-link>
       </li>
   </ul>
 </template>

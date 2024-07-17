@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <h1>settings</h1>
+  <h1>api tokens</h1>
 </template>
 
 <style scoped>

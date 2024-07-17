@@ -82,10 +82,29 @@ const routes: RouteRecordRaw[] = [
     ]
   },
   {
-    path: '/settings',
-    name: 'settings',
-    component: () => import('@v/settings/personalSettings.vue'),
+    path: '/',
+    component: () => import('@v/settings/personalIndex.vue'),
     children: [
+      {
+        path: '/settings',
+        name: 'settings',
+        component: () => import('@v/settings/personalSettings.vue')
+      },
+      {
+        path: '/settings/security',
+        name: 'security',
+        component: () => import('@v/settings/personalSecurity.vue')
+      },
+      {
+        path: '/settings/notifications',
+        name: 'notifications',
+        component: () => import('@v/settings/personalNotifications.vue')
+      },
+      {
+        path: '/settings/tokens',
+        name: 'apiTokens',
+        component: () => import('@v/settings/personalApiTokens.vue')
+      },
     ]
   }
 ]
