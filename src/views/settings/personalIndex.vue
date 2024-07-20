@@ -38,11 +38,11 @@ const tabs = ref<any>([
       </div>
     </pr-nav-bar>
     <pr-section small>
-      <pr-container small>
+      <pr-container>
         <div class="uk-width-1-1 uk uk-position-relative">
           <pr-grid>
             <div class="uk-width-1-4">
-              <pr-tab :tabs="tabs"></pr-tab>
+              <pr-tab animation="uk-animation-fade" :tabs="tabs"></pr-tab>
             </div>
             <div class="uk-width-expand">
               <div>

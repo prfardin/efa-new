@@ -8,7 +8,7 @@ import PrContainer from '@c/core/PrContainer.vue'
 
 
 const props = withDefaults(defineProps<NavBar>(), {
-  prContainer: "uk-container-small",
+  prContainer: "uk-container",
   align: "left",
   dropbar: false,
   dropbarAnchor: false,
