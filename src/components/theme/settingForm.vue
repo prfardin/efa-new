@@ -4,6 +4,11 @@ import PrIcon from '@c/core/PrIcon.vue'
 
 interface Props {
   title: string
+  forms: [{
+    label: string,
+    input: string,
+    icon: string
+  }]
 }
 
 
@@ -15,42 +20,14 @@ const porps = withDefaults(defineProps<Props>(), {
 <template>
   <h3 class="uk-text-small uk-text-bold uk-margin-remove pr-padding-1-left pr-padding-1-right pr-padding-1-bottom">{{ title }}</h3>
   <div class="flex uk-flex-column">
-    <div class="group">
+    <div class="group" v-for="(form, index) in forms" :key="index">
       <pr-grid small class="uk-flex-middle">
         <div class="uk-width-auto">
-          <div class="uk-text-muted uk-text-small">Email address</div>
-          <div>mayar@gmail.com</div>
+          <div class="uk-text-muted uk-text-small">{{ form.label }}</div>
+          <div>{{ form.input }}</div>
         </div>
         <div class="uk-width-expand uk-text-right">
-          <pr-icon class="uk-width-1-1" icon="line-edit-alt" ratio=".7"/>
-        </div>
-        <div class="uk-width-auto">
-          <span class="uk-text-primary uk-text-small edit uk-text-bold">Edit</span>
-        </div>
-      </pr-grid>
-    </div>
-    <div class="group">
-      <pr-grid small class="uk-flex-middle">
-        <div class="uk-width-auto">
-          <div class="uk-text-muted uk-text-small">Email address</div>
-          <div>mayar@gmail.com</div>
-        </div>
-        <div class="uk-width-expand uk-text-right">
-          <pr-icon class="uk-width-1-1" icon="line-edit-alt" ratio=".7"/>
-        </div>
-        <div class="uk-width-auto">
-          <span class="uk-text-primary uk-text-small edit uk-text-bold">Edit</span>
-        </div>
-      </pr-grid>
-    </div>
-    <div class="group">
-      <pr-grid small class="uk-flex-middle">
-        <div class="uk-width-auto">
-          <div class="uk-text-muted uk-text-small">Email address</div>
-          <div>mayar@gmail.com</div>
-        </div>
-        <div class="uk-width-expand uk-text-right">
-          <pr-icon class="uk-width-1-1" icon="line-edit-alt" ratio=".7"/>
+          <pr-icon class="uk-width-1-1" :icon="form.icon" ratio=".7"/>
         </div>
         <div class="uk-width-auto">
           <span class="uk-text-primary uk-text-small edit uk-text-bold">Edit</span>

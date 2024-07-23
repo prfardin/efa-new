@@ -2,6 +2,14 @@
 
 import PrGrid from '@c/core/PrGrid.vue'
 import SettingForm from '@c/theme/settingForm.vue'
+import PrIcon from '@c/core/PrIcon.vue'
+import { ref } from 'vue'
+
+const data = ref<any>([
+  { label: "Email address", input: "mayar@gmail.com", icon: "line-edit-alt" },
+  { label: "Preferred name", input: "Maya Rosselini", icon: "line-edit-alt" },
+  { label: "Legal name", input: "Maya Rosselini", icon: "line-edit-alt" },
+])
 </script>
 
 <template>
@@ -13,7 +21,7 @@ import SettingForm from '@c/theme/settingForm.vue'
       </div>
       <div class="uk-width-expand">
         <div class="uk-child-width-1-1">
-          <setting-form title="Your info" />
+          <setting-form title="Your info" :forms="data" />
         </div>
       </div>
     </pr-grid>
