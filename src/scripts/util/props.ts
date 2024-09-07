@@ -268,6 +268,7 @@ export interface ModalPropsType {
   clsPanel?: string | undefined
   selClose?: string | undefined
   id: string
+  cls?: string
 }
 
 /**
@@ -368,4 +369,16 @@ export interface Tab {
     title: string
     href: string
   }]
+}
+
+/**
+ * Search Props Types
+ */
+
+export interface SearchPropsType {
+  label?: string
+  placeholder?: string
+  labelCls?: string
+  id: string
+  autofocus?: boolean
 }

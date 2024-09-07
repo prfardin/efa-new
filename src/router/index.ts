@@ -4,6 +4,7 @@ import Dashboard from '@v/Dashboard.vue'
 // we use dynamic import
 // which lazy-loaded when the route is visited.
 const routes: RouteRecordRaw[] = [
+  { path: '/test', component: () => import('@v/TestComponent.vue')},
   { path: '/',
     component: Dashboard,
     children: [

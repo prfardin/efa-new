@@ -1,7 +1,19 @@
+/* color */
+
 :root {
-    --primary-color: #006af3;
+    --primary-color-lightest: 192, 219, 255;
+    --primary-color-light: 90, 162, 255;
+    --primary-color: 0, 106, 243;
     --default-text-color: 70, 73, 100;
     --border-color: 229, 231, 235;
+    --border-rounded-xl: 0.75rem;
+    --transition-duration-100: .1s;
+    --transition-duration-200: .2s;
+    --transition-duration-300: .3s;
+}
+
+.pr-border-rounded-xl {
+    border-radius: var(--border-rounded-xl);;
 }
 
 /* =================================================
@@ -17,7 +29,7 @@
         display: block;
         position: absolute;
         top: .125rem;
-        background-color: var(--primary-color);
+        background-color: rgb(var(--primary-color));
         width: 100%;
         transition:all .2s cubic-bezier(.4,0,.2,1);
     }
@@ -26,7 +38,7 @@
         display: block;
         position: absolute;
         top: 50%;
-        background-color: var(--primary-color);
+        background-color: rgb(var(--primary-color));
         width: 100%;
         max-width: 50%;
         transition:all .2s cubic-bezier(.4,0,.2,1);
@@ -36,7 +48,7 @@
         display: block;
         position: absolute;
         bottom: 0;
-        background-color: var(--primary-color);
+        background-color: rgb(var(--primary-color));
         width: 100%;
         transition:all .2s cubic-bezier(.4,0,.2,1);
     }
@@ -217,6 +229,47 @@
     border-color: transparent #1e293b transparent  transparent;
 }
 
+
+
+
+/* =================================================
+    search component
+ ================================================= */
+
+.uk-search-default.pr-search-default .uk-search-input {
+    background-color: transparent;
+    border: 1px solid rgb(var(--border-color));
+    border-radius: var(--border-rounded-xl);
+    transition: border var(--transition-duration-200) ease-in-out;
+}
+
+.uk-search-default.pr-search-default .uk-search-input:focus {
+    background-color: transparent;
+    border-color: rgb(var(--primary-color));
+}
+
+.uk-search-default.pr-search-default {
+    width: 100%;
+}
+
+.pr-icon-quaternary,
+.pr-icon-tertiary,
+.pr-icon-primary {
+    transition: color var(--transition-duration-200) ease-in-out;
+}
+
+
+.uk-search-icon:has(+.uk-search-input:focus) .pr-icon-quaternary {
+    color: rgb(var(--primary-color-lightest));
+}
+
+.uk-search-icon:has(+.uk-search-input:focus) .pr-icon-tertiary {
+    color: rgb(var(--primary-color-light))
+}
+
+.uk-search-icon:has(+.uk-search-input:focus) .pr-icon-primary {
+    color: rgb(var(--primary-color));
+}
 
 
 

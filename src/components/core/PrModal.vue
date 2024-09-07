@@ -2,6 +2,7 @@
 import { ModalPropsType } from '@u/props'
 import { modal, RefElement } from '@u/util'
 import { onMounted, ref } from 'vue'
+import UIkit from 'uikit'
 
 const el = ref<RefElement>(null)
 
@@ -25,13 +26,12 @@ onMounted(() => {
 
 <template>
   <div :id="id" ref="el">
-    <div class="uk-modal-dialog uk-modal-body">
-      <h2 class="uk-modal-title"></h2>
-      <button class="uk-modal-close" type="button"></button>
+    <div class="uk-modal-dialog uk-modal-body" :class="cls">
+      <slot />
     </div>
   </div>
 </template>
 
-<style scoped lang="less">
+<style scoped>
 
 </style>

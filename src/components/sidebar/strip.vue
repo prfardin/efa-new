@@ -1,20 +1,26 @@
 <script setup lang="ts">
-import { tooltip } from '@u/util'
+import { modal, tooltip } from '@u/util'
 import { onMounted, ref } from 'vue'
+import UIkit from 'uikit'
+
 
 // components
 import PrLink from '@c/core/PrLink.vue'
+import { useRouter } from 'vue-router'
+
 
 // images
 import Avatar from '@i/avatar.png'
 import Logo from '@i/logo-inverse.png'
 import PrIcon from '@c/core/PrIcon.vue'
 import PrAvatar from '@c/core/PrAvatar.vue'
-import PrToggle from '@c/core/PrToggle.vue'
-import PrButton from '@c/core/PrButton.vue'
 import PrDrop from '@c/core/PrDrop.vue'
 import PrCard from '@c/core/PrCard.vue'
-import UIkit from 'uikit'
+import PrSearchModal from '@c/core/form/PrSearchModal.vue'
+
+
+
+const router = useRouter()
 
 interface StripBody {
   icon: string
@@ -27,9 +33,6 @@ interface Props {
   stripBodyItem: [
     { icon: string, title: string },
   ] ,
-  stripFooterItem: [
-    { icon: string, title: string },
-  ]
 }
 
 const emit =  defineEmits(['openSidebar'])
@@ -39,6 +42,29 @@ const props = withDefaults(defineProps<Props>(), {
 
 })
 
+function test() {
+  console.log("test")
+}
+
+
+// open and focus search box after open search modal
+const isFocus = ref<boolean>(false)
+
+function openSearch() {
+  modal("#search").show()
+  isFocus.value = true
+}
+
+function goSettings() {
+  router.push({ name: "settings" })
+}
+
+const stripFooterItem = ref([
+  { icon: "paint-tool", title: "Customize", click: test },
+  { icon: "search", title: "Search", click: openSearch },
+  { icon: "setting", title: "Setting", click: goSettings }
+])
+
 onMounted(() => {
   // tooltip
   document.querySelectorAll('.pr-sidebar-strip-body > .pr-sidebar-strip-item > a').forEach((e, key) => {
@@ -46,19 +72,24 @@ onMounted(() => {
       title: props.stripBodyItem[key].title,
       pos: 'right',
       animation: 'uk-animation-slide-right-small',
-      duration: '150',
-      offset: 6
+      duration: 150,
+      offset: 10
     })
   })
   document.querySelectorAll('.pr-sidebar-strip-footer > .pr-sidebar-strip-item > a').forEach((e, key) => {
     tooltip(e, {
-      title: props.stripFooterItem[key].title,
+      title: stripFooterItem.value[key].title,
       pos: 'right',
       animation: 'uk-animation-slide-right-small',
-      duration: '150',
-      offset: 6
+      duration: 150,
+      offset: 10
     })
   })
+
+  // Before closing the search modal, reset the isFocus value to ensure that the search input can regain focus when the modal is opened again.
+  UIkit.util.on('#search', 'beforehide', (e:any)=> {
+    isFocus.value = false
+  });
 })
 
 const isActive = ref<number>(0)
@@ -66,10 +97,6 @@ const isActive = ref<number>(0)
 function toggleSidebar(i: number) {
   isActive.value = i
   emit('openSidebar', i)
-}
-
-function test() {
-  UIkit.drop('ttt').show();
 }
 
 const userShortcuts = ref<any>([
@@ -99,11 +126,11 @@ const userShortcuts = ref<any>([
     </ul>
     <ul class="pr-sidebar-strip-footer">
       <li class="pr-sidebar-strip-item" v-for="(item, index) in stripFooterItem" :key="index">
-        <router-link to="settings">
+        <a @click="item.click">
           <div>
             <pr-icon :icon="item.icon" ratio=".9" />
           </div>
-        </router-link>
+        </a>
       </li>
       <li class="pr-sidebar-strip-item" >
           <div>
@@ -146,6 +173,7 @@ const userShortcuts = ref<any>([
       </li>
     </ul>
   </div>
+  <pr-search-modal id="search" :autofocus="isFocus"/>
 </template>
 
 <style>

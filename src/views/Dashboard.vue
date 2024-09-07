@@ -64,12 +64,6 @@ const stripBodyItem = ref<any>([
   { icon: "bell", title: "title4" }
 ])
 
-const stripFooterItem = ref<any>([
-  { icon: "paint-tool", title: "title5" },
-  { icon: "search", title: "title6" },
-  { icon: "setting", title: "title7" },
-])
-
 // sidebar
 
 const { value, toggle: changeWrapperStatus } = useToggle()
@@ -89,7 +83,7 @@ function toggleWrapper(i: number) {
 <template>
   <div class="uk-background-muted">
     <div class="pr-sidebar">
-      <strip :strip-body-item="stripBodyItem" :strip-footer-item="stripFooterItem" @open-sidebar="(i) => toggleWrapper(i)" />
+      <strip :strip-body-item="stripBodyItem" @open-sidebar="(i) => toggleWrapper(i)" />
       <wrapper id="wrapper" :is-active="isActive"/>
     </div>
     <main class="view-wrapper" :style="[value ? sideBarOpened : '']">
