@@ -1,6 +1,7 @@
 /* color */
 
 :root {
+    --primary-background-lightest: 243, 248, 255;
     --primary-color-lightest: 192, 219, 255;
     --primary-color-light: 90, 162, 255;
     --primary-color: 0, 106, 243;
@@ -203,6 +204,25 @@
 
 
 
+/* =================================================
+    link component
+ ================================================= */
+
+.pr-link-hover-list {
+    border-radius: .25rem;
+    display: flex;
+    align-items: center;
+    padding: .75rem
+}
+
+.pr-link-hover-list:hover {
+    background-color: rgb(var(--primary-background-lightest));
+}
+
+.pr-link-hover-list:hover span {
+    color: rgb(var(--primary-color));
+}
+
 
 /* =================================================
     tooltip component
@@ -270,6 +290,7 @@
 .uk-search-icon:has(+.uk-search-input:focus) .pr-icon-primary {
     color: rgb(var(--primary-color));
 }
+
 
 
 
