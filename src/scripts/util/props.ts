@@ -271,6 +271,24 @@ export interface ModalPropsType {
   cls?: string
 }
 
+
+
+export interface StickyPropsType {
+  position?: "top" | "bottom"
+  start?: number | string
+  end?: boolean | number | string
+  offset?: number | string
+  "overflow-flip"?: boolean
+  animation?: string | boolean
+  "cls-active"?: string
+  "cls-inactive"?: string
+  "width-element"?: string | boolean
+  "show-on-up"?: boolean
+  media?: number | string | boolean
+  "target-offset"?: boolean | number
+}
+
+
 /**
  * Drop Props Types
  */

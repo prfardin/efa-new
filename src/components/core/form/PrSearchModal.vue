@@ -39,7 +39,7 @@ function goToResult() {
 </script>
 
 <template>
-  <pr-modal :id="id" class="uk-flex-top" cls="uk-width-large pr-border-rounded-xl uk-padding-small">
+  <pr-modal :id="id" class="uk-flex-top" cls="uk-width-large pr-border-rounded-xl uk-padding-small" >
     <div style="padding: 0 .5rem 0.5rem 0.5rem">
       <pr-search id="search-modal" name="search-modal" label="Search" label-cls="uk-text-muted uk-text-bold" :autofocus="autofocus" v-model="searchValue" />
     </div>
@@ -50,7 +50,7 @@ function goToResult() {
       <pr-list class="uk-margin-remove">
         <li v-for="i in 5" :key="i">
           <a reset class="pr-link-hover-list" @click="goToResult">
-            <span class="">aaa</span>
+            <span>aaa</span>
           </a>
         </li>
       </pr-list>

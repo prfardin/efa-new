@@ -13,7 +13,8 @@ import {
   UIkitSwiterOptions,
   UIkitSwitcherOptions,
   UIkitTooltipOptions,
-  UIkitTabOptions
+  UIkitTabOptions,
+  UIkitStickyOptions
 } from './types'
 
 
@@ -85,6 +86,11 @@ export function tooltip(el: Element, options?: UIkitTooltipOptions) {
 // set tab
 export function tab(el: Element, options?: UIkitTabOptions) {
   return UIkit.tab(el, options)
+}
+
+// set sticky
+export function sticky(el: Element, options?: UIkitStickyOptions) {
+  return UIkit.sticky(el, options)
 }
 
 

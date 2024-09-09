@@ -127,6 +127,52 @@ import PrIcon from '@c/core/PrIcon.vue'
             <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </pr-card>
         </div>
+        <div class="uk-width-1-2@m">
+          <pr-card body border default>
+            <h3 class="uk-card-title">Default</h3>
+          </pr-card>
+        </div>
+        <div class="uk-width-1-3@m">
+          <pr-card primary body default>
+            <h3 class="uk-card-title">Default</h3>
+            <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </pr-card>
+        </div>
+        <div class="uk-width-1-3@m">
+          <pr-card body border default>
+            <h3 class="uk-card-title">Default</h3>
+            <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </pr-card>
+        </div>
+        <div class="uk-width-1-3@m">
+          <pr-card body border default>
+            <h3 class="uk-card-title">Default</h3>
+            <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </pr-card>
+        </div>
+        <div class="uk-width-1-2@m">
+          <pr-card body border default>
+            <h3 class="uk-card-title">Default</h3>
+          </pr-card>
+        </div>
+        <div class="uk-width-1-3@m">
+          <pr-card primary body default>
+            <h3 class="uk-card-title">Default</h3>
+            <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </pr-card>
+        </div>
+        <div class="uk-width-1-3@m">
+          <pr-card body border default>
+            <h3 class="uk-card-title">Default</h3>
+            <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </pr-card>
+        </div>
+        <div class="uk-width-1-3@m">
+          <pr-card body border default>
+            <h3 class="uk-card-title">Default</h3>
+            <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </pr-card>
+        </div>
       </pr-grid>
     </div>
   </div>

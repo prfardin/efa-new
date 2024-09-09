@@ -6,6 +6,7 @@
     --primary-color-light: 90, 162, 255;
     --primary-color: 0, 106, 243;
     --default-text-color: 70, 73, 100;
+    --text-color-600: 71, 85, 105;
     --border-color: 229, 231, 235;
     --border-rounded-xl: 0.75rem;
     --transition-duration-100: .1s;
@@ -217,6 +218,10 @@
 
 .pr-link-hover-list:hover {
     background-color: rgb(var(--primary-background-lightest));
+}
+
+.pr-link-hover-list span {
+    color: rgb(var(--text-color-600));
 }
 
 .pr-link-hover-list:hover span {

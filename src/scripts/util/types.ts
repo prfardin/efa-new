@@ -19,6 +19,8 @@ import UIkitSwiterOptions = UIkit.UIkitSwiterOptions
 import UIkitSwitcherOptions = UIkit.UIkitSwitcherOptions
 import UIkitTooltipOptions = UIkit.UIkitTooltipOptions
 import UIkitTabOptions = UIkit.UIkitTabOptions
+import UIkitStickyOptions = UIkit.UIkitStickyOptions
+
 
 interface FormData {
   busy: boolean
@@ -39,5 +41,6 @@ export {
   UIkitSwitcherOptions,
   UIkitTooltipOptions,
   UIkitTabOptions,
-  FormData
+  FormData,
+  UIkitStickyOptions
 }
