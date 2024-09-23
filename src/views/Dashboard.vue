@@ -23,6 +23,7 @@ import Wrapper from '@c/sidebar/wrapper.vue'
 import Strip from '@c/sidebar/strip.vue'
 import UIkit from 'uikit'
 import PrDropdown from '@c/core/PrDropdown.vue'
+import PrSticky from '@c/core/prSticky.vue'
 
 
 
@@ -67,6 +68,7 @@ const stripBodyItem = ref<any>([
 // sidebar
 
 const { value, toggle: changeWrapperStatus } = useToggle()
+const { value: stickyValue, toggle: changeStickyStatus } = useToggle()
 
 const isActive = ref<number>(0)
 
@@ -76,6 +78,10 @@ function toggleWrapper(i: number) {
   if(value.value) {
     UIkit.offcanvas("#wrapper").show()
   }
+}
+
+function test() {
+  console.log("test")
 }
 
 </script>
@@ -88,10 +94,33 @@ function toggleWrapper(i: number) {
     </div>
     <main class="view-wrapper" :style="[value ? sideBarOpened : '']">
       <pr-section class="uk-padding-remove-top" muted default>
+        <pr-sticky start="60" animation="uk-animation-slide-top-medium">
+          <div class="test uk-box-shadow-large testt" :class="{ 'ali': stickyValue }" @click="changeStickyStatus()" >
+            <div class="pr-sticky-nav-button" :class="{ 'pr-sticky-nav-button-close': stickyValue }">
+              <span class="pr-sticky-nav-button-line-1"></span>
+              <span class="pr-sticky-nav-button-line-2"  ></span>
+              <span class="pr-sticky-nav-button-line-3"></span>
+            </div>
+          </div>
+          <div>
+            <div class="pr-sticky-nav-item" :class="{ 'one': stickyValue }">
+              <div>sss</div>
+            </div>
+            <div class="pr-sticky-nav-item" :class="{ 'two': stickyValue }">
+              <div>sss</div>
+            </div>
+            <div class="pr-sticky-nav-item" :class="{ 'three': stickyValue }">
+              <div>sss</div>
+            </div>
+            <div class="pr-sticky-nav-item" :class="{ 'four': stickyValue }">
+              <div>sss</div>
+            </div>
+          </div>
+        </pr-sticky>
         <div class="uk-margin-bottom">
-          <nav class="uk-navbar-container uk-navbar-transparent">
+          <div class="uk-navbar-container uk-navbar-transparent">
             <pr-container large>
-              <div ref="elNavbar">
+              <nav ref="elNavbar">
                 <div class="uk-navbar-left">
                   <ul class="uk-navbar-nav uk-flex-middle">
                     <li>
@@ -474,9 +503,9 @@ function toggleWrapper(i: number) {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </nav>
             </pr-container>
-          </nav>
+          </div>
         </div>
         <pr-container large>
           <router-view></router-view>
@@ -487,6 +516,7 @@ function toggleWrapper(i: number) {
 </template>
 
 <style>
+
 
 .uk-text-small {
   line-height: 1.25rem;

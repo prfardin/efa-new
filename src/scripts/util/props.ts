@@ -278,14 +278,14 @@ export interface StickyPropsType {
   start?: number | string
   end?: boolean | number | string
   offset?: number | string
-  "overflow-flip"?: boolean
+  overflowFlip?: boolean
   animation?: string | boolean
-  "cls-active"?: string
-  "cls-inactive"?: string
-  "width-element"?: string | boolean
-  "show-on-up"?: boolean
+  clsActive?: string
+  clsInactive?: string
+  widthElement?: string | boolean
+  showOnUp?: boolean
   media?: number | string | boolean
-  "target-offset"?: boolean | number
+  targetOffset?: boolean | number
 }
 
 
