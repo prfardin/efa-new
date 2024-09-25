@@ -2,6 +2,8 @@
 
 :root {
     --primary-background-lightest: 243, 248, 255;
+    --primary-background-dark: 0,90,207;
+    --primary-background-darktest: 0,75,172;
     --primary-color-lightest: 192, 219, 255;
     --primary-color-light: 90, 162, 255;
     --primary-color: 0, 106, 243;
@@ -17,6 +19,10 @@
 
 .pr-border-rounded-xl {
     border-radius: var(--border-rounded-xl);;
+}
+
+.pr-primary-darktest-b-c {
+    background-color: rgb(var(--primary-background-darktest))!important;
 }
 
 /* =================================================
@@ -75,25 +81,54 @@
     }
 }
 
-.test {
+.pr-sticky-nav {
     top: .6rem;
     position: absolute;
     inset-inline-end: 1em;
+    transition: all .3s cubic-bezier(.4,0,.2,1);
+    z-index: 90;
+    box-sizing: border-box;
+}
+
+.pr-sticky-nav-parent {
     border-radius: 9999px;
     width: 3rem;
     height: 3rem;
     background-color: rgb(var(--primary-color));
+    transition: all .3s cubic-bezier(.4,0,.2,1);
+    display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     z-index: 30;
+    position: relative;
 }
 
-.uk-sticky .test {
+.pr-sticky-nav::after {
+    content: "";
+    transition: all .3s cubic-bezier(.4,0,.2,1);
+    border-radius: 9999px;
+    height: 3rem;
+    width: 3rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    inset-inline-end: 0;
+    background-color: rgb(var(--primary-background-dark));
+    z-index: 19;
+    box-shadow: 0 10px 15px -3px rgb(var(--primary-background-darktest),.4), 0 4px 6px -4px rgb(var(--primary-background-darktest),.4)
+}
+
+
+.pr-sticky-nav.is-open::after {
+    transform: scale(5.5);
+}
+
+.uk-sticky .pr-sticky-nav {
     display: none;
 }
 
-.uk-sticky.uk-active .test {
+.uk-sticky.uk-active .pr-sticky-nav {
     display: flex;
 }
 
@@ -173,31 +208,6 @@
 
 .pr-sticky-nav-item.four {
     transform: translateX(0em) translateY(6.5em);
-}
-
-.testt {
-    position: fixed;
-    transition: all .3s cubic-bezier(.4,0,.2,1);
-    z-index: 90;
-}
-
-.testt.ali::after {
-    transform: scale(5.5);
-}
-
-.testt::after {
-    content: "";
-    transition: all .3s cubic-bezier(.4,0,.2,1);
-    border-radius: 9999px;
-    height: 3rem;
-    width: 3rem;
-    display: block;
-    position: absolute;
-    top: .6rem;
-    inset-inline-end: 0;
-    background-color: red;
-    transform: scale(0);
-    z-index: 19;
 }
 
 /* =================================================
@@ -421,6 +431,8 @@
 .uk-search-icon:has(+.uk-search-input:focus) .pr-icon-primary {
     color: rgb(var(--primary-color));
 }
+
+
 
 
 
