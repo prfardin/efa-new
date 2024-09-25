@@ -82,10 +82,8 @@ function toggleWrapper(i: number) {
 onMounted(() => {
   UIkit.util.on('#pr-sticky-nav', 'inactive',  (e: any) => {
     stickyValue.value = false
-
   })
 })
-
 
 </script>
 

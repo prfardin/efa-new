@@ -77,7 +77,6 @@
             max-width: 75%;
             bottom: .25rem;
         }
-
     }
 }
 
@@ -85,7 +84,7 @@
     top: .6rem;
     position: absolute;
     inset-inline-end: 1em;
-    transition: all .3s cubic-bezier(.4,0,.2,1);
+    transition: all var(--transition-duration-300) cubic-bezier(.4,0,.2,1);
     z-index: 90;
     box-sizing: border-box;
 }
@@ -95,7 +94,7 @@
     width: 3rem;
     height: 3rem;
     background-color: rgb(var(--primary-color));
-    transition: all .3s cubic-bezier(.4,0,.2,1);
+    transition: all var(--transition-duration-300) cubic-bezier(.4,0,.2,1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,7 +105,7 @@
 
 .pr-sticky-nav::after {
     content: "";
-    transition: all .3s cubic-bezier(.4,0,.2,1);
+    transition: all var(--transition-duration-300) cubic-bezier(.4,0,.2,1);
     border-radius: 9999px;
     height: 3rem;
     width: 3rem;
@@ -191,7 +190,17 @@
     position: absolute;
     top: .2em;
     inset-inline-end: .2em;
-    transition: all .3s cubic-bezier(.4,0,.2,1)
+    transition: all var(--transition-duration-300) cubic-bezier(.4,0,.2,1)
+}
+
+.uk-sticky.uk-active.uk-animation-leave .pr-sticky-nav.is-open::after{
+    transition: all var(--transition-duration-200);
+    transform: translate(0);
+}
+
+.uk-sticky.uk-active.uk-animation-leave .pr-sticky-nav.is-open > *:last-child > * {
+    transition: all var(--transition-duration-200);
+    transform: translate(0);
 }
 
 .pr-sticky-nav-item.one {
@@ -232,7 +241,7 @@
     width: 100%;
     max-width: calc(100% - 80px);
     margin-inline-start: 80px;
-    transition: all .3s ease-in-out;
+    transition: all var(--transition-duration-300) ease-in-out;
     overflow-x: hidden;
 }
 
