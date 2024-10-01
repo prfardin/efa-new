@@ -1,6 +1,9 @@
 /* color */
 
 :root {
+    --size-1: .25rem;
+    --size-2-5: .65rem;
+    --size-3: .75rem;
     --primary-background-lightest: 243, 248, 255;
     --primary-background-dark: 0,90,207;
     --primary-background-darktest: 0,75,172;
@@ -11,7 +14,8 @@
     --default-text-color: 70, 73, 100;
     --text-color-600: 71, 85, 105;
     --border-color: 229, 231, 235;
-    --border-rounded-xl: 0.75rem;
+    --border-rounded-xl: var(--size-3);
+    --border-pill: 9999px;
     --transition-duration-100: .1s;
     --transition-duration-200: .2s;
     --transition-duration-300: .3s;
@@ -399,9 +403,6 @@
     border-color: transparent #1e293b transparent  transparent;
 }
 
-
-
-
 /* =================================================
     search component
  ================================================= */
@@ -441,6 +442,18 @@
     color: rgb(var(--primary-color));
 }
 
+/* =================================================
+    chip component
+ ================================================= */
+
+.pr-chip {
+    display: inline-block;
+    border: 1px solid rgb(var(--border-color));
+    font-size: var(--size-3);
+    border-radius: var(--border-pill);
+    padding: var(--size-1) var(--size-3) ;
+    transition: all var(--transition-duration-200) ease-in-out;
+}
 
 
 

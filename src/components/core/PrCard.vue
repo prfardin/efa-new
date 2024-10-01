@@ -36,7 +36,6 @@ defineExpose({ el })
   &.uk-card-border {
     border-color: #e5e7eb;
   }
-
 }
 
 

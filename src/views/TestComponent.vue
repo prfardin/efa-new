@@ -1,6 +1,10 @@
 <script setup lang="ts">
 
 // camelCase in JavaScript
+
+
+import PrChip from '@c/core/PrChip.vue'
+
 const BlogPost = {
   props: ['postTitle'],
   emits: ['updatePost'],
@@ -16,7 +20,7 @@ function onUpdatePost() {
 </script>
 
 <template>
-  <div>Test</div>
+  <pr-chip />
 
   <!-- kebab-case in HTML -->
   <blog-post post-title="hello!" @update-post="onUpdatePost"></blog-post>

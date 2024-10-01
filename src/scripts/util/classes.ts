@@ -543,6 +543,31 @@ export function cardClassObject(
 }
 
 /**
+ * Label Classes
+ */
+export interface ChipClassType {
+  mode: 'solid' | 'pastel' | 'outline'
+  rounded: 'none' | 'sm' | 'md' | 'lg' | 'full'
+  color: 'default'
+}
+
+export const defaultChipCls = 'pr-chip'
+
+export function chipClassObject(
+  props: ChipClassType,
+  ChipCls: string = defaultChipCls
+) {
+  return [
+    ChipCls,
+    {
+      [`${ChipCls}-${props.mode}`]: props.mode,
+      [`${ChipCls}-rounded-${props.rounded}`]: props.rounded,
+      [`${ChipCls}-${props.color}`]: props.color,
+    }
+  ]
+}
+
+/**
  * Radio Classes
  */
 export interface RadioClassType {

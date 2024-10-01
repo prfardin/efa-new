@@ -19,7 +19,8 @@ import {
   AvatarClassType,
   CardClassType,
   RadioClassType,
-  CheckboxClassType
+  CheckboxClassType,
+  ChipClassType,
 } from './classes'
 
 import { RouteLocationRaw } from 'vue-router'
@@ -240,6 +241,14 @@ export interface CardPropsType extends CardClassType {
 }
 
 /**
+ * Card Props Types
+ */
+
+export interface ChipPropsType extends ChipClassType {
+
+}
+
+/**
  * Offcanvas Props Types
  */
 
@@ -302,9 +311,9 @@ export interface DropPropsType {
   delayHide?: number
   autoUpdate?: boolean
   display?: "dynamic" | "static"
-  boundary?: string | boolean
-  boundaryX?: string | boolean
-  boundaryY?: string | boolean
+  boundary?: string
+  boundaryX?: string
+  boundaryY?: string
   boundaryAlign?: boolean
   target?: string | boolean
   targetX?: string | boolean

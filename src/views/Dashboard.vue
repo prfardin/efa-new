@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { drop, navbar } from '@u/util'
-import { computed, onMounted, reactive, ref, watchEffect } from 'vue'
+import { navbar, toggle } from '@u/util'
+import { onMounted, reactive, ref } from 'vue'
 import Avatar from '@i/avatar.png'
 
 // component
@@ -16,14 +16,16 @@ import PrButton from '@c/core/PrButton.vue'
 import PrLink from '@c/core/PrLink.vue'
 import PrSwitcher from '@c/core/PrSwitcher.vue'
 import PrProgress from '@c/core/PrProgress.vue'
+import PrSticky from '@c/core/prSticky.vue'
+import Wrapper from '@c/sidebar/wrapper.vue'
+import Strip from '@c/sidebar/strip.vue'
+
+
+
 
 // composable
 import { useToggle } from '@sc/Composable/useToggle'
-import Wrapper from '@c/sidebar/wrapper.vue'
-import Strip from '@c/sidebar/strip.vue'
 import UIkit from 'uikit'
-import PrDropdown from '@c/core/PrDropdown.vue'
-import PrSticky from '@c/core/prSticky.vue'
 
 
 
@@ -79,11 +81,13 @@ function toggleWrapper(i: number) {
     UIkit.offcanvas("#wrapper").show()
   }
 }
+
 onMounted(() => {
-  UIkit.util.on('#pr-sticky-nav', 'inactive',  (e: any) => {
+  UIkit.util.on('#pr-sticky-nav', 'inactive',  function () {
     stickyValue.value = false
   })
 })
+
 
 </script>
 
@@ -195,7 +199,7 @@ onMounted(() => {
               </nav>
             </pr-container>
           </div>
-          <pr-drop id="notification" pos="bottom-right" mode="click" :offset="-5" :animate-out="true">
+          <pr-drop close-on-scroll toggle="" id="notification" pos="bottom-right" mode="click" animate-out>
             <pr-card class="uk-border-rounded" border default>
               <div class="uk-card-header uk-flex uk-flex-middle uk-flex-between pr-padding-16">
                 <h4 class="uk-h4 uk-margin-remove">Notification</h4>
@@ -219,7 +223,7 @@ onMounted(() => {
               </div>
             </pr-card>
           </pr-drop>
-          <pr-drop id="profile" class="pr-width-256" pos="bottom-right" mode="click" :offset="-5" :animate-out="true">
+          <pr-drop close-on-scroll toggle="" id="profile" class="pr-width-256" pos="bottom-right" mode="click" animate-out>
             <pr-card class="uk-border-rounded" border default>
               <div class="uk-card-header uk-flex uk-flex-middle uk-flex-column">
                 <div class="uk-margin-bottom">
