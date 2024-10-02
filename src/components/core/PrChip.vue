@@ -6,7 +6,6 @@ import { computed } from 'vue'
 const props = withDefaults(defineProps<ChipPropsType>(), {
   mode: 'solid',
   rounded: 'none',
-  color: 'default'
 })
 
 const chipClass = computed(() => chipClassObject(props))
@@ -14,7 +13,9 @@ const chipClass = computed(() => chipClassObject(props))
 </script>
 
 <template>
-<span :class="chipClass">test</span>
+<span :class="chipClass">
+  <slot />
+</span>
 </template>
 
 <style scoped>

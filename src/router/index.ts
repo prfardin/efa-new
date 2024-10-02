@@ -1,19 +1,16 @@
 import { createRouter, createWebHistory, Router, RouteRecordRaw } from 'vue-router'
-import Dashboard from '@v/Dashboard.vue'
-
 // we use dynamic import
 // which lazy-loaded when the route is visited.
 const routes: RouteRecordRaw[] = [
   { path: '/test', component: () => import('@v/TestComponent.vue')},
   { path: '/',
-    component: Dashboard,
+    component:  () => import('@v/Dashboard.vue'),
     children: [
       { path: '',
         component: () => import('@v/dashboard/index.vue')
       }
     ]
   },
-  { path: '/:id', component: Dashboard },
   { path: '/about', component: () => import('@v/About.vue') }, // must remove
   {
     path: '/register',
@@ -83,7 +80,7 @@ const routes: RouteRecordRaw[] = [
     ]
   },
   {
-    path: '/',
+    path: '/settings',
     component: () => import('@v/settings/personalIndex.vue'),
     children: [
       {

@@ -1,19 +1,34 @@
 /* color */
 
 :root {
+    --size-0: 0;
+    --size-1-px: 1px;
     --size-1: .25rem;
+    --size-1-5: .375rem;
+    --size-2: .5rem;
     --size-2-5: .65rem;
     --size-3: .75rem;
+    --size-4: 1rem;
+    --color-default: 255, 255, 255;
     --primary-background-lightest: 243, 248, 255;
     --primary-background-dark: 0,90,207;
     --primary-background-darktest: 0,75,172;
     --primary-color-lightest: 192, 219, 255;
     --primary-color-light: 90, 162, 255;
     --primary-color: 0, 106, 243;
+    --secondary-color: 0, 110, 170;
+    --success-color: 20, 184, 166;
+    --warning-color: 243, 100, 0;
+    --danger-color: 244, 63, 94;
     --color-muted-50: 248 250 252;
+    --color-muted-100: 241 245 249;
     --default-text-color: 70, 73, 100;
     --text-color-600: 71, 85, 105;
     --border-color: 229, 231, 235;
+    --border-rounded-none: var(--size-0);
+    --border-rounded-sm: var(--size-1);
+    --border-rounded-md: var(--size-1-5);
+    --border-rounded-lg: var(--size-2);
     --border-rounded-xl: var(--size-3);
     --border-pill: 9999px;
     --transition-duration-100: .1s;
@@ -74,7 +89,7 @@
         }
         .pr-sidebar-button-line-2 {
             opacity: 0;
-            transform: translateX(1rem);
+            transform: translateX(var(--size-4););
         }
         .pr-sidebar-button-line-3 {
             transform: rotate(45deg);
@@ -176,7 +191,7 @@
         }
         .pr-sticky-nav-button-line-2 {
             opacity: 0;
-            transform: translateX(1rem);
+            transform: translateX(var(--size-4););
         }
         .pr-sticky-nav-button-line-3 {
             transform: rotate(45deg);
@@ -341,7 +356,7 @@
         position: relative;
         cursor: pointer;
         transition: all .2s ease-in-out;
-        border-radius: 1rem;
+        border-radius: var(--size-4);;
         box-sizing: border-box;
     }
 }
@@ -386,7 +401,7 @@
     color: #fdfdfd;
     /* we should delete !important after fix css */
     font-size: 0.875rem!important;
-    line-height: 1rem!important;
+    line-height: var(--size-4)!important;
     background-color: #1e293b!important;
     border-radius: 0.375rem;
     padding: 0.375rem 0.625rem !important;
@@ -448,12 +463,215 @@
 
 .pr-chip {
     display: inline-block;
-    border: 1px solid rgb(var(--border-color));
     font-size: var(--size-3);
-    border-radius: var(--border-pill);
     padding: var(--size-1) var(--size-3) ;
     transition: all var(--transition-duration-200) ease-in-out;
+    border: var(--size-1-px) solid transparent;
 }
+
+.pr-chip.pr-chip-sm {
+    padding-top: var(--size-1);
+    padding-bottom: var(--size-1);
+    font-size: var(--size-2-5);
+    line-height: 1;
+}
+
+.pr-chip-solid {
+    color: var(--default-text-color);
+    background-color: rgb(var(--color-default));
+    border-color: rgb(var(--border-color))
+}
+
+.pr-chip-pastel {
+    color: var(--default-text-color);
+    background-color: rgb(var(--color-muted-100));
+    border-color: rgb(var(--color-muted-100))
+}
+
+.pr-chip-outline {
+    color: var(--default-text-color);
+    background-color: rgb(var(--color-default));
+    border-color: var(--default-text-color)
+}
+
+.pr-chip-solid.pr-chip-primary {
+    color: rgb(var(--color-default));
+    background-color: rgb(var(--primary-color));
+    border-color: rgb(var(--primary-color))
+}
+
+.pr-chip-solid.pr-chip-secondary {
+    color: rgb(var(--color-default));
+    background-color: rgb(var(--secondary-color));
+    border-color: rgb(var(--secondary-color))
+}
+
+.pr-chip-solid.pr-chip-success {
+    color: rgb(var(--color-default));
+    border-color: rgb(var(--success-color));
+    background-color: rgb(var(--success-color));
+}
+
+.pr-chip-solid.pr-chip-warning {
+    color: rgb(var(--color-default));
+    background-color: rgb(var(--warning-color));
+    border-color: rgb(var(--warning-color))
+}
+
+.pr-chip-solid.pr-chip-danger {
+    color: rgb(var(--color-default));
+    border-color: rgb(var(--danger-color));
+    background-color: rgb(var(--danger-color));
+}
+
+.pr-chip-pastel.pr-chip-primary {
+    color: rgb(var(--primary-color));
+    background-color: rgb(var(--primary-color), .2);
+    border-color: rgb(var(--primary-color), .2)
+}
+
+.pr-chip-pastel.pr-chip-secondary {
+    color: rgb(var(--secondary-color));
+    background-color: rgb(var(--secondary-color), .2);
+    border-color: rgb(var(--secondary-color), .2)
+}
+
+.pr-chip-pastel.pr-chip-success {
+    color: rgb(var(--success-color));
+    border-color: rgb(var(--success-color), .2);
+    background-color: rgb(var(--success-color), .2);
+}
+
+.pr-chip-pastel.pr-chip-warning {
+    color: rgb(var(--warning-color));
+    background-color: rgb(var(--warning-color), .2);
+    border-color: rgb(var(--warning-color), .2)
+}
+
+.pr-chip-pastel.pr-chip-danger {
+    color: rgb(var(--danger-color));
+    border-color: rgb(var(--danger-color), .2);
+    background-color: rgb(var(--danger-color), .2);
+}
+
+.pr-chip-outline.pr-chip-primary {
+    color: rgb(var(--primary-color));
+    border-color: rgb(var(--primary-color));
+}
+
+.pr-chip-outline.pr-chip-secondary {
+    color: rgb(var(--secondary-color));
+    border-color: rgb(var(--secondary-color));
+}
+
+.pr-chip-outline.pr-chip-success {
+    color: rgb(var(--success-color));
+    border-color: rgb(var(--success-color));
+}
+
+.pr-chip-outline.pr-chip-warning {
+    color: rgb(var(--warning-color));
+    border-color: rgb(var(--warning-color));
+}
+
+.pr-chip-outline.pr-chip-danger {
+    color: rgb(var(--danger-color));
+    border-color: rgb(var(--danger-color));
+}
+
+.pr-chip-rounded-none {
+    border-radius: var(--border-rounded-none);
+}
+
+.pr-chip-rounded-sm {
+    border-radius: var(--border-rounded-sm);
+}
+
+.pr-chip-rounded-md {
+    border-radius: var(--border-rounded-md);
+}
+
+.pr-chip-rounded-lg {
+    border-radius: var(--border-rounded-lg);
+}
+
+.pr-chip-rounded-full {
+    border-radius: var(--border-pill);
+}
+
+/* =================================================
+    flex table component
+ ================================================= */
+
+.flex-table-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: var(--size-1-px) solid transparent
+}
+
+.flex-table-header > * {
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    padding: var(--size-4)
+}
+
+.flex-table-inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--size-4)
+}
+
+.flex-table-inner-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(var(--color-default));
+    border: var(--size-1-px) solid rgb(var(--border-color))
+}
+
+.flex-table-inner-item > * {
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    padding: var(--size-4);
+    justify-content: flex-start
+}
+
+.is-shrink {
+    flex-grow: 0
+}
+
+.is-xsmall-grow {
+    flex-grow: .3
+}
+
+.is-small-grow {
+    flex-grow: .5
+}
+
+.is-medium-grow {
+    flex-grow: 1.2
+}
+
+.is-grow {
+    flex-grow: 2
+}
+
+.cell-start {
+    justify-content: flex-start
+}
+
+
+.cell-end {
+    justify-content: flex-end
+}
+
+
+
+
 
 
 

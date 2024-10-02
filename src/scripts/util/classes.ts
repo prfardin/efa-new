@@ -546,9 +546,10 @@ export function cardClassObject(
  * Label Classes
  */
 export interface ChipClassType {
+  size?: 'sm'
   mode: 'solid' | 'pastel' | 'outline'
   rounded: 'none' | 'sm' | 'md' | 'lg' | 'full'
-  color: 'default'
+  color?: 'primary' | 'secondary' | 'success' | 'warning' | 'danger'
 }
 
 export const defaultChipCls = 'pr-chip'
@@ -560,6 +561,7 @@ export function chipClassObject(
   return [
     ChipCls,
     {
+      [`${ChipCls}-${props.size}`]: props.size,
       [`${ChipCls}-${props.mode}`]: props.mode,
       [`${ChipCls}-rounded-${props.rounded}`]: props.rounded,
       [`${ChipCls}-${props.color}`]: props.color,
