@@ -21,6 +21,7 @@ import {
   RadioClassType,
   CheckboxClassType,
   ChipClassType,
+  AccordionClassType
 } from './classes'
 
 import { RouteLocationRaw } from 'vue-router'
@@ -408,4 +409,22 @@ export interface SearchPropsType {
   labelCls?: string
   id: string
   autofocus?: boolean
+}
+
+/**
+ * accordion Props Types
+ */
+
+export interface accordionPropsType extends AccordionClassType{
+  items: [ { title: string, content: string } ]
+  active?: number
+  animation?: boolean
+  collapsible?: boolean
+  content?: string
+  duration?: number
+  multiple?: boolean
+  targets?: string
+  toggle?: string
+  transition?: string
+  offset?: number
 }

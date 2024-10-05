@@ -20,6 +20,7 @@ import UIkitSwitcherOptions = UIkit.UIkitSwitcherOptions
 import UIkitTooltipOptions = UIkit.UIkitTooltipOptions
 import UIkitTabOptions = UIkit.UIkitTabOptions
 import UIkitStickyOptions = UIkit.UIkitStickyOptions
+import UIkitAccordionOptions = UIkit.UIkitAccordionOptions
 
 
 interface FormData {
@@ -42,5 +43,6 @@ export {
   UIkitTooltipOptions,
   UIkitTabOptions,
   FormData,
-  UIkitStickyOptions
+  UIkitStickyOptions,
+  UIkitAccordionOptions
 }

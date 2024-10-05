@@ -14,7 +14,8 @@ import {
   UIkitSwitcherOptions,
   UIkitTooltipOptions,
   UIkitTabOptions,
-  UIkitStickyOptions
+  UIkitStickyOptions,
+  UIkitAccordionOptions
 } from './types'
 
 
@@ -91,6 +92,11 @@ export function tab(el: Element, options?: UIkitTabOptions) {
 // set sticky
 export function sticky(el: Element, options?: UIkitStickyOptions) {
   return UIkit.sticky(el, options)
+}
+
+// set accordion
+export function accordion(el: Element, options?: UIkitAccordionOptions) {
+  return UIkit.accordion(el, options)
 }
 
 

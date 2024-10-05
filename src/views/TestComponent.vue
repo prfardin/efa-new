@@ -13,6 +13,9 @@ import PrCheckBox from '@c/core/form/PrCheckBox.vue'
 import PrAvatar from '@c/core/PrAvatar.vue'
 import Avatar from '@i/avatar.png'
 import PrButton from '@c/core/PrButton.vue'
+import PrAccordion from '@c/core/PrAccordion.vue'
+import PrContainer from '@c/core/PrContainer.vue'
+import PrSection from '@c/core/PrSection.vue'
 
 const BlogPost = {
   props: ['postTitle'],
@@ -26,16 +29,23 @@ function onUpdatePost() {
 
 }
 
-const data = ref<any>({
-
-
-
-})
+const data = ref<any>([
+  {title: 'one', content: 'ttt'},
+  {title: 'two', content: 'tttt'},
+  {title: 'three', content: 'ttttt'},
+  {title: 'four', content: 'tttttt'}
+])
 
 </script>
 
 <template>
-  <div class="uk-container">
+  <pr-section>
+    <pr-container >
+      <pr-accordion :items="data" title-mode="plus"/>
+    </pr-container>
+  </pr-section>
+
+<!--  <div class="uk-container">
     <pr-flex-table >
       <template #head>
         <pr-flex-table-heading>
@@ -93,8 +103,7 @@ const data = ref<any>({
         </pr-flex-table-row>
       </template>
     </pr-flex-table>
-    
-  </div>
+  </div>-->
 <!--  <pr-chip rounded="md" size="sm" />-->
 
   <!-- kebab-case in HTML -->

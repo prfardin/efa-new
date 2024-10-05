@@ -611,3 +611,26 @@ export function checkboxClassObject(
     }
   ]
 }
+
+/**
+ * Accordion Classes
+ */
+export interface AccordionClassType {
+  rounded: "none" | 'md' | 'lg' | 'full'
+  titleMode: 'dot' | 'chevron' | 'plus'
+}
+
+export const defaultAccordionCls = 'pr-accordion'
+
+export function AccordionClassObject(
+  props: AccordionClassType,
+  checkboxCls: string = defaultAccordionCls
+) {
+  return [
+    checkboxCls,
+    {
+      [`${checkboxCls}-rounded-${props.rounded}`]: props.rounded,
+      [`${checkboxCls}-${props.titleMode}`]: props.titleMode
+    }
+  ]
+}

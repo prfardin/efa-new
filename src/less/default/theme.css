@@ -8,7 +8,13 @@
     --size-2: .5rem;
     --size-2-5: .65rem;
     --size-3: .75rem;
+    --size-3-5: .875rem;
     --size-4: 1rem;
+    --size-5: 1.25rem;
+    --size-8: 2rem;
+}
+
+:root {
     --color-default: 255, 255, 255;
     --primary-background-lightest: 243, 248, 255;
     --primary-background-dark: 0,90,207;
@@ -20,8 +26,12 @@
     --success-color: 20, 184, 166;
     --warning-color: 243, 100, 0;
     --danger-color: 244, 63, 94;
-    --color-muted-50: 248 250 252;
-    --color-muted-100: 241 245 249;
+    --color-muted-50: 248, 250, 252;
+    --color-muted-100: 241, 245, 249;
+    --color-muted-200: 226, 232, 240;
+    --color-muted-400: 148, 163, 184;
+    --color-muted-500: 100, 116, 139;
+    --color-muted-800: 30, 41, 59;
     --default-text-color: 70, 73, 100;
     --text-color-600: 71, 85, 105;
     --border-color: 229, 231, 235;
@@ -400,7 +410,7 @@
 .uk-tooltip {
     color: #fdfdfd;
     /* we should delete !important after fix css */
-    font-size: 0.875rem!important;
+    font-size: var(--size-3-5)!important;
     line-height: var(--size-4)!important;
     background-color: #1e293b!important;
     border-radius: 0.375rem;
@@ -670,8 +680,144 @@
 }
 
 
+/* =================================================
+    accordion table component
+ ================================================= */
+
+.pr-accordion > li {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    border: var(--size-1-px) solid rgb(var(--border-color));
+    margin-top: var(--size-0)!important;
+}
+
+.pr-accordion > li:hover {
+    background-color: rgb(var(--color-muted-50));
+}
+
+.pr-accordion > li+li {
+    border-top-width: var(--size-0)!important;
+}
+
+.uk-accordion-title {
+    padding: var(--size-4);
+    display: flex!important;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1!important;
+    font-size: var(--size-4)!important;
+    font-weight: 500;
+    color: var(--color-muted-800);
+}
+
+.pr-accordion.pr-accordion-dot > li > .uk-accordion-title > .pr-accordion-title-mode {
+    border-radius: var(--border-pill);
+    height: var(--size-3);
+    margin-inline-start: var(--size-2);
+    transition: all var(--transition-duration-300) cubic-bezier(.4,0,.2,1);
+    width: var(--size-3);
+    background-color: rgb(var(--color-muted-200))
+}
+
+.pr-accordion.pr-accordion-dot > li.uk-open > .uk-accordion-title > .pr-accordion-title-mode {
+    background-color: rgb(var(--primary-color));
+}
+
+.pr-accordion.pr-accordion-chevron > li > .uk-accordion-title > .pr-accordion-title-mode {
+    align-items: center;
+    border-color: #0000;
+    border-radius: var(--border-pill);
+    border-width: var(--size-1-px);
+    display: flex;
+    height: var(--size-8);
+    justify-content: center;
+    margin-inline-start: var(--size-2);
+    width: var(--size-8);
+    color: rgb(var(--color-muted-400));
+    transition: transform var(--transition-duration-300) cubic-bezier(.4,0,.2,1)
+}
+
+.pr-accordion.pr-accordion-chevron > .uk-open > .uk-accordion-title > .pr-accordion-title-mode {
+    transform: rotate(180deg);
+}
+
+.pr-accordion.pr-accordion-plus > li > .uk-accordion-title > .pr-accordion-title-mode {
+    align-items: center;
+    border-color: #0000;
+    border-radius: var(--border-pill);
+    border-width: var(--size-1-px);
+    display: flex;
+    height: var(--size-8);
+    justify-content: center;
+    margin-inline-start: var(--size-2);
+    width: var(--size-8);
+    color: rgb(var(--color-muted-400));
+    transition: transform var(--transition-duration-300) cubic-bezier(.4,0,.2,1)
+}
+
+.pr-accordion.pr-accordion-plus > .uk-open > .uk-accordion-title > .pr-accordion-title-mode {
+    transform: rotate(45deg);
+}
+
+.uk-accordion-content {
+    padding: var(--size-0) var(--size-4) var(--size-4)  var(--size-4);
+    margin-top: var(--size-0)!important;
+    color: rgb(var(--color-muted-500));
+    font-size: var(--size-3-5);
+    line-height: var(--size-5);
+}
 
 
+.pr-accordion-rounded-none > li:first-child {
+    border-top-left-radius: var(--border-rounded-none);
+    border-top-right-radius: var(--border-rounded-none);
+}
+
+.pr-accordion-rounded-none > li:last-child {
+    border-bottom-left-radius: var(--border-rounded-none);
+    border-bottom-right-radius: var(--border-rounded-none);
+}
+
+.pr-accordion-rounded-sm > li:first-child {
+    border-top-left-radius: var(--border-rounded-sm);
+    border-top-right-radius: var(--border-rounded-sm);
+}
+
+.pr-accordion-rounded-sm > li:last-child {
+    border-bottom-left-radius: var(--border-rounded-sm);
+    border-bottom-right-radius: var(--border-rounded-sm);
+}
+
+.pr-accordion-rounded-md > li:first-child {
+    border-top-left-radius: var(--border-rounded-md);
+    border-top-right-radius: var(--border-rounded-md);
+}
+
+.pr-accordion-rounded-md > li:last-child {
+    border-bottom-left-radius: var(--border-rounded-md);
+    border-bottom-right-radius: var(--border-rounded-md);
+}
+
+.pr-accordion-rounded-lg > li:first-child {
+    border-top-left-radius: var(--border-rounded-lg);
+    border-top-right-radius: var(--border-rounded-lg);
+}
+
+.pr-accordion-rounded-lg > li:last-child {
+    border-bottom-left-radius: var(--border-rounded-lg);
+    border-bottom-right-radius: var(--border-rounded-lg);
+}
+
+.pr-accordion-rounded-full > li:first-child {
+    border-top-left-radius: var(--border-pill);
+    border-top-right-radius: var(--border-pill);
+}
+
+.pr-accordion-rounded-full > li:last-child {
+    border-bottom-left-radius: var(--border-pill);
+    border-bottom-right-radius: var(--border-pill);
+}
 
 
 
