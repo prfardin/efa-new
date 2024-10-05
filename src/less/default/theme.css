@@ -681,7 +681,7 @@
 
 
 /* =================================================
-    accordion table component
+    accordion component
  ================================================= */
 
 .pr-accordion > li {
@@ -819,6 +819,24 @@
     border-bottom-right-radius: var(--border-pill);
 }
 
+/* =================================================
+    Placeload component
+ ================================================= */
+.pr-placeload {
+    background: linear-gradient(90deg, #00000012 8%, #00000026 18%, #00000012 33%);
+    background-size: 1200px 104px;
+    position: relative;
+    animation: nui-placeload 1s linear infinite forwards;
+}
+
+@keyframes nui-placeload {
+    0% {
+        background-position: -468px 0;
+    }
+    100% {
+        background-position: 468px 0;
+    }
+}
 
 
 

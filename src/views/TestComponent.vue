@@ -16,6 +16,7 @@ import PrButton from '@c/core/PrButton.vue'
 import PrAccordion from '@c/core/PrAccordion.vue'
 import PrContainer from '@c/core/PrContainer.vue'
 import PrSection from '@c/core/PrSection.vue'
+import PrPlaceload from '@c/core/PrPlaceload.vue'
 
 const BlogPost = {
   props: ['postTitle'],
@@ -41,7 +42,7 @@ const data = ref<any>([
 <template>
   <pr-section>
     <pr-container >
-      <pr-accordion :items="data" title-mode="plus"/>
+      <pr-placeload class="uk-width-small uk-height-small uk-border-circle" />
     </pr-container>
   </pr-section>
 
