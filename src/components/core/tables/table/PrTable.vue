@@ -5,8 +5,6 @@ import { TableClassObject } from '@u/classes'
 import { computed, ref } from 'vue'
 
 const props = withDefaults(defineProps<TablePropsType>(), {
-  rounded: 'none'
-
 })
 
 const el = ref<RefElement>(null)

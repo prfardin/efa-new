@@ -69,7 +69,7 @@ const navItem1 = ref<any>({
       ]
     },
   ],
-  divider: 4
+  divider: 2
 })
 
 const navItem2 = ref<any>({
@@ -237,7 +237,9 @@ const findLastIndex = computed(() => {
           <li class="uk-parent">
             <a>{{ item.parentTitle }}<pr-icon class="pr-nav-parent" icon="line-angle-down" /></a>
             <ul class="uk-nav-sub">
-              <li v-for="(subItem, subIndex) in item.subItems" :key="subIndex"><pr-link :to="subItem.href">{{ subItem.title }}</pr-link></li>
+              <li v-for="(subItem, subIndex) in item.subItems" :key="subIndex">
+                <pr-link :to="subItem.href">{{ subItem.title }}</pr-link>
+              </li>
             </ul>
           </li>
           <li v-if="(index + 1) % data.divider === 0 && index !== findLastIndex" class="uk-nav-divider" role="presentation"></li>

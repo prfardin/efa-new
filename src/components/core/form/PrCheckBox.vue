@@ -17,7 +17,7 @@ const model = defineModel()
 
 <template>
   <div class="pr-checkbox-content">
-    <div class="pr-checkbox-con">
+    <div class="pr-checkbox-icon">
       <input class="pr-checkbox" type="checkbox" :value="value" :name="name" v-model="model" :id="name">
       <div :class="checkboxClass">
         <i class="pr-icon-check">
@@ -45,12 +45,13 @@ const model = defineModel()
   justify-content: flex-start
 }
 
-.pr-checkbox-con {
+.pr-checkbox-icon {
   width: 20px;
   height: 20px;
-  border-radius: 5px;
+  border-radius: 999px;
   position: relative;
-  z-index: 1
+  z-index: 1;
+  background-color: rgb(var(--color-default));
 }
 
 .pr-checkbox-mask {
@@ -117,7 +118,7 @@ const model = defineModel()
   border-radius: inherit;
   -webkit-transition: all .25s ease;
   transition: all .25s ease;
-  border: 1px solid rgba(222, 224, 237, 0.85);
+  border: var(--size-1-px) solid rgb(var(--color-muted-200));
   -webkit-box-sizing: border-box;
   box-sizing: border-box
 }
@@ -150,7 +151,7 @@ const model = defineModel()
 }
 
 .pr-checkbox:hover~.pr-checkbox-mask {
-  background: rgba(240,243,244,1)
+  background: rgb(var(--color-muted-300));
 }
 
 .pr-checkbox:hover~.pr-checkbox-mask:before {

@@ -29,6 +29,7 @@
     --color-muted-50: 248, 250, 252;
     --color-muted-100: 241, 245, 249;
     --color-muted-200: 226, 232, 240;
+    --color-muted-300: 203, 213, 225;
     --color-muted-400: 148, 163, 184;
     --color-muted-500: 100, 116, 139;
     --color-muted-700: 51, 65, 85;
@@ -80,6 +81,10 @@
 
 .pr-align-middle {
     vertical-align: middle;
+}
+
+.uk-link {
+    text-decoration: none!important;
 }
 
 /* =================================================
@@ -882,8 +887,16 @@
     font-size: var(--size-4)!important;
 }
 
-.uk-table-hover tbody tr:hover {
+.uk-table-striped > tr:nth-of-type(odd), .uk-table-striped tbody tr:nth-of-type(n+1) {
     background-color: rgb(var(--color-muted-50))!important;
+}
+
+.uk-table-striped > tr:nth-of-type(odd), .uk-table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgb(var(--color-default))!important;
+}
+
+.uk-table-hover tbody tr:hover {
+    background-color: rgb(var(--color-muted-100))!important;
 }
 
 .uk-table-divider > tr:not(:first-child), .uk-table-divider > :not(:first-child) > tr, .uk-table-divider > :first-child > tr:not(:first-child) {

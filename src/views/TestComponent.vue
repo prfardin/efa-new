@@ -36,37 +36,29 @@ const data = ref<any>([
       <div class="uk-flex uk-flex-column">
         <div class="pr-overflow-x-auto uk pr-border pr-border-rounded-lg">
           <div class="uk-width-1-1 uk-display-inline-block pr-align-middle">
-            <div class="uk-overflow-hidden">
+            <div >
               <pr-table hover striped>
                 <template #head >
-                  <pr-table-heading>
+                  <pr-table-heading style="width: 20px">
                     <div>
-                      <pr-check-box name="" />
+                      <pr-check-box mode="square" name="" />
                     </div>
                   </pr-table-heading>
                   <pr-table-heading>Collaborator</pr-table-heading>
                   <pr-table-heading>Expertise</pr-table-heading>
                   <pr-table-heading>Rate</pr-table-heading>
                   <pr-table-heading>Status</pr-table-heading>
+                  <pr-table-heading>Status</pr-table-heading>
+                  <pr-table-heading>Status</pr-table-heading>
                 </template>
                 <template #row >
-                  <pr-table-row>
-                    <pr-table-cell>test</pr-table-cell>
-                    <pr-table-cell>test</pr-table-cell>
-                    <pr-table-cell>test</pr-table-cell>
-                    <pr-table-cell>test</pr-table-cell>
-                    <pr-table-cell>test</pr-table-cell>
-                  </pr-table-row>
-                  <pr-table-row>
-                    <pr-table-cell>test</pr-table-cell>
-                    <pr-table-cell>test</pr-table-cell>
-                    <pr-table-cell>test</pr-table-cell>
-                    <pr-table-cell>test</pr-table-cell>
-                    <pr-table-cell>test</pr-table-cell>
-                  </pr-table-row>
-                  <pr-table-row>
-                    <pr-table-cell>test</pr-table-cell>
-                    <pr-table-cell>test</pr-table-cell>
+                  <pr-table-row v-for="(d, index) in data" :key="index">
+                    <pr-table-cell>
+                        <pr-check-box name="" />
+                    </pr-table-cell>
+                    <pr-table-cell>{{ d.title }}</pr-table-cell>
+                    <pr-table-cell>{{ d.content }}</pr-table-cell>
+                    <pr-table-cell>sss</pr-table-cell>
                     <pr-table-cell>test</pr-table-cell>
                     <pr-table-cell>test</pr-table-cell>
                     <pr-table-cell>test</pr-table-cell>
