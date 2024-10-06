@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { accordionPropsType } from '@u/props'
+import { AccordionPropsType } from '@u/props'
 import { accordion, RefElement } from '@u/util'
 import { computed, onMounted, ref } from 'vue'
 import { AccordionClassObject } from '@u/classes'
 import PrIcon from '@c/core/PrIcon.vue'
 
-const props = withDefaults(defineProps<accordionPropsType>(), {
+const props = withDefaults(defineProps<AccordionPropsType>(), {
   /*active: false,*/
   rounded: 'none',
   titleMode: 'dot',

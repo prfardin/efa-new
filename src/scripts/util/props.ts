@@ -21,7 +21,8 @@ import {
   RadioClassType,
   CheckboxClassType,
   ChipClassType,
-  AccordionClassType
+  AccordionClassType,
+  TableClassType
 } from './classes'
 
 import { RouteLocationRaw } from 'vue-router'
@@ -415,7 +416,7 @@ export interface SearchPropsType {
  * accordion Props Types
  */
 
-export interface accordionPropsType extends AccordionClassType{
+export interface AccordionPropsType extends AccordionClassType {
   items: [ { title: string, content: string } ]
   active?: number
   animation?: boolean
@@ -427,4 +428,13 @@ export interface accordionPropsType extends AccordionClassType{
   toggle?: string
   transition?: string
   offset?: number
+}
+
+
+/**
+ * table Props Types
+ */
+
+export interface TablePropsType extends TableClassType {
+
 }

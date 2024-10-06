@@ -20,6 +20,9 @@ export const defaultIconCls = 'uk-icon'
 export const defaultClsRtl = 'pr-direction-rtl'
 export const defaultClsLtr = 'pr-direction-ltr'
 
+
+type RoundedType = 'none' | 'md' | 'lg' | 'full'
+
 /**
  * define background types, we use our main colors in
  * some components that take background color like button component,
@@ -615,8 +618,9 @@ export function checkboxClassObject(
 /**
  * Accordion Classes
  */
+
 export interface AccordionClassType {
-  rounded: "none" | 'md' | 'lg' | 'full'
+  rounded: RoundedType
   titleMode: 'dot' | 'chevron' | 'plus'
 }
 
@@ -631,6 +635,39 @@ export function AccordionClassObject(
     {
       [`${checkboxCls}-rounded-${props.rounded}`]: props.rounded,
       [`${checkboxCls}-${props.titleMode}`]: props.titleMode
+    }
+  ]
+}
+
+/**
+ * Table Classes
+ */
+export interface TableClassType {
+  size?: 'small' | 'large'
+  divider?: boolean
+  striped?: boolean
+  hover?: boolean
+  justify?: boolean
+  middle?: boolean
+  responsive?: boolean
+}
+
+export const defaultTableCls = 'uk-table'
+
+export function TableClassObject(
+  props: TableClassType,
+  tableCls: string = defaultTableCls
+) {
+  return [
+    tableCls,
+    {
+      [`${tableCls}-${props.size}`]: props.size,
+      [`${tableCls}-divider`]: props.divider,
+      [`${tableCls}-striped`]: props.striped,
+      [`${tableCls}-hover`]: props.hover,
+      [`${tableCls}-justify`]: props.justify,
+      [`${tableCls}-middle`]: props.middle,
+      [`${tableCls}-responsive`]: props.responsive
     }
   ]
 }

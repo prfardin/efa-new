@@ -31,10 +31,10 @@
     --color-muted-200: 226, 232, 240;
     --color-muted-400: 148, 163, 184;
     --color-muted-500: 100, 116, 139;
+    --color-muted-700: 51, 65, 85;
     --color-muted-800: 30, 41, 59;
     --default-text-color: 70, 73, 100;
     --text-color-600: 71, 85, 105;
-    --border-color: 229, 231, 235;
     --border-rounded-none: var(--size-0);
     --border-rounded-sm: var(--size-1);
     --border-rounded-md: var(--size-1-5);
@@ -46,12 +46,40 @@
     --transition-duration-300: .3s;
 }
 
+.pr-border {
+    border: var(--size-1-px) solid rgb(var(--color-muted-200))
+}
+
+.pr-border-rounded-none {
+    border-radius: var(--border-rounded-none);
+}
+
+.pr-border-rounded-sm {
+    border-radius: var(--border-rounded-sm);
+}
+
+.pr-border-rounded-md {
+    border-radius: var(--border-rounded-md);
+}
+
+.pr-border-rounded-lg {
+    border-radius: var(--border-rounded-lg);
+}
+
 .pr-border-rounded-xl {
-    border-radius: var(--border-rounded-xl);;
+    border-radius: var(--border-rounded-xl);
+}
+
+.pr-rounded-full {
+    border-radius: var(--border-pill);
 }
 
 .pr-primary-darktest-b-c {
-    background-color: rgb(var(--primary-background-darktest))!important;
+    background-color: rgb(var(--primary-background-darktest))!important
+}
+
+.pr-align-middle {
+    vertical-align: middle;
 }
 
 /* =================================================
@@ -280,7 +308,7 @@
     width: 220px;
     .uk-offcanvas-bar {
         width: 220px;
-        border-right: 1px solid rgb(var(--border-color));
+        border-right: 1px solid rgb(var(--color-muted-200));
     }
 }
 
@@ -306,7 +334,7 @@
 
 .uk-light .uk-nav-default .uk-nav-divider, .uk-section-primary:not(.uk-preserve-color) .uk-nav-default .uk-nav-divider, .uk-section-secondary:not(.uk-preserve-color) .uk-nav-default .uk-nav-divider, .uk-tile-primary:not(.uk-preserve-color) .uk-nav-default .uk-nav-divider, .uk-tile-secondary:not(.uk-preserve-color) .uk-nav-default .uk-nav-divider, .uk-card-primary.uk-card-body .uk-nav-default .uk-nav-divider, .uk-card-primary > :not([class*="uk-card-media"]) .uk-nav-default .uk-nav-divider, .uk-card-secondary.uk-card-body .uk-nav-default .uk-nav-divider, .uk-card-secondary > :not([class*="uk-card-media"]) .uk-nav-default .uk-nav-divider, .uk-overlay-primary .uk-nav-default .uk-nav-divider, .uk-offcanvas-bar .uk-nav-default .uk-nav-divider {
     /* we should delete !important after fix css */
-    border-top-color: rgb(var(--border-color))!important;
+    border-top-color: rgb(var(--color-muted-200))!important;
 }
 
 /* sidebar strip */
@@ -434,7 +462,7 @@
 
 .uk-search-default.pr-search-default .uk-search-input {
     background-color: transparent;
-    border: 1px solid rgb(var(--border-color));
+    border: 1px solid rgb(var(--color-muted-200));
     border-radius: var(--border-rounded-xl);
     transition: border var(--transition-duration-200) ease-in-out;
 }
@@ -489,7 +517,7 @@
 .pr-chip-solid {
     color: var(--default-text-color);
     background-color: rgb(var(--color-default));
-    border-color: rgb(var(--border-color))
+    border-color: rgb(var(--color-muted-200))
 }
 
 .pr-chip-pastel {
@@ -639,7 +667,7 @@
     align-items: center;
     flex-direction: row;
     background-color: rgb(var(--color-default));
-    border: var(--size-1-px) solid rgb(var(--border-color))
+    border: var(--size-1-px) solid rgb(var(--color-muted-200))
 }
 
 .flex-table-inner-item > * {
@@ -688,7 +716,7 @@
     display: block;
     width: 100%;
     overflow: hidden;
-    border: var(--size-1-px) solid rgb(var(--border-color));
+    border: var(--size-1-px) solid rgb(var(--color-muted-200));
     margin-top: var(--size-0)!important;
 }
 
@@ -820,7 +848,7 @@
 }
 
 /* =================================================
-    Placeload component
+    placeload component
  ================================================= */
 .pr-placeload {
     background: linear-gradient(90deg, #00000012 8%, #00000026 18%, #00000012 33%);
@@ -837,6 +865,31 @@
         background-position: 468px 0;
     }
 }
+
+/* =================================================
+    table component
+ ================================================= */
+.uk-table {
+    table-layout: fixed;
+    margin-bottom: 0!important;
+}
+
+.uk-table th {
+    background-color: rgb(var(--color-muted-50));
+    color: rgb(var(--color-muted-700))!important;
+    font-weight: 600!important;
+    line-height: var(--size-4);
+    font-size: var(--size-4)!important;
+}
+
+.uk-table-hover tbody tr:hover {
+    background-color: rgb(var(--color-muted-50))!important;
+}
+
+.uk-table-divider > tr:not(:first-child), .uk-table-divider > :not(:first-child) > tr, .uk-table-divider > :first-child > tr:not(:first-child) {
+    border-color: rgb(var(--color-muted-200))!important;
+}
+
 
 
 
