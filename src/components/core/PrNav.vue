@@ -7,9 +7,14 @@ import { ref, onMounted } from 'vue'
 // must change
 const props = withDefaults(defineProps<NavPropsType>(), {
   hasNavTag: true,
-  targets: "> .uk-parent",
-  content: "> ul",
-  collapsible: true
+  targets: '> .uk-parent',
+  toggle: '> a',
+  content: '> ul',
+  collapsible: true,
+  multiple: false,
+  transition: 'ease',
+  animation: true,
+  duration: 200
 })
 
 // define template ref

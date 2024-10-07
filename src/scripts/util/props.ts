@@ -122,7 +122,7 @@ export interface NavPropsType {
   collapsible?: boolean
   multiple?: boolean
   transition?: string
-  animation?: string
+  animation?: string | boolean
   duration?: number
 }
 

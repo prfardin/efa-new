@@ -23,7 +23,7 @@ const navItem1 = ref<any>({
     {
       parentTitle: 'Dashboard2',
       subItems: [
-        { title: 'products', href: '/wares' },
+        { title: 'products', href: '/' },
         { title: 'products', href: '/wares' },
         { title: 'products', href: '/wares' }
       ]
@@ -215,12 +215,12 @@ const navItem4 = ref<any>({
 const navItems = ref([navItem1, navItem2, navItem3, navItem4])
 
 const data = computed(() => {
-  const item = navItems.value[props.isActive];
-  return item ? item.value : null;
+  const item = navItems.value[props.isActive]
+  return item ? item.value : null
 })
 
 const findLastIndex = computed(() => {
-  return data.value?.body.length - 1;
+  return data.value?.body.length - 1
 });
 
 
@@ -235,10 +235,18 @@ const findLastIndex = computed(() => {
       <pr-nav multiple>
         <template v-for="(item, index) in data?.body" :key="index">
           <li class="uk-parent">
-            <a>{{ item.parentTitle }}<pr-icon class="pr-nav-parent" icon="line-angle-down" /></a>
+            <a>
+              <span>{{ item.parentTitle }}</span>
+              <pr-icon class="pr-nav-parent" icon="line-angle-down" ratio=".9" />
+            </a>
             <ul class="uk-nav-sub">
               <li v-for="(subItem, subIndex) in item.subItems" :key="subIndex">
-                <pr-link :to="subItem.href">{{ subItem.title }}</pr-link>
+                <pr-link :to="subItem.href">
+                  <div class="uk-flex uk-flex-middle uk-padding-small-right">
+                    <pr-icon icon="line-bell" ratio=".84" />
+                    <span class="pr-margin-left-2">{{ subItem.title }}</span>
+                  </div>
+                </pr-link>
               </li>
             </ul>
           </li>

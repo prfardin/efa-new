@@ -87,6 +87,14 @@
     text-decoration: none!important;
 }
 
+.pr-h-8 {
+    height: var(--size-8);
+}
+
+.pr-margin-left-2 {
+    margin-left: var(--size-2);
+}
+
 /* =================================================
  navbar
 ================================================= */
@@ -318,16 +326,6 @@
 }
 
 .uk-light .uk-nav-default > li.uk-active > a, .uk-section-primary:not(.uk-preserve-color) .uk-nav-default > li.uk-active > a, .uk-section-secondary:not(.uk-preserve-color) .uk-nav-default > li.uk-active > a, .uk-tile-primary:not(.uk-preserve-color) .uk-nav-default > li.uk-active > a, .uk-tile-secondary:not(.uk-preserve-color) .uk-nav-default > li.uk-active > a, .uk-card-primary.uk-card-body .uk-nav-default > li.uk-active > a, .uk-card-primary > :not([class*="uk-card-media"]) .uk-nav-default > li.uk-active > a, .uk-card-secondary.uk-card-body .uk-nav-default > li.uk-active > a, .uk-card-secondary > :not([class*="uk-card-media"]) .uk-nav-default > li.uk-active > a, .uk-overlay-primary .uk-nav-default > li.uk-active > a, .uk-offcanvas-bar .uk-nav-default > li.uk-active > a {
-    /* we should delete !important after fix css */
-    color: rgb(var(--default-text-color))!important;
-}
-
-.uk-light .uk-nav-default > li > a, .uk-section-primary:not(.uk-preserve-color) .uk-nav-default > li > a, .uk-section-secondary:not(.uk-preserve-color) .uk-nav-default > li > a, .uk-tile-primary:not(.uk-preserve-color) .uk-nav-default > li > a, .uk-tile-secondary:not(.uk-preserve-color) .uk-nav-default > li > a, .uk-card-primary.uk-card-body .uk-nav-default > li > a, .uk-card-primary > :not([class*="uk-card-media"]) .uk-nav-default > li > a, .uk-card-secondary.uk-card-body .uk-nav-default > li > a, .uk-card-secondary > :not([class*="uk-card-media"]) .uk-nav-default > li > a, .uk-overlay-primary .uk-nav-default > li > a, .uk-offcanvas-bar .uk-nav-default > li > a {
-    /* we should delete !important after fix css */
-    color: rgb(var(--default-text-color))!important;
-}
-
-.uk-light .uk-nav-default .uk-nav-sub a, .uk-section-primary:not(.uk-preserve-color) .uk-nav-default .uk-nav-sub a, .uk-section-secondary:not(.uk-preserve-color) .uk-nav-default .uk-nav-sub a, .uk-tile-primary:not(.uk-preserve-color) .uk-nav-default .uk-nav-sub a, .uk-tile-secondary:not(.uk-preserve-color) .uk-nav-default .uk-nav-sub a, .uk-card-primary.uk-card-body .uk-nav-default .uk-nav-sub a, .uk-card-primary > :not([class*="uk-card-media"]) .uk-nav-default .uk-nav-sub a, .uk-card-secondary.uk-card-body .uk-nav-default .uk-nav-sub a, .uk-card-secondary > :not([class*="uk-card-media"]) .uk-nav-default .uk-nav-sub a, .uk-overlay-primary .uk-nav-default .uk-nav-sub a, .uk-offcanvas-bar .uk-nav-default .uk-nav-sub a {
     /* we should delete !important after fix css */
     color: rgb(var(--default-text-color))!important;
 }
@@ -901,6 +899,62 @@
 
 .uk-table-divider > tr:not(:first-child), .uk-table-divider > :not(:first-child) > tr, .uk-table-divider > :first-child > tr:not(:first-child) {
     border-color: rgb(var(--color-muted-200))!important;
+}
+
+/* =================================================
+    nav component
+ ================================================= */
+
+.uk-nav > .uk-parent {
+    min-height: var(--size-8);
+    margin-bottom: 4px;
+}
+
+ul.uk-nav-sub {
+    padding: var(--size-2) 0!important;
+}
+
+.uk-nav > .uk-parent > a {
+    position: relative;
+    color: rgb(var(--color-muted-400))!important;
+    padding: 0!important;
+}
+
+.uk-nav-sub > li {
+    display: flex;
+    align-items: center;
+    height: var(--size-8);
+    padding-left: var(--size-3);
+}
+
+.uk-offcanvas-bar .uk-nav-default .uk-nav-sub a {
+    color: rgb(var(--color-muted-400))!important;
+    padding: var(--size-0)!important;
+}
+
+.uk-offcanvas-bar .uk-nav-default > li:hover > a > span:not(.uk-icon) {
+    color: rgb(var(--primary-color))!important
+}
+
+.uk-nav > .uk-parent > ul.uk-nav-sub > li > a:hover,
+.uk-nav > .uk-parent > ul.uk-nav-sub > li > a:focus {
+    color: rgb(var(--primary-color))!important
+}
+
+.uk-nav > .uk-parent > a:has(+ ul.uk-nav-sub li .uk-active)::before {
+    content: '';
+    height: .25rem;
+    width: .25rem;
+    border-radius: var(--border-pill);
+    position: absolute;
+    inset-inline-start: -.75rem;
+    background-color: rgb(var(--primary-color));
+}
+
+
+
+.uk-nav > .uk-parent > ul.uk-nav-sub > li > a.uk-active {
+    color: rgb(var(--primary-color))!important
 }
 
 
