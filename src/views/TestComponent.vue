@@ -8,6 +8,7 @@ import PrCheckBox from '@c/core/form/PrCheckBox.vue'
 import PrFlexTableRow from '@c/core/tables/flex-table/PrFlexTableRow.vue'
 import PrTableCell from '@c/core/tables/table/PrTableCell.vue'
 import PrTableRow from '@c/core/tables/table/PrTableRow.vue'
+import PrPagination from '@c/core/PrPagination.vue'
 
 const BlogPost = {
   props: ['postTitle'],
@@ -28,6 +29,20 @@ const data = ref<any>([
   {title: 'four', content: 'tttttt'}
 ])
 
+const test = ref({
+  current: 1,
+  total: 10,
+  totalPages: 12,
+  loader: false,
+  perPage: 10,
+  from: 1,
+  to: 2
+})
+
+
+
+
+
 </script>
 
 <template>
@@ -36,7 +51,7 @@ const data = ref<any>([
       <div class="uk-flex uk-flex-column">
         <div class="pr-overflow-x-auto uk pr-border pr-border-rounded-lg">
           <div class="uk-width-1-1 uk-display-inline-block pr-align-middle">
-            <div >
+            <div>
               <pr-table hover striped>
                 <template #head >
                   <pr-table-heading style="width: 20px">
@@ -65,6 +80,11 @@ const data = ref<any>([
                   </pr-table-row>
                 </template>
               </pr-table>
+            </div>
+            <div class="uk-padding">
+              <div class="uk-child-width-1-1" uk-grid>
+                <div> <pr-pagination :paginate="test" /></div>
+              </div>
             </div>
           </div>
         </div>

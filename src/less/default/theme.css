@@ -12,6 +12,7 @@
     --size-4: 1rem;
     --size-5: 1.25rem;
     --size-8: 2rem;
+    --size-9: 2.5rem;
 }
 
 :root {
@@ -93,6 +94,10 @@
 
 .pr-margin-left-2 {
     margin-left: var(--size-2);
+}
+
+a {
+    text-decoration: none!important;
 }
 
 /* =================================================
@@ -957,6 +962,116 @@ ul.uk-nav-sub {
     color: rgb(var(--primary-color))!important
 }
 
+/* =================================================
+    pagination component
+ ================================================= */
+
+.pr-pagination {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pr-pagination .pr-pagination-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: var(--size-1);
+    border: var(--size-1-px) solid rgb(var(--color-muted-200));
+    gap: var(--size-1);
+    background-color: rgb(var(--color-muted-100));
+}
+
+.pr-pagination-buttons .pr-pagination-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(var(--color-muted-500));
+    background-color: rgb(var(--color-default));
+    width: 100%;
+    height: var(--size-9);
+    border: var(--size-1-px) solid rgb(var(--color-muted-200));
+    transition: background-color var(--transition-duration-300) cubic-bezier(.4,0,.2,1)
+}
+
+.pr-pagination-buttons .pr-pagination-button:hover {
+    background-color: rgb(var(--color-muted-100))
+}
+
+.pr-pagination .pr-pagination-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: var(--size-1);
+    border: var(--size-1-px) solid rgb(var(--color-muted-200));
+    gap: var(--size-1);
+    background-color: rgb(var(--color-muted-100));
+    margin: var(--size-0);
+    list-style: none
+}
+
+.pr-pagination .pr-pagination-list li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(var(--color-muted-500));
+    background-color: rgb(var(--color-default));
+    width: 100%;
+    height: var(--size-9);
+    border: var(--size-1-px) solid rgb(var(--color-muted-200));
+    transition: background-color var(--transition-duration-300) cubic-bezier(.4,0,.2,1)
+}
+
+.pr-pagination-list li a:hover {
+    background-color: rgb(var(--color-muted-100))
+}
+
+.pr-pagination-list li a.uk-active {
+    background-color: rgb(var(--primary-color));
+    color: rgb(var(--color-default));
+    pointer-events: none;
+}
+
+@media (min-width: 768px) {
+    .pr-pagination {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .pr-pagination-buttons .pr-pagination-button {
+        width: var(--size-9)
+    }
+    .pr-pagination .pr-pagination-list li a {
+        width: var(--size-9)
+    }
+}
+
+.pr-pagination.pr-pagination-rounded-sm .pr-pagination-list,
+.pr-pagination.pr-pagination-rounded-sm .pr-pagination-list li a,
+.pr-pagination.pr-pagination-rounded-sm .pr-pagination-buttons,
+.pr-pagination.pr-pagination-rounded-sm .pr-pagination-buttons .pr-pagination-button {
+    border-radius: var(--border-rounded-sm);
+}
+
+.pr-pagination.pr-pagination-rounded-md .pr-pagination-list,
+.pr-pagination.pr-pagination-rounded-md .pr-pagination-list li a,
+.pr-pagination.pr-pagination-rounded-md .pr-pagination-buttons,
+.pr-pagination.pr-pagination-rounded-md .pr-pagination-buttons .pr-pagination-button {
+    border-radius: var(--border-rounded-md);
+}
+
+.pr-pagination.pr-pagination-rounded-lg .pr-pagination-list,
+.pr-pagination.pr-pagination-rounded-lg .pr-pagination-list li a,
+.pr-pagination.pr-pagination-rounded-lg .pr-pagination-buttons,
+.pr-pagination.pr-pagination-rounded-lg .pr-pagination-buttons .pr-pagination-button {
+    border-radius: var(--border-rounded-lg);
+}
+
+.pr-pagination.pr-pagination-rounded-full .pr-pagination-list,
+.pr-pagination.pr-pagination-rounded-full .pr-pagination-list li a,
+.pr-pagination.pr-pagination-rounded-full .pr-pagination-buttons,
+.pr-pagination.pr-pagination-rounded-full .pr-pagination-buttons .pr-pagination-button {
+    border-radius: var(--border-pill);
+}
 
 
 

@@ -22,7 +22,8 @@ import {
   CheckboxClassType,
   ChipClassType,
   AccordionClassType,
-  TableClassType
+  TableClassType,
+  PaginationClassType
 } from './classes'
 
 import { RouteLocationRaw } from 'vue-router'
@@ -436,5 +437,23 @@ export interface AccordionPropsType extends AccordionClassType {
  */
 
 export interface TablePropsType extends TableClassType {
+}
 
+/**
+ * pagination Props Types
+ */
+
+export interface PaginationPropsType extends PaginationClassType {
+  modelValue: string | null
+  table: string
+  baseUrl?: string | null
+  paginate: {
+    current: number
+    total: number
+    totalPages: number
+    loader: boolean
+    perPage: number
+    from: number
+    to: number
+  }
 }
