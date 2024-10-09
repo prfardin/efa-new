@@ -21,6 +21,7 @@ import UIkitTooltipOptions = UIkit.UIkitTooltipOptions
 import UIkitTabOptions = UIkit.UIkitTabOptions
 import UIkitStickyOptions = UIkit.UIkitStickyOptions
 import UIkitAccordionOptions = UIkit.UIkitAccordionOptions
+import UIkitNotificationOptions = UIkit.UIkitNotificationOptions
 
 
 interface FormData {
@@ -44,5 +45,6 @@ export {
   UIkitTabOptions,
   FormData,
   UIkitStickyOptions,
-  UIkitAccordionOptions
+  UIkitAccordionOptions,
+  UIkitNotificationOptions
 }

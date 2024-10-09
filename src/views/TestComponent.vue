@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { onMounted, ref, watchEffect } from 'vue'
 import PrContainer from '@c/core/PrContainer.vue'
 import PrSection from '@c/core/PrSection.vue'
 import PrTable from '@c/core/tables/table/PrTable.vue'
@@ -9,18 +9,10 @@ import PrFlexTableRow from '@c/core/tables/flex-table/PrFlexTableRow.vue'
 import PrTableCell from '@c/core/tables/table/PrTableCell.vue'
 import PrTableRow from '@c/core/tables/table/PrTableRow.vue'
 import PrPagination from '@c/core/PrPagination.vue'
+import { useRoute } from 'vue-router'
+import { notify } from '@u/util'
 
-const BlogPost = {
-  props: ['postTitle'],
-  emits: ['updatePost'],
-  template: `
-    <h3>{{ postTitle }}</h3>
-  `
-}
-
-function onUpdatePost() {
-
-}
+const url = ref(`/`)
 
 const data = ref<any>([
   {title: 'one', content: 'ttt'},
@@ -29,18 +21,10 @@ const data = ref<any>([
   {title: 'four', content: 'tttttt'}
 ])
 
-const test = ref({
-  current: 1,
-  total: 10,
-  totalPages: 12,
-  loader: false,
-  perPage: 10,
-  from: 1,
-  to: 2
-})
 
-
-
+function test() {
+  notify("<span uk-icon='icon: line-check'></span><span>salam</span>", 'success')
+}
 
 
 </script>
@@ -51,48 +35,13 @@ const test = ref({
       <div class="uk-flex uk-flex-column">
         <div class="pr-overflow-x-auto uk pr-border pr-border-rounded-lg">
           <div class="uk-width-1-1 uk-display-inline-block pr-align-middle">
-            <div>
-              <pr-table hover striped>
-                <template #head >
-                  <pr-table-heading style="width: 20px">
-                    <div>
-                      <pr-check-box mode="square" name="" />
-                    </div>
-                  </pr-table-heading>
-                  <pr-table-heading>Collaborator</pr-table-heading>
-                  <pr-table-heading>Expertise</pr-table-heading>
-                  <pr-table-heading>Rate</pr-table-heading>
-                  <pr-table-heading>Status</pr-table-heading>
-                  <pr-table-heading>Status</pr-table-heading>
-                  <pr-table-heading>Status</pr-table-heading>
-                </template>
-                <template #row >
-                  <pr-table-row v-for="(d, index) in data" :key="index">
-                    <pr-table-cell>
-                        <pr-check-box name="" />
-                    </pr-table-cell>
-                    <pr-table-cell>{{ d.title }}</pr-table-cell>
-                    <pr-table-cell>{{ d.content }}</pr-table-cell>
-                    <pr-table-cell>sss</pr-table-cell>
-                    <pr-table-cell>test</pr-table-cell>
-                    <pr-table-cell>test</pr-table-cell>
-                    <pr-table-cell>test</pr-table-cell>
-                  </pr-table-row>
-                </template>
-              </pr-table>
-            </div>
-            <div class="uk-padding">
-              <div class="uk-child-width-1-1" uk-grid>
-                <div> <pr-pagination :paginate="test" /></div>
-              </div>
-            </div>
+            <div style="width: 50px; height: 50px; background-color: red; pointer-events: auto; cursor: pointer" @click="test">sss</div>
           </div>
+          <div class="uk-notification-message uk-notification-message-success">ssss</div>
         </div>
       </div>
     </pr-container>
   </pr-section>
-  <blog-post post-title="hello!" @update-post="onUpdatePost"></blog-post>
-
 </template>
 
 <style scoped>

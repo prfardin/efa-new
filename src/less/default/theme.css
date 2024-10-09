@@ -11,6 +11,7 @@
     --size-3-5: .875rem;
     --size-4: 1rem;
     --size-5: 1.25rem;
+    --size-6: 1.5rem;
     --size-8: 2rem;
     --size-9: 2.5rem;
 }
@@ -25,8 +26,12 @@
     --primary-color: 0, 106, 243;
     --secondary-color: 0, 110, 170;
     --success-color: 20, 184, 166;
+    --success-background-color: 218, 251, 247;
+    --success-border-color: 158, 245, 235;
     --warning-color: 243, 100, 0;
+    --warning-background-color: 243, 100, 0;
     --danger-color: 244, 63, 94;
+    --danger-background-color: 244, 63, 94;
     --color-muted-50: 248, 250, 252;
     --color-muted-100: 241, 245, 249;
     --color-muted-200: 226, 232, 240;
@@ -1073,6 +1078,45 @@ ul.uk-nav-sub {
     border-radius: var(--border-pill);
 }
 
+/* =================================================
+    notification component
+ ================================================= */
+
+.uk-notification-message {
+    display: flex;
+    align-items: center;
+    padding: var(--size-2) var(--size-6) var(--size-2) var(--size-2)!important;
+    background: rgb(var(--color-default))!important;
+    border: var(--size-1-px) solid rgb(var(--color-muted-200));
+}
+
+.uk-notification-message.uk-notification-message-primary {
+
+}
+
+.uk-notification-message.uk-notification-message-success {
+    color: rgb(var(--success-color))!important;
+    border-color: rgb(var(--success-border-color))!important;
+    background-color: rgb(var(--success-background-color))!important
+}
+
+.uk-notification-message.uk-notification-message-warning  {
+
+}
+
+.uk-notification-message.uk-notification-message-danger {
+
+}
+
+
+.pr-notification-message-inner {
+    display: inline-flex;
+    align-items: center;
+    background: var(--color-default)!important;
+    color: rgb(var(--color-muted-500))!important;
+    font-size: var(--size-3-5)!important;
+    line-height: var(--size-5)!important;
+}
 
 
 

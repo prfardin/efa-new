@@ -676,7 +676,7 @@ export function TableClassObject(
  * Pagination Classes
  */
 export interface PaginationClassType {
-  rounded: 'none' | 'sm' | 'md' | 'lg' | 'full'
+  rounded?: 'sm' | 'md' | 'lg' | 'full'
 }
 
 export const defaultPaginationCls = 'pr-pagination'
