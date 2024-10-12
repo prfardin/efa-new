@@ -84,7 +84,7 @@ export interface ButtonPropsType extends ButtonClassType {
   spinner?: boolean
   spinnerMod?: 'line' | 'circle'
   icon?: string
-  ratio?: number | string
+  ratio?: string
   iconClass?: string
   spinnerClass?: string
 }

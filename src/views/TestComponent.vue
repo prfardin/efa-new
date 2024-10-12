@@ -11,6 +11,8 @@ import PrTableRow from '@c/core/tables/table/PrTableRow.vue'
 import PrPagination from '@c/core/PrPagination.vue'
 import { useRoute } from 'vue-router'
 import { notify } from '@u/util'
+import PrButton from '@c/core/PrButton.vue'
+import PrGrid from '@c/core/PrGrid.vue'
 
 const url = ref(`/`)
 
@@ -23,7 +25,7 @@ const data = ref<any>([
 
 
 function test() {
-  notify("<span uk-icon='icon: line-check'></span><span>salam</span>", 'success')
+  notify("<span uk-icon='icon: line-check'></span><span>salam</span>")
 }
 
 
@@ -32,14 +34,24 @@ function test() {
 <template>
   <pr-section>
     <pr-container small>
-      <div class="uk-flex uk-flex-column">
-        <div class="pr-overflow-x-auto uk pr-border pr-border-rounded-lg">
-          <div class="uk-width-1-1 uk-display-inline-block pr-align-middle">
-            <div style="width: 50px; height: 50px; background-color: red; pointer-events: auto; cursor: pointer" @click="test">sss</div>
-          </div>
-          <div class="uk-notification-message uk-notification-message-success">ssss</div>
+      <pr-grid>
+        <div>
+          <pr-button tag="button">test</pr-button>
         </div>
-      </div>
+        <div>
+          <pr-button mode="solid" tag="button" rounded="sm" size="xs" color="secondary">test</pr-button>
+        </div>
+        <div>
+          <pr-button mode="solid" tag="button" rounded="md" size="sm"  color="success">test</pr-button>
+        </div>
+        <div>
+          <pr-button mode="solid" tag="button" rounded="lg" size="md"  color="warning">test</pr-button>
+        </div>
+        <div>
+          <pr-button mode="solid" tag="button" rounded="full"  color="danger">test</pr-button>
+
+        </div>
+      </pr-grid>
     </pr-container>
   </pr-section>
 </template>

@@ -243,14 +243,14 @@ export function gridClassObject(props: GridClassType, gridCls: string = defaultG
 /**
  * Button Classes
  */
-export interface ButtonClassType extends BackgroundTypes {
-  spinner?: boolean
+export interface ButtonClassType {
   text?: boolean
-  small?: boolean
-  xSmall?: boolean
-  square?: boolean
-  rounded?: boolean
-  circle?: boolean
+  size?: 'xs' | 'sm' | 'md' | 'lg'
+  rounded?: 'sm' | 'md' | 'lg' | 'full'
+  mode?: 'solid' | 'pastel' | 'outline'
+  color?: 'primary' | 'secondary' | 'success' | 'warning' | 'danger'
+  spinner?: boolean
+  badge?: boolean
   collapse?: boolean
   width?: string
   icon?: string
@@ -265,18 +265,16 @@ export function buttonClassObject(
   props: ButtonClassType,
   hasDefaultSlot: boolean = true,
   buttonCls: string = defaultButtonCls,
-  prButtonCls: string = defaultPrButtonCls
+  prButtonCls: string = defaultPrButtonCls,
 ) {
   return [
-    ...backgroundCls(buttonCls, props),
     {
       [defaultButtonCls]: !props.iconButton,
       [`${buttonCls}-text`]: props.text,
-      [`${buttonCls}-small`]: props.small,
-      [`${buttonCls}-xsmall`]: props.xSmall,
-      [`${buttonCls}-square`]: props.square,
-      [`${buttonCls}-rounded`]: props.rounded,
-      [`${buttonCls}-circle`]: props.circle,
+      [`${buttonCls}-${props.size}`]: props.size,
+      [`${buttonCls}-rounded-${props.rounded}`]: props.rounded,
+      [`${buttonCls}-${props.color}`]: props.color,
+      [`${buttonCls}-${props.mode}`]: props.mode,
       [`${buttonCls}-collapse`]: props.collapse,
       [`${prButtonCls}-has-icon`]: props.icon && hasDefaultSlot,
       [`${prButtonCls}-icon-flip`]: props.iconFlip,

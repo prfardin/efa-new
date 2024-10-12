@@ -18,7 +18,10 @@ import { useRipple } from '@u/ripple'
 
 const props = withDefaults(defineProps<ButtonPropsType>(), {
   tag: 'router-link',
-  spinnerMod: 'line'
+  spinnerMod: 'line',
+  mode: 'solid',
+  color: 'primary',
+  size: 'md'
 })
 
 // get slots: we check if there is no default slots defined
@@ -49,5 +52,9 @@ function onMouseDown(event: Event) {
     </template>
     <slot v-else />
     <pr-spinner v-if="spinner" :class="spinnerClass" :mode="spinnerMod" />
+    <span v-if="badge" class="pr-button-badge">
+      <span class="pr-button-badge-pulse"></span>
+      <span class="pr-button-badge-inner"></span>
+    </span>
   </component>
 </template>

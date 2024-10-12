@@ -3,10 +3,11 @@
 :root {
     --size-0: 0;
     --size-1-px: 1px;
+    --size-0-5: 0.125rem;
     --size-1: .25rem;
     --size-1-5: .375rem;
     --size-2: .5rem;
-    --size-2-5: .65rem;
+    --size-2-5: .625rem;
     --size-3: .75rem;
     --size-3-5: .875rem;
     --size-4: 1rem;
@@ -14,6 +15,7 @@
     --size-6: 1.5rem;
     --size-8: 2rem;
     --size-9: 2.5rem;
+    --size-12: 3rem;
 }
 
 :root {
@@ -23,15 +25,22 @@
     --primary-background-darktest: 0,75,172;
     --primary-color-lightest: 192, 219, 255;
     --primary-color-light: 90, 162, 255;
+    --primary-color-400: 29, 127, 255;
     --primary-color: 0, 106, 243;
+    --secondary-color-400: 0, 136, 211;
     --secondary-color: 0, 110, 170;
+    --success-color-400: 24, 221, 199;
     --success-color: 20, 184, 166;
     --success-background-color: 218, 251, 247;
     --success-border-color: 158, 245, 235;
+    --warning-color-400: 255, 134, 49;
     --warning-color: 243, 100, 0;
-    --warning-background-color: 243, 100, 0;
+    --warning-background-color: 255, 215, 187;
+    --warning-border-color: 255, 176, 121;
+    --danger-color-400: 247, 121, 143;
     --danger-color: 244, 63, 94;
-    --danger-background-color: 244, 63, 94;
+    --danger-background-color: 254, 237, 240;
+    --danger-border-color: 251, 188, 199;
     --color-muted-50: 248, 250, 252;
     --color-muted-100: 241, 245, 249;
     --color-muted-200: 226, 232, 240;
@@ -1088,10 +1097,13 @@ ul.uk-nav-sub {
     padding: var(--size-2) var(--size-6) var(--size-2) var(--size-2)!important;
     background: rgb(var(--color-default))!important;
     border: var(--size-1-px) solid rgb(var(--color-muted-200));
+    color: rgb(var(--color-muted-500))!important
 }
 
 .uk-notification-message.uk-notification-message-primary {
-
+    color: rgb(var(--primary-color))!important;
+    border-color: rgb(var(--primary-color-lightest))!important;
+    background-color: rgb(var(--primary-background-lightest))!important
 }
 
 .uk-notification-message.uk-notification-message-success {
@@ -1101,11 +1113,15 @@ ul.uk-nav-sub {
 }
 
 .uk-notification-message.uk-notification-message-warning  {
-
+    color: rgb(var(--warning-color))!important;
+    border-color: rgb(var(--warning-border-color))!important;
+    background-color: rgb(var(--warning-background-color))!important
 }
 
 .uk-notification-message.uk-notification-message-danger {
-
+    color: rgb(var(--danger-color))!important;
+    border-color: rgb(var(--danger-border-color))!important;
+    background-color: rgb(var(--danger-background-color))!important
 }
 
 
@@ -1117,6 +1133,237 @@ ul.uk-nav-sub {
     font-size: var(--size-3-5)!important;
     line-height: var(--size-5)!important;
 }
+
+/* =================================================
+    button component
+ ================================================= */
+
+.uk-button {
+    position: relative;
+    border-radius: var(--size-0)!important;
+    transition: all var(--transition-duration-300) cubic-bezier(.4,0,.2,1);
+}
+
+.uk-button.uk-button-xs {
+    font-size: var(--size-2-5);
+    height: var(--size-6);
+    line-height: var(--size-4);
+    padding: var(--size-1) var(--size-2);
+}
+
+.uk-button.uk-button-sm {
+    font-size: var(--size-3-5);
+    height: var(--size-8);
+    line-height: var(--size-5);
+    padding: var(--size-1) var(--size-3);
+}
+
+.uk-button.uk-button-md {
+    font-size: var(--size-3-5);
+    height: var(--size-9);
+    line-height: var(--size-5);
+    padding: var(--size-2) var(--size-5)
+}
+
+.uk-button.uk-button-lg {
+    font-size: var(--size-4);
+    height: var(--size-12);
+    line-height: var(--size-6);
+    padding: var(--size-2) var(--size-6);
+}
+
+.uk-button.uk-button-rounded-sm {
+    border-radius: var(--border-rounded-sm)!important
+}
+
+.uk-button.uk-button-rounded-md {
+    border-radius: var(--border-rounded-md)!important
+}
+
+.uk-button.uk-button-rounded-lg {
+    border-radius: var(--border-rounded-lg)!important
+}
+
+.uk-button.uk-button-rounded-full {
+    border-radius: var(--border-pill)!important
+}
+
+.uk-button-solid {
+    color: var(--default-text-color)!important;
+    background-color: rgb(var(--color-default))!important;
+    border-color: rgb(var(--color-muted-200))!important
+}
+
+.uk-button-pastel {
+    color: var(--default-text-color)!important;
+    background-color: rgb(var(--color-muted-100))!important;
+    border-color: rgb(var(--color-muted-100))!important
+}
+
+.uk-button-outline {
+    color: var(--default-text-color)!important;
+    background-color: rgb(var(--color-default))!important;
+    border-color: var(--default-text-color)!important
+}
+
+.uk-button-solid.uk-button-primary {
+    color: rgb(var(--color-default))!important;
+    background-color: rgb(var(--primary-color))!important;
+    border-color: rgb(var(--primary-color))!important
+}
+
+.uk-button-solid.uk-button-primary:hover {
+    background-color: rgb(var(--primary-color-400))!important;
+    border-color: rgb(var(--primary-color-400))!important
+}
+
+.uk-button-solid.uk-button-secondary {
+    color: rgb(var(--color-default))!important;
+    background-color: rgb(var(--secondary-color))!important;
+    border-color: rgb(var(--secondary-color))!important
+}
+
+.uk-button-solid.uk-button-secondary:hover {
+    background-color: rgb(var(--secondary-color-400))!important;
+    border-color: rgb(var(--secondary-color-400))!important
+}
+
+.uk-button-solid.uk-button-success {
+    color: rgb(var(--color-default))!important;
+    border-color: rgb(var(--success-color))!important;
+    background-color: rgb(var(--success-color))!important
+}
+
+.uk-button-solid.uk-button-success:hover {
+    background-color: rgb(var(--success-color-400))!important;
+    border-color: rgb(var(--success-color-400))!important
+}
+
+.uk-button-solid.uk-button-warning {
+    color: rgb(var(--color-default))!important;
+    background-color: rgb(var(--warning-color))!important;
+    border-color: rgb(var(--warning-color))!important
+}
+
+.uk-button-solid.uk-button-warning:hover {
+    background-color: rgb(var(--warning-color-400))!important;
+    border-color: rgb(var(--warning-color-400))!important
+}
+
+.uk-button-solid.uk-button-danger {
+    color: rgb(var(--color-default))!important;
+    border-color: rgb(var(--danger-color))!important;
+    background-color: rgb(var(--danger-color))!important;
+}
+
+.uk-button-solid.uk-button-danger:hover {
+    background-color: rgb(var(--danger-color-400))!important;
+    border-color: rgb(var(--danger-color-400))!important;
+}
+
+.uk-button-pastel.uk-button-primary {
+    color: rgb(var(--primary-color))!important;
+    background-color: rgb(var(--primary-color), .2)!important;
+    border-color: rgb(var(--primary-color), .2)!important
+}
+
+.uk-button-pastel.uk-button-secondary {
+    color: rgb(var(--secondary-color))!important;
+    background-color: rgb(var(--secondary-color), .2)!important;
+    border-color: rgb(var(--secondary-color), .2)!important
+}
+
+.uk-button-pastel.uk-button-success {
+    color: rgb(var(--success-color))!important;
+    border-color: rgb(var(--success-color), .2)!important;
+    background-color: rgb(var(--success-color), .2)!important
+}
+
+.uk-button-pastel.uk-button-warning {
+    color: rgb(var(--warning-color))!important;
+    background-color: rgb(var(--warning-color), .2)!important;
+    border-color: rgb(var(--warning-color), .2)!important
+}
+
+.uk-button-pastel.uk-button-danger {
+    color: rgb(var(--danger-color))!important;
+    border-color: rgb(var(--danger-color), .2)!important;
+    background-color: rgb(var(--danger-color), .2)!important;
+}
+
+.uk-button-outline.uk-button-primary {
+    color: rgb(var(--primary-color))!important;
+    border-color: rgb(var(--primary-color))!important;
+    border-width: 2px;
+}
+
+.uk-button-outline.uk-button-secondary {
+    color: rgb(var(--secondary-color))!important;
+    border-color: rgb(var(--secondary-color))!important;
+    border-width: 2px;
+}
+
+.uk-button-outline.uk-button-success {
+    color: rgb(var(--success-color))!important;
+    border-color: rgb(var(--success-color))!important;
+    border-width: 2px;
+}
+
+.uk-button-outline.uk-button-warning {
+    color: rgb(var(--warning-color))!important;
+    border-color: rgb(var(--warning-color))!important;
+    border-width: 2px;
+}
+
+.uk-button-outline.uk-button-danger {
+    color: rgb(var(--danger-color))!important;
+    border-color: rgb(var(--danger-color))!important;
+    border-width: 2px;
+}
+
+.uk-button .pr-button-badge {
+    display: flex;
+    height: var(--size-2-5);
+    inset-inline-end: calc(var(--size-0-5) * -1);
+    margin-top: calc(var(--size-0-5) * -1);
+    position: absolute;
+    top: 0;
+    width: var(--size-2-5)
+}
+
+.uk-button .pr-button-badge .pr-button-badge-pulse {
+    animation: ping 1s cubic-bezier(0,0,.2,1) infinite;
+    height: 100%;
+    opacity: .75;
+    position: absolute;
+    width: 100%;
+    border-radius: var(--border-pill);
+    display: inline-flex;
+    background-color: rgb(var(--primary-color))
+}
+
+
+.uk-button .pr-button-badge .pr-button-badge-inner {
+    height: var(--size-2-5);
+    position: relative;
+    width: var(--size-2-5);
+    border-radius: 9999px;
+    display: inline-flex;
+    background-color: rgb(var(--primary-color))
+}
+
+.uk-button:disabled {
+    opacity: .6;
+}
+
+@keyframes ping{
+    75%, 100% {
+        opacity: 0;
+        transform: scale(2)
+    }
+}
+
+
 
 
 
