@@ -87,6 +87,7 @@ export interface ButtonPropsType extends ButtonClassType {
   ratio?: string
   iconClass?: string
   spinnerClass?: string
+  disabled?: boolean
 }
 
 /**

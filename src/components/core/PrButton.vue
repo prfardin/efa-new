@@ -45,7 +45,7 @@ function onMouseDown(event: Event) {
 </script>
 
 <template>
-  <component :is="tag" :to="to" :href="href" :class="buttonClass" @mousedown="onMouseDown">
+  <component :is="tag" :to="to" :href="href" :class="buttonClass" @mousedown="onMouseDown" :disabled="disabled">
     <template v-if="icon">
       <pr-icon :class="iconClass" :icon="icon" :ratio="ratio" />
       <span :class="slotClass" v-if="slots.default"><slot /></span>

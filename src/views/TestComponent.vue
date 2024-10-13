@@ -13,6 +13,7 @@ import { useRoute } from 'vue-router'
 import { notify } from '@u/util'
 import PrButton from '@c/core/PrButton.vue'
 import PrGrid from '@c/core/PrGrid.vue'
+import PrButtonGroup from '@c/core/PrButtonGroup.vue'
 
 const url = ref(`/`)
 
@@ -34,24 +35,17 @@ function test() {
 <template>
   <pr-section>
     <pr-container small>
-      <pr-grid>
-        <div>
-          <pr-button tag="button">test</pr-button>
-        </div>
-        <div>
-          <pr-button mode="solid" tag="button" rounded="sm" size="xs" color="secondary">test</pr-button>
-        </div>
-        <div>
-          <pr-button mode="solid" tag="button" rounded="md" size="sm"  color="success">test</pr-button>
-        </div>
-        <div>
-          <pr-button mode="solid" tag="button" rounded="lg" size="md"  color="warning">test</pr-button>
-        </div>
-        <div>
-          <pr-button mode="solid" tag="button" rounded="full"  color="danger">test</pr-button>
+      <div class="uk-margin-bottom">
+        <pr-button mode="pastel" tag="button" color="secondary" rounded="md">test</pr-button>
 
-        </div>
-      </pr-grid>
+      </div>
+      <pr-button-group>
+          <pr-button mode="pastel" tag="button" color="secondary" rounded="md">test</pr-button>
+          <pr-button mode="pastel" tag="button" color="secondary" icon="line-user" rounded="md">test</pr-button>
+          <pr-button mode="pastel" tag="button" color="success" rounded="md">test</pr-button>
+          <pr-button mode="pastel" tag="button" color="warning" icon="line-user" ratio=".7" rounded="md">test</pr-button>
+          <pr-button mode="pastel" tag="button" color="danger" rounded="md">test</pr-button>
+      </pr-button-group>
     </pr-container>
   </pr-section>
 </template>
