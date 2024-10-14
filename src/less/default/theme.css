@@ -52,6 +52,7 @@
     --color-muted-300: 203, 213, 225;
     --color-muted-400: 148, 163, 184;
     --color-muted-500: 100, 116, 139;
+    --color-muted-600: 71, 85, 105;
     --color-muted-700: 51, 65, 85;
     --color-muted-800: 30, 41, 59;
     --default-text-color: 70, 73, 100;
@@ -1137,6 +1138,127 @@ ul.uk-nav-sub {
     color: rgb(var(--color-muted-500))!important;
     font-size: var(--size-3-5)!important;
     line-height: var(--size-5)!important;
+}
+
+/* =================================================
+    select component
+ ================================================= */
+
+.pr-select {
+    padding: var(--size-2) var(--size-3)!important;
+    border: var(--size-1-px) solid rgb(var(--color-muted-300))!important;
+    position: relative;
+    height: var(--size-9);
+    line-height: var(--size-5);
+    font-size: var(--size-3-5);
+    text-align: start;
+    display: flex;
+    width: 100%;
+    gap: var(--size-2);
+    align-items: center;
+    padding-inline-end: var(--size-12);
+    padding-inline-start: var(--size-4);
+    color: rgb(var(--color-muted-600));
+    background-color: rgb(var(--color-default));
+    cursor: pointer;
+
+}
+
+.pr-select.pr-searchable {
+    cursor: text!important;
+}
+
+.pr-select.pr-searchable .pr-select-input {
+    pointer-events: auto!important;
+}
+
+.pr-select-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.pr-select-input {
+    padding: 0;
+    border: none;
+    display: block;
+    color: rgb(var(--color-muted-600));
+    pointer-events: none;
+}
+
+.pr-select-item .uk-icon {
+    transition: transform var(--transition-duration-300) cubic-bezier(.4,0,.2,1);
+}
+
+.pr-select-item.open .uk-icon {
+    transform: rotate(180deg);
+}
+
+.pr-select-input-chevron {
+    width: var(--size-9);
+    height: var(--size-9);
+    inset-inline-end: 0;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    border-inline-start-width: 1px;
+    border-color: red;
+    cursor: pointer;
+}
+
+.pr-select-input:focus-visible {
+    outline: none;
+}
+
+.uk-select:active,
+.uk-select:active {
+    border-color: rgb(var(--color-muted-300))!important;
+}
+
+.divider::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    border-left: 1px solid #ededf2;
+    height: 18px;
+    left: 0;
+}
+
+.uk-select:not([multiple]):not([size]) {
+    height: 36px;
+    padding-right: 40px;
+
+}
+
+.pr-option-box {
+    border: 1px solid #ededf2;
+    padding: 8px;
+    background-color: #fdfdfd;
+    overflow: auto;
+    max-height: 240px;
+}
+
+.pr-option-box.uk-open {
+    border-color: #015eff;
+}
+
+.pr-option {
+    color: #464964;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    gap: .5rem;
+    padding: .5rem .75rem;
+    position: relative;
+    transition: color, background-color, border-color, text-decoration-color, fill, stroke .2s ease-in-out;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.pr-option:hover {
+    background: rgba(1, 94, 255, 0.1)
 }
 
 /* =================================================
