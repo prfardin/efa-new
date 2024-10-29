@@ -1,4 +1,4 @@
-import { defineComponent, computed, ref } from 'vue'
+/*import { defineComponent, computed, ref } from 'vue'
 
 export default defineComponent({
   // A simple accumulator
@@ -24,4 +24,4 @@ export default defineComponent({
       </div>
     )
   }
-})
+})*/

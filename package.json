@@ -8,7 +8,7 @@
     "dev:rtl": "set rtl=true&& vite --config vite.config.js",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
-    "test:unit": "vitest",
+    "test": "vitest",
     "test:e2e": "start-server-and-test preview http://localhost:4173 'cypress run --e2e'",
     "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' http://localhost:4173 'cypress open --e2e'",
     "build-only": "vite build",
@@ -57,7 +57,7 @@
     "typescript": "~5.4.0",
     "vite": "^5.2.8",
     "vite-plugin-vue-devtools": "^7.0.25",
-    "vitest": "^1.4.0",
+    "vitest": "^1.6.0",
     "vue-tsc": "^2.0.11"
   }
 }

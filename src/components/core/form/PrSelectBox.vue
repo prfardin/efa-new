@@ -76,24 +76,16 @@ const selectRef = ref<any>(null)
 onMounted(() => {
   if (props.searchable) {
     selectRef.value.addEventListener("click", (e: any) => {
-
+      inputRef.value.focus()
     })
   }
 })
-
-
-
-if (props.searchable) {
-  const test = function() {
-    inputRef.value.focus()
-  }
-}
 
 </script>
 
 <template>
   <div class="uk-position-relative">
-    <div class="pr-select" style="height: 23px!important;" :class="{ 'pr-searchable': searchable }" @click="test">
+    <div class="pr-select" style="height: 23px!important;" :class="{ 'pr-searchable': searchable }" ref="selectRef">
       <div class="pr-select-item" :class="{ 'open': isOpen }">
         <input class="pr-select-input"
                v-bind="inputProps"
