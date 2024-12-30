@@ -1,0 +1,120 @@
+//
+// Component: Search
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@search-color:                                      @global-color;
+@search-placeholder-color:                          @global-muted-color;
+
+@search-icon-color:                                 @global-muted-color;
+
+@search-default-width:                              240px;
+@search-default-height:                             @global-control-height;
+@search-default-padding-horizontal:                 10px;
+@search-default-background:                         @global-muted-background;
+@search-default-focus-background:                   darken(@search-default-background, 5%);
+
+@search-default-icon-width:                         @global-control-height;
+@search-default-icon-padding:                       0;
+
+@search-navbar-width:                               400px;
+@search-navbar-height:                              40px;
+@search-navbar-background:                          transparent;
+@search-navbar-font-size:                           @global-large-font-size;
+
+@search-navbar-icon-width:                          40px;
+@search-navbar-icon-padding:                        0;
+
+@search-large-width:                                500px;
+@search-large-height:                               80px;
+@search-large-background:                           transparent;
+@search-large-font-size:                            @global-2xlarge-font-size;
+
+@search-large-icon-width:                           80px;
+@search-large-icon-padding:                         0;
+
+@search-toggle-color:                               @global-muted-color;
+@search-toggle-hover-color:                         @global-color;
+
+@search-default-background:                         transparent;
+
+//
+// New
+//
+
+@search-default-border-width:                       @global-border-width;
+@search-default-border:                             @global-border;
+
+@search-default-focus-border:                       @global-primary-background;
+
+
+// Component
+// ========================================================================
+
+.hook-search-input() {}
+
+
+// Icon
+// ========================================================================
+
+.hook-search-icon() {}
+
+
+// Default modifiers
+// ========================================================================
+
+.hook-search-default-input() { border: @search-default-border-width solid @search-default-border; }
+
+.hook-search-default-input-focus() { border-color: @search-default-focus-border; }
+
+
+// Navbar modifiers
+// ========================================================================
+
+.hook-search-navbar-input() {}
+
+.hook-search-navbar-input-focus() {}
+
+
+// Large modifiers
+// ========================================================================
+
+.hook-search-large-input() {}
+
+.hook-search-large-input-focus() {}
+
+
+// Toggle
+// ========================================================================
+
+.hook-search-toggle() {}
+
+.hook-search-toggle-hover() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-search-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-search-default-background:            transparent;
+
+.hook-inverse-search-default-input() { border-color: @inverse-global-border; }
+.hook-inverse-search-default-input-focus() {}
+
+.hook-inverse-search-navbar-input() {}
+.hook-inverse-search-navbar-input-focus() {}
+
+.hook-inverse-search-large-input() {}
+.hook-inverse-search-large-input-focus() {}
+
+.hook-inverse-search-toggle() {}
+.hook-inverse-search-toggle-hover() {}

@@ -7,6 +7,134 @@
 @uikit-less: 'uikit/src/less/components';
 @font-path: '/back-office/src/fonts';
 
+// Global main variables
+// ========================================================================
+
+//
+// Component:       Variables
+// Description:     Defines common values which are used across all components
+//
+// ========================================================================
+
+
+// Load deprecated components
+// ========================================================================
+
+@deprecated:                                   false;
+
+
+// Breakpoints
+// ========================================================================
+
+// Phone Portrait:   Galaxy (360x640), iPhone 6 (375x667), iPhone 6+ (414x736)
+// Phone Landscape:  Galaxy (640x360), iPhone 6 (667x375), iPhone 6+ (736x414)
+// Tablet Portrait:  iPad (768x1024), Galaxy Tab (800x1280),
+// Tablet Landscape: iPad (1024x768), iPad Pro (1024x1366),
+// Desktop:          Galaxy Tab (1280x800), iPad Pro (1366x1024)
+
+@breakpoint-small:                             640px;  // Phone landscape
+@breakpoint-medium:                            960px;  // Tablet Landscape
+@breakpoint-large:                             1200px; // Desktop
+@breakpoint-xlarge:                            1600px; // Large Screens
+
+@breakpoint-xsmall-max:                        (@breakpoint-small - 1);
+@breakpoint-small-max:                         (@breakpoint-medium - 1);
+@breakpoint-medium-max:                        (@breakpoint-large - 1);
+@breakpoint-large-max:                         (@breakpoint-xlarge - 1);
+
+
+// Global variables
+// ========================================================================
+
+//
+// Typography
+//
+
+@global-font-family:                            -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+@global-font-size:                              16px;
+@global-line-height:                            1.5;      // 24px
+
+@global-2xlarge-font-size:                      2.625rem; // 42px
+@global-xlarge-font-size:                       2rem;     // 32px
+@global-large-font-size:                        1.5rem;   // 24px
+@global-medium-font-size:                       1.25rem;  // 20px
+@global-small-font-size:                        0.875rem; // 14px
+
+//
+// Colors
+//
+
+@global-color:                                  #666;
+@global-emphasis-color:                         #333;
+@global-muted-color:                            #999;
+
+@global-link-color:                             #1e87f0;
+@global-link-hover-color:                       #0f6ecd;
+
+@global-inverse-color:                          #fff;
+
+//
+// Backgrounds
+//
+
+@global-background:                             #fff;
+
+@global-muted-background:                       #f8f8f8;
+@global-primary-background:                     #1e87f0;
+@global-secondary-background:                   #222;
+
+@global-success-background:                     #32d296;
+@global-warning-background:                     #faa05a;
+@global-danger-background:                      #f0506e;
+
+//
+// Borders
+//
+
+@global-border-width:                           1px;
+@global-border:                                 #e5e5e5;
+
+//
+// Box-Shadows
+//
+
+@global-small-box-shadow:                       0 2px 8px rgba(0,0,0,0.08);
+@global-medium-box-shadow:                      0 5px 15px rgba(0,0,0,0.08);
+@global-large-box-shadow:                       0 14px 25px rgba(0,0,0,0.16);
+@global-xlarge-box-shadow:                      0 28px 50px rgba(0,0,0,0.16);
+
+//
+// Spacings
+//
+
+// Used in margin, section, list
+@global-margin:                                 20px;
+@global-small-margin:                           10px;
+@global-medium-margin:                          40px;
+@global-large-margin:                           70px;
+@global-xlarge-margin:                          140px;
+
+// Used in grid, column, container, align, card, padding
+@global-gutter:                                 30px;
+@global-small-gutter:                           15px;
+@global-medium-gutter:                          40px;
+@global-large-gutter:                           70px;
+
+//
+// Controls
+//
+
+@global-control-height:                         40px;
+@global-control-small-height:                   30px;
+@global-control-large-height:                   55px;
+
+//
+// Z-index
+//
+
+@global-z-index:                                1000;
+
+
 // Global variables
 // ========================================================================
 
@@ -130,3 +258,281 @@
 @global-rounded-radius: 25px;
 @global-middle-transform-top: 50%;
 @global-middle-transform: translate(0, -(@global-middle-transform-top));
+
+//
+// Define css variables | just like UIkit less variables
+//
+
+:root {
+  --size-0: 0;
+  --size-1-px: 1px;
+  --size-0-5: 0.125rem;
+  --size-1: .25rem;
+  --size-1-5: .375rem;
+  --size-2: .5rem;
+  --size-2-5: .625rem;
+  --size-3: .75rem;
+  --size-3-5: .875rem;
+  --size-4: 1rem;
+  --size-5: 1.25rem;
+  --size-6: 1.5rem;
+  --size-8: 2rem;
+  --size-9: 2.5rem;
+  --size-12: 3rem;
+}
+
+:root {
+  --color-default: 255, 255, 255;
+  --primary-background-lightest: 243, 248, 255;
+  --primary-background-dark: 0,90,207;
+  --primary-background-darktest: 0,75,172;
+  --primary-color-lightest: 192, 219, 255;
+  --primary-color-light: 90, 162, 255;
+  --primary-color-400: 29, 127, 255;
+  --primary-color: 0, 106, 243;
+  --secondary-color-400: 0, 136, 211;
+  --secondary-color: 0, 110, 170;
+  --success-color-400: 24, 221, 199;
+  --success-color: 20, 184, 166;
+  --success-background-color: 218, 251, 247;
+  --success-border-color: 158, 245, 235;
+  --warning-color-400: 255, 134, 49;
+  --warning-color: 243, 100, 0;
+  --warning-background-color: 255, 215, 187;
+  --warning-border-color: 255, 176, 121;
+  --danger-color-400: 247, 121, 143;
+  --danger-color: 244, 63, 94;
+  --danger-background-color: 254, 237, 240;
+  --danger-border-color: 251, 188, 199;
+  --color-muted-50: 248, 250, 252;
+  --color-muted-100: 241, 245, 249;
+  --color-muted-200: 226, 232, 240;
+  --color-muted-300: 203, 213, 225;
+  --color-muted-400: 148, 163, 184;
+  --color-muted-500: 100, 116, 139;
+  --color-muted-600: 71, 85, 105;
+  --color-muted-700: 51, 65, 85;
+  --color-muted-800: 30, 41, 59;
+  --default-text-color: 70, 73, 100;
+  --text-color-600: 71, 85, 105;
+  --border-rounded-none: var(--size-0);
+  --border-rounded-sm: var(--size-1);
+  --border-rounded-md: var(--size-1-5);
+  --border-rounded-lg: var(--size-2);
+  --border-rounded-xl: var(--size-3);
+  --border-pill: 9999px;
+  --transition-duration-100: .1s;
+  --transition-duration-200: .2s;
+  --transition-duration-300: .3s;
+}
+
+:root {
+  --global-sidebar-width: 368px;
+  --global-sidebar-height: 100vh;
+
+  --global-font-size: 16px;
+  --global-line-height: 1.4; // 24px
+
+  --global-2xlarge-font-size: 2.625rem; // 42px
+  --global-xlarge-font-size: 2rem; // 32px
+  --global-large-font-size: 1.575rem; // 25px
+  --global-medium-font-size: 1.25rem; // 20px
+  --global-small-font-size: 0.875rem; // 14px
+  --global-xsmall-font-size: 0.8rem; // 13px
+  --global-xxsmall-font-size: 0.575rem; // 9px
+
+  //
+  // Colors
+  //
+
+  --global-color: #5e6b86;
+  --global-emphasis-color: #333;
+  --global-muted-color: #c2c4c9;
+  --global-white-color: #fdfdfd;
+
+  --global-link-color: #1e87f0;
+  --global-link-hover-color: #0f6ecd;
+
+  --global-inverse-color: @global-white-color;
+  --global-muted-inverse-color: #f8f7fb;
+
+  --global-icon-primary-color: #7d8da5;
+  --global-icon-secondary-color: #a5b0c0;
+  --global-icon-tertiary-color: #cad1db;
+  --global-icon-quaternary-color: #e1e5ea;
+  --global-icon-favourite-color: #ffde6b;
+
+  //
+  // Backgrounds
+  //
+
+  --global-background: @global-white-color;
+
+  --global-muted-background: #f0f4f7;
+  --global-primary-background: #2785ff;
+  --global-secondary-background: #161719;
+
+  --global-success-background: #6fcf96;
+  --global-warning-background: #fe754b;
+  --global-danger-background: #f0506e;
+
+  //
+  // Borders
+  //
+
+  --global-border-width: 1px;
+  --global-border: #ecf0f6;
+  --global-border-radius: 8px;
+  --global-border-strip-color: #e5ebf3;
+
+  //
+  // Spacings
+  //
+
+  // Used in margin, section, list
+  --global-margin: 20px;
+  --global-xsmall-margin: 5px;
+  --global-small-margin: 10px;
+  --global-medium-margin: 40px;
+  --global-large-margin: 70px;
+  --global-xlarge-margin: 140px;
+
+  --global-pr-margin-medium: @global-margin + 5px;
+
+  // Used in grid, column, container, align, card, padding
+  --global-gutter: 30px;
+  --global-xxsmall-gutter: 5px;
+  --global-xsmall-gutter: 12px;
+  --global-small-gutter: 15px;
+  --global-medium-gutter: 40px;
+  --global-large-gutter: 70px;
+
+  //
+  // Controls
+  //
+
+  --global-control-xsmall-height: 28px;
+
+  //
+  // Z-index
+  //
+
+  //
+  // Spinners
+  //
+  --global-spinner-width: 20px;
+  --global-spinner-height: @global-spinner-width;
+
+  //
+  // Miscellaneous
+  //
+  --global-rounded-radius: 25px;
+  --global-middle-transform-top: 50%;
+  --global-middle-transform: translate(0, -(@global-middle-transform-top));
+}
+
+//
+// Define new variables | must replace with less variable of UIkit
+//
+@global-sidebar-width-var: var(--global-sidebar-width);
+@global-sidebar-height-var: var(--global-sidebar-height);
+
+@global-font-size-var: var(--global-font-size);
+@global-line-height-var: var(--global-line-height);
+
+@global-2xlarge-font-size-var: var(--global-2xlarge-font-size);
+@global-xlarge-font-size-var: var(--global-xlarge-font-size);
+@global-large-font-size-var: var(--global-large-font-size);
+@global-medium-font-size-var: var(--global-medium-font-size);
+@global-small-font-size-var: var(--global-small-font-size);
+@global-xsmall-font-size-var: var(--global-xsmall-font-size);
+@global-xxsmall-font-size-var: var(--global-xxsmall-font-size);
+
+//
+// Colors
+//
+
+@global-color-var: var(--global-color);
+@global-emphasis-color-var: var(--global-emphasis-color);
+@global-muted-color-var: var(--global-muted-color);
+@global-white-color-var: var(--global-white-color);
+
+@global-link-color-var: var(--global-link-color);
+@global-link-hover-color-var: var(--global-link-hover-color);
+
+@global-inverse-color-var: @global-white-color-var;
+@global-muted-inverse-color-var: var(--global-muted-inverse-color);
+
+@global-icon-primary-color-var: var(--global-icon-primary-color);
+@global-icon-secondary-color-var: var(--global-icon-secondary-color);
+@global-icon-tertiary-color-var: var(--global-icon-tertiary-color);
+@global-icon-quaternary-color-var: var(--global-icon-quaternary-color);
+@global-icon-favourite-color-var: var(--global-icon-favourite-color);
+
+//
+// Backgrounds
+//
+
+@global-background-var: @global-white-color-var;
+
+@global-muted-background-var: var(--global-muted-background);
+@global-primary-background-var: var(--global-primary-background);
+@global-secondary-background-var: var(--global-secondary-background);
+
+@global-success-background-var: var(--global-success-background);
+@global-warning-background-var: var(--global-warning-background);
+@global-danger-background-var: var(--global-danger-background);
+
+//
+// Borders
+//
+
+@global-border-width-var: var(--global-border-width);
+@global-border-var: var(--global-border);
+@global-border-radius-var: var(--global-border-radius);
+@global-border-strip-color-var: var(--global-border-strip-color);
+
+//
+// Spacings
+//
+
+// Used in margin, section, list
+@global-margin-var: var(--global-margin);
+@global-xsmall-margin-var: var(--global-xsmall-margin);
+@global-small-margin-var: var(--global-small-margin);
+@global-medium-margin-var: var(--global-medium-margin);
+@global-large-margin-var: var(--global-large-margin);
+@global-xlarge-margin-var: var(--global-xlarge-margin);
+
+@global-pr-margin-medium-var: var(--global-pr-margin-medium);
+
+// Used in grid, column, container, align, card, padding
+@global-gutter-var: var(--global-gutter);
+@global-xxsmall-gutter-var: var(--global-xxsmall-gutter);
+@global-xsmall-gutter-var: var(--global-xsmall-gutter);
+@global-small-gutter-var: var(--global-small-gutter);
+@global-medium-gutter-var: var(--global-medium-gutter);
+@global-large-gutter-var: var(--global-large-gutter);
+
+//
+// Controls
+//
+
+@global-control-xsmall-height-var: var(--global-control-xsmall-height);
+
+//
+// Z-index
+//
+
+//
+// Spinners
+//
+@global-spinner-width-var: var(--global-spinner-width);
+@global-spinner-height-var: @global-spinner-width-var;
+
+//
+// Miscellaneous
+//
+@global-rounded-radius-var: var(--global-rounded-radius);
+@global-middle-transform-top-var: var(--global-middle-transform-top);
+@global-middle-transform-var: var(--global-middle-transform);

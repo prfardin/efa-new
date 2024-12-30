@@ -1,0 +1,78 @@
+//
+// Component: List
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@list-margin-top:                               @global-small-margin;
+
+@list-padding-left:                             30px;
+
+@list-marker-height:                            (@global-line-height * 1em);
+
+@list-muted-color:                              @global-muted-color;
+@list-emphasis-color:                           @global-emphasis-color;
+@list-primary-color:                            @global-primary-background;
+@list-secondary-color:                          @global-secondary-background;
+
+@list-bullet-icon-color:                        @global-color;
+
+@list-divider-margin-top:                       @global-small-margin;
+@list-divider-border-width:                     @global-border-width;
+@list-divider-border:                           @global-border;
+
+@list-striped-padding-vertical:                 @global-small-margin;
+@list-striped-padding-horizontal:               @global-small-margin;
+@list-striped-background:                       @global-muted-background;
+
+@list-large-margin-top:                         @global-margin;
+@list-large-divider-margin-top:                 @global-margin;
+@list-large-striped-padding-vertical:           @global-margin;
+@list-large-striped-padding-horizontal:         @global-small-margin;
+
+@internal-list-bullet-image:                    "../../images/backgrounds/list-bullet.svg";
+
+//
+// New
+//
+
+@list-striped-border-width:                     @global-border-width;
+@list-striped-border:                           @global-border;
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-list-divider() {}
+
+.hook-list-striped() {
+
+    &:nth-of-type(odd) {
+        border-top: @list-striped-border-width solid @list-striped-border;
+        border-bottom: @list-striped-border-width solid @list-striped-border;
+    }
+
+}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-list-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+.hook-inverse-list-divider() {}
+.hook-inverse-list-striped() {
+
+    &:nth-of-type(odd) {
+        border-top-color: @inverse-global-border;
+        border-bottom-color: @inverse-global-border;
+    }
+
+}

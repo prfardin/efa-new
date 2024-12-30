@@ -1,71 +1,6 @@
-/* color */
-
-:root {
-    --size-0: 0;
-    --size-1-px: 1px;
-    --size-0-5: 0.125rem;
-    --size-1: .25rem;
-    --size-1-5: .375rem;
-    --size-2: .5rem;
-    --size-2-5: .625rem;
-    --size-3: .75rem;
-    --size-3-5: .875rem;
-    --size-4: 1rem;
-    --size-5: 1.25rem;
-    --size-6: 1.5rem;
-    --size-8: 2rem;
-    --size-9: 2.5rem;
-    --size-12: 3rem;
-}
-
 .size-4 {
     width: var(--size-4);
     height: var(--size-4)
-}
-
-:root {
-    --color-default: 255, 255, 255;
-    --primary-background-lightest: 243, 248, 255;
-    --primary-background-dark: 0,90,207;
-    --primary-background-darktest: 0,75,172;
-    --primary-color-lightest: 192, 219, 255;
-    --primary-color-light: 90, 162, 255;
-    --primary-color-400: 29, 127, 255;
-    --primary-color: 0, 106, 243;
-    --secondary-color-400: 0, 136, 211;
-    --secondary-color: 0, 110, 170;
-    --success-color-400: 24, 221, 199;
-    --success-color: 20, 184, 166;
-    --success-background-color: 218, 251, 247;
-    --success-border-color: 158, 245, 235;
-    --warning-color-400: 255, 134, 49;
-    --warning-color: 243, 100, 0;
-    --warning-background-color: 255, 215, 187;
-    --warning-border-color: 255, 176, 121;
-    --danger-color-400: 247, 121, 143;
-    --danger-color: 244, 63, 94;
-    --danger-background-color: 254, 237, 240;
-    --danger-border-color: 251, 188, 199;
-    --color-muted-50: 248, 250, 252;
-    --color-muted-100: 241, 245, 249;
-    --color-muted-200: 226, 232, 240;
-    --color-muted-300: 203, 213, 225;
-    --color-muted-400: 148, 163, 184;
-    --color-muted-500: 100, 116, 139;
-    --color-muted-600: 71, 85, 105;
-    --color-muted-700: 51, 65, 85;
-    --color-muted-800: 30, 41, 59;
-    --default-text-color: 70, 73, 100;
-    --text-color-600: 71, 85, 105;
-    --border-rounded-none: var(--size-0);
-    --border-rounded-sm: var(--size-1);
-    --border-rounded-md: var(--size-1-5);
-    --border-rounded-lg: var(--size-2);
-    --border-rounded-xl: var(--size-3);
-    --border-pill: 9999px;
-    --transition-duration-100: .1s;
-    --transition-duration-200: .2s;
-    --transition-duration-300: .3s;
 }
 
 .pr-border {
@@ -165,7 +100,7 @@ a {
         }
         .pr-sidebar-button-line-2 {
             opacity: 0;
-            transform: translateX(var(--size-4););
+            transform: translateX(var(--size-4));
         }
         .pr-sidebar-button-line-3 {
             transform: rotate(45deg);
@@ -267,7 +202,7 @@ a {
         }
         .pr-sticky-nav-button-line-2 {
             opacity: 0;
-            transform: translateX(var(--size-4););
+            transform: translateX(var(--size-4));
         }
         .pr-sticky-nav-button-line-3 {
             transform: rotate(45deg);
