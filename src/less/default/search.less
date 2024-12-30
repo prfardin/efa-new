@@ -16,31 +16,42 @@
 @search-default-height:                             @global-control-height;
 @search-default-padding-horizontal:                 10px;
 @search-default-background:                         @global-muted-background;
-@search-default-focus-background:                   darken(@search-default-background, 5%);
+@search-default-focus-background:                   darken(@search-default-background, 2%);
 
 @search-default-icon-width:                         @global-control-height;
 @search-default-icon-padding:                       0;
 
-@search-navbar-width:                               400px;
-@search-navbar-height:                              40px;
-@search-navbar-background:                          transparent;
-@search-navbar-font-size:                           @global-large-font-size;
+@search-navbar-width:                               240px;
+@search-navbar-height:                              @global-control-height;
+@search-navbar-padding-horizontal:                  10px;
+@search-navbar-background:                          @global-background;
+@search-navbar-focus-background:                    darken(@search-navbar-background, 1%);
 
-@search-navbar-icon-width:                          40px;
+@search-navbar-icon-width:                          @global-control-height;
 @search-navbar-icon-padding:                        0;
+
+@search-medium-width:                               400px;
+@search-medium-height:                              40px;
+@search-medium-background:                          transparent;
+@search-medium-font-size:                           @global-large-font-size;
+
+@search-medium-icon-width:                          24px;
+@search-medium-icon-padding:                        10px;
 
 @search-large-width:                                500px;
 @search-large-height:                               80px;
 @search-large-background:                           transparent;
 @search-large-font-size:                            @global-2xlarge-font-size;
 
-@search-large-icon-width:                           80px;
-@search-large-icon-padding:                         0;
+@search-large-icon-width:                           40px;
+@search-large-icon-padding:                         20px;
 
 @search-toggle-color:                               @global-muted-color;
 @search-toggle-hover-color:                         @global-color;
 
 @search-default-background:                         transparent;
+
+@search-navbar-focus-background:                    @search-navbar-background;
 
 //
 // New
@@ -50,6 +61,11 @@
 @search-default-border:                             @global-border;
 
 @search-default-focus-border:                       @global-primary-background;
+
+@search-navbar-border-width:                        @global-border-width;
+@search-navbar-border:                              @global-border;
+
+@search-navbar-focus-border:                        @global-primary-background;
 
 
 // Component
