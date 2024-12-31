@@ -7,8 +7,11 @@
 // Variables
 // ========================================================================
 
-
 // Miscellaneous
 // ========================================================================
 
-// @mixin hook-position-misc(){}
+@mixin hook-position-misc() {
+  .pr-position-z-index-extra {
+    z-index: 2;
+  }
+}

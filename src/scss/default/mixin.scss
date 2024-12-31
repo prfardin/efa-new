@@ -1,0 +1,22 @@
+//
+// Component:       Mixin
+// Description:     Defines mixins which are used across all components
+//
+// ========================================================================
+
+// Font
+// ========================================================================
+
+@mixin font-define($font-family, $filepath) {
+  font-family: $font-family;
+  src: url('#{$filepath}.ttf') format('truetype');
+}
+
+@mixin font-face($font-family, $filepath, $font-weight: null, $unicode-range: null, $font-style: null) {
+  @font-face {
+    .font-define($font-family, @filepath);
+    if($font-weight) { font-weight: $font-weight; }
+    if($unicode-range) { unicode-range: $unicode-range; }
+    if($font-style) { font-style: #{$font-style}; }
+  }
+}

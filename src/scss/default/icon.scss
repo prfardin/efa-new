@@ -3,13 +3,67 @@
 //
 // ========================================================================
 
+@use 'variables' as *;
 
 // Variables
 // ========================================================================
 
+$icon-image-size: 20px;
+
+$icon-link-color: $global-muted-color;
+$icon-link-hover-color: $global-color;
+$icon-link-active-color: darken($global-color, 5%);
+
+$icon-button-size: 36px;
+$icon-button-border-radius: $global-border-radius;
+$icon-button-background: transparent;
+$icon-button-color: $global-muted-color;
+
+$icon-button-hover-background: darken($icon-button-background, 5%);
+$icon-button-hover-color: $global-color;
+
+$icon-button-active-background: darken($icon-button-background, 10%);
+$icon-button-active-color: $global-color;
+
+//
+// New
+//
+
+$icon-primary-color: $global-icon-primary-color;
+$icon-secondary-color: $global-icon-secondary-color;
+$icon-tertiary-color: $global-icon-tertiary-color;
+$icon-quaternary-color: $global-icon-quaternary-color;
+$icon-favourite-color: $global-icon-favourite-color;
+$icon-favourite-color-tertiary: darken($global-icon-favourite-color, 40%);
+
 
 // Style modifiers
 // ========================================================================
+
+.pr-icon-primary {
+  color: $icon-primary-color;
+}
+
+.pr-icon-secondary {
+  color: $icon-secondary-color;
+}
+
+.pr-icon-tertiary {
+  color: $icon-tertiary-color;
+}
+
+.pr-icon-quaternary {
+  color: $icon-quaternary-color;
+}
+
+// may change
+.pr-icon-favourite [class*='pr-icon-'] {
+  color: $icon-favourite-color;
+}
+
+.pr-icon-favourite .pr-icon-tertiary {
+  color: $icon-favourite-color-tertiary;
+}
 
 //
 // Link
@@ -26,6 +80,11 @@
 //
 
 
+@mixin hook-icon-button() {
+  transition: 0.1s ease-in-out;
+  transition-property: color, background-color;
+}
+
 
 // @mixin hook-icon-button-hover(){}
 
@@ -35,11 +94,59 @@
 // Miscellaneous
 // ========================================================================
 
-// @mixin hook-icon-misc(){}
+@mixin hook-icon-misc() {
+  // Fill Icon Instead Button
+  // ========================================================================
+
+  [class*='pr-fill-instead'] {
+    background-color: transparent;
+  }
+
+  //
+  // Styles
+  //
+
+  .pr-fill-instead-primary > * {
+    background-color: $button-primary-background;
+    color: $button-primary-color;
+  }
+
+  .pr-fill-instead-primary:hover > * {
+    background-color: $button-primary-hover-background;
+    color: $button-primary-hover-color;
+  }
+
+  .pr-fill-instead-primary:active > * {
+    background-color: $button-primary-active-background;
+    color: $button-primary-active-color;
+  }
+}
 
 
 // Inverse
 // ========================================================================
+
+//
+// Style modifiers | may remove
+//
+
+@mixin hook-inverse() {
+  .pr-icon-primary {
+    color: $global-icon-primary-color-light;
+  }
+
+  .pr-icon-secondary {
+    color: $global-icon-secondary-color-light;
+  }
+
+  .pr-icon-tertiary {
+    color: $global-icon-tertiary-color-light;
+  }
+
+  .pr-icon-quaternary {
+    color: $global-icon-quaternary-color-light;
+  }
+}
 
 // @mixin hook-inverse-icon-link(){}
 // @mixin hook-inverse-icon-link-hover(){}

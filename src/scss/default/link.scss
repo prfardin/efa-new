@@ -3,9 +3,18 @@
 //
 // ========================================================================
 
+@use 'variables' as *;
 
 // Variables
 // ========================================================================
+
+$link-muted-color:                              $global-muted-color;
+$link-muted-hover-color:                        $global-color;
+
+$link-text-hover-color:                         $global-muted-color;
+
+$link-heading-hover-color:                      $global-primary-background;
+$link-heading-hover-text-decoration:            none;
 
 
 // Muted
@@ -41,7 +50,24 @@
 // Miscellaneous
 // ========================================================================
 
-// @mixin hook-link-misc(){}
+@mixin hook-link-misc() {
+  .pr-link-golden {
+    color: #fbda6a;
+  }
+
+  /* Link Has Icon
+     ========================================================================== */
+
+  .pr-link-has-icon {
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+  }
+
+  .pr-link-has-icon > .uk-icon {
+    margin-right: $global-xsmall-margin;
+  }
+}
 
 
 // Inverse
@@ -53,3 +79,17 @@
 // @mixin hook-inverse-link-text-hover(){}
 
 // @mixin hook-inverse-link-heading-hover(){}
+
+@mixin hook-inverse() {
+  .pr-link-golden {
+    color: $global-icon-favourite-color;
+  }
+
+  .pr-link-golden:hover {
+    color: $global-icon-favourite-color;
+  }
+
+  .pr-link-golden:active {
+    color: $global-icon-favourite-color;
+  }
+}

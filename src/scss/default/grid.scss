@@ -3,9 +3,29 @@
 //
 // ========================================================================
 
+@use 'variables' as *;
 
 // Variables
 // ========================================================================
+
+$grid-gutter-horizontal:                        $global-gutter;
+$grid-gutter-vertical:                          $grid-gutter-horizontal;
+$grid-gutter-horizontal-l:                      $global-medium-gutter;
+$grid-gutter-vertical-l:                        $grid-gutter-horizontal-l;
+
+$grid-small-gutter-horizontal:                  $global-small-gutter;
+$grid-small-gutter-vertical:                    $grid-small-gutter-horizontal;
+
+$grid-medium-gutter-horizontal:                 $global-gutter;
+$grid-medium-gutter-vertical:                   $grid-medium-gutter-horizontal;
+
+$grid-large-gutter-horizontal:                  $global-medium-gutter;
+$grid-large-gutter-vertical:                    $grid-large-gutter-horizontal;
+$grid-large-gutter-horizontal-l:                $global-large-gutter;
+$grid-large-gutter-vertical-l:                  $grid-large-gutter-horizontal-l;
+
+$grid-divider-border-width:                     $global-border-width;
+$grid-divider-border:                           $global-border;
 
 
 // Divider
@@ -17,6 +37,40 @@
 
 // Miscellaneous
 // ========================================================================
+
+@mixin hook-grid-misc() {
+  .tm-grid-expand > * {
+    flex-grow: 1;
+  }
+
+  .tm-grid-expand > .uk-width-expand {
+    flex-grow: 999;
+  }
+
+  @media (min-width: 640px) {
+    .tm-grid-expand > .uk-width-expand\@s {
+      flex-grow: 999;
+    }
+  }
+
+  @media (min-width: 960px) {
+    .tm-grid-expand > .uk-width-expand\@m {
+      flex-grow: 999;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .tm-grid-expand > .uk-width-expand\@l {
+      flex-grow: 999;
+    }
+  }
+
+  @media (min-width: 1600px) {
+    .tm-grid-expand > .uk-width-expand\@xl {
+      flex-grow: 999;
+    }
+  }
+}
 
 // @mixin hook-grid-misc(){}
 
