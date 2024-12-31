@@ -1,0 +1,35 @@
+// Name:            Fonts
+// Description:     Component to import specific fonts
+//
+//
+// ========================================================================
+
+// import PrKit Mixin: Font-Face Define
+@use "../core/mixin.scss" as *;
+
+
+// Variables
+// ========================================================================
+
+$global-font-family-base: 'Iransans';
+
+/* ========================================================================
+   Component: Fonts: rtl
+ ========================================================================== */
+
+/*
+ * 1. set global fonts
+ */
+
+/* 1 */
+@include font-face('Iransans', '@f/iransans/iransans-exteralight', 200);
+
+@include font-face('Iransans', '@f/iransans/iransans-light', 300);
+
+@include font-face('Iransans', '@f/iransans/iransans-regular', normal);
+
+@include font-face('Iransans', '@f/iransans/iransans-medium', 500);
+
+@include font-face('Iransans', '@f/iransans/iransans-bold', 700);
+
+@include font-face('Iransans', '@f/iransans/iransans-black', 900);

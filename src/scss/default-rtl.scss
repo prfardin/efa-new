@@ -1,0 +1,14 @@
+// Import UIkit default theme (or uikit.less with only core styles)
+// @import "node_modules/uikit/src/less/uikit.theme.less";
+
+// import default theme variables
+@import 'default/variables';
+
+// Import UIkit default variables and available mixins.
+@import 'core';
+
+// import custom themes and overwrites.
+@import 'default/_import';
+
+// import UIkit core
+@import 'uikit/src/scss/uikit-theme.scss';

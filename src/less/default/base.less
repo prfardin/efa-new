@@ -6,97 +6,96 @@
 // Variables
 // ========================================================================
 
-@base-body-background:                          @global-background;
+@base-body-background:                          @global-background-var;
 @base-body-font-family:                         @global-font-family;
 @base-body-font-weight:                         normal;
-@base-body-font-size:                           @global-font-size;
-@base-body-line-height:                         @global-line-height;
-@base-body-color:                               @global-color;
+@base-body-font-size:                           @global-font-size-var;
+@base-body-line-height:                         @global-line-height-var;
+@base-body-color:                               @global-color-var;
 
-@base-link-color:                               @global-link-color;
-@base-link-text-decoration:                     none;
-@base-link-hover-color:                         @global-link-hover-color;
-@base-link-hover-text-decoration:               underline;
+@base-link-color:                               @global-link-color-var;
+@base-link-text-decoration:                     @base-link-text-decoration-var;
+@base-link-hover-color:                         @global-link-hover-color-var;
+@base-link-hover-text-decoration:               @base-link-hover-text-decoration-var;
 
-@base-strong-font-weight:                       bolder;
-@base-code-font-size:                           @global-small-font-size;
+@base-strong-font-weight:                       @base-strong-font-weight-var;
+@base-code-font-size:                           @global-small-font-size-var;
 @base-code-font-family:                         Consolas, monaco, monospace;
-@base-code-color:                               @global-danger-background;
-@base-em-color:                                 @global-danger-background;
-@base-ins-background:                           #ffd;
-@base-ins-color:                                @global-color;
-@base-mark-background:                          #ffd;
-@base-mark-color:                               @global-color;
-@base-quote-font-style:                         italic;
-@base-small-font-size:                          80%;
+@base-code-color:                               @global-danger-background-var;
+@base-em-color:                                 @global-danger-background-var;
+@base-ins-background:                           @base-ins-background-var;
+@base-ins-color:                                @global-color-var;
+@base-mark-background:                          @base-mark-background-var;
+@base-mark-color:                               @global-color-var;
+@base-quote-font-style:                         @base-quote-font-style-var;
+@base-small-font-size:                          @base-small-font-size-var;
 
-@base-margin-vertical:                          @global-margin;
+@base-margin-vertical:                          @global-margin-var;
 
-@base-heading-font-family:                      @global-font-family;
-@base-heading-font-weight:                      normal;
-@base-heading-color:                            @global-emphasis-color;
-@base-heading-text-transform:                   none;
-@base-heading-margin-top:                       @global-medium-margin;
-@base-h1-font-size-m:                           @global-2xlarge-font-size;
-@base-h1-font-size:                             @base-h1-font-size-m * 0.85;
-@base-h1-line-height:                           1.2;
-@base-h2-font-size-m:                           @global-xlarge-font-size;
-@base-h2-font-size:                             @base-h2-font-size-m * 0.85;
-@base-h2-line-height:                           1.3;
-@base-h3-font-size:                             @global-large-font-size;
-@base-h3-line-height:                           1.4;
-@base-h4-font-size:                             @global-medium-font-size;
-@base-h4-line-height:                           1.4;
-@base-h5-font-size:                             @global-font-size;
-@base-h5-line-height:                           1.4;
-@base-h6-font-size:                             @global-small-font-size;
-@base-h6-line-height:                           1.4;
+@base-heading-font-family:                      @base-heading-font-family-var;
+@base-heading-font-weight:                      @base-heading-font-weight-var;
+@base-heading-color:                            @global-emphasis-color-var;
+@base-heading-text-transform:                   @base-heading-text-transform-var;
+@base-heading-margin-top:                       @global-medium-margin-var;
+//@base-h1-font-size-m:                           @base-h1-font-size-m-var;
+@base-h1-font-size:                             @base-h1-font-size-var;
+@base-h1-line-height:                           @base-h1-line-height-var;
+//@base-h2-font-size-m:                           @base-h2-font-size-m-var;
+@base-h2-font-size:                             @base-h2-font-size-var;
+@base-h2-line-height:                           @base-h2-line-height-var;
+@base-h3-font-size:                             @base-h3-font-size-var;
+@base-h3-line-height:                           @base-h3-line-height-var;
+@base-h4-font-size:                             @base-h4-font-size-var;
+@base-h4-line-height:                           @base-h4-line-height-var;
+@base-h5-font-size:                             @base-h5-font-size-var;
+@base-h5-line-height:                           @base-h5-line-height-var;
+@base-h6-font-size:                             @base-h6-font-size-var;
+@base-h6-line-height:                           @base-h6-line-height-var;
 
-@base-list-padding-left:                        30px;
+@base-list-padding-left:                        @base-list-padding-left-var;
 
-@base-hr-margin-vertical:                       @global-margin;
-@base-hr-border-width:                          @global-border-width;
-@base-hr-border:                                @global-border;
+@base-hr-margin-vertical:                       @global-margin-var;
+@base-hr-border-width:                          @global-border-width-var;
+@base-hr-border:                                @global-border-var;
 
-@base-blockquote-font-size:                     @global-medium-font-size;
-@base-blockquote-line-height:                   1.5;
+@base-blockquote-font-size:                     @global-medium-font-size-var;
+@base-blockquote-line-height:                   @base-blockquote-line-height-var;
 @base-blockquote-font-style:                    italic;
-@base-blockquote-margin-vertical:               @global-margin;
-@base-blockquote-footer-margin-top:             @global-small-margin;
-@base-blockquote-footer-font-size:              @global-small-font-size;
-@base-blockquote-footer-line-height:            1.5;
+@base-blockquote-margin-vertical:               @global-margin-var;
+@base-blockquote-footer-margin-top:             @global-small-margin-var;
+@base-blockquote-footer-font-size:              @global-small-font-size-var;
+@base-blockquote-footer-line-height:            @base-blockquote-footer-line-height-var;
 
-@base-pre-font-size:                            @global-small-font-size;
-@base-pre-line-height:                          1.5;
+@base-pre-font-size:                            @global-small-font-size-var;
+@base-pre-line-height:                          @base-pre-line-height-var;
 @base-pre-font-family:                          @base-code-font-family;
-@base-pre-color:                                @global-color;
+@base-pre-color:                                @global-color-var;
 
-@base-focus-outline-width:                      2px;
-@base-focus-outline-style:                      dotted;
-@base-focus-outline:                            @global-emphasis-color;
-@base-focus-outline-offset:                     1px;
+@base-focus-outline-width:                      @base-focus-outline-width-var;
+@base-focus-outline-style:                      @base-focus-outline-style-var;
+@base-focus-outline:                            @base-focus-outline-var;
+@base-focus-outline-offset:                     @base-focus-outline-offset-var;
 
-@base-selection-background:                     #39f;
-@base-selection-color:                          @global-inverse-color;
+@base-selection-background:                     @base-selection-background-var;
+@base-selection-color:                          @base-selection-color-var;
 
 //
 // New
 //
 
-@base-code-padding-horizontal: 6px;
-@base-code-padding-vertical: 2px;
-@base-code-background: @global-muted-background;
+@base-code-padding-horizontal: @base-code-padding-horizontal-var;
+@base-code-padding-vertical: @base-code-padding-vertical-var;
+@base-code-background: @global-muted-background-var;
 
-@base-blockquote-color: @global-emphasis-color;
+@base-blockquote-color: @global-emphasis-color-var;
 
-@base-blockquote-footer-color: @global-color;
+@base-blockquote-footer-color: @global-color-var;
 
-@base-pre-padding: 10px;
-@base-pre-background: @global-background;
-@base-pre-border-width: @global-border-width;
-@base-pre-border: @global-border;
-@base-pre-border-radius: 3px;
-@base-h3-line-height: 1.3;
+@base-pre-padding: @base-pre-padding-var;
+@base-pre-background: @global-background-var;
+@base-pre-border-width: @global-border-width-var;
+@base-pre-border: @global-border-var;
+@base-pre-border-radius: @base-pre-border-radius-var;
 
 // Body
 // ========================================================================

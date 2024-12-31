@@ -1,0 +1,24 @@
+// import fonts: for rtl
+// cause most fonts are support one language
+// and some options like line-height are different in multiple language
+// that fonts are not support them
+@import '../default/fonts-rtl';
+
+//
+$global-font-family:
+  $global-font-family-base,
+  -apple-system,
+  BlinkMacSystemFont,
+  'Segoe UI',
+  Roboto,
+  'Helvetica Neue',
+  Arial,
+  'Noto Sans',
+  sans-serif,
+  'Apple Color Emoji',
+  'Segoe UI Emoji',
+  'Segoe UI Symbol',
+  'Noto Color Emoji';
+
+//
+@import 'variables';

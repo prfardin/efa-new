@@ -1,0 +1,21 @@
+// import fonts: for ltr
+@import '../default/fonts';
+
+//
+$global-font-family:
+  $global-font-family-base,
+  -apple-system,
+  BlinkMacSystemFont,
+  'Segoe UI',
+  Roboto,
+  'Helvetica Neue',
+  Arial,
+  'Noto Sans',
+  sans-serif,
+  'Apple Color Emoji',
+  'Segoe UI Emoji',
+  'Segoe UI Symbol',
+  'Noto Color Emoji';
+
+//
+@import 'variables';
