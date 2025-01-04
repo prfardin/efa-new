@@ -1,18 +1,18 @@
 // Base
-@use "variables.scss";
+@use "variables.scss"; //
 @use "base.scss";
 
 // Elements
-@use "link.scss";
+@use "link.scss"; //
 @use "heading.scss";
 @use "divider.scss";
 @use "list.scss";
 @use "description-list.scss";
 @use "table.scss";
-@use "icon.scss";
+@use "icon.scss"; //
 @use "form-range.scss";
 @use "form.scss";
-@use "button.scss";
+@use "button.scss"; //
 @use "progress.scss";
 
 // Layout
@@ -23,7 +23,7 @@
 
 // Common
 @use "close.scss";
-@use "spinner.scss";
+@use "spinner.scss"; //
 @use "totop.scss";
 @use "marker.scss";
 @use "alert.scss";
@@ -49,7 +49,7 @@
 @use "sortable.scss";
 @use "countdown.scss";
 
-@use "grid.scss";
+@use "grid.scss"; //
 
 // Navs
 @use "nav.scss";
@@ -70,14 +70,14 @@
 @use "animation.scss";
 @use "width.scss";
 @use "height.scss";
-@use "text.scss";
+@use "text.scss"; //
 @use "column.scss";
 @use "background.scss";
 @use "align.scss";
-@use "utility.scss";
-@use "margin.scss";
+@use "utility.scss"; //
+@use "margin.scss"; //
 @use "padding.scss";
-@use "position.scss";
+@use "position.scss"; //
 @use "transition.scss";
 @use "inverse.scss";
 

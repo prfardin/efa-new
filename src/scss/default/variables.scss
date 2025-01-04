@@ -74,10 +74,6 @@ $font-path: '/back-office/src/fonts';
   --transition-duration-300: .3s;
 }
 
-// UIkit global vars
-:root {
-}
-
 // Pr vars
 :root {
   // line-height
@@ -122,8 +118,198 @@ $font-path: '/back-office/src/fonts';
   --pr-font-weight-bolder: bolder;
 }
 
+// UIkit global vars
+:root {
+
+  //
+  // Typography
+  //
+
+  --global-font-size:                                              16px;
+
+  --global-line-height:                                            1.4; // 24px
+
+  --global-2xlarge-font-size:                                      2.625rem; // 42px
+  --global-xlarge-font-size:                                       2rem; // 32px
+  --global-large-font-size:                                        1.575rem; // 25px
+  --global-medium-font-size:                                       1.25rem; // 20px
+  --global-small-font-size:                                        0.875rem; // 14px
+
+  // New
+
+  --global-xsmall-font-size:                                       0.8rem; // 13px
+  --global-xxsmall-font-size:                                      0.575rem; // 9px
+
+  //
+  // Colors
+  //
+
+  --global-color:                                                  #5e6b86;
+  --global-emphasis-color:                                         #333;
+  --global-muted-color:                                            #c2c4c9;
+  --global-white-color:                                            #fdfdfd;
+
+  --global-link-color:                                             #1e87f0;
+  --global-link-hover-color:                                       #0f6ecd;
+
+  --global-inverse-color:                                          var(--global-white-color);
+
+  // New
+
+  --global-muted-inverse-color:                                    #f8f7fb;
+  --global-icon-primary-color:                                     #7d8da5;
+  --global-icon-secondary-color:                                   #a5b0c0;
+  --global-icon-tertiary-color:                                    #cad1db;
+  --global-icon-quaternary-color:                                  #e1e5ea;
+  --global-icon-favourite-color:                                   #ffde6b;
+
+  //
+  // Backgrounds
+  //
+
+  --global-background:                                             var(--global-white-color);
+
+  --global-muted-background:                                       #f0f4f7;
+  --global-primary-background:                                     #2785ff;
+  --global-secondary-background:                                   #161719;
+
+  --global-success-background:                                     #6fcf96;
+  --global-warning-background:                                     #fe754b;
+  --global-danger-background:                                      #f0506e;
+
+  //
+  // Borders
+  //
+
+  --global-border-width:                                           1px;
+  --global-border:                                                 #ecf0f6;
+
+  // New
+
+  --global-border-radius:                                          8px;
+  --global-border-strip-color:                                     #e5ebf3;
+
+  //
+  // Box-Shadows
+  //
+
+  --global-small-box-shadow:                                       0 2px 8px rgba(0,0,0,0.08); // new
+  --global-medium-box-shadow:                                      0 5px 15px rgba(0,0,0,0.08);
+  --global-large-box-shadow:                                       0 14px 25px rgba(0,0,0,0.16);
+  --global-xlarge-box-shadow:                                      0 28px 50px rgba(0,0,0,0.16);
+
+
+  //
+  // Spacings
+  //
+
+  // Used in margin, section, list
+  --global-margin:                                                 20px;
+  --global-xsmall-margin:                                          5px;
+  --global-small-margin:                                           10px;
+  --global-medium-margin:                                          40px;
+  --global-large-margin:                                           70px;
+  --global-xlarge-margin:                                          140px;
+
+  // Used in grid, column, container, align, card, padding
+  --global-gutter:                                                 30px;
+  --global-xxsmall-gutter:                                         5px; // new
+  --global-xsmall-gutter:                                          12px; // new
+  --global-small-gutter:                                           15px;
+  --global-medium-gutter:                                          40px;
+  --global-large-gutter:                                           70px;
+
+  //
+  // Controls
+  //
+
+  --global-control-height:                                         40px;
+  --global-control-xsmall-height:                                  28px; // new
+  --global-control-small-height:                                   30px;
+  --global-control-large-height:                                   55px;
+
+  //
+  // Z-index
+  //
+
+  --global-z-index:                                                1000;
+
+  //
+  // Icon: New
+  //
+
+  --global-icon-primary-color-light:                               var(--global-white-color);
+  --global-icon-secondary-color-light:                             #999999;
+  --global-icon-tertiary-color-light:                              #747474;
+  --global-icon-quaternary-color-light:                            #595959;
+
+  --global-icon-primary-color-muted:                               var(--global-white-color);
+  --global-icon-secondary-color-muted:                             darken(var(--global-white-color), 25%);
+  --global-icon-tertiary-color-muted:                              darken(var(--global-white-color)white-color, 35%);
+  --global-icon-quaternary-color-muted:                            darken(var(--global-white-color), 45%);
+
+  //
+  // Sidebar: New
+  //
+
+  --global-sidebar-width:                                          368px;
+  --global-sidebar-height:                                         100vh;
+
+  //
+  // Spinner: New
+  //
+
+  --global-spinner-width:                                          20px;
+  --global-spinner-height:                                         var(--global-spinner-width);
+
+  --global-rounded-radius:                                         25px;
+  --global-middle-transform-top:                                   50%;
+  --global-middle-transform:                                       translate(0, -(var(--global-middle-transform-top)));
+
+  //
+  // Inverse
+  //
+
+  --inverse-global-color-mode:                                     light;
+
+  --inverse-global-color:                                          var(--global-inverse-color);
+  --inverse-global-emphasis-color:                                 var(--global-inverse-color);
+  --inverse-global-muted-color:                                    fade(var(--global-inverse-color, 55%));
+  --inverse-global-inverse-color:                                  #858687;
+
+  --inverse-global-secondary-background:                           #3c4041; // new
+  --inverse-global-primary-background:                             var(--global-inverse-color);
+  --inverse-global-muted-background:                               rgba(var(--global-muted-background, 0.1));
+
+  --inverse-global-border:                                         fade(var(--global-muted-background, 8%));
+
+  --inverse-global-icon-primary-color:                             #ffffff;
+  --inverse-global-icon-secondary-color:                           var(--global-primary-background);
+  --inverse-global-icon-tertiary-color:                            #747474;
+  --inverse-global-icon-quaternary-color:                          var(--global-primary-background);
+}
+
 // UIkit component vars
 :root {
+  //
+  // Component:       Accordion
+  //
+  // ========================================================================
+
+  $accordion-item-margin-top:                                     $global-margin !default;
+
+  $accordion-title-font-size:                                     $global-medium-font-size !default;
+  $accordion-title-line-height:                                   1.4 !default;
+  $accordion-title-color:                                         $global-emphasis-color !default;
+  $accordion-title-hover-color:                                   $global-color !default;
+
+  $accordion-content-margin-top:                                  $global-margin !default;
+
+
+  // Inverse
+
+  $inverse-accordion-title-color:                                 $inverse-global-emphasis-color !default;
+  $inverse-accordion-title-hover-color:                           $inverse-global-color !default;
 }
 
 
@@ -166,78 +352,78 @@ $breakpoint-large-max:                                          ($breakpoint-xla
 //
 
 $global-font-family:                                            -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UIEmoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$global-font-size:                                              16px !default;
+$global-font-size:                                              var(--global-font-size) !default;
 
-$global-line-height:                                            1.4 !default; // 24px
+$global-line-height:                                            var(--global-line-height) !default;
 
-$global-2xlarge-font-size:                                      2.625rem !default; // 42px
-$global-xlarge-font-size:                                       2rem !default; // 32px
-$global-large-font-size:                                        1.575rem !default; // 25px
-$global-medium-font-size:                                       1.25rem !default; // 20px
-$global-small-font-size:                                        0.875rem !default; // 14px
+$global-2xlarge-font-size:                                      var(--global-2xlarge-font-size) !default;
+$global-xlarge-font-size:                                       var(--global-xlarge-font-size) !default;
+$global-large-font-size:                                        var(--global-large-font-size) !default;
+$global-medium-font-size:                                       var(--global-medium-font-size) !default;
+$global-small-font-size:                                        var(--global-small-font-size) !default;
 
 // New
 
-$global-xsmall-font-size:                                       0.8rem !default; // 13px
-$global-xxsmall-font-size:                                      0.575rem !default; // 9px
+$global-xsmall-font-size:                                       var(--global-xsmall-font-size) !default;
+$global-xxsmall-font-size:                                      var(--global-xxsmall-font-size) !default;
 
 //
 // Colors
 //
 
-$global-color:                                                  #5e6b86 !default;
-$global-emphasis-color:                                         #333 !default;
-$global-muted-color:                                            #c2c4c9 !default;
-$global-white-color:                                            #fdfdfd !default;
+$global-color:                                                  var(--global-color) !default;
+$global-emphasis-color:                                         var(--global-emphasis-color) !default;
+$global-muted-color:                                            var(--global-muted-color) !default;
+$global-white-color:                                            var(--global-white-color) !default;
 
-$global-link-color:                                             #1e87f0 !default;
-$global-link-hover-color:                                       #0f6ecd !default;
+$global-link-color:                                             var(--global-link-color) !default;
+$global-link-hover-color:                                       var(--global-link-hover-color) !default;
 
-$global-inverse-color:                                          $global-white-color !default;
+$global-inverse-color:                                          var(--global-inverse-color) !default;
 
 // New
 
-$global-muted-inverse-color:                                    #f8f7fb !default;
-$global-icon-primary-color:                                     #7d8da5 !default;
-$global-icon-secondary-color:                                   #a5b0c0 !default;
-$global-icon-tertiary-color:                                    #cad1db !default;
-$global-icon-quaternary-color:                                  #e1e5ea !default;
-$global-icon-favourite-color:                                   #ffde6b !default;
+$global-muted-inverse-color:                                    var(--global-muted-inverse-color) !default;
+$global-icon-primary-color:                                     var(--global-icon-primary-color) !default;
+$global-icon-secondary-color:                                   var(--global-icon-secondary-color) !default;
+$global-icon-tertiary-color:                                    var(--global-icon-tertiary-color) !default;
+$global-icon-quaternary-color:                                  var(--global-icon-quaternary-color) !default;
+$global-icon-favourite-color:                                   var(--global-icon-favourite-color) !default;
 
 //
 // Backgrounds
 //
 
-$global-background:                                             $global-white-color;
+$global-background:                                             var(--global-background) -color;
 
-$global-muted-background:                                       #f0f4f7 !default;
-$global-primary-background:                                     #2785ff !default;
-$global-secondary-background:                                   #161719 !default;
+$global-muted-background:                                       var(--global-muted-background) !default;
+$global-primary-background:                                     var(--global-primary-background) !default;
+$global-secondary-background:                                   var(--global-secondary-background) !default;
 
-$global-success-background:                                     #6fcf96 !default;
-$global-warning-background:                                     #fe754b !default;
-$global-danger-background:                                      #f0506e !default;
+$global-success-background:                                     var(--global-success-background) !default;
+$global-warning-background:                                     var(--global-warning-background) !default;
+$global-danger-background:                                      var(--global-danger-background) !default;
 
 //
 // Borders
 //
 
-$global-border-width:                                           1px !default;
-$global-border:                                                 #ecf0f6 !default;
+$global-border-width:                                           var(--global-border-width) !default;
+$global-border:                                                 var(--global-border) !default;
 
 // New
 
-$global-border-radius:                                          8px !default;
-$global-border-strip-color:                                     #e5ebf3 !default;
+$global-border-radius:                                          var(--global-border-radius) !default;
+$global-border-strip-color:                                     var(--global-border-strip-color) !default;
 
 //
 // Box-Shadows
 //
 
-$global-small-box-shadow:                                       0 2px 8px rgba(0,0,0,0.08) !default; // new
-$global-medium-box-shadow:                                      0 5px 15px rgba(0,0,0,0.08) !default;
-$global-large-box-shadow:                                       0 14px 25px rgba(0,0,0,0.16) !default;
-$global-xlarge-box-shadow:                                      0 28px 50px rgba(0,0,0,0.16) !default;
+$global-small-box-shadow:                                       var(--global-small-box-shadow) !default;
+$global-medium-box-shadow:                                      var(--global-medium-box-shadow) !default;
+$global-large-box-shadow:                                       var(--global-large-box-shadow) !default;
+$global-xlarge-box-shadow:                                      var(--global-xlarge-box-shadow) !default;
 
 
 //
@@ -245,89 +431,89 @@ $global-xlarge-box-shadow:                                      0 28px 50px rgba
 //
 
 // Used in margin, section, list
-$global-margin:                                                 20px !default;
-$global-xsmall-margin:                                          5px !default;
-$global-small-margin:                                           10px !default;
-$global-medium-margin:                                          40px !default;
-$global-large-margin:                                           70px !default;
-$global-xlarge-margin:                                          140px !default;
+$global-margin:                                                 var(--global-margin) !default;
+$global-xsmall-margin:                                          var(--global-xsmall-margin) !default;
+$global-small-margin:                                           var(--global-small-margin) !default;
+$global-medium-margin:                                          var(--global-medium-margin) !default;
+$global-large-margin:                                           var(--global-large-margin) !default;
+$global-xlarge-margin:                                          var(--global-xlarge-margin) !default;
 
 // Used in grid, column, container, align, card, padding
-$global-gutter:                                                 30px !default;
-$global-xxsmall-gutter:                                         5px !default; // new
-$global-xsmall-gutter:                                          12px !default; // new
-$global-small-gutter:                                           15px !default;
-$global-medium-gutter:                                          40px !default;
-$global-large-gutter:                                           70px !default;
+$global-gutter:                                                 var(--global-gutter) !default;
+$global-xxsmall-gutter:                                         var(--global-xxsmall-gutter) !default;
+$global-xsmall-gutter:                                          var(--global-xsmall-gutter) !default;
+$global-small-gutter:                                           var(--global-small-gutter) !default;
+$global-medium-gutter:                                          var(--global-medium-gutter) !default;
+$global-large-gutter:                                           var(--global-large-gutter) !default;
 
 //
 // Controls
 //
 
-$global-control-height:                                         40px !default;
-$global-control-xsmall-height:                                  28px; // new
-$global-control-small-height:                                   30px !default;
-$global-control-large-height:                                   55px !default;
+$global-control-height:                                         var(--global-control-height) !default;
+$global-control-xsmall-height:                                  var(--global-control-xsmall-height) !default;
+$global-control-small-height:                                   var(--global-control-small-height) !default;
+$global-control-large-height:                                   var(--global-control-large-height) !default;
 
 //
 // Z-index
 //
 
-$global-z-index:                                                1000 !default;
+$global-z-index:                                                var(--global-z-index) !default;
 
 //
 // Icon: New
 //
 
-$global-icon-primary-color-light:                               $global-white-color !default;
-$global-icon-secondary-color-light:                             #999999 !default;
-$global-icon-tertiary-color-light:                              #747474 !default;
-$global-icon-quaternary-color-light:                            #595959 !default;
+$global-icon-primary-color-light:                               var(--global-icon-primary-color-light) !default;
+$global-icon-secondary-color-light:                             var(--global-icon-secondary-color-light) !default;
+$global-icon-tertiary-color-light:                              var(--global-icon-tertiary-color-light) !default;
+$global-icon-quaternary-color-light:                            var(--global-icon-quaternary-color-light) !default;
 
-$global-icon-primary-color-muted:                               $global-white-color !default;
-$global-icon-secondary-color-muted:                             darken($global-white-color, 25%) !default;
-$global-icon-tertiary-color-muted:                              darken($global-white-color, 35%) !default;
-$global-icon-quaternary-color-muted:                            darken($global-white-color, 45%) !default;
+$global-icon-primary-color-muted:                               var(--global-icon-primary-color-muted) !default;
+$global-icon-secondary-color-muted:                             var(--global-icon-secondary-color-muted) !default;
+$global-icon-tertiary-color-muted:                              var(--global-icon-tertiary-color-muted) !default;
+$global-icon-quaternary-color-muted:                            var(--global-icon-quaternary-color-muted) !default;
 
 //
 // Sidebar: New
 //
 
-$global-sidebar-width:                                          368px !default;
-$global-sidebar-height:                                         100vh !default;
+$global-sidebar-width:                                          var(--global-sidebar-width) !default;
+$global-sidebar-height:                                         var(--global-sidebar-height) !default;
 
 //
 // Spinner: New
 //
 
-$global-spinner-width:                                          20px !default;
-$global-spinner-height:                                         $global-spinner-width !default;
+$global-spinner-width:                                          var(--global-spinner-width) !default;
+$global-spinner-height:                                         var(--global-spinner-height) !default;
 
-$global-rounded-radius:                                         25px !default;
-$global-middle-transform-top:                                   50% !default;
-$global-middle-transform:                                       translate(0, -($global-middle-transform-top)) !default;
+$global-rounded-radius:                                         var(--global-rounded-radius) !default;
+$global-middle-transform-top:                                   var(--global-middle-transform-top) !default;
+$global-middle-transform:                                       var(--global-middle-transform) !default;
 
 //
 // Inverse
 //
 
-$inverse-global-color-mode:                                     light !default;
+$inverse-global-color-mode:                                     var(--inverse-global-color-mode) !default;
 
-$inverse-global-color:                                          $global-inverse-color !default;
-$inverse-global-emphasis-color:                                 $global-inverse-color !default;
-$inverse-global-muted-color:                                    fade($global-inverse-color, 55%) !default;
-$inverse-global-inverse-color:                                  #858687 !default;
+$inverse-global-color:                                          var(--inverse-global-color) !default;
+$inverse-global-emphasis-color:                                 var(--inverse-global-emphasis-color) !default;
+$inverse-global-muted-color:                                    var(--inverse-global-muted-color) !default;
+$inverse-global-inverse-color:                                  var(--inverse-global-inverse-color) !default;
 
-$inverse-global-secondary-background:                           #3c4041 !default; // new
-$inverse-global-primary-background:                             $global-inverse-color !default;
-$inverse-global-muted-background:                               rgba($global-muted-background, 0.1) !default;
+$inverse-global-secondary-background:                           var(--inverse-global-secondary-background) !default;
+$inverse-global-primary-background:                             var(--inverse-global-primary-background) !default;
+$inverse-global-muted-background:                               var(--inverse-global-muted-background) !default;
 
-$inverse-global-border:                                         fade($global-muted-background, 8%) !default;
+$inverse-global-border:                                         var(--inverse-global-border) !default;
 
-$inverse-global-icon-primary-color:                             #ffffff !default;
-$inverse-global-icon-secondary-color:                           $global-primary-background !default;
-$inverse-global-icon-tertiary-color:                            #747474 !default;
-$inverse-global-icon-quaternary-color:                          $global-primary-background !default;
+$inverse-global-icon-primary-color:                             var(--inverse-global-icon-primary-color) !default;
+$inverse-global-icon-secondary-color:                           var(--inverse-global-icon-secondary-color) !default;
+$inverse-global-icon-tertiary-color:                            var(--inverse-global-icon-tertiary-color) !default;
+$inverse-global-icon-quaternary-color:                          var(--inverse-global-icon-quaternary-color) !default;
 
 
 //
