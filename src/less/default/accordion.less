@@ -10,7 +10,7 @@
 @accordion-item-margin-top:                    @global-margin-var;
 
 @accordion-title-font-size:                    @global-medium-font-size-var;
-//@accordion-title-line-height:                  @accordion-line-height-var;
+@accordion-title-line-height:                  @accordion-line-height-var;
 @accordion-title-color:                        @global-emphasis-color-var;
 @accordion-title-hover-color:                  @global-color-var;
 
@@ -47,8 +47,8 @@
 
     &::before {
         content: "";
-        width: (@accordion-title-line-height * 1em);
-        height: (@accordion-title-line-height * 1em);
+        width: calc(@accordion-title-line-height * 1em);
+        height: calc(@accordion-title-line-height * 1em);
         margin-left: @accordion-icon-margin-left;
         float: right;
         .svg-fill(@internal-accordion-close-image, "#000", @accordion-icon-color);

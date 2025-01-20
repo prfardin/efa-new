@@ -291,25 +291,53 @@ $font-path: '/back-office/src/fonts';
 
 // UIkit component vars
 :root {
+
   //
   // Component:       Accordion
   //
   // ========================================================================
 
-  $accordion-item-margin-top:                                     $global-margin !default;
+  --accordion-item-margin-top:                                     var(--global-margin);
 
-  $accordion-title-font-size:                                     $global-medium-font-size !default;
-  $accordion-title-line-height:                                   1.4 !default;
-  $accordion-title-color:                                         $global-emphasis-color !default;
-  $accordion-title-hover-color:                                   $global-color !default;
+  --accordion-title-font-size:                                     var(--global-medium-font-size);
+  --accordion-title-line-height:                                   var(--pr-line-height-1-4);
+  --accordion-title-color:                                         var(--global-emphasis-color);
+  --accordion-title-hover-color:                                   var(--global-color);
 
-  $accordion-content-margin-top:                                  $global-margin !default;
+  --accordion-content-margin-top:                                  var(--global-margin);
 
 
   // Inverse
 
-  $inverse-accordion-title-color:                                 $inverse-global-emphasis-color !default;
-  $inverse-accordion-title-hover-color:                           $inverse-global-color !default;
+  --inverse-accordion-title-color:                                 var(--inverse-global-emphasis-color);
+  --inverse-accordion-title-hover-color:                           var(--inverse-global-color);
+
+
+  //
+  // Component:       Alert
+  //
+  // ========================================================================
+
+  --alert-margin-vertical:                                         var(--global-margin);
+  --alert-padding:                                                 15px;
+  --alert-padding-right:                                           var(--alert-padding) + 14px;
+  --alert-background:                                              var(--global-muted-background);
+  --alert-color:                                                   var(--global-color);
+
+  --alert-close-top:                                               var(--alert-padding) + 5px;
+  --alert-close-right:                                             var(--alert-padding);
+
+  --alert-primary-background:                                      lighten(mix(white, var(--global-primary-background), 40%), 20%);
+  --alert-primary-color:                                           var(--global-primary-background);
+
+  --alert-success-background:                                      lighten(mix(white, var(--global-success-background), 40%), 25%);
+  --alert-success-color:                                           var(--global-success-background);
+
+  --alert-warning-background:                                      lighten(mix(white, var(--global-warning-background), 45%), 15%);
+  --alert-warning-color:                                           var(--global-warning-background);
+
+  --alert-danger-background:                                       lighten(mix(white, var(--global-danger-background), 40%), 20%);
+  --alert-danger-color:                                            var(--global-danger-background);
 }
 
 
@@ -521,20 +549,20 @@ $inverse-global-icon-quaternary-color:                          var(--inverse-gl
 //
 // ========================================================================
 
-$accordion-item-margin-top:                                     $global-margin !default;
+$accordion-item-margin-top:                                     var(--accordion-item-margin-top) !default;
 
-$accordion-title-font-size:                                     $global-medium-font-size !default;
-$accordion-title-line-height:                                   1.4 !default;
-$accordion-title-color:                                         $global-emphasis-color !default;
-$accordion-title-hover-color:                                   $global-color !default;
+$accordion-title-font-size:                                     var(--accordion-title-font-size) !default;
+$accordion-title-line-height:                                   var(--accordion-title-line-height) !default;
+$accordion-title-color:                                         var(--accordion-title-color) !default;
+$accordion-title-hover-color:                                   var(--accordion-title-hover-color) !default;
 
-$accordion-content-margin-top:                                  $global-margin !default;
+$accordion-content-margin-top:                                  var(--accordion-content-margin-top) !default;
 
 
 // Inverse
 
-$inverse-accordion-title-color:                                 $inverse-global-emphasis-color !default;
-$inverse-accordion-title-hover-color:                           $inverse-global-color !default;
+$inverse-accordion-title-color:                                 var(--inverse-accordion-title-color) !default;
+$inverse-accordion-title-hover-color:                           var(--inverse-accordion-title-hover-color) !default;
 
 
 //
@@ -542,26 +570,26 @@ $inverse-accordion-title-hover-color:                           $inverse-global-
 //
 // ========================================================================
 
-$alert-margin-vertical:                                         $global-margin !default;
-$alert-padding:                                                 15px !default;
-$alert-padding-right:                                           $alert-padding + 14px !default;
-$alert-background:                                              $global-muted-background !default;
-$alert-color:                                                   $global-color !default;
+$alert-margin-vertical:                                         var(--alert-margin-vertical) !default;
+$alert-padding:                                                 var(--alert-padding) !default;
+$alert-padding-right:                                           var(--alert-padding-right) !default;
+$alert-background:                                              var(--alert-background) !default;
+$alert-color:                                                   var(--alert-color) !default;
 
-$alert-close-top:                                               $alert-padding + 5px !default;
-$alert-close-right:                                             $alert-padding !default;
+$alert-close-top:                                               var(--alert-close-top) !default;
+$alert-close-right:                                             var(--alert-close-right) !default;
 
-$alert-primary-background:                                      lighten(mix(white, $global-primary-background, 40%), 20%) !default;
-$alert-primary-color:                                           $global-primary-background !default;
+$alert-primary-background:                                      var(--alert-primary-background) !default;
+$alert-primary-color:                                           var(--alert-primary-color) !default;
 
-$alert-success-background:                                      lighten(mix(white, $global-success-background, 40%), 25%) !default;
-$alert-success-color:                                           $global-success-background !default;
+$alert-success-background:                                      var(--alert-success-background) !default;
+$alert-success-color:                                           var(--alert-success-color) !default;
 
-$alert-warning-background:                                      lighten(mix(white, $global-warning-background, 45%), 15%) !default;
-$alert-warning-color:                                           $global-warning-background !default;
+$alert-warning-background:                                      var(--alert-warning-background) !default;
+$alert-warning-color:                                           var(--alert-warning-color) !default;
 
-$alert-danger-background:                                       lighten(mix(white, $global-danger-background, 40%), 20%) !default;
-$alert-danger-color:                                            $global-danger-background !default;
+$alert-danger-background:                                       var(--alert-danger-background) !default;
+$alert-danger-color:                                            var(--alert-danger-color) !default;
 
 
 //
