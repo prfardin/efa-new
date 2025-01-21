@@ -7,17 +7,17 @@
 // Variables
 // ========================================================================
 
-@dropbar-margin:                                0;
-@dropbar-padding-top:                           25px;
+@dropbar-margin:                                var(--dropbar-margin);
+@dropbar-padding-top:                           var(--dropbar-padding-top);
 @dropbar-padding-bottom:                        @dropbar-padding-top;
-@dropbar-padding-horizontal:                    15px;
+@dropbar-padding-horizontal:                    var(--dropbar-padding-horizontal);
 @dropbar-padding-horizontal-s:                  @global-gutter;
 @dropbar-padding-horizontal-m:                  @global-medium-gutter;
 @dropbar-color:                                 @global-color;
 @dropbar-color-mode:                            dark;
 @dropbar-focus-outline:                         @base-focus-outline;
 
-@dropbar-large-padding-top:                     40px;
+@dropbar-large-padding-top:                     var(--dropbar-large-padding-top);
 @dropbar-large-padding-bottom:                  @dropbar-large-padding-top;
 
 @dropbar-background:                            @global-background;
@@ -26,10 +26,10 @@
 // New
 //
 
-@dropbar-top-box-shadow:                        0 12px 7px -6px rgba(0, 0, 0, 0.05);
-@dropbar-bottom-box-shadow:                     0 -12px 7px -6px rgba(0, 0, 0, 0.05);
-@dropbar-left-box-shadow:                       12px 0 7px -6px rgba(0, 0, 0, 0.05);
-@dropbar-right-box-shadow:                      -12px 0 7px -6px rgba(0, 0, 0, 0.05);
+@dropbar-top-box-shadow:                        var(--dropbar-top-box-shadow);
+@dropbar-bottom-box-shadow:                     var(--dropbar-bottom-box-shadow);
+@dropbar-left-box-shadow:                       var(--dropbar-left-box-shadow);
+@dropbar-right-box-shadow:                      var(--dropbar-right-box-shadow);
 
 
 // Component

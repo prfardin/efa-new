@@ -6,9 +6,9 @@
 // Variables
 // ========================================================================
 
-@form-height:                                   @global-control-height;
-@form-padding-horizontal:                       10px;
-@form-padding-vertical:                         round(@form-padding-horizontal * 0.6);
+@form-height:                                   var(--form-height);
+@form-padding-horizontal:                       var(--form-padding-horizontal);
+@form-padding-vertical:                         var(--form-padding-vertical);
 
 @form-color:                                    @global-color;
 
@@ -19,52 +19,52 @@
 
 @form-placeholder-color:                        @global-muted-color;
 
-@form-small-height:                             @global-control-small-height;
-@form-small-padding-horizontal:                 8px;
-@form-small-padding-vertical:                   round(@form-small-padding-horizontal * 0.6);
+@form-small-height:                             var(--form-small-height);
+@form-small-padding-horizontal:                 var(--form-small-padding-horizontal);
+@form-small-padding-vertical:                   var(--form-small-padding-vertical);
 @form-small-font-size:                          @global-small-font-size;
 
 @form-large-height:                             @global-control-large-height;
-@form-large-padding-horizontal:                 12px;
-@form-large-padding-vertical:                   round(@form-large-padding-horizontal * 0.6);
+@form-large-padding-horizontal:                 var(--form-large-padding-horizontal);
+@form-large-padding-vertical:                   var(--form-large-padding-vertical);
 @form-large-font-size:                          @global-medium-font-size;
 
 @form-danger-color:                             @global-danger-background;
 @form-success-color:                            @global-success-background;
 
-@form-width-xsmall:                             50px;
-@form-width-small:                              130px;
-@form-width-medium:                             200px;
-@form-width-large:                              500px;
+@form-width-xsmall:                             var(--form-width-xsmall);
+@form-width-small:                              var(--form-width-small);
+@form-width-medium:                             var(--form-width-medium);
+@form-width-large:                              var(--form-width-large);
 
-@form-select-padding-right:                     20px;
+@form-select-padding-right:                     var(--form-select-padding-right);
 @form-select-icon-color:                        @global-color;
 @form-select-option-color:                      @global-color;
 @form-select-disabled-icon-color:               @global-muted-color;
 
-@form-datalist-padding-right:                   20px;
+@form-datalist-padding-right:                   var(--form-datalist-padding-right);
 @form-datalist-icon-color:                      @global-color;
 
-@form-radio-size:                               16px;
-@form-radio-margin-top:                         -4px;
+@form-radio-size:                               var(--form-radio-size);
+@form-radio-margin-top:                         var(--form-radio-margin-top);
 
-@form-radio-focus-background:                   darken(@form-radio-background, 5%);
+@form-radio-focus-background:                   var(--form-radio-focus-background);
 
 @form-radio-checked-background:                 @global-primary-background;
 @form-radio-checked-icon-color:                 @global-inverse-color;
 
-@form-radio-checked-focus-background:           darken(@global-primary-background, 10%);
+@form-radio-checked-focus-background:           var(--form-radio-checked-focus-background);
 
 @form-radio-disabled-background:                @global-muted-background;
 @form-radio-disabled-icon-color:                @global-muted-color;
 
 @form-legend-font-size:                         @global-large-font-size;
-@form-legend-line-height:                       1.4;
+@form-legend-line-height:                       var(--form-legend-line-height);
 
-@form-horizontal-label-width:                   200px;
-@form-horizontal-label-margin-top:              7px;
-@form-horizontal-controls-margin-left:          215px;
-@form-horizontal-controls-text-padding-top:     7px;
+@form-horizontal-label-width:                   var(--form-horizontal-label-width);
+@form-horizontal-label-margin-top:              var(--form-horizontal-label-margin-top);
+@form-horizontal-controls-margin-left:          var(--form-horizontal-controls-margin-left);
+@form-horizontal-controls-text-padding-top:     var(--form-horizontal-controls-text-padding-top);
 
 @form-icon-width:                               @form-height;
 @form-icon-color:                               @global-muted-color;
@@ -76,46 +76,46 @@
 @internal-form-checkbox-image:                   "../../images/backgrounds/form-checkbox.svg";
 @internal-form-checkbox-indeterminate-image:     "../../images/backgrounds/form-checkbox-indeterminate.svg";
 
-@form-line-height: @form-height - (2 * @form-border-width);
+@form-line-height:                                var(--form-line-height);
 
-@form-background: @global-background;
-@form-focus-background: @global-background;
+@form-background:                                 @global-background;
+@form-focus-background:                           @global-background;
 
-@form-small-line-height: @form-small-height - (2 * @form-border-width);
-@form-large-line-height: @form-large-height - (2 * @form-border-width);
+@form-small-line-height:                          var(--form-small-line-height);
+@form-large-line-height:                          var(--form-large-line-height);
 
-@form-radio-background: transparent;
+@form-radio-background:                           var(--form-radio-background);
 
-@form-stacked-margin-bottom: 5px;
+@form-stacked-margin-bottom:                      var(--form-stacked-margin-bottom);
 
 //
 // New
 //
 
-@form-border-width: @global-border-width;
-@form-border: @global-border;
+@form-border-width:                               var(--form-border-width);
+@form-border:                                     @global-border;
 
-@form-focus-border: @global-primary-background;
+@form-focus-border:                               @global-primary-background;
 
-@form-disabled-border: @global-border;
+@form-disabled-border:                            @global-border;
 
-@form-danger-border: @global-danger-background;
-@form-success-border: @global-success-background;
+@form-danger-border:                              @global-danger-background;
+@form-success-border:                             @global-success-background;
 
-@form-blank-focus-border: @global-border;
-@form-blank-focus-border-style: solid;
+@form-blank-focus-border:                         @global-border;
+@form-blank-focus-border-style:                   var(--form-blank-focus-border-style);
 
-@form-radio-border-width: @global-border-width;
-@form-radio-border: darken(@global-border, 10%);
+@form-radio-border-width:                         @global-border-width;
+@form-radio-border:                               var(--form-radio-border);
 
-@form-radio-focus-border: @global-primary-background;
+@form-radio-focus-border:                         @global-primary-background;
 
-@form-radio-checked-border: transparent;
+@form-radio-checked-border:                       var(--form-radio-checked-border);
 
-@form-radio-disabled-border: @global-border;
+@form-radio-disabled-border:                      @global-border;
 
-@form-label-color: @global-emphasis-color;
-@form-label-font-size: @global-small-font-size;
+@form-label-color:                                @global-emphasis-color;
+@form-label-font-size:                            @global-small-font-size;
 
 // Component
 // ========================================================================

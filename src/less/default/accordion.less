@@ -7,21 +7,21 @@
 // Variables
 // ========================================================================
 
-@accordion-item-margin-top:                    @global-margin-var;
+@accordion-item-margin-top:                    @global-margin;
 
-@accordion-title-font-size:                    @global-medium-font-size-var;
-@accordion-title-line-height:                  @accordion-line-height-var;
-@accordion-title-color:                        @global-emphasis-color-var;
-@accordion-title-hover-color:                  @global-color-var;
+@accordion-title-font-size:                    @global-medium-font-size;
+@accordion-title-line-height:                  var(--accordion-line-height);
+@accordion-title-color:                        @global-emphasis-color;
+@accordion-title-hover-color:                  @global-color;
 
-@accordion-content-margin-top:                 @global-margin-var;
+@accordion-content-margin-top:                 @global-margin;
 
 //
 // New
 //
 
-@accordion-icon-margin-left:                   @accordion-icon-margin-left-var;
-@accordion-icon-color:                         @global-color-var;
+@accordion-icon-margin-left:                   @accordion-icon-margin-left;
+@accordion-icon-color:                         @global-color;
 @internal-accordion-open-image:                "../../images/backgrounds/accordion-open.svg";
 @internal-accordion-close-image:               "../../images/backgrounds/accordion-close.svg";
 
@@ -47,8 +47,8 @@
 
     &::before {
         content: "";
-        width: calc(@accordion-title-line-height * 1em);
-        height: calc(@accordion-title-line-height * 1em);
+        width: @accordion-title-line-height * 1em;
+        height: @accordion-title-line-height * 1em;
         margin-left: @accordion-icon-margin-left;
         float: right;
         .svg-fill(@internal-accordion-close-image, "#000", @accordion-icon-color);

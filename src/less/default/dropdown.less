@@ -8,17 +8,17 @@
 // ========================================================================
 
 @dropdown-margin:                               @global-small-margin;
-@dropdown-viewport-margin:                      15px;
-@dropdown-min-width:                            200px;
-@dropdown-padding:                              25px;
+@dropdown-viewport-margin:                      var(--dropdown-viewport-margin);
+@dropdown-min-width:                            var(--dropdown-min-width);
+@dropdown-padding:                              var(--dropdown-padding);
 @dropdown-color:                                @global-color;
 @dropdown-color-mode:                           dark;
 @dropdown-focus-outline:                        @base-focus-outline;
 
-@dropdown-large-padding:                        40px;
+@dropdown-large-padding:                        var(--dropdown-large-padding);
 
 @dropdown-dropbar-padding-bottom:               @dropdown-padding;
-@dropdown-dropbar-viewport-margin:              15px;
+@dropdown-dropbar-viewport-margin:              var(--dropdown-dropbar-viewport-margin);
 @dropdown-dropbar-viewport-margin-s:            @global-gutter;
 @dropdown-dropbar-viewport-margin-m:            @global-medium-gutter;
 
@@ -35,9 +35,9 @@
 
 @dropdown-background:                           @global-background;
 
-@dropdown-dropbar-padding-top:                  5px;
+@dropdown-dropbar-padding-top:                  var(--dropdown-dropbar-padding-top);
 
-@dropdown-nav-subtitle-font-size:               12px;
+@dropdown-nav-subtitle-font-size:               var(--dropdown-nav-subtitle-font-size);
 
 //
 // New
@@ -45,7 +45,7 @@
 
 @dropdown-nav-font-size:                        @global-small-font-size;
 
-@dropdown-box-shadow:                           0 5px 12px rgba(0,0,0,0.15);
+@dropdown-box-shadow:                           var(--dropdown-box-shadow);
 
 
 // Component

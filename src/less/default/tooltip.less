@@ -7,15 +7,15 @@
 // Variables
 // ========================================================================
 
-@tooltip-z-index:                               @global-z-index + 30;
-@tooltip-margin:                                10px;
-@tooltip-max-width:                             200px;
-@tooltip-padding-vertical:                      3px;
-@tooltip-padding-horizontal:                    6px;
-@tooltip-background:                            #666;
-@tooltip-border-radius:                         2px;
+@tooltip-z-index:                               var(--tooltip-z-index);
+@tooltip-margin:                                var(--tooltip-margin);
+@tooltip-max-width:                             var(--tooltip-max-width);
+@tooltip-padding-vertical:                      var(--tooltip-padding-vertical);
+@tooltip-padding-horizontal:                    var(--tooltip-padding-horizontal);
+@tooltip-background:                            var(--tooltip-background);
+@tooltip-border-radius:                         var(--tooltip-border-radius);
 @tooltip-color:                                 @global-inverse-color;
-@tooltip-font-size:                             12px;
+@tooltip-font-size:                             var(--tooltip-font-size);
 
 
 // Component

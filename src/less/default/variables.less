@@ -1,202 +1,18 @@
 //
-// Component: Variables
+// Component:       Less Variables
+// Description:     Defines Css and Less Variables
 //
 // ========================================================================
 
-// ....
+// Miscellaneous Variables
 @uikit-less: 'uikit/src/less/components';
 @font-path: '/back-office/src/fonts';
 
-// Global main variables
-// ========================================================================
 
 //
-// Component:       Variables
-// Description:     Defines common values which are used across all components
+// Css Variables: Define css variables | just like UIkit less variables
 //
 // ========================================================================
-
-
-// Load deprecated components
-// ========================================================================
-
-@deprecated:                                   false;
-
-
-// Breakpoints
-// ========================================================================
-
-// Phone Portrait:   Galaxy (360x640), iPhone 6 (375x667), iPhone 6+ (414x736)
-// Phone Landscape:  Galaxy (640x360), iPhone 6 (667x375), iPhone 6+ (736x414)
-// Tablet Portrait:  iPad (768x1024), Galaxy Tab (800x1280),
-// Tablet Landscape: iPad (1024x768), iPad Pro (1024x1366),
-// Desktop:          Galaxy Tab (1280x800), iPad Pro (1366x1024)
-
-@breakpoint-small:                             640px;  // Phone landscape
-@breakpoint-medium:                            960px;  // Tablet Landscape
-@breakpoint-large:                             1200px; // Desktop
-@breakpoint-xlarge:                            1600px; // Large Screens
-
-@breakpoint-xsmall-max:                        (@breakpoint-small - 1);
-@breakpoint-small-max:                         (@breakpoint-medium - 1);
-@breakpoint-medium-max:                        (@breakpoint-large - 1);
-@breakpoint-large-max:                         (@breakpoint-xlarge - 1);
-
-
-// Global variables
-// ========================================================================
-
-//
-// Borders
-//
-
-@global-small-box-shadow:                       0 2px 8px rgba(0,0,0,0.08);
-@global-medium-box-shadow:                      0 5px 15px rgba(0,0,0,0.08);
-@global-large-box-shadow:                       0 14px 25px rgba(0,0,0,0.16);
-@global-xlarge-box-shadow:                      0 28px 50px rgba(0,0,0,0.16);
-
-//
-// Controls
-//
-
-@global-control-height:                         40px;
-@global-control-small-height:                   30px;
-@global-control-large-height:                   55px;
-
-//
-// Z-index
-//
-
-@global-z-index:                                1000;
-
-
-// Global variables
-// ========================================================================
-
-@global-sidebar-width: 368px;
-@global-sidebar-height: 100vh;
-
-//
-// Typography
-//
-
-@global-font-family:
-  @global-font-family-base,
-  -apple-system,
-  BlinkMacSystemFont,
-  'Segoe UI',
-  Roboto,
-  'Helvetica Neue',
-  Arial,
-  'Noto Sans',
-  sans-serif,
-  'Apple Color Emoji',
-  'Segoe UI Emoji',
-  'Segoe UI Symbol',
-  'Noto Color Emoji';
-@global-font-size: 16px;
-@global-line-height: 1.4; // 24px
-
-@global-2xlarge-font-size: 2.625rem; // 42px
-@global-xlarge-font-size: 2rem; // 32px
-@global-large-font-size: 1.575rem; // 25px
-@global-medium-font-size: 1.25rem; // 20px
-@global-small-font-size: 0.875rem; // 14px
-@global-xsmall-font-size: 0.8rem; // 13px
-@global-xxsmall-font-size: 0.575rem; // 9px
-
-//
-// Colors
-//
-
-@global-color: #5e6b86;
-@global-emphasis-color: #333;
-@global-muted-color: #c2c4c9;
-@global-white-color: #fdfdfd;
-
-@global-link-color: #1e87f0;
-@global-link-hover-color: #0f6ecd;
-
-@global-inverse-color: @global-white-color;
-@global-muted-inverse-color: #f8f7fb;
-
-@global-icon-primary-color: #7d8da5;
-@global-icon-secondary-color: #a5b0c0;
-@global-icon-tertiary-color: #cad1db;
-@global-icon-quaternary-color: #e1e5ea;
-@global-icon-favourite-color: #ffde6b;
-
-//
-// Backgrounds
-//
-
-@global-background: @global-white-color;
-
-@global-muted-background: #f0f4f7;
-@global-primary-background: #2785ff;
-@global-secondary-background: #161719;
-
-@global-success-background: #6fcf96;
-@global-warning-background: #fe754b;
-@global-danger-background: #f0506e;
-
-//
-// Borders
-//
-
-@global-border-width: 1px;
-@global-border: #ecf0f6;
-@global-border-radius: 8px;
-@global-border-strip-color: #e5ebf3;
-
-//
-// Spacings
-//
-
-// Used in margin, section, list
-@global-margin: 20px;
-@global-xsmall-margin: 5px;
-@global-small-margin: 10px;
-@global-medium-margin: 40px;
-@global-large-margin: 70px;
-@global-xlarge-margin: 140px;
-
-@global-pr-margin-medium: @global-margin + 5px;
-
-// Used in grid, column, container, align, card, padding
-@global-gutter: 30px;
-@global-xxsmall-gutter: 5px;
-@global-xsmall-gutter: 12px;
-@global-small-gutter: 15px;
-@global-medium-gutter: 40px;
-@global-large-gutter: 70px;
-
-//
-// Controls
-//
-
-@global-control-xsmall-height: 28px;
-
-//
-// Z-index
-//
-
-//
-// Spinners
-//
-@global-spinner-width: 20px;
-@global-spinner-height: @global-spinner-width;
-
-//
-// Miscellaneous
-//
-@global-rounded-radius: 25px;
-@global-middle-transform-top: 50%;
-@global-middle-transform: translate(0, -(@global-middle-transform-top));
-
-//
-// Define css variables | just like UIkit less variables
-//
 
 // ali var 1
 :root {
@@ -263,112 +79,6 @@
   --transition-duration-300: .3s;
 }
 
-// UIkit global vars
-:root {
-  --global-sidebar-width: 368px;
-  --global-sidebar-height: 100vh;
-
-  --global-font-size: 16px;
-  --global-line-height: 1.4; // 24px
-
-  --global-2xlarge-font-size: 2.625rem; // 42px
-  --global-xlarge-font-size: 2rem; // 32px
-  --global-large-font-size: 1.575rem; // 25px
-  --global-medium-font-size: 1.25rem; // 20px
-  --global-small-font-size: 0.875rem; // 14px
-  --global-xsmall-font-size: 0.8rem; // 13px
-  --global-xxsmall-font-size: 0.575rem; // 9px
-
-  //
-  // Colors
-  //
-
-  --global-color: #5e6b86;
-  --global-emphasis-color: #333;
-  --global-muted-color: #c2c4c9;
-  --global-white-color: #fdfdfd;
-
-  --global-link-color: #1e87f0;
-  --global-link-hover-color: #0f6ecd;
-
-  --global-inverse-color: @global-white-color;
-  --global-muted-inverse-color: #f8f7fb;
-
-  --global-icon-primary-color: #7d8da5;
-  --global-icon-secondary-color: #a5b0c0;
-  --global-icon-tertiary-color: #cad1db;
-  --global-icon-quaternary-color: #e1e5ea;
-  --global-icon-favourite-color: #ffde6b;
-
-  //
-  // Backgrounds
-  //
-
-  --global-background: @global-white-color;
-
-  --global-muted-background: #f0f4f7;
-  --global-primary-background: #2785ff;
-  --global-secondary-background: #161719;
-
-  --global-success-background: #6fcf96;
-  --global-warning-background: #fe754b;
-  --global-danger-background: #f0506e;
-
-  //
-  // Borders
-  //
-
-  --global-border-width: 1px;
-  --global-border: #ecf0f6;
-  --global-border-radius: 8px;
-  --global-border-strip-color: #e5ebf3;
-
-  //
-  // Spacings
-  //
-
-  // Used in margin, section, list
-  --global-margin: 20px;
-  --global-xsmall-margin: 5px;
-  --global-small-margin: 10px;
-  --global-medium-margin: 40px;
-  --global-large-margin: 70px;
-  --global-xlarge-margin: 140px;
-
-  --global-pr-margin-medium: @global-margin + 5px;
-
-  // Used in grid, column, container, align, card, padding
-  --global-gutter: 30px;
-  --global-xxsmall-gutter: 5px;
-  --global-xsmall-gutter: 12px;
-  --global-small-gutter: 15px;
-  --global-medium-gutter: 40px;
-  --global-large-gutter: 70px;
-
-  //
-  // Controls
-  //
-
-  --global-control-xsmall-height: 28px;
-
-  //
-  // Z-index
-  //
-
-  //
-  // Spinners
-  //
-  --global-spinner-width: 20px;
-  --global-spinner-height: @global-spinner-width;
-
-  //
-  // Miscellaneous
-  //
-  --global-rounded-radius: 25px;
-  --global-middle-transform-top: 50%;
-  --global-middle-transform: translate(0, -(@global-middle-transform-top));
-}
-
 // Pr vars
 :root {
   // line-height
@@ -377,6 +87,7 @@
   --pr-line-height-1-3: 1.3;
   --pr-line-height-1-4: 1.4;
   --pr-line-height-1-5: 1.5;
+  --pr-line-height-1-6: 1.5;
 
   // opacity
   --pr-opacity-1: 0.1;
@@ -413,6 +124,213 @@
   --pr-font-weight-bolder: bolder;
 }
 
+// UIkit global vars
+:root {
+  --global-sidebar-width: 368px;
+  --global-sidebar-height: 100vh;
+
+  --global-font-size: 16px;
+  --global-line-height: 1.4; // 24px
+
+  --global-2xlarge-font-size: 2.625rem; // 42px
+  --global-xlarge-font-size: 2rem; // 32px
+  --global-large-font-size: 1.575rem; // 25px
+  --global-medium-font-size: 1.25rem; // 20px
+  --global-small-font-size: 0.875rem; // 14px
+  --global-xsmall-font-size: 0.8rem; // 13px
+  --global-xxsmall-font-size: 0.575rem; // 9px
+
+  //
+  // Colors
+  //
+
+  --global-color: #5e6b86;
+  --global-emphasis-color: #333;
+  --global-muted-color: #c2c4c9;
+  --global-white-color: #fdfdfd;
+
+  --global-link-color: #1e87f0;
+  --global-link-hover-color: #0f6ecd;
+
+  --global-inverse-color: var(--global-white-color);
+  --global-muted-inverse-color: #f8f7fb;
+
+  --global-icon-primary-color: #7d8da5;
+  --global-icon-secondary-color: #a5b0c0;
+  --global-icon-tertiary-color: #cad1db;
+  --global-icon-quaternary-color: #e1e5ea;
+  --global-icon-favourite-color: #ffde6b;
+
+  //
+  // Backgrounds
+  //
+
+  --global-background: var(--global-white-color);
+
+  --global-muted-background: #f0f4f7;
+  --global-primary-background: #2785ff;
+  --global-secondary-background: #161719;
+
+  --global-success-background: #6fcf96;
+  --global-warning-background: #fe754b;
+  --global-danger-background: #f0506e;
+
+  //
+  // Borders
+  //
+
+  --global-border-width: 1px;
+  --global-border: #ecf0f6;
+  --global-border-radius: 8px;
+  --global-border-strip-color: #e5ebf3;
+
+  //
+  // Box-Shadows
+  //
+
+  --global-small-box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  --global-medium-box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  --global-large-box-shadow: 0 14px 25px rgba(0,0,0,0.16);
+  --global-xlarge-box-shadow: 0 28px 50px rgba(0,0,0,0.16);
+
+  //
+  // Spacings
+  //
+
+  // Used in margin, section, list
+  --global-margin: 20px;
+  --global-xsmall-margin: 5px;
+  --global-small-margin: 10px;
+  --global-medium-margin: 40px;
+  --global-large-margin: 70px;
+  --global-xlarge-margin: 140px;
+
+  --global-pr-margin-medium: var(--global-margin) + 5px;
+
+  // Used in grid, column, container, align, card, padding
+  --global-gutter: 30px;
+  --global-xxsmall-gutter: 5px;
+  --global-xsmall-gutter: 12px;
+  --global-small-gutter: 15px;
+  --global-medium-gutter: 40px;
+  --global-large-gutter: 70px;
+
+  //
+  // Controls
+  //
+
+  --global-control-xsmall-height: 28px;
+
+  --global-control-height: 40px;
+  --global-control-small-height: 30px;
+  --global-control-large-height: 55px;
+
+  //
+  // Z-index
+  //
+
+  --global-z-index: 1000;
+
+  //
+  // Spinners
+  //
+  --global-spinner-width: 20px;
+  --global-spinner-height: var(--global-spinner-width);
+
+  //
+  // Miscellaneous
+  //
+  --global-rounded-radius: 25px;
+  --global-middle-transform-top: 50%;
+  --global-middle-transform: translate(0, -(var(--global-middle-transform-top)));
+
+  //
+  // Base
+  //
+  --base-link-text-decoration: none;
+  --base-link-hover-text-decoration: underline;
+
+  --base-strong-font-weight: bolder;
+
+  --base-ins-background: #ffd;
+  --base-mark-background: #ffd;
+  --base-quote-font-style: italic;
+  --base-small-font-size: 80%;
+
+  --base-heading-font-family: @global-font-family;
+  --base-heading-font-weight: normal;
+  --base-heading-text-transform: none;
+  --base-h1-font-size-m: var(--global-2xlarge-font-size);
+  --base-h1-font-size: var(--global-2xlarge-font-size) * 0.85;
+  --base-h1-line-height: var(--pr-line-height-1-2);
+  --base-h2-font-size-m: var(--global-xlarge-font-size);
+  --base-h2-font-size: var(--global-xlarge-font-size) * 0.85;
+  --base-h2-line-height: var(--pr-line-height-1-3);
+  --base-h3-font-size: var(--global-large-font-size);
+  --base-h3-line-height: var(--pr-line-height-1-3);
+  --base-h4-font-size: var(--global-medium-font-size);
+  --base-h4-line-height: var(--pr-line-height-1-4);
+  --base-h5-font-size: var(--global-font-size);
+  --base-h5-line-height: var(--pr-line-height-1-4);
+  --base-h6-font-size: var(--global-small-font-size);
+  --base-h6-line-height: var(--pr-line-height-1-4);
+
+  --base-list-padding-left: var(--global-gutter);
+
+  --base-blockquote-font-size: var(--global-medium-font-size);
+  --base-blockquote-line-height: var(--pr-line-height-1-5);
+  --base-blockquote-footer-font-size: var(--global-small-font-size);
+  --base-blockquote-footer-line-height: var(--pr-line-height-1-5);
+
+  --base-pre-font-size: var(--global-small-font-size);
+  --base-pre-line-height: var(--pr-line-height-1-5);
+
+  --base-focus-outline-width: 2px;
+  --base-focus-outline-style: dotted;
+  --base-focus-outline: var(--global-emphasis-color);
+  --base-focus-outline-offset: 1px;
+
+  --base-selection-background: #39f;
+  --base-selection-color: var(--global-inverse-color);
+
+  --base-code-padding-horizontal: 6px;
+  --base-code-padding-vertical: 2px;
+  --base-pre-padding: 10px;
+  --base-pre-border-radius: 3px;
+
+  //
+  // Icon
+  //
+  --global-icon-primary-color-light: var(--global-white-color);
+  --global-icon-secondary-color-light: #999999;
+  --global-icon-tertiary-color-light: #747474;
+  --global-icon-quaternary-color-light: #595959;
+
+  --global-icon-primary-color-muted: var(--global-white-color);
+  --global-icon-secondary-color-muted: darken(var(--global-white-color), 25%);
+  --global-icon-tertiary-color-muted: darken(var(--global-white-color), 35%);
+  --global-icon-quaternary-color-muted: darken(var(--global-white-color), 45%);
+
+  //
+  // Inverse
+  //
+  --nverse-global-color: var(--global-inverse-color);
+  --nverse-global-emphasis-color: var(--global-inverse-color);
+  --nverse-global-muted-color: fade(var(--global-inverse-color), 55%);
+  --nverse-global-inverse-color: #858687;
+  --nverse-global-secondary-background: #3c4041;
+
+  --inverse-global-primary-background: var(--global-inverse-color);
+  --inverse-global-muted-background: fade(var(--global-muted-background), 10%);
+
+  --inverse-global-border: fade(var(--global-muted-background), 8%);
+
+  --inverse-global-icon-primary-color: #ffffff;
+  --inverse-global-icon-secondary-color: var(--global-primary-background);
+  --inverse-global-icon-tertiary-color: #747474;
+  --inverse-global-icon-quaternary-color: var(--global-primary-background);
+}
+
 // UIkit component vars
 :root {
   // Accordion
@@ -420,13 +338,12 @@
   --accordion-icon-margin-left: var(--global-small-margin);
 
   // Alert
-  --alert-padding: var(--global-small-gutter);
   --alert-padding-right: var(--alert-padding) + 14px;
   --alert-close-top: var(--alert-padding) + 5px;
-  --alert-primary-background: lighten(tint(@global-primary-background, 40%), 20%);
-  --alert-sucess-background: lighten(tint(@global-success-background, 40%), 25%);
-  --alert-warning-background: lighten(tint(@global-warning-background, 45%), 15%);
-  --alert-danger-background: lighten(tint(@global-danger-background, 40%), 20%);
+  --alert-primary-background: lighten(tint(var(--global-primary-background), 40%), 20%);
+  --alert-sucess-background: lighten(tint(var(--global-success-background), 40%), 25%);
+  --alert-warning-background: lighten(tint(var(--global-warning-background), 45%), 15%);
+  --alert-danger-background: lighten(tint(var(--global-danger-background), 40%), 20%);
   --alert-close-opacity: var(--pr-opacity-4);
   --alert-close-hover-opacity: var(--pr-opacity-8);
 
@@ -442,275 +359,787 @@
   // Article
   --article-title-line-height: var(--pr-line-height-1-2);
   --article-meta-line-height: var(--pr-line-height-1-4);
-  --article-title-font-size: @global-2xlarge-font-size * 0.85;
+  --article-title-font-size: var(--global-2xlarge-font-size) * 0.85;
 
   // Badge
   --badge-size: 18px;
   --badge-padding-vertical: 0;
-  --badge-padding-horizontal: @global-xxsmall-gutter-var;
   --badge-border-radius: var(--pr-border-radius-500);
   --badge-font-size: var(--pr-font-size-11);
 
-  // Base
-  --base-link-text-decoration: none;
-  --base-link-hover-text-decoration: underline;
-
-  --base-strong-font-weight: bolder;
-
-  --base-ins-background: #ffd;
-  --base-mark-background: #ffd;
-  --base-quote-font-style: italic;
-  --base-small-font-size: 80%;
-
-  --base-heading-font-family: @global-font-family;
-  --base-heading-font-weight: normal;
-  --base-heading-text-transform: none;
-  --base-h1-font-size-m: @global-2xlarge-font-size-var;
-  --base-h1-font-size: @global-2xlarge-font-size * 0.85;
-  --base-h1-line-height: var(--pr-line-height-1-2);
-  --base-h2-font-size-m: @global-xlarge-font-size-var;
-  --base-h2-font-size: @global-xlarge-font-size * 0.85;
-  --base-h2-line-height: var(--pr-line-height-1-3);
-  --base-h3-font-size: @global-large-font-size-var;
-  --base-h3-line-height: var(--pr-line-height-1-3);
-  --base-h4-font-size: @global-medium-font-size-var;
-  --base-h4-line-height: var(--pr-line-height-1-4);
-  --base-h5-font-size: @global-font-size-var;
-  --base-h5-line-height: var(--pr-line-height-1-4);
-  --base-h6-font-size: @global-small-font-size-var;
-  --base-h6-line-height: var(--pr-line-height-1-4);
-
-  --base-list-padding-left: @global-gutter;
-
-  --base-blockquote-font-size: @global-medium-font-size-var;
-  --base-blockquote-line-height: var(--pr-line-height-1-5);
-  --base-blockquote-footer-font-size: @global-small-font-size-var;
-  --base-blockquote-footer-line-height: var(--pr-line-height-1-5);
-
-  --base-pre-font-size: @global-small-font-size-var;
-  --base-pre-line-height: var(--pr-line-height-1-5);
-
-  --base-focus-outline-width: 2px;
-  --base-focus-outline-style: dotted;
-  --base-focus-outline: @global-emphasis-color-var;
-  --base-focus-outline-offset: 1px;
-
-  --base-selection-background: #39f;
-  --base-selection-color: @global-inverse-color-var;
-
-  --base-code-padding-horizontal: 6px;
-  --base-code-padding-vertical: 2px;
-  --base-pre-padding: 10px;
-  --base-pre-border-radius: 3px;
-
   // Breadcrumb
   --breadcrumb-divider: "/";
-  --breadcrumb-divider-margin-horizontal: @global-margin;
+  --breadcrumb-divider-margin-horizontal: var(--global-margin);
+
+  // Button
+  --button-primary-background: @global-primary-background;
+  --button-secondary-background: @global-secondary-background;
+  --button-danger-background: @global-danger-background;
+  --button-primary-hover-background: darken(var(--button-primary-background), 5%);
+  --button-primary-active-background: darken(var(--button-primary-background), 10%);
+  --button-secondary-hover-background: darken(var(--button-secondary-background), 5%);
+  --button-secondary-active-background: darken(var(--button-secondary-background), 10%);
+  --button-danger-hover-background: darken(var(--button-danger-background), 5%);
+  --button-danger-active-background: darken(var(--button-danger-background), 10%);
+  --button-link-hover-text-decoration: none;
+  --button-default-background: transparent;
+  --button-default-hover-background: transparent;
+  --button-default-active-background: transparent;
+  --button-disabled-background: transparent;
+  --button-text-transform: capitalize;
+  --button-default-hover-border: darken(var(--global-border), 20%);
+  --button-default-active-border: darken(var(--global-border), 30%);
+  --button-muted-hover-background: darken(var(--global-muted-background), 2%);
+  --button-muted-active-background: darken(var(--global-muted-background), 5%);
+  --button-has-icon-padding-right: (var(--global-gutter) / 2);
+  --button-has-icon-padding-left: (var(--global-gutter) / 2);
+  --button-small-has-icon-padding-right: (var(--global-small-gutter) / 2) + 1.5;
+  --button-small-has-icon-padding-left: (var(--global-small-gutter) / 2);
+  --button-xsmall-has-icon-padding-right: (var(--global-xsmall-gutter) / 2) + 2;
+  --button-xsmall-has-icon-padding-left: (var(--global-xsmall-gutter) / 2);
+
+  // Card
+  --card-header-padding-vertical: round((@global-gutter / 2));
+  --card-header-padding-vertical-l: round((@global-medium-gutter / 2));
+  --card-footer-padding-vertical: (@global-gutter / 2);
+  --card-footer-padding-vertical-l: round((@global-medium-gutter / 2));
+  --card-title-line-height: var(--pr-line-height-1-4);
+  --card-badge-top: 15px;
+  --card-badge-right: 15px;
+  --card-badge-height: 22px;
+  --card-badge-padding-horizontal: 10px;
+  --card-small-header-padding-vertical: round((@global-margin / 1.5));
+  --card-small-footer-padding-vertical: round((@global-margin / 1.5));
+  --card-large-header-padding-vertical-l: round((@global-large-gutter / 2));
+  --card-large-footer-padding-vertical-l: round((@global-large-gutter / 2));
+  --card-badge-border-radius: 2px;
+  --card-badge-text-transform: uppercase;
+
+  // Column
+  --column-divider-rule-width: 1px;
+
+  // Comment
+  --comment-title-line-height: var(--pr-line-height-1-4);
+  --comment-meta-line-height: var(--pr-line-height-1-4);
+  --comment-list-padding-left: 30px;
+  --comment-list-padding-left-m: 100px;
+
+  // Container
+  --container-max-width: 1200px;
+  --container-xsmall-max-width: 750px;
+  --container-small-max-width: 900px;
+  --container-large-max-width: 1400px;
+  --container-xlarge-max-width: 1600px;
+  --container-padding-horizontal: 15px;
+
+  // Countdown
+  --countdown-number-line-height: 0.8;
+  --countdown-number-font-size: 2rem; // 32px
+  --countdown-number-font-size-s: 4rem; // 64px
+  --countdown-number-font-size-m: 6rem; // 96px
+  --countdown-separator-line-height: var(--pr-line-height-1-6);
+  --countdown-separator-font-size: 1rem; // 16px
+  --countdown-separator-font-size-s: 2rem; // 32px
+  --countdown-separator-font-size-m: 3rem; // 48px
+
+  // Variables
+  --description-list-term-font-weight: normal;
+  --description-list-term-text-transform: uppercase;
+
+  // Divider
+  --divider-icon-width: 50px;
+  --divider-icon-height: 20px;
+  --divider-icon-line-top: 50%;
+  --divider-icon-line-width: 100%;
+  --divider-small-width: 100px;
+  --divider-vertical-height: 100px;
+
+  // Dotnav
+  --dotnav-margin-horizontal: 12px;
+  --dotnav-item-width: 10px;
+  --dotnav-item-border-radius: 50%;
+  --dotnav-item-hover-background: fade(@global-color, 60%);
+  --dotnav-item-onclick-background: fade(@global-color, 20%);
+  --dotnav-item-active-background: fade(@global-color, 60%);
+  --dotnav-item-background: transparent;
+  --dotnav-item-border-width: 1px;
+  --dotnav-item-border: fade(@global-color, 40%);
+  --dotnav-item-hover-border: transparent;
+  --dotnav-item-onclick-border: transparent;
+  --dotnav-item-active-border: transparent;
+
+  // Drop
+  --drop-z-index: @global-z-index + 20;
+  --drop-viewport-margin: 15px;
+  --drop-width: 300px;
+  --drop-parent-icon-margin-left: 0.25em;
+
+  // Dropbar
+  --dropbar-margin: 0;
+  --dropbar-padding-top: 25px;
+  --dropbar-padding-horizontal: 15px;
+  --dropbar-large-padding-top: 40px;
+  --dropbar-top-box-shadow: 0 12px 7px -6px rgba(0, 0, 0, 0.05);
+  --dropbar-bottom-box-shadow: 0 -12px 7px -6px rgba(0, 0, 0, 0.05);
+  --dropbar-left-box-shadow: 12px 0 7px -6px rgba(0, 0, 0, 0.05);
+  --dropbar-right-box-shadow: -12px 0 7px -6px rgba(0, 0, 0, 0.05);
+
+  // Dropdown
+  --dropdown-viewport-margin: 15px;
+  --dropdown-min-width: 200px;
+  --dropdown-padding: 25px;
+  --dropdown-large-padding: 40px;
+  --dropdown-dropbar-viewport-margin: 15px;
+  --dropdown-dropbar-padding-top: 5px;
+  --dropdown-nav-subtitle-font-size: 12px;
+  --dropdown-box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+
+  // Dropnav
+  --dropnav-dropbar-z-index: @global-z-index - 20;
+
+  // Form
+  --form-height: @global-control-height;
+  --form-padding-horizontal: 10px;
+  --form-padding-vertical: round(var(--form-padding-horizontal) * 0.6);
+  --form-small-padding-horizontal: 8px;
+  --form-small-padding-vertical: round(var(--form-small-padding-horizontal) * 0.6);
+  --form-large-padding-horizontal: 12px;
+  --form-large-padding-vertical: round(var(--form-large-padding-horizontal) * 0.6);
+  --form-width-xsmall: 50px;
+  --form-width-small: 130px;
+  --form-width-medium: 200px;
+  --form-width-large: 500px;
+  --form-select-padding-right: 20px;
+  --form-datalist-padding-right: 20px;
+  --form-radio-size: 16px;
+  --form-radio-margin-top: -4px;
+  --form-radio-focus-background: darken(var(--form-radio-background), 5%);
+  --form-radio-checked-focus-background: darken(@global-primary-background, 10%);
+  --form-legend-line-height: 1.4;
+  --form-horizontal-label-width: 200px;
+  --form-horizontal-label-margin-top: 7px;
+  --form-horizontal-controls-margin-left: 215px;
+  --form-horizontal-controls-text-padding-top: 7px;
+  --form-border-width: @global-border-width;
+  --form-line-height: var(--form-height) - (2 * var(--form-border-width));
+  --form-small-height: @global-control-small-height;
+  --form-small-line-height: var(--form-small-height) - (2 * var(--form-border-width));
+  --form-large-line-height: var(--form-small-height) - (2 * var(--form-border-width));
+  --form-radio-background: transparent;
+  --form-stacked-margin-bottom: 5px;
+  --form-blank-focus-border-style: solid;
+  --form-radio-border: darken(@global-border, 10%);
+  --form-radio-checked-border: transparent;
+
+  // Form Range
+  --form-range-track-height: 3px;
+  --form-range-track-background: darken(@global-muted-background, 5%);
+  --form-range-track-focus-background: darken(var(--form-range-track-background), 5%);
+  --form-range-thumb-height: 15px;
+  --form-range-thumb-border-radius: 500px;
+  --form-range-thumb-border: darken(@global-border, 10%);
+  --form-range-track-border-radius: 500px;
+
+  // Heading
+  --heading-small-font-size: @heading-small-font-size-m * 0.8; // 38px 0.73
+  --heading-medium-font-size: @heading-medium-font-size-m * 0.825; // 40px 0.714
+  --heading-large-font-size: @heading-large-font-size-m * 0.85; // 50px 0.78
+  --heading-small-font-size-m: @heading-medium-font-size-l * 0.8125; // 3.25rem / 52px
+  --heading-medium-font-size-m: @heading-medium-font-size-l * 0.875; // 3.5rem / 56px
+  --heading-medium-font-size-l: 4rem; // 64px
+  --heading-large-font-size-l: 6rem; // 96px
+  --heading-xlarge-font-size-l: 8rem; // 128px
+  --heading-2xlarge-font-size-l: 11rem; // 176px
+  --heading-3xlarge-font-size-l: 15rem; // 240px
+  --heading-small-line-height: 1.2;
+  --heading-medium-line-height: 1.1;
+  --heading-large-line-height: 1.1;
+  --heading-xlarge-line-height: 1;
+  --heading-2xlarge-line-height: 1;
+  --heading-3xlarge-line-height: 1;
+  --heading-divider-padding-bottom: ~'calc(5px + 0.1em)';
+  --heading-divider-border-width: ~'calc(0.2px + 0.05em)';
+  --heading-bullet-top: ~'calc(-0.1 * 1em)';
+  --heading-bullet-height: ~'calc(4px + 0.7em)';
+  --heading-bullet-margin-right: ~'calc(5px + 0.2em)';
+  --heading-bullet-border-width: ~'calc(5px + 0.1em)';
+  --heading-line-top: 50%;
+  --heading-line-width: 2000px;
+  --heading-line-border-width: ~'calc(0.2px + 0.05em)';
+  --heading-line-margin-horizontal: ~'calc(5px + 0.3em)';
+
+  // Height
+  --height-small-height: 150px;
+  --height-medium-height: 300px;
+  --height-large-height: 450px;
+
+  // Icon
+  --icon-image-size: 20px;
+  --icon-link-active-color: darken(@global-color, 5%);
+  --icon-button-size: 36px;
+  --icon-button-background: transparent;
+  --icon-button-hover-background: darken(var(--icon-button-background), 5%);
+  --icon-button-active-background: darken(var(--icon-button-background), 10%);
+  --icon-favourite-color-tertiary: darken(@global-icon-favourite-color, 40%);
+
+  // Label
+  --label-padding-vertical: 0;
+  --label-border-radius: 2px;
+  --label-text-transform: uppercase;
+
+  // Lightbox
+  --lightbox-z-index: @global-z-index + 10;
+  --lightbox-background: #000;
+  --lightbox-color-mode: light;
+  --lightbox-focus-outline: rgba(255,255,255,0.7);
+  --lightbox-item-max-width: 100vw;
+  --lightbox-item-max-height: 100vh;
+  --lightbox-thumbnav-vertical-width: 100px;
+  --lightbox-thumbnav-height: 100px;
+  --lightbox-caption-padding-vertical: 10px;
+  --lightbox-caption-padding-horizontal: 10px;
+  --lightbox-caption-background: rgba(0,0,0,0.3);
+  --lightbox-caption-color: rgba(255,255,255,0.7);
+
+  // Link
+  --link-heading-hover-text-decoration: none;
+
+  // List
+  --list-padding-left: 30px;
+  --list-marker-height: (@global-line-height * 1em);
+
+  // Marker
+  --marker-padding: 5px;
+
+  // Modal
+  --modal-z-index: @global-z-index + 10;
+  --modal-background: rgba(0,0,0,0.6);
+  --modal-padding-horizontal: 15px;
+  --modal-padding-vertical-s: 50px;
+  --modal-dialog-width: 600px;
+  --modal-container-width: 1200px;
+  --modal-body-padding-horizontal: 20px;
+  --modal-body-padding-vertical: 20px;
+  --modal-header-padding-horizontal: 20px;
+  --modal-header-padding-vertical: (var(--modal-header-padding-horizontal) / 2);
+  --modal-header-padding-horizontal-s: @global-gutter;
+  --modal-header-padding-vertical-s: (var(--modal-header-padding-horizontal-s) / 2);
+  --modal-footer-padding-horizontal: 20px;
+  --modal-footer-padding-vertical: (var(--modal-footer-padding-horizontal) / 2);
+  --modal-footer-padding-horizontal-s: @global-gutter;
+  --modal-footer-padding-vertical-s: (var(--modal-footer-padding-horizontal-s) / 2);
+  --modal-title-line-height: 1.3;
+  --modal-close-padding: 5px;
+  --modal-close-outside-position: 0;
+  --modal-close-outside-translate: 100%;
+  --modal-close-outside-color: lighten(@global-inverse-color, 20%);
+  --modal-close-full-padding: 10px;
+
+  // Nav
+  --nav-item-padding-vertical: 5px;
+  --nav-item-padding-horizontal: 0;
+  --nav-sublist-padding-vertical: 5px;
+  --nav-sublist-padding-left: 15px;
+  --nav-sublist-deeper-padding-left: 15px;
+  --nav-sublist-item-padding-vertical: 2px;
+  --nav-parent-icon-margin-left: 0.25em;
+  --nav-header-text-transform: uppercase;
+  --nav-divider-margin-vertical: 5px;
+  --nav-divider-margin-horizontal: 0;
+  --nav-medium-line-height: 1;
+  --nav-medium-font-size: var(--nav-medium-font-size-m) * 0.825;        // 40px 0.714
+  --nav-medium-font-size-m: var(--nav-medium-font-size-l) * 0.875;      // 3.5rem / 56px
+  --nav-medium-font-size-l: 4rem;                                       // 64px
+  --nav-large-line-height: 1;
+  --nav-large-font-size: var(--nav-large-font-size-m) * 0.85;           // 50px 0.78
+  --nav-large-font-size-m: 4rem;                                        // 64px
+  --nav-large-font-size-l: 6rem;                                        // 96px
+  --nav-xlarge-line-height: 1;
+  --nav-xlarge-font-size: 4rem;                                         // 64px
+  --nav-xlarge-font-size-m: 6rem;                                       // 96px
+  --nav-xlarge-font-size-l: 8rem;                                       // 128px
+  --nav-dividers-margin-top: 5px;
+  --nav-default-subtitle-font-size: 12px;
+  --nav-background-margin-top: 0;
+  --nav-background-item-padding-horizontal: 10px;
+  --nav-background-item-padding-vertical: 10px;
+
+  // Navbar
+  --navbar-nav-item-height: 80px;
+  --navbar-parent-icon-margin-left: 4px;
+  --navbar-dropdown-shift-margin: 0;
+  --navbar-dropdown-viewport-margin: 15px;
+  --navbar-dropdown-width: 200px;
+  --navbar-dropdown-large-shift-margin: 0;
+  --navbar-dropdown-large-padding: 40px;
+  --navbar-dropdown-dropbar-margin: 0;
+  --navbar-dropdown-dropbar-shift-margin: 0;
+  --navbar-dropdown-dropbar-viewport-margin: 15px;
+  --navbar-dropdown-dropbar-large-shift-margin: 0;
+  --navbar-gap: 15px;
+  --navbar-nav-gap: 15px;
+  --navbar-nav-item-padding-horizontal: 0;
+  --navbar-item-padding-horizontal: 0;
+  --navbar-dropdown-margin: 15px;
+  --navbar-dropdown-padding: 25px;
+  --navbar-dropdown-nav-subtitle-font-size: 12px;
+  --navbar-gap-m: 30px;
+  --navbar-nav-gap-m: 30px;
+  --navbar-nav-item-text-transform: uppercase;
+  --navbar-dropdown-box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+
+  // Notification
+  --notification-message-padding: @global-small-gutter;
+  --notification-position: 10px;
+  --notification-z-index: @global-z-index + 40;
+  --notification-width: 350px;
+  --notification-message-margin-top: 10px;
+  --notification-message-line-height: 1.4;
+  --notification-close-top: var(--notification-message-padding) + 5px;
+
+  // Off-canvas
+  --offcanvas-bar-width: 270px;
+  --offcanvas-bar-padding-vertical: 20px;
+  --offcanvas-bar-padding-horizontal: 20px;
+  --offcanvas-bar-width-s: 350px;
+  --offcanvas-close-position: 5px;
+  --offcanvas-close-padding: 5px;
+  --offcanvas-close-position-s: 10px;
+  --offcanvas-overlay-background: rgba(0,0,0,0.1);
+
+  // Overlay
+  --overlay-default-background: fade(@global-background, 80%);
+  --overlay-primary-background: fade(@global-secondary-background, 80%);
+
+  // Pagination
+  --pagination-margin-horizontal: 0;
+  --pagination-item-padding-vertical: 5px;
+  --pagination-item-padding-horizontal: 10px;
+  --pagination-item-hover-text-decoration: none;
+
+  // Placeholder
+  --placeholder-background: transparent;
+
+  // Position
+  --position-large-margin-l: 50px;
+
+  // Progress
+  --progress-height: 15px;
+  --progress-border-radius: 500px;
+
+  // Search
+  --search-default-width: 240px;
+  --search-default-padding-horizontal: 10px;
+  --search-default-focus-background: darken(var(--search-default-background), 2%);
+  --search-default-icon-padding: 0;
+  --search-navbar-width: 240px;
+  --search-navbar-padding-horizontal: 10px;
+  --search-navbar-icon-padding: 0;
+  --search-medium-width: 400px;
+  --search-medium-height: 40px;
+  --search-medium-background: transparent;
+  --search-medium-icon-width: 24px;
+  --search-medium-icon-padding: 10px;
+  --search-large-width: 500px;
+  --search-large-height: 80px;
+  --search-large-background: transparent;
+  --search-large-icon-width: 40px;
+  --search-large-icon-padding: 20px;
+  --search-default-background: transparent;
+
+  // Section
+  --section-xlarge-padding-vertical-m: (@global-large-margin + @global-xlarge-margin);
+
+  // Slidenav
+  --slidenav-padding-vertical: 5px;
+  --slidenav-padding-horizontal: 10px;
+  --slidenav-color: fade(@global-color, 50%);
+  --slidenav-hover-color: fade(@global-color, 90%);
+  --slidenav-active-color: fade(@global-color, 50%);
+  --slidenav-large-padding-vertical: 10px;
+
+  // Slider
+  --slider-container-margin-top: -11px;
+  --slider-container-margin-bottom: -39px;
+  --slider-container-margin-left: -25px;
+  --slider-container-margin-right: -25px;
+
+  // Sortable
+  --sortable-dragged-z-index: @global-z-index + 50;
+  --sortable-placeholder-opacity: 0;
+  --sortable-empty-height: 50px;
+
+  // Spinner
+  --spinner-size: 30px;
+  --spinner-stroke-width: 1;
+  --spinner-radius: floor(((var(--spinner-size) - var(--spinner-stroke-width)) / 2)); // Minus stroke width to prevent overflow clipping
+  --spinner-circumference: round(2 * 3.141 * var(--spinner-radius));
+  --spinner-duration: 1.4s;
+  --pr-spinner-line-gutter: @global-xxsmall-gutter - 1px;
+  --pr-spinner-line-width: @global-spinner-width - var(--pr-spinner-line-gutter);
+  --pr-spinner-line-item-height: 100%;
+  --pr-spinner-circle-item-width: 3px;
+  --pr-spinner-line-color: darken(@global-white-color, 5%);
+  --pr-spinner-circle-color: @global-white-color;
+  --pr-spinner-circle-color-fade: fade(var(--pr-spinner-circle-color), 60%);
+  --pr-spinner-line-item-border-radius: 4px;
+  --pr-spinner-line-animation-duration: 0.6s;
+
+  // Sticky
+  --sticky-z-index: @global-z-index - 20;
+  --sticky-animation-duration: 0.2s;
+  --sticky-reverse-animation-duration: 0.2s;
+
+  // Subnav
+  --subnav-margin-horizontal: 20px;
+  --subnav-item-hover-text-decoration: none;
+  --subnav-divider-border-height: 1.5em;
+  --subnav-pill-item-padding-vertical: 5px;
+  --subnav-pill-item-padding-horizontal: 10px;
+  --subnav-pill-item-background: transparent;
+  --subnav-item-text-transform: uppercase;
+
+  // Tab
+  --tab-margin-horizontal: 20px;
+  --tab-item-padding-horizontal: 10px;
+  --tab-item-padding-vertical: 5px;
+  --tab-item-hover-text-decoration: none;
+  --tab-item-text-transform: uppercase;
+
+  // Table
+  --table-cell-padding-vertical: 16px;
+  --table-cell-padding-horizontal: 12px;
+  --table-row-active-background: #ffd;
+  --table-small-cell-padding-vertical: 10px;
+  --table-small-cell-padding-horizontal: 12px;
+  --table-large-cell-padding-vertical: 22px;
+  --table-large-cell-padding-horizontal: 12px;
+  --table-expand-min-width: 150px;
+  --table-header-cell-font-weight: normal;
+
+  // Text
+  --text-lead-line-height: 1.5;
+  --text-meta-line-height: 1.4;
+  --text-small-line-height: 1.5;
+  --text-large-line-height: 1.5;
+
+  // Thumbnav
+  --thumbnav-margin-horizontal: 15px;
+  --thumbnav-item-gradient: linear-gradient(180deg, rgba(255,255,255,0), rgba(255,255,255,0.4));
+  --thumbnav-item-hover-opacity: 0;
+  --thumbnav-item-active-opacity: 0;
+
+  // Tile
+  --tile-padding-horizontal: 15px;
+  --tile-xlarge-padding-vertical-m: (@global-large-margin + @global-xlarge-margin);
+
+  // Tooltip
+  --tooltip-z-index: @global-z-index + 30;
+  --tooltip-margin: 10px;
+  --tooltip-max-width: 200px;
+  --tooltip-padding-vertical: 3px;
+  --tooltip-padding-horizontal: 6px;
+  --tooltip-background: #666;
+  --tooltip-border-radius: 2px;
+  --tooltip-font-size: 12px;
+
+  // Totop
+  --totop-padding: 5px;
+
+  // Transition
+  --transition-duration: 0.3s;
+  --transition-scale: 1.03;
+  --transition-slide-small-translate: 10px;
+  --transition-slide-medium-translate: 50px;
+  --transition-slow-duration: 0.7s;
+
+  // Utility
+  --panel-scrollable-height: 170px;
+  --panel-scrollable-padding: 10px;
+  --border-rounded-border-radius: 5px;
+  --box-shadow-duration: 0.1s;
+  --box-shadow-bottom-height: 30px;
+  --box-shadow-bottom-bottom: -(var(--box-shadow-bottom-height));
+  --box-shadow-bottom-border-radius: 100%;
+  --box-shadow-bottom-background: #444;
+  --box-shadow-bottom-blur: 20px;
+  --dropcap-margin-right: 10px;
+  --dropcap-font-size: ((@global-line-height * 3) * 1em);
+  --dragover-box-shadow: 0 0 20px rgba(100,100,100,0.3);
+
+  // Width
+  --width-small-width: 150px;
+  --width-medium-width: 300px;
+  --width-large-width: 450px;
+  --width-xlarge-width: 600px;
+  --width-2xlarge-width: 750px;
 }
 
-//
-// Define new variables | must replace with less variable of UIkit
-//
-@global-sidebar-width-var: var(--global-sidebar-width);
-@global-sidebar-height-var: var(--global-sidebar-height);
 
-@global-font-size-var: var(--global-font-size);
-@global-line-height-var: var(--global-line-height);
+//
+// Less Variables
+//
+// ========================================================================
 
-@global-2xlarge-font-size-var: var(--global-2xlarge-font-size);
-@global-xlarge-font-size-var: var(--global-xlarge-font-size);
-@global-large-font-size-var: var(--global-large-font-size);
-@global-medium-font-size-var: var(--global-medium-font-size);
-@global-small-font-size-var: var(--global-small-font-size);
-@global-xsmall-font-size-var: var(--global-xsmall-font-size);
-@global-xxsmall-font-size-var: var(--global-xxsmall-font-size);
+
+// Load deprecated components
+// ========================================================================
+
+@deprecated:                                   false;
+
+
+// Breakpoints
+// ========================================================================
+
+// Phone Portrait:   Galaxy (360x640), iPhone 6 (375x667), iPhone 6+ (414x736)
+// Phone Landscape:  Galaxy (640x360), iPhone 6 (667x375), iPhone 6+ (736x414)
+// Tablet Portrait:  iPad (768x1024), Galaxy Tab (800x1280),
+// Tablet Landscape: iPad (1024x768), iPad Pro (1024x1366),
+// Desktop:          Galaxy Tab (1280x800), iPad Pro (1366x1024)
+
+@breakpoint-small:                             640px;  // Phone landscape
+@breakpoint-medium:                            960px;  // Tablet Landscape
+@breakpoint-large:                             1200px; // Desktop
+@breakpoint-xlarge:                            1600px; // Large Screens
+
+@breakpoint-xsmall-max:                        (@breakpoint-small - 1);
+@breakpoint-small-max:                         (@breakpoint-medium - 1);
+@breakpoint-medium-max:                        (@breakpoint-large - 1);
+@breakpoint-large-max:                         (@breakpoint-xlarge - 1);
+
+
+// UIKit Global variables
+// ========================================================================
+
+//
+// Typography
+//
+
+@global-font-family:
+  @global-font-family-base,
+  -apple-system,
+  BlinkMacSystemFont,
+  'Segoe UI',
+  Roboto,
+  'Helvetica Neue',
+  Arial,
+  'Noto Sans',
+  sans-serif,
+  'Apple Color Emoji',
+  'Segoe UI Emoji',
+  'Segoe UI Symbol',
+  'Noto Color Emoji';
+@global-font-size: var(--global-font-size);
+@global-line-height: var(--global-line-height);
+
+@global-2xlarge-font-size: var(--global-2xlarge-font-size);
+@global-xlarge-font-size: var(--global-xlarge-font-size);
+@global-large-font-size: var(--global-large-font-size);
+@global-medium-font-size: var(--global-medium-font-size);
+@global-small-font-size: var(--global-small-font-size);
+@global-xsmall-font-size: var(--global-xsmall-font-size);
+@global-xxsmall-font-size: var(--global-xxsmall-font-size);
 
 //
 // Colors
 //
 
-@global-color-var: var(--global-color);
-@global-emphasis-color-var: var(--global-emphasis-color);
-@global-muted-color-var: var(--global-muted-color);
-@global-white-color-var: var(--global-white-color);
+@global-color: var(--global-color);
+@global-emphasis-color: var(--global-emphasis-color);
+@global-muted-color: var(--global-muted-color);
+@global-white-color: var(--global-white-color);
 
-@global-link-color-var: var(--global-link-color);
-@global-link-hover-color-var: var(--global-link-hover-color);
+@global-link-color: var(--global-link-color);
+@global-link-hover-color: var(--global-link-hover-color);
 
-@global-inverse-color-var: @global-white-color-var;
-@global-muted-inverse-color-var: var(--global-muted-inverse-color);
+@global-inverse-color: var(--global-inverse-color);
+@global-muted-inverse-color: var(--global-muted-inverse-color);
 
-@global-icon-primary-color-var: var(--global-icon-primary-color);
-@global-icon-secondary-color-var: var(--global-icon-secondary-color);
-@global-icon-tertiary-color-var: var(--global-icon-tertiary-color);
-@global-icon-quaternary-color-var: var(--global-icon-quaternary-color);
-@global-icon-favourite-color-var: var(--global-icon-favourite-color);
+@global-icon-primary-color: var(--global-icon-primary-color);
+@global-icon-secondary-color: var(--global-icon-secondary-color);
+@global-icon-tertiary-color: var(--global-icon-tertiary-color);
+@global-icon-quaternary-color: var(--global-icon-quaternary-color);
+@global-icon-favourite-color: var(--global-icon-favourite-color);
 
 //
 // Backgrounds
 //
 
-@global-background-var: @global-white-color-var;
+@global-background: var(--global-white-color);
 
-@global-muted-background-var: var(--global-muted-background);
-@global-primary-background-var: var(--global-primary-background);
-@global-secondary-background-var: var(--global-secondary-background);
+@global-muted-background: var(--global-muted-background);
+@global-primary-background: var(--global-primary-background);
+@global-secondary-background: var(--global-secondary-background);
 
-@global-success-background-var: var(--global-success-background);
-@global-warning-background-var: var(--global-warning-background);
-@global-danger-background-var: var(--global-danger-background);
+@global-success-background: var(--global-success-background);
+@global-warning-background: var(--global-warning-background);
+@global-danger-background: var(--global-danger-background);
 
 //
 // Borders
 //
 
-@global-border-width-var: var(--global-border-width);
-@global-border-var: var(--global-border);
-@global-border-radius-var: var(--global-border-radius);
-@global-border-strip-color-var: var(--global-border-strip-color);
+@global-border-width: var(--global-border-width);
+@global-border: var(--global-border);
+@global-border-radius: var(--global-border-radius);
+@global-border-strip-color: var(--global-border-strip-color);
+
+//
+// Box-Shadows
+//
+
+@global-small-box-shadow: var(--global-small-box-shadow);
+@global-medium-box-shadow: var(--global-medium-box-shadow);
+@global-large-box-shadow: var(--global-large-box-shadow);
+@global-xlarge-box-shadow: var(--global-xlarge-box-shadow);
 
 //
 // Spacings
 //
 
 // Used in margin, section, list
-@global-margin-var: var(--global-margin);
-@global-xsmall-margin-var: var(--global-xsmall-margin);
-@global-small-margin-var: var(--global-small-margin);
-@global-medium-margin-var: var(--global-medium-margin);
-@global-large-margin-var: var(--global-large-margin);
-@global-xlarge-margin-var: var(--global-xlarge-margin);
+@global-margin: var(--global-margin);
+@global-xsmall-margin: var(--global-xsmall-margin);
+@global-small-margin: var(--global-small-margin);
+@global-medium-margin: var(--global-medium-margin);
+@global-large-margin: var(--global-large-margin);
+@global-xlarge-margin: var(--global-xlarge-margin);
 
-@global-pr-margin-medium-var: var(--global-pr-margin-medium);
+@global-pr-margin-medium: var(--global-pr-margin-medium);
 
 // Used in grid, column, container, align, card, padding
-@global-gutter-var: var(--global-gutter);
-@global-xxsmall-gutter-var: var(--global-xxsmall-gutter);
-@global-xsmall-gutter-var: var(--global-xsmall-gutter);
-@global-small-gutter-var: var(--global-small-gutter);
-@global-medium-gutter-var: var(--global-medium-gutter);
-@global-large-gutter-var: var(--global-large-gutter);
+@global-gutter: var(--global-gutter);
+@global-xxsmall-gutter: var(--global-xxsmall-gutter);
+@global-xsmall-gutter: var(--global-xsmall-gutter);
+@global-small-gutter: var(--global-small-gutter);
+@global-medium-gutter: var(--global-medium-gutter);
+@global-large-gutter: var(--global-large-gutter);
 
 //
 // Controls
 //
 
-@global-control-xsmall-height-var: var(--global-control-xsmall-height);
+@global-control-xsmall-height: var(--global-control-xsmall-height);
+
+@global-control-height: var(--global-control-height);
+@global-control-small-height: var(--global-control-small-height);
+@global-control-large-height: var(--global-control-large-height);
 
 //
 // Z-index
 //
 
-//
-// Spinners
-//
-@global-spinner-width-var: var(--global-spinner-width);
-@global-spinner-height-var: @global-spinner-width-var;
+@global-z-index: var(--global-z-index);
 
 //
 // Miscellaneous
 //
-@global-rounded-radius-var: var(--global-rounded-radius);
-@global-middle-transform-top-var: var(--global-middle-transform-top);
-@global-middle-transform-var: var(--global-middle-transform);
+
+@global-rounded-radius: var(--global-rounded-radius);
+@global-middle-transform-top: var(--global-middle-transform-top);
+@global-middle-transform: var(--global-middle-transform);
 
 //
-// Pr Vars
-//
-@pr-line-height-1-4: var(--pr-line-height-1-4);
-
-//
-// Component vars
-//
-
-// Accordion
-@accordion-line-height-var: var(--accordion-line-height);
-@accordion-icon-margin-left-var: var(--accordion-icon-margin-left);
-
-// Alert
-@alert-padding-var: var(--alert-padding);
-@alert-padding-right-var: var(--alert-padding-right);
-@alert-close-top-var: var(--alert-close-top);
-@alert-primary-background-var: var(--alert-primary-background);
-@alert-success-background-var: var(--alert-primary-background);
-@alert-warning-background-var: var(--alert-primary-background);
-@alert-danger-background-var: var(--alert-primary-background);
-@alert-close-opacity-var: var(--alert-close-opacity);
-@alert-close-hover-opacity-var: var(--alert-close-hover-opacity);
-
-// Animation
-@animation-duration-var: var(--animation-duration);
-@animation-fade-duration-var: var(--animation-fade-duration);
-@animation-stroke-duration-var: var(--animation-stroke-duration);
-@animation-kenburns-duration-var: var(--animation-kenburns-duration);
-@animation-fast-duration-var: var(--animation-fast-duration);
-@animation-slide-small-translate-var: var(--animation-slide-small-translate);
-@animation-slide-medium-translate-var: var(--animation-slide-medium-translate);
-
-// Article
-@article-title-line-height-var: var(--article-title-line-height);
-@article-meta-line-height-var: var(--article-meta-line-height);
-@article-title-font-size-var: var(--article-title-font-size);
-
-// Badge
-@badge-size-var: var(--badge-size);
-@badge-padding-vertical-var: var(--badge-padding-vertical);
-@badge-padding-horizontal-var: var(--badge-padding-horizontal);
-@badge-border-radius-var: var(--badge-border-radius);
-@badge-font-size-var: var(--badge-font-size);
-
 // Base
-@base-link-text-decoration-var: var(--base-link-text-decoration);
-@base-link-hover-text-decoration-var: var(--base-link-hover-text-decoration);
+//
 
-@base-strong-font-weight-var: var(--base-strong-font-weight);
+@base-link-text-decoration: var(--base-link-text-decoration);
+@base-link-hover-text-decoration: var(--base-link-hover-text-decoration);
 
-@base-ins-background-var: var(--base-ins-background);
-@base-mark-background-var: var(--base-mark-background);
-@base-quote-font-style-var: var(--base-quote-font-style);
-@base-small-font-size-var: var(--base-small-font-size);
+@base-strong-font-weight: var(--base-strong-font-weight);
+@base-ins-background: var(--base-ins-background);
+@base-mark-background: var(--base-mark-background);
+@base-quote-font-style: var(--base-quote-font-style);
+@base-small-font-size: var(--base-small-font-size);
 
-@base-heading-font-family-var: var(--base-heading-font-family);
-@base-heading-font-weight-var: var(--base-heading-font-weight);
-@base-heading-text-transform-var: var(--base-heading-text-transform);
-@base-h1-font-size-m-var: var(--base-h1-font-size-m);
-@base-h1-font-size-var: var(--base-h1-font-size);
-@base-h1-line-height-var: var(--base-h1-line-height);
-@base-h2-font-size-m-var: var(--base-h2-font-size-m);
-@base-h2-font-size-var: var(--base-h2-font-size);
-@base-h2-line-height-var: var(--base-h2-line-height);
-@base-h3-font-size-var: var(--base-h3-font-size);
-@base-h3-line-height-var: var(--base-h3-line-height);
-@base-h4-font-size-var: var(--base-h4-font-size);
-@base-h4-line-height-var: var(--base-h4-line-height);
-@base-h5-font-size-var: var(--base-h5-font-size);
-@base-h5-line-height-var: var(--base-h5-line-height);
-@base-h6-font-size-var: var(--base-h6-font-size);
-@base-h6-line-height-var: var(--base-h6-line-height);
+@base-heading-font-family: var(--base-heading-font-family);
+@base-heading-font-weight: var(--base-heading-font-weight);
+@base-heading-text-transform: var(--base-heading-text-transform);
+@base-h1-font-size-m: var(--base-h1-font-size-m);
+@base-h1-font-size: var(--base-h1-font-size);
+@base-h1-line-height: var(--base-h1-line-height);
+@base-h2-font-size-m: var(--base-h2-font-size-m);
+@base-h2-font-size: var(--base-h2-font-size);
+@base-h2-line-height: var(--base-h2-line-height);
+@base-h3-font-size: var(--base-h3-font-size);
+@base-h3-line-height: var(--base-h3-line-height);
+@base-h4-font-size: var(--base-h4-font-size);
+@base-h4-line-height: var(--base-h4-line-height);
+@base-h5-font-size: var(--base-h5-font-size);
+@base-h5-line-height: var(--base-h5-line-height);
+@base-h6-font-size: var(--base-h6-font-size);
+@base-h6-line-height: var(--base-h6-line-height);
 
-@base-list-padding-left-var: var(--base-list-padding-left);
+@base-list-padding-left: var(--base-list-padding-left);
 
-@base-blockquote-font-size-var: var(--base-blockquote-font-size);
-@base-blockquote-line-height-var: var(--base-blockquote-line-height);
-@base-blockquote-footer-font-size-var: var(--base-blockquote-footer-font-size);
-@base-blockquote-footer-line-height-var: var(--base-blockquote-footer-line-height);
+@base-blockquote-line-height: var(--base-blockquote-line-height);
+@base-blockquote-footer-line-height: var(--base-blockquote-footer-line-height);
 
-@base-pre-font-size-var: var(--base-pre-font-size);
-@base-pre-line-height-var: var(--base-pre-line-height);
+@base-pre-line-height: var(--base-pre-line-height);
+@base-pre-font-family: var(--base-code-font-family);
 
-@base-focus-outline-width-var: var(--base-focus-outline-width);
-@base-focus-outline-style-var: var(--base-focus-outline-style);
-@base-focus-outline-var: var(--base-focus-outline);
-@base-focus-outline-offset-var: var(--base-focus-outline-offset);
+@base-focus-outline-width: var(--base-focus-outline-width);
+@base-focus-outline-style: var(--base-focus-outline-style);
+@base-focus-outline: var(--base-focus-outline);
+@base-focus-outline-offset: var(--base-focus-outline-offset);
 
-@base-selection-background-var: var(--base-selection-background);
-@base-selection-color-var: var(--base-selection-color);
+@base-selection-background: var(--base-selection-background);
+@base-selection-color: var(--base-selection-color);
 
-@base-code-padding-horizontal-var: var(--base-code-padding-horizontal);
-@base-code-padding-vertical-var: var(--base-code-padding-vertical);
-@base-pre-padding-var: var(--base-pre-padding);
-@base-pre-border-radius-var: var(--base-pre-border-radius);
+@base-code-padding-horizontal: var(--base-code-padding-horizontal);
+@base-code-padding-vertical: var(--base-code-padding-vertical);
 
-// Breadcrumb
-@breadcrumb-divider: var(--breadcrumb-divider);
-@breadcrumb-divider-margin-horizontal-var: var(--breadcrumb-divider-margin-horizontal);
+@base-pre-padding: var(--base-pre-padding);
+@base-pre-border-radius: var(--base-pre-border-radius);
+
+//
+// Icon
+//
+
+@global-icon-primary-color-light:                 var(--global-icon-primary-color-light);
+@global-icon-secondary-color-light:               var(--global-icon-secondary-color-light);
+@global-icon-tertiary-color-light:                var(--global-icon-tertiary-color-light);
+@global-icon-quaternary-color-light:              var(--global-icon-quaternary-color-light);
+
+@global-icon-primary-color-muted:                 var(--global-icon-primary-color-muted);
+@global-icon-secondary-color-muted:               var(--global-icon-secondary-color-muted);
+@global-icon-tertiary-color-muted:                var(--global-icon-tertiary-color-muted);
+@global-icon-quaternary-color-muted:              var(--global-icon-quaternary-color-muted);
+
+//
+// Inverse
+//
+
+@inverse-global-color:                            var(--inverse-global-color);
+@inverse-global-emphasis-color:                   var(--inverse-global-emphasis-color);
+@inverse-global-muted-color:                      var(--inverse-global-muted-color);
+@inverse-global-inverse-color:                    var(--inverse-global-inverse-color);
+@inverse-global-secondary-background:             var(--inverse-global-secondary-background);
+
+@inverse-global-primary-background:               var(--inverse-global-primary-background);
+@inverse-global-muted-background:                 var(--inverse-global-muted-background);
+
+@inverse-global-border:                           var(--inverse-global-border);
+
+@inverse-global-icon-primary-color:               var(--inverse-global-icon-primary-color);
+@inverse-global-icon-secondary-color:             var(--inverse-global-icon-secondary-color);
+@inverse-global-icon-tertiary-color:              var(--inverse-global-icon-tertiary-color);
+@inverse-global-icon-quaternary-color:            var(--inverse-global-icon-quaternary-color);
+
+
+// PRKit Global variables
+// ========================================================================
+
+//
+// Sidebar
+//
+
+@global-sidebar-width: var(--global-sidebar-width);
+@global-sidebar-height: var(--global-sidebar-height);
+
+//
+// Spinners
+//
+
+@global-spinner-width: var(--global-spinner-width);
+@global-spinner-height: var(--global-spinner-height);

@@ -6,24 +6,24 @@
 // Variables
 // ========================================================================
 
-@nav-item-padding-vertical:                     5px;
-@nav-item-padding-horizontal:                   0;
+@nav-item-padding-vertical:                     var(--nav-item-padding-vertical);
+@nav-item-padding-horizontal:                   var(--nav-item-padding-horizontal);
 
-@nav-sublist-padding-vertical:                  5px;
-@nav-sublist-padding-left:                      15px;
-@nav-sublist-deeper-padding-left:               15px;
-@nav-sublist-item-padding-vertical:             2px;
+@nav-sublist-padding-vertical:                  var(--nav-sublist-padding-vertical);
+@nav-sublist-padding-left:                      var(--nav-sublist-padding-left);
+@nav-sublist-deeper-padding-left:               var(--nav-sublist-deeper-padding-left);
+@nav-sublist-item-padding-vertical:             var(--nav-sublist-item-padding-vertical);
 
-@nav-parent-icon-margin-left:                   0.25em;
+@nav-parent-icon-margin-left:                   var(--nav-parent-icon-margin-left);
 
 @nav-header-padding-vertical:                   @nav-item-padding-vertical;
 @nav-header-padding-horizontal:                 @nav-item-padding-horizontal;
 @nav-header-font-size:                          @global-small-font-size;
-@nav-header-text-transform:                     uppercase;
+@nav-header-text-transform:                     var(--nav-header-text-transform);
 @nav-header-margin-top:                         @global-margin;
 
-@nav-divider-margin-vertical:                   5px;
-@nav-divider-margin-horizontal:                 0;
+@nav-divider-margin-vertical:                   var(--nav-divider-margin-vertical);
+@nav-divider-margin-horizontal:                 var(--nav-divider-margin-horizontal);
 
 @nav-default-line-height:                       @global-line-height;
 @nav-default-item-color:                        @global-muted-color;
@@ -71,38 +71,38 @@
 @nav-secondary-sublist-item-hover-color:        @global-color;
 @nav-secondary-sublist-item-active-color:       @global-emphasis-color;
 
-@nav-medium-line-height:                        1;
-@nav-medium-font-size:                          @nav-medium-font-size-m * 0.825;    // 40px 0.714
-@nav-medium-font-size-m:                        @nav-medium-font-size-l * 0.875;    // 3.5rem / 56px
-@nav-medium-font-size-l:                        4rem; // 64px
+@nav-medium-line-height:                        var(--nav-medium-line-height);
+@nav-medium-font-size:                          var(--nav-medium-font-size);
+@nav-medium-font-size-m:                        var(--nav-medium-font-size-m);
+@nav-medium-font-size-l:                        var(--nav-medium-font-size-l);
 
-@nav-large-line-height:                         1;
-@nav-large-font-size:                           @nav-large-font-size-m * 0.85;      // 50px 0.78
-@nav-large-font-size-m:                         4rem; // 64px
-@nav-large-font-size-l:                         6rem; // 96px
+@nav-large-line-height:                         var(--nav-large-line-height);
+@nav-large-font-size:                           var(--nav-large-font-size);
+@nav-large-font-size-m:                         var(--nav-large-font-size-m);
+@nav-large-font-size-l:                         var(--nav-large-font-size-l);
 
-@nav-xlarge-line-height:                        1;
-@nav-xlarge-font-size:                          4rem; // 64px
-@nav-xlarge-font-size-m:                        6rem; // 96px
-@nav-xlarge-font-size-l:                        8rem; // 128px
+@nav-xlarge-line-height:                        var(--nav-xlarge-line-height);
+@nav-xlarge-font-size:                          var(--nav-xlarge-font-size);
+@nav-xlarge-font-size-m:                        var(--nav-xlarge-font-size-m);
+@nav-xlarge-font-size-l:                        var(--nav-xlarge-font-size-l);
 
-@nav-dividers-margin-top:                       5px;
+@nav-dividers-margin-top:                       var(--nav-dividers-margin-top);
 @nav-dividers-border-width:                     @global-border-width;
 @nav-dividers-border:                           @global-border;
 
 @nav-default-font-size: @global-small-font-size;
 
-@nav-default-subtitle-font-size: 12px;
+@nav-default-subtitle-font-size:                var(--nav-default-subtitle-font-size);
 
 //
 // New
 //
 
-@nav-background-margin-top: 0;
-@nav-background-item-padding-horizontal: 10px;
-@nav-background-item-padding-vertical: 10px;
-@nav-background-item-hover-background: @global-muted-background;
-@nav-background-item-active-background: @global-muted-background;
+@nav-background-margin-top:                     var(--nav-background-margin-top);
+@nav-background-item-padding-horizontal:        var(--nav-background-item-padding-horizontal);
+@nav-background-item-padding-vertical:          var(--nav-background-item-padding-vertical);
+@nav-background-item-hover-background:          @global-muted-background;
+@nav-background-item-active-background:         @global-muted-background;
 
 // Sublists
 // ========================================================================

@@ -14,25 +14,25 @@
 @button-default-hover-color:                    @global-emphasis-color;
 @button-default-active-color:                   @global-emphasis-color;
 
-@button-primary-background:                     @global-primary-background;
+@button-primary-background:                     var(--button-primary-background);
 @button-primary-color:                          @global-inverse-color;
-@button-primary-hover-background:               darken(@button-primary-background, 5%);
+@button-primary-hover-background:               var(--button-primary-hover-background);
 @button-primary-hover-color:                    @global-inverse-color;
-@button-primary-active-background:              darken(@button-primary-background, 10%);
+@button-primary-active-background:              var(--button-primary-active-background);
 @button-primary-active-color:                   @global-inverse-color;
 
-@button-secondary-background:                   @global-secondary-background;
+@button-secondary-background:                   var(--button-secondary-background);
 @button-secondary-color:                        @global-inverse-color;
-@button-secondary-hover-background:             darken(@button-secondary-background, 5%);
+@button-secondary-hover-background:             var(--button-secondary-hover-background);
 @button-secondary-hover-color:                  @global-inverse-color;
-@button-secondary-active-background:            darken(@button-secondary-background, 10%);
+@button-secondary-active-background:            var(--button-secondary-active-background);
 @button-secondary-active-color:                 @global-inverse-color;
 
-@button-danger-background:                      @global-danger-background;
+@button-danger-background:                      var(--button-danger-background);
 @button-danger-color:                           @global-inverse-color;
-@button-danger-hover-background:                darken(@button-danger-background, 5%);
+@button-danger-hover-background:                var(--button-danger-hover-background);
 @button-danger-hover-color:                     @global-inverse-color;
-@button-danger-active-background:               darken(@button-danger-background, 10%);
+@button-danger-active-background:               var(--button-danger-active-background);
 @button-danger-active-color:                    @global-inverse-color;
 
 @button-disabled-color:                         @global-muted-color;
@@ -44,66 +44,66 @@
 @button-link-line-height:                       @global-line-height;
 @button-link-color:                             @global-emphasis-color;
 @button-link-hover-color:                       @global-muted-color;
-@button-link-hover-text-decoration:             none;
+@button-link-hover-text-decoration:             var(--button-link-hover-text-decoration);
 @button-link-disabled-color:                    @global-muted-color;
 
-@button-line-height: @global-control-height - (@button-border-width * 2);
-@button-xsmall-line-height: @global-control-xsmall-height - (@button-border-width * 2);
-@button-small-line-height: @global-control-small-height - (@button-border-width * 2);
-@button-large-line-height: @global-control-large-height - (@button-border-width * 2);
+@button-line-height:                            @global-control-height - (@button-border-width * 2);
+@button-xsmall-line-height:                     @global-control-xsmall-height - (@button-border-width * 2);
+@button-small-line-height:                      @global-control-small-height - (@button-border-width * 2);
+@button-large-line-height:                      @global-control-large-height - (@button-border-width * 2);
 
-@button-font-size: @global-small-font-size;
-@button-xsmall-font-size: @global-xsmall-font-size;
-@button-large-font-size: @global-small-font-size;
+@button-font-size:                              @global-small-font-size;
+@button-xsmall-font-size:                       @global-xsmall-font-size;
+@button-large-font-size:                        @global-small-font-size;
 
-@button-default-background: transparent;
-@button-default-hover-background: transparent;
-@button-default-active-background: transparent;
+@button-default-background:                     var(--button-default-background);
+@button-default-hover-background:               var(--button-default-hover-background);
+@button-default-active-background:              var(--button-default-active-background);
 
-@button-disabled-background: transparent;
+@button-disabled-background:                    var(--button-disabled-background);
 
-@button-text-hover-color: @global-emphasis-color;
+@button-text-hover-color:                       @global-emphasis-color;
 
 //
 // New
 //
 
-@button-text-transform: capitalize;
+@button-text-transform:                         var(--button-text-transform);
 
-@button-border-width: @global-border-width;
-@button-border-radius: @global-border-radius;
+@button-border-width:                           @global-border-width;
+@button-border-radius:                          @global-border-radius;
 
-@button-default-border: @global-border;
-@button-default-hover-border: darken(@global-border, 20%);
-@button-default-active-border: darken(@global-border, 30%);
+@button-default-border:                         @global-border;
+@button-default-hover-border:                   var(--button-default-hover-border);
+@button-default-active-border:                  var(--button-default-active-border);
 
-@button-disabled-border: @global-border;
+@button-disabled-border:                        @global-border;
 
-@button-text-border-width: @global-border-width;
-@button-text-border: @button-text-hover-color;
+@button-text-border-width:                      @global-border-width;
+@button-text-border:                            @button-text-hover-color;
 
-@button-muted-background: @global-muted-background;
-@button-muted-color: @global-color;
-@button-muted-hover-background: darken(@global-muted-background, 2%);
-@button-muted-hover-color: @global-color;
-@button-muted-active-background: darken(@global-muted-background, 5%);
-@button-muted-active-color: @global-color;
+@button-muted-background:                       @global-muted-background;
+@button-muted-color:                            @global-color;
+@button-muted-hover-background:                 var(--button-muted-hover-background);
+@button-muted-hover-color:                      @global-color;
+@button-muted-active-background:                var(--button-muted-active-background);
+@button-muted-active-color:                     @global-color;
 
-@button-padding-horizontal: @global-gutter;
-@button-has-icon-padding-right: (@global-gutter / 2);
-@button-has-icon-padding-left: (@global-gutter / 2);
-@button-small-padding-horizontal: @global-small-gutter;
-@button-small-has-icon-padding-right: (@global-small-gutter / 2) + 1.5;
-@button-small-has-icon-padding-left: (@global-small-gutter / 2);
-@button-xsmall-padding-horizontal: @global-xsmall-gutter;
-@button-xsmall-has-icon-padding-right: (@global-xsmall-gutter / 2) + 2;
-@button-xsmall-has-icon-padding-left: (@global-xsmall-gutter / 2);
-@button-rounded-radius: @global-rounded-radius;
+@button-padding-horizontal:                     @global-gutter;
+@button-has-icon-padding-right:                 var(--button-has-icon-padding-right);
+@button-has-icon-padding-left:                  var(--button-has-icon-padding-left);
+@button-small-padding-horizontal:               @global-small-gutter;
+@button-small-has-icon-padding-right:           var(--button-small-has-icon-padding-right);
+@button-small-has-icon-padding-left:            var(--button-small-has-icon-padding-left);
+@button-xsmall-padding-horizontal:              @global-xsmall-gutter;
+@button-xsmall-has-icon-padding-right:          var(--button-xsmall-has-icon-padding-right);
+@button-xsmall-has-icon-padding-left:           var(--button-xsmall-has-icon-padding-left);
+@button-rounded-radius:                         @global-rounded-radius;
 
-@button-primary-icon-primary-color: @inverse-global-icon-primary-color;
-@button-primary-icon-secondary-color: @inverse-global-icon-secondary-color;
-@button-primary-icon-tertiary-color: @inverse-global-icon-tertiary-color;
-@button-primary-icon-quaternary-color: @inverse-global-icon-quaternary-color;
+@button-primary-icon-primary-color:             @inverse-global-icon-primary-color;
+@button-primary-icon-secondary-color:           @inverse-global-icon-secondary-color;
+@button-primary-icon-tertiary-color:            @inverse-global-icon-tertiary-color;
+@button-primary-icon-quaternary-color:          @inverse-global-icon-quaternary-color;
 
 
 // Component

@@ -6,29 +6,29 @@
 // Variables
 // ========================================================================
 
-@spinner-size:                                  30px;
-@spinner-stroke-width:                          1;
-@spinner-radius:                                floor(((@spinner-size - @spinner-stroke-width) / 2)); // Minus stroke width to prevent overflow clipping
-@spinner-circumference:                         round(2 * 3.141 * @spinner-radius);
-@spinner-duration:                              1.4s;
+@spinner-size:                                  var(--spinner-size);
+@spinner-stroke-width:                          var(--spinner-stroke-width);
+@spinner-radius:                                var(--spinner-radius);
+@spinner-circumference:                         var(--spinner-circumference);
+@spinner-duration:                              var(--spinner-duration);
 
-@pr-spinner-line-gutter: @global-xxsmall-gutter - 1px;
-@pr-spinner-line-width: @global-spinner-width - @pr-spinner-line-gutter;
-@pr-spinner-line-height: @pr-spinner-line-width;
-@pr-spinner-line-item-height: 100%;
-@pr-spinner-line-item-width: @pr-spinner-line-gutter;
-@pr-spinner-circle-height: @global-spinner-height;
-@pr-spinner-circle-width: @global-spinner-width;
-@pr-spinner-circle-item-width: 3px;
+@pr-spinner-line-gutter:                        var(--pr-spinner-line-gutter);
+@pr-spinner-line-width:                         var(--pr-spinner-line-width);
+@pr-spinner-line-height:                        @pr-spinner-line-width;
+@pr-spinner-line-item-height:                   var(--pr-spinner-line-item-height);
+@pr-spinner-line-item-width:                    @pr-spinner-line-gutter;
+@pr-spinner-circle-height:                      @global-spinner-height;
+@pr-spinner-circle-width:                       @global-spinner-width;
+@pr-spinner-circle-item-width:                  var(--pr-spinner-circle-item-width);
 
-@pr-spinner-line-color: darken(@global-white-color, 5%);
-@pr-spinner-circle-color: @global-white-color;
-@pr-spinner-circle-color-fade: fade(@pr-spinner-circle-color, 60%);
+@pr-spinner-line-color:                         var(--pr-spinner-line-color);
+@pr-spinner-circle-color:                       var(--pr-spinner-circle-color);
+@pr-spinner-circle-color-fade:                  var(--pr-spinner-circle-color-fade);
 
-@pr-spinner-line-item-border-radius: 4px;
+@pr-spinner-line-item-border-radius:            var(--pr-spinner-line-item-border-radius);
 
-@pr-spinner-line-animation-duration: 0.6s;
-@pr-spinner-circle-animation-duration: @pr-spinner-line-animation-duration;
+@pr-spinner-line-animation-duration:            var(--pr-spinner-line-animation-duration);
+@pr-spinner-circle-animation-duration:          @pr-spinner-line-animation-duration;
 
 // Miscellaneous
 // ========================================================================

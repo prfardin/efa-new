@@ -14,24 +14,24 @@
 @card-body-padding-vertical-l:                 @global-medium-gutter;
 
 @card-header-padding-horizontal:               @global-gutter;
-@card-header-padding-vertical:                 round((@global-gutter / 2));
+@card-header-padding-vertical:                 var(--card-header-padding-vertical);
 
 @card-header-padding-horizontal-l:             @global-medium-gutter;
-@card-header-padding-vertical-l:               round((@global-medium-gutter / 2));
+@card-header-padding-vertical-l:               var(--card-header-padding-vertical-l);
 
 @card-footer-padding-horizontal:               @global-gutter;
-@card-footer-padding-vertical:                 (@global-gutter / 2);
+@card-footer-padding-vertical:                 var(--card-footer-padding-vertical);
 
 @card-footer-padding-horizontal-l:             @global-medium-gutter;
-@card-footer-padding-vertical-l:               round((@global-medium-gutter / 2));
+@card-footer-padding-vertical-l:               var(--card-footer-padding-vertical-l);
 
 @card-title-font-size:                         @global-large-font-size;
-@card-title-line-height:                       1.4;
+@card-title-line-height:                       var(--card-title-line-height);
 
-@card-badge-top:                               15px;
-@card-badge-right:                             15px;
-@card-badge-height:                            22px;
-@card-badge-padding-horizontal:                10px;
+@card-badge-top:                               var(--card-badge-top);
+@card-badge-right:                             var(--card-badge-right);
+@card-badge-height:                            var(--card-badge-height);
+@card-badge-padding-horizontal:                var(--card-badge-padding-horizontal);
 @card-badge-background:                        @global-primary-background;
 @card-badge-color:                             @global-inverse-color;
 @card-badge-font-size:                         @global-small-font-size;
@@ -53,16 +53,16 @@
 @card-small-body-padding-horizontal:           @global-margin;
 @card-small-body-padding-vertical:             @global-margin;
 @card-small-header-padding-horizontal:         @global-margin;
-@card-small-header-padding-vertical:           round((@global-margin / 1.5));
+@card-small-header-padding-vertical:           var(--card-small-header-padding-vertical);
 @card-small-footer-padding-horizontal:         @global-margin;
-@card-small-footer-padding-vertical:           round((@global-margin / 1.5));
+@card-small-footer-padding-vertical:           var(--card-small-footer-padding-vertical);
 
 @card-large-body-padding-horizontal-l:         @global-large-gutter;
 @card-large-body-padding-vertical-l:           @global-large-gutter;
 @card-large-header-padding-horizontal-l:       @global-large-gutter;
-@card-large-header-padding-vertical-l:         round((@global-large-gutter / 2));
+@card-large-header-padding-vertical-l:         var(--card-large-header-padding-vertical-l);
 @card-large-footer-padding-horizontal-l:       @global-large-gutter;
-@card-large-footer-padding-vertical-l:         round((@global-large-gutter / 2));
+@card-large-footer-padding-vertical-l:         var(--card-large-footer-padding-vertical-l);
 
 @card-hover-background:                        @global-background;
 
@@ -77,8 +77,8 @@
 // New
 //
 
-@card-badge-border-radius:                     2px;
-@card-badge-text-transform:                    uppercase;
+@card-badge-border-radius:                     var(--card-badge-border-radius);
+@card-badge-text-transform:                    var(--card-badge-text-transform);
 
 @card-hover-box-shadow:                        @global-large-box-shadow;
 
