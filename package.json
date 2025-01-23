@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "pinia": "^2.1.7",
-    "uikit": "^3.22.2",
+    "uikit": "github:prfardin/uikit",
     "vue": "^3.4.21",
     "vue-i18n": "^9.13.1",
     "vue-router": "^4.3.0"
