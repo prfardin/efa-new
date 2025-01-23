@@ -9,7 +9,7 @@
 
 @auth-color:                              var(--tm-auth-color);
 @auth-container-color:                    hsl(from @auth-color h s ~'calc(l + 35.25)');
-@auth-primary-color:                      #015eff;
+@auth-primary-color:                      var(--tm-auth-primary-color);
 @auth-default-color:                      @global-white-color;
 @auth-muted-color:                        hsl(from @auth-color h s ~'calc(l + 63.45)');
 
@@ -24,7 +24,7 @@
 @auth-list-active-color:                  hsl(from @auth-primary-color h s ~'calc(l - 10)');
 @auth-list-complete-color:                hsl(from @auth-list-color h s ~'calc(l + 27)');
 @auth-list-complete-bullet-color:         @auth-default-color;
-@auth-list-complete-background-color:     #0fc96f;
+@auth-list-complete-background-color:     var(--tm-auth-list-complete-background-color);
 
 @auth-tile-default-background-color:      @auth-default-color;
 @auth-tile-muted-background-color:        @auth-muted-color;
