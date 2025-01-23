@@ -226,7 +226,33 @@
 // Inverse
 // ========================================================================
 
-@inverse-form-label-color: @inverse-global-emphasis-color;
+@inverse-form-background:                      @inverse-global-muted-background;
+@inverse-form-color:                           @inverse-global-color;
+@inverse-form-focus-background:                rgb(from @inverse-form-background r g b / ~'calc(alpha + 0.05)');           // instead of: fadein(@inverse-form-background, 5%);
+@inverse-form-focus-color:                     @inverse-global-color;
+@inverse-form-placeholder-color:               @inverse-global-muted-color;
+
+@inverse-form-select-icon-color:               @inverse-global-color;
+
+@inverse-form-datalist-icon-color:             @inverse-global-color;
+
+@inverse-form-radio-background:                @inverse-global-muted-background;
+
+@inverse-form-radio-focus-background:          rgb(from @inverse-form-radio-background r g b / ~'calc(alpha + 0.05)');     // instead of: fadein(@inverse-form-radio-background, 5%);
+
+@inverse-form-radio-checked-background:        @inverse-global-primary-background;
+@inverse-form-radio-checked-icon-color:        @inverse-global-inverse-color;
+
+@inverse-form-radio-checked-focus-background:  rgb(from @inverse-global-primary-background r g b / ~'calc(alpha + 0.1)');  // instead of: fadein(@inverse-global-primary-background, 10%);
+
+@inverse-form-icon-color:                      @inverse-global-muted-color;
+@inverse-form-icon-hover-color:                @inverse-global-color;
+
+//
+// New
+//
+
+@inverse-form-label-color:                     @inverse-global-emphasis-color;
 
 .hook-inverse-form() {
   border-color: @inverse-global-border;

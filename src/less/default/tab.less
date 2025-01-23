@@ -126,13 +126,22 @@
 
 .hook-tab-misc() {
 
-    .uk-tab .uk-dropdown { margin-left: (@tab-margin-horizontal + @tab-item-padding-horizontal); }
+    .uk-tab .uk-dropdown { margin-left: calc(@tab-margin-horizontal + @tab-item-padding-horizontal); }
 
 }
 
 
 // Inverse
 // ========================================================================
+
+@inverse-tab-item-color:                       @inverse-global-muted-color;
+@inverse-tab-item-hover-color:                 @inverse-global-color;
+@inverse-tab-item-active-color:                @inverse-global-emphasis-color;
+@inverse-tab-item-disabled-color:              @inverse-global-muted-color;
+
+//
+// New
+//
 
 @inverse-tab-border:                        @inverse-global-border;
 

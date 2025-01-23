@@ -16,7 +16,7 @@
 
 @heading-small-font-size-m:                     var(--heading-small-font-size-m);
 @heading-medium-font-size-m:                    var(--heading-medium-font-size-m);
-@heading-large-font-size-m:                     @heading-medium-font-size-l;            // 4rem / 64px
+@heading-large-font-size-m:                     var(--heading-large-font-size-m);       // 4rem / 64px
 @heading-xlarge-font-size-m:                    @heading-large-font-size-l;             // 6rem / 96px
 @heading-2xlarge-font-size-m:                   @heading-xlarge-font-size-l;            // 8rem / 128px
 @heading-3xlarge-font-size-m:                   @heading-2xlarge-font-size-l;           // 11rem / 176px
@@ -95,6 +95,10 @@
 
 // Inverse
 // ========================================================================
+
+@inverse-heading-divider-border:                  @inverse-global-border;
+@inverse-heading-bullet-border:                   @inverse-global-border;
+@inverse-heading-line-border:                     @inverse-global-border;
 
 .hook-inverse-heading-small() {}
 

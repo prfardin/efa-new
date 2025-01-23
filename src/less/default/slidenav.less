@@ -57,6 +57,10 @@
 // Inverse
 // ========================================================================
 
+@inverse-slidenav-color:                       rgb(from @inverse-global-color r g b / 0.7);                     // instead of: fade(@inverse-global-color, 70%);
+@inverse-slidenav-hover-color:                 rgb(from @inverse-global-color r g b / 0.95);                    // instead of: fade(@inverse-global-color, 95%);
+@inverse-slidenav-active-color:                rgb(from @inverse-global-color r g b / 0.7);                     // instead of: fade(@inverse-global-color, 70%);
+
 .hook-inverse-slidenav() {}
 .hook-inverse-slidenav-hover() {}
 .hook-inverse-slidenav-active() {}

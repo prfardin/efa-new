@@ -51,3 +51,12 @@
 // ========================================================================
 
 .hook-form-range-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-form-range-track-background:          hsl(from @inverse-global-muted-background h s calc(l - 5));                      // instead of: darken(@inverse-global-muted-background, 5%);
+@inverse-form-range-track-focus-background:    rgb(from @inverse-form-range-track-background r g b / ~'calc(alpha + 0.05)');    // instead of: fadein(@inverse-form-range-track-background, 5%);
+
+@inverse-form-range-thumb-background:          rgb(from @inverse-global-color r g b / ~'calc(alpha + 1)');                      // instead of: fadein(@inverse-global-color, 100%);

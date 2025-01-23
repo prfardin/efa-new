@@ -59,10 +59,18 @@
 // Inverse
 // ========================================================================
 
+@inverse-dotnav-item-hover-background:         rgb(from @inverse-global-color r g b / 0.9);                    // instead of: fade(@inverse-global-color, 90%);
+@inverse-dotnav-item-onclick-background:       rgb(from @inverse-global-color r g b / 0.5);                    // instead of: fade(@inverse-global-color, 50%);
+@inverse-dotnav-item-active-background:        rgb(from @inverse-global-color r g b / 0.9);                    // instead of: fade(@inverse-global-color, 90%);
+
+//
+// New
+//
+
 @inverse-dotnav-item-background:                     transparent;
 
 .hook-inverse-dotnav() {}
-.hook-inverse-dotnav-item() { border-color: fade(@inverse-global-color, 90%); }
+.hook-inverse-dotnav-item() { border-color: rgb(from @inverse-global-color r g b / 0.9); }                      // instead of: fade(@inverse-global-color, 90%);
 .hook-inverse-dotnav-item-hover() { border-color: transparent; }
 .hook-inverse-dotnav-item-onclick() { border-color: transparent; }
 .hook-inverse-dotnav-item-active() { border-color: transparent; }

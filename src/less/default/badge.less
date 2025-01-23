@@ -7,13 +7,13 @@
 // Variables
 // ========================================================================
 
-@badge-size:                                    @badge-size;
-@badge-padding-vertical:                        @badge-padding-vertical;
-@badge-padding-horizontal:                      @global-xxsmall-gutter;
-@badge-border-radius:                           @badge-border-radius;
-@badge-background:                              @global-primary-background;
-@badge-color:                                   @global-inverse-color;
-@badge-font-size:                               @badge-font-size;
+@badge-size:                                    var(--badge-size);
+@badge-padding-vertical:                        var(--badge-padding-vertical);
+@badge-padding-horizontal:                      var(--global-xxsmall-gutter);
+@badge-border-radius:                           var(--badge-border-radius);
+@badge-background:                              var(--global-primary-background);
+@badge-color:                                   var(--global-inverse-color);
+@badge-font-size:                               var(--badge-font-size);
 
 
 // Component
@@ -32,6 +32,9 @@
 
 // Inverse
 // ========================================================================
+
+@inverse-badge-background:                     @inverse-global-primary-background;
+@inverse-badge-color:                          @inverse-global-inverse-color;
 
 .hook-inverse-badge() {}
 .hook-inverse-badge-hover() {}
