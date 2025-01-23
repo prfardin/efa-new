@@ -112,21 +112,21 @@ onMounted(() => {
               <div class="pr-sticky-nav-item" :class="{ 'one': stickyValue }">
                 <a @click="changeMode()">
                   <pr-avatar small circle>
-                    <pr-icon :icon="darkMode ? 'sun' : 'moon' " ratio="1.1" />
+                    <pr-icon :icon="darkMode ? 'icon-mono-sun' : 'icon-mono-moon' " ratio="1.1" />
                   </pr-avatar>
                 </a>
               </div>
               <div class="pr-sticky-nav-item" :class="{ 'two': stickyValue }">
                 <pr-toggle target="#notification">
                   <pr-avatar small circle class="pr-primary-darktest-b-c">
-                    <pr-icon icon="bell" />
+                    <pr-icon icon="icon-mono-bell" />
                   </pr-avatar>
                 </pr-toggle>
               </div>
               <div class="pr-sticky-nav-item" :class="{ 'three': stickyValue }">
                 <pr-toggle target="#my-id">
                   <pr-avatar small circle class="pr-primary-darktest-b-c">
-                    <pr-icon icon="create-dashboard" ratio=".8" />
+                    <pr-icon icon="icon-mono-create-dashboard" ratio=".8" />
                   </pr-avatar>
                 </pr-toggle>
               </div>
@@ -169,21 +169,21 @@ onMounted(() => {
                     <li>
                       <a @click="changeMode()">
                         <pr-avatar small circle border>
-                          <pr-icon :icon="darkMode ? 'sun' : 'moon' " ratio="1.1" />
+                          <pr-icon :icon="darkMode ? 'icon-mono-sun' : 'icon-mono-moon' " ratio="1.1" />
                         </pr-avatar>
                       </a>
                     </li>
                     <li>
                       <pr-toggle target="#notification">
                         <pr-avatar small circle border hover>
-                          <pr-icon icon="bell" />
+                          <pr-icon icon="icon-mono-bell" />
                         </pr-avatar>
                       </pr-toggle>
                     </li>
                     <li>
                       <pr-toggle target="#my-id">
                         <pr-avatar small circle border hover>
-                          <pr-icon icon="create-dashboard" ratio=".8" />
+                          <pr-icon icon="icon-mono-create-dashboard" ratio=".8" />
                         </pr-avatar>
                       </pr-toggle>
                     </li>
@@ -281,7 +281,7 @@ onMounted(() => {
                         </div>
                         <pr-link to="/">
                           <pr-avatar small circle border border-hover>
-                            <pr-icon icon="line-arrow-right" ratio=".9" />
+                            <pr-icon icon="icon-line-arrow-right" ratio=".9" />
                           </pr-avatar>
                         </pr-link>
                       </div>
@@ -299,7 +299,7 @@ onMounted(() => {
                         </div>
                         <pr-link to="/">
                           <pr-avatar small circle border border-hover>
-                            <pr-icon icon="line-arrow-right" ratio=".9" />
+                            <pr-icon icon="icon-line-arrow-right" ratio=".9" />
                           </pr-avatar>
                         </pr-link>
                       </div>
@@ -317,7 +317,7 @@ onMounted(() => {
                         </div>
                         <pr-link to="/">
                           <pr-avatar small circle border border-hover>
-                            <pr-icon icon="line-arrow-right" ratio=".9" />
+                            <pr-icon icon="icon-line-arrow-right" ratio=".9" />
                           </pr-avatar>
                         </pr-link>
                       </div>
@@ -335,7 +335,7 @@ onMounted(() => {
                         </div>
                         <pr-link to="/">
                           <pr-avatar small circle border border-hover>
-                            <pr-icon icon="line-arrow-right" ratio=".9" />
+                            <pr-icon icon="icon-line-arrow-right" ratio=".9" />
                           </pr-avatar>
                         </pr-link>
                       </div>
@@ -346,7 +346,7 @@ onMounted(() => {
                       <div class="uk-flex uk-flex-middle uk-flex-between uk-margin-bottom">
                         <div class="pr-flex-items">
                           <pr-avatar small rounded style="background-color: rgb(124 58 237)">
-                            <pr-icon icon="line-dollar-sign"  style="color: white"/>
+                            <pr-icon icon="icon-line-dollar-sign"  style="color: white"/>
                           </pr-avatar>
                           <div>
                             <div class="uk-text-small uk-text-bold">You</div>
@@ -355,7 +355,7 @@ onMounted(() => {
                         </div>
                         <pr-link to="/">
                           <pr-avatar small circle border border-hover>
-                            <pr-icon icon="line-arrow-right" ratio=".9" />
+                            <pr-icon icon="icon-line-arrow-right" ratio=".9" />
                           </pr-avatar>
                         </pr-link>
                       </div>
@@ -384,7 +384,7 @@ onMounted(() => {
                       <div class="uk-flex uk-flex-middle uk-flex-between uk-margin-bottom">
                         <div class="pr-flex-items">
                           <pr-avatar small rounded style="background-color: rgb(124 58 237)">
-                            <pr-icon icon="line-dollar-sign"  style="color: white"/>
+                            <pr-icon icon="icon-line-dollar-sign"  style="color: white"/>
                           </pr-avatar>
                           <div>
                             <div class="uk-text-small uk-text-bold">You</div>
@@ -393,7 +393,7 @@ onMounted(() => {
                         </div>
                         <pr-link to="/">
                           <pr-avatar small circle border border-hover>
-                            <pr-icon icon="line-arrow-right" ratio=".9" />
+                            <pr-icon icon="icon-line-arrow-right" ratio=".9" />
                           </pr-avatar>
                         </pr-link>
                       </div>
@@ -422,7 +422,7 @@ onMounted(() => {
                       <div class="uk-flex uk-flex-middle uk-flex-between uk-margin-bottom">
                         <div class="pr-flex-items">
                           <pr-avatar small rounded style="background-color: rgb(124 58 237)">
-                            <pr-icon icon="line-dollar-sign"  style="color: white"/>
+                            <pr-icon icon="icon-line-dollar-sign"  style="color: white"/>
                           </pr-avatar>
                           <div>
                             <div class="uk-text-small uk-text-bold">You</div>
@@ -431,7 +431,7 @@ onMounted(() => {
                         </div>
                         <pr-link to="/">
                           <pr-avatar small circle border border-hover>
-                            <pr-icon icon="line-arrow-right" ratio=".9" />
+                            <pr-icon icon="icon-line-arrow-right" ratio=".9" />
                           </pr-avatar>
                         </pr-link>
                       </div>
@@ -461,7 +461,7 @@ onMounted(() => {
                     <div class="pr-schedule">
                       <div class="pr-avatar-border ">
                         <pr-avatar class="uk-box-shadow-small" tag="div" small circle border>
-                          <pr-icon icon="line-phone" ratio=".7" />
+                          <pr-icon icon="icon-line-phone" ratio=".7" />
                         </pr-avatar>
                       </div>
                       <div class="uk-margin-medium-left">
@@ -472,7 +472,7 @@ onMounted(() => {
                     <div class="pr-schedule">
                       <div class="pr-avatar-border ">
                         <pr-avatar class="uk-box-shadow-small" tag="div" small circle border>
-                          <pr-icon icon="line-phone" ratio=".7" />
+                          <pr-icon icon="icon-line-phone" ratio=".7" />
                         </pr-avatar>
                       </div>
                       <div class="uk-margin-medium-left">
@@ -483,7 +483,7 @@ onMounted(() => {
                     <div class="pr-schedule">
                       <div class="pr-avatar-border ">
                         <pr-avatar class="uk-box-shadow-small" tag="div" small circle border>
-                          <pr-icon icon="line-phone" ratio=".7" />
+                          <pr-icon icon="icon-line-phone" ratio=".7" />
                         </pr-avatar>
                       </div>
                       <div class="uk-margin-medium-left">
@@ -494,7 +494,7 @@ onMounted(() => {
                     <div class="pr-schedule">
                       <div class="pr-avatar-border ">
                         <pr-avatar class="uk-box-shadow-small" tag="div" small circle border>
-                          <pr-icon icon="line-phone" ratio=".7" />
+                          <pr-icon icon="icon-line-phone" ratio=".7" />
                         </pr-avatar>
                       </div>
                       <div class="uk-margin-medium-left">
@@ -505,7 +505,7 @@ onMounted(() => {
                     <div class="pr-schedule">
                       <div class="pr-avatar-border ">
                         <pr-avatar class="uk-box-shadow-small" tag="div" small circle border>
-                          <pr-icon icon="line-phone" ratio=".7" />
+                          <pr-icon icon="icon-line-phone" ratio=".7" />
                         </pr-avatar>
                       </div>
                       <div class="uk-margin-medium-left">
@@ -516,7 +516,7 @@ onMounted(() => {
                     <div class="pr-schedule">
                       <div class="pr-avatar-border ">
                         <pr-avatar class="uk-box-shadow-small" tag="div" small circle border>
-                          <pr-icon icon="line-phone" ratio=".7" />
+                          <pr-icon icon="icon-line-phone" ratio=".7" />
                         </pr-avatar>
                       </div>
                       <div class="uk-margin-medium-left">

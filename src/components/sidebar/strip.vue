@@ -60,9 +60,9 @@ function goSettings() {
 }
 
 const stripFooterItem = ref([
-  { icon: "paint-tool", title: "Customize", click: test },
-  { icon: "search", title: "Search", click: openSearch },
-  { icon: "setting", title: "Setting", click: goSettings }
+  { icon: "icon-mono-paint-tool", title: "Customize", click: test },
+  { icon: "icon-mono-search", title: "Search", click: openSearch },
+  { icon: "icon-mono-setting", title: "Setting", click: goSettings }
 ])
 
 onMounted(() => {
@@ -100,10 +100,10 @@ function toggleSidebar(i: number) {
 }
 
 const userShortcuts = ref<any>([
-  { href:"/", icon: "user", name: "saeed bayat", gmail: "saeedbayat@test.com" },
-  { href:"/", icon: "briefcase", name: "saeed bayat", gmail: "saeedbayat@test.com" },
-  { href:"/", icon: "users-alt", name: "saeed bayat", gmail: "saeedbayat@test.com" },
-  { href:"/", icon: "setting", name: "saeed bayat", gmail: "saeedbayat@test.com" }
+  { href:"/", icon: "icon-mono-user", name: "saeed bayat", gmail: "saeedbayat@test.com" },
+  { href:"/", icon: "icon-mono-briefcase", name: "saeed bayat", gmail: "saeedbayat@test.com" },
+  { href:"/", icon: "icon-mono-users-alt", name: "saeed bayat", gmail: "saeedbayat@test.com" },
+  { href:"/", icon: "icon-mono-setting", name: "saeed bayat", gmail: "saeedbayat@test.com" }
 ])
 
 </script>

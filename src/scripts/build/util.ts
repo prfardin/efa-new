@@ -56,6 +56,23 @@ export async function compile(
   await bundle.close()
 }
 
+// Find which used icons in project and render just those svg from path
+// this function Scan all Vue files in project and Match icons by a naming pattern: "icon-*"
+export async function findIcons(findDir: string): Promise<Set<string>> {
+  const files = glob.sync(`${findDir}/**/*.vue`);
+  const iconSet = new Set<string>();
+
+  for (const file of files) {
+    const content = fs.readFileSync(file, 'utf-8');
+    const matches = content.match(/icon-([a-zA-Z0-9_-]+)/g);
+    if (matches) {
+      matches.forEach((match) => iconSet.add(match));
+    }
+  }
+
+  return iconSet;
+}
+
 // read all svg file in src and compile theme in json
 export async function icons(src: string, prefix: string = ''): Promise<string> {
   const options: any = {

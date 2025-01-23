@@ -3,7 +3,7 @@ import rtlcss from 'rtlcss'
 import { rtlcssConfig, rtlPlugin } from './rtlcss'
 import vueI18n from '@intlify/unplugin-vue-i18n/vite'
 import vue from '@vitejs/plugin-vue'
-import compileIcons, { monochromeIcons, lineIcons, IconsDir } from '../build/icons'
+import compileIcons, { monochromeIcons, lineIcons, solidIcons, IconsDir } from '../build/icons'
 
 // types
 interface ViteConfig {
@@ -14,8 +14,8 @@ interface ViteConfig {
 // all files in publicDir path will be copied to build path as the same they are
 export const publicDir: string = 'src/public'
 
-export function defaultIcons(sources: IconsDir[] = [monochromeIcons, lineIcons]) {
-  return Promise.resolve(compileIcons(sources))
+export function defaultIcons(sources: IconsDir[] = [monochromeIcons, lineIcons, solidIcons]) {
+  return Promise.resolve(compileIcons(sources, 'src'))
 }
 
 // vue vite js plugin
