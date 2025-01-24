@@ -75,11 +75,3 @@ onMounted(() => {
     <slot />
   </div>
 </template>
-
-<style scoped>
-
-.pr-width-256 {
-  width: 256px;
-}
-
-</style>

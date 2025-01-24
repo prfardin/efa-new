@@ -57,7 +57,3 @@ const AccordionClass = computed(() => AccordionClassObject(props))
     </li>
   </ul>
 </template>
-
-<style scoped>
-
-</style>

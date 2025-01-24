@@ -2,7 +2,6 @@
 import { ModalPropsType } from '@u/props'
 import { modal, RefElement } from '@u/util'
 import { onMounted, ref } from 'vue'
-import UIkit from 'uikit'
 
 const el = ref<RefElement>(null)
 
@@ -31,7 +30,3 @@ onMounted(() => {
     </div>
   </div>
 </template>
-
-<style scoped>
-
-</style>

@@ -38,7 +38,3 @@ function setRoute(page: number) {
     </div>
   </div>
 </template>
-
-<style scoped>
-
-</style>

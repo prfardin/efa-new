@@ -17,6 +17,3 @@ const chipClass = computed(() => chipClassObject(props))
   <slot />
 </span>
 </template>
-
-<style scoped>
-</style>

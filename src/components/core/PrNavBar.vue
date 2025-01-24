@@ -69,7 +69,3 @@ onMounted(() => {
     </pr-container>
   </nav>
 </template>
-
-<style scoped>
-
-</style>

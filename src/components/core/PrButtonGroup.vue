@@ -7,11 +7,3 @@
     <slot />
   </div>
 </template>
-
-<style scoped>
-.pr-group-button {
-  display: flex;
-}
-
-
-</style>

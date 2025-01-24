@@ -4,6 +4,3 @@
 <template>
   <div class="pr-placeload"></div>
 </template>
-
-<style scoped>
-</style>

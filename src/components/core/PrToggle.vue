@@ -42,7 +42,3 @@ onMounted(() => {
     <slot />
   </component>
 </template>
-
-<style scoped>
-
-</style>

@@ -109,8 +109,8 @@ export interface LinkPropsType extends LinkClassType {
  */
 export interface IconPropsType {
   tag?: 'span' | string
-  icon: string | undefined
-  ratio?: string
+  icon?: string
+  ratio?: number
 }
 
 /**
