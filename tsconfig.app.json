@@ -21,6 +21,7 @@
       "@t/*": ["./src/.temp/*"],
       "@c/*": ["./src/components/*"],
       "@v/*": ["./src/views/*"],
+      "@vd/*": ["./src/views/docs/*"],
       "@f/*": ["./src/fonts/*"],
       "@i/*": ["./src/images/*"],
       "@s/*": ["./src/stores/*"],

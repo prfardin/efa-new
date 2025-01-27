@@ -17,6 +17,7 @@ import App from './App.vue'
 
 import UIkit from 'uikit'
 import Icons from '@t/uikit-icons'
+
 UIkit.icon.add(Icons())
 
 const app = createApp(App)
