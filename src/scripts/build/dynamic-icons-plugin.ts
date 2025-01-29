@@ -2,7 +2,6 @@ import { Plugin } from 'vite';
 import fs from 'fs';
 import path from 'path';
 import { icons } from './util'
-import chokidar from 'chokidar'
 
 let cachedIcons = new Set<string>();
 
@@ -16,38 +15,31 @@ export function dynamicIcon(): Plugin {
             // Load existing icons into cache
             const existingIcons = loadExistingIcons(outputPath);
             cachedIcons = new Set(existingIcons);
+        },
+        async handleHotUpdate({ file }) {
+            if (file && file.endsWith('.vue')) {
+                const newIcons = new Set<string>();
 
-            chokidar.watch('./src/**/*.{vue,svg}').on('change', async (file) => {
-                if (file.endsWith('.vue')) {
-                    const newIcons = await handleVueFileChange(file, outputPath);
-                    if (newIcons.size > 0) {
-                        await appendIconsToFile(newIcons, outputPath);
+                // Step 1: Read the changed file content
+                const content = fs.readFileSync(file, 'utf-8');
+
+                // Step 2: Find new icons in the file
+                const fileIcons = findIconsInContent(content);
+
+                // Step 3: Update the cached icons
+                fileIcons.forEach(icon => {
+                    if (!cachedIcons.has(icon)) {
+                        cachedIcons.add(icon);
+                        newIcons.add(icon);
                     }
+                });
+
+                if (newIcons.size > 0) {
+                    await appendIconsToFile(newIcons, outputPath);
                 }
-            });
+            }
         },
     };
-}
-
-// Helper function to handle Vue file change
-async function handleVueFileChange(file: string, outputPath: string): Promise<Set<string>> {
-    const newIcons = new Set<string>();
-
-    // Step 1: Read the changed file content
-    const content = fs.readFileSync(file, 'utf-8');
-
-    // Step 2: Find new icons in the file
-    const fileIcons = findIconsInContent(content);
-
-    // Step 3: Update the cached icons
-    fileIcons.forEach(icon => {
-        if (!cachedIcons.has(icon)) {
-            cachedIcons.add(icon);
-            newIcons.add(icon);
-        }
-    });
-
-    return newIcons;
 }
 
 // Helper: Load existing icons from file
@@ -99,8 +91,6 @@ async function appendIconsToFile(newIcons: Set<string>, filePath: string) {
             null,
             '    '
         ).slice(1, -1)
-
-        console.log(newIconsContent)
 
         // Insert new icons after the last </svg>
         existingContent = existingContent.replace(lastSvgRegex, `</svg>",\n${newIconsContent}`);
