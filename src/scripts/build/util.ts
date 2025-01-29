@@ -1,11 +1,10 @@
 import { glob } from 'glob'
-import { basename } from 'path'
 import fs, { type PathLike } from 'fs-extra'
 import pLimit from 'p-limit'
 import { InputOptions, OutputOptions, RollupBuild } from 'rollup'
 import { rollup } from 'rollup'
 import replace from '@rollup/plugin-replace'
-import { optimize, Output } from 'svgo'
+import { optimize } from 'svgo'
 
 const limit = pLimit(Number(process.env.cpus || 2))
 
@@ -74,7 +73,7 @@ export async function findIcons(findDir: string): Promise<Set<string>> {
 }
 
 // read all svg file in src and compile theme in json
-export async function icons(src: string, prefix: string = ''): Promise<string> {
+export async function icons(iconPath: string, prefix: string = ''): Promise<string> {
     const options: any = {
         plugins: [
             {
@@ -99,22 +98,7 @@ export async function icons(src: string, prefix: string = ''): Promise<string> {
         ]
     }
 
-    const files = await glob(src, {})
-    const icons = await Promise.all(
-        files.map((file: string) =>
-            limit(async () => {
-                const optimized: Output = optimize(await read(file), options)
-                try {
-                    return optimized.data
-                } catch (error) {
-                    return error
-                }
-            })
-        )
-    )
-
-    return files.reduce((result: any, file: string, i: number) => {
-        result[prefix + basename(file, '.svg')] = icons[i]
-        return result
-    }, {})
+    if (fs.existsSync(iconPath))
+        return prefix + optimize(await read(iconPath), options).data
+    return ''
 }

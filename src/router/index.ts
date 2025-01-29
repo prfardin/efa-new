@@ -4,9 +4,7 @@ import devRoutes from '@/router/dev-routes'
 
 // we use dynamic import
 // which lazy-loaded when the route is visited.
-const routes: RouteRecordRaw[] = [
-    { path: '/docs', component: () => import('@vd/index-docs.vue') },
-]
+const routes: RouteRecordRaw[] = []
 
 // Prevent rendering of documentation routes and components in production mode.
 isDev() && routes.push(...devRoutes())
