@@ -5,10 +5,7 @@ import PrIcon from '@c/core/PrIcon.vue'
 
 <template>
     <div class="uk-background-default">
-        <pr-icon icon="icon-iconoir-regular-accessibility" />
-        <pr-icon icon="icon-iconoir-regular-accessibility-sign" />
-        <pr-icon icon="icon-iconoir-regular-agile" />
-        <pr-icon icon="icon-lucide-regular-agile" />
+        <pr-icon icon="icon-ming-regular-ad-circle-off" ratio="15" />
     </div>
 </template>
 
