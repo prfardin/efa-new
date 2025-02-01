@@ -120,7 +120,8 @@ export function accordion(el: Element, options?: UIkitAccordionOptions) {
 export function notify(messageOrOptions: UIkitNotificationOptions | string, optionsOrStatus?: UIkitNotificationOptions | string) {
     if (typeof messageOrOptions === 'string') {
         return UIkit.notification(messageOrOptions, optionsOrStatus)
-    } else {
+    }
+    else {
         return UIkit.notification(messageOrOptions)
     }
 }

@@ -4,7 +4,7 @@ import pLimit from 'p-limit'
 import { InputOptions, OutputOptions, RollupBuild } from 'rollup'
 import { rollup } from 'rollup'
 import replace from '@rollup/plugin-replace'
-import { optimize } from 'svgo'
+import { Config, optimize } from 'svgo'
 
 const limit = pLimit(Number(process.env.cpus || 2))
 
@@ -74,10 +74,11 @@ export async function findIcons(findDir: string): Promise<Set<string>> {
 
 // read all svg file in src and compile theme in json
 export async function icons(iconPath: string, prefix: string = ''): Promise<string> {
-    const options: any = {
+    const options: Config = {
         plugins: [
             {
                 name: 'preset-default',
+                // @ts-ignore
                 removeDimensions: false,
                 removeScriptElement: false,
                 removeStyleElement: false,
@@ -94,7 +95,8 @@ export async function icons(iconPath: string, prefix: string = ''): Promise<stri
                         removeUselessStrokeAndFill: false
                     }
                 }
-            }
+            },
+            "convertStyleToAttrs"
         ]
     }
 

@@ -36,7 +36,7 @@ function onMouseDown(event: Event) {
   /**
    * must change in future & we need to discover
    * if there is a way to use some function or attribute without condition
-   * with boolean props defined, ex : if (props.x) use x()
+   * with boolean props defined, ex: if (props.x) use x()
    * change it to something like directives
    */
   if (props.ripple) useRipple(event)

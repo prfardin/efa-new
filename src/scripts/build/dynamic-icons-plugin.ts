@@ -67,7 +67,6 @@ function extractIcons(content: string): string[] {
 
 // Helper: Append new icons to the file
 async function appendIconsToFile(newIcons: Set<string>, filePath: string) {
-    let existingContent = fs.readFileSync(filePath, 'utf-8');
 
     const lastSvgRegex = /<\/svg>"\s*,?\s*(?=\}\s*})/; // Matches the last </svg> before the closing braces
 
@@ -76,15 +75,17 @@ async function appendIconsToFile(newIcons: Set<string>, filePath: string) {
     await Promise.all([...newIcons].map(async (iconName) => {
         const name = iconName.match(/^icon-([^-\s]+)-([^-\s]+)-(.+)$/);
 
-        if (name) {
+        if (name && name.length > 3) {
             const [_, category, subcategory, icon] = name;
             const iconPath = `./src/images/core/${category}/${subcategory}/icons/${icon}.svg`;
 
-            compiledIcons[iconName] = await icons(iconPath);
+            const compiledIcon = await icons(iconPath);
+            if (compiledIcon)
+                compiledIcons[iconName] = compiledIcon;
         }
     }));
 
-    try {
+    if (Object.keys(compiledIcons).length) {
         // Prepare new icons to add
         const newIconsContent = JSON.stringify(
             compiledIcons,
@@ -92,13 +93,12 @@ async function appendIconsToFile(newIcons: Set<string>, filePath: string) {
             '    '
         ).slice(1, -1)
 
+        let existingContent = fs.readFileSync(filePath, 'utf-8');
+
         // Insert new icons after the last </svg>
         existingContent = existingContent.replace(lastSvgRegex, `</svg>",\n${newIconsContent}`);
 
         // Write the updated content back to the file
         fs.writeFileSync(filePath, existingContent, 'utf-8');
-    }
-    catch (error) {
-        console.log(error)
     }
 }

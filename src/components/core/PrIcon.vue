@@ -20,6 +20,12 @@ const el = ref<RefElement>(null)
 function setIcon() {
   return icon(el.value, { icon: props.icon, ratio: props.ratio as number })
 }
+
+
+/**
+ * must change in future
+ * we need watchEffect just in dev mode, that because we are changing icons
+ */
 onMounted(() => {
   watchEffect(setIcon)
 })
