@@ -11,6 +11,8 @@ import PrIcon from '@c/core/PrIcon.vue'
         <pr-icon icon="icon-ming-cuteli-loading-2" />
         <pr-icon icon="icon-ming-duotone-loading" />
         <pr-icon icon="icon-ming-duotone-ad-rectangle-off" />
+        <pr-icon icon="icon-ming-fill-ABS" />
+        <pr-icon icon="icon-ming-fill-ad-rectangle-off" />
     </div>
 </template>
 
