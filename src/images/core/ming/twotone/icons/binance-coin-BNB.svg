@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><g stroke="#F7F9FC" stroke-linejoin="round" stroke-width="2" opacity=".3"><path d="m19.425 13.767-1.768-1.768 1.768-1.768L21.193 12zM4.578 10.234l1.768 1.768-1.768 1.767-1.767-1.767z"/></g><path stroke="#F7F9FC" stroke-linejoin="round" stroke-width="2" d="M17.304 8.11 12 2.807 6.697 8.11l1.768 1.768 3.536-3.536 3.535 3.536zM12 13.767l-1.767-1.768L12 10.231 13.768 12zM6.7 15.89l5.303 5.304 5.303-5.303-1.767-1.768-3.536 3.535-3.535-3.535z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+    <g stroke="currentColor" stroke-linejoin="round" stroke-width="2" opacity=".3">
+        <path d="m19.425 13.767-1.768-1.768 1.768-1.768L21.193 12zM4.578 10.234l1.768 1.768-1.768 1.767-1.767-1.767z"/>
+    </g>
+    <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M17.304 8.11 12 2.807 6.697 8.11l1.768 1.768 3.536-3.536 3.535 3.536zM12 13.767l-1.767-1.768L12 10.231 13.768 12zM6.7 15.89l5.303 5.304 5.303-5.303-1.767-1.768-3.536 3.535-3.535-3.535z"/>
+</svg>

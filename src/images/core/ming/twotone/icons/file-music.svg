@@ -1,1 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path stroke="#F7F9FC" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 3v5.5a.5.5 0 0 0 .5.5H19m-5.414-6H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8.414a1 1 0 0 0-.293-.707l-4.414-4.414A1 1 0 0 0 13.586 3" opacity=".3"/><path fill="#F7F9FC" d="M12 16a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/><path stroke="#F7F9FC" stroke-linecap="round" stroke-width="2" d="M12 16v-3.14a.5.5 0 0 1 .342-.474L13.5 12M12 16a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 3v5.5a.5.5 0 0 0 .5.5H19m-5.414-6H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8.414a1 1 0 0 0-.293-.707l-4.414-4.414A1 1 0 0 0 13.586 3" opacity=".3"/>
+    <path fill="currentColor" d="M12 16a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M12 16v-3.14a.5.5 0 0 1 .342-.474L13.5 12M12 16a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/>
+</svg>

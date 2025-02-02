@@ -1,1 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path stroke="#F7F9FC" stroke-linecap="round" stroke-width="2" d="m10 21 3-7 3 7" opacity=".3"/><path stroke="#F7F9FC" stroke-linecap="round" stroke-width="2" d="M11.549 8.585a1 1 0 0 1 .366-1.366l5.196-3a1 1 0 0 1 1.366.366l2.5 4.33a1 1 0 0 1-.366 1.366l-5.196 3a1 1 0 0 1-1.366-.366z"/><path stroke="#F7F9FC" stroke-linecap="round" stroke-width="2" d="M5.987 12.95a1 1 0 0 1 .366-1.365l5.196-3 2.5 4.33-5.196 3a1 1 0 0 1-1.366-.366zM3.022 15.817a1 1 0 0 1 .366-1.366l2.599-1.5 1.5 2.598-2.599 1.5a1 1 0 0 1-1.366-.366z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m10 21 3-7 3 7" opacity=".3"/>
+    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M11.549 8.585a1 1 0 0 1 .366-1.366l5.196-3a1 1 0 0 1 1.366.366l2.5 4.33a1 1 0 0 1-.366 1.366l-5.196 3a1 1 0 0 1-1.366-.366z"/>
+    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5.987 12.95a1 1 0 0 1 .366-1.365l5.196-3 2.5 4.33-5.196 3a1 1 0 0 1-1.366-.366zM3.022 15.817a1 1 0 0 1 .366-1.366l2.599-1.5 1.5 2.598-2.599 1.5a1 1 0 0 1-1.366-.366z"/>
+</svg>
