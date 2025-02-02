@@ -1,1 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="#fff" fill-opacity=".01" d="M24 0v24H0V0z"/><g fill="#F7F9FC" opacity=".3"><path d="M12 3a8 8 0 0 0-8 8v8.62a1.4 1.4 0 0 0 2.08 1.224l.942-.523a3 3 0 0 1 2.946.018l.544.31a3 3 0 0 0 2.976 0l.544-.31a3 3 0 0 1 2.946-.018l.942.523A1.4 1.4 0 0 0 20 19.622V11a8 8 0 0 0-8-8"/><path d="M9.5 10.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M15.5 10.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/></g><path fill="#F7F9FC" d="M9.5 10.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M15.5 10.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/><path stroke="#F7F9FC" stroke-linejoin="round" stroke-width="2" d="M12 3a8 8 0 0 0-8 8v8.62a1.4 1.4 0 0 0 2.08 1.224l.942-.523a3 3 0 0 1 2.946.018l.544.31a3 3 0 0 0 2.976 0l.544-.31a3 3 0 0 1 2.946-.018l.942.523A1.4 1.4 0 0 0 20 19.622V11a8 8 0 0 0-8-8Z"/><path stroke="#F7F9FC" stroke-linejoin="round" stroke-width="2" d="M9.5 10.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0ZM15.5 10.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <g fill="currentColor" opacity=".3">
+        <path d="M12 3a8 8 0 0 0-8 8v8.62a1.4 1.4 0 0 0 2.08 1.224l.942-.523a3 3 0 0 1 2.946.018l.544.31a3 3 0 0 0 2.976 0l.544-.31a3 3 0 0 1 2.946-.018l.942.523A1.4 1.4 0 0 0 20 19.622V11a8 8 0 0 0-8-8"/>
+        <path d="M9.5 10.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M15.5 10.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+    </g>
+    <path fill="currentColor" d="M9.5 10.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M15.5 10.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+    <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M12 3a8 8 0 0 0-8 8v8.62a1.4 1.4 0 0 0 2.08 1.224l.942-.523a3 3 0 0 1 2.946.018l.544.31a3 3 0 0 0 2.976 0l.544-.31a3 3 0 0 1 2.946-.018l.942.523A1.4 1.4 0 0 0 20 19.622V11a8 8 0 0 0-8-8Z"/>
+    <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M9.5 10.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0ZM15.5 10.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
+</svg>

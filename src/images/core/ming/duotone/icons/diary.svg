@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="#fff" fill-opacity=".01" d="M24 0v24H0V0z"/><g fill="#F7F9FC" opacity=".3"><path d="M5 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1z"/><path d="M8 7.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5z"/></g><path fill="#F7F9FC" d="M4 5a1 1 0 0 0 0 2zm0 4a1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0 2zm0 4a1 1 0 1 0 0 2zM6 4h12V2H6zm12 0v16h2V4zm0 16H6v2h12zM6 20V4H4v16zM4 7h1V5H4zm0 4h1V9H4zm0 4h1v-2H4zm0 4h1v-2H4zM8.5 8h7V6h-7zm6.5-.5v2h2v-2zm.5 1.5h-7v2h7zM9 9.5v-2H7v2zM8.5 9a.5.5 0 0 1 .5.5H7A1.5 1.5 0 0 0 8.5 11zm6.5.5a.5.5 0 0 1 .5-.5v2A1.5 1.5 0 0 0 17 9.5zM6 20H4a2 2 0 0 0 2 2zM18 4h2a2 2 0 0 0-2-2zM8.5 6A1.5 1.5 0 0 0 7 7.5h2a.5.5 0 0 1-.5.5zm7 2a.5.5 0 0 1-.5-.5h2A1.5 1.5 0 0 0 15.5 6zM18 20v2a2 2 0 0 0 2-2zM6 2a2 2 0 0 0-2 2h2z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <g fill="currentColor" opacity=".3">
+        <path d="M5 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1z"/>
+        <path d="M8 7.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5z"/>
+    </g>
+    <path fill="currentColor" d="M4 5a1 1 0 0 0 0 2zm0 4a1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0 2zm0 4a1 1 0 1 0 0 2zM6 4h12V2H6zm12 0v16h2V4zm0 16H6v2h12zM6 20V4H4v16zM4 7h1V5H4zm0 4h1V9H4zm0 4h1v-2H4zm0 4h1v-2H4zM8.5 8h7V6h-7zm6.5-.5v2h2v-2zm.5 1.5h-7v2h7zM9 9.5v-2H7v2zM8.5 9a.5.5 0 0 1 .5.5H7A1.5 1.5 0 0 0 8.5 11zm6.5.5a.5.5 0 0 1 .5-.5v2A1.5 1.5 0 0 0 17 9.5zM6 20H4a2 2 0 0 0 2 2zM18 4h2a2 2 0 0 0-2-2zM8.5 6A1.5 1.5 0 0 0 7 7.5h2a.5.5 0 0 1-.5.5zm7 2a.5.5 0 0 1-.5-.5h2A1.5 1.5 0 0 0 15.5 6zM18 20v2a2 2 0 0 0 2-2zM6 2a2 2 0 0 0-2 2h2z"/>
+</svg>

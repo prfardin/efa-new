@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+    <path fill="url(#a)" d="M13.25 3.5a1.25 1.25 0 1 0-2.5 0 1.25 1.25 0 0 0 2.5 0"/>
+    <path fill="url(#b)" d="M13.25 20.5a1.25 1.25 0 1 0-2.5 0 1.25 1.25 0 0 0 2.5 0"/>
+    <path fill="url(#c)" d="M18.008 5.859a1.25 1.25 0 1 0-2.023-1.47 1.25 1.25 0 0 0 2.023 1.47"/>
+    <path fill="url(#d)" d="M8.015 19.612a1.25 1.25 0 1 0-2.022-1.47 1.25 1.25 0 0 0 2.022 1.47"/>
+    <path fill="url(#e)" d="M21.273 8.987a1.25 1.25 0 1 1-2.378.772 1.25 1.25 0 0 1 2.378-.772"/>
+    <path fill="url(#f)" d="M5.105 14.24a1.25 1.25 0 1 1-2.378.773 1.25 1.25 0 0 1 2.378-.773"/>
+    <path fill="url(#g)" d="M19.698 15.815a1.25 1.25 0 1 0 .772-2.378 1.25 1.25 0 0 0-.772 2.378"/>
+    <path fill="url(#h)" d="M3.53 10.562a1.25 1.25 0 1 0 .772-2.378 1.25 1.25 0 0 0-.772 2.378"/>
+    <path fill="url(#i)" d="M17.731 19.888a1.25 1.25 0 1 1-1.47-2.022 1.25 1.25 0 0 1 1.47 2.022"/>
+    <path fill="url(#j)" d="M7.739 6.135a1.25 1.25 0 1 1-1.47-2.023 1.25 1.25 0 0 1 1.47 2.023"/>
+    <defs>
+        <radialGradient id="a" cx="0" cy="0" r="1" gradientTransform="matrix(2.8003 -9.2625 8.93523 2.70136 12 12)"               gradientUnits="userSpaceOnUse">   <stop stop-color="currentColor"/>   <stop offset=".317" stop-color="currentColor"/>   <stop offset="1" stop-color="currentColor" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="b" cx="0" cy="0" r="1" gradientTransform="matrix(2.8003 -9.2625 8.93523 2.70136 12 12)"               gradientUnits="userSpaceOnUse">   <stop stop-color="currentColor"/>   <stop offset=".317" stop-color="currentColor"/>   <stop offset="1" stop-color="currentColor" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="c" cx="0" cy="0" r="1" gradientTransform="matrix(2.8003 -9.2625 8.93523 2.70136 12 12)"               gradientUnits="userSpaceOnUse">   <stop stop-color="currentColor"/>   <stop offset=".317" stop-color="currentColor"/>   <stop offset="1" stop-color="currentColor" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="d" cx="0" cy="0" r="1" gradientTransform="matrix(2.8003 -9.2625 8.93523 2.70136 12 12)"               gradientUnits="userSpaceOnUse">   <stop stop-color="currentColor"/>   <stop offset=".317" stop-color="currentColor"/>   <stop offset="1" stop-color="currentColor" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="e" cx="0" cy="0" r="1" gradientTransform="matrix(2.8003 -9.2625 8.93523 2.70136 12 12)"               gradientUnits="userSpaceOnUse">   <stop stop-color="currentColor"/>   <stop offset=".317" stop-color="currentColor"/>   <stop offset="1" stop-color="currentColor" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="f" cx="0" cy="0" r="1" gradientTransform="matrix(2.8003 -9.2625 8.93523 2.70136 12 12)"               gradientUnits="userSpaceOnUse">   <stop stop-color="currentColor"/>   <stop offset=".317" stop-color="currentColor"/>   <stop offset="1" stop-color="currentColor" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="g" cx="0" cy="0" r="1" gradientTransform="matrix(2.8003 -9.2625 8.93523 2.70136 12 12)"               gradientUnits="userSpaceOnUse">   <stop stop-color="currentColor"/>   <stop offset=".317" stop-color="currentColor"/>   <stop offset="1" stop-color="currentColor" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="h" cx="0" cy="0" r="1" gradientTransform="matrix(2.8003 -9.2625 8.93523 2.70136 12 12)"               gradientUnits="userSpaceOnUse">   <stop stop-color="currentColor"/>   <stop offset=".317" stop-color="currentColor"/>   <stop offset="1" stop-color="currentColor" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="i" cx="0" cy="0" r="1" gradientTransform="matrix(2.8003 -9.2625 8.93523 2.70136 12 12)"               gradientUnits="userSpaceOnUse">   <stop stop-color="currentColor"/>   <stop offset=".317" stop-color="currentColor"/>   <stop offset="1" stop-color="currentColor" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="j" cx="0" cy="0" r="1" gradientTransform="matrix(2.8003 -9.2625 8.93523 2.70136 12 12)"               gradientUnits="userSpaceOnUse">   <stop stop-color="currentColor"/>   <stop offset=".317" stop-color="currentColor"/>   <stop offset="1" stop-color="currentColor" stop-opacity="0"/>
+        </radialGradient>
+    </defs>
+</svg>

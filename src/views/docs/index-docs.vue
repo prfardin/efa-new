@@ -5,7 +5,12 @@ import PrIcon from '@c/core/PrIcon.vue'
 
 <template>
     <div class="uk-background-default">
-        <pr-icon icon="icon-ming-regular-ad-circle-off" ratio="15" />
+        <pr-icon icon="icon-ming-cutefi-ABS" />
+        <pr-icon icon="icon-ming-cutere-ABS" />
+        <pr-icon icon="icon-ming-cuteli-ABS" />
+        <pr-icon icon="icon-ming-cuteli-loading-2" />
+        <pr-icon icon="icon-ming-duotone-loading" />
+        <pr-icon icon="icon-ming-duotone-ad-rectangle-off" />
     </div>
 </template>
 
