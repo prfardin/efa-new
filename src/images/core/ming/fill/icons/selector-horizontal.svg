@@ -1,1 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><g fill="none" fill-rule="evenodd"><path fill="#09244B" d="M7.293 13.707a1 1 0 0 1 0-1.414l2-2A1 1 0 0 1 11 11v4a1 1 0 0 1-1.707.707l-2-2Zm6.324 2.217A1 1 0 0 1 13 15v-4a1 1 0 0 1 1.707-.707l2 2a1 1 0 0 1 0 1.414l-2 2a1 1 0 0 1-1.09.217Z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="currentColor" d="M7.293 13.707a1 1 0 0 1 0-1.414l2-2A1 1 0 0 1 11 11v4a1 1 0 0 1-1.707.707l-2-2Zm6.324 2.217A1 1 0 0 1 13 15v-4a1 1 0 0 1 1.707-.707l2 2a1 1 0 0 1 0 1.414l-2 2a1 1 0 0 1-1.09.217Z"/>
+    </g>
+</svg>
