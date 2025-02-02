@@ -1,1 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="#fff" fill-opacity=".01" d="M24 0v24H0V0z"/><path stroke="#F7F9FC" stroke-linecap="square" d="M6 6h6l1.808 2.712M3 9h14v10H3zm14 4 4-2.464v6.928L17 15z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+    <path stroke="currentColor" stroke-linecap="square" d="M6 6h6l1.808 2.712M3 9h14v10H3zm14 4 4-2.464v6.928L17 15z"/>
+</svg>

@@ -1,4 +1,3 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M24 0V24H0V0H24Z" fill="white" fill-opacity="0.01"/>
-<path d="M3.99988 13L12.0001 21.0011L19.9999 13L14.9999 13L14.9999 3.00005L8.99995 3.00005L8.99995 13L3.99988 13Z" stroke="#F7F9FC" stroke-linecap="square"/>
+    <path d="M3.99988 13L12.0001 21.0011L19.9999 13L14.9999 13L14.9999 3.00005L8.99995 3.00005L8.99995 13L3.99988 13Z" stroke="currentColor" stroke-linecap="square"/>
 </svg>
