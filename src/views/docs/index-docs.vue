@@ -7,6 +7,6 @@ import PrIcon from '@c/core/PrIcon.vue'
 
 <template>
     <div class="uk-background-default">
-        <pr-icon icon="icon-fa-duotoneso-exclamation" />
+        <pr-icon icon="icon-fa-duotoneli-abacus" />
     </div>
 </template>
