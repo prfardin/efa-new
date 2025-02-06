@@ -3,5 +3,5 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M9 12C9.55228 12 10 12.4477 10 13V19C10 19.5523 9.55228 20 9 20C8.44772 20 8 19.5523 8 19V13C8 12.4477 8.44772 12 9 12Z" fill="currentColor"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M13 10C13.5523 10 14 10.4477 14 11L14 19C14 19.5523 13.5523 20 13 20C12.4477 20 12 19.5523 12 19L12 11C12 10.4477 12.4477 10 13 10Z" fill="currentColor"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M17 9C17.5523 9 18 9.44772 18 10L18 19C18 19.5523 17.5523 20 17 20C16.4477 20 16 19.5523 16 19L16 10C16 9.44772 16.4477 9 17 9Z" fill="currentColor"/>
-<path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M20 19C20 18.4477 20.4477 18 21 18L22 18C22.5523 18 23 18.4477 23 19C23 19.5523 22.5523 20 22 20L21 20C20.4477 20 20 19.5523 20 19Z" fill="currentColor"/>
+<path class="pr-icon-bulk-secondary" fill-rule="evenodd" clip-rule="evenodd" d="M20 19C20 18.4477 20.4477 18 21 18L22 18C22.5523 18 23 18.4477 23 19C23 19.5523 22.5523 20 22 20L21 20C20.4477 20 20 19.5523 20 19Z" fill="currentColor"/>
 </svg>

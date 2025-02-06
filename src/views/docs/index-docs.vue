@@ -8,5 +8,7 @@ import PrIcon from '@c/core/PrIcon.vue'
 <template>
     <div class="uk-background-default">
         <pr-icon icon="icon-huge-bulk-3d-scale" />
+        <pr-icon icon="icon-huge-bulk-abacus" />
+        <pr-icon icon="icon-huge-bulk-church" />
     </div>
 </template>
