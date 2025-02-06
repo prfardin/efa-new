@@ -88,8 +88,16 @@
     stroke: @icon-duotone-primary;
   }
 
-  .pr-icon-duotone-secondary {
+  .pr-icon-duotone-secondary:not([fill*="#"]) {
     fill: @icon-duotone-secondary;
+  }
+
+  .pr-icon-duotone-secondary-stroke {
+    stroke: @icon-duotone-primary;
+  }
+
+  .pr-icon-duotone-secondary,
+  .pr-icon-duotone-secondary-stroke {
     opacity: @icon-duotone-secondary-opacity;
   }
 
@@ -98,8 +106,12 @@
     fill: @icon-bulk-primary;
   }
 
-  .pr-icon-bulk-secondary {
+  .pr-icon-bulk-secondary:not([fill*="#"]) {
     fill: @icon-bulk-secondary;
+    opacity: @icon-bulk-secondary-opacity;
+  }
+
+  .pr-icon-bulk-secondary {
     opacity: @icon-bulk-secondary-opacity;
   }
 

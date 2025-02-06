@@ -16,5 +16,11 @@ import PrIcon from '@c/core/PrIcon.vue'
         <pr-icon icon="icon-huge-duotone-abacus" ratio="2" />
         <pr-icon icon="icon-huge-duotone-church" ratio="2" />
         <pr-icon icon="icon-huge-duotone-google-lens" ratio="2" />
+        <pr-icon icon="icon-huge-duotone-1st-bracket" ratio="2" />
+        <pr-icon icon="icon-huge-duotone-1st-bracket-circle" ratio="2" />
+        <pr-icon icon="icon-huge-duotone-video-off" ratio="2" />
+        <pr-icon icon="icon-huge-duotone-lighthouse" ratio="2" />
+        <pr-icon icon="icon-huge-duotone-champion" ratio="2" />
+        <pr-icon icon="icon-huge-duotone-drag-right-03" ratio="2" />
     </div>
 </template>

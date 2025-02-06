@@ -2,7 +2,7 @@
 <path class="pr-icon-duotone-secondary" d="M19 17C20.6569 17 22 15.6569 22 14H16C16 15.6569 17.3431 17 19 17Z" />
 <path class="pr-icon-duotone-secondary" d="M5 17C6.65685 17 8 15.6569 8 14H2C2 15.6569 3.34315 17 5 17Z" />
 <circle cx="12" cy="5" r="2" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<circle opacity="0.4" cx="12" cy="5" r="2" fill="#141B34"/>
+<circle class="pr-icon-duotone-secondary" cx="12" cy="5" r="2" />
 <path d="M10 5H4M14 5H20" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M17 21H7" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M12 7V21" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
