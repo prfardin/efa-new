@@ -1,1 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512"><path class="pr-icon-duotone-secondary" d="M0 0L512 0l0 416-208 0L160 512l0-96L0 416 0 0zM160 176l0 64 64 0 0 64 64 0 0-64 64 0 0-64-64 0 0-64-64 0 0 64-64 0z"/><path class="pr-icon-duotone-primary" d="M288 112l-64 0 0 64-64 0 0 64 64 0 0 64 64 0 0-64 64 0 0-64-64 0 0-64z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512">
+    <path class="pr-icon-duotone-secondary" d="M0 0L512 0l0 416-208 0L160 512l0-96L0 416 0 0zM160 176l0 64 64 0 0 64 64 0 0-64 64 0 0-64-64 0 0-64-64 0 0 64-64 0z"/>
+    <path class="pr-icon-duotone-primary" d="M288 112l-64 0 0 64-64 0 0 64 64 0 0 64 64 0 0-64 64 0 0-64-64 0 0-64z"/>
+</svg>
