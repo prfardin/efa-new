@@ -80,10 +80,10 @@
   --global-inverse-color: var(--global-white-color);
   --global-muted-inverse-color: #f8f7fb;
 
-  --global-icon-primary-color: #7d8da5;
-  --global-icon-secondary-color: #a5b0c0;
-  --global-icon-tertiary-color: #cad1db;
-  --global-icon-quaternary-color: #e1e5ea;
+  --global-icon-primary-color: var(--global-color);
+  --global-icon-secondary-color: hsl(from var(--global-icon-primary-color) h s calc(l + 15));
+  --global-icon-tertiary-color: hsl(from var(--global-icon-primary-color) h s calc(l + 25));
+  --global-icon-quaternary-color: hsl(from var(--global-icon-primary-color) h s calc(l + 35));
 
   --global-icon-duotone-primary-color: var(--global-icon-primary-color, currentColor);
   --global-icon-duotone-secondary-color: var(--global-icon-primary-color, currentColor);
