@@ -1,3 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
     <path stroke="currentColor" stroke-linecap="square" d="M22 9a5 5 0 0 0-5-5m3 10.715C20 17.634 16.194 20 11.5 20S3 17.634 3 14.715c0-2.92 2.833-6.46 6.233-8.222 2.834-1.468 4.534.587 3.4 2.936C17.5 7 18.5 10 17.167 11.78c1.7.587 2.833 1.548 2.833 2.936Z"/>
 </svg>

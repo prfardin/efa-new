@@ -1,7 +1,7 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path opacity="0.4" d="M7.12502 2.9922L5.00003 10L4.83966 10.4381C8.82886 12.5176 15.1471 12.5206 19.143 10.4471L19 10L16.875 2.9922C16.2314 0.869541 14.7248 2.71887 13.4035 3.33984C12.5255 3.75243 11.4745 3.75243 10.5966 3.33984C9.27523 2.71887 7.76869 0.869541 7.12502 2.9922Z" fill="#141B34"/>
-<path d="M2 8C5.47582 13.3333 18.5242 13.3333 22 8" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M5 10L7.125 2.9922C7.76866 0.869541 9.27521 2.71887 10.5965 3.33984C11.4745 3.75243 12.5255 3.75243 13.4035 3.33984C14.7248 2.71887 16.2313 0.869541 16.875 2.9922L19 10" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M19 11C19 13.808 18.6968 16.4602 16.4312 18.0121C14.5873 19.2751 10.8574 19.3382 10 22" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M5 11C5 13.808 5.30317 16.4602 7.56884 18.0121C9.41265 19.2751 13.1426 19.3382 14 22" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path class="pr-icon-duotone-secondary" d="M7.12502 2.9922L5.00003 10L4.83966 10.4381C8.82886 12.5176 15.1471 12.5206 19.143 10.4471L19 10L16.875 2.9922C16.2314 0.869541 14.7248 2.71887 13.4035 3.33984C12.5255 3.75243 11.4745 3.75243 10.5966 3.33984C9.27523 2.71887 7.76869 0.869541 7.12502 2.9922Z" />
+<path d="M2 8C5.47582 13.3333 18.5242 13.3333 22 8" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5 10L7.125 2.9922C7.76866 0.869541 9.27521 2.71887 10.5965 3.33984C11.4745 3.75243 12.5255 3.75243 13.4035 3.33984C14.7248 2.71887 16.2313 0.869541 16.875 2.9922L19 10" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19 11C19 13.808 18.6968 16.4602 16.4312 18.0121C14.5873 19.2751 10.8574 19.3382 10 22" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5 11C5 13.808 5.30317 16.4602 7.56884 18.0121C9.41265 19.2751 13.1426 19.3382 14 22" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

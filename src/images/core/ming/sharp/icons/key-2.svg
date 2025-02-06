@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
     <path stroke="currentColor" d="M12.633 13.913a5.502 5.502 0 0 0 6.29-8.84 5.5 5.5 0 0 0-9.122 5.587l-6.08 6.081v2.829h4.242V16.74h2.828v-2.828z" clip-rule="evenodd"/>
     <path stroke="currentColor" d="M16.24 8.26a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
 </svg>

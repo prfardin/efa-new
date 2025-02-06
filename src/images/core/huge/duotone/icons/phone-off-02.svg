@@ -1,8 +1,8 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path opacity="0.4" d="M4.68164 8.56533V14.6123C4.68164 17.9379 4.68164 19.6007 5.71796 20.6339C6.75428 21.667 8.42221 21.667 11.758 21.667C15.0939 21.667 16.7618 21.667 17.7982 20.6339C18.2869 20.1466 18.5451 19.5193 18.6816 18.6436L4.75942 5.16699C4.68164 6.05561 4.68164 7.16254 4.68164 8.56533Z" fill="#141B34"/>
-<path d="M18.677 18.6624C18.4973 20.5819 17.11 21.6667 15.177 21.6667H8.18555C6.25255 21.6667 4.68555 20.0997 4.68555 18.1667L4.78577 5.15234" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M6.83984 1.93734C7.25559 1.7632 7.71208 1.66699 8.19104 1.66699H15.1825C17.1155 1.66699 18.6825 3.23399 18.6825 5.16699V14.6721" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M11.6816 18.667H11.6906" stroke="#141B34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M10.6816 4.66699H12.6816" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M1.68164 1.66699L21.6816 21.667" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path class="pr-icon-duotone-secondary" d="M4.68164 8.56533V14.6123C4.68164 17.9379 4.68164 19.6007 5.71796 20.6339C6.75428 21.667 8.42221 21.667 11.758 21.667C15.0939 21.667 16.7618 21.667 17.7982 20.6339C18.2869 20.1466 18.5451 19.5193 18.6816 18.6436L4.75942 5.16699C4.68164 6.05561 4.68164 7.16254 4.68164 8.56533Z" />
+<path d="M18.677 18.6624C18.4973 20.5819 17.11 21.6667 15.177 21.6667H8.18555C6.25255 21.6667 4.68555 20.0997 4.68555 18.1667L4.78577 5.15234" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.83984 1.93734C7.25559 1.7632 7.71208 1.66699 8.19104 1.66699H15.1825C17.1155 1.66699 18.6825 3.23399 18.6825 5.16699V14.6721" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.6816 18.667H11.6906" class="pr-icon-duotone-primary-stroke" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.6816 4.66699H12.6816" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1.68164 1.66699L21.6816 21.667" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

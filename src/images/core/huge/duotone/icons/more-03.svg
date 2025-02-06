@@ -10,13 +10,13 @@
 <path d="M10.5 4.5C10.5 4.03406 10.5 3.80109 10.5761 3.61732C10.6776 3.37229 10.8723 3.17761 11.1173 3.07612C11.3011 3 11.5341 3 12 3C12.4659 3 12.6989 3 12.8827 3.07612C13.1277 3.17761 13.3224 3.37229 13.4239 3.61732C13.5 3.80109 13.5 4.03406 13.5 4.5C13.5 4.96594 13.5 5.19891 13.4239 5.38268C13.3224 5.62771 13.1277 5.82239 12.8827 5.92388C12.6989 6 12.4659 6 12 6C11.5341 6 11.3011 6 11.1173 5.92388C10.8723 5.82239 10.6776 5.62771 10.5761 5.38268C10.5 5.19891 10.5 4.96594 10.5 4.5Z" fill="#141B34"/>
 <path d="M18 4.5C18 4.03406 18 3.80109 18.0761 3.61732C18.1776 3.37229 18.3723 3.17761 18.6173 3.07612C18.8011 3 19.0341 3 19.5 3C19.9659 3 20.1989 3 20.3827 3.07612C20.6277 3.17761 20.8224 3.37229 20.9239 3.61732C21 3.80109 21 4.03406 21 4.5C21 4.96594 21 5.19891 20.9239 5.38268C20.8224 5.62771 20.6277 5.82239 20.3827 5.92388C20.1989 6 19.9659 6 19.5 6C19.0341 6 18.8011 6 18.6173 5.92388C18.3723 5.82239 18.1776 5.62771 18.0761 5.38268C18 5.19891 18 4.96594 18 4.5Z" fill="#141B34"/>
 </g>
-<rect x="18" y="18" width="3" height="3" rx="1" stroke="#141B34" stroke-width="1.5"/>
-<rect x="18" y="10.5" width="3" height="3" rx="1" stroke="#141B34" stroke-width="1.5"/>
-<rect x="18" y="3" width="3" height="3" rx="1" stroke="#141B34" stroke-width="1.5"/>
-<rect x="10.5" y="18" width="3" height="3" rx="1" stroke="#141B34" stroke-width="1.5"/>
-<rect x="10.5" y="10.5" width="3" height="3" rx="1" stroke="#141B34" stroke-width="1.5"/>
-<rect x="10.5" y="3" width="3" height="3" rx="1" stroke="#141B34" stroke-width="1.5"/>
-<rect x="3" y="18" width="3" height="3" rx="1" stroke="#141B34" stroke-width="1.5"/>
-<rect x="3" y="10.5" width="3" height="3" rx="1" stroke="#141B34" stroke-width="1.5"/>
-<rect x="3" y="3" width="3" height="3" rx="1" stroke="#141B34" stroke-width="1.5"/>
+<rect x="18" y="18" width="3" height="3" rx="1" class="pr-icon-duotone-primary-stroke" stroke-width="1.5"/>
+<rect x="18" y="10.5" width="3" height="3" rx="1" class="pr-icon-duotone-primary-stroke" stroke-width="1.5"/>
+<rect x="18" y="3" width="3" height="3" rx="1" class="pr-icon-duotone-primary-stroke" stroke-width="1.5"/>
+<rect x="10.5" y="18" width="3" height="3" rx="1" class="pr-icon-duotone-primary-stroke" stroke-width="1.5"/>
+<rect x="10.5" y="10.5" width="3" height="3" rx="1" class="pr-icon-duotone-primary-stroke" stroke-width="1.5"/>
+<rect x="10.5" y="3" width="3" height="3" rx="1" class="pr-icon-duotone-primary-stroke" stroke-width="1.5"/>
+<rect x="3" y="18" width="3" height="3" rx="1" class="pr-icon-duotone-primary-stroke" stroke-width="1.5"/>
+<rect x="3" y="10.5" width="3" height="3" rx="1" class="pr-icon-duotone-primary-stroke" stroke-width="1.5"/>
+<rect x="3" y="3" width="3" height="3" rx="1" class="pr-icon-duotone-primary-stroke" stroke-width="1.5"/>
 </svg>
