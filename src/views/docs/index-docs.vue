@@ -7,6 +7,6 @@ import PrIcon from '@c/core/PrIcon.vue'
 
 <template>
     <div class="uk-background-default">
-        <pr-icon icon="icon-fa-duotoneli-alicorn" />
+        <pr-icon icon="icon-huge-bulk-3d-rotate" />
     </div>
 </template>
