@@ -30,5 +30,6 @@ import PrIcon from '@c/core/PrIcon.vue'
         <pr-icon icon="icon-huge-rounded-filter" ratio="2" />
         <pr-icon icon="icon-huge-regular-wink" ratio="2" />
         <pr-icon icon="icon-huge-rounded-wink" ratio="2" />
+        <pr-icon icon="icon-huge-sharp-call-paused" ratio="2" />
     </div>
 </template>

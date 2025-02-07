@@ -1,6 +1,6 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M17 18.0532H21V2H3V18.0532H7" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M7 10.0266H17" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M7 6.01367H12" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M14.8992 14.0301H9.10195C9.04673 14.0301 9.00195 14.075 9.00195 14.1305L9.00204 21.8847C9.00204 21.9627 9.08686 22.0109 9.15351 21.9707L12.0135 20.248L14.8471 21.9842C14.9138 22.025 14.9992 21.9769 14.9992 21.8985V14.1304C14.9992 14.075 14.9545 14.0301 14.8992 14.0301Z" stroke="#141B34" stroke-width="1.5"/>
+    <path d="M17 18.0532H21V2H3V18.0532H7" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M7 10.0266H17" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M7 6.01367H12" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M14.8992 14.0301H9.10195C9.04673 14.0301 9.00195 14.075 9.00195 14.1305L9.00204 21.8847C9.00204 21.9627 9.08686 22.0109 9.15351 21.9707L12.0135 20.248L14.8471 21.9842C14.9138 22.025 14.9992 21.9769 14.9992 21.8985V14.1304C14.9992 14.075 14.9545 14.0301 14.8992 14.0301Z" stroke="currentColor" stroke-width="1.5"/>
 </svg>

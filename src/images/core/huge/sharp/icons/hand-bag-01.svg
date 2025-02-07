@@ -1,6 +1,6 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M15.9966 11C15.9966 5 13.8621 2 11.9966 2C10.1311 2 7.99658 5 7.99658 11" stroke="#141B34" stroke-width="1.5"/>
-<path d="M13.9966 13.5H9.99658V16.5H13.9966V13.5Z" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M4.99747 9H19.0025V15L20.9996 21.9873C21.0014 21.9936 20.9966 22 20.99 22H3.01001C3.00336 22 2.99857 21.9936 3.00039 21.9873L4.99747 15V9Z" stroke="#141B34" stroke-width="1.5"/>
-<path d="M19.039 14.999H13.992M10.012 14.999H5.00928" stroke="#141B34" stroke-width="1.5"/>
+    <path d="M15.9966 11C15.9966 5 13.8621 2 11.9966 2C10.1311 2 7.99658 5 7.99658 11" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M13.9966 13.5H9.99658V16.5H13.9966V13.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M4.99747 9H19.0025V15L20.9996 21.9873C21.0014 21.9936 20.9966 22 20.99 22H3.01001C3.00336 22 2.99857 21.9936 3.00039 21.9873L4.99747 15V9Z" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M19.039 14.999H13.992M10.012 14.999H5.00928" stroke="currentColor" stroke-width="1.5"/>
 </svg>

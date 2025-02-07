@@ -1,7 +1,7 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8.98849 11.0286L15.9951 7.03967V11.0286L22.0003 7.03967L21.9997 21.001H10.1438" stroke="#141B34" stroke-width="1.5"/>
-<path d="M3.98312 6.05042H7.98312" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M11.9919 15.0172H13.9936" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M16.9958 15.0172H18.9975" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M3.99902 3.00759L1.99973 20.9972H10.0215L7.98123 3.00757C7.98066 3.00252 7.97638 2.9987 7.9713 2.9987H4.00896C4.00386 2.9987 3.99958 3.00253 3.99902 3.00759Z" stroke="#141B34" stroke-width="1.5"/>
+    <path d="M8.98849 11.0286L15.9951 7.03967V11.0286L22.0003 7.03967L21.9997 21.001H10.1438" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M3.98312 6.05042H7.98312" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M11.9919 15.0172H13.9936" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M16.9958 15.0172H18.9975" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M3.99902 3.00759L1.99973 20.9972H10.0215L7.98123 3.00757C7.98066 3.00252 7.97638 2.9987 7.9713 2.9987H4.00896C4.00386 2.9987 3.99958 3.00253 3.99902 3.00759Z" stroke="currentColor" stroke-width="1.5"/>
 </svg>

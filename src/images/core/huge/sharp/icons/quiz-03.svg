@@ -1,8 +1,8 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16.5 1.99902H7.5V5.49902H16.5V1.99902Z" stroke="#141B34" stroke-width="1.5" stroke-linecap="square"/>
-<path d="M7.5 3.49902H4V21.999H20V3.49902H16.5" stroke="#141B34" stroke-width="1.5" stroke-linecap="square"/>
-<path d="M6.5 10L10.5 10" stroke="#141B34" stroke-width="1.5" stroke-linecap="square"/>
-<path d="M13.5 11L14.5 12L17.5 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="square"/>
-<path d="M6.5 16L10.5 16" stroke="#141B34" stroke-width="1.5" stroke-linecap="square"/>
-<path d="M13.5 17L14.5 18L17.5 15" stroke="#141B34" stroke-width="1.5" stroke-linecap="square"/>
+    <path d="M16.5 1.99902H7.5V5.49902H16.5V1.99902Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
+    <path d="M7.5 3.49902H4V21.999H20V3.49902H16.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
+    <path d="M6.5 10L10.5 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
+    <path d="M13.5 11L14.5 12L17.5 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
+    <path d="M6.5 16L10.5 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
+    <path d="M13.5 17L14.5 18L17.5 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
 </svg>

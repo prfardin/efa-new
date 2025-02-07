@@ -1,12 +1,12 @@
 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M19.5 4H5.5V20H19.5V4Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M9.88664 11.3202C8.74404 9.27033 10.3773 8.37134 11.6311 7.4973L12.4986 7L13.3664 7.49718C14.6208 8.37135 16.2559 9.27044 15.114 11.3209C14.9138 11.6804 14.8137 11.8602 14.7804 11.9887C14.7471 12.1172 14.747 12.2672 14.7469 12.5674L14.7454 17L10.2543 16.9996V12.5684C10.2543 12.2678 10.2543 12.1175 10.2209 11.9888C10.1876 11.8601 10.0873 11.6801 9.88664 11.3202L9.88664 11.3202Z" stroke="#141B34" stroke-width="1.5"/>
-<path d="M14.5 4V2" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M18.5 4V2" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M10.5 4V2" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M6.5 4V2" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M14.5 22V20" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M18.5 22V20" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M10.5 22V20" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M6.5 22V20" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M19.5 4H5.5V20H19.5V4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M9.88664 11.3202C8.74404 9.27033 10.3773 8.37134 11.6311 7.4973L12.4986 7L13.3664 7.49718C14.6208 8.37135 16.2559 9.27044 15.114 11.3209C14.9138 11.6804 14.8137 11.8602 14.7804 11.9887C14.7471 12.1172 14.747 12.2672 14.7469 12.5674L14.7454 17L10.2543 16.9996V12.5684C10.2543 12.2678 10.2543 12.1175 10.2209 11.9888C10.1876 11.8601 10.0873 11.6801 9.88664 11.3202L9.88664 11.3202Z" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M14.5 4V2" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M18.5 4V2" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M10.5 4V2" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M6.5 4V2" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M14.5 22V20" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M18.5 22V20" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M10.5 22V20" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M6.5 22V20" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
 </svg>

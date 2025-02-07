@@ -1,8 +1,8 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9 22.0005L9.5 17.0056H14.5L15 22.0005" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M3 22.0005H21" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M15 11.0118H18" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M6 13.021H9" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M4.91699 21.3879L6.50321 8.03632L17.5042 8.03632L19.0758 21.403" stroke="#141B34" stroke-width="1.5"/>
-<path d="M6.35188 7.92611L3.99756 6.01572L3.9977 2.0095C3.9977 2.00398 4.00218 1.99951 4.0077 1.99951H7.47696C7.48248 1.99951 7.48696 2.00398 7.48696 2.0095V4.53188H10.0173L10.5155 2.00757C10.5164 2.00289 10.5205 1.99951 10.5253 1.99951H13.4861C13.4908 1.99951 13.4949 2.00288 13.4959 2.00755L13.9957 4.5119H16.4932V2.04533C16.4932 2.03981 16.4977 2.03534 16.5032 2.03534H19.9675C19.973 2.03534 19.9775 2.03976 19.9775 2.04524L20.0137 6.02257L17.6956 7.85336" stroke="#141B34" stroke-width="1.5"/>
+    <path d="M9 22.0005L9.5 17.0056H14.5L15 22.0005" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M3 22.0005H21" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M15 11.0118H18" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M6 13.021H9" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M4.91699 21.3879L6.50321 8.03632L17.5042 8.03632L19.0758 21.403" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M6.35188 7.92611L3.99756 6.01572L3.9977 2.0095C3.9977 2.00398 4.00218 1.99951 4.0077 1.99951H7.47696C7.48248 1.99951 7.48696 2.00398 7.48696 2.0095V4.53188H10.0173L10.5155 2.00757C10.5164 2.00289 10.5205 1.99951 10.5253 1.99951H13.4861C13.4908 1.99951 13.4949 2.00288 13.4959 2.00755L13.9957 4.5119H16.4932V2.04533C16.4932 2.03981 16.4977 2.03534 16.5032 2.03534H19.9675C19.973 2.03534 19.9775 2.03976 19.9775 2.04524L20.0137 6.02257L17.6956 7.85336" stroke="currentColor" stroke-width="1.5"/>
 </svg>

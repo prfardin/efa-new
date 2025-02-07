@@ -1,5 +1,5 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M20 22.0015V15.0015C20 13.897 19.1046 13.0015 18 13.0015H17C17 18.0015 12 20.0015 12 20.0015C12 20.0015 7 18.0015 7 13.0015H6C4.89543 13.0015 4 13.897 4 15.0015V22.0015" stroke="#141B34" stroke-width="1.5" stroke-linecap="square"/>
-<path d="M12 13.5L14 12.5V14.5L12 13.5ZM12 13.5L10 12.5002V14.5002L12 13.5Z" stroke="#141B34" stroke-width="1.5" stroke-linecap="square"/>
-<path d="M15.5 6.50012V5.50012C15.5 3.56713 13.933 2.00012 12 2.00012C10.067 2.00012 8.5 3.56713 8.5 5.50012V6.50012C8.5 8.43312 10.067 10.0001 12 10.0001C13.933 10.0001 15.5 8.43312 15.5 6.50012Z" stroke="#141B34" stroke-width="1.5" stroke-linecap="square"/>
+    <path d="M20 22.0015V15.0015C20 13.897 19.1046 13.0015 18 13.0015H17C17 18.0015 12 20.0015 12 20.0015C12 20.0015 7 18.0015 7 13.0015H6C4.89543 13.0015 4 13.897 4 15.0015V22.0015" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
+    <path d="M12 13.5L14 12.5V14.5L12 13.5ZM12 13.5L10 12.5002V14.5002L12 13.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
+    <path d="M15.5 6.50012V5.50012C15.5 3.56713 13.933 2.00012 12 2.00012C10.067 2.00012 8.5 3.56713 8.5 5.50012V6.50012C8.5 8.43312 10.067 10.0001 12 10.0001C13.933 10.0001 15.5 8.43312 15.5 6.50012Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
 </svg>

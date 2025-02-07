@@ -1,4 +1,4 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M19.9999 13V9L12.9999 2H3.99994V13M12.9999 2.5V9H19.4999" stroke="#141B34" stroke-width="1.5" stroke-linecap="square"/>
-<path d="M13.5004 16H10.0004V19H13.5004V22H10.0004M15.969 16L18.0004 22H18.5004L20.5 16M7.50043 17V16H3.50043V22H7.50043V21" stroke="#141B34" stroke-width="1.5" stroke-linecap="square"/>
+    <path d="M19.9999 13V9L12.9999 2H3.99994V13M12.9999 2.5V9H19.4999" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
+    <path d="M13.5004 16H10.0004V19H13.5004V22H10.0004M15.969 16L18.0004 22H18.5004L20.5 16M7.50043 17V16H3.50043V22H7.50043V21" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
 </svg>

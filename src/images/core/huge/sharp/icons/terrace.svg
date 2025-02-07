@@ -1,8 +1,8 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M2.99994 14.0273L3.99838 19.0386M3.99838 19.0386L2.99994 22.0454M3.99838 19.0386H6.99372L7.99217 22.0454" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M20.9717 14.0273L19.9733 19.0386M19.9733 19.0386L20.9717 22.0454M19.9733 19.0386H16.9779L15.9795 22.0454" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M11.9863 10.0176V22.0446" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M10 22H14" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M8.99023 15.0293H14.9809" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M2.99023 8.11545V10.0636H20.9951V8.11645C20.9951 8.0796 20.9746 8.04552 20.9423 8.02802C17.777 6.31293 15.5836 4.95805 12.0197 2.07015C11.9818 2.03939 11.9259 2.04057 11.8893 2.07298C8.61557 4.97413 6.15063 6.28537 3.04168 8.02779C3.01009 8.0455 2.99023 8.07913 2.99023 8.11545Z" stroke="#141B34" stroke-width="1.5"/>
+    <path d="M2.99994 14.0273L3.99838 19.0386M3.99838 19.0386L2.99994 22.0454M3.99838 19.0386H6.99372L7.99217 22.0454" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M20.9717 14.0273L19.9733 19.0386M19.9733 19.0386L20.9717 22.0454M19.9733 19.0386H16.9779L15.9795 22.0454" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M11.9863 10.0176V22.0446" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M10 22H14" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M8.99023 15.0293H14.9809" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M2.99023 8.11545V10.0636H20.9951V8.11645C20.9951 8.0796 20.9746 8.04552 20.9423 8.02802C17.777 6.31293 15.5836 4.95805 12.0197 2.07015C11.9818 2.03939 11.9259 2.04057 11.8893 2.07298C8.61557 4.97413 6.15063 6.28537 3.04168 8.02779C3.01009 8.0455 2.99023 8.07913 2.99023 8.11545Z" stroke="currentColor" stroke-width="1.5"/>
 </svg>

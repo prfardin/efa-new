@@ -1,8 +1,8 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5.5 2.99219C4.6716 2.99219 4 3.66335 4 4.49121C4 5.31907 4.6716 5.99024 5.5 5.99024C6.3284 5.99024 7 5.31907 7 4.49121C7 3.66335 6.3284 2.99219 5.5 2.99219Z" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M22 20.9883H15C15 19.3325 16.567 17.9902 18.5 17.9902C20.433 17.9902 22 19.3325 22 20.9883Z" stroke="#141B34" stroke-width="1.5"/>
-<path d="M18.5 12.4941C17.6716 12.4941 17 13.1653 17 13.9932C17 14.821 17.6716 15.4922 18.5 15.4922C19.3284 15.4922 20 14.821 20 13.9932C20 13.1653 19.3284 12.4941 18.5 12.4941Z" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M11.5 3.99907L18.5 3.99902V8.99582H18L16 7.49675" stroke="#141B34" stroke-width="1.5"/>
-<path d="M12 19.9889L5 19.989V14.9922H5.5L7.5 16.4913" stroke="#141B34" stroke-width="1.5"/>
-<path d="M9 11.4784H2C2 9.82254 3.567 8.48032 5.5 8.48032C7.433 8.48032 9 9.82254 9 11.4784Z" stroke="#141B34" stroke-width="1.5"/>
+    <path d="M5.5 2.99219C4.6716 2.99219 4 3.66335 4 4.49121C4 5.31907 4.6716 5.99024 5.5 5.99024C6.3284 5.99024 7 5.31907 7 4.49121C7 3.66335 6.3284 2.99219 5.5 2.99219Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M22 20.9883H15C15 19.3325 16.567 17.9902 18.5 17.9902C20.433 17.9902 22 19.3325 22 20.9883Z" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M18.5 12.4941C17.6716 12.4941 17 13.1653 17 13.9932C17 14.821 17.6716 15.4922 18.5 15.4922C19.3284 15.4922 20 14.821 20 13.9932C20 13.1653 19.3284 12.4941 18.5 12.4941Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M11.5 3.99907L18.5 3.99902V8.99582H18L16 7.49675" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M12 19.9889L5 19.989V14.9922H5.5L7.5 16.4913" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M9 11.4784H2C2 9.82254 3.567 8.48032 5.5 8.48032C7.433 8.48032 9 9.82254 9 11.4784Z" stroke="currentColor" stroke-width="1.5"/>
 </svg>
