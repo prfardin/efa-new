@@ -22,5 +22,7 @@ import PrIcon from '@c/core/PrIcon.vue'
         <pr-icon icon="icon-solar-solid-call-dropped" ratio="2" />
         <pr-icon icon="icon-solar-solid-ticket" ratio="2" />
         <pr-icon icon="icon-solar-regular-ticket" ratio="2" />
+        <pr-icon icon="icon-md-twotone-4k" ratio="2" />
+        <pr-icon icon="icon-md-twotone-15mp" ratio="2" />
     </div>
 </template>

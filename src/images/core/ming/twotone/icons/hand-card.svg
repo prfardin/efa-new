@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 8h-.343a4 4 0 0 0-2.829 1.172L3 12" opacity=".3"/>
     <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M9 13V6a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-5.333M21 8H9v4m-6 7h4.333a2 2 0 0 0 1.2-.4l6.545-4.908a1 1 0 0 0 .107-1.507l-.286-.286a3 3 0 0 0-3.996-.222L8 14"/>
 </svg>
