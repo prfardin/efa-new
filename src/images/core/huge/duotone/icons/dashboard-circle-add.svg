@@ -1,8 +1,8 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle class="pr-icon-duotone-secondary" cx="6.25" cy="6.25" r="4.25" />
-<circle class="pr-icon-duotone-secondary" cx="17.75" cy="17.75" r="4.25" />
-<circle cx="6.25" cy="6.25" r="4.25" class="pr-icon-duotone-primary-stroke" stroke-width="1.5"/>
-<circle cx="17.75" cy="17.75" r="4.25" class="pr-icon-duotone-primary-stroke" stroke-width="1.5"/>
-<circle cx="6.25" cy="17.75" r="4.25" class="pr-icon-duotone-primary-stroke" stroke-width="1.5"/>
-<path d="M18 2V10M22 6L14 6" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle class="pr-icon-duotone-secondary" cx="6.25" cy="6.25" r="4.25"/>
+    <circle class="pr-icon-duotone-secondary" cx="17.75" cy="17.75" r="4.25"/>
+    <circle cx="6.25" cy="6.25" r="4.25" class="pr-icon-duotone-primary-stroke" stroke-width="1.5"/>
+    <circle cx="17.75" cy="17.75" r="4.25" class="pr-icon-duotone-primary-stroke" stroke-width="1.5"/>
+    <circle cx="6.25" cy="17.75" r="4.25" class="pr-icon-duotone-primary-stroke" stroke-width="1.5"/>
+    <path d="M18 2V10M22 6L14 6" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

@@ -1,6 +1,6 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path class="pr-icon-duotone-secondary" d="M12 17.3313V12.003L17.4996 17.497L15.3882 19.0365C13.9098 20.1525 13.1706 20.7105 12.5853 20.4159C12 20.1213 12 19.1913 12 17.3313Z" />
-<path d="M4 4.01077L20 19.9936" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round"/>
-<path d="M11.9762 7.9746C11.9762 6.84758 11.7879 4.37243 12.4656 3.62107C13.3062 2.88769 16.6328 5.69867 18.2503 7.05099C17.4193 7.90228 17.0534 8.72002 14.6327 10.5144" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M17.4999 17.5132C14.6593 19.573 13.4832 20.7987 12.6285 20.4356C12.5436 20.3995 12.4738 20.3355 12.4267 20.2562C11.901 19.371 12.0092 17.0528 12.0092 15.9762V12.003L5.0166 16.9836" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path class="pr-icon-duotone-secondary" d="M12 17.3313V12.003L17.4996 17.497L15.3882 19.0365C13.9098 20.1525 13.1706 20.7105 12.5853 20.4159C12 20.1213 12 19.1913 12 17.3313Z"/>
+    <path d="M4 4.01077L20 19.9936" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M11.9762 7.9746C11.9762 6.84758 11.7879 4.37243 12.4656 3.62107C13.3062 2.88769 16.6328 5.69867 18.2503 7.05099C17.4193 7.90228 17.0534 8.72002 14.6327 10.5144" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M17.4999 17.5132C14.6593 19.573 13.4832 20.7987 12.6285 20.4356C12.5436 20.3995 12.4738 20.3355 12.4267 20.2562C11.901 19.371 12.0092 17.0528 12.0092 15.9762V12.003L5.0166 16.9836" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
