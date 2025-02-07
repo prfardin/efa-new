@@ -8,10 +8,7 @@ import PrIcon from '@c/core/PrIcon.vue'
 <template>
     <div class="uk-background-default">
         <pr-icon icon="icon-huge-bulk-google-lens" ratio="2" />
-        <pr-icon icon="icon-huge-twotone-3d-move" ratio="2" />
-        <pr-icon icon="icon-huge-twotone-road" ratio="2" />
-        <pr-icon icon="icon-huge-twotone-1st-bracket" ratio="2" />
-        <pr-icon icon="icon-huge-twotone-arrow-right-05" ratio="2" />
-        <pr-icon icon="icon-huge-twotone-wind-surf" ratio="2" />
+        <pr-icon icon="icon-solar-broken-4k" ratio="2" />
+        <pr-icon icon="icon-solar-broken-adhesive-plaster-2" ratio="2" />
     </div>
 </template>
