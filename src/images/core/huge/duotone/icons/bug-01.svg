@@ -1,11 +1,11 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path class="pr-icon-duotone-secondary" d="M6.04065 11.8359C6.04065 10.312 6.04065 9.54998 6.26763 8.94142C6.63253 7.96308 7.40424 7.19137 8.38258 6.82647C8.99114 6.59949 9.7531 6.59949 11.2771 6.59949H12.5043C14.0282 6.59949 14.7902 6.59949 15.3988 6.82647C16.3771 7.19137 17.1488 7.96308 17.5137 8.94142C17.7407 9.54998 17.7407 10.312 17.7407 11.8359V15.1495C17.7407 18.3804 15.1216 20.9995 11.8907 20.9995C8.65979 20.9995 6.04065 18.3804 6.04065 15.1495V11.8359Z"/>
-    <path d="M3.01285 4.99109C2.89299 6.05109 3.55226 8.42309 6.489 8.42309" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-    <path d="M17.5953 8.38081C18.8359 8.57881 21.1134 7.49881 20.9959 5.00281" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-    <path d="M20.9931 20.9987C21.053 19.9427 20.178 17.5547 17.5992 17.4227" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-    <path d="M6.45188 17.4703C5.65039 17.2303 3.01331 18.3343 3.01331 20.9983" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-    <path d="M9.33014 6.1189C9.35412 5.0989 9.84557 2.9989 12.0032 2.9989C13.921 2.9989 14.5863 4.6189 14.6762 6.1189M6.26155 9.4189C6.38142 8.6389 7.29241 6.8149 9.3661 6.6349C11.4638 6.5557 14.3406 6.5869 14.88 6.6709C15.5871 6.73383 17.2953 7.4389 17.7508 9.4189C17.9126 10.4389 17.8287 11.8789 17.8527 12.7189C17.8167 13.5589 17.9209 15.2623 17.7568 16.1389C17.6369 17.0989 16.9896 18.4669 16.1026 19.3069C14.7841 20.7229 11.1641 22.2109 8.03558 19.4509C6.41738 17.8909 6.3095 16.3789 6.18963 15.7789C6.1575 15.4572 6.15899 13.8764 6.16566 12.3589C6.14168 11.0461 6.17259 9.7807 6.26155 9.4189Z" stroke="currentColor" stroke-width="1.5"/>
-    <path d="M3.01331 12.8983H5.95005" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-    <path d="M20.9926 12.8983H18.1158" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-    <path d="M12.0035 16.4989V20.2789" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M3.01285 4.99109C2.89299 6.05109 3.55226 8.42309 6.489 8.42309" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M17.5953 8.38081C18.8359 8.57881 21.1134 7.49881 20.9959 5.00281" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M20.9931 20.9987C21.053 19.9427 20.178 17.5547 17.5992 17.4227" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M6.45188 17.4703C5.65039 17.2303 3.01331 18.3343 3.01331 20.9983" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M9.33014 6.1189C9.35412 5.0989 9.84557 2.9989 12.0032 2.9989C13.921 2.9989 14.5863 4.6189 14.6762 6.1189M6.26155 9.4189C6.38142 8.6389 7.29241 6.8149 9.3661 6.6349C11.4638 6.5557 14.3406 6.5869 14.88 6.6709C15.5871 6.73383 17.2953 7.4389 17.7508 9.4189C17.9126 10.4389 17.8287 11.8789 17.8527 12.7189C17.8167 13.5589 17.9209 15.2623 17.7568 16.1389C17.6369 17.0989 16.9896 18.4669 16.1026 19.3069C14.7841 20.7229 11.1641 22.2109 8.03558 19.4509C6.41738 17.8909 6.3095 16.3789 6.18963 15.7789C6.1575 15.4572 6.15899 13.8764 6.16566 12.3589C6.14168 11.0461 6.17259 9.7807 6.26155 9.4189Z" class="pr-icon-duotone-primary-stroke" stroke-width="1.5"/>
+    <path d="M3.01331 12.8983H5.95005" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M20.9926 12.8983H18.1158" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M12.0035 16.4989V20.2789" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round"/>
 </svg>

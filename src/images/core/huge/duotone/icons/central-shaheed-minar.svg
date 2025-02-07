@@ -2,9 +2,9 @@
     <path class="pr-icon-duotone-secondary" d="M7.17245 3.31623L9 8H15L16.8275 3.31623C17.2024 2.25381 17.0087 2 15.8235 2H8.17652C6.99125 2 6.79764 2.25381 7.17245 3.31623Z"/>
     <path class="pr-icon-duotone-secondary" d="M21 10.2014V22H17.5V11.1816C17.5 11.0937 17.5567 11.0159 17.64 10.9896L20.74 10.0094C20.8689 9.96866 21 10.0655 21 10.2014Z"/>
     <path class="pr-icon-duotone-secondary" d="M3 10.2014V22H6.5V11.1816C6.5 11.0937 6.4433 11.0159 6.35997 10.9896L3.25997 10.0094C3.13111 9.96866 3 10.0655 3 10.2014Z"/>
-    <path d="M3 22V10.2014C3 10.0655 3.13111 9.96866 3.25997 10.0094L6.35997 10.9896C6.4433 11.0159 6.5 11.0937 6.5 11.1816V22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M21 21.9999V10.2012C21 10.0653 20.8689 9.96853 20.74 10.0093L17.64 10.9895C17.5567 11.0158 17.5 11.0935 17.5 11.1814V21.9999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M9 21.9999V7.99988H15V21.9999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M2 21.9999L22 21.9999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M9 7.99988L7.17245 3.31611C6.79764 2.25369 6.99125 1.99988 8.17652 1.99988H15.8235C17.0087 1.99988 17.2024 2.25369 16.8275 3.31611L15 7.99988" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M3 22V10.2014C3 10.0655 3.13111 9.96866 3.25997 10.0094L6.35997 10.9896C6.4433 11.0159 6.5 11.0937 6.5 11.1816V22" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M21 21.9999V10.2012C21 10.0653 20.8689 9.96853 20.74 10.0093L17.64 10.9895C17.5567 11.0158 17.5 11.0935 17.5 11.1814V21.9999" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M9 21.9999V7.99988H15V21.9999" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M2 21.9999L22 21.9999" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M9 7.99988L7.17245 3.31611C6.79764 2.25369 6.99125 1.99988 8.17652 1.99988H15.8235C17.0087 1.99988 17.2024 2.25369 16.8275 3.31611L15 7.99988" class="pr-icon-duotone-primary-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

@@ -10,6 +10,9 @@ import PrIcon from '@c/core/PrIcon.vue'
         <pr-icon icon="icon-huge-bulk-google-lens" ratio="2" />
         <pr-icon icon="icon-huge-bulk-3d-move" ratio="2" />
         <pr-icon icon="icon-huge-duotone-3d-move" ratio="2" />
+        <pr-icon icon="icon-huge-duotone-align-key-object" ratio="2" />
+        <pr-icon icon="icon-huge-duotone-divide-sign-square" ratio="2" />
+        <pr-icon icon="icon-huge-duotone-cardiogram-01" ratio="2" />
         <pr-icon icon="icon-huge-duotone-acute" ratio="2" />
         <pr-icon icon="icon-huge-duotone-layers-02" ratio="2" />
         <pr-icon icon="icon-huge-duotone-note-edit" ratio="2" />
