@@ -1,5 +1,5 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path opacity="0.4" d="M19 5C19 6.65685 15.4183 8 11 8C6.58172 8 3 6.65685 3 5V19C3 20.6569 6.58172 22 11 22C12.5295 22 13.9588 21.839 15.1739 21.5598C13.8831 20.8963 13 19.5513 13 18C13 15.7909 14.7909 14 17 14C17.7286 14 18.4117 14.1948 19 14.5351V5Z" fill="currentColor"/>
+    <path class="pr-icon-duotone-secondary" d="M19 5C19 6.65685 15.4183 8 11 8C6.58172 8 3 6.65685 3 5V19C3 20.6569 6.58172 22 11 22C12.5295 22 13.9588 21.839 15.1739 21.5598C13.8831 20.8963 13 19.5513 13 18C13 15.7909 14.7909 14 17 14C17.7286 14 18.4117 14.1948 19 14.5351V5Z"/>
     <ellipse cx="11" cy="5" rx="8" ry="3" stroke="currentColor" stroke-width="1.5"/>
     <path d="M6 10.8418C6.60158 11.0226 7.27434 11.1716 8 11.2817" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
     <path d="M6 17.8418C6.60158 18.0226 7.27434 18.1716 8 18.2817" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>

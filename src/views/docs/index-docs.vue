@@ -16,6 +16,8 @@ import PrIcon from '@c/core/PrIcon.vue'
         <pr-icon icon="icon-huge-duotone-task-edit-01" ratio="2" />
         <pr-icon icon="icon-huge-duotone-clip" ratio="2" />
         <pr-icon icon="icon-huge-duotone-arrange-by-letters-a-z" ratio="2" />
+        <pr-icon icon="icon-huge-duotone-user-switch" ratio="2" />
+        <pr-icon icon="icon-huge-duotone-text" ratio="2" />
         <pr-icon icon="icon-huge-twotone-3d-move" ratio="2" />
     </div>
 </template>

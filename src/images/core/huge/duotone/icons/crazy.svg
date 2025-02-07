@@ -1,5 +1,5 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle opacity="0.4" cx="12" cy="12" r="10" fill="currentColor"/>
+    <circle class="pr-icon-duotone-secondary-stroke" cx="12" cy="12" r="10"/>
     <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"   stroke-linejoin="round"/>
     <path d="M10 10C10 10.5 9.32205 11 8.5 11C7.67795 11 7 10.5523 7 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M17 10C17 8.34315 16.3284 7 15.5 7C14.6716 7 14 8.34315 14 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>

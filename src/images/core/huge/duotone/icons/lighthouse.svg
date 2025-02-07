@@ -1,7 +1,7 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path opacity="0.4" d="M16.2863 18H7.71484L8.6077 13H15.3934L16.2863 18Z" fill="currentColor"/>
+    <path class="pr-icon-duotone-secondary" d="M16.2863 18H7.71484L8.6077 13H15.3934L16.2863 18Z"/>
     <path d="M10.0195 8C9.32545 7.06743 8.14285 5.76203 8.60385 4.47631C8.91057 3.62086 11.0067 2 12 2C12.9933 2 15.0894 3.62086 15.3962 4.47631C15.8572 5.76203 14.6745 7.06743 13.9805 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-    <path opacity="0.4" d="M8.60385 4.47631C8.14285 5.76203 9.32545 7.06743 10.0195 8H13.9805C14.6745 7.06743 15.8572 5.76203 15.3962 4.47631C15.0894 3.62086 12.9933 2 12 2C11.0067 2 8.91057 3.62086 8.60385 4.47631Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path class="pr-icon-duotone-secondary-stroke" d="M8.60385 4.47631C8.14285 5.76203 9.32545 7.06743 10.0195 8H13.9805C14.6745 7.06743 15.8572 5.76203 15.3962 4.47631C15.0894 3.62086 12.9933 2 12 2C11.0067 2 8.91057 3.62086 8.60385 4.47631Z" fill="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M8 8H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M8 13H16" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
     <path d="M7.5 18H16.5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>

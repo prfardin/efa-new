@@ -1,5 +1,5 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path opacity="0.4" d="M13.5858 15.4143C14.1716 16.0001 15.1144 16.0001 17 16.0001C18.8856 16.0001 19.8284 16.0001 20.4142 15.4143C21 14.8285 21 13.8857 21 12.0001C21 10.1145 21 9.17169 20.4142 8.58591C19.8284 8.00012 18.8856 8.00012 17 8.00012C15.1144 8.00012 14.1716 8.00012 13.5858 8.58591C13 9.17169 13 10.1145 13 12.0001C13 13.8857 13 14.8285 13.5858 15.4143Z" fill="currentColor"/>
+    <path class="pr-icon-duotone-secondary" d="M13.5858 15.4143C14.1716 16.0001 15.1144 16.0001 17 16.0001C18.8856 16.0001 19.8284 16.0001 20.4142 15.4143C21 14.8285 21 13.8857 21 12.0001C21 10.1145 21 9.17169 20.4142 8.58591C19.8284 8.00012 18.8856 8.00012 17 8.00012C15.1144 8.00012 14.1716 8.00012 13.5858 8.58591C13 9.17169 13 10.1145 13 12.0001C13 13.8857 13 14.8285 13.5858 15.4143Z"/>
     <path d="M3 3.00012H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M3 21.0001H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M3 9H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
