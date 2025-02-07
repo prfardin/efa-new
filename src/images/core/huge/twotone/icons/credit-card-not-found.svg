@@ -1,6 +1,6 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.44943 4.49902C4.13288 4.6269 3.85272 4.78752 3.59836 4.98927C3.39881 5.14755 3.21427 5.322 3.04682 5.51063C1.99994 6.69 1.99994 8.4565 1.99994 11.9895C1.99994 15.5225 1.99994 17.2889 3.04682 18.4683C3.21427 18.657 3.39881 18.8313 3.59836 18.9896C4.84598 19.9793 6.71471 19.9793 10.4522 19.9793H13.4353C16.4108 19.9793 18.1654 19.9793 19.4016 19.4799" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M1.99994 2L21.9999 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-<path d="M2.49994 9H8.99994" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path opacity="0.4" d="M21.574 17.1054C21.574 17.1054 22.0659 15.7072 21.9927 12.9212C21.9927 11.5641 21.9771 9.93218 21.958 8.43609C21.9264 5.9683 19.9057 4.00201 17.4486 4.03054L17.0185 4.03553L7.93744 3.979M13.4205 8.99716H21.9649" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M4.44943 4.49902C4.13288 4.6269 3.85272 4.78752 3.59836 4.98927C3.39881 5.14755 3.21427 5.322 3.04682 5.51063C1.99994 6.69 1.99994 8.4565 1.99994 11.9895C1.99994 15.5225 1.99994 17.2889 3.04682 18.4683C3.21427 18.657 3.39881 18.8313 3.59836 18.9896C4.84598 19.9793 6.71471 19.9793 10.4522 19.9793H13.4353C16.4108 19.9793 18.1654 19.9793 19.4016 19.4799" class="pr-icon-twotone-primary-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1.99994 2L21.9999 22" class="pr-icon-twotone-primary-stroke" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M2.49994 9H8.99994" class="pr-icon-twotone-primary-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path class="pr-icon-twotone-secondary-stroke" d="M21.574 17.1054C21.574 17.1054 22.0659 15.7072 21.9927 12.9212C21.9927 11.5641 21.9771 9.93218 21.958 8.43609C21.9264 5.9683 19.9057 4.00201 17.4486 4.03054L17.0185 4.03553L7.93744 3.979M13.4205 8.99716H21.9649" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

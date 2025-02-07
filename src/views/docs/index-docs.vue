@@ -8,19 +8,10 @@ import PrIcon from '@c/core/PrIcon.vue'
 <template>
     <div class="uk-background-default">
         <pr-icon icon="icon-huge-bulk-google-lens" ratio="2" />
-        <pr-icon icon="icon-huge-bulk-3d-move" ratio="2" />
-        <pr-icon icon="icon-huge-duotone-3d-move" ratio="2" />
-        <pr-icon icon="icon-huge-duotone-align-key-object" ratio="2" />
-        <pr-icon icon="icon-huge-duotone-divide-sign-square" ratio="2" />
-        <pr-icon icon="icon-huge-duotone-cardiogram-01" ratio="2" />
-        <pr-icon icon="icon-huge-duotone-acute" ratio="2" />
-        <pr-icon icon="icon-huge-duotone-layers-02" ratio="2" />
-        <pr-icon icon="icon-huge-duotone-note-edit" ratio="2" />
-        <pr-icon icon="icon-huge-duotone-task-edit-01" ratio="2" />
-        <pr-icon icon="icon-huge-duotone-clip" ratio="2" />
-        <pr-icon icon="icon-huge-duotone-arrange-by-letters-a-z" ratio="2" />
-        <pr-icon icon="icon-huge-duotone-user-switch" ratio="2" />
-        <pr-icon icon="icon-huge-duotone-text" ratio="2" />
         <pr-icon icon="icon-huge-twotone-3d-move" ratio="2" />
+        <pr-icon icon="icon-huge-twotone-road" ratio="2" />
+        <pr-icon icon="icon-huge-twotone-1st-bracket" ratio="2" />
+        <pr-icon icon="icon-huge-twotone-arrow-right-05" ratio="2" />
+        <pr-icon icon="icon-huge-twotone-wind-surf" ratio="2" />
     </div>
 </template>

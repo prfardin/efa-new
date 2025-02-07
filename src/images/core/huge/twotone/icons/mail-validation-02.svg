@@ -1,6 +1,6 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M2 4.45605L8.91302 8.38276C11.4616 9.83038 12.5384 9.83038 15.087 8.38276L22 4.45605" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-<path opacity="0.4" d="M15 17.4884C15 17.4884 15.5 17.4884 16 18.4909C16 18.4909 17.5882 15.9846 19 15.4834" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path opacity="0.4" d="M22 16.987C22 19.7553 19.7614 21.9995 17 21.9995C14.2386 21.9995 12 19.7553 12 16.987C12 14.2188 14.2386 11.9746 17 11.9746C19.7614 11.9746 22 14.2188 22 16.987Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-<path d="M21.9589 10.5334V6.53641C21.9478 5.07169 21.1512 2.14224 18.0539 2.14224L12.0863 2L6.10527 2.14224C4.73685 2.04234 2 2.47502 2 7.23531V14.2927C2.00001 15.5045 2.27229 17.1356 3.61079 18.1189C4.47577 18.7544 5.61117 18.8133 6.68416 18.866L9.20865 18.9905" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M2 4.45605L8.91302 8.38276C11.4616 9.83038 12.5384 9.83038 15.087 8.38276L22 4.45605" class="pr-icon-twotone-primary-stroke" stroke-width="1.5" stroke-linejoin="round"/>
+    <path class="pr-icon-twotone-secondary-stroke" d="M15 17.4884C15 17.4884 15.5 17.4884 16 18.4909C16 18.4909 17.5882 15.9846 19 15.4834" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path class="pr-icon-twotone-secondary-stroke" d="M22 16.987C22 19.7553 19.7614 21.9995 17 21.9995C14.2386 21.9995 12 19.7553 12 16.987C12 14.2188 14.2386 11.9746 17 11.9746C19.7614 11.9746 22 14.2188 22 16.987Z" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M21.9589 10.5334V6.53641C21.9478 5.07169 21.1512 2.14224 18.0539 2.14224L12.0863 2L6.10527 2.14224C4.73685 2.04234 2 2.47502 2 7.23531V14.2927C2.00001 15.5045 2.27229 17.1356 3.61079 18.1189C4.47577 18.7544 5.61117 18.8133 6.68416 18.866L9.20865 18.9905" class="pr-icon-twotone-primary-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
