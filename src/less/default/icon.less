@@ -36,6 +36,10 @@
 @icon-duotone-secondary:                    @global-icon-duotone-secondary-color;
 @icon-duotone-secondary-opacity:            @global-icon-duotone-secondary-opacity;
 
+@icon-twotone-primary:                      @global-icon-twotone-primary-color;
+@icon-twotone-secondary:                    @global-icon-twotone-secondary-color;
+@icon-twotone-secondary-opacity:            @global-icon-twotone-secondary-opacity;
+
 @icon-bulk-primary:                         @global-icon-bulk-primary-color;
 @icon-bulk-secondary:                       @global-icon-bulk-secondary-color;
 @icon-bulk-secondary-opacity:               @global-icon-bulk-secondary-opacity;
@@ -99,6 +103,28 @@
   .pr-icon-duotone-secondary,
   .pr-icon-duotone-secondary-stroke {
     opacity: @icon-duotone-secondary-opacity;
+  }
+
+  // twotone
+  .pr-icon-twotone-primary:not(.uk-preserve) {
+    fill: @icon-twotone-primary;
+  }
+
+  .pr-icon-twotone-primary-stroke {
+    stroke: @icon-twotone-primary;
+  }
+
+  .pr-icon-twotone-secondary:not(.uk-preserve) {
+    fill: @icon-twotone-secondary;
+  }
+
+  .pr-icon-twotone-secondary-stroke {
+    stroke: @icon-twotone-primary;
+  }
+
+  .pr-icon-twotone-secondary,
+  .pr-icon-twotone-secondary-stroke {
+    opacity: @icon-twotone-secondary-opacity;
   }
 
   // bulk
