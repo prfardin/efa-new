@@ -9,3 +9,9 @@ This WHITE PAPER is still a work in progress.
 برای Core ما از CSS Framework UIkit استفاده کردیم چون فکر میکنیم بر خلاف کتابخونه های امروزی خیلی قابلیت های دیگه مثل Slideshow, Parallax و ... رو داره.
 ما قصدمون اینه که این کتابخونه مجموعه از Vue Component ها باشه و مجوعه ای از Page های آماده که قابل استفاده باشه.
 این WHITEPAPER هنوز تکمیل نشده.
+
+# important notes and must change
+
+## icons
+* huge icons: ***duotone*** need to define class for making it colorable
+* huge icons: ***twotone*** need to define class for making it colorable

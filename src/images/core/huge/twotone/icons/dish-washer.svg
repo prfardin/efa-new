@@ -1,8 +1,8 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M2 6C2 2.69067 2.69067 2 6 2H18C21.3093 2 22 2.69067 22 6V18C22 21.3093 21.3093 22 18 22H6C2.69067 22 2 21.3093 2 18V6Z" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M2 8H22" stroke="#141B34" stroke-width="1.5"/>
-<path opacity="0.4" d="M5 5H9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"/>
-<path d="M19 5.00895V5" stroke="#141B34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path opacity="0.4" d="M9 18C10.6569 18 12 16.6569 12 15C12 13.3431 10.6569 12 9 12C7.34315 12 6 13.3431 6 15C6 16.6569 7.34315 18 9 18Z" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path opacity="0.4" d="M15.0031 18.0042V15.5598M15.0031 15.5598V12C15.6729 12.0832 16.4391 12.4009 16.7879 12.7435C17.1367 13.0861 17.1464 13.5252 17.2684 14.0715C17.3943 14.6357 17.5154 15.1669 17.4942 15.2545C17.4681 15.8445 15.095 15.5638 15.0031 15.5598Z" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 6C2 2.69067 2.69067 2 6 2H18C21.3093 2 22 2.69067 22 6V18C22 21.3093 21.3093 22 18 22H6C2.69067 22 2 21.3093 2 18V6Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 8H22" stroke="currentColor" stroke-width="1.5"/>
+<path opacity="0.4" d="M5 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M19 5.00895V5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.4" d="M9 18C10.6569 18 12 16.6569 12 15C12 13.3431 10.6569 12 9 12C7.34315 12 6 13.3431 6 15C6 16.6569 7.34315 18 9 18Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.4" d="M15.0031 18.0042V15.5598M15.0031 15.5598V12C15.6729 12.0832 16.4391 12.4009 16.7879 12.7435C17.1367 13.0861 17.1464 13.5252 17.2684 14.0715C17.3943 14.6357 17.5154 15.1669 17.4942 15.2545C17.4681 15.8445 15.095 15.5638 15.0031 15.5598Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
