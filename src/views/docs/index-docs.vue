@@ -16,5 +16,9 @@ import PrIcon from '@c/core/PrIcon.vue'
         <pr-icon icon="icon-solar-solid-building-home" ratio="2" />
         <pr-icon icon="icon-solar-solid-accumulator" ratio="2" />
         <pr-icon icon="icon-solar-solid-card" ratio="2" />
+        <pr-icon icon="icon-solar-solid-incoming-call" ratio="2" />
+        <pr-icon icon="icon-solar-solid-call-cancel" ratio="2" />
+        <pr-icon icon="icon-solar-solid-call-dropped-rounded" ratio="2" />
+        <pr-icon icon="icon-solar-solid-call-dropped" ratio="2" />
     </div>
 </template>
