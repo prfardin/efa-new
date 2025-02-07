@@ -27,6 +27,8 @@ import PrIcon from '@c/core/PrIcon.vue'
         <pr-icon icon="icon-huge-regular-activity-01" ratio="2" />
         <pr-icon icon="icon-huge-regular-video-01" ratio="2" />
         <pr-icon icon="icon-huge-regular-filter" ratio="2" />
+        <pr-icon icon="icon-huge-rounded-filter" ratio="2" />
         <pr-icon icon="icon-huge-regular-wink" ratio="2" />
+        <pr-icon icon="icon-huge-rounded-wink" ratio="2" />
     </div>
 </template>
