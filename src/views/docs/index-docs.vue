@@ -22,5 +22,11 @@ import PrIcon from '@c/core/PrIcon.vue'
         <pr-icon icon="icon-huge-duotone-lighthouse" ratio="2" />
         <pr-icon icon="icon-huge-duotone-champion" ratio="2" />
         <pr-icon icon="icon-huge-duotone-drag-right-03" ratio="2" />
+        <pr-icon icon="icon-huge-regular-3d-scale" ratio="2" />
+        <pr-icon icon="icon-huge-regular-3d-rotate" ratio="2" />
+        <pr-icon icon="icon-huge-regular-activity-01" ratio="2" />
+        <pr-icon icon="icon-huge-regular-video-01" ratio="2" />
+        <pr-icon icon="icon-huge-regular-filter" ratio="2" />
+        <pr-icon icon="icon-huge-regular-wink" ratio="2" />
     </div>
 </template>
