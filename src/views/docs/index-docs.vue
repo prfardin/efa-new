@@ -12,5 +12,9 @@ import PrIcon from '@c/core/PrIcon.vue'
         <pr-icon icon="icon-solar-duotone-4k" ratio="2" />
         <pr-icon icon="icon-solar-duotone-arrows-reorder" ratio="2" />
         <pr-icon icon="icon-solar-duotone-bedside-table-3" ratio="2" />
+        <pr-icon icon="icon-solar-solid-airbuds-right" ratio="2" />
+        <pr-icon icon="icon-solar-solid-building-home" ratio="2" />
+        <pr-icon icon="icon-solar-solid-accumulator" ratio="2" />
+        <pr-icon icon="icon-solar-solid-card" ratio="2" />
     </div>
 </template>
