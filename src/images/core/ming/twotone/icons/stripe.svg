@@ -1,4 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.704 8.94c-1.331-.72-3.013-1.125-4.345-1.125-.928 0-1.489.264-1.489.95 0 1.97 6.675 1.037 6.693 6.277 0 3.147-2.506 4.958-6.15 4.958-1.506 0-3.153-.299-4.783-1.002" opacity=".3"/>
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.704 8.94V4.81C15.25 4.229 13.814 4 12.359 4 8.803 4 6.438 5.864 6.438 8.976c0 4.853 6.657 4.079 6.657 6.171 0 .809-.7 1.073-1.682 1.073-1.199 0-2.672-.407-3.977-1.003-.369-.168-.806.092-.806.498v3.283"/>
+    <path class="pr-icon-twotone-secondary-stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.704 8.94c-1.331-.72-3.013-1.125-4.345-1.125-.928 0-1.489.264-1.489.95 0 1.97 6.675 1.037 6.693 6.277 0 3.147-2.506 4.958-6.15 4.958-1.506 0-3.153-.299-4.783-1.002" />
+    <path class="pr-icon-twotone-primary-stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.704 8.94V4.81C15.25 4.229 13.814 4 12.359 4 8.803 4 6.438 5.864 6.438 8.976c0 4.853 6.657 4.079 6.657 6.171 0 .809-.7 1.073-1.682 1.073-1.199 0-2.672-.407-3.977-1.003-.369-.168-.806.092-.806.498v3.283"/>
 </svg>

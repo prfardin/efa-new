@@ -18,5 +18,9 @@ import PrIcon from '@c/core/PrIcon.vue'
         <pr-icon icon="icon-ming-duotone-building-5" ratio="2" />
         <pr-icon icon="icon-ming-duotone-egyptian-pyramids" ratio="2" />
         <pr-icon icon="icon-ming-duotone-text-2" ratio="2" />
+        <pr-icon icon="icon-ming-twotone-monitor" ratio="2" />
+        <pr-icon icon="icon-ming-twotone-abs" ratio="2" />
+        <pr-icon icon="icon-ming-twotone-ZA-sort-ascending-letters" ratio="2" />
+        <pr-icon icon="icon-ming-twotone-hood" ratio="2" />
     </div>
 </template>

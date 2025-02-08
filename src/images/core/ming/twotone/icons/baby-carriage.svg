@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" opacity=".3">
+    <g class="pr-icon-twotone-secondary-stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" >
         <path d="M7 19.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M18 19.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
     </g>
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11A8 8 0 1 1 8.108 3.54c.237-.092.5.025.605.256L12 11m7 0h-7m7 0V8.5a1.5 1.5 0 0 1 1.5-1.5h.5m-9 4H3"/>
+    <path class="pr-icon-twotone-primary-stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11A8 8 0 1 1 8.108 3.54c.237-.092.5.025.605.256L12 11m7 0h-7m7 0V8.5a1.5 1.5 0 0 1 1.5-1.5h.5m-9 4H3"/>
 </svg>

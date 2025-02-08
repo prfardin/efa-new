@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <g class="pr-icon-duotone-secondary" >
+    <g class="pr-icon-duotone-secondary">
         <path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
         <path d="M16 9.249c.82.473 1.1 1.522.627 2.342a2.286 2.286 0 0 1-3.122.836l-1.485-.857 1.2-2.078a1.6 1.6 0 0 1 2.185-.586zM8 9.249a1.714 1.714 0 0 0-.627 2.342 2.286 2.286 0 0 0 3.122.836l1.485-.857-1.2-2.078a1.6 1.6 0 0 0-2.186-.586z"/>
     </g>

@@ -1,7 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <g opacity=".3">
-        <path fill="currentColor" d="M9 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M16 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
-        <path stroke="currentColor" stroke-linejoin="round" stroke-width="2"     d="M9 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0ZM16 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
-    </g>
-    <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3.697a1 1 0 0 0-.555.168l-2.61 1.74a.25.25 0 0 1-.277 0l-2.61-1.74A1 1 0 0 0 8.698 18H5a2 2 0 0 1-2-2z"/>
+    <path class="pr-icon-twotone-secondary" d="M9 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M16 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+    <path class="pr-icon-twotone-secondary-stroke" stroke-linejoin="round" stroke-width="2" d="M9 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0ZM16 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
+    <path class="pr-icon-twotone-primary-stroke" stroke-linejoin="round" stroke-width="2" d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3.697a1 1 0 0 0-.555.168l-2.61 1.74a.25.25 0 0 1-.277 0l-2.61-1.74A1 1 0 0 0 8.698 18H5a2 2 0 0 1-2-2z"/>
 </svg>

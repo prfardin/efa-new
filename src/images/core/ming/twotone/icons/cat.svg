@@ -1,7 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <g opacity=".3">
-        <path fill="currentColor" d="M10 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M15 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
-        <path stroke="currentColor" stroke-width="2"     d="M10 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0ZM15 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
-    </g>
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 14h4m14 0h-4M4 18l2.5-2M20 18l-2.5-2m-6.5-.5.553.276a1 1 0 0 0 .894 0L13 15.5M6 4l-1.341 7.154C3.797 15.751 7.323 20 12 20v0c4.677 0 8.203-4.25 7.341-8.846L18 4l-2.414 2.414A2 2 0 0 1 14.172 7H9.828a2 2 0 0 1-1.414-.586z"/>
+    <path class="pr-icon-twotone-secondary" d="M10 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M15 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+    <path class="pr-icon-twotone-secondary-stroke" stroke-width="2" d="M10 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0ZM15 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
+    <path class="pr-icon-twotone-primary-stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 14h4m14 0h-4M4 18l2.5-2M20 18l-2.5-2m-6.5-.5.553.276a1 1 0 0 0 .894 0L13 15.5M6 4l-1.341 7.154C3.797 15.751 7.323 20 12 20v0c4.677 0 8.203-4.25 7.341-8.846L18 4l-2.414 2.414A2 2 0 0 1 14.172 7H9.828a2 2 0 0 1-1.414-.586z"/>
 </svg>

@@ -1,7 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <g opacity=".3">
-        <path fill="currentColor" d="M12.5 16.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"     d="M12 16.5a1.51 1.51 0 0 1-1.51 1.5m1.52-1.5c-.005.821.659 1.5 1.48 1.5m-.99-1.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
-    </g>
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.393 3.416c-1.2.321-1.679 2.427-.75 5.895a20.638 20.638 0 0 0 1.43 3.787C6.802 13.923 6 15.141 6 16.5c0 2.485 2.686 4.5 6 4.5s6-2.015 6-4.5c0-1.359-.803-2.577-2.072-3.402a20.645 20.645 0 0 0 1.428-3.787c.93-3.468.451-5.574-.75-5.895-1.2-.322-2.667 1.262-3.596 4.73a20.72 20.72 0 0 0-.648 3.862 8.033 8.033 0 0 0-.724 0 20.72 20.72 0 0 0-.648-3.862c-.929-3.468-2.396-5.052-3.597-4.73"/>
+    <path class="pr-icon-twotone-secondary" d="M12.5 16.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+    <path class="pr-icon-twotone-secondary-stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 16.5a1.51 1.51 0 0 1-1.51 1.5m1.52-1.5c-.005.821.659 1.5 1.48 1.5m-.99-1.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+    <path class="pr-icon-twotone-primary-stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.393 3.416c-1.2.321-1.679 2.427-.75 5.895a20.638 20.638 0 0 0 1.43 3.787C6.802 13.923 6 15.141 6 16.5c0 2.485 2.686 4.5 6 4.5s6-2.015 6-4.5c0-1.359-.803-2.577-2.072-3.402a20.645 20.645 0 0 0 1.428-3.787c.93-3.468.451-5.574-.75-5.895-1.2-.322-2.667 1.262-3.596 4.73a20.72 20.72 0 0 0-.648 3.862 8.033 8.033 0 0 0-.724 0 20.72 20.72 0 0 0-.648-3.862c-.929-3.468-2.396-5.052-3.597-4.73"/>
 </svg>

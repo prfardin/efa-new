@@ -1,4 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <path class="pr-icon-duotone-secondary" fill-rule="evenodd" d="M8 8.5a2.5 2.5 0 1 1 5 0v4.623l4.453.588A4 4 0 0 1 21 17.685V18a7.973 7.973 0 0 1-.77 3.43 1 1 0 0 1-.903.57H7a1 1 0 0 1-.894-.553l-3-6a1 1 0 0 1 .447-1.341c1.116-.558 2.194-.816 3.332-.342.385.161.753.398 1.115.698z" clip-rule="evenodd" />
+    <path class="pr-icon-duotone-secondary" fill-rule="evenodd" d="M8 8.5a2.5 2.5 0 1 1 5 0v4.623l4.453.588A4 4 0 0 1 21 17.685V18a7.973 7.973 0 0 1-.77 3.43 1 1 0 0 1-.903.57H7a1 1 0 0 1-.894-.553l-3-6a1 1 0 0 1 .447-1.341c1.116-.558 2.194-.816 3.332-.342.385.161.753.398 1.115.698z" clip-rule="evenodd"/>
     <path class="pr-icon-duotone-primary-stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.326 21c.432-.91.674-1.926.674-3v-.315a3 3 0 0 0-2.669-2.981l-4.462-.59a1 1 0 0 1-.869-.99V8.5A1.5 1.5 0 0 0 10.5 7v0A1.5 1.5 0 0 0 9 8.5V17c-2-2.5-3-3-5-2l3 6m8.793-11A5.5 5.5 0 1 0 5.6 11"/>
 </svg>

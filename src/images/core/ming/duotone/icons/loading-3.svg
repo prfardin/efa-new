@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <path class="pr-icon-duotone-secondary" d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10" />
+    <path class="pr-icon-duotone-secondary" d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10"/>
     <circle cx="12" cy="12" r="9" class="pr-icon-duotone-secondary-stroke" stroke-width="2"/>
     <path class="pr-icon-duotone-primary-stroke" stroke-linecap="round" stroke-width="2" d="M12 3a8.958 8.958 0 0 0-6.225 2.5"/>
 </svg>

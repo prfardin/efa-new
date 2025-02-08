@@ -1,4 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <path class="pr-icon-duotone-secondary" d="M20 16V4a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v2.65a1 1 0 0 0 .064.35H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-3.123a1 1 0 0 0 .48.123H19a1 1 0 0 0 1-1" />
+    <path class="pr-icon-duotone-secondary" d="M20 16V4a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v2.65a1 1 0 0 0 .064.35H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-3.123a1 1 0 0 0 .48.123H19a1 1 0 0 0 1-1"/>
     <path class="pr-icon-duotone-primary" d="M8 11a1 1 0 1 0 0 2zm4 2a1 1 0 1 0 0-2zm-4 2a1 1 0 1 0 0 2zm2 2a1 1 0 1 0 0-2zm5-9v12h2V8zm0 12H5v2h10zM5 20V8H3v12zM5 8h10V6H5zm3 5h4v-2H8zm0 4h2v-2H8zm13-1V4h-2v12zM19 2H9v2h10zM7 4v3h2V4zm9 14h3v-2h-3zM9 2a2 2 0 0 0-2 2h2zm12 2a2 2 0 0 0-2-2v2zm-2 12v2a2 2 0 0 0 2-2zM5 20H3a2 2 0 0 0 2 2zm10 0v2a2 2 0 0 0 2-2zm2-12a2 2 0 0 0-2-2v2zM5 8V6a2 2 0 0 0-2 2z"/>
 </svg>

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M15 6h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-3" opacity=".3"/>
-    <path fill="currentColor" d="M12 12a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
-    <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M5 5.82a1 1 0 0 1 .804-.98l8.598-1.72a.5.5 0 0 1 .598.49v16.78a.5.5 0 0 1-.598.49l-8.598-1.72A1 1 0 0 1 5 18.18z"/>
-    <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M12 12a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
+    <path class="pr-icon-twotone-secondary-stroke" stroke-linejoin="round" stroke-width="2" d="M15 6h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-3" />
+    <path class="pr-icon-twotone-primary" d="M12 12a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+    <path class="pr-icon-twotone-primary-stroke" stroke-linejoin="round" stroke-width="2" d="M5 5.82a1 1 0 0 1 .804-.98l8.598-1.72a.5.5 0 0 1 .598.49v16.78a.5.5 0 0 1-.598.49l-8.598-1.72A1 1 0 0 1 5 18.18z"/>
+    <path class="pr-icon-twotone-primary-stroke" stroke-linejoin="round" stroke-width="2" d="M12 12a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
 </svg>
