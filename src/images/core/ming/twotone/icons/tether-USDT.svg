@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <path class="pr-icon-twotone-secondary-stroke" stroke-linecap="round" stroke-width="2" d="M18.288 4.504A1 1 0 0 0 17.42 4H6.58a1 1 0 0 0-.868.504L2.38 10.337a1 1 0 0 0 .161 1.203l9.283 9.283a.25.25 0 0 0 .354 0l9.283-9.283a1 1 0 0 0 .161-1.203z" />
+    <path class="pr-icon-twotone-secondary-stroke" stroke-linecap="round" stroke-width="2" d="M18.288 4.504A1 1 0 0 0 17.42 4H6.58a1 1 0 0 0-.868.504L2.38 10.337a1 1 0 0 0 .161 1.203l9.283 9.283a.25.25 0 0 0 .354 0l9.283-9.283a1 1 0 0 0 .161-1.203z"/>
     <path class="pr-icon-twotone-primary-stroke" stroke-linecap="round" stroke-width="2" d="M9 7h6m-3 9v-2m0-3.5V7"/>
     <ellipse cx="12" cy="11.5" class="pr-icon-twotone-primary-stroke" stroke-linecap="round" rx="4" ry="1.5"/>
 </svg>

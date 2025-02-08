@@ -1,4 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <path class="pr-icon-twotone-secondary-stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 9 2 2 1-2 2 2 1-2" />
+    <path class="pr-icon-twotone-secondary-stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 9 2 2 1-2 2 2 1-2"/>
     <path class="pr-icon-twotone-primary-stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 19h18m-1 0s-4.136-7.353-5.8-13.247A1.025 1.025 0 0 0 13.22 5H13l-1 .25L11 5h-.22c-.458 0-.856.311-.98.753C8.135 11.647 4 19 4 19"/>
 </svg>

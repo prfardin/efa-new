@@ -22,5 +22,6 @@ import PrIcon from '@c/core/PrIcon.vue'
         <pr-icon icon="icon-ming-twotone-abs" ratio="2" />
         <pr-icon icon="icon-ming-twotone-ZA-sort-ascending-letters" ratio="2" />
         <pr-icon icon="icon-ming-twotone-hood" ratio="2" />
+        <pr-icon icon="icon-ph-duotone-acorn" ratio="2" />
     </div>
 </template>

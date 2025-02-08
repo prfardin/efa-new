@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <g class="pr-icon-twotone-secondary-stroke" stroke-linejoin="round" stroke-width="2" >
+    <g class="pr-icon-twotone-secondary-stroke" stroke-linejoin="round" stroke-width="2">
         <path d="M18 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM13.84 10.804a1 1 0 0 1 .98-.804h2.36a1 1 0 0 1 .98.804L19 15h-1v6h-4v-6h-1z"/>
     </g>
     <path class="pr-icon-twotone-primary-stroke" stroke-linejoin="round" stroke-width="2" d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM5.1 11.09A1 1 0 0 1 6.094 10h3.81a1 1 0 0 1 .996 1.09L10 21H6z"/>
