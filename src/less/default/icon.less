@@ -94,11 +94,14 @@
 
   .pr-icon-duotone-secondary:not(.uk-preserve) {
     fill: @icon-duotone-secondary;
-    opacity: @icon-duotone-secondary-opacity;
   }
 
   .pr-icon-duotone-secondary-stroke:not(.uk-preserve) {
     stroke: @icon-duotone-secondary;
+  }
+
+  .pr-icon-duotone-secondary:not(.uk-preserve, .pr-preserve-opacity),
+  .pr-icon-duotone-secondary-stroke:not(.uk-preserve, .pr-preserve-opacity) {
     opacity: @icon-duotone-secondary-opacity;
   }
 
