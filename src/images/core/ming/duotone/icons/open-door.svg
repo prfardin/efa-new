@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <g fill="currentColor" opacity=".3">
+    <g class="pr-icon-duotone-secondary" >
         <path d="M5 5.82a1 1 0 0 1 .804-.98l8.598-1.72a.5.5 0 0 1 .598.49v16.78a.5.5 0 0 1-.598.49l-8.598-1.72A1 1 0 0 1 5 18.18z"/>
         <path d="M12 12a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
     </g>
-    <path fill="currentColor" d="M12 12a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
-    <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M15 6h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-3m-3-6a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm-6.196 7.16 8.598 1.72a.5.5 0 0 0 .598-.49V3.61a.5.5 0 0 0-.598-.49L5.804 4.84A1 1 0 0 0 5 5.82v12.36a1 1 0 0 0 .804.98Z"/>
+    <path class="pr-icon-duotone-primary" d="M12 12a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+    <path class="pr-icon-duotone-primary-stroke" stroke-linejoin="round" stroke-width="2" d="M15 6h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-3m-3-6a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm-6.196 7.16 8.598 1.72a.5.5 0 0 0 .598-.49V3.61a.5.5 0 0 0-.598-.49L5.804 4.84A1 1 0 0 0 5 5.82v12.36a1 1 0 0 0 .804.98Z"/>
 </svg>

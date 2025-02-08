@@ -1,7 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <g opacity=".3">
-        <path fill="currentColor" d="M5 3.762a.5.5 0 0 1 .699-.46l13.242 5.74a.5.5 0 0 1 0 .917L5 16z"/>
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"     d="M5 15v6m0-5V3.762a.5.5 0 0 1 .699-.46l13.242 5.74a.5.5 0 0 1 0 .917z"/>
-    </g>
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15v6m0-5V3.762a.5.5 0 0 1 .699-.46l13.242 5.74a.5.5 0 0 1 0 .917z"/>
+    <path class="pr-icon-duotone-secondary" d="M5 3.762a.5.5 0 0 1 .699-.46l13.242 5.74a.5.5 0 0 1 0 .917L5 16z"/>
+    <path class="pr-icon-duotone-secondary-stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15v6m0-5V3.762a.5.5 0 0 1 .699-.46l13.242 5.74a.5.5 0 0 1 0 .917z"/>
+    <path class="pr-icon-duotone-primary-stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15v6m0-5V3.762a.5.5 0 0 1 .699-.46l13.242 5.74a.5.5 0 0 1 0 .917z"/>
 </svg>

@@ -1,4 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <path fill="currentColor" d="M6.92 5.103a3 3 0 0 1 4.098-1.098l3.464 2a3 3 0 0 1 1.098 4.098l-.5.866-8.66-5z" opacity=".3"/>
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V6.395a2.79 2.79 0 0 0-1.116-2.232l-.323-.242A3.303 3.303 0 0 0 13 4.5v0m-4.75 8.3-.5.865m-1.5 2.598-.5.866m6.098-4.562-.5.866M6.652 9.567l-.5.866m3.696 5.598-.5.866m-4.696-3.866-.5.866M15.08 10.97l.5-.866a3 3 0 0 0-1.098-4.098l-3.464-2A3 3 0 0 0 6.92 5.103l-.5.866z"/>
+    <path class="pr-icon-duotone-secondary" d="M6.92 5.103a3 3 0 0 1 4.098-1.098l3.464 2a3 3 0 0 1 1.098 4.098l-.5.866-8.66-5z" />
+    <path class="pr-icon-duotone-primary-stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V6.395a2.79 2.79 0 0 0-1.116-2.232l-.323-.242A3.303 3.303 0 0 0 13 4.5v0m-4.75 8.3-.5.865m-1.5 2.598-.5.866m6.098-4.562-.5.866M6.652 9.567l-.5.866m3.696 5.598-.5.866m-4.696-3.866-.5.866M15.08 10.97l.5-.866a3 3 0 0 0-1.098-4.098l-3.464-2A3 3 0 0 0 6.92 5.103l-.5.866z"/>
 </svg>

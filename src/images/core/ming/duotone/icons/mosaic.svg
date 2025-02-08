@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <path fill="currentColor" d="M4 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z" opacity=".3"/>
-    <path fill="currentColor" d="M13 4a1 1 0 1 0-2 0zm-9 7a1 1 0 1 0 0 2zm1-6h14V3H5zm14 0v14h2V5zm0 14H5v2h14zM5 19V5H3v14zm6-15v16h2V4zm-7 9h16v-2H4zm1 6H3a2 2 0 0 0 2 2zm14 0v2a2 2 0 0 0 2-2zm0-14h2a2 2 0 0 0-2-2zM5 3a2 2 0 0 0-2 2h2zM15 7h2v2h-2zM7 15h2v2H7z"/>
-    <path stroke="currentColor" stroke-linejoin="round" d="M15 7h2v2h-2zM7 15h2v2H7z"/>
+    <path class="pr-icon-duotone-secondary" d="M4 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z" />
+    <path class="pr-icon-duotone-primary" d="M13 4a1 1 0 1 0-2 0zm-9 7a1 1 0 1 0 0 2zm1-6h14V3H5zm14 0v14h2V5zm0 14H5v2h14zM5 19V5H3v14zm6-15v16h2V4zm-7 9h16v-2H4zm1 6H3a2 2 0 0 0 2 2zm14 0v2a2 2 0 0 0 2-2zm0-14h2a2 2 0 0 0-2-2zM5 3a2 2 0 0 0-2 2h2zM15 7h2v2h-2zM7 15h2v2H7z"/>
+    <path class="pr-icon-duotone-primary-stroke" stroke-linejoin="round" d="M15 7h2v2h-2zM7 15h2v2H7z"/>
 </svg>

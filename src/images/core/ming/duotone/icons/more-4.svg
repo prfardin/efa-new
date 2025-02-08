@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <g fill="currentColor" opacity=".3">
+    <g class="pr-icon-duotone-secondary" >
         <path d="M12 21a9 9 0 1 1 0-18 9 9 0 0 1 0 18"/>
         <path d="M12 12.5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1M12 17a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1M12 8a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1"/>
     </g>
-    <path fill="currentColor" d="M12 12.5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1M12 17a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1M12 8a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1"/>
-    <path stroke="currentColor" stroke-width="2" d="M12 12.5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1ZM12 17a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1ZM12 8a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1Z"/>
+    <path class="pr-icon-duotone-primary" d="M12 12.5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1M12 17a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1M12 8a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1"/>
+    <path class="pr-icon-duotone-primary-stroke" stroke-width="2" d="M12 12.5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1ZM12 17a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1ZM12 8a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1Z"/>
 </svg>

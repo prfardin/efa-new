@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <g fill="currentColor" opacity=".3">
+    <g class="pr-icon-duotone-secondary" >
         <path d="M7 3h14v14H7z"/>
         <path d="M3 8h13v13H3z"/>
     </g>
-    <path fill="currentColor" d="M7 17H6a1 1 0 0 0 1 1zm4.525-7.646a1 1 0 0 0-1.414 1.414zm1.414 2.828-.707.707a1 1 0 0 0 1.415 0zm4.95-3.535a1 1 0 0 0-1.414-1.414zM8 4h12V2H8zm12 0v12h2V4zm0 12H7v2h13zM8 17V4H6v13zm7 3H4v2h11zM4 20V9H2v11zm11-3v3h2v-3zM4 9h3V7H4zm6.111 1.768 2.121 2.121 1.415-1.414-2.122-2.121zm3.535 2.121 4.243-4.242-1.414-1.414-4.243 4.242zM4 9V7a2 2 0 0 0-2 2zm11 13a2 2 0 0 0 2-2h-2zm5-6v2a2 2 0 0 0 2-2zm0-12h2a2 2 0 0 0-2-2zM4 20H2a2 2 0 0 0 2 2zM8 2a2 2 0 0 0-2 2h2z"/>
+    <path class="pr-icon-duotone-primary" d="M7 17H6a1 1 0 0 0 1 1zm4.525-7.646a1 1 0 0 0-1.414 1.414zm1.414 2.828-.707.707a1 1 0 0 0 1.415 0zm4.95-3.535a1 1 0 0 0-1.414-1.414zM8 4h12V2H8zm12 0v12h2V4zm0 12H7v2h13zM8 17V4H6v13zm7 3H4v2h11zM4 20V9H2v11zm11-3v3h2v-3zM4 9h3V7H4zm6.111 1.768 2.121 2.121 1.415-1.414-2.122-2.121zm3.535 2.121 4.243-4.242-1.414-1.414-4.243 4.242zM4 9V7a2 2 0 0 0-2 2zm11 13a2 2 0 0 0 2-2h-2zm5-6v2a2 2 0 0 0 2-2zm0-12h2a2 2 0 0 0-2-2zM4 20H2a2 2 0 0 0 2 2zM8 2a2 2 0 0 0-2 2h2z"/>
 </svg>

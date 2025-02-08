@@ -8,21 +8,15 @@ import PrIcon from '@c/core/PrIcon.vue'
 <template>
     <div class="uk-background-default">
         <pr-icon icon="icon-huge-bulk-google-lens" ratio="2" />
-        <pr-icon icon="icon-solar-broken-4k" ratio="2" />
-        <pr-icon icon="icon-solar-duotone-4k" ratio="2" />
-        <pr-icon icon="icon-solar-duotone-arrows-reorder" ratio="2" />
-        <pr-icon icon="icon-solar-duotone-bedside-table-3" ratio="2" />
-        <pr-icon icon="icon-solar-solid-airbuds-right" ratio="2" />
-        <pr-icon icon="icon-solar-solid-building-home" ratio="2" />
-        <pr-icon icon="icon-solar-solid-accumulator" ratio="2" />
-        <pr-icon icon="icon-solar-solid-card" ratio="2" />
-        <pr-icon icon="icon-solar-solid-incoming-call" ratio="2" />
-        <pr-icon icon="icon-solar-solid-call-cancel" ratio="2" />
-        <pr-icon icon="icon-solar-solid-call-dropped-rounded" ratio="2" />
-        <pr-icon icon="icon-solar-solid-call-dropped" ratio="2" />
-        <pr-icon icon="icon-solar-solid-ticket" ratio="2" />
-        <pr-icon icon="icon-solar-regular-ticket" ratio="2" />
+        <pr-icon icon="icon-huge-rounded-atom-02" ratio="2" />
         <pr-icon icon="icon-md-twotone-4k" ratio="2" />
         <pr-icon icon="icon-md-twotone-15mp" ratio="2" />
+        <pr-icon icon="icon-ming-duotone-currency-dollar" ratio="2" />
+        <pr-icon icon="icon-ming-duotone-text-direction-left" ratio="2" />
+        <pr-icon icon="icon-ming-duotone-abs" ratio="2" />
+        <pr-icon icon="icon-ming-duotone-align-arrow-down" ratio="2" />
+        <pr-icon icon="icon-ming-duotone-building-5" ratio="2" />
+        <pr-icon icon="icon-ming-duotone-egyptian-pyramids" ratio="2" />
+        <pr-icon icon="icon-ming-duotone-text-2" ratio="2" />
     </div>
 </template>

@@ -1,4 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <path fill="currentColor" d="M12 18c4.97 0 9-.895 9-2 0-.585-1.131-1.112-2.935-1.478l-.798-6.387a2 2 0 0 0-2.377-1.713l-2.498.5a2 2 0 0 1-.784 0l-2.498-.5a2 2 0 0 0-2.377 1.713l-.798 6.387C4.13 14.888 3 15.415 3 16c0 1.105 4.03 2 9 2" opacity=".3"/>
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5.93 14.52.802-6.386a2 2 0 0 1 2.377-1.712l2.499.5a2 2 0 0 0 .784 0l2.5-.5a2 2 0 0 1 2.376 1.712l.802 6.386M21 16c0 1.105-4.03 2-9 2s-9-.895-9-2 4.03-2 9-2 9 .895 9 2"/>
+    <path class="pr-icon-duotone-secondary" d="M12 18c4.97 0 9-.895 9-2 0-.585-1.131-1.112-2.935-1.478l-.798-6.387a2 2 0 0 0-2.377-1.713l-2.498.5a2 2 0 0 1-.784 0l-2.498-.5a2 2 0 0 0-2.377 1.713l-.798 6.387C4.13 14.888 3 15.415 3 16c0 1.105 4.03 2 9 2" />
+    <path class="pr-icon-duotone-primary-stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5.93 14.52.802-6.386a2 2 0 0 1 2.377-1.712l2.499.5a2 2 0 0 0 .784 0l2.5-.5a2 2 0 0 1 2.376 1.712l.802 6.386M21 16c0 1.105-4.03 2-9 2s-9-.895-9-2 4.03-2 9-2 9 .895 9 2"/>
 </svg>

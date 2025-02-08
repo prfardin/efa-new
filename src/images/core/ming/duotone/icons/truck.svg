@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <g fill="currentColor" opacity=".3">
+    <g class="pr-icon-duotone-secondary" >
         <path d="M9 17a2 2 0 1 1-4 0 2 2 0 0 1 4 0M19 17a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
         <path d="M21 16v-5.5L19 8h-3V5H3v11z"/>
     </g>
-    <path stroke="currentColor" stroke-width="2" d="M16 8V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h1.5M16 8v7.5M16 8h2.52a1 1 0 0 1 .78.375l1.48 1.851a1 1 0 0 1 .22.625V15a1 1 0 0 1-1 1h-1.5m-3 0h-7m.5 1a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm10 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"/>
+    <path class="pr-icon-duotone-primary-stroke" stroke-width="2" d="M16 8V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h1.5M16 8v7.5M16 8h2.52a1 1 0 0 1 .78.375l1.48 1.851a1 1 0 0 1 .22.625V15a1 1 0 0 1-1 1h-1.5m-3 0h-7m.5 1a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm10 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"/>
 </svg>

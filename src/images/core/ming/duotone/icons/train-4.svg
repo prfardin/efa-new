@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <g fill="currentColor" opacity=".3">
+    <g class="pr-icon-duotone-secondary" >
         <path d="M5.357 6.216A4 4 0 0 1 9.279 3h5.442a4 4 0 0 1 3.922 3.216l1.4 7A4 4 0 0 1 16.121 18H7.879a4 4 0 0 1-3.922-4.784z"/>
         <path d="M8.905 7.379A.5.5 0 0 1 9.39 7h5.22a.5.5 0 0 1 .485.379l.75 3a.5.5 0 0 1-.485.621H8.64a.5.5 0 0 1-.485-.621z"/>
     </g>
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 21 4-3m6 0 4 3M8.64 11h6.72a.5.5 0 0 0 .485-.621l-.75-3A.5.5 0 0 0 14.61 7H9.39a.5.5 0 0 0-.485.379l-.75 3A.5.5 0 0 0 8.64 11m-.76 7h8.24a4 4 0 0 0 3.923-4.784l-1.4-7A4 4 0 0 0 14.721 3H9.279a4 4 0 0 0-3.922 3.216l-1.4 7A4 4 0 0 0 7.879 18"/>
-    <path fill="currentColor" d="M9.5 14.5a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0M17 14.5a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0"/>
+    <path class="pr-icon-duotone-primary-stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 21 4-3m6 0 4 3M8.64 11h6.72a.5.5 0 0 0 .485-.621l-.75-3A.5.5 0 0 0 14.61 7H9.39a.5.5 0 0 0-.485.379l-.75 3A.5.5 0 0 0 8.64 11m-.76 7h8.24a4 4 0 0 0 3.923-4.784l-1.4-7A4 4 0 0 0 14.721 3H9.279a4 4 0 0 0-3.922 3.216l-1.4 7A4 4 0 0 0 7.879 18"/>
+    <path class="pr-icon-duotone-primary" d="M9.5 14.5a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0M17 14.5a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0"/>
 </svg>

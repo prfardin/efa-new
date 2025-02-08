@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <g fill="currentColor" opacity=".3">
+    <g class="pr-icon-duotone-secondary" >
         <path d="M12 21a9 9 0 1 0-7.603-4.182c.08.125.104.279.062.422L3.5 20.5l3.26-.959a.516.516 0 0 1 .422.062A8.958 8.958 0 0 0 12 21"/>
         <path d="M9 12a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M16 12a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
     </g>
-    <path fill="currentColor" d="M9 12a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M16 12a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
-    <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 1 0-7.603-4.182c.08.125.104.279.062.422L3.5 20.5l3.26-.959a.516.516 0 0 1 .422.062A8.958 8.958 0 0 0 12 21Z"/>
-    <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M9 12a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0ZM16 12a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
+    <path class="pr-icon-duotone-primary" d="M9 12a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M16 12a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+    <path class="pr-icon-duotone-primary-stroke" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 1 0-7.603-4.182c.08.125.104.279.062.422L3.5 20.5l3.26-.959a.516.516 0 0 1 .422.062A8.958 8.958 0 0 0 12 21Z"/>
+    <path class="pr-icon-duotone-primary-stroke" stroke-linejoin="round" stroke-width="2" d="M9 12a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0ZM16 12a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
 </svg>

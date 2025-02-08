@@ -1,4 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <path fill="currentColor" fill-rule="evenodd" d="M9.008 3.876A1 1 0 0 1 10 3h6a1 1 0 0 1 .992 1.124l-2 16A1 1 0 0 1 14 21H8a1 1 0 0 1-.992-1.124z" clip-rule="evenodd" opacity=".3"/>
-    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M10 4h6m-3 0-2 16m-3 0h6"/>
+    <path class="pr-icon-duotone-secondary" fill-rule="evenodd" d="M9.008 3.876A1 1 0 0 1 10 3h6a1 1 0 0 1 .992 1.124l-2 16A1 1 0 0 1 14 21H8a1 1 0 0 1-.992-1.124z" clip-rule="evenodd" />
+    <path class="pr-icon-duotone-primary-stroke" stroke-linecap="round" stroke-width="2" d="M10 4h6m-3 0-2 16m-3 0h6"/>
 </svg>

@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-    <g fill="currentColor" opacity=".3">
+    <g class="pr-icon-duotone-secondary" >
         <path d="M4 12a2 2 0 1 1 4 0v2h8v-2a2 2 0 1 1 4 0v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"/>
         <path d="M14 4h-4a4 4 0 0 0-4 4v7h12V8a4 4 0 0 0-4-4"/>
     </g>
-    <path fill="currentColor" d="M8 14H7a1 1 0 0 0 1 1zm8 0v1a1 1 0 0 0 1-1zm-9 4a1 1 0 1 0-2 0zm-2 2a1 1 0 1 0 2 0zm14-2a1 1 0 1 0-2 0zm-2 2a1 1 0 1 0 2 0zm2-8v5h2v-5zm0 5H5v2h14zM5 17v-5H3v5zm2-5v2h2v-2zm1 3h8v-2H8zm9-1v-2h-2v2zM5 18v2h2v-2zm12 0v2h2v-2zM10 5h4V3h-4zm7 3v2h2V8zM7 10V8H5v2zm11-1a3 3 0 0 0-3 3h2a1 1 0 0 1 1-1zM6 11a1 1 0 0 1 1 1h2a3 3 0 0 0-3-3zm-1 6H3a2 2 0 0 0 2 2zm9-12a3 3 0 0 1 3 3h2a5 5 0 0 0-5-5zm5 12v2a2 2 0 0 0 2-2zM10 3a5 5 0 0 0-5 5h2a3 3 0 0 1 3-3zm11 9a3 3 0 0 0-3-3v2a1 1 0 0 1 1 1zM5 12a1 1 0 0 1 1-1V9a3 3 0 0 0-3 3z"/>
+    <path class="pr-icon-duotone-primary" d="M8 14H7a1 1 0 0 0 1 1zm8 0v1a1 1 0 0 0 1-1zm-9 4a1 1 0 1 0-2 0zm-2 2a1 1 0 1 0 2 0zm14-2a1 1 0 1 0-2 0zm-2 2a1 1 0 1 0 2 0zm2-8v5h2v-5zm0 5H5v2h14zM5 17v-5H3v5zm2-5v2h2v-2zm1 3h8v-2H8zm9-1v-2h-2v2zM5 18v2h2v-2zm12 0v2h2v-2zM10 5h4V3h-4zm7 3v2h2V8zM7 10V8H5v2zm11-1a3 3 0 0 0-3 3h2a1 1 0 0 1 1-1zM6 11a1 1 0 0 1 1 1h2a3 3 0 0 0-3-3zm-1 6H3a2 2 0 0 0 2 2zm9-12a3 3 0 0 1 3 3h2a5 5 0 0 0-5-5zm5 12v2a2 2 0 0 0 2-2zM10 3a5 5 0 0 0-5 5h2a3 3 0 0 1 3-3zm11 9a3 3 0 0 0-3-3v2a1 1 0 0 1 1 1zM5 12a1 1 0 0 1 1-1V9a3 3 0 0 0-3 3z"/>
 </svg>
