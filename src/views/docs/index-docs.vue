@@ -7,14 +7,6 @@ import PrIcon from '@c/core/PrIcon.vue'
 
 <template>
     <div class="uk-background-default">
-        <pr-icon icon="icon-solar-duotone-accessibility" ratio="2" />
-        <pr-icon icon="icon-solar-duotoneso-accessibility" ratio="2" />
-        <pr-icon icon="icon-solar-duotoneso-black-hole" ratio="2" />
-        <pr-icon icon="icon-solar-duotone-black-hole" ratio="2" />
-        <pr-icon icon="icon-solar-duotoneso-sort-from-top-to-bottom" ratio="2" />
-        <pr-icon icon="icon-solar-duotoneso-camera-minimalistic" ratio="2" />
-        <pr-icon icon="icon-uni-light-user" ratio="2" />
-        <pr-icon icon="icon-uni-light-airplay" ratio="2" />
         <pr-icon icon="icon-uni-mono-airplay" ratio="2" />
     </div>
 </template>
