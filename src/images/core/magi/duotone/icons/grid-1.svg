@@ -1,0 +1,16 @@
+<svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <defs>
+        <style>.cls-1,.cls-2{fill:#25314c;}.cls-1{opacity:0.4;}</style>
+    </defs>
+    <g id="grid-1">
+        <circle class="cls-1" cx="5" cy="5" r="2"/>
+        <circle class="cls-2" cx="12" cy="5" r="2"/>
+        <circle class="cls-1" cx="19" cy="5" r="2"/>
+        <circle class="cls-1" cx="5" cy="12" r="2"/>
+        <circle class="cls-2" cx="12" cy="12" r="2"/>
+        <circle class="cls-1" cx="19" cy="12" r="2"/>
+        <circle class="cls-1" cx="5" cy="19" r="2"/>
+        <circle class="cls-2" cx="12" cy="19" r="2"/>
+        <circle class="cls-1" cx="19" cy="19" r="2"/>
+    </g>
+</svg>

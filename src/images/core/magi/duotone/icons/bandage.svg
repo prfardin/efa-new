@@ -1,0 +1,16 @@
+<svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <defs>
+        <style>.cls-1,.cls-2{fill:#25314c;}.cls-2{opacity:0.4;}</style>
+    </defs>
+    <g id="bandage">
+        <rect class="cls-1" x="9.177" y="7.487" width="5.657" height="9.037"     transform="translate(-4.973 12.005) rotate(-45)"/>
+        <path class="cls-2" d="M6.81,10.81,13.2,17.2l-2.77,2.76a2.6,2.6,0,0,1-4.16,0L4.04,17.73a2.6,2.6,0,0,1,0-4.16Z"/>
+        <path class="cls-2"     d="M19.96,10.43,17.2,13.2,10.81,6.81l2.76-2.77a2.6,2.6,0,0,1,4.16,0l2.23,2.23A2.6,2.6,0,0,1,19.96,10.43Z"/>
+        <circle class="cls-1" cx="17.25" cy="6.75" r="0.75"/>
+        <circle class="cls-1" cx="14.75" cy="7.25" r="0.75"/>
+        <circle class="cls-1" cx="7.25" cy="14.75" r="0.75"/>
+        <circle class="cls-1" cx="9.25" cy="16.75" r="0.75"/>
+        <circle class="cls-1" cx="6.75" cy="17.25" r="0.75"/>
+        <circle class="cls-1" cx="16.75" cy="9.25" r="0.75"/>
+    </g>
+</svg>

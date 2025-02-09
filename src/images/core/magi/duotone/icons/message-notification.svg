@@ -1,0 +1,9 @@
+<svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <defs>
+        <style>.cls-1,.cls-2{fill:#25314c;}.cls-1{opacity:0.4;}</style>
+    </defs>
+    <g id="message-notification">
+        <path class="cls-1"     d="M21,7.733V15a2.652,2.652,0,0,1-3,3H6L3,21V6A2.652,2.652,0,0,1,6,3H16.267a.3.3,0,0,1,.29.371,3.475,3.475,0,0,0-.05.853,3.528,3.528,0,0,0,3.267,3.269,3.491,3.491,0,0,0,.855-.05A.3.3,0,0,1,21,7.733Z"/>
+        <circle class="cls-2" cx="20" cy="4" r="2"/>
+    </g>
+</svg>

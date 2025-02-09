@@ -1,0 +1,10 @@
+<svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <defs>
+        <style>.cls-1,.cls-2{fill:#25314c;}.cls-2{opacity:0.4;}</style>
+    </defs>
+    <g id="door-closed">
+        <path class="cls-1" d="M20,21.75H4a.75.75,0,0,1,0-1.5H20a.75.75,0,0,1,0,1.5Z"/>
+        <path class="cls-2" d="M5.5,4.5A1.5,1.5,0,0,1,7,3H17a1.5,1.5,0,0,1,1.5,1.5V21H5.5Z"/>
+        <path class="cls-1" d="M15.02,13a1,1,0,0,1-.01-2h.01a1,1,0,0,1,0,2Z"/>
+    </g>
+</svg>

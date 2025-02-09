@@ -1,0 +1,9 @@
+<svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <defs>
+        <style>.cls-1,.cls-2{fill:#25314c;}.cls-1{opacity:0.4;}</style>
+    </defs>
+    <g id="exchange-vertical">
+        <path class="cls-1"     d="M10,22a1,1,0,0,1-.707-.293l-5-5a1,1,0,0,1,1.414-1.414L9,18.586V6a1,1,0,0,1,2,0V21a1,1,0,0,1-1,1Z"/>
+        <path class="cls-2"     d="M15,19a1,1,0,0,1-1-1V3a1,1,0,0,1,1.707-.707l5,5a1,1,0,0,1-1.414,1.414L16,5.414V18A1,1,0,0,1,15,19Z"/>
+    </g>
+</svg>

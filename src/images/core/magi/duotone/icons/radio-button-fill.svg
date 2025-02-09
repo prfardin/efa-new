@@ -1,0 +1,9 @@
+<svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <defs>
+        <style>.cls-1,.cls-2{fill:#25314c;}.cls-1{opacity:0.4;}</style>
+    </defs>
+    <g id="radio-button-fill">
+        <path class="cls-1"     d="M12,22.75A10.75,10.75,0,1,1,22.75,12,10.762,10.762,0,0,1,12,22.75Zm0-20A9.25,9.25,0,1,0,21.25,12,9.26,9.26,0,0,0,12,2.75Z"/>
+        <circle class="cls-2" cx="12" cy="12" r="6"/>
+    </g>
+</svg>

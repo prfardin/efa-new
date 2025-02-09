@@ -1,0 +1,14 @@
+<svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <defs>
+        <style>.cls-1,.cls-2{fill:#25314c;}.cls-1{opacity:0.4;}</style>
+    </defs>
+    <g id="bank">
+        <path class="cls-1"     d="M19,11H5a.884.884,0,0,1-1-1V7.441a1,1,0,0,1,.553-.894l6.776-3.389a1.5,1.5,0,0,1,1.342,0l6.776,3.389A1,1,0,0,1,20,7.441V10A.884.884,0,0,1,19,11Z"/>
+        <rect class="cls-2" x="17.25" y="11" width="1.5" height="7"/>
+        <rect class="cls-2" x="13.25" y="11" width="1.5" height="7"/>
+        <rect class="cls-2" x="9.25" y="11" width="1.5" height="7"/>
+        <rect class="cls-2" x="5.25" y="11" width="1.5" height="7"/>
+        <path class="cls-1"     d="M21,20.25H20V19a.884.884,0,0,0-1-1H5a.884.884,0,0,0-1,1v1.25H3a.75.75,0,0,0,0,1.5H21a.75.75,0,0,0,0-1.5Z"/>
+        <circle class="cls-2" cx="12" cy="7" r="1.25"/>
+    </g>
+</svg>

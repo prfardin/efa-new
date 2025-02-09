@@ -1,0 +1,9 @@
+<svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <defs>
+        <style>.cls-1,.cls-2{fill:#25314c;}.cls-2{opacity:0.4;}</style>
+    </defs>
+    <g id="rotate-left">
+        <path class="cls-1" d="M8,10H3A1,1,0,0,1,2,9V4A1,1,0,0,1,4,4V8H8a1,1,0,0,1,0,2Z"/>
+        <path class="cls-2"     d="M12,22a9.94,9.94,0,0,1-8.955-5.555,1,1,0,1,1,1.791-.89,8,8,0,1,0-.373-6.223,1,1,0,0,1-1.887-.664A10,10,0,1,1,12,22Z"/>
+    </g>
+</svg>

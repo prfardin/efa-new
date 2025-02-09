@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_7" data-name="Layer 7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <defs>
+        <style>   .cls-1, .cls-2 {   fill: #25314c;   }
+   .cls-2 {   opacity: .4;   }
+        </style>
+    </defs>
+    <g id="cake-slice">
+        <path class="cls-2" d="m3.22,12c-.14.23-.22.5-.22.78v5.22c0,1.1.9,2,2,2h14c1.1,0,2-.9,2-2v-6H3.22Z"/>
+        <path class="cls-1"     d="m21,11.999H3.24c.11-.18.25-.33.42-.45l10.35-7.31c.34-.23.78-.31,1.16-.17,3.27,1.23,5.63,4.29,5.83,7.93ZM3,16.75h18v-1.5H3v1.5Z"/>
+    </g>
+</svg>

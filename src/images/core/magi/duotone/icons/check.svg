@@ -1,0 +1,8 @@
+<svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <defs>
+        <style>.cls-1{fill:#25314c;opacity:0.4;}</style>
+    </defs>
+    <g id="check">
+        <path class="cls-1"     d="M9,18H9a1,1,0,0,1-.708-.3l-4-4.063a1,1,0,1,1,1.424-1.4L9.005,15.58l9.288-9.287a1,1,0,1,1,1.414,1.414l-10,10A1,1,0,0,1,9,18Z"/>
+    </g>
+</svg>

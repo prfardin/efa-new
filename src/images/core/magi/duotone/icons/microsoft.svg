@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_7" data-name="Layer 7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <defs>
+        <style>   .cls-1 {   fill: #25314c;   }
+   .cls-2 {   opacity: .4;   }
+        </style>
+    </defs>
+    <g id="microsoft">
+        <path class="cls-1" d="m12.5,3h8.5v8.5h-8.5V3ZM3,21h8.5v-8.5H3v8.5Z"/>
+        <g class="cls-2">   <path class="cls-1" d="m3,3h8.5v8.5H3V3Zm9.5,18h8.5v-8.5h-8.5v8.5Z"/>
+        </g>
+    </g>
+</svg>

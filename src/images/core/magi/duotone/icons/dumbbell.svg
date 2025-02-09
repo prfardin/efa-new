@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_7" data-name="Layer 7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <defs>
+        <style>   .cls-1, .cls-2 {   fill: #25314c;   }
+   .cls-2 {   opacity: .4;   }
+        </style>
+    </defs>
+    <g id="dumbbell">
+        <path class="cls-2"     d="m3,16.5V7.5c0-1,.5-1.5,1.5-1.5h2c1,0,1.5.5,1.5,1.5v9c0,1-.5,1.5-1.5,1.5h-2c-1,0-1.5-.5-1.5-1.5Zm14.5,1.5h2c1,0,1.5-.5,1.5-1.5V7.5c0-1-.5-1.5-1.5-1.5h-2c-1,0-1.5.5-1.5,1.5v9c0,1,.5,1.5,1.5,1.5Z"/>
+        <path class="cls-1"     d="m3,9.5v5h-.5c-.56,0-1-.47-1-1.07v-2.86c0-.6.44-1.07,1-1.07h.5Zm18.5,0h-.5v5h.5c.56,0,1-.47,1-1.07v-2.86c0-.6-.44-1.07-1-1.07Zm-13.5,4.5h8v-4h-8v4Z"/>
+    </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <defs>
+        <style>.cls-1,.cls-2{fill:#25314c;}.cls-1{opacity:0.4;}</style>
+    </defs>
+    <g id="parking-square">
+        <path class="cls-1"     d="M3,17.625V6.375Q3,3,6.375,3h11.25Q21,3,21,6.375v11.25Q21,21,17.625,21H6.375Q3,21,3,17.625Z"/>
+        <path class="cls-2"     d="M10,16.75A.75.75,0,0,1,9.25,16V8A.75.75,0,0,1,10,7.25h3a2.75,2.75,0,0,1,0,5.5H10.75V16A.75.75,0,0,1,10,16.75Zm.75-5.5H13a1.25,1.25,0,0,0,0-2.5H10.75Z"/>
+    </g>
+</svg>

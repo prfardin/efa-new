@@ -1,0 +1,9 @@
+<svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <defs>
+        <style>.cls-1,.cls-2{fill:#25314c;}.cls-1{opacity:0.4;}</style>
+    </defs>
+    <g id="clock-alt">
+        <circle class="cls-1" cx="12" cy="12" r="10"/>
+        <path class="cls-2" d="M12,12.75a.75.75,0,0,1-.75-.75V7a.75.75,0,0,1,1.5,0v5A.75.75,0,0,1,12,12.75Z"/>
+    </g>
+</svg>

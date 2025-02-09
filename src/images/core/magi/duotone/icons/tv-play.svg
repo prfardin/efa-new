@@ -1,0 +1,10 @@
+<svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <defs>
+        <style>.cls-1,.cls-2{fill:#25314c;}.cls-1{fill-rule:evenodd;opacity:0.4;}</style>
+    </defs>
+    <g id="tv-play">
+        <path class="cls-1" d="M3,14.769V7.231Q3,4,6,4H18q3,0,3,3.231v7.538Q21,18,18,18H6Q3,18,3,14.769Z"/>
+        <path class="cls-2" d="M17,21.75H7a.75.75,0,0,1,0-1.5H17a.75.75,0,0,1,0,1.5Z"/>
+        <path class="cls-2"     d="M14.581,10.254,11.433,8.327a.941.941,0,0,0-1.433.8v3.746a.941.941,0,0,0,1.433.8l3.148-1.926A.873.873,0,0,0,14.581,10.254Z"/>
+    </g>
+</svg>

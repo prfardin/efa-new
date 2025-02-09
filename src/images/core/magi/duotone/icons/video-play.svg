@@ -1,0 +1,12 @@
+<svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <defs>
+        <style>.cls-1,.cls-2{fill:#25314c;}.cls-2{opacity:0.4;}</style>
+    </defs>
+    <g id="video-play">
+        <path class="cls-1" d="M6.38,3H8.25V9H3V6.38C3,4.12,4.12,3,6.38,3Z"/>
+        <rect class="cls-1" x="9.75" y="3" width="4.5" height="6"/>
+        <path class="cls-1" d="M21,6.38V9H15.75V3h1.87C19.88,3,21,4.12,21,6.38Z"/>
+        <path class="cls-2"     d="M15.75,9V3h-1.5V9H9.75V3H8.25V9H3v8.62C3,19.87,4.12,21,6.38,21H17.62C19.88,21,21,19.87,21,17.62V9Z"/>
+        <path class="cls-1"     d="M14.581,13.754l-3.148-1.927a.941.941,0,0,0-1.433.8v3.746a.941.941,0,0,0,1.433.8l3.148-1.927A.873.873,0,0,0,14.581,13.754Z"/>
+    </g>
+</svg>

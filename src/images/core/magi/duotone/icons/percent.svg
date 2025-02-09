@@ -1,0 +1,10 @@
+<svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <defs>
+        <style>.cls-1,.cls-2{fill:#25314c;}.cls-2{opacity:0.4;}</style>
+    </defs>
+    <g id="percent">
+        <path class="cls-1"     d="M4,20.75a.75.75,0,0,1-.53-1.28l16-16a.75.75,0,1,1,1.06,1.06l-16,16A.744.744,0,0,1,4,20.75Z"/>
+        <circle class="cls-2" cx="17.5" cy="17.5" r="2.5"/>
+        <circle class="cls-2" cx="6.5" cy="6.5" r="2.5"/>
+    </g>
+</svg>

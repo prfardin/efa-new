@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_7" data-name="Layer 7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <defs>
+        <style>   .cls-1 {   fill: #25314c;   opacity: .4;   }
+        </style>
+    </defs>
+    <g id="tumbler">
+        <path class="cls-1"     d="m17,21h-3.006c-2.707,0-4.725-1.393-4.725-4.725v-5.336h-2.269v-2.889c2.707-.703,3.648-3.033,3.779-5.05h2.811v4.581h3.28v3.358h-3.28v4.646c0,1.393.703,1.874,1.822,1.874h1.588v3.54Z"/>
+    </g>
+</svg>

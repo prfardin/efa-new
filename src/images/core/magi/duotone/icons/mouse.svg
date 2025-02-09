@@ -1,0 +1,9 @@
+<svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <defs>
+        <style>.cls-1,.cls-2{fill:#25314c;}.cls-1{opacity:0.4;}</style>
+    </defs>
+    <g id="mouse">
+        <path class="cls-1" d="M12,21h0c4,0,7-2,7-7V10c0-5-3-7-7-7h0C8,3,5,5,5,10v4C5,19,8,21,12,21Z"/>
+        <path class="cls-2"     d="M12.75,6.708V3.02C12.5,3.01,12.25,3,12,3s-.5.01-.75.02V6.708A1.493,1.493,0,0,0,10.5,8V9.5a1.5,1.5,0,0,0,3,0V8A1.493,1.493,0,0,0,12.75,6.708Z"/>
+    </g>
+</svg>

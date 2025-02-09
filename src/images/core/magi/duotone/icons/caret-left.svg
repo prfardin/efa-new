@@ -1,0 +1,8 @@
+<svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <defs>
+        <style>.cls-1{fill:#25314c;opacity:0.4;}</style>
+    </defs>
+    <g id="caret-left">
+        <path class="cls-1"     d="M8.6,13.3l5.194,4.38A1.34,1.34,0,0,0,16,16.648v-9.3a1.34,1.34,0,0,0-2.2-1.034L8.6,10.7A1.706,1.706,0,0,0,8.6,13.3Z"/>
+    </g>
+</svg>

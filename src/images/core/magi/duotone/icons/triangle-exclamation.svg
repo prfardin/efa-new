@@ -1,0 +1,9 @@
+<svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <defs>
+        <style>.cls-1,.cls-2{fill:#25314c;}.cls-1{opacity:0.4;}</style>
+    </defs>
+    <g id="triangle-exclamation">
+        <path class="cls-1"     d="M18.692,22H5.308a3.3,3.3,0,0,1-2.914-4.848L9,4.8a3.4,3.4,0,0,1,6,0l6.607,12.356A3.3,3.3,0,0,1,18.692,22Z"/>
+        <path class="cls-2"     d="M12,14.75a.75.75,0,0,1-.75-.75V10a.75.75,0,0,1,1.5,0v4A.75.75,0,0,1,12,14.75ZM13.02,17a1,1,0,0,0-1-1h-.01a1,1,0,1,0,1.01,1Z"/>
+    </g>
+</svg>
