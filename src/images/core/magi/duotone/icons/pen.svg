@@ -2,8 +2,8 @@
     <defs>
         <style>.cls-1,.cls-2{fill:#25314c;}.cls-1{opacity:0.4;}</style>
     </defs>
-    <g id="pen">
-        <polygon class="cls-1" points="3 16 3 21 8 21 17.786 11.258 12.742 6.214 3 16"/>
-        <path class="cls-2"     d="M20.414,5.814,18.186,3.586a2,2,0,0,0-2.832,0L12.742,6.214l5.044,5.044,2.625-2.613A2,2,0,0,0,20.414,5.814Z"/>
-    </g>
+
+        <polygon class="pr-icon-duotone-primary" points="3 16 3 21 8 21 17.786 11.258 12.742 6.214 3 16"/>
+        <path class="pr-icon-duotone-secondary" d="M20.414,5.814,18.186,3.586a2,2,0,0,0-2.832,0L12.742,6.214l5.044,5.044,2.625-2.613A2,2,0,0,0,20.414,5.814Z"/>
+
 </svg>

@@ -2,8 +2,8 @@
     <defs>
         <style>.cls-1,.cls-2{fill:#25314c;}.cls-1{opacity:0.4;}</style>
     </defs>
-    <g id="plus">
-        <path class="cls-1" d="M12,20a1,1,0,0,1-1-1V5a1,1,0,0,1,2,0V19A1,1,0,0,1,12,20Z"/>
-        <path class="cls-2" d="M19,13H5a1,1,0,0,1,0-2H19a1,1,0,0,1,0,2Z"/>
-    </g>
+
+        <path class="pr-icon-duotone-primary" d="M12,20a1,1,0,0,1-1-1V5a1,1,0,0,1,2,0V19A1,1,0,0,1,12,20Z"/>
+        <path class="pr-icon-duotone-secondary" d="M19,13H5a1,1,0,0,1,0-2H19a1,1,0,0,1,0,2Z"/>
+
 </svg>

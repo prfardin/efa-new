@@ -2,10 +2,10 @@
     <defs>
         <style>.cls-1,.cls-2{fill:#25314c;}.cls-2{opacity:0.4;}</style>
     </defs>
-    <g id="sliders-vertical-alt">
-        <circle class="cls-1" cx="17" cy="6" r="3.5"/>
-        <circle class="cls-1" cx="7" cy="18" r="3.5"/>
-        <path class="cls-2" d="M17,21.75a.75.75,0,0,1-.75-.75V15a.75.75,0,0,1,1.5,0v6A.75.75,0,0,1,17,21.75Z"/>
-        <path class="cls-2" d="M7,9.75A.75.75,0,0,1,6.25,9V3a.75.75,0,0,1,1.5,0V9A.75.75,0,0,1,7,9.75Z"/>
-    </g>
+
+        <circle class="pr-icon-duotone-primary" cx="17" cy="6" r="3.5"/>
+        <circle class="pr-icon-duotone-primary" cx="7" cy="18" r="3.5"/>
+        <path class="pr-icon-duotone-secondary" d="M17,21.75a.75.75,0,0,1-.75-.75V15a.75.75,0,0,1,1.5,0v6A.75.75,0,0,1,17,21.75Z"/>
+        <path class="pr-icon-duotone-secondary" d="M7,9.75A.75.75,0,0,1,6.25,9V3a.75.75,0,0,1,1.5,0V9A.75.75,0,0,1,7,9.75Z"/>
+
 </svg>

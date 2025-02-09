@@ -2,11 +2,11 @@
     <defs>
         <style>.cls-1,.cls-2{fill:#25314c;}.cls-2{opacity:0.4;}</style>
     </defs>
-    <g id="bitcoin">
-        <path class="cls-1" d="M14,3V4.03A4.07,4.07,0,0,0,13.5,4H12V3a1,1,0,0,1,2,0Z"/>
-        <path class="cls-1" d="M10,3V4H8V3a1,1,0,0,1,2,0Z"/>
-        <path class="cls-1" d="M14,20v1a1,1,0,0,1-2,0V20Z"/>
-        <path class="cls-1" d="M10,20v1a1,1,0,0,1-2,0V20Z"/>
-        <path class="cls-2"     d="M16.733,11.617A4.491,4.491,0,0,0,13.5,4H6A1,1,0,0,0,6,6H7V18H6a1,1,0,0,0,0,2h8.5a4.485,4.485,0,0,0,2.233-8.383ZM13.5,6a2.5,2.5,0,0,1,0,5H9V6Zm1,12H9V13h5.5a2.5,2.5,0,0,1,0,5Z"/>
-    </g>
+
+        <path class="pr-icon-duotone-primary" d="M14,3V4.03A4.07,4.07,0,0,0,13.5,4H12V3a1,1,0,0,1,2,0Z"/>
+        <path class="pr-icon-duotone-primary" d="M10,3V4H8V3a1,1,0,0,1,2,0Z"/>
+        <path class="pr-icon-duotone-primary" d="M14,20v1a1,1,0,0,1-2,0V20Z"/>
+        <path class="pr-icon-duotone-primary" d="M10,20v1a1,1,0,0,1-2,0V20Z"/>
+        <path class="pr-icon-duotone-secondary" d="M16.733,11.617A4.491,4.491,0,0,0,13.5,4H6A1,1,0,0,0,6,6H7V18H6a1,1,0,0,0,0,2h8.5a4.485,4.485,0,0,0,2.233-8.383ZM13.5,6a2.5,2.5,0,0,1,0,5H9V6Zm1,12H9V13h5.5a2.5,2.5,0,0,1,0,5Z"/>
+
 </svg>

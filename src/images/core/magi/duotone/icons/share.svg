@@ -2,11 +2,11 @@
     <defs>
         <style>.cls-1,.cls-2{fill:#25314c;}.cls-1{opacity:0.4;}</style>
     </defs>
-    <g id="share">
-        <path class="cls-1"     d="M7.854,11.319A.75.75,0,0,1,7.518,9.9l7.894-3.947a.75.75,0,1,1,.67,1.341L8.188,11.24A.758.758,0,0,1,7.854,11.319Z"/>
-        <path class="cls-1"     d="M16.3,18.406a.742.742,0,0,1-.334-.08l-9-4.5a.75.75,0,1,1,.67-1.342l9,4.5a.751.751,0,0,1-.336,1.422Z"/>
-        <circle class="cls-2" cx="6" cy="12" r="3"/>
-        <circle class="cls-2" cx="18" cy="6" r="3"/>
-        <circle class="cls-2" cx="18" cy="18" r="3"/>
-    </g>
+
+        <path class="pr-icon-duotone-primary" d="M7.854,11.319A.75.75,0,0,1,7.518,9.9l7.894-3.947a.75.75,0,1,1,.67,1.341L8.188,11.24A.758.758,0,0,1,7.854,11.319Z"/>
+        <path class="pr-icon-duotone-primary" d="M16.3,18.406a.742.742,0,0,1-.334-.08l-9-4.5a.75.75,0,1,1,.67-1.342l9,4.5a.751.751,0,0,1-.336,1.422Z"/>
+        <circle class="pr-icon-duotone-secondary" cx="6" cy="12" r="3"/>
+        <circle class="pr-icon-duotone-secondary" cx="18" cy="6" r="3"/>
+        <circle class="pr-icon-duotone-secondary" cx="18" cy="18" r="3"/>
+
 </svg>

@@ -8,5 +8,6 @@ import PrIcon from '@c/core/PrIcon.vue'
 <template>
     <div class="uk-background-default">
         <pr-icon icon="icon-uni-mono-airplay" ratio="2" />
+        <pr-icon icon="icon-magi-duotone-airplay" ratio="2" />
     </div>
 </template>

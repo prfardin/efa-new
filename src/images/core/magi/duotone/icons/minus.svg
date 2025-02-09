@@ -2,7 +2,7 @@
     <defs>
         <style>.cls-1{fill:#25314c;}</style>
     </defs>
-    <g id="minus">
-        <path class="cls-1" d="M19,13H5a1,1,0,0,1,0-2H19a1,1,0,0,1,0,2Z"/>
-    </g>
+
+        <path class="pr-icon-duotone-primary" d="M19,13H5a1,1,0,0,1,0-2H19a1,1,0,0,1,0,2Z"/>
+
 </svg>

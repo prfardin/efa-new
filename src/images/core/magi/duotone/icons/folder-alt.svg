@@ -2,8 +2,8 @@
     <defs>
         <style>.cls-1,.cls-2{fill:#25314c;}.cls-2{opacity:0.4;}</style>
     </defs>
-    <g id="folder-alt">
-        <path class="cls-1" d="M3,17a2.652,2.652,0,0,0,3,3H18a2.652,2.652,0,0,0,3-3V15H3Z"/>
-        <path class="cls-2" d="M18,7H13L10,4H6A2.652,2.652,0,0,0,3,7v8H21V10A2.652,2.652,0,0,0,18,7Z"/>
-    </g>
+
+        <path class="pr-icon-duotone-primary" d="M3,17a2.652,2.652,0,0,0,3,3H18a2.652,2.652,0,0,0,3-3V15H3Z"/>
+        <path class="pr-icon-duotone-secondary" d="M18,7H13L10,4H6A2.652,2.652,0,0,0,3,7v8H21V10A2.652,2.652,0,0,0,18,7Z"/>
+
 </svg>

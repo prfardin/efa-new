@@ -2,16 +2,16 @@
     <defs>
         <style>.cls-1,.cls-2{fill:#25314c;}.cls-2{opacity:0.4;}</style>
     </defs>
-    <g id="keypad">
-        <circle class="cls-1" cx="12.5" cy="3.5" r="2"/>
-        <circle class="cls-2" cx="18.5" cy="3.5" r="2"/>
-        <circle class="cls-2" cx="6.5" cy="3.5" r="2"/>
-        <circle class="cls-1" cx="12.5" cy="9.167" r="2"/>
-        <circle class="cls-2" cx="18.5" cy="9.167" r="2"/>
-        <circle class="cls-2" cx="6.5" cy="9.167" r="2"/>
-        <circle class="cls-1" cx="12.5" cy="14.833" r="2"/>
-        <circle class="cls-2" cx="18.5" cy="14.833" r="2"/>
-        <circle class="cls-2" cx="6.5" cy="14.833" r="2"/>
-        <circle class="cls-1" cx="12.5" cy="20.5" r="2"/>
-    </g>
+
+        <circle class="pr-icon-duotone-primary" cx="12.5" cy="3.5" r="2"/>
+        <circle class="pr-icon-duotone-secondary" cx="18.5" cy="3.5" r="2"/>
+        <circle class="pr-icon-duotone-secondary" cx="6.5" cy="3.5" r="2"/>
+        <circle class="pr-icon-duotone-primary" cx="12.5" cy="9.167" r="2"/>
+        <circle class="pr-icon-duotone-secondary" cx="18.5" cy="9.167" r="2"/>
+        <circle class="pr-icon-duotone-secondary" cx="6.5" cy="9.167" r="2"/>
+        <circle class="pr-icon-duotone-primary" cx="12.5" cy="14.833" r="2"/>
+        <circle class="pr-icon-duotone-secondary" cx="18.5" cy="14.833" r="2"/>
+        <circle class="pr-icon-duotone-secondary" cx="6.5" cy="14.833" r="2"/>
+        <circle class="pr-icon-duotone-primary" cx="12.5" cy="20.5" r="2"/>
+
 </svg>

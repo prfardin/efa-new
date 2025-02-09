@@ -2,8 +2,8 @@
     <defs>
         <style>.cls-1,.cls-2{fill:#25314c;}.cls-1{opacity:0.4;}</style>
     </defs>
-    <g id="arrow-up-circle">
-        <circle class="cls-1" cx="12" cy="12" r="10"/>
-        <path class="cls-2"     d="M15.53,10.47l-3-3a.751.751,0,0,0-1.06,0l-3,3a.75.75,0,0,0,1.06,1.06l1.72-1.719V16a.75.75,0,0,0,1.5,0V9.811l1.72,1.719a.75.75,0,0,0,1.06-1.06Z"/>
-    </g>
+
+        <circle class="pr-icon-duotone-primary" cx="12" cy="12" r="10"/>
+        <path class="pr-icon-duotone-secondary" d="M15.53,10.47l-3-3a.751.751,0,0,0-1.06,0l-3,3a.75.75,0,0,0,1.06,1.06l1.72-1.719V16a.75.75,0,0,0,1.5,0V9.811l1.72,1.719a.75.75,0,0,0,1.06-1.06Z"/>
+
 </svg>

@@ -2,9 +2,9 @@
     <defs>
         <style>.cls-1,.cls-2{fill:#25314c;}.cls-2{opacity:0.4;}</style>
     </defs>
-    <g id="test-tube">
-        <path class="cls-1" d="M8.5,11h7v6.5A3.517,3.517,0,0,1,12,21a3.5,3.5,0,0,1-3.5-3.5Z"/>
-        <path class="cls-2" d="M8.5,3V17.5A3.5,3.5,0,0,0,12,21h0a3.5,3.5,0,0,0,3.5-3.5V3"/>
-        <path class="cls-1" d="M17,3.75H7a.75.75,0,0,1,0-1.5H17a.75.75,0,0,1,0,1.5Z"/>
-    </g>
+
+        <path class="pr-icon-duotone-primary" d="M8.5,11h7v6.5A3.517,3.517,0,0,1,12,21a3.5,3.5,0,0,1-3.5-3.5Z"/>
+        <path class="pr-icon-duotone-secondary" d="M8.5,3V17.5A3.5,3.5,0,0,0,12,21h0a3.5,3.5,0,0,0,3.5-3.5V3"/>
+        <path class="pr-icon-duotone-primary" d="M17,3.75H7a.75.75,0,0,1,0-1.5H17a.75.75,0,0,1,0,1.5Z"/>
+
 </svg>

@@ -2,12 +2,12 @@
     <defs>
         <style>.cls-1,.cls-2{fill:#25314c;}.cls-2{opacity:0.4;}</style>
     </defs>
-    <g id="drag-horizontal">
-        <circle class="cls-1" cx="5" cy="8" r="2"/>
-        <circle class="cls-1" cx="12" cy="8" r="2"/>
-        <circle class="cls-1" cx="19" cy="8" r="2"/>
-        <circle class="cls-2" cx="5" cy="16" r="2"/>
-        <circle class="cls-2" cx="12" cy="16" r="2"/>
-        <circle class="cls-2" cx="19" cy="16" r="2"/>
-    </g>
+
+        <circle class="pr-icon-duotone-primary" cx="5" cy="8" r="2"/>
+        <circle class="pr-icon-duotone-primary" cx="12" cy="8" r="2"/>
+        <circle class="pr-icon-duotone-primary" cx="19" cy="8" r="2"/>
+        <circle class="pr-icon-duotone-secondary" cx="5" cy="16" r="2"/>
+        <circle class="pr-icon-duotone-secondary" cx="12" cy="16" r="2"/>
+        <circle class="pr-icon-duotone-secondary" cx="19" cy="16" r="2"/>
+
 </svg>

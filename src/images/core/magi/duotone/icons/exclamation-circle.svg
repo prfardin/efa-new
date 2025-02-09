@@ -2,8 +2,8 @@
     <defs>
         <style>.cls-1,.cls-2{fill:#25314c;}.cls-1{opacity:0.4;}</style>
     </defs>
-    <g id="exclamation-circle">
-        <circle class="cls-1" cx="12" cy="12" r="10"/>
-        <path class="cls-2"     d="M12.02,16.5a1,1,0,0,1-.01-2h.01a1,1,0,0,1,0,2Zm.73-4.429V7.5a.75.75,0,0,0-1.5,0v4.571a.75.75,0,0,0,1.5,0Z"/>
-    </g>
+
+        <circle class="pr-icon-duotone-primary" cx="12" cy="12" r="10"/>
+        <path class="pr-icon-duotone-secondary" d="M12.02,16.5a1,1,0,0,1-.01-2h.01a1,1,0,0,1,0,2Zm.73-4.429V7.5a.75.75,0,0,0-1.5,0v4.571a.75.75,0,0,0,1.5,0Z"/>
+
 </svg>

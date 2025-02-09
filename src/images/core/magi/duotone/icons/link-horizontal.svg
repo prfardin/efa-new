@@ -2,9 +2,9 @@
     <defs>
         <style>.cls-1,.cls-2{fill:#25314c;}.cls-2{opacity:0.4;}</style>
     </defs>
-    <g id="link-horizontal">
-        <path class="cls-1" d="M15,13H9a1,1,0,0,1,0-2h6a1,1,0,0,1,0,2Z"/>
-        <path class="cls-2" d="M16,18H14a1,1,0,0,1,0-2h2a4,4,0,0,0,0-8H14a1,1,0,0,1,0-2h2a6,6,0,0,1,0,12Z"/>
-        <path class="cls-2" d="M10,18H8A6,6,0,0,1,8,6h2a1,1,0,0,1,0,2H8a4,4,0,0,0,0,8h2a1,1,0,0,1,0,2Z"/>
-    </g>
+
+        <path class="pr-icon-duotone-primary" d="M15,13H9a1,1,0,0,1,0-2h6a1,1,0,0,1,0,2Z"/>
+        <path class="pr-icon-duotone-secondary" d="M16,18H14a1,1,0,0,1,0-2h2a4,4,0,0,0,0-8H14a1,1,0,0,1,0-2h2a6,6,0,0,1,0,12Z"/>
+        <path class="pr-icon-duotone-secondary" d="M10,18H8A6,6,0,0,1,8,6h2a1,1,0,0,1,0,2H8a4,4,0,0,0,0,8h2a1,1,0,0,1,0,2Z"/>
+
 </svg>

@@ -2,9 +2,9 @@
     <defs>
         <style>.cls-1,.cls-2{fill:#25314c;}.cls-1{opacity:0.4;}</style>
     </defs>
-    <g id="music">
-        <path class="cls-1"     d="M18.812,2.828a2.061,2.061,0,0,0-1.852-.21L9.324,4.757A2.307,2.307,0,0,0,7.5,7.159V18.5a.5.5,0,0,0,1,0V10.94l10-2.8v7.369a.5.5,0,0,0,1,0V4.539A2.018,2.018,0,0,0,18.812,2.828Z"/>
-        <circle class="cls-2" cx="5.5" cy="18.5" r="3"/>
-        <circle class="cls-2" cx="16.5" cy="15.5" r="3"/>
-    </g>
+
+        <path class="pr-icon-duotone-primary" d="M18.812,2.828a2.061,2.061,0,0,0-1.852-.21L9.324,4.757A2.307,2.307,0,0,0,7.5,7.159V18.5a.5.5,0,0,0,1,0V10.94l10-2.8v7.369a.5.5,0,0,0,1,0V4.539A2.018,2.018,0,0,0,18.812,2.828Z"/>
+        <circle class="pr-icon-duotone-secondary" cx="5.5" cy="18.5" r="3"/>
+        <circle class="pr-icon-duotone-secondary" cx="16.5" cy="15.5" r="3"/>
+
 </svg>
