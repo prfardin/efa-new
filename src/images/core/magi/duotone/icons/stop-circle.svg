@@ -1,9 +1,4 @@
-<svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-    <defs>
-        <style>.cls-1,.cls-2{fill:#25314c;}.cls-1{opacity:0.4;}</style>
-    </defs>
-
-        <circle class="pr-icon-duotone-primary" cx="12" cy="12" r="10"/>
-        <path class="pr-icon-duotone-secondary" d="M8.5,14.188V9.813A1.16,1.16,0,0,1,9.812,8.5h4.375A1.161,1.161,0,0,1,15.5,9.813v4.375A1.16,1.16,0,0,1,14.187,15.5H9.812A1.159,1.159,0,0,1,8.5,14.188Z"/>
-
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <circle class="pr-icon-duotone-secondary" cx="12" cy="12" r="10"/>
+    <path class="pr-icon-duotone-primary" d="M8.5,14.188V9.813A1.16,1.16,0,0,1,9.812,8.5h4.375A1.161,1.161,0,0,1,15.5,9.813v4.375A1.16,1.16,0,0,1,14.187,15.5H9.812A1.159,1.159,0,0,1,8.5,14.188Z"/>
 </svg>

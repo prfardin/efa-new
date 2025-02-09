@@ -1,10 +1,5 @@
-<svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-    <defs>
-        <style>.cls-1,.cls-2{fill:#25314c;}.cls-1{opacity:0.4;}</style>
-    </defs>
-
-        <polygon class="pr-icon-duotone-primary" points="3 16 3 21 8 21 17.787 11.258 12.742 6.214 3 16"/>
-        <path class="pr-icon-duotone-secondary" d="M20.414,5.814,18.186,3.586a2,2,0,0,0-2.832,0L12.742,6.214l5.045,5.044,2.624-2.613A2,2,0,0,0,20.414,5.814Z"/>
-        <path class="pr-icon-duotone-secondary" d="M21,21.75H14a.75.75,0,0,1,0-1.5h7a.75.75,0,0,1,0,1.5Z"/>
-
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <polygon class="pr-icon-duotone-secondary" points="3 16 3 21 8 21 17.787 11.258 12.742 6.214 3 16"/>
+    <path class="pr-icon-duotone-primary" d="M20.414,5.814,18.186,3.586a2,2,0,0,0-2.832,0L12.742,6.214l5.045,5.044,2.624-2.613A2,2,0,0,0,20.414,5.814Z"/>
+    <path class="pr-icon-duotone-primary" d="M21,21.75H14a.75.75,0,0,1,0-1.5h7a.75.75,0,0,1,0,1.5Z"/>
 </svg>

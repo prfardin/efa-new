@@ -1,12 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_7" data-name="Layer 7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-    <defs>
-        <style>   .cls-1, .cls-2 {   fill: #25314c;   }
-   .cls-2 {   opacity: .4;   }
-        </style>
-    </defs>
-
-        <path class="pr-icon-duotone-primary" d="m17.72,9l-.52,8.19c-.09,1.54-1.2,2.81-3.2,2.81h-4c-2,0-3.11-1.27-3.2-2.81l-.52-8.19s2.27-.86,5.72,0c4.02,1,5.72,0,5.72,0Z"/>
-        <path class="pr-icon-duotone-secondary" d="m18,4.53l-.28,4.47s-1.7,1-5.72,0c-3.45-.86-5.72,0-5.72,0l-.28-4.47c-.02-.29.21-.53.5-.53h11c.29,0,.52.24.5.53Z"/>
-
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <path class="pr-icon-duotone-primary" d="m17.72,9l-.52,8.19c-.09,1.54-1.2,2.81-3.2,2.81h-4c-2,0-3.11-1.27-3.2-2.81l-.52-8.19s2.27-.86,5.72,0c4.02,1,5.72,0,5.72,0Z"/>
+    <path class="pr-icon-duotone-secondary" d="m18,4.53l-.28,4.47s-1.7,1-5.72,0c-3.45-.86-5.72,0-5.72,0l-.28-4.47c-.02-.29.21-.53.5-.53h11c.29,0,.52.24.5.53Z"/>
 </svg>

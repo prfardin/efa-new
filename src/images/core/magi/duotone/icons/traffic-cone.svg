@@ -1,11 +1,6 @@
-<svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-    <defs>
-        <style>.cls-1,.cls-2{fill:#25314c;}.cls-1{opacity:0.4;}</style>
-    </defs>
-
-        <path class="pr-icon-duotone-primary" d="M17.83,20.25H6.17L9.74,4.17A1.32,1.32,0,0,1,11.2,3h1.6a1.32,1.32,0,0,1,1.46,1.17Z"/>
-        <path class="pr-icon-duotone-secondary" d="M20,21.75H4a.75.75,0,0,1,0-1.5H20a.75.75,0,0,1,0,1.5Z"/>
-        <polygon class="pr-icon-duotone-secondary" points="8.28 10.75 15.72 10.75 15.39 9.25 8.61 9.25 8.28 10.75"/>
-        <polygon class="pr-icon-duotone-secondary" points="17.06 16.75 6.94 16.75 7.28 15.25 16.72 15.25 17.06 16.75"/>
-
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <path class="pr-icon-duotone-secondary" d="M17.83,20.25H6.17L9.74,4.17A1.32,1.32,0,0,1,11.2,3h1.6a1.32,1.32,0,0,1,1.46,1.17Z"/>
+    <path class="pr-icon-duotone-primary" d="M20,21.75H4a.75.75,0,0,1,0-1.5H20a.75.75,0,0,1,0,1.5Z"/>
+    <polygon class="pr-icon-duotone-primary" points="8.28 10.75 15.72 10.75 15.39 9.25 8.61 9.25 8.28 10.75"/>
+    <polygon class="pr-icon-duotone-primary" points="17.06 16.75 6.94 16.75 7.28 15.25 16.72 15.25 17.06 16.75"/>
 </svg>

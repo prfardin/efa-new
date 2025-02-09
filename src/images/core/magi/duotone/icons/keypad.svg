@@ -1,17 +1,12 @@
-<svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-    <defs>
-        <style>.cls-1,.cls-2{fill:#25314c;}.cls-2{opacity:0.4;}</style>
-    </defs>
-
-        <circle class="pr-icon-duotone-primary" cx="12.5" cy="3.5" r="2"/>
-        <circle class="pr-icon-duotone-secondary" cx="18.5" cy="3.5" r="2"/>
-        <circle class="pr-icon-duotone-secondary" cx="6.5" cy="3.5" r="2"/>
-        <circle class="pr-icon-duotone-primary" cx="12.5" cy="9.167" r="2"/>
-        <circle class="pr-icon-duotone-secondary" cx="18.5" cy="9.167" r="2"/>
-        <circle class="pr-icon-duotone-secondary" cx="6.5" cy="9.167" r="2"/>
-        <circle class="pr-icon-duotone-primary" cx="12.5" cy="14.833" r="2"/>
-        <circle class="pr-icon-duotone-secondary" cx="18.5" cy="14.833" r="2"/>
-        <circle class="pr-icon-duotone-secondary" cx="6.5" cy="14.833" r="2"/>
-        <circle class="pr-icon-duotone-primary" cx="12.5" cy="20.5" r="2"/>
-
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <circle class="pr-icon-duotone-primary" cx="12.5" cy="3.5" r="2"/>
+    <circle class="pr-icon-duotone-secondary" cx="18.5" cy="3.5" r="2"/>
+    <circle class="pr-icon-duotone-secondary" cx="6.5" cy="3.5" r="2"/>
+    <circle class="pr-icon-duotone-primary" cx="12.5" cy="9.167" r="2"/>
+    <circle class="pr-icon-duotone-secondary" cx="18.5" cy="9.167" r="2"/>
+    <circle class="pr-icon-duotone-secondary" cx="6.5" cy="9.167" r="2"/>
+    <circle class="pr-icon-duotone-primary" cx="12.5" cy="14.833" r="2"/>
+    <circle class="pr-icon-duotone-secondary" cx="18.5" cy="14.833" r="2"/>
+    <circle class="pr-icon-duotone-secondary" cx="6.5" cy="14.833" r="2"/>
+    <circle class="pr-icon-duotone-primary" cx="12.5" cy="20.5" r="2"/>
 </svg>

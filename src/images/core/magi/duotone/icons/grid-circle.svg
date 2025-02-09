@@ -1,11 +1,6 @@
-<svg id="Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-    <defs>
-        <style>.cls-1,.cls-2{fill:#25314c;}.cls-1{opacity:0.4;}</style>
-    </defs>
-
-        <path class="pr-icon-duotone-primary" d="M7,10a3,3,0,1,1,3-3A3,3,0,0,1,7,10Z"/>
-        <path class="pr-icon-duotone-primary" d="M17,10a3,3,0,1,1,3-3A3,3,0,0,1,17,10Z"/>
-        <path class="pr-icon-duotone-primary" d="M7,20a3,3,0,1,1,3-3A3,3,0,0,1,7,20Z"/>
-        <path class="pr-icon-duotone-secondary" d="M17,20a3,3,0,1,1,3-3A3,3,0,0,1,17,20Z"/>
-
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <path class="pr-icon-duotone-secondary" d="M7,10a3,3,0,1,1,3-3A3,3,0,0,1,7,10Z"/>
+    <path class="pr-icon-duotone-secondary" d="M17,10a3,3,0,1,1,3-3A3,3,0,0,1,17,10Z"/>
+    <path class="pr-icon-duotone-secondary" d="M7,20a3,3,0,1,1,3-3A3,3,0,0,1,7,20Z"/>
+    <path class="pr-icon-duotone-primary" d="M17,20a3,3,0,1,1,3-3A3,3,0,0,1,17,20Z"/>
 </svg>
