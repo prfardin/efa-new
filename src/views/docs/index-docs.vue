@@ -7,22 +7,23 @@ import PrIcon from '@c/core/PrIcon.vue'
 
 <template>
     <div class="uk-background-default">
-        <pr-icon icon="icon-fa-duotone-filters" ratio="2" />
-        <pr-icon icon="icon-fa-duotone-fingerprint" ratio="2" />
-        <pr-icon icon="icon-fa-duotoneli-fingerprint" ratio="2" />
-        <pr-icon icon="icon-fa-duotoneso-fingerprint" ratio="2" />
-        <pr-icon icon="icon-fa-duotoneth-fingerprint" ratio="2" />
-        <pr-icon icon="icon-bulk-duotone-finger-print" ratio="2" />
-        <pr-icon icon="icon-huge-duotone-finger-print" ratio="2" />
-        <pr-icon icon="icon-huge-twotone-finger-print" ratio="2" />
-        <pr-icon icon="icon-magi-duotone-fingerprint" ratio="2" />
-        <pr-icon icon="icon-md-twotone-fingerprint" ratio="2" />
-        <pr-icon icon="icon-ming-duotone-fingerprint" ratio="2" />
-        <pr-icon icon="icon-ming-twotone-fingerprint" ratio="2" />
-        <pr-icon icon="icon-ming-duotone-fingerprint-2" ratio="2" />
-        <pr-icon icon="icon-ming-twotone-fingerprint-2" ratio="2" />
-        <pr-icon icon="icon-ph-duotone-fingerprint" ratio="2" />
-        <pr-icon icon="icon-solar-duotone-user-hands" ratio="2" />
-        <pr-icon icon="icon-solar-duotoneso-user-hands" ratio="2" />
+        <pr-icon icon="icon-isocons-duotoneleft-6-ft-apart-515" ratio="2" />
+        <pr-icon icon="icon-isocons-duotonetop-6-ft-apart-515" ratio="2" />
+        <pr-icon icon="icon-isocons-duotoneright-6-ft-apart-515" ratio="2" />
+        <pr-icon icon="icon-isocons-duotonesharpleft-6-ft-apart-515" ratio="2" />
+        <pr-icon icon="icon-isocons-duotonesharptop-6-ft-apart-515" ratio="2" />
+        <pr-icon icon="icon-isocons-duotonesharpright-6-ft-apart-515" ratio="2" />
+        <pr-icon icon="icon-isocons-left-6-ft-apart-515" ratio="2" />
+        <pr-icon icon="icon-isocons-top-6-ft-apart-515" ratio="2" />
+        <pr-icon icon="icon-isocons-right-6-ft-apart-515" ratio="2" />
+        <pr-icon icon="icon-isocons-sharpleft-6-ft-apart-515" ratio="2" />
+        <pr-icon icon="icon-isocons-sharptop-6-ft-apart-515" ratio="2" />
+        <pr-icon icon="icon-isocons-sharpright-6-ft-apart-515" ratio="2" />
+        <pr-icon icon="icon-isocons-solidleft-6-ft-apart-515" ratio="2" />
+        <pr-icon icon="icon-isocons-solidtop-6-ft-apart-515" ratio="2" />
+        <pr-icon icon="icon-isocons-solidright-6-ft-apart-515" ratio="2" />
+        <pr-icon icon="icon-isocons-solidsharpleft-6-ft-apart-515" ratio="2" />
+        <pr-icon icon="icon-isocons-solidsharptop-6-ft-apart-515" ratio="2" />
+        <pr-icon icon="icon-isocons-solidsharpright-6-ft-apart-515" ratio="2" />
     </div>
 </template>
