@@ -1,0 +1,14 @@
+<svg width="48" height="48" viewBox="0 0 91 124" xmlns="http://www.w3.org/2000/svg" stroke-width="1px"
+     stroke-linecap="round" stroke-linejoin="round">
+    <path d="M45.6602 31.5798L32.3701 23.9098L12.3701 12.3599V65.7198L22.4102 71.5198L32.3701 77.2698L50.6401 87.8098L58.8801 92.5698V39.2098L45.6602 31.5798ZM45.5901 54.3998L32.3701 46.7698L25.6602 42.8998V35.2698L32.3701 39.1498L32.7402 39.3599L45.5901 46.7798V54.3998Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+    <path d="M32.7402 39.3596L25.6602 42.8995V35.2695L32.3701 39.1495L32.7402 39.3596Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+    <path d="M45.5901 46.7798V54.3998L32.3701 46.7698L25.6602 42.8998L32.7402 39.3599L45.5901 46.7798Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+    <path d="M68.8401 105.94V121.19L58.8801 115.44V107.81L47.6902 101.35L40.6101 97.2698V104.89L30.6401 99.1398V91.5098L19.4502 85.0498L12.3701 80.9698V88.5898L2.41016 82.8398V67.5898L26.53 81.5098L54.7603 97.8098L68.8401 105.94Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+    <path d="M78.8801 29.2098L64.7302 36.2798L58.8801 39.2098L45.6602 31.5798L32.3701 23.9098L12.3701 12.3599L32.3701 2.35986L78.8801 29.2098Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+    <path d="M88.8401 95.9398L68.8401 105.94L54.7603 97.8098L26.53 81.5098L2.41016 67.5898L12.3701 62.6099V65.7198L22.4102 71.5198L32.3701 77.2698L50.6401 87.8098L58.8801 92.5698L60.6101 91.7098L64.7302 89.6498L71.8101 86.1099L88.8401 95.9398Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+    <path d="M78.8801 29.21V82.5699L71.8101 86.11L64.7302 89.6499L60.6101 91.71L58.8801 92.5699V39.21L64.7302 36.2799L78.8801 29.21Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+    <path d="M19.4502 85.0497L12.3701 88.5897V80.9697L19.4502 85.0497Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+    <path d="M47.6902 101.35L40.6101 104.89V97.2695L47.6902 101.35Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+    <path d="M88.8401 95.9399V111.19L68.8401 121.19V105.94L88.8401 95.9399Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+    <path d="M25.6602 42.8999L25.5002 42.98" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+</svg>

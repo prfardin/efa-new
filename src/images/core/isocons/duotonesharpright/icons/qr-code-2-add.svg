@@ -1,0 +1,44 @@
+<svg width="48" height="48" viewBox="0 0 86 120" class="pr-icon-iso-duotone-secondary"
+     xmlns="http://www.w3.org/2000/svg" stroke-width="1px" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M27.2803 50.4001L29.4703 49.1401" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M22.6304 94.2102L22.1504 94.4902V118L42.6304 106.17V82.6602L22.6304 94.2102ZM37.5204 103.25L27.2804 109.17V97.4102L37.5204 91.5002V103.25Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M37.5203 103.25L27.2803 109.17V98.1299L37.5203 103.25Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M37.5203 91.5V103.25L27.2803 98.13V97.41L37.5203 91.5Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M63.6004 23.55L63.1204 23.83V47.33L83.6004 35.5V12L63.6004 23.55ZM78.4804 32.59L68.2404 38.5V26.74L78.4804 20.83V32.59Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M78.4805 20.8301V32.5901L68.2405 27.4701V26.7401L78.4805 20.8301Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M78.4805 32.5902L68.2405 38.5002V27.4702L78.4805 32.5902Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M27.2803 50.4001L29.4703 49.1401" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M52.8804 37.5703L52.4304 37.8303L48.5804 40.0603L46.0604 41.5203L42.6304 39.8103V35.6503L39.7004 34.1903L37.1804 32.9303L32.8804 30.7803L29.9104 29.2903L32.8804 27.5703L43.1204 32.6903L47.4304 34.8403L52.8804 37.5703Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M22.1504 94.4902V118L2.15039 108V84.4902L7.6004 87.2202L17.5204 92.1702L22.1504 94.4902Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M73.3705 57.0901L72.6905 57.4801L66.5405 61.0301L63.6005 59.5701L53.3705 54.4501L51.9905 53.7601L58.8105 49.8101L73.3705 57.0901Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M56.3003 78.7001V86.5301L47.2003 81.9801L46.5403 81.6501L36.3003 76.5301V75.5801L42.6303 78.7501L46.5403 76.5001L49.0303 75.0601L53.3703 77.2401L56.3003 78.7001Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M42.6304 82.6602L22.6304 94.2102L22.1504 94.4902L17.5204 92.1702L7.6004 87.2202L2.15039 84.4902L12.6204 78.4502L22.6304 83.4602L28.9804 86.6302L35.8104 82.6902V79.2502L42.6304 82.6602Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M28.9805 78.7902V86.6301L22.6305 83.4602L12.6205 78.4501L8.98047 76.6301V76.1602L9.42047 76.3801L13.0605 78.1902L22.1505 82.7402L22.6305 82.4602L28.9805 78.7902Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M22.1504 74.9102V82.7402L13.0604 78.1902L9.42039 76.3802L8.98039 76.1602L2.15039 72.7402V64.9102L8.98039 68.3302L9.4104 68.5402L15.8104 71.7402L20.3304 73.9902L22.1504 74.9102Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M22.1504 47.48V70.98L15.8104 67.81L13.0604 66.44L8.98039 64.4L5.8004 62.8L2.15039 60.98V37.48L7.6004 40.21L17.5204 45.16L22.1504 47.48Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M52.8804 29.7402V37.5702L47.4304 34.8402L43.1204 32.6902L32.8804 27.5702V19.7402L39.7004 23.1502L49.2404 27.9202L52.8804 29.7402Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M59.7004 25.79L52.8804 29.74L49.2404 27.92L39.7004 23.15L32.8804 19.74L39.7004 15.79L43.1204 17.5L48.2404 20.06L56.0804 23.98L59.7004 25.79Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M59.7004 25.79V33.64L52.8804 37.57V29.74L59.7004 25.79Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M63.1204 23.8301V47.3301L59.7004 45.6201V41.4701L52.8804 38.0601V37.5701L59.7004 33.6401V25.7901L56.0804 23.9801L48.2404 20.0601L43.1204 17.5001V13.8301L63.1204 23.8301Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M83.6004 12L63.6004 23.55L63.1204 23.83L43.1204 13.83L63.6004 2L83.6004 12Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M59.7003 41.4698V49.2998L58.8103 49.8098L51.9903 53.7598L46.5403 56.9098L46.0603 57.1898V41.5198L48.5803 40.0598L52.4303 37.8298L52.8803 37.5698V45.4098L55.8503 43.6898L59.7003 41.4698Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M59.7004 41.4701L55.8504 43.6901L52.8804 45.4101V38.0601L59.7004 41.4701Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M83.6003 62.9298V70.7598L73.3703 76.6798V88.4298L66.5403 92.3698V80.6198L56.3003 86.5298V78.6998L66.5403 72.7798V61.0298L72.6903 57.4798L73.3703 57.0898V68.8398L83.6003 62.9298Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M83.6004 62.9301L73.3704 68.8401V57.8101L83.6004 62.9301Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M66.5403 80.6201V92.3701L46.5403 82.3701V81.6501L47.2003 81.9801L56.3003 86.5301L66.5403 80.6201Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M35.8105 74.8602L35.3705 75.1102L31.7305 77.2102L28.9805 78.7902V71.4502L35.8105 74.8602Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M28.9804 70.96V78.79L22.6304 82.46L22.1504 82.74V74.91L22.6304 74.63L24.4604 73.57L28.1004 71.48L28.5404 71.22L28.9804 70.96Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M28.9804 70.9598L28.5404 71.2198L28.1004 71.4798L24.4604 73.5698L22.6304 74.6298L22.1504 74.9098L20.3304 73.9898L15.8104 71.7398L9.4104 68.5398L8.98039 68.3298L2.15039 64.9098L5.8004 62.7998L8.98039 64.3998L13.0604 66.4398L15.8104 67.8098L22.1504 70.9798L24.4404 69.6598L24.8804 69.3998L25.3504 69.1398L28.9804 70.9598Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M49.4604 59.1302L46.5404 60.8202L35.8104 67.0202L32.1604 65.2002L42.6304 59.1602V55.7202L46.5404 57.6702L49.4604 59.1302Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M35.8105 74.8599V82.6899L28.9805 86.6299V78.7899L31.7305 77.2099L35.3705 75.1099L35.8105 74.8599Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M66.5403 72.78L56.3003 78.7L53.3703 77.24L49.0303 75.06L49.4603 74.81V64.25L53.8103 66.42L66.5403 72.78Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M66.5403 61.0298V72.7798L53.8103 66.4198L49.4603 64.2498V59.1298L46.5403 57.6698V56.9098L51.9903 53.7598L53.3703 54.4498L63.6003 59.5698L66.5403 61.0298Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M49.4603 59.1299V74.8099L49.0303 75.0599L46.5403 76.4999L42.6303 78.7499V70.9099L41.7403 71.4199L36.3003 74.5799L35.8103 74.8599V67.0199L46.5403 60.8199L49.4603 59.1299Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M42.6303 70.9102V78.7502L36.3003 75.5802L35.8103 75.3401V74.8602L36.3003 74.5802L41.7403 71.4202L42.6303 70.9102Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M39.7004 37.3399L38.7704 37.8799L26.0504 45.2299L22.6304 47.1999L22.1504 47.4799V70.9799L24.4404 69.6599L24.8804 69.3999L25.3404 69.1399L32.1604 65.1999L42.6304 59.1599V35.6499L39.7004 37.3399ZM37.5204 56.2399L29.4704 60.8899L27.2804 62.1499V50.3999L29.4704 49.1299H29.4804L29.6904 49.0099L37.5204 44.4899V56.2399Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M35.8103 67.0202V74.8602L28.9803 71.4502V70.9602L25.3503 69.1402L32.1603 65.2002L35.8103 67.0202Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M37.5203 44.4902V56.2402L29.4603 52.2202L27.2803 51.1202V50.4002L29.4603 49.1402V49.1302H29.4703L29.6803 49.0102L37.5203 44.4902Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M37.5203 56.2401L29.4603 60.8901L27.2803 62.1501V51.1201L29.4603 52.2201L37.5203 56.2401Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M42.6304 35.6499L39.7004 37.3399L38.7804 37.8799L26.0604 45.2299L22.6304 47.1999L22.1504 47.4799L17.5204 45.1599L7.6004 40.2099L2.15039 37.4799L22.6304 25.6499L29.9104 29.2899L32.8804 30.7799L37.1804 32.9299L39.7004 34.1899L42.6304 35.6499Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M46.0604 41.5201V57.1901L42.6304 55.4801V39.8101L46.0604 41.5201Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+</svg>

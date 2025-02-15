@@ -1,0 +1,13 @@
+<svg width="48" height="48" viewBox="0 0 67 130" xmlns="http://www.w3.org/2000/svg" stroke-width="1px"
+     stroke-linecap="round" stroke-linejoin="round">
+    <path d="M64.4996 55.5099V11.9999L44.4996 23.55L27.7396 33.22L22.5996 36.19V79.71L36.0796 81.03L41.4496 81.56L38.5196 94.31L34.5296 96.6199L28.1496 100.3L22.5996 103.51L35.5796 106.59L30.5596 127.76L43.5496 108.96L56.5396 112.76L51.5096 97.39L64.4996 79.31L48.5696 88.5099L45.6396 79.14L50.9196 72.52L64.4996 55.5099ZM47.7396 65.19L44.4696 69.33L43.5496 70.4899L42.6296 70.39L39.3596 70.03V36.1299L44.4996 33.16L47.7396 31.29V65.19Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+    <path d="M47.7396 31.29V65.1901L39.3596 61V36.13L44.4996 33.16L47.7396 31.29Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+    <path d="M47.7396 65.1901L44.4696 69.3301L43.5496 70.49L42.9596 70.2001L39.3596 68.4V61L47.7396 65.1901Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+    <path d="M43.5496 70.4899L42.6296 70.3899L39.3596 70.0299V68.3999L42.9596 70.2L43.5496 70.4899Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+    <path d="M22.5996 36.19V79.71L19.8896 78.35L2.59961 69.71V26.19L22.5996 36.19Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+    <path d="M35.5796 106.59L30.5596 127.76L10.5596 117.76L14.8596 99.6399L20.9696 102.69L22.5996 103.51L35.5796 106.59Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+    <path d="M38.5196 94.3101L34.5296 96.62L28.1496 100.3L22.5996 103.51L20.9696 102.69L14.8596 99.64L2.59961 93.51L18.5196 84.3101L32.8496 91.4701V91.48L38.5196 94.3101Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+    <path d="M41.4495 81.5601L38.5195 94.3101L32.8495 91.48V91.4701L18.5195 84.3101L19.8895 78.3501L22.5995 79.7101L36.0795 81.03L41.4495 81.5601Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+    <path d="M64.4996 11.9999L44.4996 23.55L27.7396 33.22L22.5996 36.19L2.59961 26.19L44.4996 2L64.4996 11.9999Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+    <path d="M64.4996 79.3101L48.5696 88.51L45.6396 79.14L50.9196 72.52L64.4996 79.3101Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+</svg>

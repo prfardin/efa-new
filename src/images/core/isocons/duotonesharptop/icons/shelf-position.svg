@@ -1,0 +1,15 @@
+<svg width="48" height="48" viewBox="0 0 128 96" class="pr-icon-iso-duotone-secondary"
+     xmlns="http://www.w3.org/2000/svg" stroke-width="1px" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M88.3896 60.16V80.16L81.5597 76.21V64.1L76.5397 61.2L72.9297 59.12V51.23L83.3696 57.26L88.3896 60.16Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M81.5605 64.1V84.1L64.4805 93.96V73.96L72.9305 69.08L81.5605 64.1Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M64.1014 2.75L26.5215 24.44L41.9915 33.37L79.5615 11.68L64.1014 2.75Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M125.972 38.47L88.3916 60.16L83.3716 57.26L72.9316 51.23L93.1816 39.54L103.622 33.51L110.502 29.54L125.972 38.47Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M103.621 25.57L66.0511 47.26L59.3112 43.37L48.8711 37.34L69.1111 25.65L79.5612 19.61L86.441 15.64L103.621 25.57Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M125.971 38.47V58.47L88.3906 80.16V60.16L125.971 38.47Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M81.5614 64.1L72.9314 69.08L64.4813 73.96L2.61133 38.24L19.6913 28.38L26.5214 32.32L37.0214 38.38L41.9913 41.25L48.8713 45.23L52.4813 47.31L59.3613 51.28L66.0514 55.15L72.9314 59.12L76.5414 61.2L81.5614 64.1Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M64.4813 73.96V93.96L2.61133 58.24V38.24L64.4813 73.96Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M41.9915 33.37V41.25L37.0215 38.38L26.5215 32.32V24.44L41.9915 33.37Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M79.5623 11.68V19.61L69.1122 25.65L48.8722 37.34V45.23L41.9922 41.25V33.37L79.5623 11.68Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M103.621 25.57V33.51L93.1808 39.54L72.9308 51.23V59.12L66.0508 55.15V47.26L103.621 25.57Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M66.0511 47.26V55.15L59.3611 51.28L52.4811 47.31L48.8711 45.23V37.34L59.3112 43.37L66.0511 47.26Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+</svg>

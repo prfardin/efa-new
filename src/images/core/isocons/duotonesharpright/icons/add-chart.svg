@@ -1,0 +1,22 @@
+<svg width="48" height="48" viewBox="0 0 84 113" class="pr-icon-iso-duotone-secondary"
+     xmlns="http://www.w3.org/2000/svg" stroke-width="1px" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M81.2498 16.2502L74.6699 20.0502V12.9603L81.2498 16.2502Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M54.4902 24.1503L54.6704 24.2402V24.0403L54.4902 24.1503Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M81.25 16.2502V23.8002L74.6702 27.6003V35.1603L68.0801 38.9603V31.4003L61.5 35.2003V27.6503L63.72 26.3702L68.0801 23.8503V16.2903L74.23 12.7402L74.6702 12.4902V20.0502L81.25 16.2502Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M61.25 46.6802L58.21 48.4302V22.0002L54.6702 24.0403V24.2402L54.49 24.1503L48.0801 27.8503L47.48 28.1902L38.21 33.5403L34.9202 35.4402L28.3401 39.2402L22 42.9003V110.88L81.25 76.6802V35.1302L61.25 46.6802ZM41.75 84.3702L35.1702 88.1703V61.7402L41.5 58.0803L41.75 57.9402V84.3702ZM54.9202 76.7703L48.3401 80.5703V42.8002L54.9202 39.0002V76.7703ZM68.0801 69.1703L66.8701 69.8702L61.51 72.9703V57.8602L68.0901 54.0602V69.1703H68.0801Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M68.0701 69.1703L66.8601 69.8702L61.5 72.9703V65.8903L68.0701 69.1703Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M68.0801 54.0602V69.1703H68.0701L61.5 65.8903V57.8602L68.0801 54.0602Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M54.9199 76.7703L48.3398 80.5703V73.4803L48.9497 73.7803L54.9199 76.7703Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M22 42.9003V110.88L2 100.88V32.9003L22 42.9003Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M41.7498 84.3702L35.1699 88.1703V81.0803L35.7798 81.3802L41.7498 84.3702Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M54.4902 24.1503L54.6704 24.2402V24.0403L54.4902 24.1503Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M68.0801 31.4003V38.9603L61.25 35.5502L58.21 34.0303V33.5602L61.25 35.0803L61.5 35.2003L68.0801 31.4003Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M74.6702 12.4902L74.23 12.7402L68.0801 16.2903L61.25 12.8802L55.1001 9.80023L54.6702 9.59027L48.0801 6.29028L54.6702 2.49023L74.6702 12.4902Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M54.9199 39.0002V76.7703L48.9497 73.7803L48.3398 73.4803V42.8002L54.9199 39.0002Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M41.7498 57.9402V84.3702L35.7798 81.3802L35.1699 81.0803V61.7402L41.4998 58.0803L41.7498 57.9402Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M68.0801 16.2903V23.8503L55.0901 17.3602L48.0801 13.8503V6.29028L54.6702 9.59027L55.1001 9.80023L61.25 12.8802L68.0801 16.2903Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M58.21 22.0002L54.6702 24.0403L54.49 24.1503L48.0801 27.8503L47.48 28.1902L38.21 33.5403L34.9202 35.4402L28.3401 39.2402L22 42.9003L2 32.9003L38.21 12.0002L45.22 15.5002L54.6702 20.2303L58.21 22.0002Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M81.25 35.1302L61.25 46.6802L58.21 48.4302V34.0303L61.25 35.5502L68.0801 38.9603L74.6702 35.1603V31.8403L81.25 35.1302Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M61.5 27.6503V35.2003L61.25 35.0803L58.21 33.5602V26.0103L59.03 26.4103L61.25 27.5303L61.5 27.6503Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M68.0798 23.8503L63.7197 26.3702L61.4998 27.6503L61.2498 27.5303L59.0298 26.4103L58.2097 26.0103V22.0002L54.6699 20.2303L45.2197 15.5002L48.0798 13.8503L55.0898 17.3602L68.0798 23.8503Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+</svg>

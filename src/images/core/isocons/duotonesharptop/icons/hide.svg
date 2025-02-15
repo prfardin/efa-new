@@ -1,0 +1,13 @@
+<svg width="48" height="48" viewBox="0 0 128 50" class="pr-icon-iso-duotone-secondary"
+     xmlns="http://www.w3.org/2000/svg" stroke-width="1px" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M93.5602 27.8893V47.8893L71.2402 34.9993V14.9993L88.5602 24.9993L93.5602 27.8893Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M56.4005 14.9693L39.0805 24.9693L34.2105 27.7793L29.2006 24.8893L26.7606 23.4793L36.3806 17.9293H2.34055L2.31055 11.8193L26.6706 11.9093L36.3506 11.9393L26.6706 6.34934L34.0706 2.07935L56.4005 14.9693Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M100.87 23.5693L100.96 23.6193L100.87 23.6693L98.4302 25.0793L93.5602 27.8893L88.5602 24.9993L71.2402 14.9993L93.4203 2.18935L100.87 6.47935L91.2502 12.0393H125.29L125.32 18.1493L100.87 18.0593L91.2802 18.0293L100.87 23.5693Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M125.32 18.1493V38.1493L100.96 38.0593V23.6193L100.87 23.5693L91.2803 18.0293L100.87 18.0593L125.32 18.1493Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M100.961 23.6193V43.6193L93.5605 47.8893V27.8893L98.4305 25.0793L100.871 23.6693L100.961 23.6193Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M100.871 6.47934V12.0393H91.251L100.871 6.47934Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M56.4009 14.9693V34.9693L34.2109 47.7793V27.7793L39.0809 24.9693L56.4009 14.9693Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M34.2107 27.7793V47.7793L26.7607 43.4793V23.4793L29.2007 24.8893L34.2107 27.7793Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M36.3509 11.9393L26.6709 11.9093V6.34933L36.3509 11.9393Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M36.3808 17.9294L26.7608 23.4794V37.9294H2.34082V17.9294H36.3808Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+</svg>

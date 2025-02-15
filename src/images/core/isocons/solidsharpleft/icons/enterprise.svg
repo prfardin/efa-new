@@ -1,0 +1,12 @@
+<svg width="48" height="48" viewBox="0 0 99 127" xmlns="http://www.w3.org/2000/svg" stroke-width="1px"
+     stroke-linecap="round" stroke-linejoin="round">
+    <path d="M44.8 67.8395C43.33 65.3095 41.56 63.4495 39.5 62.2595C37.44 61.0695 35.67 60.8895 34.2 61.7295C32.74 62.5595 32 64.1695 32 66.5295C32 68.8895 32.74 71.3495 34.2 73.8795C35.67 76.4195 37.44 78.2795 39.5 79.4695C41.56 80.6595 43.33 80.8395 44.8 79.9995C46.27 79.1595 47 77.5595 47 75.1895C47 72.8195 46.27 70.3795 44.8 67.8395Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+    <path d="M97 50.2395L77 60.2395L54.5 47.2495L74.5 37.2495L97 50.2395Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+    <path d="M97 50.2395V114.79L77 124.79V60.2395L97 50.2395Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+    <path d="M54.5 47.2495V30.0395L47.98 26.2695L24.5 12.7095V29.9295L22 28.4895L2 16.9395V81.4895L77 124.789V60.2395L54.5 47.2495ZM44.8 79.9995C43.33 80.8395 41.56 80.6595 39.5 79.4695C37.44 78.2795 35.67 76.4195 34.2 73.8795C32.74 71.3495 32 68.8995 32 66.5295C32 64.1595 32.74 62.5595 34.2 61.7295C35.67 60.8895 37.44 61.0695 39.5 62.2595C41.56 63.4495 43.33 65.3095 44.8 67.8395C46.27 70.3795 47 72.8295 47 75.1895C47 77.5495 46.27 79.1595 44.8 79.9995ZM47 42.9195L32 34.2595V25.6495L39.99 30.2595L47 34.3095V42.9195Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+    <path d="M39.99 30.2594L32 34.2594V25.6494L39.99 30.2594Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+    <path d="M47 34.3095V42.9195L32 34.2595L39.99 30.2595L47 34.3095Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+    <path d="M74.5 20.0396V37.2495L54.5 47.2495V30.0396L58.53 28.0295L66.52 24.0295L74.5 20.0396Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+    <path d="M74.5 20.0395L66.52 24.0295L58.53 28.0295L54.5 30.0395L47.98 26.2695L24.5 12.7095L28.52 10.6995L44.5 2.70947L74.5 20.0395Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+    <path d="M28.52 10.6995L24.5 12.7094V29.9294L22 28.4894L2 16.9395L22 6.93945L28.52 10.6995Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
+</svg>

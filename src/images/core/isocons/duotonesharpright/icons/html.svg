@@ -1,0 +1,23 @@
+<svg width="48" height="48" viewBox="0 0 126 97" class="pr-icon-iso-duotone-secondary"
+     xmlns="http://www.w3.org/2000/svg" stroke-width="1px" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M43.2798 52.89V82.08L36.9198 85.75V73.58L28.4498 78.48V90.64L22.0898 94.31V65.12L23.2798 64.43L27.8898 61.77L28.4498 61.45V71.18L36.8799 66.31L36.9198 66.29V56.56L40.7498 54.35L41.2999 54.03L43.2798 52.89Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M123.84 28.27V35.57L106.88 45.36V16.17L113.24 12.5V34.39L123.84 28.27Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M28.4498 61.45L27.8898 61.77L23.2798 64.43L22.0898 65.12L11.1198 59.64L8.44984 58.3L2.08984 55.12L8.44984 51.45L16.9198 55.69L23.2798 58.87L28.4498 61.45Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M36.9199 56.56V66.29L34.9399 65.3L28.4499 62.06V61.45L23.2799 58.87L16.9199 55.69V46.56L23.2799 49.74L34.9399 55.57L36.9199 56.56Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M43.2799 52.89L41.2999 54.03L40.7499 54.35L36.9199 56.56L34.9399 55.57L23.2799 49.74L16.9199 46.56L23.2799 42.89L27.5199 45.01L30.0499 46.28L34.9399 48.72L41.2999 51.9L43.2799 52.89Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M47.52 50.44V57.74L43.28 55.62V52.89L41.3 51.9L34.94 48.72L30.05 46.28L27.52 45.01V40.44L34.29 43.83L34.94 44.15L41.3 47.33L47.52 50.44Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M68.72 38.2L63.56 41.18L59.32 43.63L52.96 47.3L47.52 50.44L41.3 47.33L34.94 44.15L34.29 43.83L27.52 40.44L48.72 28.2L68.72 38.2Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M72.96 35.75V64.94L61.3 59.11V49.78L67.75 46.06L68.72 45.5V38.2L52.96 30.32V25.75L59.74 29.14L63.56 31.05L72.96 35.75Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M113.24 12.5L106.88 16.17L86.8799 6.17L93.2399 2.5L113.24 12.5Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M123.84 28.27L113.24 34.39V22.97L123.84 28.27Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M106.88 16.17V45.36L100.52 42.18V19.84L86.8799 13.02V6.16998L106.88 16.17Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M100.52 19.84L93.2399 24.04L86.88 27.71L80.52 31.39L74.16 35.06L72.96 35.75L63.56 31.05L59.74 29.14L52.96 25.75L80.52 9.84003L100.52 19.84Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M100.52 19.84V49.03L94.16 52.7V31.16L89.92 33.61V50.29L89.6499 50.45L83.56 53.96V36.93L80.52 38.69L79.32 39.38V61.27L72.96 64.94V35.75L74.16 35.06L80.52 31.39L86.88 27.71L93.2399 24.04L100.52 19.84Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M83.5598 36.93V53.96L79.3198 51.84V39.38L80.5198 38.69L83.5598 36.93Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M94.1599 31.16V52.7L89.6499 50.45L89.9199 50.29V33.61L94.1599 31.16Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M68.72 38.2V45.5L67.75 46.06L61.3 49.78V71.67L54.94 75.34V53.45L52.96 54.59L47.52 57.74V50.44L52.96 47.3L59.32 43.63L63.56 41.18L68.72 38.2Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M54.9398 53.45V75.34L43.2798 69.51V55.62L47.5198 57.74L52.9598 54.59L54.9398 53.45Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M36.9197 66.29L36.8797 66.31L28.4497 71.18V62.06L34.9397 65.3L36.9197 66.29Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M22.0898 65.12V94.31L2.08984 84.31V55.12L8.44984 58.3L11.1198 59.64L22.0898 65.12Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M36.9197 85.75L28.4497 81.52" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+</svg>

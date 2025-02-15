@@ -1,0 +1,13 @@
+<svg width="48" height="48" viewBox="0 0 91 128" class="pr-icon-iso-duotone-secondary"
+     xmlns="http://www.w3.org/2000/svg" stroke-width="1px" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M88.092 40.2821L68.7822 49.9321L68.092 50.2821L59.092 45.0821L22.832 24.1521L2.83203 12.6021L22.832 2.60205L88.092 40.2821Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M88.092 40.2822V115.172L68.092 125.172V50.2822L68.7822 49.9322L88.092 40.2822Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M59.092 45.0821L22.832 24.1521L2.83203 12.6021V87.4921L68.092 125.172V50.2821L59.092 45.0821ZM57.2122 85.6121L49.9622 81.4221V74.8721L37.092 82.1021L29.842 69.5921L22.832 73.5921L18.7822 75.9021L13.7122 67.1421L22.832 61.882L29.842 57.8421L30.3921 58.8021L35.1221 66.9521L37.092 70.3521L44.802 65.9621L41.7622 64.2021L41.2322 63.9021L39.092 62.6621V54.3421L46.812 58.8021L48.9521 60.0321L49.0122 60.0621L50.6721 61.0321L52.5322 62.1021L57.2122 64.8021V85.6121Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M57.2122 77.8022V85.6122L49.9622 81.4222L57.2122 77.8022Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M56.7322 71.482L49.9622 74.872L37.092 82.102L29.842 69.592L35.1221 66.952L37.092 70.352L44.802 65.962L51.572 62.582L56.7322 71.482Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M46.812 58.8023L39.092 62.6623V54.3423L46.812 58.8023Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M52.5322 62.1022L51.572 62.5822L44.802 65.9622L41.7622 64.2022L41.2322 63.9023L39.092 62.6623L46.812 58.8022L48.9521 60.0323L49.0122 60.0623L50.6721 61.0323L52.5322 62.1022Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M57.2122 71.252V77.8019L49.9622 81.4219V74.8719L56.7322 71.4819L57.2122 71.252Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M30.3921 58.8023L22.832 62.5823L13.7122 67.1423L22.832 61.8823L29.842 57.8423L30.3921 58.8023Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M35.1221 66.9522L29.842 69.5923L22.832 73.5923L18.7822 75.9023L13.7122 67.1422L22.832 62.5822L30.3921 58.8022L35.1221 66.9522Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+</svg>

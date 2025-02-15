@@ -1,0 +1,11 @@
+<svg viewBox="0 0 84 116" class="pr-icon-iso-duotone-secondary" xmlns="http://www.w3.org/2000/svg" height="48"
+     width="48" stroke-width="1px" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M61.1296 23.5549L44.8596 32.9449L22.5596 45.8149V113.015L81.1296 79.2049V12.0049L61.1296 23.5549ZM51.8496 81.1749L35.5796 90.5649V83.1049L44.9196 77.7148L51.8496 73.7148V81.1749ZM64.8596 58.7249H61.1296L51.8496 58.7749L38.8296 73.7549V43.8849L44.8596 40.4048L61.1296 31.0149L64.8596 28.8649V58.7249Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M51.8501 81.1749L35.5801 90.5649V83.1049L44.92 77.7148L45.7101 78.1049L51.8501 81.1749Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M51.85 73.7148V81.1749L45.71 78.1049L44.9199 77.7148L51.85 73.7148Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M51.8501 58.7749L38.8301 73.7549V52.2649L51.8501 58.7749Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M64.8601 58.7249L61.1301 58.7349L51.8501 58.7749L38.8301 52.2649V48.7449L44.8601 48.7249L61.1301 56.8649L64.8601 58.7249Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M64.8604 28.8649V58.7249L61.1304 56.8649L44.8604 48.7249V40.4048L61.1304 31.0149L64.8604 28.8649Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M81.1296 12.0049L61.1296 23.5549L44.8596 32.9449L22.5596 45.8149L18.8296 43.9549L2.55957 35.8149L61.1296 2.00488L81.1296 12.0049Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M22.5596 45.8149V113.015L2.55957 103.015V35.8149L18.8296 43.955L22.5596 45.8149Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+</svg>

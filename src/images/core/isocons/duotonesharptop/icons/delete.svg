@@ -1,0 +1,13 @@
+<svg width="48" height="48" viewBox="0 0 125 95" class="pr-icon-iso-duotone-secondary"
+     xmlns="http://www.w3.org/2000/svg" stroke-width="1px" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M107.16 28.95L103.42 26.79L107.16 24.63L84.56 11.58L80.82 13.74L61.98 2.87L54.49 7.19L58.26 9.36L54.49 11.54L2.10999 41.78L19.43 51.78L35.53 61.07L36.49 61.63L54.85 72.23L55.12 72.08L65.59 66.03L73.1 61.7L83.57 55.65L104.91 43.33L107.16 42.03L111 39.81L114.76 41.99L122.25 37.66L107.16 28.95ZM65.57 41.68L65.63 52.95H55.12L55.07 44.32V41.66H54.98L37 41.63H35.53L35.5 35.56L47.49 35.58H55.02L55 31.24L54.98 27.47V26.91L54.96 24.32H59.45L64.52 24.34H65.48V24.89L65.54 35.61L85.06 35.65L85.1 41.72L65.57 41.68Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M58.26 9.35994L54.49 11.5399V7.18994L58.26 9.35994Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M65.57 41.68L65.63 52.95H65.53L65.48 44.34L65.54 35.61L85.06 35.65L85.1 41.72L65.57 41.68Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M65.54 35.6099L65.48 44.3399L55.07 44.3199L55.06 41.6599H54.98L55.02 35.5899L55 31.2399L54.98 27.4699L54.97 26.9099L54.96 24.3199L59.45 24.3299L64.52 24.3399H65.48V24.8899L65.54 35.6099Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M55.02 35.5901L54.98 41.6601L37 41.6301H35.53L35.5 35.5601L47.49 35.5801L55.02 35.5901Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M122.25 37.66V57.66L114.76 61.99V41.99L122.25 37.66Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M54.85 72.23V92.23L2.10999 61.78V41.78L19.43 51.78L35.53 61.07L36.49 61.63L54.85 72.23Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M114.76 41.9901V61.9901L111 59.8101V39.8101L114.76 41.9901Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M111 39.8101V59.8101L54.85 92.2301V72.2301L55.12 72.0801L65.59 66.0301L73.1 61.7001L83.57 55.6501L104.91 43.3301L107.16 42.0301L111 39.8101Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M107.16 24.63V28.95L103.42 26.79L107.16 24.63Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+</svg>

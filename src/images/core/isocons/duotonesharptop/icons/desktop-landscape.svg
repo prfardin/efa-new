@@ -1,0 +1,11 @@
+<svg width="48" height="48" viewBox="0 0 125 94" class="pr-icon-iso-duotone-secondary"
+     xmlns="http://www.w3.org/2000/svg" stroke-width="1px" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M55.3304 2.18018L2.23047 32.8402L19.5504 42.8402L32.9105 50.5502L62.9604 67.9001L69.0205 71.4001L74.9204 67.9901L91.5205 58.4102L104.8 50.7501L122.12 40.7501L55.3304 2.18018ZM68.1505 44.9102L63.1704 47.7902L58.9204 50.2401L45.4604 42.4702L32.8204 35.1802L28.8605 32.8901L45.4604 23.3102L49.4204 25.5902L65.4304 34.8402L75.5105 40.6602L68.1505 44.9102ZM91.4404 43.0402L85.5005 46.4702L78.8905 50.2802L73.8805 47.3901L85.5005 40.6802L65.4304 29.0902L60.4504 26.2202L61.3905 25.6802L65.4304 23.3402L95.4905 40.7002L91.4404 43.0402Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M75.511 40.66L68.151 44.91L63.1709 47.79L58.9209 50.24L45.4609 42.4701V23.3101L49.4209 25.5901L65.4309 34.8401L75.511 40.66Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M45.4613 23.3101V42.4701L32.8213 35.1801L28.8613 32.89L45.4613 23.3101Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M122.121 40.7502V60.7502L69.0215 91.4003V71.4003L74.9214 67.9902L91.5215 58.4103L104.801 50.7502L122.121 40.7502Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M65.4312 23.3403V29.0903L60.4512 26.2203L61.3912 25.6803L65.4312 23.3403Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M95.4917 40.7003L91.4417 43.0403L85.5017 46.4703V40.6803L65.4316 29.0903V23.3403L95.4917 40.7003Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M85.5009 40.6802V46.4702L78.8909 50.2802L73.8809 47.3901L85.5009 40.6802Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M69.0205 71.4003V91.4003L2.23047 52.8403V32.8403L19.5504 42.8403L32.9105 50.5503L62.9604 67.9003L69.0205 71.4003Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+</svg>

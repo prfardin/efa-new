@@ -1,0 +1,23 @@
+<svg width="48" height="48" viewBox="0 0 127 102" class="pr-icon-iso-duotone-secondary"
+     xmlns="http://www.w3.org/2000/svg" stroke-width="1px" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M124.25 82.7098V90.0098L104.25 100.01V92.7098L124.25 82.7098Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M124.25 82.7098L104.25 92.7098L93.6499 86.5898L107.29 79.7698L113.65 76.5898L124.25 82.7098Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M113.65 54.6998V76.5898L107.29 79.7698L93.6499 86.5898V64.6998L94.5699 64.2398L107.29 57.8798L113.65 54.6998Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M113.65 54.6998L107.29 57.8798L94.57 64.2398L93.65 64.6998L90.33 62.7798L87.29 61.0298L107.29 51.0298L113.65 54.6998Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M100.93 47.3598V54.2098L87.2899 61.0298V83.3698L80.9299 86.5498L74.5699 82.8698V60.9798L73.3799 60.2898L70.3299 58.5298V75.5598L64.2599 72.0498L63.9799 71.8898V54.8598L61.7199 53.5498L59.7399 52.4098V74.3098L53.3799 70.6398V41.4498L55.3599 42.5898L55.9099 42.9098L61.7199 46.2698L73.3799 52.9998L79.7399 56.6698L80.9299 57.3598L83.9799 55.8398L90.3299 52.6598L94.1599 50.7398L100.93 47.3598Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M100.93 47.3598L94.1599 50.7398L90.3299 52.6598L83.9799 55.8398L80.9299 57.3598L79.7399 56.6698L73.3799 52.9998L61.7199 46.2698L55.9099 42.9098L55.3599 42.5898L53.3799 41.4498L61.7199 37.2798L66.6099 34.8398L69.1399 33.5698L73.3799 31.4498L100.93 47.3598Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M69.1401 28.9998V33.5698L66.6101 34.8398L61.7201 37.2798L53.3801 41.4498V44.1798L49.1401 46.2998V38.9998L61.7201 32.7098L62.3701 32.3898L69.1401 28.9998Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M69.1399 28.9998L62.3699 32.3898L61.7199 32.7098L49.1399 38.9998L43.6999 35.8598L37.3399 32.1898L28.8599 27.2898L27.9399 26.7598L28.8599 26.2998L32.1399 24.6598L43.6999 18.8798L47.9399 16.7598L69.1399 28.9998Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M27.9402 26.7598V34.0598L28.8602 34.5898L35.3602 38.3398V47.6698L23.7002 53.4998V24.3098L34.6702 18.8298L37.3402 17.4898L43.7002 14.3098V18.8798L32.1402 24.6598L28.8602 26.2998L27.9402 26.7598Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M23.7 24.3098V53.4998L17.34 49.8298V37.6698L8.86 32.7698V44.9298L2.5 41.2598V12.0698L8.86 15.7398V25.4698L17.34 30.3698V20.6398L17.89 20.9598L22.5 23.6198L23.7 24.3098Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M17.3399 21.2298V30.3698L8.85986 25.4698L17.3399 21.2298Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M28.8599 5.73981V14.8798L22.4999 18.0598L17.3399 20.6398V21.2298L8.85986 25.4698V15.7398L22.4999 8.91981L28.8599 5.73981Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M28.86 5.73982L22.5 8.91982L8.86 15.7398L2.5 12.0698L22.5 2.06982L28.86 5.73982Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M43.6998 14.3098L37.3398 17.4898L34.6698 18.8298L23.6998 24.3098L22.4998 23.6198L17.8898 20.9598L17.3398 20.6398L22.4998 18.0598L28.8598 14.8798L37.3398 10.6398L43.6998 14.3098Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M17.3399 37.6698V40.6898L8.85986 44.9298V32.7698L17.3399 37.6698Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M49.1399 38.9998V46.2998L43.6999 43.1498L41.7199 42.0098V63.8998L35.3599 60.2298V38.3398L28.8599 34.5898L27.9399 34.0598V26.7598L28.8599 27.2898L37.3399 32.1898L43.6999 35.8598L49.1399 38.9998Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M53.3802 44.1798V58.0698L41.7202 63.8998V42.0098L43.7002 43.1498L49.1402 46.2998L53.3802 44.1798Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M64.2602 72.0499L59.7402 74.3098V52.4099L61.7202 53.5499L63.9802 54.8599V71.8899L64.2602 72.0499Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M74.5701 60.9798V73.4398L70.3301 75.5598V58.5298L73.3801 60.2898L74.5701 60.9798Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+    <path d="M104.25 92.7098V100.01L87.29 90.2198V61.0298L90.33 62.7798L93.65 64.6998V86.5898L104.25 92.7098Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
+</svg>

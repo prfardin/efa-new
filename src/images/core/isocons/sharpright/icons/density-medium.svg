@@ -1,0 +1,12 @@
+<svg width="48" height="48" viewBox="0 0 89 127" fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="1px"
+     stroke-linecap="round" stroke-linejoin="round">
+    <path d="M86.9899 78.8599V87.1299L22.0898 124.61V116.32L86.9899 78.8599Z" stroke="currentColor" stroke-linejoin="round"/>
+    <path d="M86.9899 45.7599V54.0399L22.0898 91.4999V83.2399L86.9899 45.7599Z" stroke="currentColor" stroke-linejoin="round"/>
+    <path d="M86.9899 12.6699V20.9399L22.0898 58.3999V50.1299L86.9899 12.6699Z" stroke="currentColor" stroke-linejoin="round"/>
+    <path d="M86.9899 12.6699L22.0898 50.1299L9.76985 43.9799L2.08984 40.1299L66.9899 2.66992L86.9899 12.6699Z" stroke="currentColor" stroke-linejoin="round"/>
+    <path d="M22.0898 50.1299V58.3999L2.08984 48.3999V40.1299L9.76985 43.9799L22.0898 50.1299Z" stroke="currentColor" stroke-linejoin="round"/>
+    <path d="M86.9899 45.7599L22.0898 83.2399L9.76985 77.0699L2.08984 73.2399L66.9899 35.7599L86.9899 45.7599Z" stroke="currentColor" stroke-linejoin="round"/>
+    <path d="M22.0898 83.2399V91.4999L2.08984 81.4999V73.2399L9.76985 77.0699L22.0898 83.2399Z" stroke="currentColor" stroke-linejoin="round"/>
+    <path d="M86.9899 78.8599L22.0898 116.32L9.77985 110.17L2.08984 106.32L66.9899 68.8599L86.9899 78.8599Z" stroke="currentColor" stroke-linejoin="round"/>
+    <path d="M22.0898 116.32V124.61L2.08984 114.61V106.32L9.77985 110.17L22.0898 116.32Z" stroke="currentColor" stroke-linejoin="round"/>
+</svg>
