@@ -1,5 +1,4 @@
-<svg width="48" height="48" viewBox="0 0 95 128" fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="1px"
-     stroke-linecap="round" stroke-linejoin="round">
+<svg width="24" height="24" viewBox="0 0 95 128" fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="1px" stroke-linecap="round" stroke-linejoin="round">
     <path d="M64.1301 63.99L59.0801 61.07L57.1101 59.94L37.1101 48.39V32.27L23.9802 24.69L22 23.55L2 12V84.52L72.2202 125.05V68.66L64.1301 63.99ZM30.0901 92.67L9.03003 80.51V72.46L16.5 76.77L30.0901 84.62V92.67ZM30.0901 76.56L23.9802 73.03L22 71.89L9.03003 64.4V56.34L16.51 60.66L22 63.83L29.03 67.89L30.0901 68.5V76.56ZM30.0901 60.45L23.9802 56.92L22 55.78L9.03003 48.29V40.23L16.51 44.55L22 47.72L29.03 51.78L30.0901 52.39V60.45ZM30.0901 44.33L23.99 40.81L22 39.66L9.03003 32.17V24.12L16.5 28.43L22 31.61L29.03 35.67L30.0901 36.28V44.33ZM65.1902 112.94L37.1001 96.73V56.44L50.0801 63.94L51.6001 64.81L57.1001 67.99L65.1902 72.66V112.94Z" stroke="currentColor" stroke-linejoin="round"/>
     <path d="M16.51 60.6598L9.03003 64.3998V56.3398L16.51 60.6598Z" stroke="currentColor" stroke-linejoin="round"/>
     <path d="M16.5 28.4301L9.03003 32.1701V24.1201L16.5 28.4301Z" stroke="currentColor" stroke-linejoin="round"/>

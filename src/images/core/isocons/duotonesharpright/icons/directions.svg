@@ -1,5 +1,4 @@
-<svg viewBox="0 0 104 105" class="pr-icon-iso-duotone-secondary" xmlns="http://www.w3.org/2000/svg" height="48"
-     width="48" stroke-width="1px" stroke-linecap="round" stroke-linejoin="round">
+<svg viewBox="0 0 104 105" class="pr-icon-iso-duotone-secondary" xmlns="http://www.w3.org/2000/svg" height="24" width="24" stroke-width="1px" stroke-linecap="round" stroke-linejoin="round">
     <path d="M61.9048 12.1501L61.2948 13.2101L52.5148 28.3502L41.1648 47.9102L37.9747 53.4102L34.5847 59.2601L30.1848 66.8502L22.3848 80.3002L42.5148 91.7802L61.9048 102.83L101.415 34.6801L61.9048 12.1501ZM62.6448 57.0601L54.5847 61.7101V74.3101L51.6648 75.9901L47.2648 78.5302V57.5402L59.5947 50.4202L67.3948 45.9202V35.4301L73.2448 38.7701L80.1948 42.7302L67.3948 64.8201V54.3201L62.6448 57.0601Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
     <path d="M54.5846 74.3101L51.6647 75.9901L47.2646 78.5302V70.6501L53.0747 73.5601L54.5846 74.3101Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
     <path d="M67.3948 64.8202V54.3202L64.9448 53.0902L59.5947 50.4202L67.3948 45.9202V35.4302L73.2448 38.7702L80.1948 42.7302L67.3948 64.8202Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>

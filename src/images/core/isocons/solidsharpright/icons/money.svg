@@ -1,5 +1,4 @@
-<svg width="48" height="48" viewBox="0 0 97 122" xmlns="http://www.w3.org/2000/svg" stroke-width="1px"
-     stroke-linecap="round" stroke-linejoin="round">
+<svg width="24" height="24" viewBox="0 0 97 122" xmlns="http://www.w3.org/2000/svg" stroke-width="1px" stroke-linecap="round" stroke-linejoin="round">
     <path d="M51.2008 61.5198V77.9398L44.0508 74.3698V57.9498L45.5208 58.6798L51.2008 61.5198Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
     <path d="M74.1403 23.6398L63.4103 29.8298L45.5203 40.1599L41.9403 42.2298L24.0503 52.5598L22.5703 53.4099V119.11L94.1403 77.7899V12.0898L74.1403 23.6398ZM40.4703 92.3598L33.3103 96.4898V63.6398L34.7803 62.7899L40.4703 59.5098V92.3598ZM61.9403 79.9598L44.0503 90.2899V57.4398L45.5203 56.5898L47.1603 55.6398L52.6703 52.4598L56.2503 50.3998L61.9403 47.1098V79.9598ZM83.4103 67.5598L65.5203 77.8898V45.0399L68.6203 43.2498L74.1403 40.0598L83.4103 34.7098V67.5598Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>
     <path d="M83.4101 34.7098V67.5598L75.7901 63.7498L76.2501 63.4798V47.0598L74.1401 46.0098L68.6201 43.2498L74.1401 40.0598L83.4101 34.7098Z" class="pr-icon-iso-solid-stroke" stroke-linejoin="round"/>

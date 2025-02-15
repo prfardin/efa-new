@@ -1,5 +1,4 @@
-<svg viewBox="0 0 91 74" class="pr-icon-iso-duotone-secondary" xmlns="http://www.w3.org/2000/svg" height="48" width="48"
-     stroke-width="1px" stroke-linecap="round" stroke-linejoin="round">
+<svg viewBox="0 0 91 74" class="pr-icon-iso-duotone-secondary" xmlns="http://www.w3.org/2000/svg" height="24" width="24" stroke-width="1px" stroke-linecap="round" stroke-linejoin="round">
     <path d="M88.7895 2.03418L79.6695 23.3342L71.7395 41.8742L11.8495 50.4142L2.72949 51.7142L19.7795 11.8742L88.7895 2.03418Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
     <path d="M71.7395 41.874V61.874L2.72949 71.714V51.714L11.8495 50.414L71.7395 41.874Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
     <path d="M88.7895 2.03418V22.0342L71.7395 61.8742V41.8742L79.6695 23.3342L88.7895 2.03418Z" class="pr-icon-iso-duotone-primary-stroke" stroke-linejoin="round"/>
