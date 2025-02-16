@@ -5,6 +5,7 @@ import vueI18n from '@intlify/unplugin-vue-i18n/vite'
 import vue from '@vitejs/plugin-vue'
 import compileIcons from '../build/icons'
 import { dynamicIcon } from './dynamic-icons-plugin'
+import { isDev } from '../util/util'
 
 // types
 interface ViteConfig {
@@ -30,11 +31,15 @@ export const vueI18nVite = vueI18n({
     include: 'lang/**.json'
 })
 
+// we use dynamicIcon plugin to watch added icons in the vue files
+// that is not necessary in the build mode
 export function pluginsFunc(
     icons: any = defaultIcons(),
     plugins?: Plugin | PluginOption[]
 ): PluginOption[] {
-    return [vueVite, vueI18nVite, icons, plugins, dynamicIcon()]
+    const p = [vueVite, vueI18nVite, icons, plugins]
+    isDev() && p.push(dynamicIcon())
+    return p
 }
 
 // if user start with "npm run dev:rtl" we add rtlcss config
